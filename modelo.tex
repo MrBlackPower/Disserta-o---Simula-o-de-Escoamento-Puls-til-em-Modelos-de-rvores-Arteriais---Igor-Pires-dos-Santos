@@ -4,7 +4,7 @@
 %	french,				
 %	spanish, 
         brazil			        %% Idioma principal 
-        ]{abntbibufjf}
+        ,<...>]{abntbibufjf}
 
 \usepackage{lmodern}						
 \usepackage[T1]{fontenc}		
@@ -14,9 +14,9 @@
 \usepackage{color}			
 \usepackage{graphicx}			
 \usepackage{microtype} 
-\usepackage[ruled,vlined]{algorithm2e}
+\usepackage[portuguese,ruled,lined]{algorithm2e}
 \include{hifenizacao}
-\usepackage[portuguese]{babel}  
+%\usepackage[portuguese]{babel}  
 \usepackage{listings}
 \usepackage[alf,bibjustif]{abntex2cite}
 \usepackage{amsmath}
@@ -149,11 +149,11 @@ Keywords: Árvores arteriais. Pulsatile flow. Computational hemodynamics. %final
 
 %% Lista de abreviaturas e siglas. OPCIONAL
 \begin{siglas} %%ALTERAR OS EXEMPLOS ABAIXO, CONFORME A NECESSIDADE
-%  \item[ABNT] Associa\c{c}\~ao Brasileira de Normas T\'ecnicas
+  \item[ABNT] Associa\c{c}\~ao Brasileira de Normas T\'ecnicas
 %  \item[Fil.] Filosofia
 %  \item[IBGE] Instituto Brasileiro de Geografia e Estat\'istica
 %  \item[INMETRO] Instituto Nacional de Metrologia, Normaliza\c{c}\~ao e Qualidade Industrial
-  \end{siglas}
+\end{siglas}
 
 %% Lista de s\'imbolos. OPCIONAL
 \begin{simbolos} %%ALTERAR OS EXEMPLOS ABAIXO, CONFORME A NECESSIDADE$R_s$: Resistência hidrodinâmica do segmento s\\
@@ -162,12 +162,12 @@ Keywords: Árvores arteriais. Pulsatile flow. Computational hemodynamics. %final
 \item [$\Delta p_s$] Queda de pressão ao longo do segmento s\\
 \item [$Q_s$] Fluxo sanguíneo através do segmento s \\
 \item [$p_{perf}$] Pressão de perfusão na posição proximal \\
-\item [\item $p_{term}$] Pressão terminal na posição distal \\
+\item [$p_{term}$] Pressão terminal na posição distal \\
 \item [$\mathbf{x}_{prox}$] Posição proximal do segmento raiz \\
 \item [$r_p$] Raio do segmento pai \\
 \item [$r_{esq}$] Raio do segmento filho à esquerda \\
 \item [$r_{dir}$] Raio do segmento filho à direita \\
-\item [\item $ktot$] Número de segmentos existentes na árvore \\
+\item [$ktot$] Número de segmentos existentes na árvore \\
 \item [$T$] Função custo para o CCO \\
 \item [$\mu_p$] Dimensionalidade de $T$ \\
 \item [$\lambda$] Dimensionalidade de $T$ \\
@@ -464,7 +464,46 @@ Como visto na equação~\eqref{eq:amitancia} para se obter o valor da admitânci
 Entretanto, o caminho oposto é necessário para se resolver o valor da pressão média de cada segmento como visto na equação~\eqref{18_barp}.
 Com estes desafios em mente, a estrutura de dados desenvolvida na linguagem C++ utiliza de ponteiros para acessar os valores de artérias adjacentes. O algoritmo desenvolvido se dividiu em duas fases, em um primeiro momento realiza o cálculo dos segmentos finais ao segmento raiz e ,finalmente, da raiz aos segmentos finais.
 
-\lstinputlisting[language=c]{1.c}
+\begin{algorithm}[H]
+	\SetAlgoLined
+	\Entrada{r(cm),L(cm),$\rho$(g/$cm^3$),E(g/$cm*s^2$),f(Hz),$\epsilon$,$\mu_0$,$\phi_0$ }
+	\Inicio{
+		Segmento a = raiz \textit{(começa a recursão pela raiz)}
+		
+		\Se{existe(a)}{
+			Envia a recursão \textit{fase um}(a,f,$\mu_0$,$\phi_0$) e armazena $Y_r$
+		}
+		\Se{existe($Y_r$)}{
+			Envia a recursão \textit{fase dois}(a,$p_0$,$Y_r$)
+		}
+	}
+	\textbf{\textit{\textsl{\underline{fase um}}}}(a,f,$\epsilon$,$\phi_0$)
+	\Inicio{
+		\Se{existe(a $\rightarrow$ adjacente)}{
+			Envia a recursão \textit{fase um}(a $\rightarrow$ esquerda,f,$\mu_0$,$\phi_0$)
+		}
+		\Se{existe(a $\rightarrow$ direita)}{
+			Envia a recursão \textit{fase um}(a $\rightarrow$ direita,f,$\mu_0$,$\phi_0$)
+		}
+		Calcula $c$,$\omega$,$\beta$
+		\Se{!viscoso}{
+			Calcula $Y$
+		}
+		\Senao{
+			Calcula $\alpha$,$\epsilon$,$E_v$,$c_v$,$Y_v$
+		}
+		\Se{a $\rightarrow$ folha}{
+			$Y_e = Y$ e $R = 0$
+		}
+		\Senao{
+			Calcula $Y_e$ e $R$
+		}
+	}
+	\textbf{\textit{\textsl{\underline{fase dois}}}}(a,$p_0$,$Y_r$)
+	\Inicio{
+	}
+	\caption{How to write algorithms}
+\end{algorithm}
 %===================================================================================%
 \chapter{Ferramenta computacional}\label{sec:modelagem}
 
@@ -474,12 +513,7 @@ Esta ferramenta foi desenvolvida em C++ utilizando as bibliotecas comuns do Qt 5
 
 A Figura~\ref{fig1:gui} ilustra a ferramenta desenvolvida. À seguir, apresentam-se em detalhes a implementação computacional realizada.
 
-\begin{figure}[!htbp]
-	\centering
-	\includegraphics[scale=0.25]{Figures/IGU_SCREENSHOT__00019.png}
-	\caption{Interface gráfica da ferramenta desenvolvida.}
-	\label{fig1:gui}
-\end{figure}
+
 %=========================================================%
 
 \begin{citacao}

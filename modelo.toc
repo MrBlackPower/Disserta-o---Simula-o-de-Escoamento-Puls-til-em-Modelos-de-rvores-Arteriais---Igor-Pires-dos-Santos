@@ -1,0 +1,35 @@
+\changetocdepth {4}
+\babel@toc {brazil}{}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {1}INTRODU\c {C}\~AO}{25}{chapter.16}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {2}Escoamento sanguíneo pulsátil em árvores arteriais}{29}{chapter.17}%
+\contentsline {section}{\numberline {2.1}Cálculo da pressão e do fluxo sanguíneo}{31}{section.24}%
+\contentsline {section}{\numberline {2.2}Cálculo dos coeficientes de reflexão e da admitância}{32}{section.35}%
+\contentsline {section}{\numberline {2.3}Cenários investigados com o modelo matemático do escoamento sanguíneo}{33}{section.40}%
+\contentsline {section}{\numberline {2.4}Algoritmo para o escoamento pulsátil}{34}{section.46}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {3}Ferramenta computacional}{37}{chapter.49}%
+\contentsline {subsubsection}{\numberline {3.0.0.1}\textit {Se\c {c}\~ao quatern\'aria}}{37}{subsubsection.50}%
+\contentsline {paragraph}{\numberline {3.0.0.1.1}Se\c {c}\~ao quin\'aria}{37}{paragraph.51}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {4}CONCLUS\~AO}{39}{chapter.52}%
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\contentsline {chapter}{\bfseries REFER\^ENCIAS}{41}{chapter*.54}%
+\renewcommand *{\cftappendixname }{\bfseries AP\^ENDICE \space }
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {A}T\'itulo}{43}{appendix.55}%
+\cftinsert {AAA}
+\renewcommand *{\cftappendixname }{\bfseries ANEXO \space }
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\cftinsert {A}
+\contentsline {appendix}{\chapternumberline {A}T\'itulo}{45}{appendix.56}%
