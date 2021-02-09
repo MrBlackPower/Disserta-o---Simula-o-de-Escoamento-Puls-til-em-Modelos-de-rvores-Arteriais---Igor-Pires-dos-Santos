@@ -15,21 +15,21 @@
 \contentsline {section}{\numberline {2.3}Cenários investigados com o modelo matemático do escoamento sanguíneo}{33}{section.40}%
 \contentsline {section}{\numberline {2.4}Algoritmo para o escoamento pulsátil}{34}{section.46}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {3}Ferramenta computacional}{37}{chapter.49}%
-\contentsline {subsubsection}{\numberline {3.0.0.1}\textit {Se\c {c}\~ao quatern\'aria}}{37}{subsubsection.50}%
-\contentsline {paragraph}{\numberline {3.0.0.1.1}Se\c {c}\~ao quin\'aria}{37}{paragraph.51}%
+\contentsline {chapter}{\chapternumberline {3}Ferramenta computacional}{37}{chapter.53}%
+\contentsline {subsubsection}{\numberline {3.0.0.1}\textit {Se\c {c}\~ao quatern\'aria}}{37}{subsubsection.54}%
+\contentsline {paragraph}{\numberline {3.0.0.1.1}Se\c {c}\~ao quin\'aria}{37}{paragraph.55}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}CONCLUS\~AO}{39}{chapter.52}%
+\contentsline {chapter}{\chapternumberline {4}CONCLUS\~AO}{39}{chapter.56}%
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\bfseries REFER\^ENCIAS}{41}{chapter*.54}%
+\contentsline {chapter}{\bfseries REFER\^ENCIAS}{41}{chapter*.58}%
 \renewcommand *{\cftappendixname }{\bfseries AP\^ENDICE \space }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}T\'itulo}{43}{appendix.55}%
+\contentsline {appendix}{\chapternumberline {A}T\'itulo}{43}{appendix.59}%
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{\bfseries ANEXO \space }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}T\'itulo}{45}{appendix.56}%
+\contentsline {appendix}{\chapternumberline {A}T\'itulo}{45}{appendix.60}%

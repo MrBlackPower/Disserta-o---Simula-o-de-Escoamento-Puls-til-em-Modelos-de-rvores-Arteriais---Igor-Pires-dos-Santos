@@ -1,3 +1,4 @@
+% !TeX spellcheck = en_US
 \documentclass[
         %oneside,         	 %%retire % do in\'icio desta linha para n\~ao imprimir frente e verso 
         english,			
@@ -453,20 +454,21 @@ A partir do modelo matemático aqui apresentado, os seguintes cenários são inv
 Para o cálculo correto da onda de pressão e fluxo presente nos modelos geométricos foi necessário determinar uma ordem de variáveis à se determinar:
 
 \begin{itemize}
-    \item Cálculo da admitância
-    \item Cálculo da admitância efetiva
-    \item Cálculo do coeficiente de reflexão
-    \item Cálculo da pressão média
-    \item Cálculo das ondas de pressão e fluxo
+    \item Cálculo da admitância $Y$
+    \item Cálculo da admitância efetiva $Y_e$
+    \item Cálculo do coeficiente de reflexão $R$
+    \item Cálculo da pressão média $\bar{p}$
+    \item Cálculo das ondas de pressão e fluxo $P(x) e Q(x)$
 \end{itemize}
 
-Como visto na equação~\eqref{eq:amitancia} para se obter o valor da admitância se faz necessário o valor da onda de pressão. Já o cálculo da admitância efetiva e do coeficiente de reflexão exigem também valores referentes à outras artérias o que se mostrou um desafio computacionalmente.Nas equações~\eqref{27_R} e~\eqref{28_Ye} é possível verificar a necessidade de valores de segmentos de níveis inferiores para se obter o valor atual.
-Entretanto, o caminho oposto é necessário para se resolver o valor da pressão média de cada segmento como visto na equação~\eqref{18_barp}.
-Com estes desafios em mente, a estrutura de dados desenvolvida na linguagem C++ utiliza de ponteiros para acessar os valores de artérias adjacentes. O algoritmo desenvolvido se dividiu em duas fases, em um primeiro momento realiza o cálculo dos segmentos finais ao segmento raiz e ,finalmente, da raiz aos segmentos finais.
+As equações~\eqref{27_R} e~\eqref{28_Ye} expõem a necessidade de um valor $Y_(k+1,2j)$ e $Y_(k+1,2j-1)$ que fazem referência à valores de artérias adjacentes ao final deste segmento.
+Entretanto, o caminho oposto é necessário para se resolver o valor da pressão média de cada segmento como visto na equação~\eqref{18_barp} que necessita da pessão efetiva do segmento superior $p((k-1,s))$.
+Com estes desafios em mente, a estrutura de dados desenvolvida na linguagem C++ utiliza de ponteiros para acessar os valores de artérias adjacentes. O algoritmo desenvolvido se dividiu em duas fases, em um primeiro momento realiza o cálculo dos segmentos finais ao segmento raiz (\textit{bottom-up}) e ,finalmente, da raiz aos segmentos finais (\textit{top-bottom}).
+
 
 \begin{algorithm}[H]
 	\SetAlgoLined
-	\Entrada{r(cm),L(cm),$\rho$(g/$cm^3$),E(g/$cm*s^2$),f(Hz),$\epsilon$,$\mu_0$,$\phi_0$ }
+	\Entrada{\textit{\textbf{Modelo Arterial}},f(Hz),$\epsilon$,$\mu_0$,$\phi_0$ }
 	\Inicio{
 		Segmento a = raiz \textit{(começa a recursão pela raiz)}
 		
@@ -477,7 +479,36 @@ Com estes desafios em mente, a estrutura de dados desenvolvida na linguagem C++ 
 			Envia a recursão \textit{fase dois}(a,$p_0$,$Y_r$)
 		}
 	}
-	\textbf{\textit{\textsl{\underline{fase um}}}}(a,f,$\epsilon$,$\phi_0$)
+\caption{Começo da recursão.}
+\end{algorithm}
+
+A linguagem permite que objetos sejam passados por referência de ponteiros, portanto é possível passar toda a estrutura geométrica da árvore arterial através de um ponteiro para o segmento raiz. Cada ponteiro destes aponta para um segmento arterial que contêm as variáveis:
+
+\begin{tabular}{|c|c|c|c|}{H}
+	\hline
+	Comprimento & $L$(cm) & Raio & $r$(cm) \\
+	\hline
+	Densidade & $\rho$(g/cm$^3$) & Viscosidade & $\mu$(cm$^2$/s) \\
+	\hline
+	Espessura da Parede & $h$ (cm) & Velocidade Ângular & $\omega$  \\
+	\hline
+	Velocidade de Onda & $c$(cm/s) & Alpha & $\alpha$ \\
+	\hline
+	Beta & $\beta$ & Módulo de Young & $E$(g/cms$^2$)\\
+	\hline
+	Admitância & $Y$ & Admitância Efetiva & $Y_e$\\
+	\hline
+	Fator Viscoso & $\epsilon$ & Coeficiente de Reflexão & $R$ \\
+	\hline
+	Pressão Média & $\bar{p}$ & Pressão & $P$\\
+	\hline
+	Fluxo & $Q$ && \\
+	\hline
+\end{tabular}
+
+\begin{algorithm}[H]
+	\textbf{\textit{\textsl{\underline{fase um}}}}(a,f,$\epsilon$,$\mu_0$,$\phi_0$)
+	\Entrada{Segmento $a$,f(Hz),$\epsilon$,$\mu_0$,$\phi_0$ }
 	\Inicio{
 		\Se{existe(a $\rightarrow$ adjacente)}{
 			Envia a recursão \textit{fase um}(a $\rightarrow$ esquerda,f,$\mu_0$,$\phi_0$)
@@ -490,19 +521,37 @@ Com estes desafios em mente, a estrutura de dados desenvolvida na linguagem C++ 
 			Calcula $Y$
 		}
 		\Senao{
-			Calcula $\alpha$,$\epsilon$,$E_v$,$c_v$,$Y_v$
+			Calcula $\alpha$,$\epsilon$,$E_v$,$c_v$e$Y_v$\\
+			Adota $c = c_v$ e $Y = Y_v$
 		}
-		\Se{a $\rightarrow$ folha}{
+		\Se{a $\in$ folha}{
 			$Y_e = Y$ e $R = 0$
 		}
 		\Senao{
 			Calcula $Y_e$ e $R$
 		}
 	}
-	\textbf{\textit{\textsl{\underline{fase dois}}}}(a,$p_0$,$Y_r$)
-	\Inicio{
+	\caption{Primeira fase do cálculo, recursão \textit{bottom-up}.}
+\end{algorithm}
+
+\begin{algorithm}[H]
+\textbf{\textit{\textsl{\underline{fase dois}}}}(a,f,$\epsilon$,$\phi_0$)
+\Inicio{
+	\Se{a $\in$ raiz}{
+		$\bar{p} = \bar{p_0}$
 	}
-	\caption{How to write algorithms}
+	\Senao{
+		Calcula $\alpha$,$\epsilon$,$E_v$,$c_v$,$Y_v$
+	}
+	Calcula $P(x) e Q(x) \forall x \in [0,1])$,$\omega$,$\beta$
+	\Se{existe(a $\rightarrow$ adjacente)}{
+		Envia a recursão \textit{fase dois}(a $\rightarrow$ esquerda,f,$\epsilon$,$\phi_0$)
+	}
+	\Se{existe(a $\rightarrow$ direita)}{
+		Envia a recursão \textit{fase dois}(a $\rightarrow$ direita,f,$\epsilon$,$\phi_0$)
+	}
+}
+\caption{Segunda fase do cálculo, recursão \textit{bottom-up}.}
 \end{algorithm}
 %===================================================================================%
 \chapter{Ferramenta computacional}\label{sec:modelagem}
