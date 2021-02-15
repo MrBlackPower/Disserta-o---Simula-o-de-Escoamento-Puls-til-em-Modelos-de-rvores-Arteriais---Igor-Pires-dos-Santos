@@ -1,2 +1,6 @@
 \babel@toc {brazil}{}
 \contentsline {figure}{\numberline {1}{\ignorespaces Notação usada para identificar cada segmento de vaso $(k,j)$, onde $k$ é a geração/nível do vaso e $j$ é um número sequencial dentro daquela geração. }}{30}{figure.21}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Interface gráfica da ferramenta desenvolvida.}}{39}{figure.55}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Representação de classses de um elemento inteligente. WiseElement a classe abstrata base e seus componentes:WiseStructure representa a estrutura contida em um arquivo VTK e DataStructure representa a estrutura de ponteiros e variáveis utilizadas na iteração. Tingido de azul as estruturas que nem sempre estão presentes.}}{40}{figure.57}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Máquina de Status que contola o funcionamento de um elemento inteligente.}}{41}{figure.58}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Elemento inteligente enquanto no estado \textit {Warming}.}}{41}{figure.59}%

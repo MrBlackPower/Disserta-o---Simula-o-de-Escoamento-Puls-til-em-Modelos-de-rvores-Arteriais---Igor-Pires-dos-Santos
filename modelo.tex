@@ -454,16 +454,16 @@ A partir do modelo matemático aqui apresentado, os seguintes cenários são inv
 Para o cálculo correto da onda de pressão e fluxo presente nos modelos geométricos foi necessário determinar uma ordem de variáveis à se determinar:
 
 \begin{itemize}
-    \item Cálculo da admitância $Y$
-    \item Cálculo da admitância efetiva $Y_e$
-    \item Cálculo do coeficiente de reflexão $R$
-    \item Cálculo da pressão média $\bar{p}$
-    \item Cálculo das ondas de pressão e fluxo $P(x) e Q(x)$
+    \item Cálculo da admitância $(Y)$
+    \item Cálculo da admitância efetiva $(Y_e)$
+    \item Cálculo do coeficiente de reflexão $(R)$
+    \item Cálculo da pressão média $(\bar{p})$
+    \item Cálculo das ondas de pressão e fluxo $(P(x) e Q(x))$
 \end{itemize}
 
-As equações~\eqref{27_R} e~\eqref{28_Ye} expõem a necessidade de um valor $Y_(k+1,2j)$ e $Y_(k+1,2j-1)$ que fazem referência à valores de artérias adjacentes ao final deste segmento.
-Entretanto, o caminho oposto é necessário para se resolver o valor da pressão média de cada segmento como visto na equação~\eqref{18_barp} que necessita da pessão efetiva do segmento superior $p((k-1,s))$.
-Com estes desafios em mente, a estrutura de dados desenvolvida na linguagem C++ utiliza de ponteiros para acessar os valores de artérias adjacentes. O algoritmo desenvolvido se dividiu em duas fases, em um primeiro momento realiza o cálculo dos segmentos finais ao segmento raiz (\textit{bottom-up}) e ,finalmente, da raiz aos segmentos finais (\textit{top-bottom}).
+As equações~\eqref{27_R} e~\eqref{28_Ye} expõem a necessidade de um valor $Y_e(k+1,2j)$ e $Y_e(k+1,2j-1)$ que fazem referência à valores de artérias adjacentes ao final deste segmento.
+Entretanto, o caminho oposto é necessário para se resolver o valor da pressão média de cada segmento como visto na equação~\eqref{18_barp} que necessita da pessão efetiva do segmento superior $\bar{p}(k-1,s)$.
+Com estes desafios em mente, a estrutura de dados desenvolvida utiliza de ponteiros para acessar os valores de artérias adjacentes. O algoritmo desenvolvido se dividiu em duas fases, em um primeiro momento realiza o cálculo dos segmentos finais ao segmento raiz (\textit{bottom-up}) e ,finalmente, da raiz aos segmentos finais (\textit{top-bottom}).
 
 
 \begin{algorithm}[H]
@@ -473,18 +473,20 @@ Com estes desafios em mente, a estrutura de dados desenvolvida na linguagem C++ 
 		Segmento a = raiz \textit{(começa a recursão pela raiz)}
 		
 		\Se{existe(a)}{
-			Envia a recursão \textit{fase um}(a,f,$\mu_0$,$\phi_0$) e armazena $Y_r$
+			Envia a recursão \textit{fase um}(a,f,$\mu_0$,$\phi_0$) e armazena $Y(k-1,s)$
 		}
-		\Se{existe($Y_r$)}{
-			Envia a recursão \textit{fase dois}(a,$p_0$,$Y_r$)
+		\Se{existe($Y(k-1,s)$)}{
+			Envia a recursão \textit{fase dois}(a,$p_0$,$Y(k-1,s)$)
 		}
 	}
 \caption{Começo da recursão.}
 \end{algorithm}
 
-A linguagem permite que objetos sejam passados por referência de ponteiros, portanto é possível passar toda a estrutura geométrica da árvore arterial através de um ponteiro para o segmento raiz. Cada ponteiro destes aponta para um segmento arterial que contêm as variáveis:
+O valor complexo $(Y(k-1,s))$ armazenado é a admitância característica do segmento raiz, que é necessário para o cálculo da onda de fluxo como visto na equação~\eqref{23_Q}.
 
-\begin{tabular}{|c|c|c|c|}{H}
+A linguagem escolhida permite que objetos sejam passados por ponteiros, portanto é possível passar toda a estrutura geométrica da árvore arterial através de um ponteiro para o segmento raiz. Cada segmento arterial que contêm as propriedades´:
+\begin{table}[h]
+\begin{tabular}{|c|c|c|c|}
 	\hline
 	Comprimento & $L$(cm) & Raio & $r$(cm) \\
 	\hline
@@ -496,28 +498,36 @@ A linguagem permite que objetos sejam passados por referência de ponteiros, por
 	\hline
 	Beta & $\beta$ & Módulo de Young & $E$(g/cms$^2$)\\
 	\hline
-	Admitância & $Y$ & Admitância Efetiva & $Y_e$\\
+	Admitância Característica & $Y$ & Admitância Efetiva & $Y_e$\\
 	\hline
 	Fator Viscoso & $\epsilon$ & Coeficiente de Reflexão & $R$ \\
 	\hline
-	Pressão Média & $\bar{p}$ & Pressão & $P$\\
+	Pressão Média & $\bar{p}$ & Pressão & $P(x)$\\
 	\hline
-	Fluxo & $Q$ && \\
+	Fluxo & $Q(x)$ && \\
 	\hline
 \end{tabular}
+\caption{Propriedades de cada segmento de vaso sanguíneo.}
+\end{table}
+
+Além destas informações o segmento possui ainda três ponteiros para segmentos adjacentes. Um destes para o segmento adjacente ao nó proximal, ou segmento de vaso superior $(k-1,s)$; Os restantes para os segmentos adjacentes ao nó distal, arbitrariamente segmento à esquerda e à direita, ou segmentos de vaso inferiores $(k+1,2j-1)$ e $(k+1,2j)$. Esta estrutura é equivalente à uma árvore duplamente encadeada, onde através de um único ponteiro para um segmento, é possível trafegar a árvore nos dois sentidos. Isto se torna particularmente útil quando é necessário acessar dados de outro segmento para o cálculo.
+
+Os ponteiros permitem também determinar se a artéria é a raiz ou uma folha, caso o ponteiro para o segmento superior $(k-1,s)$ seja igual ao valor de Flag nulo se trata de um segmento raiz. Caso os dois segmentos $(k+1,2j-1)$ e $(k+1,2j)$ sejam iguais ao valor de Flag nulo se trata de uma folha.
+
+A primeira fase do algoritmo foi desenvolvida para calcular os valores de admitância efetiva ($Y_e$) e coeficiente de reflexão ($R$) de cada segmento. Desta forma é necessário que a admitância efetiva dos segmentos inferiores ($Y_e(k+1,2j-1)$ e $Y_e(k+1,2j)$) já estejam definidos . Portanto, na primeira fase de cálculo é verificada a existência de segmentos inferiores e caso existam a recursão é enviada  até eles. Após o envio da recursão é feito o cálculo do segmento atual, desta forma o segmento inferior será definido antes do segmento atual.
 
 \begin{algorithm}[H]
-	\textbf{\textit{\textsl{\underline{fase um}}}}(a,f,$\epsilon$,$\mu_0$,$\phi_0$)
+	\textbf{\textit{\textsl{\underline{fase um}}}}(a,f,$\epsilon$,$\mu_0$,$\phi_0$) \\
 	\Entrada{Segmento $a$,f(Hz),$\epsilon$,$\mu_0$,$\phi_0$ }
 	\Inicio{
-		\Se{existe(a $\rightarrow$ adjacente)}{
+		\Se{existe(a $\rightarrow$ esquerda)}{
 			Envia a recursão \textit{fase um}(a $\rightarrow$ esquerda,f,$\mu_0$,$\phi_0$)
 		}
 		\Se{existe(a $\rightarrow$ direita)}{
 			Envia a recursão \textit{fase um}(a $\rightarrow$ direita,f,$\mu_0$,$\phi_0$)
 		}
-		Calcula $c$,$\omega$,$\beta$
-		\Se{!viscoso}{
+		Calcula $c$,$\omega$,$\beta$ \\
+		\Se{\textbf{não} viscoso}{
 			Calcula $Y$
 		}
 		\Senao{
@@ -531,19 +541,23 @@ A linguagem permite que objetos sejam passados por referência de ponteiros, por
 			Calcula $Y_e$ e $R$
 		}
 	}
-	\caption{Primeira fase do cálculo, recursão \textit{bottom-up}.}
+	\caption{Primeira fase do cálculo, recursão \textit{(bottom-up)}.}
 \end{algorithm}
 
+No caso de seguimentos que possuam apenas um vaso inferior, a recursão é enviada para o segmento existente e o para o segmento ausente se assume que $Y_e = 0$.
+
+A segunda fase do algoritmo foi desenvolvida para calcular o valor da pressão média e ondas de pressão e fluxo em cada segmento. Como visto na equação~\eqref{18_barp} o valor da pressão média requer o valor da pressão média do segmento superior $(k-1,s)$. Com isso, verifica-se se o segmento atual é a raiz, neste caso $\bar{p} = \bar{p_0}$, caso contrário é se faz necessário o cálculo de $\bar{p}$ com a equação~\eqref{18_barp}. Em seguida o valor das ondas de pressão e fluxo são adquiridos pelo domínio do segmento. Por último a recursão é enviada aos segmentos inferiores, desta forma se garante a existência de um valor $\bar{p}(k-1,s)$.
+
 \begin{algorithm}[H]
-\textbf{\textit{\textsl{\underline{fase dois}}}}(a,f,$\epsilon$,$\phi_0$)
+\textbf{\textit{\textsl{\underline{fase dois}}}}(a,f,$\epsilon$,$\phi_0$) \\
 \Inicio{
 	\Se{a $\in$ raiz}{
 		$\bar{p} = \bar{p_0}$
 	}
 	\Senao{
-		Calcula $\alpha$,$\epsilon$,$E_v$,$c_v$,$Y_v$
+		Calcula $\bar{p}$
 	}
-	Calcula $P(x) e Q(x) \forall x \in [0,1])$,$\omega$,$\beta$
+	Calcula $P(X) e Q(X) \forall X \in [0,1])$ \\
 	\Se{existe(a $\rightarrow$ adjacente)}{
 		Envia a recursão \textit{fase dois}(a $\rightarrow$ esquerda,f,$\epsilon$,$\phi_0$)
 	}
@@ -551,16 +565,60 @@ A linguagem permite que objetos sejam passados por referência de ponteiros, por
 		Envia a recursão \textit{fase dois}(a $\rightarrow$ direita,f,$\epsilon$,$\phi_0$)
 	}
 }
-\caption{Segunda fase do cálculo, recursão \textit{bottom-up}.}
+\caption{Segunda fase do cálculo, recursão \textit{(bottom-up)}.}
 \end{algorithm}
+
+Ao término da execução os valores contidos na artéria são analisados separadamente. A onda de pressão e fluxo representa um conjunto de valores por segmento que precisam ser calculados e armazenados, para isto é preciso determinar a quantidade de pontos $N$ que serão analisados dentro do espaço $X \in [0,1]$, foi adotado $N = 101$. No caso da onda de pressão os valores encontrados para ramo de árvore deve resultar em um gráfico contínuo, isto é $P(k,j)(X=0) = P(k+1,2j)(X=q1)$ e $P(k,j)(X=0) = P(k+1,2j-1)(X=1)$.
+	
 %===================================================================================%
 \chapter{Ferramenta computacional}\label{sec:modelagem}
 
-Nesta seção apresentam-se detalhes da ferramenta computacional desenvolvida para geração de modelos de árvores arteriais e em seguida realizar uma simulação do escoamento sanguíneo em modelos de árvores arteriais. Com esta ferramenta, o usuário poderá  visualizar a estrutura da árvore arterial e depois da simulação hemodinâmica, visualizar curvas de distribuição de fluxo sanguíneo e pressão.
+Nesta seção apresentam-se detalhes da ferramenta computacional desenvolvida para simulação do escoamento sanguíneo em modelos de árvores arteriais. Com esta ferramenta, o usuário poderá  visualizar a estrutura da árvore arterial e depois da simulação hemodinâmica, visualizar curvas de distribuição de fluxo sanguíneo e pressão.
 
-Esta ferramenta foi desenvolvida em C++ utilizando as bibliotecas comuns do Qt 5.12.2 \cite{QTClasses} e do OpenGL \cite{OpenGL}, que facilitam a criação da interface gráfica e a exibição de objetos, como árvores arteriais e gráficos. Ela foi nomeada de \textit{Iterador Gráfico Universal} (IGU), pois em sua modelagem de objetos qualquer objeto, que implemente a classe \textit{GraphicObject} explicada na Seção~\ref{sec:objetos}, está apto para realizar iterações e desenhar-se através de diretivas OpenGL em um objeto de interface gráfica. Buscou-se no desenvolvimento desta ferramenta alto grau de generalização para que possa ser utilizada por diferentes objetos dentro do ambiente. Além de árvores arteriais menciona-se que a ferramenta itera diferentes objetos gráficos, entre eles grafos e autômatos, por isto uma nomenclatura genérica.
+Esta ferramenta foi desenvolvida em C++ utilizando as bibliotecas comuns do Qt 5.15.0 \cite{QTClasses} e do OpenGL \cite{OpenGL}, que facilitam a criação da interface gráfica e a exibição de objetos, como árvores arteriais e gráficos. Ela foi nomeada de \textit{Iterador Gráfico Universal} (IGU), pois em sua modelagem de objetos qualquer objeto, que implemente a classe \textit{WiseObject} explicada na Seção~\ref{sec:objetos}, está apto para realizar iterações e desenhar-se através de diretivas OpenGL em um objeto de interface gráfica. Buscou-se no desenvolvimento desta ferramenta alto grau de generalização para que possa ser utilizada por diferentes objetos dentro do ambiente. Além de árvores arteriais menciona-se que a ferramenta itera diferentes estruturas de dados, entre eles grafos e autômatos, por isto uma nomenclatura genérica.
 
 A Figura~\ref{fig1:gui} ilustra a ferramenta desenvolvida. À seguir, apresentam-se em detalhes a implementação computacional realizada.
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=0.25]{Figures/IGU.png}
+	\caption{Interface gráfica da ferramenta desenvolvida.}
+	\label{fig1:gui}
+\end{figure}
+
+Através da modelagem de classes no paradigma do C++ \cite{AlanParker}, foi possível realizar diversas generalizações para ampliar a quantidade de objetos que podem ser inseridos neste modelo de classes. Na seção seguinte apresentamos um esquema de classes virtuais, ou abstratas, que foram criadas para facilitar o manuseio dos objetos dentro do ambiente computacional e prover funções básicas, a classe \textit{WiseElement}. Denomina-se um elemento inteligente aquele que herdar esta classe \textit{WiseElemet}.
+
+%--------------------------------------------------------------------------------%
+\section{Estrutura de Dados}\label{sec:estrutura}
+
+Nesta seção apresentam-se detalhes da estrtura de dados adotada no funcionamento da ferramenta computacional. Como mencionado na Seção~\ref{sec:algoritmo} é utilizada uma estrutura de ponteiros que é capaz de armazenar todas as informações do modelo geométrico da árvore arterial. A ferramenta computacional foi desenvolvida para ser capaz de armazenar, carregar e iterar este modelo bem como gerar novas estruturas para visualização.
+
+Baseando-se na estrutura básica presente nos arquivos de visualização do \textit{VTK}(\textit{Visualization ToolKit}) a estrutura presente na Figura~\ref{fig2:wiselement} foi criada.
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=1]{Figures/WiseElement.png}
+	\caption{Representação de classses de um elemento inteligente. WiseElement a classe abstrata base e seus componentes:WiseStructure representa a estrutura contida em um arquivo VTK e DataStructure representa a estrutura de ponteiros e variáveis utilizadas na iteração. Tingido de azul as estruturas que nem sempre estão presentes.}
+	\label{fig2:wiselement}
+\end{figure}
+
+A Figura~\ref{fig2:wiselement} mostra que um elemento inteligente é composto por duas outras estruturas, uma delas utiliza pontos, linhas, células, linhas e campos para determinar estruturas geométricas. Isto foi feito para facilitar a leitura e escrita de objetos, pois a classe WiseElement foi desenvolvida para construir a estrutura abstrata à partir destas informações. A segunda estrutura não está sempre presente pois como veremos é custoso manter em memória esta estrutura para todos os elementos. Portanto, todos os elementos inteligente obedecem à máquina de status contida na Figura~\ref{fig3:wiselementstatus}.
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=1]{Figures/WiseElementStatus.png}
+	\caption{Máquina de Status que contola o funcionamento de um elemento inteligente.}
+	\label{fig3:wiselementstatus}
+\end{figure}
+
+Todo elemento inteligente é criado no estado \textit{Raw}, ou cru, que representa um elemento ainda sem estruturas básicas carregadas. Uma vez que as estruturas são inseridas e verificadas o elemento muda para o status \textit{Warming} ou \textit{Cooling}, respectivamente esquentando ou esfriando, que estão representados na Figura~\ref{fig4:wiselementwarming}.
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=1]{Figures/WiseElementWarming.png}
+	\caption{Elemento inteligente enquanto no estado \textit{Warming}.}
+	\label{fig4:wiselementwarming}
+\end{figure}
 
 
 %=========================================================%

@@ -108,6 +108,10 @@ Dispon{\'\i}vel em: \url{https://www.opengl.org/}.}
 {MCDONALD, D.~A. Blood flow in arteries.
 \emph{Baltimore: Williams \& Wilkins}, 1974.}
 
+\bibitem[Parker 1959]{AlanParker}
+\abntrefinfo{Parker}{PARKER}{1959}
+{PARKER, A. \emph{Algorithms and Data Structures in C++}. [S.l.: s.n.], 1959.}
+
 \bibitem[Peskin 1972]{Peskin1972}
 \abntrefinfo{Peskin}{PESKIN}{1972}
 {PESKIN, C. Flow patterns around heart valves: a numerical method.
