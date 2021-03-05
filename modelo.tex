@@ -22,6 +22,7 @@
 \usepackage[alf,bibjustif]{abntex2cite}
 \usepackage{amsmath}
 \usepackage{breqn}
+\usepackage{lipsum}
 
 %% -----------------------------------------------------------------------------
 
@@ -558,7 +559,7 @@ A segunda fase do algoritmo foi desenvolvida para calcular o valor da pressão m
 		Calcula $\bar{p}$
 	}
 	Calcula $P(X) e Q(X) \forall X \in [0,1])$ \\
-	\Se{existe(a $\rightarrow$ adjacente)}{
+	\Se{existe(a $\rightarrow$ esquerda)}{
 		Envia a recursão \textit{fase dois}(a $\rightarrow$ esquerda,f,$\epsilon$,$\phi_0$)
 	}
 	\Se{existe(a $\rightarrow$ direita)}{
@@ -602,7 +603,29 @@ Baseando-se na estrutura básica presente nos arquivos de visualização do \tex
 	\label{fig2:wiselement}
 \end{figure}
 
-A Figura~\ref{fig2:wiselement} mostra que um elemento inteligente é composto por duas outras estruturas, uma delas utiliza pontos, linhas, células, linhas e campos para determinar estruturas geométricas. Isto foi feito para facilitar a leitura e escrita de objetos, pois a classe WiseElement foi desenvolvida para construir a estrutura abstrata à partir destas informações. A segunda estrutura não está sempre presente pois como veremos é custoso manter em memória esta estrutura para todos os elementos. Portanto, todos os elementos inteligente obedecem à máquina de status contida na Figura~\ref{fig3:wiselementstatus}.
+A Figura~\ref{fig2:wiselement} mostra que um elemento inteligente é composto por duas outras estruturas: A primeira \textit{WiseStructure}, utiliza pontos, linhas, células, linhas e campos para determinar estruturas geométricas; A segunda \textit{DataSructure}, representa os dados abstratos específicos de cada elemento.
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=0.8]{Figures/WiseElements.png}
+	\caption{Tipos de elementos inteligentes. \textit{WiseGraphic}, um gráfico bidimensional. \textit{WiseMesh}, uma malha bidimensional. \textit{WisePoly}, uma malha tridimensional. \textit{WiseArteryTree}, uma árvore arterial}
+	\label{fig2:wiselements}
+\end{figure}
+
+ Como demonstrado na Figura~\ref{fig2:wiselements} um elemento inteligente é aquele que implementa a estrutura abstrata de \textit{WiseElement}, os dados abstratos de cada classe podem ser salvos na estrutura disponível \textit{WiseStructure} e utilizados quando necessário. As informações geométricas da arvore arterial estão presentes no elemento \textit{WiseArteryTree}, que como dados abstratos possui os ponteiros para os segmentos e os dados gerais do modelo.
+O elemento inteligente então poderá ser representado em qualquer uma destas estruturas, sendo a \textit{DataStructure} a estrutura de dados abstratos utilizados em cada iteração e a \textit{WiseStructure} utilizada principalmente para leitura e escrita.
+
+\begin{figure}[!htbp]
+	\includegraphics[width=0.33\textwidth,left]{Figures/WiseElementPoints.png}
+	\includegraphics[width=0.32\textwidth,center]{Figures/WiseElementLines.png}
+	\includegraphics[width=0.33\textwidth,right]{Figures/WiseElementCells.png}
+	\caption{Pontos utilizados na especificação do modelo geométrico.Linhas utilizadas na especificação do modelo geométrico, através dos pontos previamente definidos. Células utilizadas na especificação do modelo geométrico, através dos pontos previamente definidos.}
+	\label{fig2:wiselementstructs}
+\end{figure}
+
+Utilizando pontos e linhas é possível representar o mesmo modelo geométrico de uma árvore arterial, basta considerar cada ponto uma bifurcação de vasos e cada segmento de vaso uma linha. Através dessa estrutura de dados é possível salvar dados sobre cada ponto e linha, desta forma é possível armazenar as informações do modelo geométrico nesta estrutura. Para dados gerais do modelo, como a frequência $f$, os campos da estrutura são utilizados.
+
+Isto foi feito para facilitar a leitura e escrita de objetos, pois a classe WiseElement foi desenvolvida para construir a estrutura abstrata à partir destas informações. A segunda estrutura não está sempre presente, pois como veremos é custoso manter em memória esta estrutura para todos os elementos. Portanto, todos os elementos inteligente obedecem à máquina de status contida na Figura~\ref{fig3:wiselementstatus}.
 
 \begin{figure}[!htbp]
 	\centering
@@ -620,17 +643,29 @@ Todo elemento inteligente é criado no estado \textit{Raw}, ou cru, que represen
 	\label{fig4:wiselementwarming}
 \end{figure}
 
+A estrutura contida em um elemento no estado \textit{Warming} é igual à dos estados \textit{Raw} e \textit{Cooling}. Entretanto no estado \textit{Raw} não é esperado que os dados sejam consistentes, enquanto o estado \textit{Cooling} indica que o elemento aguarda que seus dados sejam salvos em cache.
+
+Como demonstrado na figura~\ref{fig3:wiselementstatus}, o estado frio (\textit{Cold}) está associado com o uso de um cache para elementos estruturais, esses elementos são efetivamente salvos em um arquivo \textit{XML (Extensible Markup Language)}. Caso sejam novamente carregados por uma mudança de estado ou deletados o arquivo em cache é deletado. Quando um elemento inteligente está neste estado ele contém apenas o endereço para o arquivo em que foi armazenado.
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=1]{Figures/WiseElementCold.png}
+	\caption{Elemento inteligente enquanto no estado \textit{Cold}.}
+	\label{fig5:wiselementcold}
+\end{figure}
+
+
 
 %=========================================================%
 
-\begin{citacao}
-As cita\c{c}\~oes diretas, no texto, com mais de tr\^es linhas, devem ser destacadas 
-com recuo de 4 cm da margem esquerda, com letra menor que a do texto utilizado 
-e sem as aspas. [...] Para enfatizar trechos da cita\c{c}\~ao, deve-se destac\'a-los indicando esta 
-altera\c{c}\~ao com express\~ao grifo nosso entre par\^enteses, ap\'os a chamada da cita\c{c}\~ao, ou grifo 
-do autor, caso o destaque j\'a fa\c{c}a parte da obra consultada. (ASSOCIA\c{C}\~AO BRASILEIRA DE NORMAS 
-T\'ECNICAS, 2002, p. 2-3)
-\end{citacao}
+% \begin{citacao}
+% As cita\c{c}\~oes diretas, no texto, com mais de tr\^es linhas, devem ser destacadas 
+% com recuo de 4 cm da margem esquerda, com letra menor que a do texto utilizado 
+% e sem as aspas. [...] Para enfatizar trechos da cita\c{c}\~ao, deve-se destac\'a-los indicando esta 
+% altera\c{c}\~ao com express\~ao grifo nosso entre par\^enteses, ap\'os a chamada da cita\c{c}\~ao, ou grifo 
+% do autor, caso o destaque j\'a fa\c{c}a parte da obra consultada. (ASSOCIA\c{C}\~AO BRASILEIRA DE NORMAS 
+% T\'ECNICAS, 2002, p. 2-3)
+% \end{citacao}
 
 %As instru\c{c}\~oes aqui contidas buscam ajudar a direcionar e orientar quanto \`a padroniza\c{c}\~ao das monografias, dissertac\~oes e teses na UFJF. 
 %Ser\~ao apresentados alguns exemplos de refer\^encias apenas como modelo de documento. Detalhes completos sobre como apresentar as refer\^encias se 
@@ -732,13 +767,13 @@ T\'ECNICAS, 2002, p. 2-3)
 %\end{center}
 %\end{table}
 
-\subsubsection{\textit{Se\c{c}\~ao quatern\'aria}} %% O t\'itulo da subsubse\c{c}\~ao vem em it\'alico e caixa baixa 
+% \subsubsection{\textit{Se\c{c}\~ao quatern\'aria}} %% O t\'itulo da subsubse\c{c}\~ao vem em it\'alico e caixa baixa 
 
-Se houver se\c{c}\~ao quatern\'aria, incluir texto ...
+% Se houver se\c{c}\~ao quatern\'aria, incluir texto ...
 
-\subsubsubsection{Se\c{c}\~ao quin\'aria}  %% O t\'itulo desta vem em caixa baixa
+% \subsubsubsection{Se\c{c}\~ao quin\'aria}  %% O t\'itulo desta vem em caixa baixa
 
-Se houver se\c{c}\~ao quin\'aria, incluir texto ...
+% Se houver se\c{c}\~ao quin\'aria, incluir texto ...
 
 
 %\chapter{NOME DO CAP\'ITULO}
