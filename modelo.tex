@@ -348,7 +348,7 @@ p_b (k-1,s) &=& R (k-1,s)\bar{p}(k-1,s)\exp\left[ i\omega \left( t - \frac{2L(k-
 No nó distal do vaso superior, $x(k-1,s) = L(k-1,s)$, a pressão é dada por:
 \begin{equation}
 \left[ p(k-1,s) \right]_A = \left[ p_f(k-1,s)\right]_A + \left[ p_b(k-1,s) \right]_A,
-\label{12_p|_f}
+\label{13_p|_f}
 \end{equation}
 nos quais 
 \begin{eqnarray}
@@ -576,7 +576,7 @@ Ao término da execução os valores contidos na artéria são analisados separa
 
 Nesta seção apresentam-se detalhes da ferramenta computacional desenvolvida para simulação do escoamento sanguíneo em modelos de árvores arteriais. Com esta ferramenta, o usuário poderá  visualizar a estrutura da árvore arterial e depois da simulação hemodinâmica, visualizar curvas de distribuição de fluxo sanguíneo e pressão.
 
-Esta ferramenta foi desenvolvida em C++ utilizando as bibliotecas comuns do Qt 5.15.0 \cite{QTClasses} e do OpenGL \cite{OpenGL}, que facilitam a criação da interface gráfica e a exibição de objetos, como árvores arteriais e gráficos. Ela foi nomeada de \textit{Iterador Gráfico Universal} (IGU), pois em sua modelagem de objetos qualquer objeto, que implemente a classe \textit{WiseObject} explicada na Seção~\ref{sec:objetos}, está apto para realizar iterações e desenhar-se através de diretivas OpenGL em um objeto de interface gráfica. Buscou-se no desenvolvimento desta ferramenta alto grau de generalização para que possa ser utilizada por diferentes objetos dentro do ambiente. Além de árvores arteriais menciona-se que a ferramenta itera diferentes estruturas de dados, entre eles grafos e autômatos, por isto uma nomenclatura genérica.
+Esta ferramenta foi desenvolvida em C++ utilizando as bibliotecas comuns do Qt 5.15.0 \cite{QTClasses} e do OpenGL \cite{OpenGL}, que facilitam a criação da interface gráfica e a exibição de objetos, como árvores arteriais e gráficos. Ela foi nomeada de \textit{Iterador Gráfico Universal} (IGU), pois em sua modelagem de objetos qualquer objeto, que implemente a classe \textit{WiseObject} explicada na Seção~\ref{sec:estrutura}, está apto para realizar iterações e desenhar-se através de diretivas OpenGL em um objeto de interface gráfica. Buscou-se no desenvolvimento desta ferramenta alto grau de generalização para que possa ser utilizada por diferentes objetos dentro do ambiente. Além de árvores arteriais menciona-se que a ferramenta itera diferentes estruturas de dados, entre eles grafos e autômatos, por isto uma nomenclatura genérica.
 
 A Figura~\ref{fig1:gui} ilustra a ferramenta desenvolvida. À seguir, apresentam-se em detalhes a implementação computacional realizada.
 
@@ -616,9 +616,9 @@ A Figura~\ref{fig2:wiselement} mostra que um elemento inteligente é composto po
 O elemento inteligente então poderá ser representado em qualquer uma destas estruturas, sendo a \textit{DataStructure} a estrutura de dados abstratos utilizados em cada iteração e a \textit{WiseStructure} utilizada principalmente para leitura e escrita.
 
 \begin{figure}[!htbp]
-	\includegraphics[width=0.33\textwidth,left]{Figures/WiseElementPoints.png}
-	\includegraphics[width=0.32\textwidth,center]{Figures/WiseElementLines.png}
-	\includegraphics[width=0.33\textwidth,right]{Figures/WiseElementCells.png}
+	\includegraphics[width=0.33\textwidth]{Figures/WiseElementPoints.png}
+	\includegraphics[width=0.32\textwidth]{Figures/WiseElementLines.png}
+	\includegraphics[width=0.33\textwidth]{Figures/WiseElementCells.png}
 	\caption{Pontos utilizados na especificação do modelo geométrico.Linhas utilizadas na especificação do modelo geométrico, através dos pontos previamente definidos. Células utilizadas na especificação do modelo geométrico, através dos pontos previamente definidos.}
 	\label{fig2:wiselementstructs}
 \end{figure}
