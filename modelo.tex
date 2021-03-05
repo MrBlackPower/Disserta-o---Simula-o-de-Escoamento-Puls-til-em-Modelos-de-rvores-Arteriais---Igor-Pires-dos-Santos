@@ -159,43 +159,43 @@ Keywords: Árvores arteriais. Pulsatile flow. Computational hemodynamics. %final
 
 %% Lista de s\'imbolos. OPCIONAL
 \begin{simbolos} %%ALTERAR OS EXEMPLOS ABAIXO, CONFORME A NECESSIDADE$R_s$: Resistência hidrodinâmica do segmento s\\
-\item [$\eta$] Viscosidade Sanguínea \\
-\item [$s$] Comprimento do segmento s\\
-\item [$\Delta p_s$] Queda de pressão ao longo do segmento s\\
-\item [$Q_s$] Fluxo sanguíneo através do segmento s \\
-\item [$p_{perf}$] Pressão de perfusão na posição proximal \\
-\item [$p_{term}$] Pressão terminal na posição distal \\
-\item [$\mathbf{x}_{prox}$] Posição proximal do segmento raiz \\
-\item [$r_p$] Raio do segmento pai \\
-\item [$r_{esq}$] Raio do segmento filho à esquerda \\
-\item [$r_{dir}$] Raio do segmento filho à direita \\
-\item [$ktot$] Número de segmentos existentes na árvore \\
-\item [$T$] Função custo para o CCO \\
-\item [$\mu_p$] Dimensionalidade de $T$ \\
-\item [$\lambda$] Dimensionalidade de $T$ \\
-\item [$p$] Pressão \\
+\item [$\eta$] Viscosidade Sanguínea 
+\item [$s$] Comprimento do segmento $s$
+\item [$\Delta p_s$] Queda de pressão ao longo do segmento $s$
+\item [$Q_s$] Fluxo sanguíneo através do segmento $s $
+\item [$p_{perf}$] Pressão de perfusão na posição proximal 
+\item [$p_{term}$] Pressão terminal na posição distal
+\item [$\mathbf{x}_{prox}$] Posição proximal do segmento raiz 
+\item [$r_p$] Raio do segmento pai
+\item [$r_{esq}$] Raio do segmento filho à esquerda
+\item [$r_{dir}$] Raio do segmento filho à direita
+\item [$ktot$] Número de segmentos existentes na árvore
+\item [$T$] Função custo para o CCO
+\item [$\mu_p$] Dimensionalidade de $T$
+\item [$\lambda$] Dimensionalidade de $T$
+\item [$p$] Pressão
 \item [$q$] Fluxo
-\item [$t$] Tempo \\
-\item [$x$] Coordenada axial ao longo do tubo arterial \\
-\item [$c$] Velocidade de onda \\
-\item [$Y$] Admitância do segmento arterial \\
-\item [$A$] Área da seção transversal do segmento arterial \\
-\item [$\rho$] Densidade do fluido \\
-\item [$w$] Frequência angular \\
-\item [$f$] Frequência da onda \\
-\item [$L$] Comprimento do tubo arterial \\
-\item [$k$] Geração do segmento na árvore \\
-\item [$j$] Posição do segmento arteria na geração da árvore \\
-\item [$E$] Módulo de Young \\
-\item [$h$] espessura da parede do segmento de tubo arterial \\
-\item [$p_f$] Pressão na posição proximal do segmento arterial \\
-\item [$p_b$] Pressão na posição distal do segmento arterial \\
-\item [$R$] Coeficiente de Reflexão \\
-\item [$Y_e$] Admitância efetiva do segmento arterial \\
-\item [$\alpha$] Número de Womersley \\
-\item [$\epsilon$] Fator viscoso do segmento arterial \\
-\item [$\mu$] Viscosidade no segmento arterial \\
-\item [$J_p$] Funçao de Bessel de índice $p$ \\
+\item [$t$] Tempo
+\item [$x$] Coordenada axial ao longo do tubo arterial
+\item [$c$] Velocidade de onda
+\item [$Y$] Admitância do segmento arterial
+\item [$A$] Área da seção transversal do segmento arterial
+\item [$\rho$] Densidade do fluido
+\item [$w$] Frequência angular
+\item [$f$] Frequência da onda
+\item [$L$] Comprimento do tubo arterial
+\item [$k$] Geração do segmento na árvore
+\item [$j$] Posição do segmento arteria na geração da árvore
+\item [$E$] Módulo de Young
+\item [$h$] espessura da parede do segmento de tubo arterial
+\item [$p_f$] Pressão na posição proximal do segmento arterial
+\item [$p_b$] Pressão na posição distal do segmento arterial
+\item [$R$] Coeficiente de Reflexão
+\item [$Y_e$] Admitância efetiva do segmento arterial
+\item [$\alpha$] Número de Womersley
+\item [$\epsilon$] Fator viscoso do segmento arterial
+\item [$\mu$] Viscosidade no segmento arterial
+\item [$J_p$] Funçao de Bessel de índice $p$
 %  \item[$ \forall $] Para todo
 %  \item[$ \in $] Pertence
  \end{simbolos}
@@ -373,12 +373,18 @@ Substituindo as equações \eqref{10_p_f}, \eqref{11_p_b}, \eqref{15_p_f} e \eqr
 
 Conforme Duan e Zamir \cite{Duan}, para efeitos de cálculo da pressão e fluxo, adimensionalizam-se as pressões em \eqref{18_barp} em termos da pressão de entrada $p_0 = \bar{p}_0 \exp[i\omega t]$. Considerando $P(k,j) = \frac{p(k,j)}{p_0}$ e $\bar{P} (k,j) = \frac{\bar{p}(k,j)}{\bar{p}_0}$, a equação~\eqref{05_p} para o cálculo da pressão  pode ser expressa de forma adimensionalizada por:
 \begin{equation}
-P(k,j) = \bar{P}(k,j)\left\{\exp[ -i\beta(k,j) X(k,j)] + R(k,j) \exp[-i2\beta(k,j)] \exp[i\beta(k,j) X(k,j)]\right\}
+\begin{split}
+P(k,j) = \bar{P}(k,j)\big\{&\exp[ -i\beta(k,j) X(k,j)] \\
+& + R(k,j) \exp[-i2\beta(k,j)] \exp[i\beta(k,j) X(k,j)]\big\}
+\end{split}
 \label{21_P},
 \end{equation}
 nos quais $\beta(k,j) = \frac{\omega(k,j) L(k,j)}{c(k,j)}$ e $X = \frac{x(k,j)}{L(k,j)}$. Similarmente, a equação\eqref{06_q} para o fluxo $q(k,j)$ pode ser obtida de forma adimensionalizada por:
 \begin{equation}
-Q(k,j) = M(k,j)\bar{P}(k,j)\left\{\exp\left[ -i\beta(k,j) X(k,j) \right]  - R(k,j) \exp[ -2i\beta(k,j)] \exp[i\beta(k,j) X(k,j)] \right\},
+\begin{split}
+Q(k,j) = M(k,j)\bar{P}(k,j)\big\{ &\exp\left[ -i\beta(k,j) X(k,j) \right] \\ 
+&- R(k,j) \exp[ -2i\beta(k,j)] \exp[i\beta(k,j) X(k,j)] \big\},
+\end{split}
 \label{23_Q}
 \end{equation}
 nos quais $Q(k,j) = \frac{q (k,j)}{q_0}$, $M = \frac{Y(k,j)}{Y(1,1)}$ e $q_0 = Y(1,1)p_0$. O cálculo da admitância $Y(1,1)$ na posição proximal do segmento raiz, ou seja, da artéria de alimentação é apresentado na próxima seção.
@@ -594,7 +600,7 @@ Através da modelagem de classes no paradigma do C++ \cite{AlanParker}, foi poss
 
 Nesta seção apresentam-se detalhes da estrtura de dados adotada no funcionamento da ferramenta computacional. Como mencionado na Seção~\ref{sec:algoritmo} é utilizada uma estrutura de ponteiros que é capaz de armazenar todas as informações do modelo geométrico da árvore arterial. A ferramenta computacional foi desenvolvida para ser capaz de armazenar, carregar e iterar este modelo bem como gerar novas estruturas para visualização.
 
-Baseando-se na estrutura básica presente nos arquivos de visualização do \textit{VTK}(\textit{Visualization ToolKit}) a estrutura presente na Figura~\ref{fig2:wiselement} foi criada.
+Baseando-se na estrutura básica presente nos arquivos de visualização do \textit{VTK}(\textit{Visu\\-alization ToolKit}) a estrutura presente na Figura~\ref{fig2:wiselement} foi criada.
 
 \begin{figure}[!htbp]
 	\centering
