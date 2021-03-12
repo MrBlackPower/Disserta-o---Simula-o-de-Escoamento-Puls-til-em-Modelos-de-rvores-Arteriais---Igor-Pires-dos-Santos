@@ -1,4 +1,4 @@
-% !TeX spellcheck = en_US
+% !TeX spellcheck = pt_BR
 \documentclass[
         %oneside,         	 %%retire % do in\'icio desta linha para n\~ao imprimir frente e verso 
         english,			
@@ -442,7 +442,7 @@ A partir do modelo matemático aqui apresentado, os seguintes cenários são inv
 	onde $J_p$ denota a função de Bessel de índice $p$.
 	
 	\item \textbf{cenário 2}: análise do impacto da viscoelasticidade da parede do vaso ($\phi_0$).\\
-	A viscoelasticidade da parede do segmento é incorporado sustituindo o módulo de Young
+	A viscoelasticidade da parede do segmento é incorporado substituindo o módulo de Young
 	estático $E(k,j)$ por um módulo elástico complexo $E_c(k,j)$ no cálculo da velocidade $c(k,j)$ na equação~\eqref{eq:velocidade}
 	da seguinte forma~\cite{Duan}:
 	\begin{equation}
@@ -593,23 +593,23 @@ A Figura~\ref{fig1:gui} ilustra a ferramenta desenvolvida. À seguir, apresentam
 	\label{fig1:gui}
 \end{figure}
 
-Através da modelagem de classes no paradigma do C++ \cite{AlanParker}, foi possível realizar diversas generalizações para ampliar a quantidade de objetos que podem ser inseridos neste modelo de classes. Na seção seguinte apresentamos um esquema de classes virtuais, ou abstratas, que foram criadas para facilitar o manuseio dos objetos dentro do ambiente computacional e prover funções básicas, a classe \textit{WiseElement}. Denomina-se um elemento inteligente aquele que herdar esta classe \textit{WiseElemet}.
+Através da modelagem de classes no paradigma do C++ \cite{AlanParker}, foi possível realizar diversas generalizações para ampliar a quantidade de objetos que podem ser inseridos neste modelo de classes. Na seção seguinte apresentamos um esquema de classes virtuais, ou abstratas, que foram criadas para facilitar o manuseio dos objetos dentro do ambiente computacional e prover funções básicas, a classe \textit{WiseElement}. Objetos que recebem essa estrutura básica por herança são nomeados de elementos inteligentes.
 
 %--------------------------------------------------------------------------------%
 \section{Estrutura de Dados}\label{sec:estrutura}
 
-Nesta seção apresentam-se detalhes da estrtura de dados adotada no funcionamento da ferramenta computacional. Como mencionado na Seção~\ref{sec:algoritmo} é utilizada uma estrutura de ponteiros que é capaz de armazenar todas as informações do modelo geométrico da árvore arterial. A ferramenta computacional foi desenvolvida para ser capaz de armazenar, carregar e iterar este modelo bem como gerar novas estruturas para visualização.
+Nesta seção apresentam-se detalhes da estrutura de dados adotada no funcionamento da ferramenta computacional. Como mencionado na Seção~\ref{sec:algoritmo} é utilizada uma estrutura de ponteiros que é capaz de armazenar todas as informações do modelo geométrico da árvore arterial. A ferramenta computacional foi desenvolvida para ser capaz de armazenar, carregar e iterar este modelo bem como gerar novas estruturas para visualização.
 
-Baseando-se na estrutura básica presente nos arquivos de visualização do \textit{VTK}(\textit{Visu\\-alization ToolKit}) a estrutura presente na Figura~\ref{fig2:wiselement} foi criada.
+Através da estrutura de malha estruturada e desestruturada presente na biblioteca \textit{VTK}(\textit{Visualization ToolKit}) é posível descrever os mais diversos tipos de dados com diretivas simples. Baseando-se nessa estrutura básica a arquitetura presente na Figura~\ref{fig2:wiselement} foi criada.
 
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[scale=1]{Figures/WiseElement.png}
-	\caption{Representação de classses de um elemento inteligente. WiseElement a classe abstrata base e seus componentes:WiseStructure representa a estrutura contida em um arquivo VTK e DataStructure representa a estrutura de ponteiros e variáveis utilizadas na iteração. Tingido de azul as estruturas que nem sempre estão presentes.}
+	\caption{Representação de classes de um elemento inteligente. WiseElement a classe abstrata base e seus componentes:WiseStructure representa a estrutura contida em um arquivo VTK e DataStructure representa a estrutura de ponteiros e variáveis utilizadas na iteração. Tingido de azul as estruturas que nem sempre estão presentes.}
 	\label{fig2:wiselement}
 \end{figure}
 
-A Figura~\ref{fig2:wiselement} mostra que um elemento inteligente é composto por duas outras estruturas: A primeira \textit{WiseStructure}, utiliza pontos, linhas, células, linhas e campos para determinar estruturas geométricas; A segunda \textit{DataSructure}, representa os dados abstratos específicos de cada elemento.
+A Figura~\ref{fig2:wiselement} mostra que um elemento inteligente é composto por duas outras estruturas: A primeira \textit{WiseStructure}, utiliza pontos(\textit{Points}), linhas(\textit{Lines}), célula(\textit{Cells})s e campos(\textit{Fields}) para determinar estruturas geométricas; A segunda \textit{DataSructure}, representa os dados abstratos específicos de cada elemento.
 
 \begin{figure}[!htbp]
 	\centering
@@ -618,14 +618,14 @@ A Figura~\ref{fig2:wiselement} mostra que um elemento inteligente é composto po
 	\label{fig2:wiselements}
 \end{figure}
 
- Como demonstrado na Figura~\ref{fig2:wiselements} um elemento inteligente é aquele que implementa a estrutura abstrata de \textit{WiseElement}, os dados abstratos de cada classe podem ser salvos na estrutura disponível \textit{WiseStructure} e utilizados quando necessário. As informações geométricas da arvore arterial estão presentes no elemento \textit{WiseArteryTree}, que como dados abstratos possui os ponteiros para os segmentos e os dados gerais do modelo.
+ Como demonstrado na Figura~\ref{fig2:wiselements} um elemento inteligente é aquele que implementa a estrutura abstrata de \textit{WiseElement}, os dados abstratos de cada classe podem ser salvos na estrutura disponível(\textit{WiseStructure}) e utilizados quando necessário. As informações geométricas da arvore arterial estão presentes na estrutura básica \textit{WiseStructure} \textit{WiseArteryTree}, que como dados abstratos possui os ponteiros para segmentos e dados gerais do modelo.
 O elemento inteligente então poderá ser representado em qualquer uma destas estruturas, sendo a \textit{DataStructure} a estrutura de dados abstratos utilizados em cada iteração e a \textit{WiseStructure} utilizada principalmente para leitura e escrita.
 
 \begin{figure}[!htbp]
 	\includegraphics[width=0.33\textwidth]{Figures/WiseElementPoints.png}
 	\includegraphics[width=0.32\textwidth]{Figures/WiseElementLines.png}
 	\includegraphics[width=0.33\textwidth]{Figures/WiseElementCells.png}
-	\caption{Pontos utilizados na especificação do modelo geométrico.Linhas utilizadas na especificação do modelo geométrico, através dos pontos previamente definidos. Células utilizadas na especificação do modelo geométrico, através dos pontos previamente definidos.}
+	\caption{Pontos utilizados na especificação do modelo geométrico. Linhas utilizadas na especificação do modelo geométrico, através dos pontos previamente definidos. Células utilizadas na especificação do modelo geométrico, através dos pontos previamente definidos.}
 	\label{fig2:wiselementstructs}
 \end{figure}
 

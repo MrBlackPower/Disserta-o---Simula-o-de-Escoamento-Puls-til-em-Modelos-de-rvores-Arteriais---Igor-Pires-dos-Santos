@@ -18,17 +18,17 @@
 \contentsline {chapter}{\chapternumberline {3}Ferramenta computacional}{39}{chapter.54}%
 \contentsline {section}{\numberline {3.1}Estrutura de Dados}{40}{section.56}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}CONCLUS\~AO}{43}{chapter.63}%
+\contentsline {chapter}{\chapternumberline {4}CONCLUS\~AO}{45}{chapter.63}%
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\bfseries REFER\^ENCIAS}{45}{chapter*.65}%
+\contentsline {chapter}{\bfseries REFER\^ENCIAS}{47}{chapter*.65}%
 \renewcommand *{\cftappendixname }{\bfseries AP\^ENDICE \space }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}T\'itulo}{47}{appendix.66}%
+\contentsline {appendix}{\chapternumberline {A}T\'itulo}{49}{appendix.66}%
 \cftinsert {AAA}
 \renewcommand *{\cftappendixname }{\bfseries ANEXO \space }
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}T\'itulo}{49}{appendix.67}%
+\contentsline {appendix}{\chapternumberline {A}T\'itulo}{51}{appendix.67}%
