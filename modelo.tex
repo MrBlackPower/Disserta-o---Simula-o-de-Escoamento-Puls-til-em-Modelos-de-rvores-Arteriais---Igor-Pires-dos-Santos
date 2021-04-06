@@ -234,32 +234,15 @@ A construção de modelos geométricos para representação adequada dos leitos 
 
 O cálculo correto das características locais das ondas de pressão e fluxo a medida que elas progridem ao longo de uma estrutura de árvore e se tornam modificadas por reflexões de onda possibilita capturar o pico de pressão existente no escoamento sanguíneo. Por isto, torna-se interessante e importante o estudo de modelos matemáticos como aquele de Duan e Zamir~\cite{Duan} para compreender melhor a hemodinâmica do sistema cardiovascular.
 
-Os objetivos pretendidos e alcançados neste trabalho foram:
-\begin{itemize}
-	\item estudar e implementar o modelo matemático de Duan e Zamir que descreve o escoamento sanguíneo 1D em árvores arteriais;
-	\item simular o escoamento sanguíneo em modelos de árvores arteriais sob diferentes cenários visando:
-	\begin{itemize}
-		\item analisar o impacto da viscosidade sanguínea;
-		\item analisar o impacto da viscoelasticidade da parede do vaso;
-		\item investigar o efeito da combinação da viscosidade sanguínea e viscoelasticidade da parede do vaso;
-	\end{itemize} 
-	\item desenvolver um sistema computacional para a análise de escoamento pulsátil em árvores arteriais, com os seguintes recursos:
-	\begin{itemize}
-		\item funcionamento multiplataforma;
-		\item armazenamento consistente de todo modelo geométrico e suas propriedades;
-		\item possibilitar análise de múltiplas árvores arteriais e modelos subsequentes;
-		\item visualizar em tempo real as modificações feitas no modelo;
-	\end{itemize} 
-\end{itemize}
+Foram delinhados três objetivos principais para a conclusão deste trabalho, o primeiro passo foi estudar e implementar o modelo matamático proposto por~\cite{Duan} que descreve o escoamento sanguíneo 1D em árvores arteriais; Em seguida o escoamento sanguíneo nestes modelos foi estudado sobre diferentes regimes de viscosidade sanguínea e viscoelasticidade da parede do vaso, investigando o efeito de cada regime e sua combinação sobre as ondas de fluxo e pressão; E, finalmente, o desenvolvimento de um sistema computacional capaz de analisar o escoamento pulsátil nos regimes estudados. O sistema computacional resultante foi construído para ter um funcionamento multiplataforma (Windows e Unix), armazenamento consistendo de todo o modelo geométrico e suas propriedades e a capacidade de visualizar e analisar diversos modelos de árvores arteriais e modelos subsequentes.
 
 Este trabalho tem caráter interdisciplinar envolvendo áreas de Matemática Aplicada,
 Computação, Biologia, Física e Medicina, o que torna fundamental o conhecimento
 básico de cada área.
 
-Primeiramente, estudou-se o modelo matemático de Duan e Zamir \cite{Duan}. Este estudo motivou o desenvolvimento de uma nova ferramenta computacional chamada~\textbf{IGU} (\textbf{Iterador Gráfico Universal}) para descrever o escoamento sanguíneo pulsátil em árvores arteriais. Inicialmente para verificar a robustez da ferramenta, buscou-se realizar algumas simulações semelhantes aquelas de Duan e Zamir a título de comparação. Destaca-se que a ferramenta~\textbf{IGU} foi desenvolvida em C++ e  contou com a utilização das bibliotecas Qt/OpenGL para ajudar na elaboração da interface gráfica.
+Primeiramente, estudou-se o modelo matemático de Duan e Zamir \cite{Duan}. Este estudo motivou o desenvolvimento de uma nova ferramenta computacional chamada~\textbf{IGU} (\textbf{Iterador Gráfico Universal}) para descrever o escoamento sanguíneo pulsátil em árvores arteriais. Inicialmente para verificar a robustez da ferramenta, buscou-se realizar algumas simulações semelhantes aquelas de Duan e Zamir a título de comparação. Destaca-se que a ferramenta~\textbf{IGU} foi desenvolvida em C++,  contou com a utilização das bibliotecas Qt/OpenGL para ajudar na elaboração da interface gráfica e encontra-se em repositório aberto localizado em :
 
-AUMENTAR.
-
+	http://bit.ly/2KwZ4np .
 
 %=========================================================%
 
@@ -912,9 +895,127 @@ Caso seja requisitado o objeto inteligente pode também incluir os componentes d
 %\item \'indice(s) (opcional).
 %\end{alineas}
 
+\chapter{Resultados numéricos e discussões}
+
+Nesta seção apresentam-se resultados obtidos com a implementação computacional e simulação do modelo matemático de Duan e Zamir~\cite{Duan}. As simulações realizadas aqui tratam da propagação de uma onda harmônica simples ao longo de uma árvore, onde reflexões de onda modificam a amplitude da onda de pressão enquanto ela avança. A escolha de uma onda harmônica simples neste estudo possibilita investigar os efeitos da frequência, fluido viscoso e viscoelasticidade da parede do segmento de vaso.
+
+Considerou-se neste estudo um modelo de árvore arterial canina como ilustrado na Figura~\ref{fig:arvore-canina}. As propriedades dos segmentos foram escolhidas oriundas dos dados de Fung~\cite{Fung} e são descritas na Tabela~\ref{tab1:proprerty}. 
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=0.8]{Figures/tree_canine.png}
+	\caption{Representação do modelo de árvore arterial canina (adaptada de~\cite{Duan}).}
+	\label{fig:arvore-canina}
+\end{figure}
+
+\begin{table}[!htbp]
+	\caption{Propriedades dos segmentos do modelo de árvore arterial~\cite{Duan,Fung}}
+	\centering{}
+	\begin{tabular}{|c||c|c|c|c|c|}
+		\hline 
+		Artéria	& Comprimento & Densidade & Viscosidade  & Diâmetro & Módulo de  \\ 
+		& ($cm$) & $\rho$($g/cm^3$) & $\mu_0$($g/cm s$) & ($cm$) & Young ($dyn/cm^2$) \\ 
+		\hline
+		\hline 
+		Aorta & 25 & $0,960$ & 0,0385 & 1,3 &4,8 $\times 10^6$ \\ 
+		Descendente &  & &  & & \\ 
+		\hline 
+		Aorta & 11 & $1,134$ & 0,0449 & 0,9 & 1,0 $\times 10^7$ \\
+		Abdominal &  & &  & &  \\ 
+		\hline 
+		Ilíaca & 12 & $1,172$ & 0,0472 & 0,6 & 1,0 $\times 10^7$\\ 
+		\hline 
+		Femoral & 10 & $1,235$ & 0,0494 & 0,4 & 1,0 $\times 10^7$\\ 
+		\hline 
+	\end{tabular} 
+	\label{tab1:proprerty}
+\end{table}
+
+Nas simulações aqui realizadas calculou-se a distribuição de amplitude de pressão ao longo da árvore arterial (Figura~\ref{fig:arvore-canina}). Os resultados foram obtidos para quatro diferentes frequên\-cias e três diferentes cenários de escoamento/segmento: (i) escoamento viscoso em segmento puramente elástico (cenário 1 da Seção~\ref{sec:cenario}), (ii) escoamento invíscido em segmento viscoelástico (cenário 2) e (iii) escoamento viscoso em segmento viscoelástico (cenário 3). 
+
+Os resultados obtidos nas simulações são mostrados nas Figuras~\ref{fig3a:arterial-tree}, \ref{fig3b:arterial-tree}, \ref{fig4a:arterial-tree}, \ref{fig4b:arterial-tree}, \ref{fig5a:arterial-tree} e \ref{fig5b:arterial-tree}. Nestas figuras, o comprimento de cada segmento arterial foi dimensionado para 1,0, de modo que o comprimento adimensional total da árvore é 4,0. O comprimento real é 58 cm. A amplitude da pressão também foi escalada pela pressão de entrada $P_o$, e os resultados finais são portanto mostrados em termos de amplitude de pressão adimensional $|P|$ versus a distância adimensional $X$ do início da árvore.
+
+Nas Figuras~\ref{fig3a:arterial-tree} e \ref{fig3b:arterial-tree}, o efeito da viscosidade do fluido é examinado separadamente conside\-ran\-do-se o escoamento em segmentos puramente elásticos com quatro valores diferentes de viscosidade do fluido, ou seja, $\mu = 0$; $0,5 \mu_0$; $1,0 \mu_0$ e $1,5 \mu_0$, onde $\mu_0$ é o valor base da viscosidade da Tabela~\ref{tab1:proprerty}. Observa-se que o efeito da viscosidade do fluido é reduzir o aumento global na amplitude da onda de pressão causada pelas reflexões das ondas à medida que a onda se desloca na direção à jusante. Além disso, modera os picos locais na distribuição de pressão.
+
+\begin{figure}[!htbp]
+	\centering
+	(a) \\
+	\includegraphics[scale=0.7]{figure3-result/Figure3-f-3-65-new.png}\\
+	(b)\\
+	\includegraphics[scale=0.7]{figure3-result/Figure3_f_7_30_new.png}\\
+	\caption{Amplitude da pressão $|P|$ ao longo da árvore arterial considerando diferentes viscosidade do fluido $\mu$ e frequências: (a) $f$ = 3,65 Hz, (b)  $f$ = 7,30 Hz. }
+	\label{fig3a:arterial-tree}%
+\end{figure}
+
+\begin{figure}[!htbp]
+	\centering
+	(a) $f$ = 10,95 Hz\\
+	\includegraphics[scale=0.7]{figure3-result/Figure3_f_10_95_new.png}\\
+	(b) $f$ = 14,60 Hz\\
+	\includegraphics[scale=0.7]{figure3-result/Figure3_f_14_60_new.png}\\
+	\caption{Amplitude da pressão $|P|$ ao longo da árvore arterial considerando diferentes viscosidade do fluido $\mu$ e frequências: (a) $f$ = 10,95 Hz, (b)  $f$ = 14,60 Hz. }
+	\label{fig3b:arterial-tree}%
+\end{figure}
+
+Nas Figuras~\ref{fig4a:arterial-tree}, \ref{fig4b:arterial-tree}, o efeito da viscoelasticidade da parede do segmento de vaso é considerado separadamente considerando-se o escoamento invíscido e tomando-se quatro valores diferentes da viscoelasticidade da parede do segmento. O modelo viscoelástico proposto utilizado para fins destes cálculos é apresentado no cenário 2 da Seção~\ref{sec:cenario}, no qual a viscoelasticidade da parede do vaso é representada por um módulo de Young complexo. Estas figuras mostram os resultados para $\phi_0$ = $0^o$, $4^o$, $8^o$ e $12^o$. Quando $\phi_0$ = $0^o$ tem-se um valor representando uma parede puramente elástica e para $\phi_0> 0$ tem-se a representação da viscoelasticidade. Nota-se a partir destas figuras que o efeito da viscoelasticidade, como o da viscosidade do fluido, é amortecer o aumento global da amplitude da onda de pressão causada pelas reflexões das ondas à medida que a onda se desloca na direção à jusante, bem como moderar os picos locais na distribuição de pressão. 
+
+\begin{figure}[!htbp]
+	\centering
+	(a) \\
+	\includegraphics[scale=0.7]{figure4-result/Figure4_f_3_65_new.png}\\
+	(b)\\
+	\includegraphics[scale=0.7]{figure4-result/Figure4_f_7_30_new.png}\\
+	\caption{Amplitude da pressão $|P|$ ao longo da árvore arterial considerando diferentes valores de viscoelasticidade $\phi_0$ e frequências: (a) $f$ = 3,65 Hz, (b)  $f$ = 7,30 Hz. }
+	\label{fig4a:arterial-tree}%
+\end{figure}
+
+\begin{figure}[!htbp]
+	\centering
+	(a) $f$ = 10,95 Hz\\
+	\includegraphics[scale=0.7]{figure4-result/Figure4_f_10_95_new.png}\\
+	(b) $f$ = 14,60 Hz\\
+	\includegraphics[scale=0.7]{figure4-result/Figure4_f_14_60_new.png}\\
+	\caption{Amplitude da pressão $|P|$ ao longo da árvore arterial considerando diferentes valores de viscoelasticidade $\phi_0$ e frequências: (a) $f$ = 10,95 Hz, (b) $f$ = 14,60 Hz.}
+	\label{fig4b:arterial-tree}%
+\end{figure}
+
+Os efeitos combinados da viscosidade do fluido e viscoelasticidade da parede do vaso são mostrados nas Figuras \ref{fig5a:arterial-tree} e \ref{fig5b:arterial-tree}. Os valores $\mu = 1,0 \mu_0$ e $\phi_0 = 8^o$ foram utilizados para este propósito, para serem comparados com os mesmos valores dos resultados anteriores. A observação mais importante a ser feita é que os dois efeitos, quando combinados, não se somam. Por outro lado, combinam-se de uma maneira não linear que não é prontamente previsível.
+
+\begin{figure}[!htbp]
+	\centering
+	(a) \\
+	\includegraphics[scale=0.7]{figure5-result/Figure5_phi_den_f3_65_new.png}\\
+	(b)\\
+	\includegraphics[scale=0.7]{figure5-result/Figure5_phi_den_f7_30_new.png}\\
+	\caption{Amplitude da pressão $|P|$ ao longo da árvore arterial considerando viscosidade $\mu = 1,0 \mu_0$, viscoelasticidade $\phi_0 = 8^{\circ}$ e frequências: (a) $f$ = 3,65 Hz, (b)  $f$ = 7,30 Hz. }
+	\label{fig5a:arterial-tree}%
+\end{figure}
+
+\begin{figure} [!htbp]
+	\centering
+	(a) $f$ = 10,95 Hz\\
+	\includegraphics[scale=0.7]{figure5-result/Figure5_phi_den_f10_95_new.png}\\
+	(b) $f$ = 14,60 Hz\\
+	\includegraphics[scale=0.7]{figure5-result/Figure5_phi_den_f14_60_new.png}\\
+	\caption{Amplitude da pressão $|P|$ ao longo da árvore arterial considerando viscosidade $\mu = 1,0 \mu_0$, viscoelasticidade $\phi_0 = 8^{\circ}$: (a) $f$ = 10,95 Hz, (b) $f$ = 14,60 Hz.}
+	\label{fig5b:arterial-tree}%
+\end{figure}
+
 \chapter{CONCLUSÃO}
 
-Este elemento \'e obrigat\'orio e \'e a parte final do texto.  Nele, s\~ao apresentadas as conclus\~oes identificadas a partir do desenvolvimento da pesquisa.
+Em relação a hemodinâmica, os resultados obtidos neste trabalho estão de acordo com aqueles obtidos por Duan e Zamir \cite{Duan} considerando a propagação de uma onda harmônica simples nos três cenários abordados nas simulações.
+
+O desenvolvimento deste projeto de Iniciação Científica resultou no desenvolvimento de uma nova ferramenta computacional denominada \textbf{IGU} (\textbf{Iterador Gráfico Universal}), que permite a simulação de escoamento sanguíneo pulsátil em modelos de árvores arteriais no contexto de Duan e Zamir~\cite{Duan}. Detalhes desta ferramenta podem ser vistos no vídeo disponibilizado no \textit{YouTube} e seu código fonte é disponibilizado gratuitamente no repositório público do \textit{Bitbucket}.
+\begin{itemize}
+	\item \textit{YouTube}: \textbf{https://www.youtube.com/watch?v=36P8cHhIiHg\&t=216s}
+	\item Código fonte disponibilizado no \textit{Bitbucket}: \textbf{http://bit.ly/2KwZ4np}
+\end{itemize}
+
+Espera-se que a comunidade científica da área cardiovascular, de engenharia de software e modelagem computacioal possam utilizar a ferramenta~\textbf{IGU} construída para ganhar mais entendimento da hemodinâmica do sistema arterial. Bem como, para contribuir com sugestões e melhorias da ferramenta.
+
+Este trabalho visa impactar na área de modelagem computacional de sistemas complexos artificiais, naturais e sócio-culturais e da interação homem natureza. Os modelos matemáticos para descrição de árvores arteriais e simulações hemodinâmicas investigados neste trabalho estão no estado da arte na área de Matemática Aplicada e Computacional formam parte dos objetivos do \textit{Instituto Nacional de Ciência e Tecnologia em Medicina Assistida por Computação Científica} (INCT-MACC) do CNPq.
+
+Como aluno do PPGMC a ferramenta foi utilizida para simular, analisar modelos de árvores arteriais. A última versão desenvolvida do sistema computacional pode ser utilizada em dois Sistemas Operacionais, o Windows e o Ubuntu (Unix). Os modelos podem ter sua análise e gráficos gerados automaticamente através dos comandos da ferramenta computacional. O código possibilita o processamento concorrente de diversos modelos em um mesmo ambiente. Cada uma destas contribuições resultou numa ferramenta robusta,  ferramenta esta que além de analisar corretamente as variações de fluxo e pressão através de um modelo de árvore arterial, possibilita que as simulações sejam facilmente ajustadas e analisadas, com ou sem interface gráfica.
 
 %% ----------------------------------------------------------
 
