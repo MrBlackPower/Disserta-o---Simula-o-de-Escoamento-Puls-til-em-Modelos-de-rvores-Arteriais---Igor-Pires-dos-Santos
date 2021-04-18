@@ -719,7 +719,7 @@ Com os parâmetros definidos e as fábricas devidamente acopladas os objeto est�
 %--------------------------------------------------------------------------------%
 \subsection{Objeto Gráfico}\label{sec:objeto_grafico}
 
-Caso seja requisitado o objeto inteligente pode também incluir os componentes de visualização fábrica gráfica e coleção de objetos gráficos \textit{GraphicModel}. Somente depois de adicionar uma fábrica gráfica à um objeto que a coleção de objetos gráficos é alocada e o primeiro objeto gráfico criado. Objetos gráficos assim como elementos inteligentes são colecionados por outras estruturas. Enquanto a estrutura responsável por elementos inteligentes, \textit{WiseCollection}, é responsável por manter os últimos dados de iteração aquecidos, a estrutura \textit{GraphicModel} mantém o objeto que está sendo exibido por alguma tela e elementos próximos.
+Caso seja configurado, o objeto inteligente pode incluir os componentes de visualização: fábrica gráfica \textit{GraphicFactory} e coleção de objetos gráficos \textit{GraphicModel}. Somente depois de adicionar uma fábrica gráfica à um objeto que a coleção de objetos gráficos é alocada e o primeiro objeto gráfico criado. Objetos gráficos assim como elementos inteligentes são colecionados por outras estruturas. Enquanto a estrutura responsável por elementos inteligentes, \textit{WiseCollection}, é responsável por manter os últimos dados de iteração aquecidos, a estrutura \textit{GraphicModel} mantém o objeto que está sendo exibido por alguma tela e elementos próximos.
 
 \begin{figure}[!htbp]
 	\centering
@@ -728,172 +728,29 @@ Caso seja requisitado o objeto inteligente pode também incluir os componentes d
 	\label{fig7:graphicmodel}
 \end{figure}
 
+Presente na Figura~\ref{fig7:graphicmodel} estão os componentes que permitem armazenar todos os quadros da animação final ao visualizar algum parâmetro contido na estrutura \textit{WiseStructure}. Quando um objeto \textit{WiseObject} está corretamente configurado com uma instância de fábrica gráfica \textit{GraphicFactory}, seu método iterativo é atrelado à iteração do objeto. Isso permite que o objeto iterado crie um elemento inteligente \textit{WiseElement} e um objeto gráfico \textit{GraphicObject} à cada iteração.
 
-%=========================================================%
+Assim como os objetos inteligentes \textit{WiseObject} têm seus tipos definidos pelo tipo de elemento inteligente que o compõe, o tipo de objeto gráfico segue o tipo de elemento inteligente que representa.
 
-% \begin{citacao}
-% As cita\c{c}\~oes diretas, no texto, com mais de tr\^es linhas, devem ser destacadas 
-% com recuo de 4 cm da margem esquerda, com letra menor que a do texto utilizado 
-% e sem as aspas. [...] Para enfatizar trechos da cita\c{c}\~ao, deve-se destac\'a-los indicando esta 
-% altera\c{c}\~ao com express\~ao grifo nosso entre par\^enteses, ap\'os a chamada da cita\c{c}\~ao, ou grifo 
-% do autor, caso o destaque j\'a fa\c{c}a parte da obra consultada. (ASSOCIA\c{C}\~AO BRASILEIRA DE NORMAS 
-% T\'ECNICAS, 2002, p. 2-3)
-% \end{citacao}
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=1]{Figures/GraphicObjects}
+	\caption{Tipos de objetos gráficos \textit{GraphicObjects}.}
+	\label{fig7:graphicobjects}
+\end{figure}
 
-%As instru\c{c}\~oes aqui contidas buscam ajudar a direcionar e orientar quanto \`a padroniza\c{c}\~ao das monografias, dissertac\~oes e teses na UFJF. 
-%Ser\~ao apresentados alguns exemplos de refer\^encias apenas como modelo de documento. Detalhes completos sobre como apresentar as refer\^encias se 
-%encontram na norma ABNT NBR 6023:2018. Mais informa\c{c}\~oes sobre as normas de padroniza\c{c}\~ao s\~ao encontradas diretamente nas bibliotecas da UFJF e em 
-%http://www.ufjf.br/biblioteca/servicos/normalizacao-2
+Os objetos gráficos contidos na Figura~\ref{fig7:graphicobjects} de cada tipo se desenha através de um gradiente de cores e formas geométricas padrão, bidimensionais ou tridimensionais. Cada forma geométrica utilizada é representada por elementos gráficos, objeto que implementam a classe abstrata \textit{GraphicElement}. Cada elemento gráfico é atrelado à um valor ou à uma lista de valores, estes valores são utilizados para dar cor aos elementos gráficos. Cada objeto gráfico possui um valor máximo e mínimo que é vinculado ao gradiente cores, com isso as cores representam os valores armazenados em cada elemento.
 
-%\chapter{NOME DO CAP\'ITULO} %%Nesta linha, dentro de { }, digita-se em CAIXA ALTA, como apresentado aqui
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=1]{Figures/GraphicElements}
+	\caption{Tipos de elementos gráficos \textit{GraphicElements}. \textit{Point}, um ponto. \textit{Line}, uma linha. \textit{Quad}, um quadrado. \textit{Cube}, um cubo. \textit{Cylinder}, um cilindro. \textit{Sphere}, uma esfera.}
+	\label{fig7:graphicobjects}
+\end{figure}
 
-%Ap\'os a introdu\c{c}\~ao, segue-se o elemento desenvolvimento. Este elemento obrigat\'orio \'e que ir\'a desenvolver a ideia principal do trabalho. 
-%\'E o elemento mais longo, podendo ser dividido em v\'arias se\c{c}\~oes %(prim\'arias, secund\'arias, etc.) 
-%e subse\c{c}\~oes que devem conter texto. 
-
-%Apresentamos nesta p\'agina um exemplo de nota \footnote{As notas devem ser digitadas ou datilografadas dentro das margens, ficando separadas do texto
-%por um espa\c{c}o simples entre as linhas e por filete de 5 cm a partir da margem esquerda e em fonte menor (um ponto) do corpo do texto. (ASSOCIA\c{C}\~AO
-%BRASILEIRA DE NORMAS T\'ECNICAS, 2011, p. 10).}.
+Os elementos gráficos podem ser utilizados por qualquer tipo de objeto gráfico. A representação geométrica de uma árvore arterial é construída utilizando cilindros e esferas, que representam segmentos de vaso e terminais, respectivamente. Os cilindros receberão uma lista de valores da pressão $P(X) \forall X \in [0,1]$, enquanto as esferas receberão os valores da pressão $P(X)$ quando $X=0$ ou $X=1$, dependendo se é o nó distal($X=1$) ou o nó proximal($X=0$).
 
 
-%No sistema num\'erico para cita\c{c}\~oes de refer\^encias, as refer\^encias devem ser numeradas de acordo com a ordem sequencial em que aparecem no texto 
-%pela primeira vez e colocadas em lista nesta mesma ordem. (ABNT, 2018).
-
-%O sistema num\'erico n\~ao deve ser utilizado quando h\'a notas de rodap\'e. (ABNT, 2002).  
-
-%\section{SE\c{C}\~AO SECUND\'ARIA} %%Nesta linha, dentro de { }, digita-se em CAIXA ALTA
-
-%Um exemplo de cita\c{c}\~ao de refer\^encia \'e \cite{Aguiar2009}. Outros três exemplos s\~ao: \cite{Bauman99}, \cite{vet18} e 
-%\cite{disp2019}.
-
-
-%%%%Exemplos para citar refer\^encia no sistema autor-data (n\~ao o sistema num\'erico). Caso queira usar, selecionar \sistautordata antes de \begin{document}.
-
-%Conforme \citep[p. 4]{t1}, isto ... %% Para chamada de refer\^encia quando usar o sistema autor-data e par\^enteses em toda a cita\c{c}\~ao. %[p. 4] \'e opcional
-
-%Conforme \citet*[p. 4]{t1}, isto ... %% Para chamada de refer\^encia quando usar o sistema autor-data e o nome do autor fora de par\^enteses. %[p. 4] \'e opcional
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%
-%EXEMPLOS DE ILUSTRA\c{C}\~OES DE TIPOS DIFERENTES. PARA EXEMPLOS DO MESMO TIPO, VEJA A DICA NO FINAL DESTE ARQUIVO.
-%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-%Abaixo, s\~ao apresentados exemplos de ilustra\c{c}\~oes.
-
-% Qualquer que seja o tipo de ilustra\c{c}\~ao, sua identifica\c{c}\~ao aparece na parte superior, 
-% precedida da palavra designativa (desenho, esquema, fluxograma, fotografia, gr\'afico, mapa, organograma, planta, 
-% quadro, retrato, figura, imagem, entre outros) ... A ilustra\c{c}\~ao deve ser citada no texto ...(ABNT, 2011)
-
-
-
-           %%Exemplo de quadro
-%\begin{figure}[h]
-%\captiondelim{} %%Caso as ilustra\c{c}\~oes do trabalho sejam todas do mesmo tipo, n\~ao utilize este modelo (com \captiondelim{}). Utilize o do final deste arquivo.
-%\larguratexto{11cm}  %%mesma largura da ilustra\c{c}\~ao, dada em ``[width=11cm]'' abaixo
-%\begin{center}
-%\caption[Quadro 1 \hspace*{5pt} - Ofertas de vagas %%\hspace*{...} para controle de espa\c{c}o para alinhar verticalmente os ``-'' da lista de ilustra\c{c}\~oes 
-%para cursos presenciais na UFJF]      %%o texto entre [ ] fica na lista de ilustra\c{c}\~oes e o texto entre { } fica acima da figura
-%{Quadro 1 - Ofertas de vagas para cursos presenciais na UFJF}  %%Informa\c{c}\~ao acima da figura
-%\includegraphics[width=11cm]{quadrovagas.png}
-%\fonte{Universidade Federal de Juiz de Fora (2012).} %%Indicar a fonte consultada (elemento obrigat\'orio, mesmo que seja produ\c{c}\~ao do pr\'oprio autor).
-%\end{center}
-%\end{figure}
-
-           %%exemplo de gr\'afico
-%\begin{figure}[ht]
-%\captiondelim{} %%Caso as ilustra\c{c}\~oes do trabalho sejam todas do mesmo tipo, n\~ao utilize este modelo (com \captiondelim{}). Utilize o do final deste arquivo.
-%\larguratexto{13cm} %%mesma largura da ilustra\c{c}\~ao, dada em ``[width=13cm]'' abaixo
-%\begin{center}
-%\caption[Gráfico 2 \hspace*{1pt} - UFJF: Evolu\c{c}\~ao %%\hspace*{...} para controle de espa\c{c}o para alinhar verticalmente os ``-'' da lista de ilustra\c{c}\~oes
-%dos cursos de mestrado e doutorado 
-%(2005/2011) \hspace*{5pt} T\'itulo %\hspace*{...} para alinhar, na lista de ilustra\c{c}\~oes, segunda linha de t\'itulo longo com primeira linha, ap\'os ``-''
-%T\'itulo T\'itulo T\'itulo T\'itulo] %o texto entre [ ] fica na lista de ilustra\c{c}\~oes e o texto entre { } fica acima da figura
-%{Gráfico 2 - UFJF: Evolu\c{c}\~ao dos cursos de mestrado e doutorado (2005/2011) T\'itulo T\'itulo T\'itulo T\'itulo T\'itulo} %Informa\c{c}\~ao acima da figura
-%\includegraphics[width=13cm]{graf2.png} 
-%\fonte{Universidade Federal de Juiz de Fora (2012).} %Indicar a fonte consultada (elemento obrigat\'orio, mesmo que seja produ\c{c}\~ao do pr\'oprio autor).
-%\end{center}
-%\end{figure}
-
-
-%\subsection{\textbf{Se\c{c}\~ao terci\'aria}} %% O t\'itulo da subse\c{c}\~ao vem em negrito e caixa baixa
-
-%Abaixo, s\~ao apresentados exemplos de tabela. 
-
-       %%Exemplo de tabela
-%\begin{table}[h]
-% \larguratexto{16cm} %%mesma largura da ilustra\c{c}\~ao, dada em ``[width=16cm]'' abaixo
-% \begin{center}
-% \caption{Quantidade de bibliotec\'arios da UFJF}
-% \includegraphics[width=16cm]{tab1.png}
-% \fonte{Elaborada pelo autor (2019).} 
-%\end{center}
-%\end{table}
-
-%\begin{table}[h]
-%\larguratexto{9cm}  %mesma largura da ilustra\c{c}\~ao, dada em ``[width=9cm]'' abaixo
-%\begin{center}
-%  \caption{Composi\c{c}\~ao dos Recursos Humanos do HU/UFJF T\'itulo T\'itulo T\'itulo T\'itulo T\'itulo T\'itulo T\'itulo T\'itulo T\'itulo T\'itulo}
-%  \includegraphics[width=9cm]{tab2.png}
-%  \fonte{Universidade Federal de Juiz de Fora (2012).} 
-%\end{center}
-%\end{table}
-
-% \subsubsection{\textit{Se\c{c}\~ao quatern\'aria}} %% O t\'itulo da subsubse\c{c}\~ao vem em it\'alico e caixa baixa 
-
-% Se houver se\c{c}\~ao quatern\'aria, incluir texto ...
-
-% \subsubsubsection{Se\c{c}\~ao quin\'aria}  %% O t\'itulo desta vem em caixa baixa
-
-% Se houver se\c{c}\~ao quin\'aria, incluir texto ...
-
-
-%\chapter{NOME DO CAP\'ITULO}
-
-%A parte interna da estrutura dos trabalhos acad\^emicos \'e composta pelos elementos pr\'e-textuais, textuais e p\'os-textuais, que devem ser apresentados nesta ordem:
-
-%\section{ELEMENTOS PR\'E-TEXTUAIS} %%Nesta linha, dentro de { }, digita-se o nome da se\c{c}\~ao secund\'aria em CAIXA ALTA. Por exemplo: ELEMENTOS PR\'E-TEXTUAIS
- 
-%\begin{alineas}
-% \item folha de rosto (obrigat\'orio);  %com a ficha catalogr\'afica no seu verso (elementos obrigat\'orios);  
-% \item errata (opcional); 
-% \item folha de aprova\c{c}\~ao (obrigat\'orio); 
-% \item dedicat\'oria (opcional); 
-% \item agradecimentos (opcional); 
-% \item ep\'igrafe (opcional);  
-% \item resumo em l\'ingua vern\'acula (obrigat\'orio); 
-% \item resumo em l\'ingua estrangeira (obrigat\'orio); 
-% \item lista de ilustra\c{c}\~oes (opcional); 
-% \item lista de tabelas (opcional); 
-% \item lista de abreviaturas e siglas (opcional); 
-% \item lista de s\'imbolos (opcional); 
-% \item sum\'ario (obrigat\'orio).
-%\end{alineas}
-
-%Existe tamb\'em \begin{subalineas} ... \end{subalineas} que em cada linha fica sem recuo e coloca - no lugar das letras do alfabeto  
-
-
-
-%\section{ELEMENTOS TEXTUAIS} %%Nesta linha, dentro de { }, digita-se o nome da se\c{c}\~ao secund\'aria em CAIXA ALTA. Por exemplo: ELEMENTOS PR\'E-TEXTUAIS
-
-%S\~ao aqueles em que \'e exposto o conte\'udo da pesquisa: 
-%\begin{alineas}
-% \item introdu\c{c}\~ao; %\\
-% \item desenvolvimento; %\\
-% \item conclus\~ao.
-%\end{alineas}
-
-%\section{ELEMENTOS P\'OS-TEXTUAIS} %%Nesta linha, dentro de { }, digita-se o nome da se\c{c}\~ao secund\'aria em CAIXA ALTA. Por exemplo: ELEMENTOS PR\'E-TEXTUAIS
-
-%Estes elementos complementam o trabalho: 
-%\begin{alineas}
-%\item refer\^encia (obrigat\'orio de acordo com a NBR 6023/2018); 
-%\item gloss\'ario (opcional); 
-%\item ap\^endice(s) (opcional);
-%\item anexo(s) (opcional); 
-%\item \'indice(s) (opcional).
-%\end{alineas}
 
 \chapter{Resultados numéricos e discussões}
 
