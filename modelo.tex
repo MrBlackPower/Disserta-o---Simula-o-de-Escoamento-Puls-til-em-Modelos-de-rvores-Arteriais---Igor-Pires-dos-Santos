@@ -28,7 +28,7 @@
 
 %% Obs.: Alguns acentos foram omitidos.
 
-\titulo{Simulação de Escoamento Pulsátil em Modelos de Árvores Arteriais} %% Colocar, dentro de chaves {}, o t\'itulo do trabalho. Retirar % do inicio da linha seguinte se tiver subtitulo
+\titulo{Uma Ferramenta Computacional para Simulação de Escoamento Pulsátil em Modelos de Árvores Arteriais 1D} %% Colocar, dentro de chaves {}, o t\'itulo do trabalho. Retirar % do inicio da linha seguinte se tiver subtitulo
 %\subtitulo{subt\'itulo}  %% Retirar % do in\'icio desta linha se tiver subt\'itulo 
 \autor{Igor Pires dos Santos} %%Colocar, dentro de chaves {}, o nome completo do autor
 \autorR{Pires dos Santos, Igor} %%Colocar o sobrenome do autor, separado por v\'rgula, antes do restante do nome do autor. Ex.: Santos, Maria dos
@@ -107,7 +107,7 @@ Agrade\c{c}o aos ...
 
 %% Ep\'igrafe. OPCIONAL
 \begin{epigrafe} 
-	A construção de modelos de árvores arteriais é importante para a realização de estudos hemodinâmicos. Neste trabalho, apresentam-se: (i) um esquema analítico para o cálculo das características locais das ondas de fluxo e pressão em modelos de árvores arteriais 1D (ii) um ambiente computacional desenvolvido para a simulação e visualização dos resultados no tocante à construção de modelos e estudos hemodinâmicos. Os resultados obtidos neste trabalho estão condizentes com dados numéricos relatados na literatura.
+XXXXXXXXXXXXXXXXXXXXXX
 \end{epigrafe}
 
 
@@ -115,8 +115,8 @@ Agrade\c{c}o aos ...
 
 %% Resumo em Portugu\^es. OBRIGAT\'ORIO.
 \begin{resumo}
-
-A construção de modelos de árvores arteriais é importante para a realização de estudos hemodinâmicos. Neste trabalho, apresentam-se: (i) um esquema analítico para o cálculo das características locais das ondas de fluxo e pressão em modelos de árvores arteriais 1D, (ii) um ambiente computacional desenvolvido para a simulação e visualização dos resultados no tocante à construção de modelos e estudos hemodinâmicos. Os resultados obtidos neste trabalho estão condizentes com dados numéricos relatados na literatura. \\[18pt]
+\textcolor{red}{IGOR: faltar iniciar este resumo com uma introdução e motivação que podem ser tirados do seu capítulo introdução.}
+Neste trabalho, apresentam-se: (i) modelo matemático da literatura que descreve o escoamento sanguíneo pulsátil em modelos de árvores arteriais 1D, (ii) uma ferramenta computacional desenvolvida que calcula a pressão e fluxo em cada vaso a partir do modelo matemático . Os resultados obtidos neste trabalho estão condizentes com dados numéricos relatados na literatura. \\[18pt]
 Palavras-chave: Árvores arteriais. Escoamento pulsátil. Hemodinâmica Computacional. %finalizadas por ponto e inicializadas por letra maiuscula.
 \end{resumo}
  
@@ -124,8 +124,8 @@ Palavras-chave: Árvores arteriais. Escoamento pulsátil. Hemodinâmica Computac
 %% Resumo em Ingl\^es
 \begin{resumo}[ABSTRACT]
  \begin{otherlanguage*}{english}
-
-The construction of arterial tree's models is crucial in hemodynamics studies. In this work, the following are presented: (i) an analytical scheme based on physisc and mathematic laws to calculate the local charactheristics of the pressure and flux wave in 1D arterial tree's models, (ii) a computational environment desenvolved to simulate and visualize the results of the model's construction and hemodynamic studies. The results produced in this work are consistent to real morphometric data and numeric data related in the literature. \\[18pt]
+\textcolor{red}{IGOR: escrever primeiro o resumo em português e depois traduzi-lo.}
+In this work, the following are presented: (i) an analytical scheme based on physisc and mathematic laws to calculate the local charactheristics of the pressure and flux wave in 1D arterial tree's models, (ii) a computational environment desenvolved to simulate and visualize the results of the model's construction and hemodynamic studies. The results produced in this work are consistent to real morphometric data and numeric data related in the literature. \\[18pt]
 Keywords: Árvores arteriais. Pulsatile flow. Computational hemodynamics. %finalizadas por ponto e inicializadas por letra maiuscula.
  \end{otherlanguage*}
 \end{resumo}
@@ -150,54 +150,40 @@ Keywords: Árvores arteriais. Pulsatile flow. Computational hemodynamics. %final
 
 
 %% Lista de abreviaturas e siglas. OPCIONAL
-\begin{siglas} %%ALTERAR OS EXEMPLOS ABAIXO, CONFORME A NECESSIDADE
-  \item[ABNT] Associa\c{c}\~ao Brasileira de Normas T\'ecnicas
+%\begin{siglas} %%ALTERAR OS EXEMPLOS ABAIXO, CONFORME A NECESSIDADE
+%  \item[ABNT] Associa\c{c}\~ao Brasileira de Normas T\'ecnicas
 %  \item[Fil.] Filosofia
 %  \item[IBGE] Instituto Brasileiro de Geografia e Estat\'istica
 %  \item[INMETRO] Instituto Nacional de Metrologia, Normaliza\c{c}\~ao e Qualidade Industrial
-\end{siglas}
+%\end{siglas}
 
 %% Lista de s\'imbolos. OPCIONAL
-\begin{simbolos} %%ALTERAR OS EXEMPLOS ABAIXO, CONFORME A NECESSIDADE$R_s$: Resistência hidrodinâmica do segmento s\\
-\item [$\eta$] Viscosidade Sanguínea 
-\item [$s$] Comprimento do segmento $s$
-\item [$\Delta p_s$] Queda de pressão ao longo do segmento $s$
-\item [$Q_s$] Fluxo sanguíneo através do segmento $s $
-\item [$p_{perf}$] Pressão de perfusão na posição proximal 
-\item [$p_{term}$] Pressão terminal na posição distal
-\item [$\mathbf{x}_{prox}$] Posição proximal do segmento raiz 
-\item [$r_p$] Raio do segmento pai
-\item [$r_{esq}$] Raio do segmento filho à esquerda
-\item [$r_{dir}$] Raio do segmento filho à direita
-\item [$ktot$] Número de segmentos existentes na árvore
-\item [$T$] Função custo para o CCO
-\item [$\mu_p$] Dimensionalidade de $T$
-\item [$\lambda$] Dimensionalidade de $T$
+\begin{simbolos} 
 \item [$p$] Pressão
 \item [$q$] Fluxo
 \item [$t$] Tempo
 \item [$x$] Coordenada axial ao longo do tubo arterial
 \item [$c$] Velocidade de onda
 \item [$Y$] Admitância do segmento arterial
-\item [$A$] Área da seção transversal do segmento arterial
+\item [$Y_r$] Valor da admitância característica do vaso raiz
+\item [$A$] Área da seção transversal do vaso
 \item [$\rho$] Densidade do fluido
 \item [$w$] Frequência angular
 \item [$f$] Frequência da onda
 \item [$L$] Comprimento do tubo arterial
-\item [$k$] Geração do segmento na árvore
-\item [$j$] Posição do segmento arteria na geração da árvore
+\item [$k$] Geração do vaso na árvore
+\item [$j$] Posição do vaso na geração da árvore
 \item [$E$] Módulo de Young
-\item [$h$] espessura da parede do segmento de tubo arterial
-\item [$p_f$] Pressão na posição proximal do segmento arterial
-\item [$p_b$] Pressão na posição distal do segmento arterial
+\item [$h$] Espessura da parede do vaso
+\item [$p_f$] Pressão na posição proximal do vaso
+\item [$p_b$] Pressão na posição distal do vaso
 \item [$R$] Coeficiente de Reflexão
-\item [$Y_e$] Admitância efetiva do segmento arterial
+\item [$Y_e$] Admitância efetiva do vaso
 \item [$\alpha$] Número de Womersley
-\item [$\epsilon$] Fator viscoso do segmento arterial
+\item [$\epsilon$] Fator viscoso do vaso
+\item [$\phi$] Propriedade  atrelada a viscoelasticidade da parede
 \item [$\mu$] Viscosidade no segmento arterial
-\item [$J_p$] Funçao de Bessel de índice $p$
-%  \item[$ \forall $] Para todo
-%  \item[$ \in $] Pertence
+\item [$J_p$] Função de Bessel de índice $p$
  \end{simbolos}
 
  
@@ -214,37 +200,44 @@ Keywords: Árvores arteriais. Pulsatile flow. Computational hemodynamics. %final
 
 \chapter{INTRODU\c{C}\~AO}  %%Nesta linha, dentro de { }, digita-se em CAIXA ALTA, como apresentado aqui
 
-Os benefícios que a Matemática Aplicada e Computacional pode proporcionar à medicina vascular estão condicionados à superação de algumas barreras. A primeira barreira está associada à construção do modelo geométrico da rede vascular, principalmente, a caracterização da estrutura geométrica dos casos ao nível da circulação periférica (arteríolas e capilares). A segunda está atrelada à descrição matemática e simulação do escoamento sanguíneo pulsátil em modelos geométricos de rede vascular.
+Estudos de simulação hemodinâmica têm sido frequentemente baseados em modelos de árvores arteriais para obter uma melhor compreensão de todos os aspectos relacionados ao escoamento sanguíneo, desde a propagação de ondas e análise do pulso de pressão, passando pelo diagnóstico e inclusive com aplicações no planejamento cirúrgico. Como a representação do sistema cardiovascular através de um modelo puramente 3D que leve em conta a estrutura geométrica exata de todos os vasos não é, no momento, viável computacionalmente, vêm sendo empregados modelos dimensionalmente heterogêneos conhecidos como 0D (zero-dimensional)--1D (unidimensional)--3D (tridimensional) \cite{Formaggia2001}. 
 
+Modelos 3D \cite{Peskin1972,Taylor1998} são utilizados para estudar em detalhe a hemodinâmica local de distritos arteriais de interesse, e a geometria destes modelos são provenientes de dados anatômicos obtidos normalmente via reconstrução de imagens médicas de pacientes específicos. Modelos 1D \cite{Avolio,Formaggia2003,Stergiopulos1992} são adotados para representar as artérias de maior calibre e a estrutura geométrica destes modelos pode ser construída a partir de dados anatômicos. Tais modelos são capazes de capturar os efeitos de propagação de ondas~\cite{Anliker1971,Duan}, a interação das reflexões destas ondas e dar como resultado um pulso de pressão e vazão com significado fisiológico tanto em artérias centrais como periféricas. No entanto, um modelo 1D de toda a árvore arterial sistêmica não é possível devido à falta de dados anatômicos precisos das regiões periféricas. Portanto, a árvore tem que ser truncada em algum nível. Normalmente, este truncamento é feito empregando modelos 0D \cite{Mates1988,Stergiopulos1992} conhecidos por terminais Windkessel à jusante da posição distal do modelo 1D para representar o comportamento de distritos arteriais relacionados com o nível de arteríolas e capilares. 
 
- Sobre a primeira barreira, a construção de modelos geométricos de árvores arteriais \textit{in silico} pode ser obtida empregando algoritmos baseados em leis fractais \cite{Dawant1986,VanBeek1989} e princípios de otimização~\cite{Karch1999,Queiroz2013}. Modelos fractais assumem que as leis de ramificação são derivadas a partir de medições e repetitivamente são aplicadas em direção aos segmentos de vasos de menor calibre. Esta classe de modelos é relativamente fácil de gerar e reproduz as distribuições estatísticas dos segmentos (raios, comprimentos e ângulos de bifurcação) conhecidas a partir de medições. Porém, tal classe tem dificuldade, ou mesmo impossibilidade, de produzir um arranjo espacial anatomicamente apropriado dos segmentos. Pois, estes modelos são baseados em relações matemáticas que não controlam a estrutura geométrica dos segmentos durante o crescimento das redes vasculares. 
+\textcolor{red}{IGOR: os dois parágrafos acima estão legais no sentido da ideia para se colocar em uma introdução, mais necessitam ser um pouco reescritos e principalmente, citar referências mais recentes de estudos hemodinâmicas envolvendo modelos 3D, 1D, 0D, e modelos acoplados 0D-1D, 3D-1D-0D. Vale a pena buscar estas referências e ler a introdução deste artigos}
 
-Já em relação à simulação do escoamento sanguíneo pulsátil, destacam-se que estudos de simulação hemodinâmica sistêmica têm sido frequentemente baseados em modelos de árvores arteriais para obter uma melhor compreensão de todos os aspectos relacionados ao escoamento sanguíneo, desde a propagação de ondas e análise do pulso de pressão, passando pelo diagnóstico e inclusive com aplicações no planejamento cirúrgico. Como a representação do sistema cardiovascular através de um modelo puramente 3D que leve em conta a estrutura geométrica exata de todos os vasos não é, no momento, viável computacionalmente, vêm sendo empregados modelos dimensionalmente heterogêneos conhecidos como 0D (zero-dimensional)--1D (unidimensional)--3D (tridimensional) \cite{Formaggia2001}. Modelos 3D \cite{Peskin1972,Taylor1998} são utilizados para estudar em detalhe a hemodinâmica local de distritos arteriais de interesse, e a geometria destes modelos são provenientes de dados anatômicos obtidos normalmente via reconstrução de imagens médicas de pacientes específicos. Modelos 1D \cite{Avolio,Formaggia2003,Stergiopulos1992} são adotados para representar as artérias de maior calibre e a estrutura geométrica destes modelos pode ser construída a partir de dados anatômicos. Tais modelos são capazes de capturar os efeitos de propagação de ondas~\cite{Anliker1971,Duan}, a interação das reflexões destas ondas e dar como resultado um pulso de pressão e vazão com significado fisiológico tanto em artérias centrais como periféricas. No entanto, um modelo 1D de toda a árvore arterial sistêmica não é possível devido à falta de dados anatômicos precisos das regiões periféricas. Portanto, a árvore tem que ser truncada em algum nível. Normalmente, este truncamento é feito empregando modelos 0D \cite{Mates1988,Stergiopulos1992} conhecidos por terminais Windkessel à jusante da posição distal do modelo 1D para representar o comportamento de distritos arteriais relacionados com o nível de arteríolas e capilares. 
+A incidência maior de picos na onda de pressão ao percorrer a aorta já foi documentada como evidência para os efeitos da reflexão em árvores vasculares \cite{Kouchoukos,Lighthill,McDonald}. Enquanto as áreas de reflexão não podem ser completamente conhecidas ou localizadas, é geralmente aceito que a forma da onda de pressão é modificada significativamente enquanto progride pela aorta, de uma forma que só pode ser explicada por reflexões de onda.  Um entendimento mais claro da relação entre modificações e fatores de modificação motiva a busca e desenvolvimento de modelos matemáticos que determinam a forma da onda que o pulso de pressão toma em cada ponto ao percorrer uma árvore arterial. 
 
-No tocante à descrição do escoamento sanguíneo pulsátil em árvores arteriais, adotou-se neste trabalho o modelo 1D proposto por Duan e Zamir~\cite{Duan}. Eles propuseram um modelo relativamente simples para representação da pressão sanguínea e do fluxo em um modelo de árvore arterial. Dentro de cada segmento de vaso, o escoamento sanguíneo foi calculado baseado em uma aproximação de Womersley, incluindo a elasticidade da parede, bem como a densidade do sangue e a viscosidade.
+Dentro deste contexto, adotou-se neste trabalho o modelo matemático de Duan e Zamir ~\cite{Duan} que descreve escoamento sanguíneo pulsátil em árvores arteriais. Estes autores propuseram um modelo relativamente simples para representação da pressão sanguínea e do fluxo em um modelo de árvore arterial. Dentro de cada segmento de vaso, o escoamento sanguíneo foi calculado baseado em uma aproximação de Womersley, incluindo a elasticidade da parede, bem como a densidade do sangue e a viscosidade.
 
-Este trabalho está organizado como segue. ORGANIZAÇÃO.
+A capacidade de capturar o pico de pressão existente no escoamento sanguíneo justificativa a escolha do modelo matemático de Duan e Zamir para implementação e simulação computacional. Este modelo possibilita o cálculo correto das características locais das ondas de pressão e fluxo a medida que elas progridem ao longo de um modelo de árvore 1D e se tornam modificadas por reflexões de onda.
 
-A principal motivação para a construção automática de modelos de árvores arteriais é a inviabilidade de ter dados anatômicos suficientes que permitam caracterizar em detalhe a estrutura geométrica de redes vasculares periféricas~\cite{Queiroz2013}. A representação adequada destas redes é necessária para modelar adequadamente o efeito dos leitos periféricos na hemodinâmica do sistema arterial humano, assim como também para permitir explorar as condições hemodinâmicas locais que se encontram na circulação periférica. Pois, os terminais Windkessel, os quais são modelos a parâmetros condensados~\cite{Stergiopulos1992}, representam de forma simplificada toda esta rede periférica rica em detalhe e que tem influência na resposta dos modelos 1D e 3D. De fato, os terminais Windkessel negligenciam a estrutura e as propriedades espaciais da microcirculação. 
+\textcolor{red}{IGOR: escreva um parágrafo de trabalhos da literatura que citam e utilizam o modelo de Duan e Zamir. Busque referências na literatura. Lembrando que esta referência \cite{Duan} está errada. A referência correta é de 1995. Principalmente, cite o seu trabalho publicado na revista Mundi deste parágrafo.}
 
-A incidência maior de picos na onda de pressão ao percorrer a aorta já foi documentada como evidência para os efeitos da reflexão em árvores vasculares \cite{Kouchoukos,Lighthill,McDonald}. Enquanto as áreas de reflexão não podem ser completamente conhecidas ou localizadas, é geralmente aceito que a forma da onda de pressão é modificada significativamente enquanto progride pela aorta, de uma forma que só pode ser explicada por reflexões de onda.  Um entendimento mais claro da relação entre modificações e fatores de modificação motiva a busca e desenvolvimento de modelos matemáticos que determinam a forma da onda que o pulso de pressão toma em cada ponto ao percorrer uma árvore arterial. Dentro deste contexto, estudou-se o modelo de Duan e Zamir ~\cite{Duan}.
+\section{Objetivos}
 
-A construção de modelos geométricos para representação adequada dos leitos periféricos é mandatória para adquirir entendimento da influência destes nas respostas hemodinâmicas de modelos 1D e 3D do sistema cardiovascular. No entanto, a possibilidade de construir um modelo geométrico detalhado do ponto de vista anatômico de uma rede vascular real a partir da reconstrução de imagens médicas de ressonância magnética é ainda limitada~\cite{Harel2010}.
+Os objetivos que norteiam este trabalho são:
+\begin{itemize}
+    \item desenvolver uma ferramenta computacional capaz de simular o modelo matemático de Duan e Zamir;
+    \item aplicar a ferramenta desenvolvida considerando diferentes cenários hemodinâmicos para investigar os efeitos da viscosidade sanguínea e da viscoelasticidade da parede do vaso no escoamento sanguíneo
+\end{itemize}
 
-O cálculo correto das características locais das ondas de pressão e fluxo a medida que elas progridem ao longo de uma estrutura de árvore e se tornam modificadas por reflexões de onda possibilita capturar o pico de pressão existente no escoamento sanguíneo. Por isto, torna-se interessante e importante o estudo de modelos matemáticos como aquele de Duan e Zamir~\cite{Duan} para compreender melhor a hemodinâmica do sistema cardiovascular.
+\section{ORGANIZAÇÃO}
+Os demais capítulos deste trabalho estão organizados como segue:
+\begin{itemize}
+    \item Capítulo 2 -
+    
+    \item Capítulo 3 --
+    Neste capítulo, apresenta-se a ferramenta computacional desenvolvida em C++,  a qual contou com a utilização das bibliotecas Qt/OpenGL para ajudar na elaboração da interface gráfica
+    \item Capítulo 4 ---
+    
+    \item Capítulo 5
+\end{itemize}
 
-Foram delinhados três objetivos principais para a conclusão deste trabalho, o primeiro passo foi estudar e implementar o modelo matamático proposto por~\cite{Duan} que descreve o escoamento sanguíneo 1D em árvores arteriais; Em seguida o escoamento sanguíneo nestes modelos foi estudado sobre diferentes regimes de viscosidade sanguínea e viscoelasticidade da parede do vaso, investigando o efeito de cada regime e sua combinação sobre as ondas de fluxo e pressão; E, finalmente, o desenvolvimento de um sistema computacional capaz de analisar o escoamento pulsátil nos regimes estudados. O sistema computacional resultante foi construído para ter um funcionamento multiplataforma (Windows e Unix), armazenamento consistendo de todo o modelo geométrico e suas propriedades e a capacidade de visualizar e analisar diversos modelos de árvores arteriais e modelos subsequentes.
-
-Este trabalho tem caráter interdisciplinar envolvendo áreas de Matemática Aplicada,
-Computação, Biologia, Física e Medicina, o que torna fundamental o conhecimento
-básico de cada área.
-
-Primeiramente, estudou-se o modelo matemático de Duan e Zamir \cite{Duan}. Este estudo motivou o desenvolvimento de uma nova ferramenta computacional chamada~\textbf{IGU} (\textbf{Iterador Gráfico Universal}) para descrever o escoamento sanguíneo pulsátil em árvores arteriais. Inicialmente para verificar a robustez da ferramenta, buscou-se realizar algumas simulações semelhantes aquelas de Duan e Zamir a título de comparação. Destaca-se que a ferramenta~\textbf{IGU} foi desenvolvida em C++,  contou com a utilização das bibliotecas Qt/OpenGL para ajudar na elaboração da interface gráfica e encontra-se em repositório aberto localizado em :
-
-	http://bit.ly/2KwZ4np .
+\textcolor{red}{IGOR: complemente esta seção de organização. Recomendo fortemente ler a introdução da minha dissertação e tese para ter mais ideias de como montar uma introdução para sua dissertação.}
 
 %--------------------------------------------------------------------------------%
-\chapter{MODELAGEM DO ESCOAMENTO SANGUÍNEO PULSÁTIL EM ÁRVORES ARTERIAIS}\label{sec:escoamento}
+\chapter{MODELAGEM DO ESCOAMENTO SANGUÍNEO}\label{sec:escoamento}
 
 \textcolor{red}{IGOR: está errada a citação do trabalho do método de Duan e Zamir (1995), não é a citação que colocou \cite{Duan}.}
 
@@ -467,11 +460,13 @@ A partir do modelo matemático aqui apresentado, os seguintes cenários podem se
 
 \section{MODELAGEM COMPUTACIONAL}
 \label{sec:algoritmo}
-Nesta seção, detalham-se alguns aspectos da estrutura de dados e algoritmos que descrevem os passos para o cálculo das ondas de pressão $P(j,k)$ e fluxo $Q(j,k)$.
+\textcolor{red}{IGOR: fiz mais uma revisão nesta seção. Cheque se tudo está coerente com o quis dizer após minhas alterações no texto.}
 
-Inicialmente, salientam-se que as equações~\eqref{27_R} e~\eqref{28_Ye} expõem a necessidade de valores $Y_e(k+1,2j)$ e $Y_e(k+1,2j-1)$ atrelados às artérias adjacentes na posição distal do segmento $(k,j)$. Por outro lado, o valor da pressão média do segmento $(k,j)$ calculado usando a equação~\eqref{18_barp} depende de valores  à montante desse segmento, ou seja, do valor $\bar{p}(k-1,s)$. Tendo isto em vista, a estrutura de dados desenvolvida utiliza de ponteiros para acessar as propriedades de artérias à montante e a jusante de um vaso do modelo.
+Nesta seção, detalham-se alguns aspectos da estrutura de dados e algoritmos que descrevem os passos para o cálculo das equações da pressão $P$ e fluxo $Q$ definidas em \eqref{21_P} \eqref{23_Q}, respectivamente.
 
-Neste trabalho, adotou-se a linguagem de programação C++. Essa linguagem de programação escolhida permite que objetos \textcolor{red}{sejam passados por referência. Ao passar um objeto por referência, o endereço de memória é enviado, dando total acesso aos parâmetros do objeto, este endereço é chamado de ponteiro. Ao enviar o ponteiro do segmento raiz, é possível acessar todo o modelo de árvore arterial}. Cada vaso arterial do modelo contém as propriedades apresentadas na Tabela~\ref{tab:info_vaso}, além de ponteiros para os vasos adjacentes. 
+Inicialmente, salientam-se que as equações~\eqref{27_R} e~\eqref{28_Ye} expõem a necessidade de valores $Y_e(k+1,2j)$ e $Y_e(k+1,2j-1)$ atrelados aos vasos adjacentes na posição distal do vaso $(k,j)$. Por outro lado, o valor da pressão média do vaso $(k,j)$ calculado usando a equação~\eqref{18_barp} depende de valores  à montante desse vaso, ou seja, do valor $\bar{p}(k-1,s)$. Tendo isto em vista, a estrutura de dados desenvolvida utiliza de ponteiros para acessar as propriedades de artérias à montante e a jusante de um vaso do modelo.
+
+Neste trabalho, adotou-se a linguagem de programação C++. Essa linguagem de programação escolhida permite que objetos \textcolor{red}{sejam passados por referência. Ao passar um objeto por referência, o endereço de memória é enviado, dando total acesso aos parâmetros do objeto, este endereço é chamado de ponteiro. Ao enviar o ponteiro do vaso raiz, é possível acessar todo o modelo de árvore arterial}. Cada vaso arterial do modelo contém as propriedades apresentadas na Tabela~\ref{tab:info_vaso}, além de ponteiros para os vasos adjacentes. 
 
 \begin{table}[h]
 \begin{tabular}{|c|c||c|c|}
@@ -484,7 +479,7 @@ Neste trabalho, adotou-se a linguagem de programação C++. Essa linguagem de pr
 
 	 módulo de Young ($E$) & g/cms$^2$  & velocidade angular ($\omega$) & rad/s \\
 	 
- viscosidade ($\mu_0$) & cm$^2$/s &	espessura da parede ($h$) &  cm \\
+ viscosidade ($\mu_0$) & cm$^2$/s &	espessura da parede ($h$) &  $cm$ \\
 
 	raio ($r$) & cm  & número de Womersley ($\alpha$) & --- \\
 	
@@ -494,11 +489,11 @@ Neste trabalho, adotou-se a linguagem de programação C++. Essa linguagem de pr
 	
 	&  & coeficiente de reflexão ($R$) & $g /cm^4 s$ \\
 		
-	& & fator viscoso ($\epsilon$) & --- \\
+	& & fator viscoso ($\epsilon$) & -- \\
 	
 & & pressão ($P$) & -- \\
 	
-  &  &	pressão média ($\bar{p}$) & --- \\
+  &  &	pressão média ($\bar{p}$) & -- \\
   	
  & &	fluxo ($Q$) & -- \\
 \hline
@@ -507,67 +502,66 @@ Neste trabalho, adotou-se a linguagem de programação C++. Essa linguagem de pr
 \label{tab:info_vaso}
 \end{table}
 
-Além das propriedades especificadas na Tabela~\ref{tab:info_vaso}, o vaso possui ainda três ponteiros para os seus vasos adjacentes. Um destes ponteiros, para o vaso adjacente ao seu nó proximal, ou seja, para o seu vaso pai $(k-1,s)$. Os demais ponteiros para os vasos adjacentes ao seu nó distal, ou seja, para seus vasos filhos à esquerda e à direita expressos por $(k+1,2j-1)$ e $(k+1,2j)$, respectivamente. Este arranjo de ponteiros é equivalente a uma árvore duplamente encadeada, onde através de um único ponteiro para um vaso é possível trafegar a árvore nos dois sentidos. Isto é útil quando é necessário acessar propriedades de outro vaso para se determinarem por exemplo, a pressão média, coeficientes de reflexão e admitâncias de um dado vaso.
+Além das propriedades especificadas na Tabela~\ref{tab:info_vaso}, o vaso possui ainda três ponteiros para os seus vasos adjacentes. Um destes ponteiros, para o vaso adjacente ao seu nó proximal, ou seja, para o seu vaso pai $(k-1,s)$. Os demais ponteiros para os vasos adjacentes ao seu nó distal, ou seja, para seus vasos filhos à esquerda ($esq$) e à direita ($dir$) expressos por $(k+1,2j-1)$ e $(k+1,2j)$, respectivamente. Este arranjo de ponteiros é equivalente a uma árvore duplamente encadeada, onde através de um único ponteiro para um vaso é possível trafegar a árvore nos dois sentidos. Isto é útil quando é necessário acessar propriedades de outro vaso para se determinarem por exemplo, a pressão média, coeficientes de reflexão e admitâncias de um dado vaso.
 
-Os ponteiros permitem também definir se o vaso é a raiz ou uma folha. Caso o ponteiro para o segmento superior $(k-1,s)$ seja igual ao valor da \textit{flag} nula se trata de um vaso raiz. Caso ambos vasos  $(k+1,2j-1)$ e $(k+1,2j)$ sejam iguais ao valor da \textit{flag} nulo se trata de vaso folha, isto é, um vaso terminal.
+Os ponteiros permitem também definir se o vaso é a raiz ou uma folha. Caso o ponteiro para o segmento superior $(k-1,s)$ seja igual ao valor da \textit{flag} nula se trata de um vaso raiz. Caso ambos vasos  $(k+1,2j-1)$ e $(k+1,2j)$ sejam iguais ao valor da \textit{flag} nula se trata de vaso folha, isto é, um vaso terminal.
 
 Basicamente, os passos para determinar as ondas de pressão e fluxo que percorrem um modelo de árvore arterial usando o modelo de Duan e Zamir são dados por:
 \begin{enumerate}
-    \item Cálculo da admitância característica $(Y)$ de cada segmento;
-    \item Cálculo da admitância efetiva $(Y_e)$  de cada segmento;
-    \item Cálculo do coeficiente de reflexão $(R)$  de cada segmento; 
-    \item Armazenar valor da admitância característica $(Y_r)$ do segmento raiz;
-    \item Cálculo da pressão média $(\bar{p})$ em cada segmento;
+    \item Cálculo da admitância característica $(Y)$ de cada vaso;
+    \item Cálculo da admitância efetiva $(Y_e)$  de cada vaso;
+    \item Cálculo do coeficiente de reflexão $(R)$  de cada vaso; 
+    \item Armazenar valor da admitância característica $(Y_r)$ do vaso raiz, isto é, o valor de $Y(1,1)$;
+    \item Cálculo da pressão média $(\bar{p})$ em cada vaso;
     \item Cálculo das ondas de pressão e fluxo $P$ e $Q$.
 \end{enumerate}
 
-Os passos acima mencionados podem ser organizados no Algoritmo 1. Esse algoritmo tem como entrada: o modelo de árvore arterial ($\mathcal{MAA}$) com seus vasos caracterizados por suas propriedades, a frequência ($f$) em Hz, um fator de escala da viscosidade ($\gamma_{\mu}$), e o parâmetro da viscoelasticidade da parede ($\phi$). 
+Os passos acima mencionados podem ser organizados no Algoritmo 1. Esse algoritmo tem como entrada: o modelo de árvore arterial ($\mathcal{MAA}$) com seus vasos caracterizados por suas propriedades, a frequência ($f$) em Hz, um fator de escala da viscosidade ($\gamma_{\mu}$), o parâmetro da viscoelasticidade da parede ($\phi$) e a quantidade de espaçamento para discretização de um vaso ($N$).
 
-O Algoritmo 1 proposto tem dois módulos. O primeiro módulo realiza o cálculo percorrendo o caminho a partir dos vasos finais até o vaso raiz (estratégia do tipo \textit{bottom-up}). O segundo módulo realiza cálculos percorrendo o modelo a partir do vaso raiz até os vasos terminais (abordagem do tipo \textit{top-bottom}).
+O Algoritmo 1 proposto tem dois módulos, a saber: $\mathcal{M}_1$ e $\mathcal{M}_2$. O módulo $\mathcal{M}_1$ realiza o cálculo percorrendo o caminho a partir dos vasos finais até o vaso raiz (estratégia do tipo \textit{bottom-up}). O módulo $\mathcal{M}_2$ realiza os cálculos percorrendo o modelo a partir do vaso raiz até os vasos terminais (abordagem do tipo \textit{top-bottom}).
 
 \begin{algorithm}[H]
 	\SetAlgoLined
-	\Entrada{ $\mathcal{MAA}$, $f$, $\gamma_{\mu}$, $\phi$, $\bar{p}_0$ }
+	\Entrada{ $\mathcal{MAA}$, $f$, $\gamma_{\mu}$, $\phi$, $\bar{p}_0$, $N$ }
 	\Inicio{
-		inicializa vaso $s$ a partir do vaso raiz;\\
-		\Se{existe($s$)}{
-			Chama $\mathcal{M}_1$ ($s$, $f$, $\gamma_{\mu}$, $\phi_0$) e armazena $Y_r$
+		inicializa vaso $v$ a partir do vaso raiz;\\
+		\Se{existe($v$)}{
+			Chama $\mathcal{M}_1$ ($v$, $f$, $\gamma_{\mu}$, $\phi_0$) e armazena $Y_r$;
 		}
-		\Se{existe($Y_r$)}{
-			Chama $\mathcal{M}_2$($s$ , $\bar{p}_0$, $Y_r$);
+		\Se{existe($Y(1,1)$)}{
+			Chama $\mathcal{M}_2$($v$ , $\bar{p}_0$, $Y_r$, $N$);
 		}
 	}
 \caption{Cálculos hemodinâmicos do modelo de árvore arterial ($\mathcal{MAA}$).}
 \end{algorithm}
 
-Antes que algum módulo possa ser executado é necessário que o ponteiro recebido pelo algoritmo representa de fato uma vaso arterial
-
-O módulo $\mathcal{M}_1$ do Algoritmo 1  visa calcular os valores de admitância efetiva ($Y_e$), admitância característica ($Y$) e coeficiente de reflexão ($R$) de cada vaso. Desta forma, é necessário que as admitâncias efetivas dos vasos à justante do segmento $k$ ($Y_e(k+1,2j-1)$ e $Y_e(k+1,2j)$) já estejam definidas. Em vista disso, verifica-se a existência dos vasos à justante do vaso atual tanto a esquerda ($esq$) quanto a direita ($dir$) e caso existam realiza-se uma chamada recursiva. Após o retorno das chamadas recursivas calculam-se as propriedades do vaso atual. Assim, as propriedades do vasos à jusante do vaso atual serão conhecidas, ou seja, já terão sido determinadas $Y_e(k+1,2j-1)$ e $Y_e(k+1,2j)$.
+O módulo $\mathcal{M}_1$ do Algoritmo 1  visa calcular os valores de admitância efetiva ($Y_e$), admitância característica ($Y$) e coeficiente de reflexão ($R$) de cada vaso. Este módulo é definido pelo Algoritmo~\ref{AlgM1}. Necessitam-se das admitâncias efetivas dos vasos à justante do vaso $k$ ($Y_e(k+1,2j-1)$ e $Y_e(k+1,2j)$) estejam definidas. Em vista disso, verifica-se a existência dos vasos à justante do vaso atual tanto a esquerda ($esq$) quanto a direita ($dir$) e caso existam realiza-se uma chamada recursiva. Após o retorno das chamadas recursivas, calculam-se as propriedades do vaso atual. Assim, as propriedades do vasos à jusante do vaso atual serão conhecidas, ou seja, já terão sido determinadas $Y_e(k+1,2j-1)$ e $Y_e(k+1,2j)$.
+\newpage
 
 \begin{algorithm}[H]
-$\mathcal{M}_1$ ($s$, $f$, $\gamma_{\mu}$, $\phi_0$) \\
+$\mathcal{M}_1$ ($v$, $f$, $\gamma_{\mu}$, $\phi$) \\
 	\Inicio{
-		\Se{existe($s \rightarrow esq$)}{
-			$\mathcal{M}_1$ ($s \rightarrow esq$, $f$, $\gamma_{\mu}$, $\phi_0$);
+		\Se{existe($v \rightarrow esq$)}{
+			$\mathcal{M}_1$ ($v \rightarrow esq$, $f$, $\gamma_{\mu}$, $\phi$);
 		}
-		\Se{existe($s \rightarrow dir$)}{
-			$\mathcal{M}_1$ ($s \rightarrow dir$, $f$, $\gamma_{\mu}$, $\phi_0$);
+		\Se{existe($v \rightarrow dir$)}{
+			$\mathcal{M}_1$ ($v \rightarrow dir$, $f$, $\gamma_{\mu}$, $\phi$);
 		}
 		Calcula as propriedades $c$, $\omega$, $\beta$; \\
-		\Se{ ($\gamma_{\mu} == 0$ e $\phi == 0$) }{
+		\Se{ ($\gamma_{\mu} == 0$) e ($\phi == 0$) }{
 			Calcula $Y$;
 		}
 		\Senao{
-		    \Se{ ($\gamma_{\mu} != 0$) }{
+		    \Se{ ($\gamma_{\mu}~!=~0$) }{
 			Calcula $\alpha$, $\epsilon$, $E_v$, $c_v$ e $Y_v$;\\
-			Atualize $E = E_v$, $c = c_v$ e $Y = Y_v$;
+			Atualiza $E = E_v$, $c = c_v$ e $Y = Y_v$;
 			}
-		    \Se{ ($\phi != 0$) }{
+		    \Se{ ($\phi~!=~0$) }{
 			Calcula $E_c$;\\
 			Atualize $E = E_c$;
 			}
 		}
-		\Se{(s é um vaso terminal)}{
+		\Se{($v$ é um vaso terminal)}{
 			$Y_e = Y$ e  $R = 0$;
 		}
 		\Senao{
@@ -575,35 +569,36 @@ $\mathcal{M}_1$ ($s$, $f$, $\gamma_{\mu}$, $\phi_0$) \\
 		}
 	}
 	\caption{$\mathcal{M}_1$ -- Cálculo das admitâncias e coeficiente de reflexão.}
+	\label{AlgM1}
 \end{algorithm}
 
-\textcolor{red}{PAREI AQUI}
-O módulo 2 do Algoritmo 1 visa calcular o valor da pressão média, pressão e fluxo em cada vaso. Como expresso na equação~\eqref{18_barp}, o valor da pressão média requer o valor da pressão média do vaso à montante $(k-1,s)$. Com isso, verifica-se, inicialmente, se o vaso atual é a artéria de alimentação (raiz), neste caso $\bar{p} = \bar{p}_0$. Caso contrário, calcula-se $\bar{p}$ com a equação~\eqref{18_barp}. Em seguida, o valor das ondas de pressão e fluxo são obtidas ao longo de cada vaso 1D, que são discretizados. Por fim, a recursão é enviada aos segmentos inferiores, desta forma se garante a existência de um valor $\bar{p}(k-1,s)$.
+O módulo 2 ($\mathcal{M}_2$) do Algoritmo 1 visa calcular o valor da pressão média, pressão e fluxo em cada vaso. Esse módulo é expresso no Algoritmo~\ref{AlgoritmoM2}. Como expresso na equação~\eqref{18_barp}, o valor da pressão média requer o valor da pressão média do vaso à montante $(k-1,s)$. Com isso, inicialmente, se o vaso atual é a artéria de alimentação (raiz), neste caso $\bar{p} = \bar{p}_0$. Caso contrário, calcula-se $\bar{p}$ com a equação~\eqref{18_barp}. Em seguida, o valor das ondas de pressão e fluxo são obtidas ao longo de cada vaso 1D, que são discretizados. Por fim, a recursão é enviada aos segmentos inferiores, desta forma se garante a existência de um valor $\bar{p}(k-1,s)$.
 
 \begin{algorithm}[H]
-\textbf{\textit{\textsl{\underline{fase dois}}}}(a,f,$\epsilon$,$\phi_0$) \\
+$\mathcal{M}_2$ ($v$, $\bar{p}_0$, $Y_r$, $N$) \\
 \Inicio{
-	\Se{a $\in$ raiz}{
-		$\bar{p} = \bar{p_0}$
+	\Se{ ($v$ é o vaso raiz)}{
+		$\bar{p} = \bar{p_0}$;
 	}
 	\Senao{
-		Calcula $\bar{p}$
+		Calcula $\bar{p}$;
 	}
-	Calcula $P(X) e Q(X) \forall X \in [0,1])$ \\
-	\Se{existe(a $\rightarrow$ esquerda)}{
-		Envia a recursão \textit{fase dois}(a $\rightarrow$ esquerda,f,$\epsilon$,$\phi_0$)
+	Calcula $P(X_i)$ e $Q(X_i)$, onde $X_i \in [0,1]$; \\
+	\Se{existe( $v \rightarrow esq$ )}{
+		$\mathcal{M}_2$ ($v \rightarrow esq$, $\bar{p}_0$, $Y_r$, $N$);
 	}
-	\Se{existe(a $\rightarrow$ direita)}{
-		Envia a recursão \textit{fase dois}(a $\rightarrow$ direita,f,$\epsilon$,$\phi_0$)
+	\Se{existe($v \rightarrow dir$)}{
+			$\mathcal{M}_2$ ($v \rightarrow dir$, $\bar{p}_0$, $Y_r$, $N$);
 	}
 }
-\caption{Segunda fase do cálculo, recursão \textit{(bottom-up)}.}
+\caption{$\mathcal{M}_2$ -- Cálculo da pressão e fluxo ao longo de cada vaso.}
+\label{AlgoritmoM2}
 \end{algorithm}
 
-Ao término da execução os valores contidos na artéria são analisados separadamente. A onda de pressão e fluxo representa um conjunto de valores por segmento que precisam ser calculados e armazenados, para isto é preciso determinar a quantidade de pontos $N$ que serão analisados dentro do espaço $X \in [0,1]$, foi adotado $N = 101$. No caso da onda de pressão os valores encontrados para ramo de árvore deve resultar em um gráfico contínuo, isto é $P(k,j)(X=0) = P(k+1,2j)(X=1)$ e $P(k,j)(X=0) = P(k+1,2j-1)(X=1)$.
-	
+No Algoritmo \ref{AlgoritmoM2} tem-se que $N$ denota a quantidade de espaçamento $dX$ no intervalo [0,1] para discretização de um vaso. Assim, $dX = 1/N$ e $X_i = i dX (i = 0, 1, \cdot, N)$.
+
 %--------------------------------------------------------------------------------%
-\chapter{Ferramenta computacional}\label{sec:modelagem}
+\chapter{FERRAMENTA COMPUTACIONAL}\label{sec:modelagem}
 
 Nesta seção apresentam-se detalhes da ferramenta computacional desenvolvida para simulação do escoamento sanguíneo em modelos de árvores arteriais. Com esta ferramenta, o usuário poderá  visualizar a estrutura da árvore arterial e depois da simulação hemodinâmica, visualizar curvas de distribuição de fluxo sanguíneo e pressão.
 
@@ -896,7 +891,7 @@ Os efeitos combinados da viscosidade do fluido e viscoelasticidade da parede do 
 \textcolor{red}{IGOR: já fiz uma primeira revisão deste capítulo e indico em vermelho o que deve fazer para melhorar este capítulo. Tudo que acrescentar ou mudar coloque em azul.}
 \textcolor{blue}{XXXXXXXXXXXXX}.
 
-Em relação a hemodinâmica, os resultados obtidos neste trabalho estão de acordo com aqueles obtidos por Duan e Zamir \cite{Duan} considerando a propagação de uma onda harmônica simples nos três cenários abordados nas simulações. 
+Em relação a hemodinâmica, os resultados obtidos neste trabalho estão de acordo com aqueles obtidos por Duan e Zamir\textcolor{blue}{ \cite{Duan1992} } considerando a propagação de uma onda harmônica simples nos três cenários abordados nas simulações. 
 
 Em destaque, visando contribuir na investigação do método desenvolvido por por Duan e Zamir, curvas de impedância de entrada do modelo de árvore canina aqui considerada foram apresentadas. Estas curvas apresentam comportamento que pode ser observado em dados experimentais.
 
