@@ -754,7 +754,7 @@ Com os parâmetros definidos e as fábricas devidamente acopladas os objeto est�
 %--------------------------------------------------------------------------------%
 \subsection{Objeto Gráfico}\label{sec:objeto_grafico}
 
-Caso seja requisitado o objeto inteligente pode também incluir os componentes de visualização fábrica gráfica e coleção de objetos gráficos \textit{GraphicModel}. Somente depois de adicionar uma fábrica gráfica à um objeto que a coleção de objetos gráficos é alocada e o primeiro objeto gráfico criado. Objetos gráficos assim como elementos inteligentes são colecionados por outras estruturas. Enquanto a estrutura responsável por elementos inteligentes, \textit{WiseCollection}, é responsável por manter os últimos dados de iteração aquecidos, a estrutura \textit{GraphicModel} mantém o objeto que está sendo exibido por alguma tela e elementos próximos.
+Caso seja configurado, o objeto inteligente pode incluir os componentes de visualização: fábrica gráfica \textit{GraphicFactory} e coleção de objetos gráficos \textit{GraphicModel}. Somente depois de adicionar uma fábrica gráfica à um objeto que a coleção de objetos gráficos é alocada e o primeiro objeto gráfico criado. Objetos gráficos assim como elementos inteligentes são colecionados por outras estruturas. Enquanto a estrutura responsável por elementos inteligentes, \textit{WiseCollection}, é responsável por manter os últimos dados de iteração aquecidos, a estrutura \textit{GraphicModel} mantém o objeto que está sendo exibido por alguma tela e elementos próximos.
 
 \begin{figure}[!htbp]
 	\centering
@@ -763,14 +763,34 @@ Caso seja requisitado o objeto inteligente pode também incluir os componentes d
 	\label{fig7:graphicmodel}
 \end{figure}
 
+Presente na Figura~\ref{fig7:graphicmodel} estão os componentes que permitem armazenar todos os quadros da animação final ao visualizar algum parâmetro contido na estrutura \textit{WiseStructure}. Quando um objeto \textit{WiseObject} está corretamente configurado com uma instância de fábrica gráfica \textit{GraphicFactory}, seu método iterativo é atrelado à iteração do objeto. Isso permite que o objeto iterado crie um elemento inteligente \textit{WiseElement} e um objeto gráfico \textit{GraphicObject} à cada iteração.
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=1]{Figures/GraphicObjects}
+	\caption{Tipos de objetos gráficos \textit{GraphicObjects}.}
+	\label{fig7:graphicobjects}
+\end{figure}
+
+
+Os objetos gráficos contidos na Figura~\ref{fig7:graphicobjects} de cada tipo se desenha através de um gradiente de cores e formas geométricas padrão, bidimensionais ou tridimensionais. Cada forma geométrica utilizada é representada por elementos gráficos, objeto que implementam a classe abstrata \textit{GraphicElement}. Cada elemento gráfico é atrelado à um valor ou à uma lista de valores, estes valores são utilizados para dar cor aos elementos gráficos. Cada objeto gráfico possui um valor máximo e mínimo que é vinculado ao gradiente cores, com isso as cores representam os valores armazenados em cada elemento.
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=1]{Figures/GraphicElements}
+	\caption{Tipos de elementos gráficos \textit{GraphicElements}. \textit{Point}, um ponto. \textit{Line}, uma linha. \textit{Quad}, um quadrado. \textit{Cube}, um cubo. \textit{Cylinder}, um cilindro. \textit{Sphere}, uma esfera.}
+	\label{fig7:graphicelements}
+\end{figure}
+
+Os elementos gráficos podem ser utilizados por qualquer tipo de objeto gráfico. A representação geométrica de uma árvore arterial é construída utilizando cilindros e esferas, que representam segmentos de vaso e terminais, respectivamente. Os cilindros receberão uma lista de valores da pressão $P(X) \forall X \in [0,1]$, enquanto as esferas receberão os valores da pressão $P(X)$ quando $X=0$ ou $X=1$, dependendo se é o nó distal($X=1$) ou o nó proximal($X=0$).
+
 %-------------------------------------------------------------------------------------------%
 \chapter{RESULTADOS NUMÉRICOS E DISCUSSÕES}
 
+Assim como os objetos inteligentes \textit{WiseObject} têm seus tipos definidos pelo tipo de elemento inteligente que o compõe, o tipo de objeto gráfico segue o tipo de elemento inteligente que representa.
 \textcolor{red}{IGOR: já fiz uma primeira revisão deste capítulo e indico em vermelho o que deve fazer para melhorar este capítulo. Tudo que acrescentar ou mudar coloque em azul.}
 \textcolor{blue}{XXXXXXXXXXXXX}.
-
 \textcolor{red}{IGOR: não está aparecendo a numeração das Figuras no caption. Algo de errado está acontecendo no modelo que está utilizando.}
-
 \textcolor{red}{IGOR: está errada a citação do trabalho do método de Duan e Zamir (1995), não é a citação que colocou \cite{Duan}.}
 
 Nesta seção, apresentam-se resultados obtidos com a implementação computacional e simulação do modelo matemático de Duan e Zamir~\cite{Duan}. As simulações realizadas aqui tratam da propagação de uma onda harmônica simples ao longo de uma árvore, onde reflexões de onda modificam a amplitude da onda de pressão enquanto ela avança. A escolha de uma onda harmônica simples neste estudo possibilita investigar os efeitos da frequência, fluido viscoso e viscoelasticidade da parede do segmento de vaso.
