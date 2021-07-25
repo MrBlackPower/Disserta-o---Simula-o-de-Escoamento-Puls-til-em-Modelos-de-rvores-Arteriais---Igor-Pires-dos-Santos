@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.8.25)  22 APR 2021 20:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.8.25)  25 JUL 2021 19:04
 entering extended mode
 **./modelo.tex
 (modelo.tex
@@ -946,31 +946,45 @@ Package: lipsum 2021-03-03 v2.3 150 paragraphs of Lorem Ipsum dummy text
 ("C:\Program Files\MiKTeX\tex/latex/lipsum\lipsum.ltd.tex"
 File: lipsum.ltd.tex 2021-03-03 v2.3 The Lorem ipsum dummy text
 ))
+("C:\Program Files\MiKTeX\tex/latex/multirow\multirow.sty"
+Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
+\multirow@colwidth=\skip286
+\multirow@cntb=\count365
+\multirow@dima=\skip287
+\bigstrutjot=\dimen289
+)
 
 LaTeX Warning: Unused global option(s):
     [<...>].
 
-(modelo.aux)
+(modelo.aux
+
+LaTeX Warning: Label `fig10:UI' multiply defined.
+
+
+LaTeX Warning: Label `sec:help' multiply defined.
+
+)
 \openout1 = `modelo.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
 \AtBeginShipoutBox=\box69
-Package hyperref Info: Link coloring OFF on input line 63.
+Package hyperref Info: Link coloring OFF on input line 65.
  ("C:\Program Files\MiKTeX\tex/latex/hyperref\nameref.sty"
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
@@ -980,43 +994,43 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ("C:\Program Files\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty"
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count365
+\c@section@level=\count366
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 63.
-LaTeX Info: Redefining \ref on input line 63.
-LaTeX Info: Redefining \pageref on input line 63.
-LaTeX Info: Redefining \nameref on input line 63.
+LaTeX Info: Redefining \nameref on input line 65.
+LaTeX Info: Redefining \ref on input line 65.
+LaTeX Info: Redefining \pageref on input line 65.
+LaTeX Info: Redefining \nameref on input line 65.
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 63.
+(lastpage)             ! on input line 65.
 ("C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count366
-\scratchdimen=\dimen289
+\scratchcounter=\count367
+\scratchdimen=\dimen290
 \scratchbox=\box70
-\nofMPsegments=\count367
-\nofMParguments=\count368
+\nofMPsegments=\count368
+\nofMParguments=\count369
 \everyMPshowfont=\toks38
-\MPscratchCnt=\count369
-\MPscratchDim=\dimen290
-\MPnumerator=\count370
-\makeMPintoPDFobject=\count371
+\MPscratchCnt=\count370
+\MPscratchDim=\dimen291
+\MPnumerator=\count371
+\makeMPintoPDFobject=\count372
 \everyMPtoPDFconversion=\toks39
 ) ("C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty"
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 )
-LaTeX Info: Redefining \microtypecontext on input line 63.
+LaTeX Info: Redefining \microtypecontext on input line 65.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 63.
+LaTeX Info: Redefining \showhyphens on input line 65.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1025,7 +1039,7 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-\c@lstlisting=\count372
+\c@lstlisting=\count373
  [1
 
 
@@ -1034,35 +1048,35 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 
 ]
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 7
-2.
+4.
 
 ("C:\Program Files\MiKTeX\tex/latex/lm\ot1lmr.fd"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 7
-2.
+4.
 
 ("C:\Program Files\MiKTeX\tex/latex/lm\omllmm.fd"
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-72.
+74.
 
 ("C:\Program Files\MiKTeX\tex/latex/lm\omslmsy.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-72.
+74.
 
 ("C:\Program Files\MiKTeX\tex/latex/lm\omxlmex.fd"
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 72.
+(Font)              <12> on input line 74.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 72.
+(Font)              <8> on input line 74.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 72.
+(Font)              <6> on input line 74.
  [1
 
 
@@ -1106,7 +1120,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
-21.
+25.
 
 ("C:\Program Files\MiKTeX\tex/latex/lm\ts1lmr.fd"
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1114,282 +1128,314 @@ File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 
 ] [27] [28]
 * abntbibufjf: Il 
-<Figures/ArterialTree_Zamir.png, id=381, 884.30376pt x 370.38374pt>
+<Figures/ArterialTree_Zamir.png, id=416, 884.30376pt x 370.38374pt>
 File: Figures/ArterialTree_Zamir.png Graphic file (type png)
 <use Figures/ArterialTree_Zamir.png>
-Package pdftex.def Info: Figures/ArterialTree_Zamir.png  used on input line 303
+Package pdftex.def Info: Figures/ArterialTree_Zamir.png  used on input line 311
 .
 (pdftex.def)             Requested size: 442.1508pt x 185.1914pt.
 [29 <./Figures/ArterialTree_Zamir.png>] [30] [31] [32] [33]
 Underfull \vbox (badness 1668) has occurred while \output is active []
 
  [34]
-
-LaTeX Warning: Reference `AlgM1' on page 35 undefined on input line 538.
-
 [35]
-
-LaTeX Warning: Reference `AlgoritmoM2' on page 36 undefined on input line 575.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [36]
-
-LaTeX Warning: Reference `AlgoritmoM2' on page 37 undefined on input line 598.
-
 [37] [38
 
 ]
-<Figures/IGU.png, id=518, 963.6pt x 770.12718pt>
+<Figures/IGU.png, id=559, 963.6pt x 770.12718pt>
 File: Figures/IGU.png Graphic file (type png)
 <use Figures/IGU.png>
-Package pdftex.def Info: Figures/IGU.png  used on input line 611.
+Package pdftex.def Info: Figures/IGU.png  used on input line 621.
 (pdftex.def)             Requested size: 240.89941pt x 192.53131pt.
+ [39 <./Figures/IGU.png>] [40]
+Overfull \hbox (45.66391pt too wide) in paragraph at lines 646--647
+[]\T1/lmr/m/n/12 (-20) Através das ma-lhas es-tru-tu-ra-das e de-ses-tru-tu-ra-
+das pre-sen-tes na bi-bli-o-teca \T1/lmr/m/it/12 (-20) VTK\T1/lmr/m/n/12 (-20) 
+(\T1/lmr/m/it/12 (-20) Visualization
+ []
 
-Underfull \vbox (badness 2005) has occurred while \output is active []
-
- [39 <./Figures/IGU.png>]
-<Figures/WiseElement.png, id=531, 200.75pt x 100.375pt>
+<Figures/WiseElement.png, id=577, 200.75pt x 100.375pt>
 File: Figures/WiseElement.png Graphic file (type png)
 <use Figures/WiseElement.png>
-Package pdftex.def Info: Figures/WiseElement.png  used on input line 634.
+Package pdftex.def Info: Figures/WiseElement.png  used on input line 650.
 (pdftex.def)             Requested size: 200.7495pt x 100.37474pt.
-<Figures/WiseElements.png, id=533, 348.30125pt x 198.7425pt>
+<Figures/WiseElements.png, id=579, 348.30125pt x 198.7425pt>
 File: Figures/WiseElements.png Graphic file (type png)
 <use Figures/WiseElements.png>
-Package pdftex.def Info: Figures/WiseElements.png  used on input line 643.
+Package pdftex.def Info: Figures/WiseElements.png  used on input line 659.
 (pdftex.def)             Requested size: 348.3004pt x 198.742pt.
+[41 <./Figures/WiseElement.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Underfull \vbox (badness 1478) has occurred while \output is active []
-
- [40]
-[41 <./Figures/WiseElement.png> <./Figures/WiseElements.png>]
-<Figures/WiseElementPoints.png, id=546, 137.51375pt x 100.375pt>
+ [42 <./Figures/WiseElements.png>]
+<Figures/WiseElementPoints.png, id=592, 137.51375pt x 100.375pt>
 File: Figures/WiseElementPoints.png Graphic file (type png)
 <use Figures/WiseElementPoints.png>
-Package pdftex.def Info: Figures/WiseElementPoints.png  used on input line 655.
+Package pdftex.def Info: Figures/WiseElementPoints.png  used on input line 675.
 
 (pdftex.def)             Requested size: 150.15083pt x 109.60873pt.
-<Figures/WiseElementLines.png, id=547, 137.51375pt x 100.375pt>
+<Figures/WiseElementLines.png, id=593, 137.51375pt x 100.375pt>
 File: Figures/WiseElementLines.png Graphic file (type png)
 <use Figures/WiseElementLines.png>
-Package pdftex.def Info: Figures/WiseElementLines.png  used on input line 656.
+Package pdftex.def Info: Figures/WiseElementLines.png  used on input line 676.
 (pdftex.def)             Requested size: 145.60333pt x 106.28976pt.
-<Figures/WiseElementCells.png, id=548, 137.51375pt x 100.375pt>
+<Figures/WiseElementCells.png, id=594, 137.51375pt x 100.375pt>
 File: Figures/WiseElementCells.png Graphic file (type png)
 <use Figures/WiseElementCells.png>
-Package pdftex.def Info: Figures/WiseElementCells.png  used on input line 657.
+Package pdftex.def Info: Figures/WiseElementCells.png  used on input line 677.
 (pdftex.def)             Requested size: 150.15083pt x 109.60873pt.
-<Figures/WiseElementStatus.png, id=550, 295.1025pt x 198.7425pt>
+<Figures/WiseElementStatus.png, id=596, 295.1025pt x 198.7425pt>
 File: Figures/WiseElementStatus.png Graphic file (type png)
 <use Figures/WiseElementStatus.png>
-Package pdftex.def Info: Figures/WiseElementStatus.png  used on input line 668.
+Package pdftex.def Info: Figures/WiseElementStatus.png  used on input line 688.
 
 (pdftex.def)             Requested size: 442.65263pt x 298.113pt.
-<Figures/WiseElementWarming.png, id=552, 292.09125pt x 135.50626pt>
+ [43 <./Figures/WiseElementPoints.png> <./Figures/WiseElementLines.png> <./Figu
+res/WiseElementCells.png>]
+<Figures/WiseElementWarming.png, id=605, 292.09125pt x 135.50626pt>
 File: Figures/WiseElementWarming.png Graphic file (type png)
 <use Figures/WiseElementWarming.png>
-Package pdftex.def Info: Figures/WiseElementWarming.png  used on input line 677
+Package pdftex.def Info: Figures/WiseElementWarming.png  used on input line 697
 .
 (pdftex.def)             Requested size: 292.09052pt x 135.5059pt.
- [42 <./Figures/WiseElementPoints.png> <./Figures/WiseElementLines.png> <./Figu
-res/WiseElementCells.png>] [43 <./Figures/WiseElementStatus.png> <./Figures/Wis
-eElementWarming.png>]
-<Figures/WiseElementCold.png, id=567, 292.09125pt x 135.50626pt>
+ [44 <./Figures/WiseElementStatus.png> <./Figures/WiseElementWarming.png>]
+<Figures/WiseElementCold.png, id=614, 292.09125pt x 135.50626pt>
 File: Figures/WiseElementCold.png Graphic file (type png)
 <use Figures/WiseElementCold.png>
-Package pdftex.def Info: Figures/WiseElementCold.png  used on input line 688.
+Package pdftex.def Info: Figures/WiseElementCold.png  used on input line 710.
 (pdftex.def)             Requested size: 292.09052pt x 135.5059pt.
-<Figures/WiseElementHot.png, id=568, 292.09125pt x 159.59625pt>
+<Figures/WiseElementHot.png, id=615, 292.09125pt x 159.59625pt>
 File: Figures/WiseElementHot.png Graphic file (type png)
 <use Figures/WiseElementHot.png>
-Package pdftex.def Info: Figures/WiseElementHot.png  used on input line 699.
+Package pdftex.def Info: Figures/WiseElementHot.png  used on input line 721.
 (pdftex.def)             Requested size: 292.09052pt x 159.59584pt.
-
-
-LaTeX Warning: Citation `factorypattern' on page 44 undefined on input line 709
-.
-
-[44 <./Figures/WiseElementCold.png> <./Figures/WiseElementHot.png>]
-<Figures/WiseElementWorkflow.png, id=575, 292.09125pt x 298.11375pt>
+ [45 <./Figures/WiseElementCold.png>]
+<Figures/WiseElementWorkflow.png, id=623, 292.09125pt x 298.11375pt>
 File: Figures/WiseElementWorkflow.png Graphic file (type png)
 <use Figures/WiseElementWorkflow.png>
-Package pdftex.def Info: Figures/WiseElementWorkflow.png  used on input line 71
-3.
+Package pdftex.def Info: Figures/WiseElementWorkflow.png  used on input line 73
+7.
 (pdftex.def)             Requested size: 292.09052pt x 298.11302pt.
- [45 <./Figures/WiseElementWorkflow.png>]
-<Figures/WiseObject.png, id=582, 462.72874pt x 281.05pt>
+ [46 <./Figures/WiseElementHot.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [47 <./Figures/WiseElementWorkflow.png>]
+<Figures/WiseObject.png, id=640, 462.72874pt x 281.05pt>
 File: Figures/WiseObject.png Graphic file (type png)
 <use Figures/WiseObject.png>
-Package pdftex.def Info: Figures/WiseObject.png  used on input line 732.
+Package pdftex.def Info: Figures/WiseObject.png  used on input line 762.
 (pdftex.def)             Requested size: 462.72762pt x 281.0493pt.
 
-Overfull \hbox (7.72762pt too wide) in paragraph at lines 732--733
+Overfull \hbox (7.72762pt too wide) in paragraph at lines 762--763
  [][] 
  []
 
-<Figures/WiseObjectStatus.png, id=584, 269.005pt x 205.76875pt>
+<Figures/WiseObjectStatus.png, id=642, 269.005pt x 205.76875pt>
 File: Figures/WiseObjectStatus.png Graphic file (type png)
 <use Figures/WiseObjectStatus.png>
-Package pdftex.def Info: Figures/WiseObjectStatus.png  used on input line 743.
+Package pdftex.def Info: Figures/WiseObjectStatus.png  used on input line 773.
 (pdftex.def)             Requested size: 269.00433pt x 205.76823pt.
-[46] [47 <./Figures/WiseObject.png> <./Figures/WiseObjectStatus.png>]
-<Figures/GraphicModel.png, id=597, 246.9225pt x 134.5025pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [48]
+[49 <./Figures/WiseObject.png> <./Figures/WiseObjectStatus.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [50]
+<Figures/GraphicModel.png, id=658, 246.9225pt x 134.5025pt>
 File: Figures/GraphicModel.png Graphic file (type png)
 <use Figures/GraphicModel.png>
-Package pdftex.def Info: Figures/GraphicModel.png  used on input line 761.
+Package pdftex.def Info: Figures/GraphicModel.png  used on input line 796.
 (pdftex.def)             Requested size: 246.92188pt x 134.50215pt.
- [48]
-<Figures/GraphicObjects.png, id=603, 348.30125pt x 198.7425pt>
+<Figures/GraphicObjects.png, id=660, 348.30125pt x 198.7425pt>
 File: Figures/GraphicObjects.png Graphic file (type png)
 <use Figures/GraphicObjects.png>
-Package pdftex.def Info: Figures/GraphicObjects.png  used on input line 770.
+Package pdftex.def Info: Figures/GraphicObjects.png  used on input line 805.
 (pdftex.def)             Requested size: 348.3004pt x 198.742pt.
-<Figures/GraphicElements.png, id=605, 348.30125pt x 198.7425pt>
+
+[51 <./Figures/GraphicModel.png>]
+<Figures/GraphicElements.png, id=667, 348.30125pt x 198.7425pt>
 File: Figures/GraphicElements.png Graphic file (type png)
 <use Figures/GraphicElements.png>
-Package pdftex.def Info: Figures/GraphicElements.png  used on input line 780.
+Package pdftex.def Info: Figures/GraphicElements.png  used on input line 816.
+(pdftex.def)             Requested size: 348.3004pt x 198.742pt.
+ [52 <./Figures/GraphicObjects.png> <./Figures/GraphicElements.png>]
+<Figures/WiseThreadPool.png, id=676, 301.125pt x 143.53625pt>
+File: Figures/WiseThreadPool.png Graphic file (type png)
+<use Figures/WiseThreadPool.png>
+Package pdftex.def Info: Figures/WiseThreadPool.png  used on input line 835.
+(pdftex.def)             Requested size: 301.12425pt x 143.53589pt.
+ [53 <./Figures/WiseThreadPool.png>]
+<Figures/WiseThreaPoolCMD.png, id=684, 352.0653pt x 205.76875pt>
+File: Figures/WiseThreaPoolCMD.png Graphic file (type png)
+<use Figures/WiseThreaPoolCMD.png>
+Package pdftex.def Info: Figures/WiseThreaPoolCMD.png  used on input line 848.
+(pdftex.def)             Requested size: 352.06444pt x 205.76823pt.
+<Figures/WiseThreadPoolHeating.png, id=685, 352.0653pt x 205.76875pt>
+File: Figures/WiseThreadPoolHeating.png Graphic file (type png)
+<use Figures/WiseThreadPoolHeating.png>
+Package pdftex.def Info: Figures/WiseThreadPoolHeating.png  used on input line 
+857.
+(pdftex.def)             Requested size: 352.06444pt x 205.76823pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [54]
+[55 <./Figures/WiseThreaPoolCMD.png> <./Figures/WiseThreadPoolHeating.png>]
+File: Figures/GraphicElements.png Graphic file (type png)
+<use Figures/GraphicElements.png>
+Package pdftex.def Info: Figures/GraphicElements.png  used on input line 873.
 (pdftex.def)             Requested size: 348.3004pt x 198.742pt.
 
-[49 <./Figures/GraphicModel.png> <./Figures/GraphicObjects.png>] [50 <./Figures
-/GraphicElements.png>]
-<Figures/tree_canine.png, id=625, 297.36093pt x 155.07938pt>
+[56]
+File: Figures/GraphicElements.png Graphic file (type png)
+<use Figures/GraphicElements.png>
+Package pdftex.def Info: Figures/GraphicElements.png  used on input line 890.
+(pdftex.def)             Requested size: 348.3004pt x 198.742pt.
+ [57]
+Overfull \hbox (24.56621pt too wide) in paragraph at lines 928--935
+ [] 
+ []
+
+[58]
+<Figures/tree_canine.png, id=722, 297.36093pt x 155.07938pt>
 File: Figures/tree_canine.png Graphic file (type png)
 <use Figures/tree_canine.png>
-Package pdftex.def Info: Figures/tree_canine.png  used on input line 802.
+Package pdftex.def Info: Figures/tree_canine.png  used on input line 972.
 (pdftex.def)             Requested size: 237.88905pt x 124.06364pt.
 
-Overfull \hbox (7.61964pt too wide) in paragraph at lines 810--828
+Overfull \hbox (7.61964pt too wide) in paragraph at lines 980--998
  [][] 
  []
 
-[51
+[59
 
  <./Figures/tree_canine.png>]
-<figure3-result-new/fig3_P_f3_65_visc_new2.png, id=652, 483.2454pt x 384.4764pt
+<figure3-result-new/fig3_P_f3_65_visc_new2.png, id=752, 483.2454pt x 384.4764pt
 >
 File: figure3-result-new/fig3_P_f3_65_visc_new2.png Graphic file (type png)
 <use figure3-result-new/fig3_P_f3_65_visc_new2.png>
 Package pdftex.def Info: figure3-result-new/fig3_P_f3_65_visc_new2.png  used on
- input line 839.
+ input line 1009.
 (pdftex.def)             Requested size: 338.26947pt x 269.13164pt.
-<figure3-result-new/fig3_P_f7_30_visc_new2.png, id=653, 483.2454pt x 384.4764pt
+<figure3-result-new/fig3_P_f7_30_visc_new2.png, id=753, 483.2454pt x 384.4764pt
 >
 File: figure3-result-new/fig3_P_f7_30_visc_new2.png Graphic file (type png)
 <use figure3-result-new/fig3_P_f7_30_visc_new2.png>
 Package pdftex.def Info: figure3-result-new/fig3_P_f7_30_visc_new2.png  used on
- input line 841.
+ input line 1011.
 (pdftex.def)             Requested size: 338.26947pt x 269.13164pt.
-<figure3-result-new/fig3_P_f10_95_visc_new2.png, id=654, 483.2454pt x 386.8854p
+<figure3-result-new/fig3_P_f10_95_visc_new2.png, id=754, 483.2454pt x 386.8854p
 t>
 File: figure3-result-new/fig3_P_f10_95_visc_new2.png Graphic file (type png)
 <use figure3-result-new/fig3_P_f10_95_visc_new2.png>
 Package pdftex.def Info: figure3-result-new/fig3_P_f10_95_visc_new2.png  used o
-n input line 849.
+n input line 1019.
 (pdftex.def)             Requested size: 338.26947pt x 270.81793pt.
-<figure3-result-new/fig3_P_f14_60_visc_new2.png, id=655, 482.7636pt x 385.9218p
+<figure3-result-new/fig3_P_f14_60_visc_new2.png, id=755, 482.7636pt x 385.9218p
 t>
 File: figure3-result-new/fig3_P_f14_60_visc_new2.png Graphic file (type png)
 <use figure3-result-new/fig3_P_f14_60_visc_new2.png>
 Package pdftex.def Info: figure3-result-new/fig3_P_f14_60_visc_new2.png  used o
-n input line 851.
+n input line 1021.
 (pdftex.def)             Requested size: 337.9322pt x 270.14342pt.
-<figure4-result-new/Fig4_P_f3_65_visco_new2.png, id=659, 485.6544pt x 387.3672p
+<figure4-result-new/Fig4_P_f3_65_visco_new2.png, id=759, 485.6544pt x 387.3672p
 t>
 File: figure4-result-new/Fig4_P_f3_65_visco_new2.png Graphic file (type png)
 <use figure4-result-new/Fig4_P_f3_65_visco_new2.png>
 Package pdftex.def Info: figure4-result-new/Fig4_P_f3_65_visco_new2.png  used o
-n input line 861.
+n input line 1031.
 (pdftex.def)             Requested size: 339.95576pt x 271.1552pt.
-<figure4-result-new/Fig4_P_f7_30_visco_new2.png, id=660, 484.209pt x 384.4764pt
+<figure4-result-new/Fig4_P_f7_30_visco_new2.png, id=760, 484.209pt x 384.4764pt
 >
 File: figure4-result-new/Fig4_P_f7_30_visco_new2.png Graphic file (type png)
 <use figure4-result-new/Fig4_P_f7_30_visco_new2.png>
 Package pdftex.def Info: figure4-result-new/Fig4_P_f7_30_visco_new2.png  used o
-n input line 863.
+n input line 1033.
 (pdftex.def)             Requested size: 338.94398pt x 269.13164pt.
-<figure4-result-new/fig4_P_f10_95_visco_new2.png, id=661, 486.618pt x 384.4764p
+<figure4-result-new/fig4_P_f10_95_visco_new2.png, id=761, 486.618pt x 384.4764p
 t>
 File: figure4-result-new/fig4_P_f10_95_visco_new2.png Graphic file (type png)
 <use figure4-result-new/fig4_P_f10_95_visco_new2.png>
 Package pdftex.def Info: figure4-result-new/fig4_P_f10_95_visco_new2.png  used 
-on input line 871.
+on input line 1041.
 (pdftex.def)             Requested size: 340.63026pt x 269.13164pt.
-<figure4-result-new/fig4_P_f14_60_visco_new2.png, id=662, 485.6544pt x 386.4036
+<figure4-result-new/fig4_P_f14_60_visco_new2.png, id=762, 485.6544pt x 386.4036
 pt>
 File: figure4-result-new/fig4_P_f14_60_visco_new2.png Graphic file (type png)
 <use figure4-result-new/fig4_P_f14_60_visco_new2.png>
 Package pdftex.def Info: figure4-result-new/fig4_P_f14_60_visco_new2.png  used 
-on input line 873.
+on input line 1043.
 (pdftex.def)             Requested size: 339.95576pt x 270.48067pt.
 
 
-LaTeX Warning: Citation `Nichols2011' on page 52 undefined on input line 878.
+LaTeX Warning: Citation `Nichols2011' on page 60 undefined on input line 1048.
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [52]
-[53 <./figure3-result-new/fig3_P_f3_65_visc_new2.png> <./figure3-result-new/fig
-3_P_f7_30_visc_new2.png>] [54 <./figure3-result-new/fig3_P_f10_95_visc_new2.png
-> <./figure3-result-new/fig3_P_f14_60_visc_new2.png>] [55 <./figure4-result-new
-/Fig4_P_f3_65_visco_new2.png> <./figure4-result-new/Fig4_P_f7_30_visco_new2.png
->] [56 <./figure4-result-new/fig4_P_f10_95_visco_new2.png> <./figure4-result-ne
-w/fig4_P_f14_60_visco_new2.png>]
-<figure-result-impedance/fig_viscosity_impedance_new.png, id=696, 480.8364pt x 
+[60] [61 <./figure3-result-new/fig3_P_f3_65_visc_new2.png> <./figure3-result-ne
+w/fig3_P_f7_30_visc_new2.png>] [62 <./figure3-result-new/fig3_P_f10_95_visc_new
+2.png> <./figure3-result-new/fig3_P_f14_60_visc_new2.png>] [63 <./figure4-resul
+t-new/Fig4_P_f3_65_visco_new2.png> <./figure4-result-new/Fig4_P_f7_30_visco_new
+2.png>] [64 <./figure4-result-new/fig4_P_f10_95_visco_new2.png> <./figure4-resu
+lt-new/fig4_P_f14_60_visco_new2.png>]
+<figure-result-impedance/fig_viscosity_impedance_new.png, id=796, 480.8364pt x 
 383.031pt>
 File: figure-result-impedance/fig_viscosity_impedance_new.png Graphic file (typ
 e png)
 <use figure-result-impedance/fig_viscosity_impedance_new.png>
 Package pdftex.def Info: figure-result-impedance/fig_viscosity_impedance_new.pn
-g  used on input line 885.
+g  used on input line 1055.
 (pdftex.def)             Requested size: 336.58318pt x 268.11986pt.
-<figure-result-impedance/fig_viscoelasticity_impedance_new.png, id=697, 481.318
+<figure-result-impedance/fig_viscoelasticity_impedance_new.png, id=797, 481.318
 2pt x 384.9582pt>
 File: figure-result-impedance/fig_viscoelasticity_impedance_new.png Graphic fil
 e (type png)
 <use figure-result-impedance/fig_viscoelasticity_impedance_new.png>
 Package pdftex.def Info: figure-result-impedance/fig_viscoelasticity_impedance_
-new.png  used on input line 887.
+new.png  used on input line 1057.
 (pdftex.def)             Requested size: 336.92044pt x 269.4689pt.
 
 Underfull \vbox (badness 1603) has occurred while \output is active []
 
- [57 <./figure-result-impedance/fig_viscosity_impedance_new.png> <./figure-resu
+ [65 <./figure-result-impedance/fig_viscosity_impedance_new.png> <./figure-resu
 lt-impedance/fig_viscoelasticity_impedance_new.png>]
-<figure5-result-new/Fig5_P_visc1_phi8_new2.png, id=706, 484.6908pt x 385.44pt>
+<figure5-result-new/Fig5_P_visc1_phi8_new2.png, id=807, 484.6908pt x 385.44pt>
 File: figure5-result-new/Fig5_P_visc1_phi8_new2.png Graphic file (type png)
 <use figure5-result-new/Fig5_P_visc1_phi8_new2.png>
 Package pdftex.def Info: figure5-result-new/Fig5_P_visc1_phi8_new2.png  used on
- input line 897.
+ input line 1067.
 (pdftex.def)             Requested size: 339.28123pt x 269.80615pt.
 <figure-result-impedance/fig_viscosidade1_viscoelasticity8_impedance_new.png, i
-d=707, 483.2454pt x 385.9218pt>
+d=808, 483.2454pt x 385.9218pt>
 File: figure-result-impedance/fig_viscosidade1_viscoelasticity8_impedance_new.p
 ng Graphic file (type png)
 <use figure-result-impedance/fig_viscosidade1_viscoelasticity8_impedance_new.pn
 g>
 Package pdftex.def Info: figure-result-impedance/fig_viscosidade1_viscoelastici
-ty8_impedance_new.png  used on input line 904.
+ty8_impedance_new.png  used on input line 1074.
 (pdftex.def)             Requested size: 338.26947pt x 270.14342pt.
- [58 <./figure5-result-new/Fig5_P_visc1_phi8_new2.png>] [59 <./figure-result-im
-pedance/fig_viscosidade1_viscoelasticity8_impedance_new.png>] [60
+ [66 <./figure5-result-new/Fig5_P_visc1_phi8_new2.png>] [67 <./figure-result-im
+pedance/fig_viscosidade1_viscoelasticity8_impedance_new.png>] [68
 
 ]
 
-LaTeX Warning: Citation `Queiroz2015' on page 61 undefined on input line 928.
+LaTeX Warning: Reference `sec:modelagem' on page 69 undefined on input line 108
+8.
 
+[69] [70
 
-LaTeX Warning: Citation `Brito2017' on page 61 undefined on input line 928.
+] [71] [72
 
-(modelo.bbl [61] [62
+] (modelo.bbl [73] [74
 
 ]
 bibitemlist
-[63]) 
+[75]) 
 AED: lastpage setting LastPage
-[64]
+[76]
 \tf@lof=\write4
 \openout4 = `modelo.lof'.
 
@@ -1399,33 +1445,48 @@ AED: lastpage setting LastPage
 \tf@toc=\write6
 \openout6 = `modelo.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 936.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 936.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1120.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1120.
  (modelo.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 936.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 936.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1120.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1120.
 
 
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 936.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1120.
  ) 
 Here is how much of TeX's memory you used:
- 17652 strings out of 481225
- 271234 string characters out of 2915928
- 802418 words of memory out of 3000000
- 32523 multiletter control sequences out of 15000+200000
- 569689 words of font info for 140 fonts, out of 3000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 51i,17n,48p,1307b,662s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{chapter.16} has been referenced but does not exis
-t, replaced by a fixed one
+ 17775 strings out of 481225
+ 273043 string characters out of 2915928
+ 804428 words of memory out of 3000000
+ 32599 multiletter control sequences out of 15000+200000
+ 570279 words of font info for 144 fonts, out of 3000000 for 9000
+ 1145 hyphenation exceptions out of 8191
+ 51i,17n,48p,1307b,664s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{chapter*.110} has been referenced but does not ex
+ist, replaced by a fixed one
 
-pdfTeX warning (dest): name{page.68} has been referenced but does not exist, re
-placed by a fixed one
+pdfTeX warning (dest): name{chapter.107} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter.97} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.96} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.99} has been referenced but does not exist, r
+eplaced by a fixed one
+
+pdfTeX warning (dest): name{figure.100} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.98} has been referenced but does not exist, 
+replaced by a fixed one
 
 {C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiKTeX/
 fonts/enc/dvips/lm/lm-mathex.enc}{C:/Program Files/MiKTeX/fonts/enc/dvips/lm/lm
@@ -1440,9 +1501,9 @@ s/type1/public/lm/lmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmr8.
 pfb><C:/Program Files/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Program Files
 /MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/p
 ublic/lm/lmsy8.pfb>
-Output written on modelo.pdf (66 pages, 1556150 bytes).
+Output written on modelo.pdf (78 pages, 1707758 bytes).
 PDF statistics:
- 935 PDF objects out of 1000 (max. 8388607)
- 206 named destinations out of 1000 (max. 500000)
- 16775 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 1088 PDF objects out of 1200 (max. 8388607)
+ 234 named destinations out of 1000 (max. 500000)
+ 16862 words of extra memory for PDF output out of 17280 (max. 10000000)
 

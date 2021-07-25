@@ -1,146 +1,70 @@
-This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
+This is BibTeX, Version 0.99d
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: modelo.aux
+Reallocating 'name_of_file' (item size: 1) to 12 items.
 The style file: abntex2-alf.bst
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
+Reallocating 'name_of_file' (item size: 1) to 16 items.
+Reallocating 'name_of_file' (item size: 1) to 12 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Database file #1: abntex2-options.bib
 Database file #2: referencias.bib
-Reallocated singl_function (elt_size=4) to 100 items from 50.
-Too many commas in name 1 of "R. Karch, F. Neumann, M. Neumann, W. Schreiner" for entry Karch1999
-while executing---line 2091 of file abntex2-alf.bst
-Too many commas in name 1 of "R. Karch, F. Neumann, M. Neumann, W. Schreiner" for entry Karch1999
-while executing---line 2091 of file abntex2-alf.bst
-Too many commas in name 1 of "R. Karch, F. Neumann, M. Neumann, W. Schreiner" for entry Karch1999
-while executing---line 2091 of file abntex2-alf.bst
-Too many commas in name 1 of "R. Karch, F. Neumann, M. Neumann, W. Schreiner" for entry Karch1999
-while executing---line 2091 of file abntex2-alf.bst
-Too many commas in name 1 of "R. Karch, F. Neumann, M. Neumann, W. Schreiner" for entry Karch1999
-while executing---line 2091 of file abntex2-alf.bst
-Too many commas in name 1 of "L. Formaggia, J.F. Gerbeau, F. Nobile, A. Quarteroni" for entry Formaggia2001
-while executing---line 2091 of file abntex2-alf.bst
-Too many commas in name 1 of "L. Formaggia, J.F. Gerbeau, F. Nobile, A. Quarteroni" for entry Formaggia2001
-while executing---line 2091 of file abntex2-alf.bst
-Too many commas in name 1 of "L. Formaggia, J.F. Gerbeau, F. Nobile, A. Quarteroni" for entry Formaggia2001
-while executing---line 2091 of file abntex2-alf.bst
-Too many commas in name 1 of "L. Formaggia, J.F. Gerbeau, F. Nobile, A. Quarteroni" for entry Formaggia2001
-while executing---line 2091 of file abntex2-alf.bst
-Too many commas in name 1 of "L. Formaggia, J.F. Gerbeau, F. Nobile, A. Quarteroni" for entry Formaggia2001
-while executing---line 2091 of file abntex2-alf.bst
-Too many commas in name 1 of "S.A. Urquiza, P.J. Blanco, M.J. Vénere,R.A. Feijó" for entry Urquiza2006
-while executing---line 2091 of file abntex2-alf.bst
-Too many commas in name 1 of "S.A. Urquiza, P.J. Blanco, M.J. Vénere,R.A. Feijó" for entry Urquiza2006
-while executing---line 2091 of file abntex2-alf.bst
-Too many commas in name 1 of "S.A. Urquiza, P.J. Blanco, M.J. Vénere,R.A. Feijó" for entry Urquiza2006
-while executing---line 2091 of file abntex2-alf.bst
-Too many commas in name 1 of "S.A. Urquiza, P.J. Blanco, M.J. Vénere,R.A. Feijó" for entry Urquiza2006
-while executing---line 2091 of file abntex2-alf.bst
-Too many commas in name 1 of "S.A. Urquiza, P.J. Blanco, M.J. Vénere,R.A. Feijó" for entry Urquiza2006
-while executing---line 2091 of file abntex2-alf.bst
-Too many commas in name 1 of "N. Harel, P.J. Bolan, R. Turner, K. Ugurbil, E. Yacoub" for entry Harel2010
-while executing---line 2091 of file abntex2-alf.bst
-Too many commas in name 1 of "N. Harel, P.J. Bolan, R. Turner, K. Ugurbil, E. Yacoub" for entry Harel2010
-while executing---line 2091 of file abntex2-alf.bst
-Too many commas in name 1 of "N. Harel, P.J. Bolan, R. Turner, K. Ugurbil, E. Yacoub" for entry Harel2010
-while executing---line 2091 of file abntex2-alf.bst
-Too many commas in name 1 of "N. Harel, P.J. Bolan, R. Turner, K. Ugurbil, E. Yacoub" for entry Harel2010
-while executing---line 2091 of file abntex2-alf.bst
-Too many commas in name 1 of "N. Harel, P.J. Bolan, R. Turner, K. Ugurbil, E. Yacoub" for entry Harel2010
-while executing---line 2091 of file abntex2-alf.bst
-Too many commas in name 1 of "N. Harel, P.J. Bolan, R. Turner, K. Ugurbil, E. Yacoub" for entry Harel2010
-while executing---line 2091 of file abntex2-alf.bst
-Too many commas in name 1 of "N. Harel, P.J. Bolan, R. Turner, K. Ugurbil, E. Yacoub" for entry Harel2010
-while executing---line 2091 of file abntex2-alf.bst
-Too many commas in name 1 of "N. Harel, P.J. Bolan, R. Turner, K. Ugurbil, E. Yacoub" for entry Harel2010
-while executing---line 2091 of file abntex2-alf.bst
-Too many commas in name 1 of "N. Harel, P.J. Bolan, R. Turner, K. Ugurbil, E. Yacoub" for entry Harel2010
-while executing---line 2091 of file abntex2-alf.bst
-Too many commas in name 1 of "N. Harel, P.J. Bolan, R. Turner, K. Ugurbil, E. Yacoub" for entry Harel2010
-while executing---line 2091 of file abntex2-alf.bst
-Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
-Reallocated global_strs (elt_size=200001) to 20 items from 10.
-Reallocated glb_str_end (elt_size=4) to 20 items from 10.
-Too many commas in name 1 of "L. Formaggia, J.F. Gerbeau, F. Nobile, A. Quarteroni" for entry Formaggia2001
-while executing---line 2146 of file abntex2-alf.bst
-Too many commas in name 1 of "L. Formaggia, J.F. Gerbeau, F. Nobile, A. Quarteroni" for entry Formaggia2001
-while executing---line 2146 of file abntex2-alf.bst
-Too many commas in name 1 of "L. Formaggia, J.F. Gerbeau, F. Nobile, A. Quarteroni" for entry Formaggia2001
-while executing---line 2146 of file abntex2-alf.bst
-Too many commas in name 1 of "N. Harel, P.J. Bolan, R. Turner, K. Ugurbil, E. Yacoub" for entry Harel2010
-while executing---line 2146 of file abntex2-alf.bst
-Too many commas in name 1 of "N. Harel, P.J. Bolan, R. Turner, K. Ugurbil, E. Yacoub" for entry Harel2010
-while executing---line 2146 of file abntex2-alf.bst
-Too many commas in name 1 of "N. Harel, P.J. Bolan, R. Turner, K. Ugurbil, E. Yacoub" for entry Harel2010
-while executing---line 2146 of file abntex2-alf.bst
-Too many commas in name 1 of "N. Harel, P.J. Bolan, R. Turner, K. Ugurbil, E. Yacoub" for entry Harel2010
-while executing---line 2146 of file abntex2-alf.bst
-Too many commas in name 1 of "N. Harel, P.J. Bolan, R. Turner, K. Ugurbil, E. Yacoub" for entry Harel2010
-while executing---line 2146 of file abntex2-alf.bst
-Too many commas in name 1 of "N. Harel, P.J. Bolan, R. Turner, K. Ugurbil, E. Yacoub" for entry Harel2010
-while executing---line 2146 of file abntex2-alf.bst
-Too many commas in name 1 of "R. Karch, F. Neumann, M. Neumann, W. Schreiner" for entry Karch1999
-while executing---line 2146 of file abntex2-alf.bst
-Too many commas in name 1 of "R. Karch, F. Neumann, M. Neumann, W. Schreiner" for entry Karch1999
-while executing---line 2146 of file abntex2-alf.bst
-Too many commas in name 1 of "R. Karch, F. Neumann, M. Neumann, W. Schreiner" for entry Karch1999
-while executing---line 2146 of file abntex2-alf.bst
-Too many commas in name 1 of "S.A. Urquiza, P.J. Blanco, M.J. Vénere,R.A. Feijó" for entry Urquiza2006
-while executing---line 2146 of file abntex2-alf.bst
-Too many commas in name 1 of "S.A. Urquiza, P.J. Blanco, M.J. Vénere,R.A. Feijó" for entry Urquiza2006
-while executing---line 2146 of file abntex2-alf.bst
-Too many commas in name 1 of "S.A. Urquiza, P.J. Blanco, M.J. Vénere,R.A. Feijó" for entry Urquiza2006
-while executing---line 2146 of file abntex2-alf.bst
+Warning--I didn't find a database entry for "Nichols2011"
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'glb_str_end' (item size: 4) to 20 items.
+Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
 +---------------------------------------------------------+
 | Estilo bibliográfico abntex2-alf.bst versão v-1.9.6           |
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 30 entries,
+You've used 27 entries,
             6714 wiz_defined-function locations,
-            1399 strings with 13404 characters,
-and the built_in function-call counts, 21506 in all, are:
-= -- 1770
-> -- 420
-< -- 114
-+ -- 267
-- -- 140
-* -- 1380
-:= -- 2977
-add.period$ -- 88
-call.type$ -- 30
-change.case$ -- 200
-chr.to.int$ -- 30
-cite$ -- 29
-duplicate$ -- 1315
-empty$ -- 1695
-format.name$ -- 644
-if$ -- 4889
+            1379 strings with 13024 characters,
+and the built_in function-call counts, 23331 in all, are:
+= -- 1939
+> -- 799
+< -- 108
++ -- 423
+- -- 243
+* -- 1701
+:= -- 3119
+add.period$ -- 79
+call.type$ -- 27
+change.case$ -- 279
+chr.to.int$ -- 27
+cite$ -- 26
+duplicate$ -- 1249
+empty$ -- 1553
+format.name$ -- 1152
+if$ -- 5342
 int.to.chr$ -- 0
 int.to.str$ -- 0
-missing$ -- 497
-newline$ -- 154
-num.names$ -- 140
-pop$ -- 585
+missing$ -- 469
+newline$ -- 137
+num.names$ -- 125
+pop$ -- 634
 preamble$ -- 1
-purify$ -- 90
+purify$ -- 107
 quote$ -- 0
-skip$ -- 1429
+skip$ -- 1434
 stack$ -- 1
-substring$ -- 1279
-swap$ -- 599
-text.length$ -- 43
+substring$ -- 1120
+swap$ -- 577
+text.length$ -- 37
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 7
+type$ -- 5
 warning$ -- 0
-while$ -- 237
+while$ -- 211
 width$ -- 0
-write$ -- 456
-(There were 40 error messages)
+write$ -- 407
+(There was 1 warning)
