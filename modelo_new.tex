@@ -1,193 +1,174 @@
-% !TeX spellcheck = pt_BR
-\documentclass[
-        %oneside,         	 %%retire % do in\'icio desta linha para n\~ao imprimir frente e verso 
-        english,			
-%	french,				
-%	spanish, 
-        brazil			        %% Idioma principal 
-        ,<...>]{abntbibufjf}
-
-\usepackage{lmodern}						
-\usepackage[T1]{fontenc}		
-\usepackage[utf8]{inputenc}		%% Para converter automaticamente acentos como digitados normalmente no teclado. Mude utf8 para latin1 se precisar. 
-\usepackage{lastpage}			
-\usepackage{indentfirst}		
-\usepackage{color}			
-\usepackage{graphicx}			
-\usepackage{microtype} 
-\usepackage[portuguese,ruled,lined]{algorithm2e}
-\include{hifenizacao}
-%\usepackage[portuguese]{babel}  
+\NeedsTeXFormat{LaTeX2e}
+%-----------------------------------------------------------
+\documentclass[a4paper,12pt]{monografia}
+	\usepackage[portuguese, colorinlistoftodos, textsize=tiny]{todonotes}
+\usepackage{amsmath,amsthm,amsfonts,amssymb}
+\usepackage[mathcal]{eucal}
+\usepackage{latexsym}
+\usepackage[portuguese]{babel}  
+\usepackage[utf8]{inputenc}
+\usepackage{setspace}
+\usepackage{bm}
+\usepackage[portuguese,algoruled,longend, linesnumbered]{algorithm2e}
 \usepackage{listings}
-\usepackage[alf,bibjustif]{abntex2cite}
-\usepackage{amsmath}
-\usepackage{breqn}
-\usepackage{lipsum}
-\usepackage{appendix}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{ulem}
+ \hypersetup{colorlinks,
+    debug=false,
+    linkcolor=black,  %%% cor do tableofcontents, \ref, \footnote, etc
+    citecolor=black,  %%% cor do \cite
+    urlcolor=black,   %%% cor do \url e \href
+    bookmarksopen=true,
+ }
+%\usepackage[alf,bibjustif]{abntex2cite}
+\usepackage[]{natbib}
+
+% \usepackage[square,sort,comma,numbers]{natbib}
+% \usepackage[square,sort,co1mma,numbers]{natbib}
 \usepackage{multirow}
-
-%% -----------------------------------------------------------------------------
-
-%% Obs.: Alguns acentos foram omitidos.
-
-\titulo{Uma Ferramenta Computacional para Simulação de Escoamento Pulsátil em Modelos de Árvores Arteriais 1D} %% Colocar, dentro de chaves {}, o t\'itulo do trabalho. Retirar % do inicio da linha seguinte se tiver subtitulo
-%\subtitulo{subt\'itulo}  %% Retirar % do in\'icio desta linha se tiver subt\'itulo 
-\autor{Igor Pires dos Santos} %%Colocar, dentro de chaves {}, o nome completo do autor
-\autorR{Pires dos Santos, Igor} %%Colocar o sobrenome do autor, separado por v\'rgula, antes do restante do nome do autor. Ex.: Santos, Maria dos
-\local{Juiz de Fora} %%Governador Valadares
-\data{2021} %%Colocar o ano da entrega. Por exemplo, 2019
-\orientador[Orientador:]{Rafael Alves Bonfim de Queiroz} %%Se precisar, troque [Orientador:] por [Orientadora:]
-\coorientador[Coorientador:]{Ruy Freitas Reis} %% Colocar ``%'' no in\'icio desta linha se n\~ao tiver coorientador. Se precisar, troque por [Cooorientadora:]. 
-\orientadorTitulo{Titula\c{c}\~ao} %%Colocar, dentro de chaves {}, a titula\c{c}\~ao do(a) orientador(a). Por exemplo, Prof. Dr.
-\coorientadorTitulo{Titula\c{c}\~ao} %%Colocar, dentro de chaves {}, a titula\c{c}\~ao do(a) cooorientador(a). 
-\instituicao{Universidade Federal de Juiz de Fora}
-\faculdade{Programa de Pós-Graduação em Modelagem Computacional} %%Colocar, dentro de chaves {}, o nome da faculdade ou do instituto.
-%\programa{Modelagem Computacional} %%Colocar, dentro de chaves {}, o nome do curso. Por exemplo: Programa de P\'os\mbox{-Gra}dua\c{c}\~ao em Matem\'atica
-\objeto{Disserta\c{c}\~ao (Mestrado)}  %%Tese (Doutorado)  %%%Trabalho de Conclus\~ao de Curso (gradua\c{c}\~ao)
-\natureza{Disserta\c{c}\~ao  %%Tese 
-apresentada ao \insereprograma ~da   %% %%%Trabalho de conclus\~ao de curso apresentado \'a \inserefaculdade da %%%%SUBSTITUIR \'a POR ao SE FOR INSTITUTO    
-Universidade Federal de Juiz de Fora como requisito parcial \`a obten\c{c}\~ao do 
-t\'itulo de Mestre em  %%Doutor em    %%%grau de bacharel em 
-Modelagem Computacional. %%Trocar Matem\'atica por outro, se precisar.
-%\'Area de concentra\c{c}\~ao: %%PREENCHER   %%%N\~ao usar esta linha se for trabalho de conclus\~ao de curso da gradua\c{c}\~ao
-}
-
-%% Abaixo, prencher com os dados da parte final da ficha catalografica
-\finalcatalog{1. Árvores arteriais. 2. Escoamento pulsátil. 3. Hemodinâmica Computacional. I. Alves Bonfim de Queiroz, Rafael, orient. II. Dr..} %% Aqui fica 
-% escrito a palavra ``T\'itulo'' mesmo, nao o do trabalho. Se tiver coorientador, os dados ficam depois dos dados 
-%% do orientador (II. Sobrenome, Nome do coorientador, coorient.) e antes de ``II. T\'itulo'', o qual passa a ``III. T\'itulo''.
+\usepackage[section]{placeins}
 
 
-%%Use o comando abaixo (retirando % de %\sistautordata) apenas se for usar o sistema autor-data (n\~ao o num\'erico) para refer\^encias.
-%\sistautordata   
+\usepackage{mathtools}
+\usepackage{subcaption}
+\usepackage{fourier} 
+\usepackage{array}
+\usepackage{makecell}
+
+\renewcommand\theadalign{bc}
+\renewcommand\theadfont{\bfseries}
+\renewcommand\theadgape{\Gape[4pt]}
+\renewcommand\cellgape{\Gape[4pt]}
+
+\newcounter{todocounter}
+\newcommand{\comment}[2][]
+{\stepcounter{todocounter}\todo[caption={\thetodocounter: #2}, #1] 
+{\begin{spacing}{1}\thetodocounter: #2\end{spacing}}}
+\reversemarginpar
+\setlength{\marginparwidth}{2.5cm}
+%\lstloadlanguages{C}
+%-----------------------------------------------------------
+%-----------------------------------------------------------
+\theoremstyle{plain}
+\newtheorem{theorem}{Teorema}[section]
+\newtheorem{axiom}{Axioma}[section]
+\newtheorem{corollary}{Corol\'ario}[section]
+\newtheorem{lemma}{Lema}[section]
+\newtheorem{proposition}{Proposi\c{c}\~ao}[section]
+%-----------------------------------------------------------
+\theoremstyle{definition}
+\newtheorem{definition}{Defini\c{c}\~ao}[section]
+\newtheorem{example}{Exemplo}[section]
+%-----------------------------------------------------------
+\theoremstyle{remark}
+\newtheorem{remark}{Observa\c{c}\~ao}[section]
+%-----------------------------------------------------------
+%-----------------------------------------------------------
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\K}{\mathbb{K}}
+\newcommand{\I}{\mathbb{I}}
+\newcommand{\id}{\mathbf{1}}
+%\newcommand{\U}{\mathcal{U}}
+\newcommand{\V}{{\cal V}}
+%-----------------------------------------------------------
+\def\ind{\hbox{ ind }}
+%-----------------------------------------------------------
+\include{hifenizacao}
+
 
 
 \begin{document}
-
-%% ELEMENTOS PR\'E-TEXTUAIS
-
-%% Capa
-\inserecapa
-
-%% Folha de rosto
-\inserefolhaderosto
-
-%% Ficha catalogr\'afica. AO IMPRIMIR, DEIXAR NO VERSO DA FOLHA DE ROSTO.
-\inserecatalog  
+\include{pretexto}
 
 
-%% Folha de aprovacao
-\begin{folhadeaprovacao}
-\inicfolhaaprov
-        
-Aprovada em (dia) de (m\^es) de (ano) %%Preencher com a data 
-   
-\vfill
-\begin{center} BANCA EXAMINADORA \end{center}
-\assinatura{\insereorientadorTitulo~\insereorientador \ - Orientador \\ Universidade Federal de Juiz de Fora}  %%Orientadora
-%\assinatura{Professor Dr. \inserecoorientador \ - Coorientador \\ Universidade Federal de Juiz de Fora}
-\assinatura{Titula\c{c}\~ao Nome e sobrenome \\ Universidade ???}
-\assinatura{Titula\c{c}\~ao Nome e sobrenome  \\ Universidade ??} 
-%\assinatura{...} %%RETIRE O % E PREENCHA SE PRECISAR
-%  \assinatura{...}
-%  \assinatura{...}
-\end{folhadeaprovacao}
-\cleardoublepage 
+
+% %----------------------------dedicat\'oria  opcional--------------
+% \begin{dedicatoria}
+
+% \end{dedicatoria}
 
 
-%% Dedicatoria. OPCIONAL. Colocar ``%'' no in\'icio de cada das 3 linhas abaixo, caso n\~ao queira.
- \begin{dedicatoria} 
-  Dedico este trabalho ... 
- \end{dedicatoria}
+%--------Digite aqui o seu resumo em Portugu\^es--------------
+\resumo{Resumo} 
 
- 
-%% Agradecimentos. OPCIONAL. CASO SEJA BOLSISTA, INSERIR OS DEVIDOS AGRADECIMENTOS.
-\begin{agradecimentos}
-Agrade\c{c}o aos ... 
-\end{agradecimentos}
+% (BRACIS 2019, ainda escrevendo resumo, isto é só para servir de base) 
 
 
-%% Ep\'igrafe. OPCIONAL
-\begin{epigrafe} 
-XXXXXXXXXXXXXXXXXXXXXX
-\end{epigrafe}
+Resumo
 
 
-%% RESUMOS
 
-%% Resumo em Portugu\^es. OBRIGAT\'ORIO.
-\begin{resumo}
-\textcolor{red}{IGOR: faltar iniciar este resumo com uma introdução e motivação que podem ser tirados do seu capítulo introdução.}
-Neste trabalho, apresentam-se: (i) modelo matemático da literatura que descreve o escoamento sanguíneo pulsátil em modelos de árvores arteriais 1D, (ii) uma ferramenta computacional desenvolvida que calcula a pressão e fluxo em cada vaso a partir do modelo matemático . Os resultados obtidos neste trabalho estão condizentes com dados numéricos relatados na literatura. \\[18pt]
-Palavras-chave: Árvores arteriais. Escoamento pulsátil. Hemodinâmica Computacional. %finalizadas por ponto e inicializadas por letra maiuscula.
-\end{resumo}
- 
- 
-%% Resumo em Ingl\^es
-\begin{resumo}[ABSTRACT]
- \begin{otherlanguage*}{english}
-\textcolor{red}{IGOR: escrever primeiro o resumo em português e depois traduzi-lo.}
-In this work, the following are presented: (i) an analytical scheme based on physisc and mathematic laws to calculate the local charactheristics of the pressure and flux wave in 1D arterial tree's models, (ii) a computational environment desenvolved to simulate and visualize the results of the model's construction and hemodynamic studies. The results produced in this work are consistent to real morphometric data and numeric data related in the literature. \\[18pt]
-Keywords: Árvores arteriais. Pulsatile flow. Computational hemodynamics. %finalizadas por ponto e inicializadas por letra maiuscula.
- \end{otherlanguage*}
-\end{resumo}
+% Power distribution companies around the world have been looking for ways to improve the quality of power transportation through their distribution networks, thereby improving the quality of product delivery to their consumers. The growing automation of distribution systems brings the possibility of changing the network configuration more easily, by means of maneuvers of the sectioning devices, enabling actions that allow the system to operate in the most adequate way, with reduction in losses and improvement in loading and voltage levels.
+% The study of a configuration that minimizes losses by Joule effect has extreme importance to improve the performance of a system, with lower cost and still more sustainability avoiding waste.
+% This work proposes the use of a random-key genetic algorithm 
+% implemented in a low level language
+% to obtain a good reconfiguration of the distribution system. 
+% The results are presented and compared with other works from literature, for different systems, aiming at obtaining a lower computational cost.
 
-%% Seguindo o mesmo modelo acima, pode-se inserir resumos em outras l\'inguas. 
+\noindent \\ \textbf{Palavras-chave:} Árvores arteriais. Escoamento pulsátil. Hemodinâmica Computacional.
 
 
-%% Lista de ilustra\c{c}\~oes. OPCIONAL. 
-\pdfbookmark[0]{\listfigurename}{lof}  
 
-%Caso as ilustra\c{c}~oes do trabalho sejam todas do mesmo tipo (por exemplo, todas do tipo organograma), coloque % no in\\'icio das duas linhas abaixo. 
-\ilustvaria   %Use este comando somente caso as ilustra\c{c}\~oes n\~ao sejam todas do mesmo tipo. 
-\listilustvaria  %Use este comando somente caso as ilustra\c{c}\~oes n\~ao sejam todas do mesmo tipo e caso queira inserir a lista delas. 
+%-----------Digite aqui o seu resumo em Ingl\^es--------------
+\resumo{Abstract} 
 
-%\listoffigures*  %Use este comando quando todas as ilustra\c{c}\~oes s\~ao do mesmo tipo e caso queira inserir a lista delas. Veja dicas no final deste arquivo.
+Abstract
 
-\cleardoublepage
-%% Lista de tabelas. OPCIONAL. 
-\pdfbookmark[0]{\listtablename}{lot}
-\listoftables*    %Coloque ``%'' no in\'icio desta linha, caso n\~ao queira lista de tabelas.
-\cleardoublepage
+\noindent \\ \textbf{Keywords:} Arterial trees. Pulsatile flow. Computational hemodynamics. %finalizadas por ponto e inicializadas por letra maiuscula.
 
 
-%% Lista de abreviaturas e siglas. OPCIONAL
-%\begin{siglas} %%ALTERAR OS EXEMPLOS ABAIXO, CONFORME A NECESSIDADE
-%  \item[ABNT] Associa\c{c}\~ao Brasileira de Normas T\'ecnicas
-%  \item[Fil.] Filosofia
-%  \item[IBGE] Instituto Brasileiro de Geografia e Estat\'istica
-%  \item[INMETRO] Instituto Nacional de Metrologia, Normaliza\c{c}\~ao e Qualidade Industrial
-%\end{siglas}
+%-----------Ou digite aqui o seu resumo em Frances----------
+%\resumo{Resumo} C'est un mod\'ule de la monographie dans \LaTeX et
+%5utilise la classe monografia.cls, avec le but de aider dans le
+%maniement des travaux de conclusion des plusieurs cours de
+%l'Universit\'e F\'ed\'erale de Juiz de Fora.
 
-%% Lista de s\'imbolos. OPCIONAL
-\begin{simbolos} 
-\item [$p$] Pressão
-\item [$q$] Fluxo
-\item [$t$] Tempo
-\item [$x$] Coordenada axial ao longo do tubo arterial
-\item [$c$] Velocidade de onda
-\item [$Y$] Admitância do segmento arterial
-\item [$Y_r$] Valor da admitância característica do vaso raiz
-\item [$A$] Área da seção transversal do vaso
-\item [$\rho$] Densidade do fluido
-\item [$w$] Frequência angular
-\item [$f$] Frequência da onda
-\item [$L$] Comprimento do tubo arterial
-\item [$k$] Geração do vaso na árvore
-\item [$j$] Posição do vaso na geração da árvore
-\item [$E$] Módulo de Young
-\item [$h$] Espessura da parede do vaso
-\item [$p_f$] Pressão na posição proximal do vaso
-\item [$p_b$] Pressão na posição distal do vaso
-\item [$R$] Coeficiente de Reflexão
-\item [$Y_e$] Admitância efetiva do vaso
-\item [$\alpha$] Número de Womersley
-\item [$\epsilon$] Fator viscoso do vaso
-\item [$\phi$] Propriedade  atrelada a viscoelasticidade da parede
-\item [$\mu$] Viscosidade no segmento arterial
-\item [$J_p$] Função de Bessel de índice $p$
- \end{simbolos}
 
+
+%-----------------------------------------------------------
+\agradecimento{Agradecimentos} \indent\indent 
+Agradecimentos
+\newpage
+
+
+% %---------------------- EPÍGRAFE I (OPCIONAL)--------------
+% \begin{epigrafe}
+% %nao tenho ideia do que colocar aqui
+% \end{epigrafe}
+
+
+
+%----Sum\'ario, lista de figura e de tabela ------------
+ \tableofcontents \thispagestyle{empty} \listoffigures
+\thispagestyle{empty} \listoftables \thispagestyle{empty}
+
+
+
+%----Gloss\'ario ------------
+\chapter*{Lista de Abrevia\c{c}\~oes} \addcontentsline{toc}{chapter}{Lista de Abrevia\c{c}\~oes}
+\doublespacing  \begin{tabular}{l l}
+
+PPGMC & Programa de Pós-Graduação em Modelagem Computacional \\
+UFJF & Universidade Federal de Juiz de Fora 
+
+
+
+\end{tabular}  \thispagestyle{empty}
+%---------------------
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%--------------In\'icio do Conte\'udo---------------------------
+%
+%
+\pagestyle{ruledheader}
  
 %% Sum\'ario
 \pdfbookmark[0]{\contentsname}{toc}
@@ -196,12 +177,7 @@ Keywords: Árvores arteriais. Pulsatile flow. Computational hemodynamics. %final
 
 %% ----------------------------------------------------------
 
-%% ELEMENTOS TEXTUAIS
-\textual
-
-
-%--------------------------------------------------------------------------------%
-\chapter{INTRODUÇÃO}\label{sec:intro}  %%Nesta linha, dentro de { }, digita-se em CAIXA ALTA, como apresentado aqui
+\chapter{INTRODU\c{C}\~AO}  %%Nesta linha, dentro de { }, digita-se em CAIXA ALTA, como apresentado aqui
 
 Estudos de simulação hemodinâmica têm sido frequentemente baseados em modelos de árvores arteriais para obter uma melhor compreensão de todos os aspectos relacionados ao escoamento sanguíneo, desde a propagação de ondas e análise do pulso de pressão, passando pelo diagnóstico e inclusive com aplicações no planejamento cirúrgico. Como a representação do sistema cardiovascular através de um modelo puramente 3D que leve em conta a estrutura geométrica exata de todos os vasos não é, no momento, viável computacionalmente, vêm sendo empregados modelos dimensionalmente heterogêneos conhecidos como 0D (zero-dimensional)--1D (unidimensional)--3D (tridimensional) \cite{Formaggia2001}. 
 
@@ -217,8 +193,7 @@ A capacidade de capturar o pico de pressão existente no escoamento sanguíneo j
 
 \textcolor{red}{IGOR: escreva um parágrafo de trabalhos da literatura que citam e utilizam o modelo de Duan e Zamir. Busque referências na literatura. Lembrando que esta referência \cite{Duan} está errada. A referência correta é de 1995. Principalmente, cite o seu trabalho publicado na revista Mundi deste parágrafo.}
 
-%--------------------------------------------------------------------------------%
-\section{Objetivos}\label{sec:obj}
+\section{Objetivos}
 
 Os objetivos que norteiam este trabalho são:
 \begin{itemize}
@@ -226,9 +201,7 @@ Os objetivos que norteiam este trabalho são:
     \item aplicar a ferramenta desenvolvida considerando diferentes cenários hemodinâmicos para investigar os efeitos da viscosidade sanguínea e da viscoelasticidade da parede do vaso no escoamento sanguíneo
 \end{itemize}
 
-%--------------------------------------------------------------------------------%
-\section{Organização}\label{sec:org}
-
+\section{ORGANIZAÇÃO}
 Os demais capítulos deste trabalho estão organizados como segue:
 \begin{itemize}
     \item Capítulo 2 -
@@ -243,15 +216,13 @@ Os demais capítulos deste trabalho estão organizados como segue:
 \textcolor{red}{IGOR: complemente esta seção de organização. Recomendo fortemente ler a introdução da minha dissertação e tese para ter mais ideias de como montar uma introdução para sua dissertação.}
 
 %--------------------------------------------------------------------------------%
-\chapter{MODELAGEM DO ESCOAMENTO SANGUÍNEO}\label{sec:modelagem_escoamento}
+\chapter{MODELAGEM DO ESCOAMENTO SANGUÍNEO}\label{sec:escoamento}
 
 \textcolor{red}{IGOR: está errada a citação do trabalho do método de Duan e Zamir (1995), não é a citação que colocou \cite{Duan}.}
 
 Neste capítulo, apresenta-se em detalhe o modelo matemático de Duan e Zamir \cite{Duan}, para o escoamento sanguíneo pulsátil em árvores arteriais. Por fim, apresenta um algoritmo que sistematiza os passos dos cálculos realizados para obtenção da pressão e fluxo ao longo da árvore arterial.
 
-%--------------------------------------------------------------------------------%
-\section{MODELO MATEMÁTICO}\label{sec:modelo_matematico}
-
+\section{MODELO MATEMÁTICO}
 A propagação de ondas em um tubo é governada pela equações da onda para a pressão $p(x,t)$ e fluxo $q(x,t)$ como seguem:
 \begin{eqnarray}
 \frac{\partial q}{\partial t} &=& -cY \frac{\partial p}{\partial x},
@@ -308,15 +279,13 @@ h(k,j) = 0,05 d(k,j).
 
 \begin{figure}[h] 
 	\begin{center}
-		\includegraphics[scale = 0.5]{Figures/ArterialTree_Zamir.png}%
+		\includegraphics[scale = 0.5]{Figures/ArterialTree_Zamir.png}
 		\caption{Notação usada para identificar cada segmento de vaso $(k,j)$ (figura adaptada de~\cite{Duan}). }
 		\label{fig1:arterial-tree}%
 	\end{center}
 \end{figure}
 
-%--------------------------------------------------------------------------------%
 \subsection{Cálculo da pressão e do fluxo sanguíneo}\label{sec:pressao-fluxo}
-
 Para determinar a pressão $\bar{p} (k,j)$ em um certo segmento $(k,j)$, aplica-se a condição de continuidade de pressão no nó proximal $A$ (ver Figura \ref{fig1:arterial-tree}). Escrevendo as componentes progressiva e atrasada da onda como $p_f (k,j)$ e $p_b (k,j)$ respectivamente, a pressão na posição proximal do segmento  $x(k,j) = 0$ é dada por:
 \begin{equation}
 \left[ p (k,j) \right]_A = \left[ p_f (k,j) \right]_A + \left[ p_b (k,j)\right]_A,
@@ -608,7 +577,7 @@ $\mathcal{M}_2$ ($v$, $\bar{p}_0$, $Y_r$, $N$) \\
 No Algoritmo \ref{AlgoritmoM2} tem-se que $N$ denota a quantidade de espaçamento $dX$ no intervalo [0,1] para discretização de um vaso. Assim, $dX = 1/N$ e $X_i = i dX (i = 0, 1, \cdot, N)$.
 
 %--------------------------------------------------------------------------------%
-\chapter{FERRAMENTA COMPUTACIONAL}\label{sec:ferramenta_computacional}
+\chapter{FERRAMENTA COMPUTACIONAL}\label{sec:modelagem}
 
 Nesta seção apresentam-se detalhes da ferramenta computacional desenvolvida para simulação do escoamento sanguíneo em modelos de árvores arteriais. A principal finalidade desta ferramenta é possibilitar a visualização de estruturas das árvores arteriais e após da simulação hemodinâmica,  a visualização das curvas de distribuição do fluxo sanguíneo e pressão.
 
@@ -728,7 +697,7 @@ Para que um elemento possa ser iterado ele precisa estar no estado \textit{Hot},
 Seguindo o conceito de classes com propósito único, os elementos inteligentes são responsáveis apenas por gerir os dados contidos na estrutura inteligente e abstrata. Portanto as funções de criar, iterar e visualizar estas estruturas foram divididas em classes.
 
 %--------------------------------------------------------------------------------%
-\subsection{Fábrica}\label{sec:fabrica} 
+\subsection{Fábricas}\label{sec:fabricas} 
  
 Como mencionado anteriormente três principais barreiras foram identificadas armazenamento, iteração e visualização. Foi idealizada uma arquitetura de classes que permite a execução de cada passo através do paradigma de Fábricas Dinâmicas~ \cite{factorypattern}. Uma arquitetura com fábricas permite a criação de instâncias com definições concretas, armazenadas como metadados. Isso facilita a adição de novos objetos que podem ser interpretados sem modificar o código da fábrica em si. Sendo a fábrica também uma classe virtual, três principais tipos de fábricas foram idealizadas, a primeira responsável por criar elementos inteligentes, a  segunda responsável por iterar o elemento e a terceira que cria um elemento gráfico a partir de um elemento inteligente.
 
@@ -822,18 +791,10 @@ Os elementos gráficos podem ser utilizados por qualquer tipo de objeto gráfico
 
 Apesar do objeto gráfico \textit{GraphicObject} ser uma redundância dos dados armazenados em um elemento inteligente \textit{WiseElement}, ele é menor, podendo ser carregado e armazenado mais rapidamente. O objetivo das estruturas nesta seção é permitir que diversos objetos gráficos \textit{GraphicObjects} possam ser armazenados em memória. Os objetos gráficos em sequência representam uma animação que pode ser visualizada através da interface gráfica. 
 
-
-%--------------------------------------------------------------------------------%
-\subsection{Fábricas}\label{sec:fabricas} 
-
-
-
 %--------------------------------------------------------------------------------%
 \subsection{Threads Inteligentes}\label{sec:threads}
 
-Até o momento as estruturas foram construídas utilizando conceitos padrões da linguagem C++, herança de propriedades através do polimorfismo, ponteiros, classes virtuais e fábricas dinâmicas. Todas as estruturas definidas até o momento seguem conceitos da linguagem concorrente, ondem uma instrução é executada logo após a outra. Observamos que as estruturas possuem comportamentos padronizados e que um objeto inteligente é autônomo, isto é, ele sozinho é capaz de se armazenar, reconstruir, iterar e ocasionalmente se desenhar. Imaginando um cenário em que diversos objetos inteligente estão iterando, as tarefas foram dividas em Threads, primeiramente trabalhos de leitura e escrita, em seguida a iteração dos objetos. Desta forma computadores \textit{multi-thread} podem fazer uso de suas threads e permitir que mais de um objeto realize suas tarefas por vez.
-
-Ao longo da pesquisa esta estrutura foi agregada as bibliotecas comuns do Qt 5.15.0 \cite{QTClasses}, em um primeiro momento para facilitar a visualização dos resultados através dos elementos gráficos de interface de usuários disponibilizados. Em seguida, permitiu o processamento de elementos de forma paralela. Com isso um modelo que suportasse o processamento distribuído utilizando classes \textit{QThreads} que possuem tarefas concorrentes foi construído.
+Todas as estruturas descritas anterioremente são constítuidas por elementos padrões da linguagem C++, ao longo da pesquisa esta estrutura foi agregada as bibliotecas comuns do Qt 5.15.0 \cite{QTClasses}, em um primeiro momento para facilitar a visualização dos resultados através dos elementos gráficos de interface de usuários disponibilizados. Em seguida, permitindo o processamento de elementos de forma paralela. Com isso um modelo que suportasse o processamento distribuído utilizando classes \textit{QThreads} que possuem tarefas concorrentes foi construído.
 
 
 \begin{figure}[!htbp]
@@ -843,11 +804,11 @@ Ao longo da pesquisa esta estrutura foi agregada as bibliotecas comuns do Qt 5.1
 	\label{fig7:threads}
 \end{figure}
 
-As tarefas se dividem em três principais grupos: tarefas auxiliares, tarefas de leitura/escrita e trabalhos de iteração. O principal trabalho auxiliar é interpretar os comandos recebidos pelo programa e então criar a instância de trabalho \textit{WiseJob}. Sendo os grupos de tarefas mais custosos os de tarefas de escrita/leitura e iteração, se dividiram em threads específicas, \textit{WiseIO} e \textit{WiseProcessor} respectivamente.
+Os objetos distribuídos em threads contidos na Figura~\ref{fig7:threads} possuem um ciclo próprio ,portanto executam tarefas assíncronas e precisam de tratamento adequado. O sistema de sinais e fendas disponibilizado pelas bibliotecas comuns do Qt permitem que as threads se comuniquem assincronamente. O modelo proposto disponibiliza trabalhos inteligentes \textit{WiseJobs} que são então alocados à alguma thread. Enquanto o processamento é feito, todos os dados relativos ao processamento são bloqueados para escrita, isso previne a sobrescrita de dados quando há mais de uma thread trabalhando.
 
-Os objetos distribuídos threads contidos na Figura~\ref{fig7:threads} possuem um ciclo próprio, portanto executam tarefas assíncronas e precisam de tratamento adequado. O sistema de sinais e fendas disponibilizado pelas bibliotecas comuns do Qt permitem que as threads se comuniquem assincronamente através do envio de mensagens. Estas mensagens são chamadas de trabalhos inteligentes \textit{WiseJobs}, cada uma possuindo sua atividade relacionada e objeto relacionado. Uma vez criados, os trabalhos inteligentes são alocados à sua respectiva categoria passando por um balanceamento executado pelo gerenciador de threads. Enquanto o processamento é feito, todos os dados relativos ao processamento são bloqueados para escrita de outras threads, isso previne a sobrescrita de dados quando há mais de uma thread trabalhando.
+O gerenciador de threads \textit{WiseThreadPool} é composto por threads que executam os trabalhos e por projetos inteligentes \textit{WiseProject} que criam trabalhos. Ao executar um comando de texto o projeto deve ser selecionado para que os elementos e objetos certos sejam selecionados, para criar um objeto inteligente à partr de um elemento inteligente é preciso que eles estejam no mesmo projeto inteligente.
 
-O gerenciador de threads \textit{WiseThreadPool} é composto por threads que executam os trabalhos e por projetos inteligentes \textit{WiseProject} que criam trabalhos. Ao executar um comando de texto o projeto deve ser selecionado para que os elementos e objetos certos sejam selecionados. Primeiramente, o comando será recebido pelo gerenciador e o primeiro trabalho inteligente \textit{WiseJob} será criado. Em seguida será interpretado por threads do grupo de tarefas auxiliares \textit{WiseConsole}, caso seja um trabalho de leitura, escrita ou iteração um trabalho inteligente associado será criado e enviado ao gerenciador de threads. Caso não seja um trabalho desses tipos ele será executado na thread atual e o trabalho inteligente finalizado. O console inteligente \textit{WiseConsole} funciona como interpretador principal dos comando e das mensagens, ao receber uma linha de comando este objeto irá analisar seu conteúdo e executar a ação correspondente.
+O orquestramento realizado pela classe \textit{WiseThreadPool} começa com um comando de texto. Através da interface de usuário uma linha de texto é enviada ao gerenciador WiseThreadPool, que registra a chamada e disponibiliza o comando para um console \textit{WiseConsole} disponível possa processá-lo. O console inteligente \textit{WiseConsole} funciona como interpretador principal dos comando e das mensagens, ao receber uma linha de comando este objeto irá analisar seu conteúdo e executar a ação correspondente.
 
 \begin{figure}[!htbp]
 	\centering
@@ -856,7 +817,7 @@ O gerenciador de threads \textit{WiseThreadPool} é composto por threads que exe
 	\label{fig8:threads}
 \end{figure}
 
-Quando se trata de um comando de escrita ou leitura, a thread \textit{WiseIO} é utilizada, ao receber esse tipo de comando o console inteligente irá listar o trabalho no gerenciador de threads \textit{WiseThreadPool}. O gerenciador irá balancear a as requisições entre as threads, em seguida o gerenciador de threads irá aguardar uma mensagem indicando o final da execução do trabalho. Quando um objeto inteligente \textit{WiseObject} é iterado um elemento inteligente é criado na estrutura \textit{Freezer}, ao ser criado o objeto inteligente irá requisitar através de um trabalho inteligente que esse elemento seja armazenado. Portanto a thread \textit{WiseIO} é muito utilizada no ciclo de vida de um elemento inteligente, gerenciando o processo de armazenamento e reconstrução do elemento. É esta estrutura que efetivamente aquece e resfria elementos inteligentes.
+Quando se trata de um comando de escrita ou leitura, a thread \textit{WiseIO} é utilizada, ao receber esse tipo de comando o console inteligente irá listar o trabalho no gerenciador de threads \textit{WiseThreadPool}. O gerenciador irá balancear a a demanda e selecionar uma thread \textit{WiseIO} adequada para enviar a requisição. Por último o gerenciador de threads irá aguardar uma mensagem aguardando o final da execução do trabalho. Quando um objeto inteligente \textit{WiseObject} é iterado um elemento inteligente é criado na estrutura \textit{Freezer}, ao ser criado o objeto inteligente irá requisitar através de um trabalho inteligente que esse elemento seja armazenado. Portanto a thread \textit{WiseIO} é muito utilizada no ciclo de vida de um elemento inteligente, gerenciar o processo de armazenamento e reconstrução do elemento.
 
 \begin{figure}[!htbp]
 	\centering
@@ -865,115 +826,23 @@ Quando se trata de um comando de escrita ou leitura, a thread \textit{WiseIO} é
 	\label{fig9:threads}
 \end{figure}
 
-Os trabalhos de iteração funcionam da mesma forma que as de leitura ou escrita, entretanto são enviadas a threads \textit{WiseProcessor}. Essas threads não possuem lógicas muito complexas, elas são responsáveis apenas por gerenciar os objetos e chamar os métodos equivalentes, por este motivo os objetos inteligentes e elementos inteligentes possuem métodos abstratos e seguem esses conjuntos de regras, para que uma estrutura que desconheça o seu funcionamento ou suas estruturas internas seja capaz de executar métodos padrões. 
 
-Mesmo com a arquitetura de threads inclusa na ferramenta computacional ainda é possível que ela seja executada em plataformas de thread única, neste caso mais threads inteligentes não farão diferença. Pois apesar dos trabalhos ainda serem dividos em threads diferentes, elas serão executadas no mesmo núcleo de processamento. As threads inteligentes têm um impacto maior nas atividades de escrita e leitura, isto porque o objeto inteligente está divido em várias estruturas menores que são armazenadas e acessadas constantemente, principalmente no caso de uma animação gráfica.
 
 %-------------------------------------------------------------------------------------------%
 \section{Interface de Usuário}\label{sec:userinterface}
 
-Nesta seção apresentam-se detalhes da interface escolhida para facilitar o uso da ferramenta computacional. A interface de usuário foi concebida para permitir o controle de todas as estruturas descritas na Seção~\ref{sec:estrutura} com todos os seus recursos gráficos extraídos. A interface se divide em duas partes principais: Um console, que permite uma interação textual e acesso as mesmas funcionalidades de iteração; E uma janela com elementos gráficos capazes de exibir os resultados gráficos obtidos. 
-
-\begin{figure}[!htbp]
-	\centering
-	\includegraphics[scale=1]{Figures/GraphicElements}
-	\caption{Interface de usuário gráfica.}
-	\label{fig10:UI}
-\end{figure}
-
-Ambas as estruturas foram construídas para manipular objetos inteligentes e suas estruturas, por isto ambas possuem instâncias do gerenciador de threads inteligentes descritos na Seção~\ref{sec:estrutura}. O console se trata de um  envio direto de mensagens para a thread \textit{WiseConsole}, que é efetivamente o console. Nas próximas seções os diferentes ambientes da ferramenta computacional serão descritos. Cada ambiente representa um projeto \textit{Qt}/\textit{C++} distinto, no projeto do console as bibliotecas gráficas do OpenGl não foram incluídas no processo de compilação, portanto computadores sem grandes recursos gráficos podem executar a mesma lógica de iteração.
-
-%--------------------------------------------------------------------------------%
-\subsection{Console}\label{sec:console}
-
-O ambiente do console consiste em um projeto \textit{Qt}/\textit{C++} sem interface gráfica, ao executar o programa o cabeçalho é impresso e os comandos de entrada são aguardados. O projeto do console foi intitulado \textit{InGU} ou Iterador não-Gráfico Universal, isto porque este projeto apesar de não conter elementos gráficos e exibir os resultados numéricos em tempo de execução é capaz de gerar as estruturas gráficas para visualização futura.
-
-A única  estrutura presente neste projeto é o gerenciador de threads inteligente, isso permite que através de comandos de texto as mesmas estruturas sejam utilizadas.
+Nesta seção apresentam-se detalhes da interface escolhida para facilitar o uso da ferramenta computacional. A interface de usuário foi concebida para permitir o controle de todas as estruturas descritas na Seção~\ref{sec:estrutura} e visualizar os resultados extraídos. A interface se divide em duas partes principais: A interface gráfica, que permite acompanhar o método iterativo e seus resultados; A interface textual, através de um \textit{console} disponibilizado na interface gráfica é possível inserir uma série de comandos que agilizam o processo de extração de resultados. 
 
 
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[scale=1]{Figures/GraphicElements}
 	\caption{Interface de usuário gráfica.}
-	\label{fig10:UI}
+	\label{fig7:graphicelements}
 \end{figure}
 
-No anexo estão as sequências de instruções necessárias para compilar ambas as partes da ferramenta computacional. Ao ser compilado, um executável InGU contendo o projeto console é gerado, o processo de compilação da ferramenta é multiplataforma, tendo sido testado nos sistemas operacionais \textit{Windows} e \textit{Linux}. Entretanto, recomenda-se a utilização da ferramenta computacional no \textit{Linux}. Ao ser executado, o console corresponde do sistema operacional irá ser aberto com o cabeçalho da ferramenta e aguardará entrada de texto.
-
-IMAGEM CONSOLE
-
-Para executar um comando, basta inserir uma linha de texto e apertar a tecla \textit{Enter}.  Ao capturar a linha de texto, o programa de console irá na verdade redirecionar o comando para a estrutura \textit{WiseThreadPool}, que por sua vez irá alocar uma thread do tipo \textit{WiseConsole} para interpretar a mensagem. Este comportamento é o mesmo apresentado na Seção~\ref{sec:threads}. Uma lista de comandos foi disponibilizada e está acessível através do comando \textit{help}. Ao enviar este comando para o console uma lista com todos as possíveis entradas será exibida. Nas próximas seções estes comandos e suas entradas serão descritos em profundidade.
-
 %--------------------------------------------------------------------------------%
-\subsubsection{Help}\label{sec:help}
-
-O comando de ajuda é o primeiro comando da interface e foi feito para listar todas as entradas possíveis do programa.
-
-\begin{center}
-	\begin{tabular}{|c|c|}
-		\hline
-		\textbf{Linha de Comando} & help \\
-		\hline
-		\textbf{Entrada} & Nenhuma \\
-		\hline
-	\end{tabular}
-\end{center}
-
-IMAGEM CONSOLE HELP
-
-Ao executar o comando, o usuário receberá uma lista de comandos divididos em escopos específicos. Os escopos foram criados para agrupar comandos por área de atuação, comandos auxiliares, como o comando de ajuda, são os comandos que não alteram as estruturas e exibem informações auxiliares ao usuário.
-
-
-%--------------------------------------------------------------------------------%
-\subsubsection{Ler arquivo de comandos}\label{sec:read_cmds}
-
-
-O comando de leitura de arquivo de comandos irá receber o endereço de um arquivo local, este arquivo deve conter um comando por linha, um exemplo pode ser encontrado no Anexo~\ref{annex2}. Para este tipo de comando um \textit{WiseJob} contendo a linha de comando e qual a sequência de trabalhos que deve ser executada.
-
-\begin{center}
-	\begin{tabular}{|c|c|c|}
-		\hline
-		\textbf{Linha de Comando} & \multicolumn{2}{c}{read_cmds <file>} \\
-		\hline
-		\textbf{Entrada} & \textbf{<file>} & Caminho para arquivo contendo sequência de comandos. \\
-		\hline
-	\end{tabular}
-\end{center}
-
-%--------------------------------------------------------------------------------%
-\subsubsection{Bateria de testes}\label{sec:test}
-
-O ciclo principal de testes da ferramente se baseia em verificar a consistência de todas as fábricas e do fluxo principal da ferramenta computacional, exceto detalhes gráficos e do processo de iteração. Ao executar a bateria de testes todos os elementos inteligentes \textit{WiseElement} disponíveis e todos os objetos inteligentes \textit{WiseObject} serão testados individualmente. Cada uma destas estruturas irá ser construída, então salva em em um arquivo externo. Em seguida o arquivo é reconstruído e a estrutura resultante comparada com a primeira, caso sejam iguais o resultado de sucesso é armazenado.
-
-Estes testes foram utilizados principalmente no momento do desenvolvimento da ferramenta e garantem que as fábricas de elementos e objetos inteligentes estão funcionando corretamente. Futuramente, caso novas estruturas sejam incluídas, estes testes garantem que todas as classes do projeto foram projetadas corretamente, com isso todas as estruturas que são carregadas pela ferramenta não perdem informação ao serem armazenadas e recuperadas, processo recorrente na ferramenta computacional.
-
-\begin{center}
-	\begin{tabular}{|c|c|}
-		\hline
-		\textbf{Linha de Comando} & test \\
-		\hline
-		\textbf{Entrada} & Nenhuma \\
-		\hline
-	\end{tabular}
-\end{center}
-
-%--------------------------------------------------------------------------------%
-\subsubsection{Lista de testes}\label{sec:test list}
-
-
-
-\begin{center}
-	\begin{tabular}{|c|c|}
-		\hline
-		\textbf{Linha de Comando} & test list \\
-		\hline
-		\textbf{Entrada} & Nenhuma \\
-		\hline
-	\end{tabular}
-\end{center}
-
-%--------------------------------------------------------------------------------%
-\subsection{Janela}\label{sec:janela}
+\subsection{Objeto Gráfico}\label{sec:objeto_grafico}
 
 %-------------------------------------------------------------------------------------------%
 \chapter{RESULTADOS NUMÉRICOS E DISCUSSÕES}
@@ -1121,21 +990,19 @@ Como trabalhos futuros, destacam-se:
     \item \textcolor{red} {IGOR: descreva algo que poderia ser interessante agregar na ferramenta, pode ser mais de uma coisa (coloque em item)}.
 \end{itemize}
 
-\begin{appendices}
-	%-----------------------------------------------------------------------------------------%
-	\chapter{PROCESSO DE COMPILAÇÃO}\label{annex1}
-	
-	
-	%-----------------------------------------------------------------------------------------%
-	\chapter{FORMATO DE ARQUIVO DE COMANDOS}\label{annex2}
-	
-	
-	
-	
-\end{appendices}
 
-\bibliographystyle{abntex2-alf}
+%Em trabalhos futuros temos a realização de testes com uma maior número de instâncias incluindo instâncias maiores, com mais pontos de demanda e chaves.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\singlespacing
+\bibliographystyle{abbrv}
 \bibliography{referencias}
+% \singlespacing
+%\bibliographystyle{ufjfStyle}
+% \bibliography{referencias}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \end{document}
