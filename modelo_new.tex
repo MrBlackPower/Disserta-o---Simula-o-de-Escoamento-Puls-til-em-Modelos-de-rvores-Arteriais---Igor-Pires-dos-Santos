@@ -915,6 +915,409 @@ Para executar um comando, basta inserir uma linha de texto e apertar a tecla \te
 %--------------------------------------------------------------------------------%
 \subsection{Objeto Gráfico}\label{sec:objeto_grafico}
 
+O comando de ajuda é o primeiro comando da interface e foi feito para listar todas as entradas possíveis do programa.
+
+\begin{center}
+	\begin{table}[!htbp]
+		\begin{tabular}{|c|c|}
+			\hline
+			\textbf{Linha de Comando} & help \\
+			\hline
+			\textbf{Entrada} & Nenhuma \\
+			\hline
+		\end{tabular}
+	\caption{Descrição do comando ajuda.}
+	\label{tab:help}
+	\end{table}
+\end{center}
+
+IMAGEM CONSOLE HELP
+
+Ao executar o comando, o usuário receberá uma lista de comandos divididos em escopos específicos. Os escopos foram criados para agrupar comandos por área de atuação, comandos auxiliares, como o comando de ajuda, são os comandos que não alteram as estruturas e exibem informações auxiliares ao usuário.
+
+
+%--------------------------------------------------------------------------------%
+\subsubsection{LER ARQUIVO DE ENTRADA}\label{sec:read_cmds}
+
+
+O comando ler arquivo de comandos irá receber o endereço de um arquivo local, este arquivo deve conter um comando por linha, um exemplo pode ser encontrado no Anexo~\ref{annex2}. Para este tipo de comando um \textit{WiseJob} contendo a linha de comando e qual a sequência de trabalhos que deve ser executada.
+
+\begin{center}
+	\begin{table}[!htbp]
+		\begin{tabular}{|c|c|c|}
+			\hline
+			\textbf{Linha de Comando} & \multicolumn{2}{c|}{read cmds <file>} \\
+			\hline
+			\textbf{Entrada} & \textbf{<file>} & Caminho para arquivo contendo sequência de comandos. \\
+			\hline
+		\end{tabular}
+	\caption{Descrição do comando ler arquivo de comando.}
+	\label{tab:read}
+	\end{table}
+\end{center}
+
+%--------------------------------------------------------------------------------%
+\subsubsection{BATERIA DE TESTES}\label{sec:test}
+
+O ciclo principal de testes da ferramente se baseia em verificar a consistência de todas as fábricas e do fluxo principal da ferramenta computacional, exceto detalhes gráficos e do processo de iteração. Ao executar a bateria de testes todos os elementos inteligentes \textit{WiseElement} e objetos inteligentes \textit{WiseObject} disponíveis serão testados individualmente. Para isto, uma fábrica de projeto \textit{WiseProjectFactory} irá ser encarregada de criar todos os elementos e objetos inteligentes disponíveis.
+
+Estes testes foram utilizados principalmente no momento do desenvolvimento da ferramenta e garantem que as fábricas de elementos e objetos inteligentes estão funcionando corretamente. Futuramente, caso novas estruturas sejam incluídas, estes testes garantem que todas as classes do projeto foram projetadas corretamente, com isso todas as estruturas que são carregadas pela ferramenta não perdem informação ao serem armazenadas e recuperadas, processo recorrente na ferramenta computacional.
+
+\begin{center}
+	\begin{table}[!htbp]
+		\begin{tabular}{|c|c|}
+			\hline
+			\textbf{Linha de Comando} & test \\
+			\hline
+			\textbf{Entrada} & Nenhuma \\
+			\hline
+		\end{tabular}
+	\caption{Descrição do comando bateria de testes.}
+	\label{tab:test}
+	\end{table}
+\end{center}
+
+%--------------------------------------------------------------------------------%
+\subsubsection{LISTA DE TESTES}\label{sec:test list}
+
+O comando de listar testes irá enumerar todos os teste possíveis de serem executados pela ferramenta computacional. Assim como o comando de ajuda, este comando irá imprimir no console todas os resultados encontrados. 
+
+\begin{center}
+	\begin{table}[!htbp]
+		\begin{tabular}{|c|c|}
+			\hline
+			\textbf{Linha de Comando} & test list \\
+			\hline
+			\textbf{Entrada} & Nenhuma \\
+			\hline
+		\end{tabular}
+	\caption{Descrição do comando listar testes.}
+	\label{tab:list_test}
+	\end{table}
+\end{center}
+
+%--------------------------------------------------------------------------------%
+\subsubsection{CASO DE TESTE}\label{sec:case list}
+
+Como visto na Seção~\ref{sec:test list}, os testes são enumerados. Baseando-se nessa lista, é possível selecionar um teste pelo seu número correspondente.
+
+\begin{center}
+	\begin{table}[!htbp]
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{Linha de Comando} & \multicolumn{2}{c|}{test <test\underline{\space}id>} \\
+		\hline
+		\textbf{Entrada} & <test\underline{\space}id> & Número do teste a ser executado \\
+		\hline
+	\end{tabular}
+	\caption{Descrição do comando executar caso de teste.}
+	\label{tab:case_test}
+	\end{table}
+\end{center}
+
+%--------------------------------------------------------------------------------%
+\subsubsection{TESTAR EQUIDADE DE ARQUIVOS}\label{sec:test_file}
+
+Outro comando de teste disponibilizado pela ferramenta computacional é o teste de equidade de arquivos. Este comando utiliza uma chave numérica \textit{test\underline{\space}id} para salvar o resultado do teste, tanto o resultado quanto a quantidade de testes executados com a mesma chave são salvos.
+
+\begin{center}
+	\begin{table}[!htbp]
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{Linha de Comando} & \multicolumn{2}{c|}{test file <test\underline{\space\space}id> <file1> <file2>} \\
+		\hline
+		\multirow{3}{*}{\textbf{Entrada}} & <test\underline{\space\space}id> & Chave numérica para armazenar resultado \\
+		 & <file1> & Caminho para o primeiro arquivo \\
+		 & <file2> & Caminho para o segundo arquivo \\
+		\hline
+	\end{tabular}
+	\caption{Descrição do comando para testar a equidade de dois arquivos.}
+	\label{tab:file_test}
+	\end{table}
+\end{center}
+
+%--------------------------------------------------------------------------------%
+\subsubsection{CRIAR PROJETO}\label{sec:create_projects}
+
+Para criar um projeto inteligente vazio este comando é utilizado, como entrada ele recebe o nome do projeto. Este comando irá utilizar a fábrica de projetos inteligentes para criar a estrutura vazia do projeto.
+
+\begin{center}
+\begin{table}[!htbp]
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{Linha de Comando} & \multicolumn{2}{c|}{project create <name>} \\
+		\hline
+		\textbf{Entrada} & <name> & Nome do projeto a ser criado \\
+		\hline
+	\end{tabular}
+	\caption{Descrição do comando para criar projetos.}
+	\label{tab:create_project}
+\end{table}
+\end{center}
+
+%--------------------------------------------------------------------------------%
+\subsubsection{USAR PROJETO}\label{sec:use_projects}
+
+Para que a maioria dos comandos funcione é necessário que um projeto esteja selecionado, pois a estrutura do projeto que disponibiliza elementos e objetos inteligentes. Uma vez que projetos tenham sido criados eles podem ser selecionados utilizando o comando de usar projetos
+
+\begin{center}
+\begin{table}[!htbp]
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{Linha de Comando} & \multicolumn{2}{c|}{project use <project\underline{\space\space}name>} \\
+		\hline
+		\textbf{Entrada} & <project\underline{\space\space}name> & Nome do projeto a ser selecionado \\
+		\hline
+	\end{tabular}
+	\caption{Descrição do comando para selecionar projetos.}
+	\label{tab:use_project}
+\end{table}
+\end{center}
+
+%--------------------------------------------------------------------------------%
+\subsubsection{LISTAR PROJETOS}\label{sec:list_projects}
+
+É possível verificar todos os projetos do ambiente utilizando o comando de listar projetos. Todos os projetos carregados no momento da execução serão exibidos na listagem.
+
+\begin{center}
+	\begin{table}[!htbp]
+		\begin{tabular}{|c|c|}
+			\hline
+			\textbf{Linha de Comando} & project list \\
+			\hline
+			\textbf{Entrada} & Nenhuma \\
+			\hline
+		\end{tabular}
+		\caption{Descrição do comando listar projetos.}
+		\label{tab:list_project}
+	\end{table}
+\end{center}
+
+%--------------------------------------------------------------------------------%
+\subsubsection{IMPRIMIR PROJETO}\label{sec:print_projects}
+
+O comando de imprimir projetos irá extrair do projeto selecionado sua representação em um arquivo \textit{XML}, este arquivo será impresso como resultado no console. Caso o projeto possua elementos e objetos inteligentes eles também serão impressos na estrutura de saída.
+
+\begin{center}
+\begin{table}[!htbp]
+	\begin{tabular}{|c|c|}
+		\hline
+		\textbf{Linha de Comando} & project print \\
+		\hline
+		\textbf{Entrada} & Nenhuma \\
+		\hline
+	\end{tabular}
+	\caption{Descrição do comando imprimir projetos.}
+	\label{tab:print_projects}
+\end{table}
+\end{center}
+
+%--------------------------------------------------------------------------------%
+\subsubsection{EXCLUIR PROJETO}\label{sec:delete_projects}
+
+O comando de excluir projetos irá remover todas as informações do projeto selecionado , incluindo todos os seus componentes serão excluídos.
+
+\begin{center}
+\begin{table}[!htbp]
+	\begin{tabular}{|c|c|}
+		\hline
+		\textbf{Linha de Comando} & project delete \\
+		\hline
+		\textbf{Entrada} & Nenhuma \\
+		\hline
+	\end{tabular}
+	\caption{Descrição do comando excluir projetos.}
+	\label{tab:delete_projects}
+\end{table}
+\end{center}
+
+%--------------------------------------------------------------------------------%
+\subsubsection{SALVAR PROJETO}\label{sec:save_projects}
+
+O comando de salvar projetos irá extrair do projeto selecionado sua representação em um arquivo \textit{XML}, assim como no processo de impressão do projeto. Entretanto este arquivo será impresso em um arquivo externo.
+
+\begin{center}
+	\begin{table}[!htbp]
+		\begin{tabular}{|c|c|c|}
+			\hline
+			\textbf{Linha de Comando} & \multicolumn{2}{c|}{project save <file\underline{\space\space}name>} \\
+			\hline
+			\textbf{Entrada} & <file\underline{\space\space}name> & Caminho do arquivo de saída. \\
+			\hline
+		\end{tabular}
+		\caption{Descrição do comando para salvar projetos.}
+		\label{tab:save_project}
+	\end{table}
+\end{center}
+
+%--------------------------------------------------------------------------------%
+\subsubsection{CARREGAR PROJETO}\label{sec:load_projects}
+
+O comando de carregar projetos irá extrair de um arquivo de entrada no formato \textit{XML} a estrutura de um projeto inteligente. A ferramenta computacional irá utilizar os arquivos de entrada diretamente nas estruturas de Fábrica relacionadas. Caso o projeto possua elementos e objetos inteligentes eles também serão reconstruídos no projeto reconstruído.
+ 
+\begin{center}
+	\begin{table}[!htbp]
+		\begin{tabular}{|c|c|c|}
+			\hline
+			\textbf{Linha de Comando} & \multicolumn{2}{c|}{project load <filename>} \\
+			\hline
+			\textbf{Entrada} & <filename> & Caminho do arquivo de entrada. \\
+			\hline
+		\end{tabular}
+		\caption{Descrição do comando para carregar projetos.}
+		\label{tab:load_project}
+	\end{table}
+\end{center}
+
+%--------------------------------------------------------------------------------%
+\subsubsection{CRIAR ELEMENTOS}\label{sec:create_elements}
+
+As fábricas de elementos inteligentes descritas na Seção~\ref{sec:fabricas} são acessadas pelo comando de criar elementos. Este comando recebe como entrada o tipo de elemento inteligente, o nome e o exemplo à ser utilizado. Cada fábrica de elementos possui uma lista de exemplos disponíveis, essa lista é visualizada através do comando de listar exemplos de uma fábrica de elementos.
+
+\begin{center}
+\begin{table}[!htbp]
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{Linha de Comando} & \multicolumn{2}{c|}{element create <type> <example> <name> [ARGS]} \\
+		\hline
+		\multirow{4}{*}{\textbf{Entrada}} & <type> & Tipo de elemento à ser criado, seleciona a fábrica de elemento à ser utilizada. \\
+		
+		& <example> & Caminho para o primeiro arquivo. \\
+		& <name> & Caminho para o segundo arquivo. \\
+		& [ARGS] & Individualmente,  as fábricas podem receber parâmetros para a criação de elementos. \\
+		\hline
+	\end{tabular}
+	\caption{Descrição do comando para criar.}
+	\label{tab:create_element}
+\end{table}
+\end{center}
+
+%--------------------------------------------------------------------------------%
+\subsubsection{LISTAR ELEMENTOS}\label{sec:list_element}
+
+Com um projeto já selecionada, o comando de listar elementos pode ser utilizado para que o console imprima uma lista com o nome de todos os elementos inteligentes presentes no projeto.
+
+\begin{center}
+\begin{table}[!htbp]
+	\begin{tabular}{|c|c|}
+		\hline
+		\textbf{Linha de Comando} & element list \\
+		\hline
+		\textbf{Entrada} & Nenhuma \\
+		\hline
+	\end{tabular}
+	\caption{Descrição do comando listar projetos.}
+	\label{tab:list_element}
+\end{table}
+\end{center}
+
+%--------------------------------------------------------------------------------%
+\subsubsection{IMPRIMIR ELEMENTO}\label{sec:print_element}
+
+O comando de imprimir elementos irá extrair do projeto selecionado a representação em um arquivo \textit{XML}, a informação textual deste arquivo será impressa como resultado no console. Para que o comando funcione é necessário que um projeto esteja selecionado e que o nome do elemento à ser impresso seja informado.
+
+\begin{center}
+\begin{table}[!htbp]
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{Linha de Comando} & \multicolumn{2}{c|}{element print <element\underline{\space\space}name>} \\
+		\hline
+		\textbf{Entrada} & <element\underline{\space\space}name> & Nome do elemento à ser impresso. \\
+		\hline
+	\end{tabular}
+	\caption{Descrição do comando imprimir elementos inteligentes.}
+	\label{tab:print_element}
+\end{table}
+\end{center}
+
+%--------------------------------------------------------------------------------%
+\subsubsection{EXCLUIR ELEMENTO}\label{sec:delete_element}
+
+O comando de excluir elementos irá excluir o elemento inteligente.
+
+\begin{center}
+\begin{table}[!htbp]
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{Linha de Comando} & \multicolumn{2}{c|}{element delete <element\underline{\space\space}name>} \\
+		\hline
+		\textbf{Entrada} & <element\underline{\space\space}name> & Nome do elemento à ser excluído. \\
+		\hline
+	\end{tabular}
+	\caption{Descrição do comando excluir projetos.}
+	\label{tab:delete_element}
+\end{table}
+\end{center}
+
+%--------------------------------------------------------------------------------%
+\subsubsection{SALVAR ELEMENTO}\label{sec:save_element}
+
+Os elementos inteligentes podem ser exportados em dois formatos, um arquivo \textit{XML} e um arquivo \textit{VTK}. Ambos futuramente podem ser utilizados na reconstrução do elemento inteligente. Como entrada o comando receberá o nome do elemento, o tipo de arquivo à ser escrito e o caminho onde ele deve ser salvo.
+
+\begin{center}
+\begin{table}[!htbp]
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{Linha de Comando} & \multicolumn{2}{c|}{element save <element\underline{\space\space}name> <save\underline{\space\space}type> <filename>} \\
+		\hline
+		\multirow{3}{*}{\textbf{Entrada}} & <element\underline{\space\space}name> & Nome do elemento inteligente à ser salvo. \\
+		& <save\underline{\space\space}type> & Tipo de arquivo à ser exportando, podendo ser \textit{XML} ou \textit{VTK}. \\
+		& <filename> & Caminho para o arquivo à ser exportado. \\
+		\hline
+	\end{tabular}
+	\caption{Descrição do comando excluir projetos.}
+	\label{tab:save_element}
+\end{table}
+\end{center}
+
+%--------------------------------------------------------------------------------%
+\subsubsection{CARREGAR ELEMENTO}\label{sec:load_element}
+
+O comando de carregar elementos irá extrair de um arquivo de entrada no formato \textit{XML} ou \textit{VTK} a estrutura de um elementos inteligente. A ferramenta computacional irá utilizar os arquivos de entrada diretamente na fábrica de elemento inteligente relacionada. Caso seja um arquivo \textit{XML} não será necessário informar o tipo de elemento inteligente à ser construído. Caso contrário o tipo e o nome serão recebidos como parâmetros de entrada.
+
+\begin{center}
+\begin{table}[!htbp]
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\multirow{3}{*}{\textbf{Linha de Comando}} & \multicolumn{2}{c|}{element load <load\underline{\space\space}type>} \\
+		& \multicolumn{2}{c|}{element load <\textbf{VTK}> <filename> <type> <name>} \\
+		& \multicolumn{2}{c|}{element load <\textbf{XML}> <filename>} \\
+		\hline
+		\multirow{3}{*}{\textbf{Entrada}} & <filename> & Caminho para o arquivo de entrada. \\
+		& <load\underline{\space\space}type> & Tipo de arquivo à ser carregado, podendo ser \textit{XML} ou \textit{VTK}. \\
+		& <type> & Tipo de elemento inteligente à ser criado. \\
+		& <name> & Nome do elemento inteligente à ser criado. \\
+		\hline
+	\end{tabular}
+	\caption{Descrição do comando para carregar projetos.}
+	\label{tab:load_element}
+\end{table}
+\end{center}
+
+%--------------------------------------------------------------------------------%
+\subsubsection{LISTAR EXPORTAÇÕES DO ELEMENTO}\label{sec:export_list_element}
+
+Os elementos inteligentes podem ser exportados outros formatos de arquivo. Cada tipo de elemento inteligente possui uma lista de exportações disponíveis, um comando foi inserido para acessar a lista de exportações de um certo objeto.
+
+\begin{center}
+\begin{table}[!htbp]
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{Linha de Comando} & \multicolumn{2}{c|}{element save <element\underline{\space\space}name> <save\underline{\space\space}type> <filename>} \\
+		\hline
+		\multirow{3}{*}{\textbf{Entrada}} & <element\underline{\space\space}name> & Nome do elemento inteligente à ser salvo. \\
+		& <save\underline{\space\space}type> & Tipo de arquivo à ser exportando, podendo ser \textit{XML} ou \textit{VTK}. \\
+		& <filename> & Caminho para o arquivo à ser exportado. \\
+		\hline
+	\end{tabular}
+	\caption{Descrição do comando excluir projetos.}
+	\label{tab:save_element}
+\end{table}
+\end{center}
+
+%--------------------------------------------------------------------------------%
+\subsection{JANELA}\label{sec:janela}
+
 %-------------------------------------------------------------------------------------------%
 \chapter{RESULTADOS NUMÉRICOS E DISCUSSÕES}
 
