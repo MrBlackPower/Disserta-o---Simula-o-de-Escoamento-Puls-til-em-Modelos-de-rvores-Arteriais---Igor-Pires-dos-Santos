@@ -81,8 +81,6 @@
 \def\ind{\hbox{ ind }}
 %-----------------------------------------------------------
 \include{hifenizacao}
-\usepackage{appendix}
-\usepackage{multirow}
 
 
 
@@ -131,8 +129,6 @@ Agradecimentos
 \newpage
 
 
-
-
 % %---------------------- EPÍGRAFE I (OPCIONAL)--------------
 % \begin{epigrafe}
 % %nao tenho ideia do que colocar aqui
@@ -172,6 +168,8 @@ UFJF & Universidade Federal de Juiz de Fora
 \pdfbookmark[0]{\contentsname}{toc}
 \tableofcontents*
 \cleardoublepage
+
+%% ----------------------------------------------------------
 
 %--------------------------------------------------------------------------------%
 \chapter{INTRODUÇÃO}\label{sec:intro}  %%Nesta linha, dentro de { }, digita-se em CAIXA ALTA, como apresentado aqui
@@ -220,7 +218,7 @@ Os demais capítulos deste trabalho estão organizados como segue:
 
 \textcolor{red}{IGOR: está errada a citação do trabalho do método de Duan e Zamir (1995), não é a citação que colocou \cite{Duan}.}
 
-Neste capítulo, apresenta-se em detalhe o modelo matemático de Duan e Zamir \cite{Duan1992}, para o escoamento sanguíneo pulsátil em árvores arteriais. Por fim, apresenta um algoritmo que sistematiza os passos dos cálculos realizados para obtenção da pressão e fluxo ao longo da árvore arterial.
+Neste capítulo, apresenta-se em detalhe o modelo matemático de Duan e Zamir \cite{Duan}, para o escoamento sanguíneo pulsátil em árvores arteriais. Por fim, apresenta um algoritmo que sistematiza os passos dos cálculos realizados para obtenção da pressão e fluxo ao longo da árvore arterial.
 
 %--------------------------------------------------------------------------------%
 \section{MODELO MATEMÁTICO}\label{sec:modelo_matematico}
@@ -701,8 +699,8 @@ Para que um elemento possa ser iterado ele precisa estar no estado \textit{Hot},
 Seguindo o conceito de classes com propósito único, os elementos inteligentes são responsáveis apenas por gerir os dados contidos na estrutura inteligente e abstrata. Portanto as funções de criar, iterar e visualizar estas estruturas foram divididas em classes.
 
 %--------------------------------------------------------------------------------%
-\subsection{Fábricas}\label{sec:fabricas} 
- 
+\subsection{FÁBRICA}\label{sec:fabrica} 
+
 Como mencionado anteriormente três principais barreiras foram identificadas armazenamento, iteração e visualização. Foi idealizada uma arquitetura de classes que permite a execução de cada passo através do paradigma de Fábricas Dinâmicas~ \cite{factorypattern}. Uma arquitetura com fábricas permite a criação de instâncias com definições concretas, armazenadas como metadados. Isso facilita a adição de novos objetos que podem ser interpretados sem modificar o código da fábrica em si. Sendo a fábrica também uma classe virtual, três principais tipos de fábricas foram idealizadas, a primeira responsável por criar elementos inteligentes, a  segunda responsável por iterar o elemento e a terceira que cria um elemento gráfico a partir de um elemento inteligente.
 
 \begin{figure}[!htbp]
@@ -797,11 +795,9 @@ Apesar do objeto gráfico \textit{GraphicObject} ser uma redundância dos dados 
 
 
 %--------------------------------------------------------------------------------%
-\subsection{Threads Inteligentes}\label{sec:threads}
+\subsection{PROJETO INTELIGENTE}\label{sec:projeto} 
 
-Todas as estruturas descritas anterioremente são constítuidas por elementos padrões da linguagem C++, ao longo da pesquisa esta estrutura foi agregada as bibliotecas comuns do Qt 5.15.0 \cite{QTClasses}, em um primeiro momento para facilitar a visualização dos resultados através dos elementos gráficos de interface de usuários disponibilizados. Em seguida, permitindo o processamento de elementos de forma paralela. Com isso um modelo que suportasse o processamento distribuído utilizando classes \textit{QThreads} que possuem tarefas concorrentes foi construído.
-
-Ao longo da pesquisa esta estrutura foi agregada as bibliotecas comuns do Qt 5.15.0 \cite{QTClasses}, em um primeiro momento para facilitar a visualização dos resultados através dos elementos gráficos de interface de usuários disponibilizados. Em seguida, permitiu o processamento de elementos de forma paralela. Com isso um modelo que suportasse o processamento distribuído utilizando classes \textit{QThreads} que possuem tarefas concorrentes foi construído.
+Os projetos inteligentes \textit{WiseProject} são os escopos de trabalho da ferramenta computacional, o primeiro passo para se utilizar a ferramenta é criar um projeto inteligente.
 
 
 \begin{figure}[!htbp]
@@ -899,6 +895,16 @@ Nesta seção apresentam-se detalhes da interface escolhida para facilitar o uso
 	\label{fig10:UI}
 \end{figure}
 
+Ambas as estruturas foram construídas para manipular objetos inteligentes e suas estruturas, por isto ambas possuem instâncias do gerenciador de threads inteligentes descritos na Seção~\ref{sec:estrutura}. O console se trata de um  envio direto de mensagens para a thread \textit{WiseConsole}, que é efetivamente o console. Nas próximas seções os diferentes ambientes da ferramenta computacional serão descritos. Cada ambiente representa um projeto \textit{Qt}/\textit{C++} distinto, no projeto do console as bibliotecas gráficas do OpenGl não foram incluídas no processo de compilação, portanto computadores sem grandes recursos gráficos podem executar a mesma lógica de iteração.
+
+%--------------------------------------------------------------------------------%
+\subsection{CONSOLE}\label{sec:console}
+
+O ambiente do console consiste em um projeto \textit{Qt}/\textit{C++} sem interface gráfica, ao executar o programa o cabeçalho é impresso e os comandos de entrada são aguardados. O projeto do console foi intitulado \textit{InGU} ou Iterador não-Gráfico Universal, isto porque este projeto apesar de não conter elementos gráficos e exibir os resultados numéricos em tempo de execução é capaz de gerar as estruturas gráficas para visualização futura.
+
+A única  estrutura presente neste projeto é o gerenciador de threads inteligente, isso permite que através de comandos de texto as mesmas estruturas sejam utilizadas.
+
+
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[scale=1]{Figures/GraphicElements}
@@ -913,7 +919,7 @@ IMAGEM CONSOLE
 Para executar um comando, basta inserir uma linha de texto e apertar a tecla \textit{Enter}.  Ao capturar a linha de texto, o programa de console irá na verdade redirecionar o comando para a estrutura \textit{WiseThreadPool}, que por sua vez irá alocar uma thread do tipo \textit{WiseConsole} para interpretar a mensagem. Este comportamento é o mesmo apresentado na Seção~\ref{sec:threads}. Uma lista de comandos foi disponibilizada e está acessível através do comando \textit{help}. Ao enviar este comando para o console uma lista com todos as possíveis entradas será exibida. Nas próximas seções estes comandos e suas entradas serão descritos em profundidade.
 
 %--------------------------------------------------------------------------------%
-\subsection{Objeto Gráfico}\label{sec:objeto_grafico}
+\subsubsection{AJUDA}\label{sec:help}
 
 O comando de ajuda é o primeiro comando da interface e foi feito para listar todas as entradas possíveis do programa.
 
@@ -1077,7 +1083,7 @@ Para que a maioria dos comandos funcione é necessário que um projeto esteja se
 %--------------------------------------------------------------------------------%
 \subsubsection{LISTAR PROJETOS}\label{sec:list_projects}
 
-É possível verificar todos os projetos do ambiente utilizando o comando de listar projetos. Todos os projetos carregados no momento da execução serão exibidos na listagem.
+É possivel verificar todos os projetos do ambiente utilizando o comando de listar projetos. Todos os projetos carregados no momento da execução serão exibidos na listagem.
 
 \begin{center}
 	\begin{table}[!htbp]
@@ -1148,7 +1154,7 @@ O comando de salvar projetos irá extrair do projeto selecionado sua representa�
 		\caption{Descrição do comando para salvar projetos.}
 		\label{tab:save_project}
 	\end{table}
-\end{center}
+\end{center}}
 
 %--------------------------------------------------------------------------------%
 \subsubsection{CARREGAR PROJETO}\label{sec:load_projects}
