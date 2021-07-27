@@ -81,8 +81,6 @@
 \def\ind{\hbox{ ind }}
 %-----------------------------------------------------------
 \include{hifenizacao}
-\usepackage{appendix}
-\usepackage{multirow}
 
 
 
@@ -131,8 +129,6 @@ Agradecimentos
 \newpage
 
 
-
-
 % %---------------------- EPÍGRAFE I (OPCIONAL)--------------
 % \begin{epigrafe}
 % %nao tenho ideia do que colocar aqui
@@ -173,6 +169,8 @@ UFJF & Universidade Federal de Juiz de Fora
 \tableofcontents*
 \cleardoublepage
 
+%% ----------------------------------------------------------
+
 %--------------------------------------------------------------------------------%
 \chapter{INTRODUÇÃO}\label{sec:intro}  %%Nesta linha, dentro de { }, digita-se em CAIXA ALTA, como apresentado aqui
 
@@ -191,7 +189,7 @@ A capacidade de capturar o pico de pressão existente no escoamento sanguíneo j
 \textcolor{red}{IGOR: escreva um parágrafo de trabalhos da literatura que citam e utilizam o modelo de Duan e Zamir. Busque referências na literatura. Lembrando que esta referência \cite{Duan} está errada. A referência correta é de 1995. Principalmente, cite o seu trabalho publicado na revista Mundi deste parágrafo.}
 
 %--------------------------------------------------------------------------------%
-\section{OBJETIVOS}\label{sec:obj}
+\section{Objetivos}\label{sec:obj}
 
 Os objetivos que norteiam este trabalho são:
 \begin{itemize}
@@ -200,7 +198,7 @@ Os objetivos que norteiam este trabalho são:
 \end{itemize}
 
 %--------------------------------------------------------------------------------%
-\section{ORGANIZAÇÃO}\label{sec:org}
+\section{Organização}\label{sec:org}
 
 Os demais capítulos deste trabalho estão organizados como segue:
 \begin{itemize}
@@ -220,7 +218,7 @@ Os demais capítulos deste trabalho estão organizados como segue:
 
 \textcolor{red}{IGOR: está errada a citação do trabalho do método de Duan e Zamir (1995), não é a citação que colocou \cite{Duan}.}
 
-Neste capítulo, apresenta-se em detalhe o modelo matemático de Duan e Zamir \cite{Duan1992}, para o escoamento sanguíneo pulsátil em árvores arteriais. Por fim, apresenta um algoritmo que sistematiza os passos dos cálculos realizados para obtenção da pressão e fluxo ao longo da árvore arterial.
+Neste capítulo, apresenta-se em detalhe o modelo matemático de Duan e Zamir \cite{Duan}, para o escoamento sanguíneo pulsátil em árvores arteriais. Por fim, apresenta um algoritmo que sistematiza os passos dos cálculos realizados para obtenção da pressão e fluxo ao longo da árvore arterial.
 
 %--------------------------------------------------------------------------------%
 \section{MODELO MATEMÁTICO}\label{sec:modelo_matematico}
@@ -288,7 +286,7 @@ onde $E(k,j)$ é o módulo de Young, $d(k,j)$ é o diâmetro do segmento $(k,j)$
 \end{figure}
 
 %--------------------------------------------------------------------------------%
-\subsection{CÁLCULO DA PRESSÃO E DO FLUXO SANGUÍNEO}\label{sec:pressao-fluxo}
+\subsection{Cálculo da pressão e do fluxo sanguíneo}\label{sec:pressao-fluxo}
 
 Para determinar a pressão $\bar{p} (k,j)$ em um certo segmento $(k,j)$, aplica-se a condição de continuidade de pressão no nó proximal $A$ (ver Figura \ref{fig1:arterial-tree}). Escrevendo as componentes progressiva e atrasada da onda como $p_f (k,j)$ e $p_b (k,j)$ respectivamente, a pressão na posição proximal do segmento  $x(k,j) = 0$ é dada por:
 \begin{equation}
@@ -357,7 +355,7 @@ nos quais $\beta(k,j) = \frac{\omega L(k,j)}{c(k,j)}$ e $X = \frac{x(k,j)}{L(k,j
 nos quais $Q(k,j) = \frac{q (k,j)}{q_0}$, $M = \frac{Y(k,j)}{Y(1,1)}$ e $q_0 = Y(1,1)p_0$. O cálculo da admitância $Y(1,1)$ na posição proximal do segmento raiz, ou seja, da artéria de alimentação é apresentado na próxima seção.
 
 %------------------------------------------------------------%
-\subsection{CÁLCULO DO COEFICIENTES DE REFLEXÃO E ADMITÂNCIA}
+\subsection{Cálculo dos coeficientes de reflexão e da admitância}
 
 Para determinar os coeficientes de reflexão nas junções, consideram-se as duas junções $A$ e $B$ das extremidades de um segmento genérico $(k,j)$ de um modelo de árvore arterial (ver Figura~\ref{fig1:arterial-tree}). Na posição distal $B$, o coeficiente de reflexão é definido por~\cite{Fung,Lighthill}:
 \begin{equation}
@@ -382,7 +380,7 @@ Substituindo $R(k,j)$ da equação \eqref{27_R} em \eqref{29_Ye}, obtém-se  uma
 
 Em segmentos terminais, pode ser assumido que não ocorrem mais reflexões à jusante das posições distais destes segmentos, portanto a admitância efetiva destes segmentos é igual às suas admitâncias características. Adotando a equação \eqref{29_Ye}, todas as admitâncias efetivas podem ser determinadas percorrendo a árvore a partir dos segmentos terminais até o segmento raiz.
 
-\subsection{CÁLCULO DA IMPEDÂNCIA DE ENTRADA}
+\subsection{Cálculo da impedância de entrada}
 
 A impedância vascular de um modelo de árvore arterial é expresso por
 \begin{equation}
@@ -402,7 +400,7 @@ Adotando as equações~\eqref{21_P} e~\eqref{23_Q} com $x (k,j) = 0$, obtém-se 
 Em suma, a impedância de entrada  em módulo é o inverso da admitância característica da artéria de alimentação.
 
 %--------------------------------------------------------------------------------%
-\subsection{INCORPORAÇÃO DA VISCOSIDADE E VISCOELASTICIDADE NO MODELO}
+\subsection{Incorporação da viscosidade e viscoelasticidade no modelo}
 \label{sec:cenario}
 A partir do modelo matemático aqui apresentado, os seguintes cenários podem ser investigados nas simulações hemodinâmicas:
 \begin{itemize}
@@ -601,7 +599,7 @@ Através da modelagem de classes no paradigma do C++ \cite{AlanParker}, foi poss
 Uma classe virtual não possui construtor próprio, porque classes virtuais são incompletas. Estas classes possuem métodos virtuais, que por sua vez precisam ser definidos pela classe herdeira. Portanto uma classe virtual funciona como um conjunto de regras que classes herdeiras devem seguir, todas as classes que implementem esta classe virtual devem ter sua própria definição dos métodos virtuais, podendo ter funcionamentos distintos, entretanto recebendo os mesmo parâmetros.  Utilizando este conceito a estrutura de dados, classes virtuais generalizaram os objetos e garantem o seu funcionamento, separando as estruturas de acordo com seu propósito em classes.
 
 %--------------------------------------------------------------------------------%
-\section{ESTRUTURA DE DADOS}\label{sec:estrutura}
+\section{Estrutura de Dados}\label{sec:estrutura}
 
 Nesta seção apresentam-se detalhes da estrutura de dados adotada no funcionamento da ferramenta computacional. Como mencionado na Seção~\ref{sec:algoritmo} é utilizada uma estrutura de ponteiros que é capaz de armazenar todas as informações do modelo geométrico da árvore arterial. A ferramenta computacional foi desenvolvida para ser capaz de armazenar, carregar e iterar o modelo matemático e gerar novas estruturas para visualização.
 
@@ -612,7 +610,7 @@ Com a experiência adquirida previamente três principais fluxos foram identific
 Finalmente, estas estruturas são utilizadas pela ferramenta computacional possibilitando que modelos geométricos sejam carregados, iterados e então exibidos, sem que haja perda dos quadros ou de algum dado. Os elementos principais da estrutura de dados serão descridos nas seções que se seguem.
 
 %--------------------------------------------------------------------------------%
-\subsection{ELEMENTO INTELIGENTE}\label{sec:elemento_inteligente}
+\subsection{Elemento Inteligente}\label{sec:elemento_inteligente}
 
 Elementos inteligentes são objetos que implementam a classe \textit{WiseElement}, o principal objetivo de um elemento inteligente é manter os dados mais recentes de um modelo geométrico e os dados necessários para o método de iteração. No caso do estudo do fluxo pulsátil consideramos que uma iteração seja a execução completa do algoritmo apresentado na Seção~ \ref{sec:algoritmo} em toda a árvore. Portanto cada elemento inteligente possuirá todas as informações do modelo geométrico de uma árvore arterial, seus segmentos e suas propriedades.
 
@@ -701,8 +699,8 @@ Para que um elemento possa ser iterado ele precisa estar no estado \textit{Hot},
 Seguindo o conceito de classes com propósito único, os elementos inteligentes são responsáveis apenas por gerir os dados contidos na estrutura inteligente e abstrata. Portanto as funções de criar, iterar e visualizar estas estruturas foram divididas em classes.
 
 %--------------------------------------------------------------------------------%
-\subsection{Fábricas}\label{sec:fabricas} 
- 
+\subsection{FÁBRICA}\label{sec:fabrica} 
+
 Como mencionado anteriormente três principais barreiras foram identificadas armazenamento, iteração e visualização. Foi idealizada uma arquitetura de classes que permite a execução de cada passo através do paradigma de Fábricas Dinâmicas~ \cite{factorypattern}. Uma arquitetura com fábricas permite a criação de instâncias com definições concretas, armazenadas como metadados. Isso facilita a adição de novos objetos que podem ser interpretados sem modificar o código da fábrica em si. Sendo a fábrica também uma classe virtual, três principais tipos de fábricas foram idealizadas, a primeira responsável por criar elementos inteligentes, a  segunda responsável por iterar o elemento e a terceira que cria um elemento gráfico a partir de um elemento inteligente.
 
 \begin{figure}[!htbp]
@@ -762,7 +760,7 @@ Com os parâmetros definidos e as fábricas devidamente acopladas os objeto est�
 \subsection{OBJETO GRÁFICO}\label{sec:objeto_grafico}
 
 
-Quando o objeto inteligente \textit{WiseObject} estiver corretamente carregado e uma fábrica gráfica \textit{GraphicFactory} for adicionada à sua estrutura o primeiro objeto gráfico \textit{GraphicObject} de sua coleção será criado. Assim como o elemento inteligente representa uma iteração, um objeto gráfico representa um ciclo iterativo. Enquanto a estrutura responsável por elementos inteligentes, \textit{WiseCollection}, é responsável por manter os últimos dados de iteração aquecidos, a estrutura \textit{GraphicModel} mantém o objeto que está sendo exibido por alguma tela e elementos próximos. As coleções tem como objetivo mantes seus elementos no estado necessário e realizar trocas de estados quando necessário. No caso dos elementos inteligentes, somente o último objeto é necessário e isso não muda, no contexto dos objetos gráficos apenas o objeto exibido em um elemento da interface de usuário e seus vizinhos serão mantidos em memória.
+Quando o objeto inteligente \textit{WiseObjet} estiver corretamente carregado e uma fábrica gráfica \textit{GraphicFactory} for adicionada à sua estrutura o primeiro objeto gráfico \textit{GraphicObject} de sua coleção será criado. Assim como o elemento inteligente representa uma iteração, um objeto gráfico representa um ciclo iterativo. Enquanto a estrutura responsável por elementos inteligentes, \textit{WiseCollection}, é responsável por manter os últimos dados de iteração aquecidos, a estrutura \textit{GraphicModel} mantém o objeto que está sendo exibido por alguma tela e elementos próximos. As coleções tem como objetivo mantes seus elementos no estado necessário e realizar trocas de estados quando necessário. No caso dos elementos inteligentes, somente o último objeto é necessário e isso não muda, no contexto dos objetos gráficos apenas o objeto exibido em um elemento da interface de usuário e seus vizinhos serão mantidos em memória.
 
 \begin{figure}[!htbp]
 	\centering
@@ -797,11 +795,9 @@ Apesar do objeto gráfico \textit{GraphicObject} ser uma redundância dos dados 
 
 
 %--------------------------------------------------------------------------------%
-\subsection{Threads Inteligentes}\label{sec:threads}
+\subsection{PROJETO INTELIGENTE}\label{sec:projeto} 
 
-Todas as estruturas descritas anterioremente são constítuidas por elementos padrões da linguagem C++, ao longo da pesquisa esta estrutura foi agregada as bibliotecas comuns do Qt 5.15.0 \cite{QTClasses}, em um primeiro momento para facilitar a visualização dos resultados através dos elementos gráficos de interface de usuários disponibilizados. Em seguida, permitindo o processamento de elementos de forma paralela. Com isso um modelo que suportasse o processamento distribuído utilizando classes \textit{QThreads} que possuem tarefas concorrentes foi construído.
-
-Ao longo da pesquisa esta estrutura foi agregada as bibliotecas comuns do Qt 5.15.0 \cite{QTClasses}, em um primeiro momento para facilitar a visualização dos resultados através dos elementos gráficos de interface de usuários disponibilizados. Em seguida, permitiu o processamento de elementos de forma paralela. Com isso um modelo que suportasse o processamento distribuído utilizando classes \textit{QThreads} que possuem tarefas concorrentes foi construído.
+Os projetos inteligentes \textit{WiseProject} são os escopos de trabalho da ferramenta computacional, o primeiro passo para se utilizar a ferramenta é criar um projeto inteligente.
 
 
 \begin{figure}[!htbp]
@@ -899,6 +895,16 @@ Nesta seção apresentam-se detalhes da interface escolhida para facilitar o uso
 	\label{fig10:UI}
 \end{figure}
 
+Ambas as estruturas foram construídas para manipular objetos inteligentes e suas estruturas, por isto ambas possuem instâncias do gerenciador de threads inteligentes descritos na Seção~\ref{sec:estrutura}. O console se trata de um  envio direto de mensagens para a thread \textit{WiseConsole}, que é efetivamente o console. Nas próximas seções os diferentes ambientes da ferramenta computacional serão descritos. Cada ambiente representa um projeto \textit{Qt}/\textit{C++} distinto, no projeto do console as bibliotecas gráficas do OpenGl não foram incluídas no processo de compilação, portanto computadores sem grandes recursos gráficos podem executar a mesma lógica de iteração.
+
+%--------------------------------------------------------------------------------%
+\subsection{CONSOLE}\label{sec:console}
+
+O ambiente do console consiste em um projeto \textit{Qt}/\textit{C++} sem interface gráfica, ao executar o programa o cabeçalho é impresso e os comandos de entrada são aguardados. O projeto do console foi intitulado \textit{InGU} ou Iterador não-Gráfico Universal, isto porque este projeto apesar de não conter elementos gráficos e exibir os resultados numéricos em tempo de execução é capaz de gerar as estruturas gráficas para visualização futura.
+
+A única  estrutura presente neste projeto é o gerenciador de threads inteligente, isso permite que através de comandos de texto as mesmas estruturas sejam utilizadas.
+
+
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[scale=1]{Figures/GraphicElements}
@@ -913,7 +919,7 @@ IMAGEM CONSOLE
 Para executar um comando, basta inserir uma linha de texto e apertar a tecla \textit{Enter}.  Ao capturar a linha de texto, o programa de console irá na verdade redirecionar o comando para a estrutura \textit{WiseThreadPool}, que por sua vez irá alocar uma thread do tipo \textit{WiseConsole} para interpretar a mensagem. Este comportamento é o mesmo apresentado na Seção~\ref{sec:threads}. Uma lista de comandos foi disponibilizada e está acessível através do comando \textit{help}. Ao enviar este comando para o console uma lista com todos as possíveis entradas será exibida. Nas próximas seções estes comandos e suas entradas serão descritos em profundidade.
 
 %--------------------------------------------------------------------------------%
-\subsection{Objeto Gráfico}\label{sec:objeto_grafico}
+\subsubsection{AJUDA}\label{sec:help}
 
 O comando de ajuda é o primeiro comando da interface e foi feito para listar todas as entradas possíveis do programa.
 
@@ -1077,7 +1083,7 @@ Para que a maioria dos comandos funcione é necessário que um projeto esteja se
 %--------------------------------------------------------------------------------%
 \subsubsection{LISTAR PROJETOS}\label{sec:list_projects}
 
-É possível verificar todos os projetos do ambiente utilizando o comando de listar projetos. Todos os projetos carregados no momento da execução serão exibidos na listagem.
+É possivel verificar todos os projetos do ambiente utilizando o comando de listar projetos. Todos os projetos carregados no momento da execução serão exibidos na listagem.
 
 \begin{center}
 	\begin{table}[!htbp]
@@ -1148,7 +1154,7 @@ O comando de salvar projetos irá extrair do projeto selecionado sua representa�
 		\caption{Descrição do comando para salvar projetos.}
 		\label{tab:save_project}
 	\end{table}
-\end{center}
+\end{center}}
 
 %--------------------------------------------------------------------------------%
 \subsubsection{CARREGAR PROJETO}\label{sec:load_projects}
