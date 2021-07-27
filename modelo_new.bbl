@@ -1,0 +1,139 @@
+\begin{thebibliography}{10}
+
+\bibitem{QTClasses}
+Qt, 2019.
+
+\bibitem{Anliker1971}
+M.~Anliker, R.~Rockwell, and E.~Odgen.
+\newblock Nonlinear analysis of flow pulses and shock waves in arteries.
+\newblock {\em ZAMP}, (22):217--246, 1971.
+
+\bibitem{Avolio}
+A.~Avolio.
+\newblock Multi-branched model of the human arterial system.
+\newblock {\em Med. Biol. Eng. Comput}, (18):709--718, 1980.
+
+\bibitem{Brito2017}
+P.~Brito, L.~Meneses, R.~Santos, and R.~Queiroz.
+\newblock Automatic construction of 3d models of arterial tree incorporating
+  the fahraeus-lindqvist effect.
+\newblock {\em Revista Eletrônica Paulista de Matemática}, (10):38--49, 2017.
+
+\bibitem{Fung}
+B.~Duan and M.~Zamir.
+\newblock Biodynamics: Circulation.
+\newblock {\em New York: Springer-Verlag}, 1984.
+
+\bibitem{Duan}
+B.~Duan and M.~Zamir.
+\newblock Effect of dispersion of vessel diameters and lengths in stochastic
+  networks. i. modeling of microcirculatory flow.
+\newblock {\em Microvascular Research}, (31):203--222, 1986.
+
+\bibitem{Duan1992}
+B.~Duan and M.~Zamir.
+\newblock Viscous damping in one dimensional wave transmission.
+\newblock {\em J. Acoust. Soc. Am.}, (92):3358--3363, 1995.
+
+\bibitem{Formaggia2001}
+L.~Formaggia, J.~Gerbeau, F.~Nobile, and A.~Quarteroni.
+\newblock Computer methods in applied mechanics and engineering.
+\newblock {\em Revista Eletrônica Paulista de Matemática}, (191):561--582,
+  2001.
+
+\bibitem{Formaggia2003}
+L.~Formaggia, D.~Lamponi, and A.~Quarteroni.
+\newblock One-dimensional models for blood flow in arteries.
+\newblock {\em Journal of Engineering Mathematics}, (47):251--276, 2003.
+
+\bibitem{OpenGL}
+K.~Group.
+\newblock Opengl, 2019.
+
+\bibitem{Karch1999}
+R.~Karch, F.~Neumann, M.~Neumann, and W.~Schreiner.
+\newblock A three-dimensional model for arterial tree representation, generated
+  by constrained constructive optimization.
+\newblock {\em Computers in biology and medicine}, (29):19--38, 1999.
+
+\bibitem{Karreman}
+G.~Karreman.
+\newblock Some contributions to the mathematical biology of blood circulation.
+  reflection of pressure waves in the arterial system.
+\newblock {\em Bull. Math. Biophys.}, (14):327--350, 1952.
+
+\bibitem{Kouchoukos}
+N.~Kouchoukos, L.~Sheppard, and D.~A. McDonald.
+\newblock Estimation of stroke volume in the dog by a pulse contour method.
+\newblock {\em Circ. Res.}, (26):611--23, 1970.
+
+\bibitem{Lighthill}
+M.~Lighthill.
+\newblock Mathematical biofluidmechanics.
+\newblock {\em Philadelphia: Society for Industrial \& Applied Mathematics},
+  1975.
+
+\bibitem{Mates1988}
+R.~Mates, F.~Klocke, and J.~Canty.
+\newblock Coronary capacitance.
+\newblock {\em Progress in Cardiovascular Diseases}, (31):1--15, 1988.
+
+\bibitem{McDonald}
+D.~A. McDonald.
+\newblock Blood flow in arteries.
+\newblock {\em Baltimore: Williams \& Wilkins}, 1974.
+
+\bibitem{AlanParker}
+A.~Parker.
+\newblock {\em Algorithms and Data Structures in C++}.
+\newblock 1959.
+
+\bibitem{Peskin1972}
+C.~Peskin.
+\newblock Flow patterns around heart valves: a numerical method.
+\newblock {\em J. Comput. Phys.}, (10):252--271, 1972.
+
+\bibitem{Queiroz2013}
+R.~Queiroz.
+\newblock {\em Construção automática de modelos de árvores circulatórias e
+  suas aplicações em hemodinâmica computacional}.
+\newblock PhD thesis, Laboratório Nacional de Computação Científica, 2013.
+
+\bibitem{Queiroz2015}
+R.~Queiroz, P.~Blanco, R.~Feijó, and J.~Ulysses.
+\newblock Ifmbe proceedings. 49ed.: Springer international publishing.
+\newblock {\em Baltimore: Williams \& Wilkins}, pages 884--887, 2015.
+
+\bibitem{Stergiopulos1992}
+N.~Stergiopulos, D.~Young, and T.~R. Rogge.
+\newblock Computer simulation of arterial flow with applications to arterial
+  and aortic stenoses.
+\newblock {\em Journal of Biomechanics}, (25):1477--1488, 1992.
+
+\bibitem{Taylor1998}
+C.~Taylor, T.~Hughes, and C.~Zarins.
+\newblock Finite element modeling of three-dimensional pulsatile flow in
+  abdominal aorta: relevance to atherosclerosis.
+\newblock {\em Annals of Biomedical Engineering}, (26):975--987, 1998.
+
+\bibitem{Taylor3}
+M.~Taylor.
+\newblock The input impedance of an assembly of randomly branching elastic
+  tubes.
+\newblock {\em Biophys. J}, (6):29--51, 1966.
+
+\bibitem{factorypattern}
+L.~Welicki, J.~W. Yoder, and R.~Wirfs-Brock.
+\newblock The dynamic factory pattern, 2008.
+
+\bibitem{Zamir1}
+M.~Zamir.
+\newblock ptimality principles in arterial branching.
+\newblock {\em J. Theor. Biol.}, (62):227--251, 1976.
+
+\bibitem{Zamir3}
+M.~Zamir and S.~Phipps.
+\newblock Network analysis of an arterial tree.
+\newblock {\em American Journal of Physiology}, (21):25--34, 1988.
+
+\end{thebibliography}

@@ -35,6 +35,9 @@
 \usepackage{fourier} 
 \usepackage{array}
 \usepackage{makecell}
+\usepackage{appendix}
+\usepackage{multirow}
+\usepackage{multicol}
 
 \renewcommand\theadalign{bc}
 \renewcommand\theadfont{\bfseries}
@@ -98,16 +101,7 @@
 % (BRACIS 2019, ainda escrevendo resumo, isto é só para servir de base) 
 
 
-Resumo
-
-
-
-% Power distribution companies around the world have been looking for ways to improve the quality of power transportation through their distribution networks, thereby improving the quality of product delivery to their consumers. The growing automation of distribution systems brings the possibility of changing the network configuration more easily, by means of maneuvers of the sectioning devices, enabling actions that allow the system to operate in the most adequate way, with reduction in losses and improvement in loading and voltage levels.
-% The study of a configuration that minimizes losses by Joule effect has extreme importance to improve the performance of a system, with lower cost and still more sustainability avoiding waste.
-% This work proposes the use of a random-key genetic algorithm 
-% implemented in a low level language
-% to obtain a good reconfiguration of the distribution system. 
-% The results are presented and compared with other works from literature, for different systems, aiming at obtaining a lower computational cost.
+Neste trabalho, apresentam-se: (i) modelo matemático da literatura que descreve o escoamento sanguíneo pulsátil em modelos de árvores arteriais 1D, (ii) uma ferramenta computacional desenvolvida que calcula a pressão e fluxo em cada vaso a partir do modelo matemático . Os resultados obtidos neste trabalho estão condizentes com dados numéricos relatados na literatura.
 
 \noindent \\ \textbf{Palavras-chave:} Árvores arteriais. Escoamento pulsátil. Hemodinâmica Computacional.
 
@@ -116,7 +110,7 @@ Resumo
 %-----------Digite aqui o seu resumo em Ingl\^es--------------
 \resumo{Abstract} 
 
-Abstract
+In this work, the following are presented: (i) an analytical scheme based on physisc and mathematic laws to calculate the local charactheristics of the pressure and flux wave in 1D arterial tree's models, (ii) a computational environment desenvolved to simulate and visualize the results of the model's construction and hemodynamic studies. The results produced in this work are consistent to real morphometric data and numeric data related in the literature.
 
 \noindent \\ \textbf{Keywords:} Arterial trees. Pulsatile flow. Computational hemodynamics. %finalizadas por ponto e inicializadas por letra maiuscula.
 
@@ -177,7 +171,8 @@ UFJF & Universidade Federal de Juiz de Fora
 
 %% ----------------------------------------------------------
 
-\chapter{INTRODU\c{C}\~AO}  %%Nesta linha, dentro de { }, digita-se em CAIXA ALTA, como apresentado aqui
+%--------------------------------------------------------------------------------%
+\chapter{INTRODUÇÃO}\label{sec:intro}  %%Nesta linha, dentro de { }, digita-se em CAIXA ALTA, como apresentado aqui
 
 Estudos de simulação hemodinâmica têm sido frequentemente baseados em modelos de árvores arteriais para obter uma melhor compreensão de todos os aspectos relacionados ao escoamento sanguíneo, desde a propagação de ondas e análise do pulso de pressão, passando pelo diagnóstico e inclusive com aplicações no planejamento cirúrgico. Como a representação do sistema cardiovascular através de um modelo puramente 3D que leve em conta a estrutura geométrica exata de todos os vasos não é, no momento, viável computacionalmente, vêm sendo empregados modelos dimensionalmente heterogêneos conhecidos como 0D (zero-dimensional)--1D (unidimensional)--3D (tridimensional) \cite{Formaggia2001}. 
 
@@ -193,51 +188,56 @@ A capacidade de capturar o pico de pressão existente no escoamento sanguíneo j
 
 \textcolor{red}{IGOR: escreva um parágrafo de trabalhos da literatura que citam e utilizam o modelo de Duan e Zamir. Busque referências na literatura. Lembrando que esta referência \cite{Duan} está errada. A referência correta é de 1995. Principalmente, cite o seu trabalho publicado na revista Mundi deste parágrafo.}
 
-\section{Objetivos}
+%--------------------------------------------------------------------------------%
+\section{Objetivos}\label{sec:obj}
 
 Os objetivos que norteiam este trabalho são:
 \begin{itemize}
-    \item desenvolver uma ferramenta computacional capaz de simular o modelo matemático de Duan e Zamir;
-    \item aplicar a ferramenta desenvolvida considerando diferentes cenários hemodinâmicos para investigar os efeitos da viscosidade sanguínea e da viscoelasticidade da parede do vaso no escoamento sanguíneo
+	\item desenvolver uma ferramenta computacional capaz de simular o modelo matemático de Duan e Zamir;
+	\item aplicar a ferramenta desenvolvida considerando diferentes cenários hemodinâmicos para investigar os efeitos da viscosidade sanguínea e da viscoelasticidade da parede do vaso no escoamento sanguíneo
 \end{itemize}
 
-\section{ORGANIZAÇÃO}
+%--------------------------------------------------------------------------------%
+\section{Organização}\label{sec:org}
+
 Os demais capítulos deste trabalho estão organizados como segue:
 \begin{itemize}
-    \item Capítulo 2 -
-    
-    \item Capítulo 3 --
-    Neste capítulo, apresenta-se a ferramenta computacional desenvolvida em C++,  a qual contou com a utilização das bibliotecas Qt/OpenGL para ajudar na elaboração da interface gráfica
-    \item Capítulo 4 ---
-    
-    \item Capítulo 5
+	\item Capítulo 2 -
+	
+	\item Capítulo 3 --
+	Neste capítulo, apresenta-se a ferramenta computacional desenvolvida em C++,  a qual contou com a utilização das bibliotecas Qt/OpenGL para ajudar na elaboração da interface gráfica
+	\item Capítulo 4 ---
+	
+	\item Capítulo 5
 \end{itemize}
 
 \textcolor{red}{IGOR: complemente esta seção de organização. Recomendo fortemente ler a introdução da minha dissertação e tese para ter mais ideias de como montar uma introdução para sua dissertação.}
 
 %--------------------------------------------------------------------------------%
-\chapter{MODELAGEM DO ESCOAMENTO SANGUÍNEO}\label{sec:escoamento}
+\chapter{MODELAGEM DO ESCOAMENTO SANGUÍNEO}\label{sec:modelagem_escoamento}
 
 \textcolor{red}{IGOR: está errada a citação do trabalho do método de Duan e Zamir (1995), não é a citação que colocou \cite{Duan}.}
 
 Neste capítulo, apresenta-se em detalhe o modelo matemático de Duan e Zamir \cite{Duan}, para o escoamento sanguíneo pulsátil em árvores arteriais. Por fim, apresenta um algoritmo que sistematiza os passos dos cálculos realizados para obtenção da pressão e fluxo ao longo da árvore arterial.
 
-\section{MODELO MATEMÁTICO}
+%--------------------------------------------------------------------------------%
+\section{MODELO MATEMÁTICO}\label{sec:modelo_matematico}
+
 A propagação de ondas em um tubo é governada pela equações da onda para a pressão $p(x,t)$ e fluxo $q(x,t)$ como seguem:
 \begin{eqnarray}
-\frac{\partial q}{\partial t} &=& -cY \frac{\partial p}{\partial x},
-\label{01_p}\\
-\frac{\partial p}{\partial t} &=& -\frac{c}{Y} \frac{\partial q}{\partial x}, 
-\label{02_q}
+	\frac{\partial q}{\partial t} &=& -cY \frac{\partial p}{\partial x},
+	\label{01_p}\\
+	\frac{\partial p}{\partial t} &=& -\frac{c}{Y} \frac{\partial q}{\partial x}, 
+	\label{02_q}
 \end{eqnarray}
 nos quais $t$ é o tempo, $x$ é a coordenada axial ao longo do tubo, $c$ é a velocidade de onda, $Y = \frac{A}{\rho c}$ é a admitância e $A$ é a área da seção transversal do tubo, e $\rho$ é a densidade do fluido. Estas equações são baseadas na linearização das equações de movimento do fluido \cite{Fung,Lighthill}. 
 
 Para uma onda harmônica simples, as equações (\ref{01_p}) e (\ref{02_q}) resultam em:
 \begin{eqnarray}
-p &=& \bar{p}_0 \exp\left[i\omega\left(t - \frac{x}{c}\right)\right] + R  \bar{p}_0 \exp\left[i\omega\left(t - \frac{2L}{c} + \frac{x}{c}\right)\right],
-\label{03_p}\\
-q &=& Y\left\{\bar{p}_0 \exp\left[i\omega\left(t - \frac{x}{c}\right)\right] -  R  \bar{p}_0 \exp\left[i\omega\left(t - \frac{2L}{c} + \frac{x}{c}\right)\right]\right\},
-\label{04_1}
+	p &=& \bar{p}_0 \exp\left[i\omega\left(t - \frac{x}{c}\right)\right] + R  \bar{p}_0 \exp\left[i\omega\left(t - \frac{2L}{c} + \frac{x}{c}\right)\right],
+	\label{03_p}\\
+	q &=& Y\left\{\bar{p}_0 \exp\left[i\omega\left(t - \frac{x}{c}\right)\right] -  R  \bar{p}_0 \exp\left[i\omega\left(t - \frac{2L}{c} + \frac{x}{c}\right)\right]\right\},
+	\label{04_1}
 \end{eqnarray}
 onde $\omega = 2 \pi f$ é a frequência angular, $f$ é frequência em Hertz, $L$ é o comprimento do tubo, $\bar{p}_0$ é a amplitude da onda incidente, $R$ é o coeficiente de reflexão definido pela razão entre as ondas refletidas pelas ondas que chegam no local de reflexão \cite{Fung,Karreman} e $i$ é a unidade imaginária ($i^2 = -1$).
 
@@ -245,12 +245,12 @@ As equações \eqref{03_p} e \eqref{04_1} para pressão e fluxo são aplicadas e
 
 Em \cite{Duan}, um segmento de vaso é identificado por $(k,j)$, onde o primeiro $k$ representa o nível da geração e $j$ representa a ordem do segmento naquela geração, como mostrado na Figura \ref{fig1:arterial-tree}. Desta forma, a pressão e o fluxo ao longo de um segmento  $(k,j)$ do modelo de árvore arterial são dados por:
 \begin{eqnarray}
-p(k,j) &=& \bar{p}(k,j) \exp\left[i\omega\left(t - \frac{x(k,j)}{c(k,j)}\right)\right] \nonumber \\
-&+& R(k,j)  \bar{p}(k,j) \exp\left[i\omega\left(t - \frac{2L(k,j)}{c(k,j)} + \frac{x(k,j)}{c(k,j)}\right)\right],
-\label{05_p}\\
-q (k,j) &=& Y(k,j)\left\{\bar{p}(k,j) \exp\left[i\omega\left(t - \frac{x(k,j)}{c(k,j)}\right)\right]\right. \nonumber \\
-&-& \left. R(k,j)  \bar{p}(k,j) \exp\left[i\omega\left(t - \frac{2L(k,j)}{c(k,j)} + \frac{x(k,j)}{c(k,j)}\right)\right]\right\},
-\label{06_q}
+	p(k,j) &=& \bar{p}(k,j) \exp\left[i\omega\left(t - \frac{x(k,j)}{c(k,j)}\right)\right] \nonumber \\
+	&+& R(k,j)  \bar{p}(k,j) \exp\left[i\omega\left(t - \frac{2L(k,j)}{c(k,j)} + \frac{x(k,j)}{c(k,j)}\right)\right],
+	\label{05_p}\\
+	q (k,j) &=& Y(k,j)\left\{\bar{p}(k,j) \exp\left[i\omega\left(t - \frac{x(k,j)}{c(k,j)}\right)\right]\right. \nonumber \\
+	&-& \left. R(k,j)  \bar{p}(k,j) \exp\left[i\omega\left(t - \frac{2L(k,j)}{c(k,j)} + \frac{x(k,j)}{c(k,j)}\right)\right]\right\},
+	\label{06_q}
 \end{eqnarray}
 nos quais $\bar{p}(k,j)$ é a amplitude combinada do grupo de ondas progressivas no segmento $(k,j)$ e $R(k,j)$ é o coeficiente de reflexão no final daquele segmento, como é chamado a razão das ondas progressivas pelas atrasadas avaliadas no nó distal $x(k,j) = L(k,j)$. 
 
@@ -262,93 +262,95 @@ A Figura~\ref{fig1:arterial-tree} mostra a notação usada para identificar cada
 
 Na equação~\eqref{06_q}, tem-se a admitância característica para cada segmento dada por:
 \begin{equation}
-Y(k,j) = \frac{A(k,j)}{\rho(k,j)c(k,j)},
-\label{eq:admitancia}
+	Y(k,j) = \frac{A(k,j)}{\rho(k,j)c(k,j)},
+	\label{eq:admitancia}
 \end{equation}
 nos quais $A(k,j)$ é a área da seção transversal do segmento $(k,j)$, $\rho(k,j)$ é a densidade do fluido dentro do vaso e $c(k,j)$ é a velocidade da onda correspondente. A admitância de um segmento é uma medida do quanto o segmento permite o fluxo.
 
 Assumindo um segmento elástico de parede fina, a velocidade da onda $c(k,j)$ é calculada
 por~\cite{Fung}:
 \begin{equation}
-c(k,j) = \sqrt{\frac{E(k,j) h(k,j)}{\rho(k,j) d(k,j)}},\label{eq:velocidade}
+	c(k,j) = \sqrt{\frac{E(k,j) h(k,j)}{\rho(k,j) d(k,j)}},\label{eq:velocidade}
 \end{equation}
 onde $E(k,j)$ é o módulo de Young, $d(k,j)$ é o diâmetro do segmento $(k,j)$ e $h(k,j)$ é a espessura da parede do segmento, a qual neste estudo é dada por~\cite{Duan}: 
 \begin{equation}
-h(k,j) = 0,05 d(k,j).
+	h(k,j) = 0,05 d(k,j).
 \end{equation}
 
 \begin{figure}[h] 
 	\begin{center}
-		\includegraphics[scale = 0.5]{Figures/ArterialTree_Zamir.png}
+		\includegraphics[scale = 0.5]{Figures/ArterialTree_Zamir.png}%
 		\caption{Notação usada para identificar cada segmento de vaso $(k,j)$ (figura adaptada de~\cite{Duan}). }
 		\label{fig1:arterial-tree}%
 	\end{center}
 \end{figure}
 
+%--------------------------------------------------------------------------------%
 \subsection{Cálculo da pressão e do fluxo sanguíneo}\label{sec:pressao-fluxo}
+
 Para determinar a pressão $\bar{p} (k,j)$ em um certo segmento $(k,j)$, aplica-se a condição de continuidade de pressão no nó proximal $A$ (ver Figura \ref{fig1:arterial-tree}). Escrevendo as componentes progressiva e atrasada da onda como $p_f (k,j)$ e $p_b (k,j)$ respectivamente, a pressão na posição proximal do segmento  $x(k,j) = 0$ é dada por:
 \begin{equation}
-\left[ p (k,j) \right]_A = \left[ p_f (k,j) \right]_A + \left[ p_b (k,j)\right]_A,
-\label{09_p}
+	\left[ p (k,j) \right]_A = \left[ p_f (k,j) \right]_A + \left[ p_b (k,j)\right]_A,
+	\label{09_p}
 \end{equation}
 nos quais as pressões $\left[ p_f(k,j) \right]_A$ e $\left[ p_b(k,j) \right]_A$ são expressas por:
 \begin{eqnarray}
-\left[ p_f(k,j) \right]_A &=& \bar{p}(k,j)\exp\left[ i\omega t\right],
-\label{10_p_f}\\
-\left[ p_b (k,j) \right]_A &=& R(k,j)\bar{p}(k,j)\exp\left[i\omega \left(t - \frac{2L(k,j)}{c(k,j)}\right) \right].
-\label{11_p_b}
+	\left[ p_f(k,j) \right]_A &=& \bar{p}(k,j)\exp\left[ i\omega t\right],
+	\label{10_p_f}\\
+	\left[ p_b (k,j) \right]_A &=& R(k,j)\bar{p}(k,j)\exp\left[i\omega \left(t - \frac{2L(k,j)}{c(k,j)}\right) \right].
+	\label{11_p_b}
 \end{eqnarray}
 Similarmente, a pressão no segmento pai $(k-1,s)$ pode ser escrita como:
 \begin{equation}
-p(k-1,s) =  p_f(k-1,s) + p_b (k-1,s),
-\label{12_p|_f}
+	p(k-1,s) =  p_f(k-1,s) + p_b (k-1,s),
+	\label{12_p|_f}
 \end{equation}
 nos quais $s$ é um número sequencial do segmento pai e as pressões $ p_f (k-1,s)$ e $p_b (k-1,s)$ são dadas por:
 \begin{eqnarray}
-p_f (k-1,s) &=& \bar{p}(k-1,s)\exp\left[i\omega \left(t - \frac{x(k-1,s)}{c (k-1,s)}\right) \right],\\
-\label{13_p_f}
-p_b (k-1,s) &=& R (k-1,s)\bar{p}(k-1,s)\exp\left[ i\omega \left( t - \frac{2L(k-1,s)}{c(k-1,s)} + \frac{x(k-1,s)}{c(k-1,s)}\right) \right]. \nonumber
+	p_f (k-1,s) &=& \bar{p}(k-1,s)\exp\left[i\omega \left(t - \frac{x(k-1,s)}{c (k-1,s)}\right) \right],\\
+	\label{13_p_f}
+	p_b (k-1,s) &=& R (k-1,s)\bar{p}(k-1,s)\exp\left[ i\omega \left( t - \frac{2L(k-1,s)}{c(k-1,s)} + \frac{x(k-1,s)}{c(k-1,s)}\right) \right]. \nonumber
 \end{eqnarray}
 
 No nó distal do vaso superior, $x(k-1,s) = L(k-1,s)$, a pressão é dada por:
 \begin{equation}
-\left[ p(k-1,s) \right]_A = \left[ p_f(k-1,s)\right]_A + \left[ p_b(k-1,s) \right]_A,
-\label{13_p|_f}
+	\left[ p(k-1,s) \right]_A = \left[ p_f(k-1,s)\right]_A + \left[ p_b(k-1,s) \right]_A,
+	\label{13_p|_f}
 \end{equation}
 nos quais 
 \begin{eqnarray}
-\left[ p_f(k-1,s) \right]_A &=& \bar{p}(k-1,s)\exp\left[ i\omega \left(t - \frac{L(k-1,s)}{c(k-1,s)}\right)\right],
-\label{15_p_f}
-\\
-\left[ p_b(k-1,s) \right]_A &=& R(k-1,s)\bar{p}(k-1,s)\exp\left[i\omega \left( t - \frac{L(k-1,s)}{c(k-1,s)} \right) \right]. 
-\label{16_p_b}
+	\left[ p_f(k-1,s) \right]_A &=& \bar{p}(k-1,s)\exp\left[ i\omega \left(t - \frac{L(k-1,s)}{c(k-1,s)}\right)\right],
+	\label{15_p_f}
+	\\
+	\left[ p_b(k-1,s) \right]_A &=& R(k-1,s)\bar{p}(k-1,s)\exp\left[i\omega \left( t - \frac{L(k-1,s)}{c(k-1,s)} \right) \right]. 
+	\label{16_p_b}
 \end{eqnarray}
 
 A condição de continuidade da pressão exige que na junção ela assuma um único valor, portanto
 \begin{equation}
-\left[ p_f(k-1,s) \right]_A + \left[ p_b (k-1,s) \right]_A = \left[ p_f(k,j) \right]_A + \left[ p_b(k,j) \right]_A.
-\label{17_p_cont}
+	\left[ p_f(k-1,s) \right]_A + \left[ p_b (k-1,s) \right]_A = \left[ p_f(k,j) \right]_A + \left[ p_b(k,j) \right]_A.
+	\label{17_p_cont}
 \end{equation}
 
 Substituindo as equações \eqref{10_p_f}, \eqref{11_p_b}, \eqref{15_p_f} e \eqref{16_p_b} na equação \eqref{17_p_cont} e resolvendo para $\bar{p}(k,j)$, resulta em:
 \begin{equation}
-\bar{p} (k,s) =  \frac{\bar{p}(k-1,s)\left[1 + R(k-1,s)\right] \exp\left[ -\frac{i \omega L(k-1,s)}{c(k-1,s)}\right]}{1 + R(k,j)\exp{\left[ -2i\omega \frac{L(k,j)}{c(k,j)}\right]}}.
-\label{18_barp}
+	\bar{p} (k,s) =  \frac{\bar{p}(k-1,s)\left[1 + R(k-1,s)\right] \exp\left[ -\frac{i \omega L(k-1,s)}{c(k-1,s)}\right]}{1 + R(k,j)\exp{\left[ -2i\omega \frac{L(k,j)}{c(k,j)}\right]}}.
+	\label{18_barp}
 \end{equation}
 
 Conforme Duan e Zamir \cite{Duan}, para efeitos de cálculo da pressão e fluxo, adimensionalizam-se as pressões em \eqref{18_barp} em termos da pressão de entrada $p_0 = \bar{p}_0 \exp[i\omega t]$. 
 
 Considerando $P(k,j) = \frac{p(k,j)}{p_0}$ e $\bar{P} (k,j) = \frac{\bar{p}(k,j)}{\bar{p}_0}$, a equação~\eqref{05_p} para o cálculo da pressão  pode ser expressa de forma adimensionalizada por:
 \begin{eqnarray}
-P(k,j) &=& \bar{P}(k,j)\big\{\exp[ -i\beta(k,j) X(k,j)] \nonumber \\
-& +& R(k,j) \exp[-i2\beta(k,j)] \exp[i\beta(k,j) X(k,j)]\big\},
-\label{21_P}
+	P(k,j) &=& \bar{P}(k,j)\big\{\exp[ -i\beta(k,j) X(k,j)] \nonumber \\
+	& +& R(k,j) \exp[-i2\beta(k,j)] \exp[i\beta(k,j) X(k,j)]\big\},
+	\label{21_P}
 \end{eqnarray}
 nos quais $\beta(k,j) = \frac{\omega L(k,j)}{c(k,j)}$ e $X = \frac{x(k,j)}{L(k,j)}$. Similarmente, a equação~\eqref{06_q} para o fluxo $q(k,j)$ pode ser obtida de forma adimensionalizada por:
 \begin{eqnarray}
-Q(k,j) &=& M(k,j)\bar{P}(k,j)\big\{ \exp\left[ -i\beta(k,j) X(k,j) \right] \nonumber \\ 
-&-& R(k,j) \exp[ -2i\beta(k,j)] \exp[i\beta(k,j) X(k,j)] \big\},
-\label{23_Q}
+	Q(k,j) &=& M(k,j)\bar{P}(k,j)\big\{ \exp\left[ -i\beta(k,j) X(k,j) \right] \nonumber \\ 
+	&-& R(k,j) \exp[ -2i\beta(k,j)] \exp[i\beta(k,j) X(k,j)] \big\},
+	\label{23_Q}
 \end{eqnarray}
 nos quais $Q(k,j) = \frac{q (k,j)}{q_0}$, $M = \frac{Y(k,j)}{Y(1,1)}$ e $q_0 = Y(1,1)p_0$. O cálculo da admitância $Y(1,1)$ na posição proximal do segmento raiz, ou seja, da artéria de alimentação é apresentado na próxima seção.
 
@@ -357,23 +359,23 @@ nos quais $Q(k,j) = \frac{q (k,j)}{q_0}$, $M = \frac{Y(k,j)}{Y(1,1)}$ e $q_0 = Y
 
 Para determinar os coeficientes de reflexão nas junções, consideram-se as duas junções $A$ e $B$ das extremidades de um segmento genérico $(k,j)$ de um modelo de árvore arterial (ver Figura~\ref{fig1:arterial-tree}). Na posição distal $B$, o coeficiente de reflexão é definido por~\cite{Fung,Lighthill}:
 \begin{equation}
-R(k,j) = \frac{Y(k,j) - [Y_e(k+1,2j) + Y_e(k+1,2j-1)]}{Y(k,j) + [Y_e(k+1,2j) + Y_e(k+1,2j-1)]},
-\label{27_R}
+	R(k,j) = \frac{Y(k,j) - [Y_e(k+1,2j) + Y_e(k+1,2j-1)]}{Y(k,j) + [Y_e(k+1,2j) + Y_e(k+1,2j-1)]},
+	\label{27_R}
 \end{equation}
 nos quais $Y_e(k+1,2j-1)$ e $Y_e(k+1,2j)$ são admitâncias efetivas nos segmentos à jusante de $B$. Estas admitâncias são determinadas pela razão entre o fluxo e pressão naquela posição, que é dada por:
 \begin{equation}
-Y_e(k+1,s) = \frac{Y(k+1,s)\left\{1 - R(k+1,s)\exp{[-i2\beta(k+1,s)]}\right\}}{1 + R(k+1,s)\exp{[-i2\beta(k+1,s)]}},
-\label{28_Ye}
+	Y_e(k+1,s) = \frac{Y(k+1,s)\left\{1 - R(k+1,s)\exp{[-i2\beta(k+1,s)]}\right\}}{1 + R(k+1,s)\exp{[-i2\beta(k+1,s)]}},
+	\label{28_Ye}
 \end{equation}
 nos quais $s = 2j-1$ e $2j$ são os números sequenciais dos dois segmentos filhos e $R(k+1,s)$ é o coeficiente de reflexão na posição distal de cada segmento. Similarmente, $Y_e(k,j)$, a admitância na posição proximal $A$ do segmento $(k,j)$ pode ser dada por:
 \begin{equation}
-Y_e(k,j) = \frac{Y(k,j)\{1 - R(k,j)\exp{[-i2\beta(k,j)]}\} }{1 + R(k,j)\exp{[-i2\beta(k,j)]}}
-\label{29_Ye}.
+	Y_e(k,j) = \frac{Y(k,j)\{1 - R(k,j)\exp{[-i2\beta(k,j)]}\} }{1 + R(k,j)\exp{[-i2\beta(k,j)]}}
+	\label{29_Ye}.
 \end{equation}
 Substituindo $R(k,j)$ da equação \eqref{27_R} em \eqref{29_Ye}, obtém-se  uma equação para cálculo das admitâncias efetivas ao longo do modelo de árvore arterial:
 \begin{equation}
-Y_e(k,j) = \frac{Y(k,j) [Y_e(k+1,2j) + Y_e(k+1,2j-1)+ i Y(k,j)\tan{\beta(k,j)}]}{Y(k,j) + i[Y_e(k+1,2j) + Y_e(k+1,2j-1)]\tan{\beta(k,j)}}.
-\label{30_Ye}
+	Y_e(k,j) = \frac{Y(k,j) [Y_e(k+1,2j) + Y_e(k+1,2j-1)+ i Y(k,j)\tan{\beta(k,j)}]}{Y(k,j) + i[Y_e(k+1,2j) + Y_e(k+1,2j-1)]\tan{\beta(k,j)}}.
+	\label{30_Ye}
 \end{equation}
 
 Em segmentos terminais, pode ser assumido que não ocorrem mais reflexões à jusante das posições distais destes segmentos, portanto a admitância efetiva destes segmentos é igual às suas admitâncias características. Adotando a equação \eqref{29_Ye}, todas as admitâncias efetivas podem ser determinadas percorrendo a árvore a partir dos segmentos terminais até o segmento raiz.
@@ -382,18 +384,18 @@ Em segmentos terminais, pode ser assumido que não ocorrem mais reflexões à ju
 
 A impedância vascular de um modelo de árvore arterial é expresso por
 \begin{equation}
-    z = \frac{p}{q},
+	z = \frac{p}{q},
 \end{equation}
 onde $p$ e $q$ podem ser definidos pelas equações \eqref{03_p} e \eqref{04_1}, respectivamente. Dados que $p(k,j) = P(k,j) p_0$, $q(k,j) = Q(k,j) q_0$ e $q_0 = Y(1,1) p_0$, em termos de variáveis adimensionalizadas, a impedância pode ser reescrita por
 \begin{equation}
-Z = \frac{P(k,j)}{Y(1,1) Q(k,j)}.
+	Z = \frac{P(k,j)}{Y(1,1) Q(k,j)}.
 \end{equation}
 
 A impedância de entrada de um modelo de árvore arterial determina $Z$ na posição proximal do vaso raiz, ou seja, em $x (k,j) = 0$. 
 
 Adotando as equações~\eqref{21_P} e~\eqref{23_Q} com $x (k,j) = 0$, obtém-se a impedância de entrada:
 \begin{equation}
-Z = \frac{-1}{Y(1,1)}.
+	Z = \frac{-1}{Y(1,1)}.
 \end{equation}
 Em suma, a impedância de entrada  em módulo é o inverso da admitância característica da artéria de alimentação.
 
@@ -406,20 +408,20 @@ A partir do modelo matemático aqui apresentado, os seguintes cenários podem se
 	Os efeitos da viscosidade sanguínea podem ser investigados por substituir a velocidade
 	da onda $c(k,j)$ por uma velocidade da onda complexa~\cite{Duan1992}:
 	\begin{equation} 
-	c_v(k,j) = c(k,j) \sqrt{\epsilon},\label{eq:velocidade-complexa}
+		c_v(k,j) = c(k,j) \sqrt{\epsilon},\label{eq:velocidade-complexa}
 	\end{equation}
 	onde $\epsilon$ é um fator viscoso que corresponde a um tubo elástico com restrições~\cite{Duan1992}. Seja $\alpha$ o
 	número de Womersley adimensional
 	\begin{equation}
-	\alpha = r(k,j) \sqrt{\frac{\omega \rho(k,j)}{\mu(k,j)}},
+		\alpha = r(k,j) \sqrt{\frac{\omega \rho(k,j)}{\mu(k,j)}},
 	\end{equation}
 	o fator viscoso $\epsilon$ é calculado por:
 	\begin{equation}
-	\epsilon = 1 - F_{10} (\alpha),
+		\epsilon = 1 - F_{10} (\alpha),
 	\end{equation}
 	onde a função $F_{10}$ é avaliada deste modo:
 	\begin{equation}
-	F_{10} (\alpha) = \frac{2 J_1(i^{1,5} \alpha)}{\alpha i^{1,5}J_0(i^{1,5} \alpha)},
+		F_{10} (\alpha) = \frac{2 J_1(i^{1,5} \alpha)}{\alpha i^{1,5}J_0(i^{1,5} \alpha)},
 	\end{equation}
 	onde $J_p$ denota a função de Bessel de índice $p$.
 	
@@ -428,7 +430,7 @@ A partir do modelo matemático aqui apresentado, os seguintes cenários podem se
 	estático $E(k,j)$ por um módulo elástico complexo $E_c(k,j)$ no cálculo da velocidade $c(k,j)$ na equação~\eqref{eq:velocidade}
 	da seguinte forma~\cite{Duan}:
 	\begin{equation}
-	E_c(k,j) = |E_c(k,j)| \exp\{i\phi\},\label{eq:Young}
+		E_c(k,j) = |E_c(k,j)| \exp\{i\phi\},\label{eq:Young}
 	\end{equation}
 	onde $\phi$ é o ângulo de fase entre a pressão e o deslocamento da parede do segmento \cite{Taylor3} expresso por $\phi = \phi_0 [1-\exp(-\omega)]$ e $|E_c (k,j)|$ corresponde ao módulo de Young fornecido para a simulação.
 	
@@ -448,37 +450,37 @@ Inicialmente, salientam-se que as equações~\eqref{27_R} e~\eqref{28_Ye} expõe
 Neste trabalho, adotou-se a linguagem de programação C++. Essa linguagem de programação escolhida permite que objetos \textcolor{red}{sejam passados por referência. Ao passar um objeto por referência, o endereço de memória é enviado, dando total acesso aos parâmetros do objeto, este endereço é chamado de ponteiro. Ao enviar o ponteiro do vaso raiz, é possível acessar todo o modelo de árvore arterial}. Cada vaso arterial do modelo contém as propriedades apresentadas na Tabela~\ref{tab:info_vaso}, além de ponteiros para os vasos adjacentes. 
 
 \begin{table}[h]
-\begin{tabular}{|c|c||c|c|}
-	\hline
-	\textbf{valores conhecidos} & \textbf{unidade} & \textbf{valores calculados} & \textbf{unidade} \\
-	\hline
-	comprimento ($L$) & cm &  velocidade da onda ($c$) & cm/s \\
-	
-	densidade ($\rho$) & g/cm$^3$ &   beta ($\beta$) & -- \\
-
-	 módulo de Young ($E$) & g/cms$^2$  & velocidade angular ($\omega$) & rad/s \\
-	 
- viscosidade ($\mu_0$) & cm$^2$/s &	espessura da parede ($h$) &  $cm$ \\
-
-	raio ($r$) & cm  & número de Womersley ($\alpha$) & --- \\
-	
-	 & & admitância característica ($Y$) & $cm^4 s/g $\\
-	
- &  & admitância efetiva ($Y_e$) & $cm^4 s/g $\\
-	
-	&  & coeficiente de reflexão ($R$) & $g /cm^4 s$ \\
+	\begin{tabular}{|c|c||c|c|}
+		\hline
+		\textbf{valores conhecidos} & \textbf{unidade} & \textbf{valores calculados} & \textbf{unidade} \\
+		\hline
+		comprimento ($L$) & cm &  velocidade da onda ($c$) & cm/s \\
 		
-	& & fator viscoso ($\epsilon$) & -- \\
-	
-& & pressão ($P$) & -- \\
-	
-  &  &	pressão média ($\bar{p}$) & -- \\
-  	
- & &	fluxo ($Q$) & -- \\
-\hline
-\end{tabular}
-\caption{Propriedades de cada vaso arterial do modelo.}
-\label{tab:info_vaso}
+		densidade ($\rho$) & g/cm$^3$ &   beta ($\beta$) & -- \\
+		
+		módulo de Young ($E$) & g/cms$^2$  & velocidade angular ($\omega$) & rad/s \\
+		
+		viscosidade ($\mu_0$) & cm$^2$/s &	espessura da parede ($h$) &  $cm$ \\
+		
+		raio ($r$) & cm  & número de Womersley ($\alpha$) & --- \\
+		
+		& & admitância característica ($Y$) & $cm^4 s/g $\\
+		
+		&  & admitância efetiva ($Y_e$) & $cm^4 s/g $\\
+		
+		&  & coeficiente de reflexão ($R$) & $g /cm^4 s$ \\
+		
+		& & fator viscoso ($\epsilon$) & -- \\
+		
+		& & pressão ($P$) & -- \\
+		
+		&  &	pressão média ($\bar{p}$) & -- \\
+		
+		& &	fluxo ($Q$) & -- \\
+		\hline
+	\end{tabular}
+	\caption{Propriedades de cada vaso arterial do modelo.}
+	\label{tab:info_vaso}
 \end{table}
 
 Além das propriedades especificadas na Tabela~\ref{tab:info_vaso}, o vaso possui ainda três ponteiros para os seus vasos adjacentes. Um destes ponteiros, para o vaso adjacente ao seu nó proximal, ou seja, para o seu vaso pai $(k-1,s)$. Os demais ponteiros para os vasos adjacentes ao seu nó distal, ou seja, para seus vasos filhos à esquerda ($esq$) e à direita ($dir$) expressos por $(k+1,2j-1)$ e $(k+1,2j)$, respectivamente. Este arranjo de ponteiros é equivalente a uma árvore duplamente encadeada, onde através de um único ponteiro para um vaso é possível trafegar a árvore nos dois sentidos. Isto é útil quando é necessário acessar propriedades de outro vaso para se determinarem por exemplo, a pressão média, coeficientes de reflexão e admitâncias de um dado vaso.
@@ -487,12 +489,12 @@ Os ponteiros permitem também definir se o vaso é a raiz ou uma folha. Caso o p
 
 Basicamente, os passos para determinar as ondas de pressão e fluxo que percorrem um modelo de árvore arterial usando o modelo de Duan e Zamir são dados por:
 \begin{enumerate}
-    \item Cálculo da admitância característica $(Y)$ de cada vaso;
-    \item Cálculo da admitância efetiva $(Y_e)$  de cada vaso;
-    \item Cálculo do coeficiente de reflexão $(R)$  de cada vaso; 
-    \item Armazenar valor da admitância característica $(Y_r)$ do vaso raiz, isto é, o valor de $Y(1,1)$;
-    \item Cálculo da pressão média $(\bar{p})$ em cada vaso;
-    \item Cálculo das ondas de pressão e fluxo $P$ e $Q$.
+	\item Cálculo da admitância característica $(Y)$ de cada vaso;
+	\item Cálculo da admitância efetiva $(Y_e)$  de cada vaso;
+	\item Cálculo do coeficiente de reflexão $(R)$  de cada vaso; 
+	\item Armazenar valor da admitância característica $(Y_r)$ do vaso raiz, isto é, o valor de $Y(1,1)$;
+	\item Cálculo da pressão média $(\bar{p})$ em cada vaso;
+	\item Cálculo das ondas de pressão e fluxo $P$ e $Q$.
 \end{enumerate}
 
 Os passos acima mencionados podem ser organizados no Algoritmo 1. Esse algoritmo tem como entrada: o modelo de árvore arterial ($\mathcal{MAA}$) com seus vasos caracterizados por suas propriedades, a frequência ($f$) em Hz, um fator de escala da viscosidade ($\gamma_{\mu}$), o parâmetro da viscoelasticidade da parede ($\phi$) e a quantidade de espaçamento para discretização de um vaso ($N$).
@@ -511,14 +513,14 @@ O Algoritmo 1 proposto tem dois módulos, a saber: $\mathcal{M}_1$ e $\mathcal{M
 			Chama $\mathcal{M}_2$($v$ , $\bar{p}_0$, $Y_r$, $N$);
 		}
 	}
-\caption{Cálculos hemodinâmicos do modelo de árvore arterial ($\mathcal{MAA}$).}
+	\caption{Cálculos hemodinâmicos do modelo de árvore arterial ($\mathcal{MAA}$).}
 \end{algorithm}
 
 O módulo $\mathcal{M}_1$ do Algoritmo 1  visa calcular os valores de admitância efetiva ($Y_e$), admitância característica ($Y$) e coeficiente de reflexão ($R$) de cada vaso. Este módulo é definido pelo Algoritmo~\ref{AlgM1}. Necessitam-se das admitâncias efetivas dos vasos à justante do vaso $k$ ($Y_e(k+1,2j-1)$ e $Y_e(k+1,2j)$) estejam definidas. Em vista disso, verifica-se a existência dos vasos à justante do vaso atual tanto a esquerda ($esq$) quanto a direita ($dir$) e caso existam realiza-se uma chamada recursiva. Após o retorno das chamadas recursivas, calculam-se as propriedades do vaso atual. Assim, as propriedades do vasos à jusante do vaso atual serão conhecidas, ou seja, já terão sido determinadas $Y_e(k+1,2j-1)$ e $Y_e(k+1,2j)$.
 \newpage
 
 \begin{algorithm}[H]
-$\mathcal{M}_1$ ($v$, $f$, $\gamma_{\mu}$, $\phi$) \\
+	$\mathcal{M}_1$ ($v$, $f$, $\gamma_{\mu}$, $\phi$) \\
 	\Inicio{
 		\Se{existe($v \rightarrow esq$)}{
 			$\mathcal{M}_1$ ($v \rightarrow esq$, $f$, $\gamma_{\mu}$, $\phi$);
@@ -531,13 +533,13 @@ $\mathcal{M}_1$ ($v$, $f$, $\gamma_{\mu}$, $\phi$) \\
 			Calcula $Y$;
 		}
 		\Senao{
-		    \Se{ ($\gamma_{\mu}~!=~0$) }{
-			Calcula $\alpha$, $\epsilon$, $E_v$, $c_v$ e $Y_v$;\\
-			Atualiza $E = E_v$, $c = c_v$ e $Y = Y_v$;
+			\Se{ ($\gamma_{\mu}~!=~0$) }{
+				Calcula $\alpha$, $\epsilon$, $E_v$, $c_v$ e $Y_v$;\\
+				Atualiza $E = E_v$, $c = c_v$ e $Y = Y_v$;
 			}
-		    \Se{ ($\phi~!=~0$) }{
-			Calcula $E_c$;\\
-			Atualize $E = E_c$;
+			\Se{ ($\phi~!=~0$) }{
+				Calcula $E_c$;\\
+				Atualize $E = E_c$;
 			}
 		}
 		\Se{($v$ é um vaso terminal)}{
@@ -554,30 +556,30 @@ $\mathcal{M}_1$ ($v$, $f$, $\gamma_{\mu}$, $\phi$) \\
 O módulo 2 ($\mathcal{M}_2$) do Algoritmo 1 visa calcular o valor da pressão média, pressão e fluxo em cada vaso. Esse módulo é expresso no Algoritmo~\ref{AlgoritmoM2}. Como expresso na equação~\eqref{18_barp}, o valor da pressão média requer o valor da pressão média do vaso à montante $(k-1,s)$. Com isso, inicialmente, se o vaso atual é a artéria de alimentação (raiz), neste caso $\bar{p} = \bar{p}_0$. Caso contrário, calcula-se $\bar{p}$ com a equação~\eqref{18_barp}. Em seguida, o valor das ondas de pressão e fluxo são obtidas ao longo de cada vaso 1D, que são discretizados. Por fim, a recursão é enviada aos segmentos inferiores, desta forma se garante a existência de um valor $\bar{p}(k-1,s)$.
 
 \begin{algorithm}[H]
-$\mathcal{M}_2$ ($v$, $\bar{p}_0$, $Y_r$, $N$) \\
-\Inicio{
-	\Se{ ($v$ é o vaso raiz)}{
-		$\bar{p} = \bar{p_0}$;
-	}
-	\Senao{
-		Calcula $\bar{p}$;
-	}
-	Calcula $P(X_i)$ e $Q(X_i)$, onde $X_i \in [0,1]$; \\
-	\Se{existe( $v \rightarrow esq$ )}{
-		$\mathcal{M}_2$ ($v \rightarrow esq$, $\bar{p}_0$, $Y_r$, $N$);
-	}
-	\Se{existe($v \rightarrow dir$)}{
+	$\mathcal{M}_2$ ($v$, $\bar{p}_0$, $Y_r$, $N$) \\
+	\Inicio{
+		\Se{ ($v$ é o vaso raiz)}{
+			$\bar{p} = \bar{p_0}$;
+		}
+		\Senao{
+			Calcula $\bar{p}$;
+		}
+		Calcula $P(X_i)$ e $Q(X_i)$, onde $X_i \in [0,1]$; \\
+		\Se{existe( $v \rightarrow esq$ )}{
+			$\mathcal{M}_2$ ($v \rightarrow esq$, $\bar{p}_0$, $Y_r$, $N$);
+		}
+		\Se{existe($v \rightarrow dir$)}{
 			$\mathcal{M}_2$ ($v \rightarrow dir$, $\bar{p}_0$, $Y_r$, $N$);
+		}
 	}
-}
-\caption{$\mathcal{M}_2$ -- Cálculo da pressão e fluxo ao longo de cada vaso.}
-\label{AlgoritmoM2}
+	\caption{$\mathcal{M}_2$ -- Cálculo da pressão e fluxo ao longo de cada vaso.}
+	\label{AlgoritmoM2}
 \end{algorithm}
 
 No Algoritmo \ref{AlgoritmoM2} tem-se que $N$ denota a quantidade de espaçamento $dX$ no intervalo [0,1] para discretização de um vaso. Assim, $dX = 1/N$ e $X_i = i dX (i = 0, 1, \cdot, N)$.
 
 %--------------------------------------------------------------------------------%
-\chapter{FERRAMENTA COMPUTACIONAL}\label{sec:modelagem}
+\chapter{FERRAMENTA COMPUTACIONAL}\label{sec:ferramenta_computacional}
 
 Nesta seção apresentam-se detalhes da ferramenta computacional desenvolvida para simulação do escoamento sanguíneo em modelos de árvores arteriais. A principal finalidade desta ferramenta é possibilitar a visualização de estruturas das árvores arteriais e após da simulação hemodinâmica,  a visualização das curvas de distribuição do fluxo sanguíneo e pressão.
 
@@ -630,14 +632,14 @@ A Figura~\ref{fig2:wiselement} mostra que um elemento inteligente é composto po
 	\label{fig2:wiselements}
 \end{figure}
 
- Como demonstrado na Figura~\ref{fig2:wiselements} um elemento inteligente é aquele que implementa a classe abstrata \textit{WiseElement}, os dados abstratos \textit{DataStructure} de cada classe podem ser salvos na estrutura padrão \textit{WiseStructure} e utilizados quando necessário. 
- 
- O modelo geométrico de uma árvore arterial foi traduzido para o elemento inteligente \textit{WiseArteryTree}, a estrutura inteligente deste elemento conta com pontos e linhas que definem os parâmetros do modelo geométrico na estrutura \textit{WiseStructure}, a estrutura abstrata \textit{DataStructure} conta com ponteiros para cada segmento e grandezas físicas armazenadas em pontos flutuantes de precisão dupla.
- 
+Como demonstrado na Figura~\ref{fig2:wiselements} um elemento inteligente é aquele que implementa a classe abstrata \textit{WiseElement}, os dados abstratos \textit{DataStructure} de cada classe podem ser salvos na estrutura padrão \textit{WiseStructure} e utilizados quando necessário. 
+
+O modelo geométrico de uma árvore arterial foi traduzido para o elemento inteligente \textit{WiseArteryTree}, a estrutura inteligente deste elemento conta com pontos e linhas que definem os parâmetros do modelo geométrico na estrutura \textit{WiseStructure}, a estrutura abstrata \textit{DataStructure} conta com ponteiros para cada segmento e grandezas físicas armazenadas em pontos flutuantes de precisão dupla.
+
 O elemento inteligente \textit{WiseGraphic} foi criado para armazenar dados ao longo de uma dimensão, como a pressão ao longo da árvore arterial. Os elementos \textit{WiseMesh} e \textit{WisePoly} foram criados para armazenar dados ao longo de duas dimensões e ao longo de três dimensões, estes dois elementos foram utilizados como exemplo de objetos que podem ser generalizados na ferramenta e visualizados, mudando pouco as estruturas já existentes. O elemento \textit{WiseGraphic} é equivalente à um vetor de valores $(x,v)$, o elemento \textit{WiseMesh} à uma matriz de valores $(x,y,v)$ e o elemento \textit{WisePoly} uma matriz tridimensional de valores $(x,y,z,v)$, onde $v$ é o valor associado e $(x,y,z)$ a posição. Podemos armazenar em um \textit{WiseMesh} o valor $v$ da pressão ao longo de uma árvore arterial na direção $x$ variando a frequência no eixo $y$, por exemplo.
- 
- Os elementos inteligentes servem como estruturas de armazenamento padrão que compõem outros objetos. O ciclo de manipulação desses elementos se divide em três partes: A criação, aonde os objetos podem ser criados à partir de exemplos pré-definidos ou através de um arquivo de entrada \textit{VTK} ou \textit{XML (eXtensible Markup Language)}; A iteração, processo em que o elemento inteligente com todas as estruturas definidas e consistentes é utilizado por um algoritmo; A exibição,  este último ciclo utiliza a estrutura atualizada e gera um objeto para visualização.
- 
+
+Os elementos inteligentes servem como estruturas de armazenamento padrão que compõem outros objetos. O ciclo de manipulação desses elementos se divide em três partes: A criação, aonde os objetos podem ser criados à partir de exemplos pré-definidos ou através de um arquivo de entrada \textit{VTK} ou \textit{XML (eXtensible Markup Language)}; A iteração, processo em que o elemento inteligente com todas as estruturas definidas e consistentes é utilizado por um algoritmo; A exibição,  este último ciclo utiliza a estrutura atualizada e gera um objeto para visualização.
+
 Todo elemento inteligente completo possui uma redundância de dados, podendo ser representado por qualquer uma das duas estruturas que o compõe. A estrutura \textit{WiseStructure} utiliza componentes simples para descrever as estruturas e seus parâmetros, essa estrutura é a que mais se assemelha à encontrada na arquitetura \textit{VTK}. Por utilizar uma quantidade limitada de diretivas o arquivo proveniente dessa estrutura pode ser rapidamente lido, interpretado e até mesmo exportado.
 
 \begin{figure}[!htbp]
@@ -697,8 +699,8 @@ Para que um elemento possa ser iterado ele precisa estar no estado \textit{Hot},
 Seguindo o conceito de classes com propósito único, os elementos inteligentes são responsáveis apenas por gerir os dados contidos na estrutura inteligente e abstrata. Portanto as funções de criar, iterar e visualizar estas estruturas foram divididas em classes.
 
 %--------------------------------------------------------------------------------%
-\subsection{Fábricas}\label{sec:fabricas} 
- 
+\subsection{FÁBRICA}\label{sec:fabrica} 
+
 Como mencionado anteriormente três principais barreiras foram identificadas armazenamento, iteração e visualização. Foi idealizada uma arquitetura de classes que permite a execução de cada passo através do paradigma de Fábricas Dinâmicas~ \cite{factorypattern}. Uma arquitetura com fábricas permite a criação de instâncias com definições concretas, armazenadas como metadados. Isso facilita a adição de novos objetos que podem ser interpretados sem modificar o código da fábrica em si. Sendo a fábrica também uma classe virtual, três principais tipos de fábricas foram idealizadas, a primeira responsável por criar elementos inteligentes, a  segunda responsável por iterar o elemento e a terceira que cria um elemento gráfico a partir de um elemento inteligente.
 
 \begin{figure}[!htbp]
@@ -707,7 +709,7 @@ Como mencionado anteriormente três principais barreiras foram identificadas arm
 	\caption{Arquitetura de classes fábrica e fluxo de trabalho do elemento inteligente WiseElement. A fábrica WiseElementFactory é responsável por criar o elementos inteligentes, a fábrica WiseIterationFactory é reponsável pela iteração do elemento inteligente e a fábrica GraphicFactory é responsável por criar as estrturas de visualização. }
 	\label{fig2:wiselementsworkflow}
 \end{figure}
- 
+
 Primeiramente, a fábrica de elementos inteligentes \textit{WiseElementFactory} é utilizada para a criação de elementos inteligentes, essa fábrica é utilizada para criar um elemento inteligente à partir de parâmetros. Esse tipo de fábrica é também uma classe virtual, seus métodos definem que fábricas de elementos inteligentes possuem três maneiras de executar: Um dos métodos permite a criação de elementos à partir de uma lista de exemplos; Outro método permite que um arquivo \textit{VTK} ; Com um arquivo \textit{XML}. 
 
 Os métodos de criação de elementos são selecionados através do nome da fábrica e de um dos três métodos de criação. A ferramenta computacional possui uma lista com todas a fábricas disponíveis e as utiliza quando necessário. Devido à forma como os dados são carregados para cada elemento, é necessário que haja uma fábrica para cada tipo de elemento inteligente.
@@ -718,7 +720,7 @@ Por último, a fábrica \textit{GraphicFactory} irá criar o objeto gráfico cor
 
 
 %--------------------------------------------------------------------------------%
-\subsection{Objeto Inteligente}\label{sec:objeto_inteligente}
+\subsection{OBJETO INTELIGENTE}\label{sec:objeto_inteligente}
 
 A classe que combina todas as estruturas utilizadas no método de iteração da ferramenta computacional foi nomeada de objeto inteligente \textit{WiseObject}, este objeto preserva todos os passos de de iteração e poupa a quantidade de recursos mantida em memória. A classe é composta por um coleção de elementos inteligentes e objetos gráficos equivalentes entre si. A presença de uma fábrica gráfica é opcional, possibilitando que objetos sejam iterados sem que alguma estrutura seja disponibilizada para visualização. Utilizando a mesma separação de classes com propósito único, fábricas dinâmicas garantem que um objeto inteligente seja criado corretamente. As fábricas presente na Seção~\ref{sec:fabricas} foram incluídas como propriedades de um objeto inteligente, desta forma estes objetos serão compostos por três fábricas.
 
@@ -755,7 +757,7 @@ Inicialmente, um objeto é criado no estado \textit{Ready} com somente seu eleme
 Com os parâmetros definidos e as fábricas devidamente acopladas os objeto está pronto para a iteração. O método iterativo de um objeto inteligente é representado na transição para o estado \textit{Go}. Uma iteração de uma \textit{WiseArteryTree} representa o cálculo dos valores de pressão e fluxo em toda a árvore arterial. Caso algum erro ocorra durante o processamento de dados o objeto se desloca para o estado \textit{Crashed}, assim como elementos inteligentes. É possível também finalizar a execução de um objeto inteligente o enviando para o estado \textit{Finished}, neste estado o objeto não poderá ser iterado novamente. O objeto inteligente também pode ser reiniciado à partir de qualquer estado, o que significa que todas as alterações feitas na estrutura do objeto inteligente serão apagadas. Para que parâmetros da iteração possam ser alterados sem que se perda elementos inteligentes até então definidos, é possível que um objeto no estado \textit{Go} seja resetado e retorne para o estado \textit{Set}.
 
 %--------------------------------------------------------------------------------%
-\subsection{Objeto Gráfico}\label{sec:objeto_grafico}
+\subsection{OBJETO GRÁFICO}\label{sec:objeto_grafico}
 
 
 Quando o objeto inteligente \textit{WiseObjet} estiver corretamente carregado e uma fábrica gráfica \textit{GraphicFactory} for adicionada à sua estrutura o primeiro objeto gráfico \textit{GraphicObject} de sua coleção será criado. Assim como o elemento inteligente representa uma iteração, um objeto gráfico representa um ciclo iterativo. Enquanto a estrutura responsável por elementos inteligentes, \textit{WiseCollection}, é responsável por manter os últimos dados de iteração aquecidos, a estrutura \textit{GraphicModel} mantém o objeto que está sendo exibido por alguma tela e elementos próximos. As coleções tem como objetivo mantes seus elementos no estado necessário e realizar trocas de estados quando necessário. No caso dos elementos inteligentes, somente o último objeto é necessário e isso não muda, no contexto dos objetos gráficos apenas o objeto exibido em um elemento da interface de usuário e seus vizinhos serão mantidos em memória.
@@ -791,10 +793,61 @@ Os elementos gráficos podem ser utilizados por qualquer tipo de objeto gráfico
 
 Apesar do objeto gráfico \textit{GraphicObject} ser uma redundância dos dados armazenados em um elemento inteligente \textit{WiseElement}, ele é menor, podendo ser carregado e armazenado mais rapidamente. O objetivo das estruturas nesta seção é permitir que diversos objetos gráficos \textit{GraphicObjects} possam ser armazenados em memória. Os objetos gráficos em sequência representam uma animação que pode ser visualizada através da interface gráfica. 
 
-%--------------------------------------------------------------------------------%
-\subsection{Threads Inteligentes}\label{sec:threads}
 
-Todas as estruturas descritas anterioremente são constítuidas por elementos padrões da linguagem C++, ao longo da pesquisa esta estrutura foi agregada as bibliotecas comuns do Qt 5.15.0 \cite{QTClasses}, em um primeiro momento para facilitar a visualização dos resultados através dos elementos gráficos de interface de usuários disponibilizados. Em seguida, permitindo o processamento de elementos de forma paralela. Com isso um modelo que suportasse o processamento distribuído utilizando classes \textit{QThreads} que possuem tarefas concorrentes foi construído.
+%--------------------------------------------------------------------------------%
+\subsection{PROJETO INTELIGENTE}\label{sec:projeto} 
+
+Os projetos inteligentes \textit{WiseProject} são os escopos de trabalho da ferramenta computacional, o primeiro passo para se utilizar a ferramenta é criar um projeto inteligente.
+
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=1]{Figures/WiseProject.png}
+	\caption{Projeto inteligente \textit{WiseProject} e seus componentes, uma lista de objetos inteligentes \textit{WiseObject} e uma lista de elementos inteligentes \textit{WiseElement}.}
+	\label{fig7:project}
+\end{figure}
+
+Como representado na Figura~\ref{fig7:project}, os projetos inteligentes são representados por duas coleções, uma de elementos inteligentes \textit{WiseElement} e outra de objetos inteligentes \textit{WiseObject}. Os comandos recebidos pela ferramenta computacional terão efeito sobre apenas um projeto inteligente. Por exemplo, quando um objeto inteligente for criado utilizando um elemento inteligente como parâmetro de entrada eles devem estar no mesmo projeto inteligente.
+
+Os projetos inteligentes são estrutura organizacionais, uma vez que um comando é executado sobre objetos de um projeto, esses objetos são bloqueados pelo projeto. Ao excluir um projeto, todas as demandas devem ser finalizadas. Finalmente, as estruturas dos projetos podem ser salvas e carregadas, portanto estas estruturas servem também para armazenar experimentos inteiros e seus resultados.
+
+%--------------------------------------------------------------------------------%
+\subsection{FÁBRICA DE PROJETO}\label{sec:fabrica_projeto} 
+
+O conceito de fábrica foi adicionado ao projeto para facilitar que as estruturas sejam construídas através de comandos simples de forma padronizada, inclusa neste conceito, a fábrica de projetos \textit{WiseProjectFactory} é responsável pela construção de projetos. Diferentemente das outras fábricas, a fábrica de projetos inteligentes contém todas as fábricas suportadas pela ferramenta computacional.
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=1]{Figures/WiseProjectFactory.png}
+	\caption{Fábrica de projetos inteligentes \textit{WiseProjectFactory} e seus componentes, fábricas de elementos inteligentes \textit{WiseElementFactories}, fábricas de objetos inteligentes \textit{WiseObjectFactories}, fábrica de objetos gráficos \textit{GraphicObjectFactories}, fábricas de elementos gráficos \textit{GraphicElementFactories} e fábricas de iteração \textit{WiseIterationFactories} .}
+	\label{fig7:projectfactory}
+\end{figure}
+
+Como é possível observa na Figura~\ref{fig7:projectfactory}, a fábrica de projetos inteligentes é composta de outras coleções de fábricas, agrupadas pelo tipo de estrutura que criam. Nesta classe estão as fábricas de elementos inteligentes \textit{WiseElement}, objetos inteligentes \textit{WiseObject}, objetos gráficos \textit{GraphicObject}, elementos gráficos \textit{GraphicElement} e iteração \textit{WiseIterationFactory}. Por exemplo, quando um projeto contendo diversas árvores arteriais e gráficos é carregado ele é construído pela fábrica de projetos. A fábrica de projetos irá reconhecer o formato de cada estrutura e encaminhar para a fábrica correspondente.
+
+\begin{figure}
+	\begin{tabular}{cc}
+		\includegraphics[width=65mm]{Figures/WiseElementFactories.png} &   \includegraphics[width=65mm]{Figures/WiseObjectFactories.png} \\
+		(a) Fábricas de elementos inteligentes & (b) Fábricas de objetos inteligentes \\[6pt]
+		\includegraphics[width=65mm]{Figures/GraphicObjectFactories.png} &   \includegraphics[width=65mm]{Figures/GraphicElementFactories.png} \\
+		(c) Fábricas de objetos gráficos & (d) Fábricas de elementos gráficos \\[6pt]
+		\multicolumn{2}{c}{\includegraphics[width=65mm]{Figures/WiseIterationFactories.png} }\\
+		\multicolumn{2}{c}{(e) Fábricas de iteração}
+	\end{tabular}
+	\caption{Todas as fábricas que compõem uma fábrica de projeto.}
+	\label{tab:factories} 
+\end{figure}
+
+Para cada tipo de elemento inteligente, objeto inteligente, objeto gráfico e elemento gráfico existe uma fábrica. Uma fábrica de iteração só pode ser utilizada por um tipo de objeto inteligente específico, entretanto um objeto inteligente pode ter mais de uma fábrica de iteração disponível. As fábricas de iteração descritas na Figura~\ref{tab:factories} foram criadas para resolver o modelo matemático descrito na Seção~\ref{sec:modelo_matematico} e extrair o seu resultado. A fábrica de iteração estática \textit{StaticIterationFactory} é uma fábrica que não altera o objeto inteligente no processo de iteração, esta é a única classe de iteração que pode ser utilizada em mais de um tipo de objeto, podendo ser executada em qualquer tipo de objeto inteligente.
+
+O modelo do escoamento pulsátil proposto está presenta na fábrica de iteração \textit{DuanAndZamirIterationFactory}, esta fábrica é responsável por utilizar a estrutura de uma árvore arterial \textit{WiseArteryTree} e aplicar o modelo matemático. Finalmente, a fábrica de iteração \textit{WiseObjectDataReadIterationFactory} é uma fábrica responsável por armazenar os resultados obtidos a cada iteração e armazenar em uma estrutura do tipo \textit{WiseMesh}.
+
+%--------------------------------------------------------------------------------%
+\subsection{THREADS INTELIGENTES}\label{sec:threads}
+
+Até o momento as estruturas foram construídas utilizando conceitos padrões da linguagem C++, herança de propriedades através do polimorfismo, ponteiros, classes virtuais e fábricas dinâmicas. Todas as estruturas definidas até o momento seguem conceitos da linguagem concorrente, ondem uma instrução é executada logo após a outra. Observamos que as estruturas possuem comportamentos padronizados e que um objeto inteligente é autônomo, isto é, ele sozinho é capaz de se armazenar, reconstruir, iterar e ocasionalmente se desenhar. Imaginando um cenário em que diversos objetos inteligente estão iterando, as tarefas foram dividas em Threads, primeiramente trabalhos de leitura e escrita, em seguida a iteração dos objetos. Desta forma computadores \textit{multi-thread} podem fazer uso de suas threads e permitir que mais de um objeto realize suas tarefas por vez.
+
+Ao longo da pesquisa esta estrutura foi agregada as bibliotecas comuns do Qt 5.15.0 \cite{QTClasses}, em um primeiro momento para facilitar a visualização dos resultados através dos elementos gráficos de interface de usuários disponibilizados. Em seguida, permitiu o processamento de elementos de forma paralela. Com isso um modelo que suportasse o processamento distribuído utilizando classes \textit{QThreads} que possuem tarefas concorrentes foi construído.
 
 
 \begin{figure}[!htbp]
@@ -804,11 +857,11 @@ Todas as estruturas descritas anterioremente são constítuidas por elementos pa
 	\label{fig7:threads}
 \end{figure}
 
-Os objetos distribuídos em threads contidos na Figura~\ref{fig7:threads} possuem um ciclo próprio ,portanto executam tarefas assíncronas e precisam de tratamento adequado. O sistema de sinais e fendas disponibilizado pelas bibliotecas comuns do Qt permitem que as threads se comuniquem assincronamente. O modelo proposto disponibiliza trabalhos inteligentes \textit{WiseJobs} que são então alocados à alguma thread. Enquanto o processamento é feito, todos os dados relativos ao processamento são bloqueados para escrita, isso previne a sobrescrita de dados quando há mais de uma thread trabalhando.
+As tarefas se dividem em três principais grupos: tarefas auxiliares, tarefas de leitura/escrita e trabalhos de iteração. O principal trabalho auxiliar é interpretar os comandos recebidos pelo programa e então criar a instância de trabalho \textit{WiseJob}. Sendo os grupos de tarefas mais custosos os de tarefas de escrita/leitura e iteração, se dividiram em threads específicas, \textit{WiseIO} e \textit{WiseProcessor} respectivamente.
 
-O gerenciador de threads \textit{WiseThreadPool} é composto por threads que executam os trabalhos e por projetos inteligentes \textit{WiseProject} que criam trabalhos. Ao executar um comando de texto o projeto deve ser selecionado para que os elementos e objetos certos sejam selecionados, para criar um objeto inteligente à partr de um elemento inteligente é preciso que eles estejam no mesmo projeto inteligente.
+Os objetos distribuídos threads contidos na Figura~\ref{fig7:threads} possuem um ciclo próprio, portanto executam tarefas assíncronas e precisam de tratamento adequado. O sistema de sinais e fendas disponibilizado pelas bibliotecas comuns do Qt permitem que as threads se comuniquem assincronamente através do envio de mensagens. Estas mensagens são chamadas de trabalhos inteligentes \textit{WiseJobs}, cada uma possuindo sua atividade relacionada e objeto relacionado. Uma vez criados, os trabalhos inteligentes são alocados à sua respectiva categoria passando por um balanceamento executado pelo gerenciador de threads. Enquanto o processamento é feito, todos os dados relativos ao processamento são bloqueados para escrita de outras threads, isso previne a sobrescrita de dados quando há mais de uma thread trabalhando.
 
-O orquestramento realizado pela classe \textit{WiseThreadPool} começa com um comando de texto. Através da interface de usuário uma linha de texto é enviada ao gerenciador WiseThreadPool, que registra a chamada e disponibiliza o comando para um console \textit{WiseConsole} disponível possa processá-lo. O console inteligente \textit{WiseConsole} funciona como interpretador principal dos comando e das mensagens, ao receber uma linha de comando este objeto irá analisar seu conteúdo e executar a ação correspondente.
+O gerenciador de threads \textit{WiseThreadPool} é composto por threads que executam os trabalhos e por projetos inteligentes \textit{WiseProject} que criam trabalhos. Ao executar um comando de texto o projeto deve ser selecionado para que os elementos e objetos certos sejam selecionados. Primeiramente, o comando será recebido pelo gerenciador e o primeiro trabalho inteligente \textit{WiseJob} será criado. Em seguida será interpretado por threads do grupo de tarefas auxiliares \textit{WiseConsole}, caso seja um trabalho de leitura, escrita ou iteração um trabalho inteligente associado será criado e enviado ao gerenciador de threads. Caso não seja um trabalho desses tipos ele será executado na thread atual e o trabalho inteligente finalizado. O console inteligente \textit{WiseConsole} funciona como interpretador principal dos comando e das mensagens, ao receber uma linha de comando este objeto irá analisar seu conteúdo e executar a ação correspondente.
 
 \begin{figure}[!htbp]
 	\centering
@@ -817,7 +870,7 @@ O orquestramento realizado pela classe \textit{WiseThreadPool} começa com um co
 	\label{fig8:threads}
 \end{figure}
 
-Quando se trata de um comando de escrita ou leitura, a thread \textit{WiseIO} é utilizada, ao receber esse tipo de comando o console inteligente irá listar o trabalho no gerenciador de threads \textit{WiseThreadPool}. O gerenciador irá balancear a a demanda e selecionar uma thread \textit{WiseIO} adequada para enviar a requisição. Por último o gerenciador de threads irá aguardar uma mensagem aguardando o final da execução do trabalho. Quando um objeto inteligente \textit{WiseObject} é iterado um elemento inteligente é criado na estrutura \textit{Freezer}, ao ser criado o objeto inteligente irá requisitar através de um trabalho inteligente que esse elemento seja armazenado. Portanto a thread \textit{WiseIO} é muito utilizada no ciclo de vida de um elemento inteligente, gerenciar o processo de armazenamento e reconstrução do elemento.
+Quando se trata de um comando de escrita ou leitura, a thread \textit{WiseIO} é utilizada, ao receber esse tipo de comando o console inteligente irá listar o trabalho no gerenciador de threads \textit{WiseThreadPool}. O gerenciador irá balancear a as requisições entre as threads, em seguida o gerenciador de threads irá aguardar uma mensagem indicando o final da execução do trabalho. Quando um objeto inteligente \textit{WiseObject} é iterado um elemento inteligente é criado na estrutura \textit{Freezer}, ao ser criado o objeto inteligente irá requisitar através de um trabalho inteligente que esse elemento seja armazenado. Portanto a thread \textit{WiseIO} é muito utilizada no ciclo de vida de um elemento inteligente, gerenciando o processo de armazenamento e reconstrução do elemento. É esta estrutura que efetivamente aquece e resfria elementos inteligentes.
 
 \begin{figure}[!htbp]
 	\centering
@@ -826,23 +879,450 @@ Quando se trata de um comando de escrita ou leitura, a thread \textit{WiseIO} é
 	\label{fig9:threads}
 \end{figure}
 
+Os trabalhos de iteração funcionam da mesma forma que as de leitura ou escrita, entretanto são enviadas a threads \textit{WiseProcessor}. Essas threads não possuem lógicas muito complexas, elas são responsáveis apenas por gerenciar os objetos e chamar os métodos equivalentes, por este motivo os objetos inteligentes e elementos inteligentes possuem métodos abstratos e seguem esses conjuntos de regras, para que uma estrutura que desconheça o seu funcionamento ou suas estruturas internas seja capaz de executar métodos padrões. 
 
+Mesmo com a arquitetura de threads inclusa na ferramenta computacional ainda é possível que ela seja executada em plataformas de thread única, neste caso mais threads inteligentes não farão diferença. Pois apesar dos trabalhos ainda serem dividos em threads diferentes, elas serão executadas no mesmo núcleo de processamento. As threads inteligentes têm um impacto maior nas atividades de escrita e leitura, isto porque o objeto inteligente está divido em várias estruturas menores que são armazenadas e acessadas constantemente, principalmente no caso de uma animação gráfica.
 
 %-------------------------------------------------------------------------------------------%
-\section{Interface de Usuário}\label{sec:userinterface}
+\section{INTERFACE DE USUÁRIO}\label{sec:userinterface}
 
-Nesta seção apresentam-se detalhes da interface escolhida para facilitar o uso da ferramenta computacional. A interface de usuário foi concebida para permitir o controle de todas as estruturas descritas na Seção~\ref{sec:estrutura} e visualizar os resultados extraídos. A interface se divide em duas partes principais: A interface gráfica, que permite acompanhar o método iterativo e seus resultados; A interface textual, através de um \textit{console} disponibilizado na interface gráfica é possível inserir uma série de comandos que agilizam o processo de extração de resultados. 
+Nesta seção apresentam-se detalhes da interface escolhida para facilitar o uso da ferramenta computacional. A interface de usuário foi concebida para permitir o controle de todas as estruturas descritas na Seção~\ref{sec:estrutura} com todos os seus recursos gráficos extraídos. A interface se divide em duas partes principais: Um console, que permite uma interação textual e acesso as mesmas funcionalidades de iteração; E uma janela com elementos gráficos capazes de exibir os resultados gráficos obtidos. 
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=1]{Figures/GraphicElements}
+	\caption{Interface de usuário gráfica.}
+	\label{fig10:UI}
+\end{figure}
+
+Ambas as estruturas foram construídas para manipular objetos inteligentes e suas estruturas, por isto ambas possuem instâncias do gerenciador de threads inteligentes descritos na Seção~\ref{sec:estrutura}. O console se trata de um  envio direto de mensagens para a thread \textit{WiseConsole}, que é efetivamente o console. Nas próximas seções os diferentes ambientes da ferramenta computacional serão descritos. Cada ambiente representa um projeto \textit{Qt}/\textit{C++} distinto, no projeto do console as bibliotecas gráficas do OpenGl não foram incluídas no processo de compilação, portanto computadores sem grandes recursos gráficos podem executar a mesma lógica de iteração.
+
+%--------------------------------------------------------------------------------%
+\subsection{CONSOLE}\label{sec:console}
+
+O ambiente do console consiste em um projeto \textit{Qt}/\textit{C++} sem interface gráfica, ao executar o programa o cabeçalho é impresso e os comandos de entrada são aguardados. O projeto do console foi intitulado \textit{InGU} ou Iterador não-Gráfico Universal, isto porque este projeto apesar de não conter elementos gráficos e exibir os resultados numéricos em tempo de execução é capaz de gerar as estruturas gráficas para visualização futura.
+
+A única  estrutura presente neste projeto é o gerenciador de threads inteligente, isso permite que através de comandos de texto as mesmas estruturas sejam utilizadas.
 
 
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[scale=1]{Figures/GraphicElements}
 	\caption{Interface de usuário gráfica.}
-	\label{fig7:graphicelements}
+	\label{fig10:UI}
 \end{figure}
 
+No anexo estão as sequências de instruções necessárias para compilar ambas as partes da ferramenta computacional. Ao ser compilado, um executável InGU contendo o projeto console é gerado, o processo de compilação da ferramenta é multiplataforma, tendo sido testado nos sistemas operacionais \textit{Windows} e \textit{Linux}. Entretanto, recomenda-se a utilização da ferramenta computacional no \textit{Linux}. Ao ser executado, o console corresponde do sistema operacional irá ser aberto com o cabeçalho da ferramenta e aguardará entrada de texto.
+
+IMAGEM CONSOLE
+
+Para executar um comando, basta inserir uma linha de texto e apertar a tecla \textit{Enter}.  Ao capturar a linha de texto, o programa de console irá na verdade redirecionar o comando para a estrutura \textit{WiseThreadPool}, que por sua vez irá alocar uma thread do tipo \textit{WiseConsole} para interpretar a mensagem. Este comportamento é o mesmo apresentado na Seção~\ref{sec:threads}. Uma lista de comandos foi disponibilizada e está acessível através do comando \textit{help}. Ao enviar este comando para o console uma lista com todos as possíveis entradas será exibida. Nas próximas seções estes comandos e suas entradas serão descritos em profundidade.
+
 %--------------------------------------------------------------------------------%
-\subsection{Objeto Gráfico}\label{sec:objeto_grafico}
+\subsubsection{AJUDA}\label{sec:help}
+
+O comando de ajuda é o primeiro comando da interface e foi feito para listar todas as entradas possíveis do programa.
+
+\begin{center}
+	\begin{table}[!htbp]
+		\begin{tabular}{|c|c|}
+			\hline
+			\textbf{Linha de Comando} & help \\
+			\hline
+			\textbf{Entrada} & Nenhuma \\
+			\hline
+		\end{tabular}
+	\caption{Descrição do comando ajuda.}
+	\label{tab:help}
+	\end{table}
+\end{center}
+
+IMAGEM CONSOLE HELP
+
+Ao executar o comando, o usuário receberá uma lista de comandos divididos em escopos específicos. Os escopos foram criados para agrupar comandos por área de atuação, comandos auxiliares, como o comando de ajuda, são os comandos que não alteram as estruturas e exibem informações auxiliares ao usuário.
+
+
+%--------------------------------------------------------------------------------%
+\subsubsection{LER ARQUIVO DE ENTRADA}\label{sec:read_cmds}
+
+
+O comando ler arquivo de comandos irá receber o endereço de um arquivo local, este arquivo deve conter um comando por linha, um exemplo pode ser encontrado no Anexo~\ref{annex2}. Para este tipo de comando um \textit{WiseJob} contendo a linha de comando e qual a sequência de trabalhos que deve ser executada.
+
+\begin{center}
+	\begin{table}[!htbp]
+		\begin{tabular}{|c|c|c|}
+			\hline
+			\textbf{Linha de Comando} & \multicolumn{2}{c|}{read cmds <file>} \\
+			\hline
+			\textbf{Entrada} & \textbf{<file>} & Caminho para arquivo contendo sequência de comandos. \\
+			\hline
+		\end{tabular}
+	\caption{Descrição do comando ler arquivo de comando.}
+	\label{tab:read}
+	\end{table}
+\end{center}
+
+%--------------------------------------------------------------------------------%
+\subsubsection{BATERIA DE TESTES}\label{sec:test}
+
+O ciclo principal de testes da ferramente se baseia em verificar a consistência de todas as fábricas e do fluxo principal da ferramenta computacional, exceto detalhes gráficos e do processo de iteração. Ao executar a bateria de testes todos os elementos inteligentes \textit{WiseElement} e objetos inteligentes \textit{WiseObject} disponíveis serão testados individualmente. Para isto, uma fábrica de projeto \textit{WiseProjectFactory} irá ser encarregada de criar todos os elementos e objetos inteligentes disponíveis.
+
+Estes testes foram utilizados principalmente no momento do desenvolvimento da ferramenta e garantem que as fábricas de elementos e objetos inteligentes estão funcionando corretamente. Futuramente, caso novas estruturas sejam incluídas, estes testes garantem que todas as classes do projeto foram projetadas corretamente, com isso todas as estruturas que são carregadas pela ferramenta não perdem informação ao serem armazenadas e recuperadas, processo recorrente na ferramenta computacional.
+
+\begin{center}
+	\begin{table}[!htbp]
+		\begin{tabular}{|c|c|}
+			\hline
+			\textbf{Linha de Comando} & test \\
+			\hline
+			\textbf{Entrada} & Nenhuma \\
+			\hline
+		\end{tabular}
+	\caption{Descrição do comando bateria de testes.}
+	\label{tab:test}
+	\end{table}
+\end{center}
+
+%--------------------------------------------------------------------------------%
+\subsubsection{LISTA DE TESTES}\label{sec:test list}
+
+O comando de listar testes irá enumerar todos os teste possíveis de serem executados pela ferramenta computacional. Assim como o comando de ajuda, este comando irá imprimir no console todas os resultados encontrados. 
+
+\begin{center}
+	\begin{table}[!htbp]
+		\begin{tabular}{|c|c|}
+			\hline
+			\textbf{Linha de Comando} & test list \\
+			\hline
+			\textbf{Entrada} & Nenhuma \\
+			\hline
+		\end{tabular}
+	\caption{Descrição do comando listar testes.}
+	\label{tab:list_test}
+	\end{table}
+\end{center}
+
+%--------------------------------------------------------------------------------%
+\subsubsection{CASO DE TESTE}\label{sec:case list}
+
+Como visto na Seção~\ref{sec:test list}, os testes são enumerados. Baseando-se nessa lista, é possível selecionar um teste pelo seu número correspondente.
+
+\begin{center}
+	\begin{table}[!htbp]
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{Linha de Comando} & \multicolumn{2}{c|}{test <test\underline{\space}id>} \\
+		\hline
+		\textbf{Entrada} & <test\underline{\space}id> & Número do teste a ser executado \\
+		\hline
+	\end{tabular}
+	\caption{Descrição do comando executar caso de teste.}
+	\label{tab:case_test}
+	\end{table}
+\end{center}
+
+%--------------------------------------------------------------------------------%
+\subsubsection{TESTAR EQUIDADE DE ARQUIVOS}\label{sec:test_file}
+
+Outro comando de teste disponibilizado pela ferramenta computacional é o teste de equidade de arquivos. Este comando utiliza uma chave numérica \textit{test\underline{\space}id} para salvar o resultado do teste, tanto o resultado quanto a quantidade de testes executados com a mesma chave são salvos.
+
+\begin{center}
+	\begin{table}[!htbp]
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{Linha de Comando} & \multicolumn{2}{c|}{test file <test\underline{\space\space}id> <file1> <file2>} \\
+		\hline
+		\multirow{3}{*}{\textbf{Entrada}} & <test\underline{\space\space}id> & Chave numérica para armazenar resultado \\
+		 & <file1> & Caminho para o primeiro arquivo \\
+		 & <file2> & Caminho para o segundo arquivo \\
+		\hline
+	\end{tabular}
+	\caption{Descrição do comando para testar a equidade de dois arquivos.}
+	\label{tab:file_test}
+	\end{table}
+\end{center}
+
+%--------------------------------------------------------------------------------%
+\subsubsection{CRIAR PROJETO}\label{sec:create_projects}
+
+Para criar um projeto inteligente vazio este comando é utilizado, como entrada ele recebe o nome do projeto. Este comando irá utilizar a fábrica de projetos inteligentes para criar a estrutura vazia do projeto.
+
+\begin{center}
+\begin{table}[!htbp]
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{Linha de Comando} & \multicolumn{2}{c|}{project create <name>} \\
+		\hline
+		\textbf{Entrada} & <name> & Nome do projeto a ser criado \\
+		\hline
+	\end{tabular}
+	\caption{Descrição do comando para criar projetos.}
+	\label{tab:create_project}
+\end{table}
+\end{center}
+
+%--------------------------------------------------------------------------------%
+\subsubsection{USAR PROJETO}\label{sec:use_projects}
+
+Para que a maioria dos comandos funcione é necessário que um projeto esteja selecionado, pois a estrutura do projeto que disponibiliza elementos e objetos inteligentes. Uma vez que projetos tenham sido criados eles podem ser selecionados utilizando o comando de usar projetos
+
+\begin{center}
+\begin{table}[!htbp]
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{Linha de Comando} & \multicolumn{2}{c|}{project use <project\underline{\space\space}name>} \\
+		\hline
+		\textbf{Entrada} & <project\underline{\space\space}name> & Nome do projeto a ser selecionado \\
+		\hline
+	\end{tabular}
+	\caption{Descrição do comando para selecionar projetos.}
+	\label{tab:use_project}
+\end{table}
+\end{center}
+
+%--------------------------------------------------------------------------------%
+\subsubsection{LISTAR PROJETOS}\label{sec:list_projects}
+
+É possivel verificar todos os projetos do ambiente utilizando o comando de listar projetos. Todos os projetos carregados no momento da execução serão exibidos na listagem.
+
+\begin{center}
+	\begin{table}[!htbp]
+		\begin{tabular}{|c|c|}
+			\hline
+			\textbf{Linha de Comando} & project list \\
+			\hline
+			\textbf{Entrada} & Nenhuma \\
+			\hline
+		\end{tabular}
+		\caption{Descrição do comando listar projetos.}
+		\label{tab:list_project}
+	\end{table}
+\end{center}
+
+%--------------------------------------------------------------------------------%
+\subsubsection{IMPRIMIR PROJETO}\label{sec:print_projects}
+
+O comando de imprimir projetos irá extrair do projeto selecionado sua representação em um arquivo \textit{XML}, este arquivo será impresso como resultado no console. Caso o projeto possua elementos e objetos inteligentes eles também serão impressos na estrutura de saída.
+
+\begin{center}
+\begin{table}[!htbp]
+	\begin{tabular}{|c|c|}
+		\hline
+		\textbf{Linha de Comando} & project print \\
+		\hline
+		\textbf{Entrada} & Nenhuma \\
+		\hline
+	\end{tabular}
+	\caption{Descrição do comando imprimir projetos.}
+	\label{tab:print_projects}
+\end{table}
+\end{center}
+
+%--------------------------------------------------------------------------------%
+\subsubsection{EXCLUIR PROJETO}\label{sec:delete_projects}
+
+O comando de excluir projetos irá remover todas as informações do projeto selecionado , incluindo todos os seus componentes serão excluídos.
+
+\begin{center}
+\begin{table}[!htbp]
+	\begin{tabular}{|c|c|}
+		\hline
+		\textbf{Linha de Comando} & project delete \\
+		\hline
+		\textbf{Entrada} & Nenhuma \\
+		\hline
+	\end{tabular}
+	\caption{Descrição do comando excluir projetos.}
+	\label{tab:delete_projects}
+\end{table}
+\end{center}
+
+%--------------------------------------------------------------------------------%
+\subsubsection{SALVAR PROJETO}\label{sec:save_projects}
+
+O comando de salvar projetos irá extrair do projeto selecionado sua representação em um arquivo \textit{XML}, assim como no processo de impressão do projeto. Entretanto este arquivo será impresso em um arquivo externo.
+
+\begin{center}
+	\begin{table}[!htbp]
+		\begin{tabular}{|c|c|c|}
+			\hline
+			\textbf{Linha de Comando} & \multicolumn{2}{c|}{project save <file\underline{\space\space}name>} \\
+			\hline
+			\textbf{Entrada} & <file\underline{\space\space}name> & Caminho do arquivo de saída. \\
+			\hline
+		\end{tabular}
+		\caption{Descrição do comando para salvar projetos.}
+		\label{tab:save_project}
+	\end{table}
+\end{center}}
+
+%--------------------------------------------------------------------------------%
+\subsubsection{CARREGAR PROJETO}\label{sec:load_projects}
+
+O comando de carregar projetos irá extrair de um arquivo de entrada no formato \textit{XML} a estrutura de um projeto inteligente. A ferramenta computacional irá utilizar os arquivos de entrada diretamente nas estruturas de Fábrica relacionadas. Caso o projeto possua elementos e objetos inteligentes eles também serão reconstruídos no projeto reconstruído.
+ 
+\begin{center}
+	\begin{table}[!htbp]
+		\begin{tabular}{|c|c|c|}
+			\hline
+			\textbf{Linha de Comando} & \multicolumn{2}{c|}{project load <filename>} \\
+			\hline
+			\textbf{Entrada} & <filename> & Caminho do arquivo de entrada. \\
+			\hline
+		\end{tabular}
+		\caption{Descrição do comando para carregar projetos.}
+		\label{tab:load_project}
+	\end{table}
+\end{center}
+
+%--------------------------------------------------------------------------------%
+\subsubsection{CRIAR ELEMENTOS}\label{sec:create_elements}
+
+As fábricas de elementos inteligentes descritas na Seção~\ref{sec:fabricas} são acessadas pelo comando de criar elementos. Este comando recebe como entrada o tipo de elemento inteligente, o nome e o exemplo à ser utilizado. Cada fábrica de elementos possui uma lista de exemplos disponíveis, essa lista é visualizada através do comando de listar exemplos de uma fábrica de elementos.
+
+\begin{center}
+\begin{table}[!htbp]
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{Linha de Comando} & \multicolumn{2}{c|}{element create <type> <example> <name> [ARGS]} \\
+		\hline
+		\multirow{4}{*}{\textbf{Entrada}} & <type> & Tipo de elemento à ser criado, seleciona a fábrica de elemento à ser utilizada. \\
+		
+		& <example> & Caminho para o primeiro arquivo. \\
+		& <name> & Caminho para o segundo arquivo. \\
+		& [ARGS] & Individualmente,  as fábricas podem receber parâmetros para a criação de elementos. \\
+		\hline
+	\end{tabular}
+	\caption{Descrição do comando para criar.}
+	\label{tab:create_element}
+\end{table}
+\end{center}
+
+%--------------------------------------------------------------------------------%
+\subsubsection{LISTAR ELEMENTOS}\label{sec:list_element}
+
+Com um projeto já selecionada, o comando de listar elementos pode ser utilizado para que o console imprima uma lista com o nome de todos os elementos inteligentes presentes no projeto.
+
+\begin{center}
+\begin{table}[!htbp]
+	\begin{tabular}{|c|c|}
+		\hline
+		\textbf{Linha de Comando} & element list \\
+		\hline
+		\textbf{Entrada} & Nenhuma \\
+		\hline
+	\end{tabular}
+	\caption{Descrição do comando listar projetos.}
+	\label{tab:list_element}
+\end{table}
+\end{center}
+
+%--------------------------------------------------------------------------------%
+\subsubsection{IMPRIMIR ELEMENTO}\label{sec:print_element}
+
+O comando de imprimir elementos irá extrair do projeto selecionado a representação em um arquivo \textit{XML}, a informação textual deste arquivo será impressa como resultado no console. Para que o comando funcione é necessário que um projeto esteja selecionado e que o nome do elemento à ser impresso seja informado.
+
+\begin{center}
+\begin{table}[!htbp]
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{Linha de Comando} & \multicolumn{2}{c|}{element print <element\underline{\space\space}name>} \\
+		\hline
+		\textbf{Entrada} & <element\underline{\space\space}name> & Nome do elemento à ser impresso. \\
+		\hline
+	\end{tabular}
+	\caption{Descrição do comando imprimir elementos inteligentes.}
+	\label{tab:print_element}
+\end{table}
+\end{center}
+
+%--------------------------------------------------------------------------------%
+\subsubsection{EXCLUIR ELEMENTO}\label{sec:delete_element}
+
+O comando de excluir elementos irá excluir o elemento inteligente.
+
+\begin{center}
+\begin{table}[!htbp]
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{Linha de Comando} & \multicolumn{2}{c|}{element delete <element\underline{\space\space}name>} \\
+		\hline
+		\textbf{Entrada} & <element\underline{\space\space}name> & Nome do elemento à ser excluído. \\
+		\hline
+	\end{tabular}
+	\caption{Descrição do comando excluir projetos.}
+	\label{tab:delete_element}
+\end{table}
+\end{center}
+
+%--------------------------------------------------------------------------------%
+\subsubsection{SALVAR ELEMENTO}\label{sec:save_element}
+
+Os elementos inteligentes podem ser exportados em dois formatos, um arquivo \textit{XML} e um arquivo \textit{VTK}. Ambos futuramente podem ser utilizados na reconstrução do elemento inteligente. Como entrada o comando receberá o nome do elemento, o tipo de arquivo à ser escrito e o caminho onde ele deve ser salvo.
+
+\begin{center}
+\begin{table}[!htbp]
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{Linha de Comando} & \multicolumn{2}{c|}{element save <element\underline{\space\space}name> <save\underline{\space\space}type> <filename>} \\
+		\hline
+		\multirow{3}{*}{\textbf{Entrada}} & <element\underline{\space\space}name> & Nome do elemento inteligente à ser salvo. \\
+		& <save\underline{\space\space}type> & Tipo de arquivo à ser exportando, podendo ser \textit{XML} ou \textit{VTK}. \\
+		& <filename> & Caminho para o arquivo à ser exportado. \\
+		\hline
+	\end{tabular}
+	\caption{Descrição do comando excluir projetos.}
+	\label{tab:save_element}
+\end{table}
+\end{center}
+
+%--------------------------------------------------------------------------------%
+\subsubsection{CARREGAR ELEMENTO}\label{sec:load_element}
+
+O comando de carregar elementos irá extrair de um arquivo de entrada no formato \textit{XML} ou \textit{VTK} a estrutura de um elementos inteligente. A ferramenta computacional irá utilizar os arquivos de entrada diretamente na fábrica de elemento inteligente relacionada. Caso seja um arquivo \textit{XML} não será necessário informar o tipo de elemento inteligente à ser construído. Caso contrário o tipo e o nome serão recebidos como parâmetros de entrada.
+
+\begin{center}
+\begin{table}[!htbp]
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\multirow{3}{*}{\textbf{Linha de Comando}} & \multicolumn{2}{c|}{element load <load\underline{\space\space}type>} \\
+		& \multicolumn{2}{c|}{element load <\textbf{VTK}> <filename> <type> <name>} \\
+		& \multicolumn{2}{c|}{element load <\textbf{XML}> <filename>} \\
+		\hline
+		\multirow{3}{*}{\textbf{Entrada}} & <filename> & Caminho para o arquivo de entrada. \\
+		& <load\underline{\space\space}type> & Tipo de arquivo à ser carregado, podendo ser \textit{XML} ou \textit{VTK}. \\
+		& <type> & Tipo de elemento inteligente à ser criado. \\
+		& <name> & Nome do elemento inteligente à ser criado. \\
+		\hline
+	\end{tabular}
+	\caption{Descrição do comando para carregar projetos.}
+	\label{tab:load_element}
+\end{table}
+\end{center}
+
+%--------------------------------------------------------------------------------%
+\subsubsection{LISTAR EXPORTAÇÕES DO ELEMENTO}\label{sec:export_list_element}
+
+Os elementos inteligentes podem ser exportados outros formatos de arquivo. Cada tipo de elemento inteligente possui uma lista de exportações disponíveis, um comando foi inserido para acessar a lista de exportações de um certo objeto.
+
+\begin{center}
+\begin{table}[!htbp]
+	\begin{tabular}{|c|c|c|}
+		\hline
+		\textbf{Linha de Comando} & \multicolumn{2}{c|}{element save <element\underline{\space\space}name> <save\underline{\space\space}type> <filename>} \\
+		\hline
+		\multirow{3}{*}{\textbf{Entrada}} & <element\underline{\space\space}name> & Nome do elemento inteligente à ser salvo. \\
+		& <save\underline{\space\space}type> & Tipo de arquivo à ser exportando, podendo ser \textit{XML} ou \textit{VTK}. \\
+		& <filename> & Caminho para o arquivo à ser exportado. \\
+		\hline
+	\end{tabular}
+	\caption{Descrição do comando excluir projetos.}
+	\label{tab:save_element}
+\end{table}
+\end{center}
+
+%--------------------------------------------------------------------------------%
+\subsection{JANELA}\label{sec:janela}
 
 %-------------------------------------------------------------------------------------------%
 \chapter{RESULTADOS NUMÉRICOS E DISCUSSÕES}
@@ -896,7 +1376,7 @@ Nas Figuras~\ref{fig3a:arterial-tree} e \ref{fig3b:arterial-tree}, o efeito da v
 \begin{figure}[!htbp]
 	\centering
 	(a) \\
-		\includegraphics[scale=0.7]{figure3-result-new/fig3_P_f3_65_visc_new2.png}\\
+	\includegraphics[scale=0.7]{figure3-result-new/fig3_P_f3_65_visc_new2.png}\\
 	(b)\\
 	\includegraphics[scale=0.7]{figure3-result-new/fig3_P_f7_30_visc_new2.png}\\
 	\caption{Amplitude da pressão $|P|$ ao longo da árvore arterial considerando diferentes viscosidade do fluido $\mu$ e frequências: (a) $f$ = 3,65 Hz, (b)  $f$ = 7,30 Hz. }
@@ -906,7 +1386,7 @@ Nas Figuras~\ref{fig3a:arterial-tree} e \ref{fig3b:arterial-tree}, o efeito da v
 \begin{figure}[!htbp]
 	\centering
 	(a) $f$ = 10,95 Hz\\
-\includegraphics[scale=0.7]{figure3-result-new/fig3_P_f10_95_visc_new2.png}\\
+	\includegraphics[scale=0.7]{figure3-result-new/fig3_P_f10_95_visc_new2.png}\\
 	(b) $f$ = 14,60 Hz\\
 	\includegraphics[scale=0.7]{figure3-result-new/fig3_P_f14_60_visc_new2.png}\\
 	\caption{Amplitude da pressão $|P|$ ao longo da árvore arterial considerando diferentes viscosidade do fluido $\mu$ e frequências: (a) $f$ = 10,95 Hz, (b)  $f$ = 14,60 Hz. }
@@ -943,7 +1423,7 @@ No tocante ao impacto da viscoelasticidade da parede na impedância de entrada, 
 	\centering
 	(a) \\
 	\includegraphics[scale=0.7]{figure-result-impedance/fig_viscosity_impedance_new.png}\\
-		(b) \\
+	(b) \\
 	\includegraphics[scale=0.7]{figure-result-impedance/fig_viscoelasticity_impedance_new.png}
 	\caption{Amplitude da impedância de entrada $|Z|$ em função da frequência $f$: (a) efeito da viscosidade (b) impacto da viscoelasticidade.}
 	\label{fig:impedance1}%
@@ -985,10 +1465,23 @@ A realização deste trabalho resultou no desenvolvimento de uma nova ferramenta
 
 Como trabalhos futuros, destacam-se:
 \begin{itemize}
-    \item Analisar hemodinamicamente modelos de árvores gerados no contexto do método CCO (\emph{Constrained Constructive Optimization}) \cite{Karch1999,Queiroz2013,Queiroz2015,Brito2017};
-    \item Investigar a influência da escolha parâmetros na resposta do método, tais como: módulo de Young e espessura do vaso;
-    \item \textcolor{red} {IGOR: descreva algo que poderia ser interessante agregar na ferramenta, pode ser mais de uma coisa (coloque em item)}.
+	\item Analisar hemodinamicamente modelos de árvores gerados no contexto do método CCO (\emph{Constrained Constructive Optimization}) \cite{Karch1999,Queiroz2013,Queiroz2015,Brito2017};
+	\item Investigar a influência da escolha parâmetros na resposta do método, tais como: módulo de Young e espessura do vaso;
+	\item \textcolor{red} {IGOR: descreva algo que poderia ser interessante agregar na ferramenta, pode ser mais de uma coisa (coloque em item)}.
 \end{itemize}
+
+\begin{appendices}
+	%-----------------------------------------------------------------------------------------%
+	\chapter{PROCESSO DE COMPILAÇÃO}\label{annex1}
+	
+	
+	%-----------------------------------------------------------------------------------------%
+	\chapter{FORMATO DE ARQUIVO DE COMANDOS}\label{annex2}
+	
+	
+	
+	
+\end{appendices}
 
 
 %Em trabalhos futuros temos a realização de testes com uma maior número de instâncias incluindo instâncias maiores, com mais pontos de demanda e chaves.

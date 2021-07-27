@@ -639,7 +639,7 @@ Com a experiência adquirida previamente três principais fluxos foram identific
 Finalmente, estas estruturas são utilizadas pela ferramenta computacional possibilitando que modelos geométricos sejam carregados, iterados e então exibidos, sem que haja perda dos quadros ou de algum dado. Os elementos principais da estrutura de dados serão descridos nas seções que se seguem.
 
 %--------------------------------------------------------------------------------%
-\subsection{Elemento Inteligente}\label{sec:elemento_inteligente}
+\subsection{ELEMENTO INTELIGENTE}\label{sec:elemento_inteligente}
 
 Elementos inteligentes são objetos que implementam a classe \textit{WiseElement}, o principal objetivo de um elemento inteligente é manter os dados mais recentes de um modelo geométrico e os dados necessários para o método de iteração. No caso do estudo do fluxo pulsátil consideramos que uma iteração seja a execução completa do algoritmo apresentado na Seção~ \ref{sec:algoritmo} em toda a árvore. Portanto cada elemento inteligente possuirá todas as informações do modelo geométrico de uma árvore arterial, seus segmentos e suas propriedades.
 
@@ -728,7 +728,7 @@ Para que um elemento possa ser iterado ele precisa estar no estado \textit{Hot},
 Seguindo o conceito de classes com propósito único, os elementos inteligentes são responsáveis apenas por gerir os dados contidos na estrutura inteligente e abstrata. Portanto as funções de criar, iterar e visualizar estas estruturas foram divididas em classes.
 
 %--------------------------------------------------------------------------------%
-\subsection{Fábrica}\label{sec:fabrica} 
+\subsection{FÁBRICA}\label{sec:fabrica} 
  
 Como mencionado anteriormente três principais barreiras foram identificadas armazenamento, iteração e visualização. Foi idealizada uma arquitetura de classes que permite a execução de cada passo através do paradigma de Fábricas Dinâmicas~ \cite{factorypattern}. Uma arquitetura com fábricas permite a criação de instâncias com definições concretas, armazenadas como metadados. Isso facilita a adição de novos objetos que podem ser interpretados sem modificar o código da fábrica em si. Sendo a fábrica também uma classe virtual, três principais tipos de fábricas foram idealizadas, a primeira responsável por criar elementos inteligentes, a  segunda responsável por iterar o elemento e a terceira que cria um elemento gráfico a partir de um elemento inteligente.
 
@@ -749,7 +749,7 @@ Por último, a fábrica \textit{GraphicFactory} irá criar o objeto gráfico cor
 
 
 %--------------------------------------------------------------------------------%
-\subsection{Objeto Inteligente}\label{sec:objeto_inteligente}
+\subsection{OBJETO INTELIGENTE}\label{sec:objeto_inteligente}
 
 A classe que combina todas as estruturas utilizadas no método de iteração da ferramenta computacional foi nomeada de objeto inteligente \textit{WiseObject}, este objeto preserva todos os passos de de iteração e poupa a quantidade de recursos mantida em memória. A classe é composta por um coleção de elementos inteligentes e objetos gráficos equivalentes entre si. A presença de uma fábrica gráfica é opcional, possibilitando que objetos sejam iterados sem que alguma estrutura seja disponibilizada para visualização. Utilizando a mesma separação de classes com propósito único, fábricas dinâmicas garantem que um objeto inteligente seja criado corretamente. As fábricas presente na Seção~\ref{sec:fabricas} foram incluídas como propriedades de um objeto inteligente, desta forma estes objetos serão compostos por três fábricas.
 
@@ -786,7 +786,7 @@ Inicialmente, um objeto é criado no estado \textit{Ready} com somente seu eleme
 Com os parâmetros definidos e as fábricas devidamente acopladas os objeto está pronto para a iteração. O método iterativo de um objeto inteligente é representado na transição para o estado \textit{Go}. Uma iteração de uma \textit{WiseArteryTree} representa o cálculo dos valores de pressão e fluxo em toda a árvore arterial. Caso algum erro ocorra durante o processamento de dados o objeto se desloca para o estado \textit{Crashed}, assim como elementos inteligentes. É possível também finalizar a execução de um objeto inteligente o enviando para o estado \textit{Finished}, neste estado o objeto não poderá ser iterado novamente. O objeto inteligente também pode ser reiniciado à partir de qualquer estado, o que significa que todas as alterações feitas na estrutura do objeto inteligente serão apagadas. Para que parâmetros da iteração possam ser alterados sem que se perda elementos inteligentes até então definidos, é possível que um objeto no estado \textit{Go} seja resetado e retorne para o estado \textit{Set}.
 
 %--------------------------------------------------------------------------------%
-\subsection{Objeto Gráfico}\label{sec:objeto_grafico}
+\subsection{OBJETO GRÁFICO}\label{sec:objeto_grafico}
 
 
 Quando o objeto inteligente \textit{WiseObjet} estiver corretamente carregado e uma fábrica gráfica \textit{GraphicFactory} for adicionada à sua estrutura o primeiro objeto gráfico \textit{GraphicObject} de sua coleção será criado. Assim como o elemento inteligente representa uma iteração, um objeto gráfico representa um ciclo iterativo. Enquanto a estrutura responsável por elementos inteligentes, \textit{WiseCollection}, é responsável por manter os últimos dados de iteração aquecidos, a estrutura \textit{GraphicModel} mantém o objeto que está sendo exibido por alguma tela e elementos próximos. As coleções tem como objetivo mantes seus elementos no estado necessário e realizar trocas de estados quando necessário. No caso dos elementos inteligentes, somente o último objeto é necessário e isso não muda, no contexto dos objetos gráficos apenas o objeto exibido em um elemento da interface de usuário e seus vizinhos serão mantidos em memória.
@@ -824,12 +824,12 @@ Apesar do objeto gráfico \textit{GraphicObject} ser uma redundância dos dados 
 
 
 %--------------------------------------------------------------------------------%
-\subsection{Fábricas}\label{sec:fabricas} 
+\subsection{FÁBRICAS}\label{sec:fabricas} 
 
 
 
 %--------------------------------------------------------------------------------%
-\subsection{Threads Inteligentes}\label{sec:threads}
+\subsection{THREADS INTELIGENTES}\label{sec:threads}
 
 Até o momento as estruturas foram construídas utilizando conceitos padrões da linguagem C++, herança de propriedades através do polimorfismo, ponteiros, classes virtuais e fábricas dinâmicas. Todas as estruturas definidas até o momento seguem conceitos da linguagem concorrente, ondem uma instrução é executada logo após a outra. Observamos que as estruturas possuem comportamentos padronizados e que um objeto inteligente é autônomo, isto é, ele sozinho é capaz de se armazenar, reconstruir, iterar e ocasionalmente se desenhar. Imaginando um cenário em que diversos objetos inteligente estão iterando, as tarefas foram dividas em Threads, primeiramente trabalhos de leitura e escrita, em seguida a iteração dos objetos. Desta forma computadores \textit{multi-thread} podem fazer uso de suas threads e permitir que mais de um objeto realize suas tarefas por vez.
 
@@ -870,7 +870,7 @@ Os trabalhos de iteração funcionam da mesma forma que as de leitura ou escrita
 Mesmo com a arquitetura de threads inclusa na ferramenta computacional ainda é possível que ela seja executada em plataformas de thread única, neste caso mais threads inteligentes não farão diferença. Pois apesar dos trabalhos ainda serem dividos em threads diferentes, elas serão executadas no mesmo núcleo de processamento. As threads inteligentes têm um impacto maior nas atividades de escrita e leitura, isto porque o objeto inteligente está divido em várias estruturas menores que são armazenadas e acessadas constantemente, principalmente no caso de uma animação gráfica.
 
 %-------------------------------------------------------------------------------------------%
-\section{Interface de Usuário}\label{sec:userinterface}
+\section{INTERFACE DE USUÁRIO}\label{sec:userinterface}
 
 Nesta seção apresentam-se detalhes da interface escolhida para facilitar o uso da ferramenta computacional. A interface de usuário foi concebida para permitir o controle de todas as estruturas descritas na Seção~\ref{sec:estrutura} com todos os seus recursos gráficos extraídos. A interface se divide em duas partes principais: Um console, que permite uma interação textual e acesso as mesmas funcionalidades de iteração; E uma janela com elementos gráficos capazes de exibir os resultados gráficos obtidos. 
 
@@ -884,7 +884,7 @@ Nesta seção apresentam-se detalhes da interface escolhida para facilitar o uso
 Ambas as estruturas foram construídas para manipular objetos inteligentes e suas estruturas, por isto ambas possuem instâncias do gerenciador de threads inteligentes descritos na Seção~\ref{sec:estrutura}. O console se trata de um  envio direto de mensagens para a thread \textit{WiseConsole}, que é efetivamente o console. Nas próximas seções os diferentes ambientes da ferramenta computacional serão descritos. Cada ambiente representa um projeto \textit{Qt}/\textit{C++} distinto, no projeto do console as bibliotecas gráficas do OpenGl não foram incluídas no processo de compilação, portanto computadores sem grandes recursos gráficos podem executar a mesma lógica de iteração.
 
 %--------------------------------------------------------------------------------%
-\subsection{Console}\label{sec:console}
+\subsection{CONSOLE}\label{sec:console}
 
 O ambiente do console consiste em um projeto \textit{Qt}/\textit{C++} sem interface gráfica, ao executar o programa o cabeçalho é impresso e os comandos de entrada são aguardados. O projeto do console foi intitulado \textit{InGU} ou Iterador não-Gráfico Universal, isto porque este projeto apesar de não conter elementos gráficos e exibir os resultados numéricos em tempo de execução é capaz de gerar as estruturas gráficas para visualização futura.
 
@@ -905,7 +905,7 @@ IMAGEM CONSOLE
 Para executar um comando, basta inserir uma linha de texto e apertar a tecla \textit{Enter}.  Ao capturar a linha de texto, o programa de console irá na verdade redirecionar o comando para a estrutura \textit{WiseThreadPool}, que por sua vez irá alocar uma thread do tipo \textit{WiseConsole} para interpretar a mensagem. Este comportamento é o mesmo apresentado na Seção~\ref{sec:threads}. Uma lista de comandos foi disponibilizada e está acessível através do comando \textit{help}. Ao enviar este comando para o console uma lista com todos as possíveis entradas será exibida. Nas próximas seções estes comandos e suas entradas serão descritos em profundidade.
 
 %--------------------------------------------------------------------------------%
-\subsubsection{Help}\label{sec:help}
+\subsubsection{HELP}\label{sec:help}
 
 O comando de ajuda é o primeiro comando da interface e foi feito para listar todas as entradas possíveis do programa.
 
@@ -925,7 +925,7 @@ Ao executar o comando, o usuário receberá uma lista de comandos divididos em e
 
 
 %--------------------------------------------------------------------------------%
-\subsubsection{Ler arquivo de comandos}\label{sec:read_cmds}
+\subsubsection{LER ARQUIVO DE ENTRADA}\label{sec:read_cmds}
 
 
 O comando de leitura de arquivo de comandos irá receber o endereço de um arquivo local, este arquivo deve conter um comando por linha, um exemplo pode ser encontrado no Anexo~\ref{annex2}. Para este tipo de comando um \textit{WiseJob} contendo a linha de comando e qual a sequência de trabalhos que deve ser executada.
@@ -941,7 +941,7 @@ O comando de leitura de arquivo de comandos irá receber o endereço de um arqui
 \end{center}
 
 %--------------------------------------------------------------------------------%
-\subsubsection{Bateria de testes}\label{sec:test}
+\subsubsection{BATERIA DE TESTES}\label{sec:test}
 
 O ciclo principal de testes da ferramente se baseia em verificar a consistência de todas as fábricas e do fluxo principal da ferramenta computacional, exceto detalhes gráficos e do processo de iteração. Ao executar a bateria de testes todos os elementos inteligentes \textit{WiseElement} disponíveis e todos os objetos inteligentes \textit{WiseObject} serão testados individualmente. Cada uma destas estruturas irá ser construída, então salva em em um arquivo externo. Em seguida o arquivo é reconstruído e a estrutura resultante comparada com a primeira, caso sejam iguais o resultado de sucesso é armazenado.
 
@@ -958,7 +958,7 @@ Estes testes foram utilizados principalmente no momento do desenvolvimento da fe
 \end{center}
 
 %--------------------------------------------------------------------------------%
-\subsubsection{Lista de testes}\label{sec:test list}
+\subsubsection{LISTA DE TESTES}\label{sec:test list}
 
 
 
@@ -973,7 +973,7 @@ Estes testes foram utilizados principalmente no momento do desenvolvimento da fe
 \end{center}
 
 %--------------------------------------------------------------------------------%
-\subsection{Janela}\label{sec:janela}
+\subsection{JANELA}\label{sec:janela}
 
 %-------------------------------------------------------------------------------------------%
 \chapter{RESULTADOS NUMÉRICOS E DISCUSSÕES}

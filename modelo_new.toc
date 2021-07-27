@@ -1,0 +1,38 @@
+\babel@toc {portuguese}{}
+\contentsline {chapter}{Lista de Figuras}{5}{chapter*.5}%
+\contentsline {chapter}{Lista de Tabelas}{7}{chapter*.6}%
+\contentsline {chapter}{Lista de Abrevia\c {c}\~oes}{8}{chapter*.7}%
+\contentsline {chapter}{\numberline {1}INTRODUÇÃO}{10}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Objetivos}{11}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Organização}{12}{section.1.2}%
+\contentsline {chapter}{\numberline {2}MODELAGEM DO ESCOAMENTO SANGUÍNEO}{13}{chapter.2}%
+\contentsline {section}{\numberline {2.1}MODELO MATEMÁTICO}{13}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Cálculo da pressão e do fluxo sanguíneo}{15}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Cálculo dos coeficientes de reflexão e da admitância}{17}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Cálculo da impedância de entrada}{18}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}Incorporação da viscosidade e viscoelasticidade no modelo}{19}{subsection.2.1.4}%
+\contentsline {section}{\numberline {2.2}MODELAGEM COMPUTACIONAL}{20}{section.2.2}%
+\contentsline {chapter}{\numberline {3}FERRAMENTA COMPUTACIONAL}{26}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Estrutura de Dados}{27}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Elemento Inteligente}{28}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}FÁBRICA}{34}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}OBJETO INTELIGENTE}{36}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.4}OBJETO GRÁFICO}{39}{subsection.3.1.4}%
+\contentsline {subsection}{\numberline {3.1.5}PROJETO INTELIGENTE}{42}{subsection.3.1.5}%
+\contentsline {subsection}{\numberline {3.1.6}FÁBRICA DE PROJETO}{43}{subsection.3.1.6}%
+\contentsline {subsection}{\numberline {3.1.7}THREADS INTELIGENTES}{45}{subsection.3.1.7}%
+\contentsline {section}{\numberline {3.2}INTERFACE DE USUÁRIO}{48}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}CONSOLE}{49}{subsection.3.2.1}%
+\contentsline {subsubsection}{AJUDA}{50}{section*.33}%
+\contentsline {subsubsection}{LER ARQUIVO DE ENTRADA}{51}{section*.35}%
+\contentsline {subsubsection}{BATERIA DE TESTES}{51}{section*.37}%
+\contentsline {subsubsection}{LISTA DE TESTES}{52}{section*.39}%
+\contentsline {subsubsection}{CASO DE TESTE}{52}{section*.41}%
+\contentsline {subsubsection}{TESTAR EQUIDADE DE ARQUIVOS}{52}{section*.43}%
+\contentsline {subsubsection}{CRIAR PROJETOS}{53}{section*.45}%
+\contentsline {subsubsection}{LISTAR PROJETOS}{53}{section*.47}%
+\contentsline {subsection}{\numberline {3.2.2}JANELA}{53}{subsection.3.2.2}%
+\contentsline {chapter}{\numberline {4}RESULTADOS NUMÉRICOS E DISCUSSÕES}{54}{chapter.4}%
+\contentsline {chapter}{\numberline {5}CONCLUSÕES E TRABALHOS FUTUROS}{63}{chapter.5}%
+\contentsline {chapter}{\numberline {A}PROCESSO DE COMPILAÇÃO}{65}{appendix.1.A}%
+\contentsline {chapter}{\numberline {B}FORMATO DE ARQUIVO DE COMANDOS}{66}{appendix.1.B}%
