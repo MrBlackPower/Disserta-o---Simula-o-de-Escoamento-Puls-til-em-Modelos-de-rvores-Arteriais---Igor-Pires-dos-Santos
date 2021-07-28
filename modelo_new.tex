@@ -701,7 +701,7 @@ Para que um elemento possa ser iterado ele precisa estar no estado \textit{Hot},
 Seguindo o conceito de classes com propósito único, os elementos inteligentes são responsáveis apenas por gerir os dados contidos na estrutura inteligente e abstrata. Portanto as funções de criar, iterar e visualizar estas estruturas foram divididas em classes.
 
 %--------------------------------------------------------------------------------%
-\subsection{Fábricas}\label{sec:fabricas} 
+\subsection{FÁBRICA}\label{sec:fabrica} 
  
 Como mencionado anteriormente três principais barreiras foram identificadas armazenamento, iteração e visualização. Foi idealizada uma arquitetura de classes que permite a execução de cada passo através do paradigma de Fábricas Dinâmicas~ \cite{factorypattern}. Uma arquitetura com fábricas permite a criação de instâncias com definições concretas, armazenadas como metadados. Isso facilita a adição de novos objetos que podem ser interpretados sem modificar o código da fábrica em si. Sendo a fábrica também uma classe virtual, três principais tipos de fábricas foram idealizadas, a primeira responsável por criar elementos inteligentes, a  segunda responsável por iterar o elemento e a terceira que cria um elemento gráfico a partir de um elemento inteligente.
 
@@ -797,11 +797,9 @@ Apesar do objeto gráfico \textit{GraphicObject} ser uma redundância dos dados 
 
 
 %--------------------------------------------------------------------------------%
-\subsection{Threads Inteligentes}\label{sec:threads}
+\subsection{PROJETO INTELIGENTE}\label{sec:projeto}
 
-Todas as estruturas descritas anterioremente são constítuidas por elementos padrões da linguagem C++, ao longo da pesquisa esta estrutura foi agregada as bibliotecas comuns do Qt 5.15.0 \cite{QTClasses}, em um primeiro momento para facilitar a visualização dos resultados através dos elementos gráficos de interface de usuários disponibilizados. Em seguida, permitindo o processamento de elementos de forma paralela. Com isso um modelo que suportasse o processamento distribuído utilizando classes \textit{QThreads} que possuem tarefas concorrentes foi construído.
-
-Ao longo da pesquisa esta estrutura foi agregada as bibliotecas comuns do Qt 5.15.0 \cite{QTClasses}, em um primeiro momento para facilitar a visualização dos resultados através dos elementos gráficos de interface de usuários disponibilizados. Em seguida, permitiu o processamento de elementos de forma paralela. Com isso um modelo que suportasse o processamento distribuído utilizando classes \textit{QThreads} que possuem tarefas concorrentes foi construído.
+Os projetos inteligentes \textit{WiseProject} são os exopos de trabalho da ferramenta computacional, o primeiro passo para se utilizar a ferramenta é criar um projeto inteligente.
 
 
 \begin{figure}[!htbp]
@@ -899,11 +897,18 @@ Nesta seção apresentam-se detalhes da interface escolhida para facilitar o uso
 	\label{fig10:UI}
 \end{figure}
 
+Ambas as interfaces foram construídas para manipular objetos inteligentes e suas estruturas, por isto ambas possuem instâncias do gerenciador de threads inteligentes descritos na Seção~\ref{sec:estrutura}. O console se trata de um envio direto de mensagens para a thread \textit{WiseConsole}, que é efetivamente o console. Nas próximas seções os diferentes ambientes da ferramenta computacional serão descritos. Cada ambiente representa um projeto \textit{Qt}/\textit{C++} distinto.
+
+%-------------------------------------------------------------------------------------------%
+\section{CONSOLE}\label{sec:console}
+
+O ambiente de console da ferramenta computacional consiste em um projeto \textit{Qt}/\textit{C++}. O projeto foi intitulado \textit{InGu} ou Iterador não-Gráfico Universal, porque o ambiente apesar de não conter os elementos para a visualização dos elementos gráficos, ele é capaz de criar as estruturas gráficas para visualização futura.  No console as bibliotecas gráficas do OpenGL não foram incluídas no processo de compilação, portanto computares sem recursos gráficos são capazes de compilar e executar as ferramentas computacionais.
+
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[scale=1]{Figures/GraphicElements}
+	\includegraphics[scale=1]{Figures/InGU.png}
 	\caption{Interface de usuário gráfica.}
-	\label{fig10:UI}
+	\label{fig10:console}
 \end{figure}
 
 No anexo estão as sequências de instruções necessárias para compilar ambas as partes da ferramenta computacional. Ao ser compilado, um executável InGU contendo o projeto console é gerado, o processo de compilação da ferramenta é multiplataforma, tendo sido testado nos sistemas operacionais \textit{Windows} e \textit{Linux}. Entretanto, recomenda-se a utilização da ferramenta computacional no \textit{Linux}. Ao ser executado, o console corresponde do sistema operacional irá ser aberto com o cabeçalho da ferramenta e aguardará entrada de texto.
@@ -913,7 +918,7 @@ IMAGEM CONSOLE
 Para executar um comando, basta inserir uma linha de texto e apertar a tecla \textit{Enter}.  Ao capturar a linha de texto, o programa de console irá na verdade redirecionar o comando para a estrutura \textit{WiseThreadPool}, que por sua vez irá alocar uma thread do tipo \textit{WiseConsole} para interpretar a mensagem. Este comportamento é o mesmo apresentado na Seção~\ref{sec:threads}. Uma lista de comandos foi disponibilizada e está acessível através do comando \textit{help}. Ao enviar este comando para o console uma lista com todos as possíveis entradas será exibida. Nas próximas seções estes comandos e suas entradas serão descritos em profundidade.
 
 %--------------------------------------------------------------------------------%
-\subsection{Objeto Gráfico}\label{sec:objeto_grafico}
+\subsubsection{AJUDA}\label{sec:help}
 
 O comando de ajuda é o primeiro comando da interface e foi feito para listar todas as entradas possíveis do programa.
 
