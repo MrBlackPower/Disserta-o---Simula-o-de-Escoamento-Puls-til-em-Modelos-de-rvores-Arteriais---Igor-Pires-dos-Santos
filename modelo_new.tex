@@ -849,7 +849,7 @@ O modelo do escoamento pulsátil proposto está presenta na fábrica de iteraç�
 %--------------------------------------------------------------------------------%
 \subsection{THREADS INTELIGENTES}\label{sec:threads}
 
-Até o momento as estruturas foram construídas utilizando conceitos padrões da linguagem C++, herança de propriedades através do polimorfismo, ponteiros, classes virtuais e fábricas dinâmicas. Todas as estruturas definidas até o momento seguem conceitos da linguagem concorrente, ondem uma instrução é executada logo após a outra. Observamos que as estruturas possuem comportamentos padronizados e que um objeto inteligente é autônomo, isto é, ele sozinho é capaz de se armazenar, reconstruir, iterar e ocasionalmente se desenhar. Imaginando um cenário em que diversos objetos inteligente estão iterando, as tarefas foram dividas em Threads, primeiramente trabalhos de leitura e escrita, em seguida a iteração dos objetos. Desta forma computadores \textit{multi-thread} podem fazer uso de suas threads e permitir que mais de um objeto realize suas tarefas por vez.
+Até o momento as estruturas foram construídas utilizando conceitos padrões da linguagem C++, herança de propriedades através do polimorfismo, ponteiros, classes virtuais e fábricas dinâmicas. Até aqui o concentio de programação paralela não foi adicionado. Observou-se que as estruturas possuem comportamentos padronizados e que um objeto inteligente é autônomo, ele sozinho é capaz de se armazenar, reconstruir, iterar e ocasionalmente se desenhar. Imaginando um cenário em que diversos objetos inteligente estão iterando, as tarefas foram dividas em \textit{Threads}, primeiramente trabalhos de leitura e escrita, em seguida a iteração dos objetos. Desta forma computadores \textit{multi-thread} podem fazer uso de suas threads e permitir que mais de um objeto realize suas tarefas por vez.
 
 Ao longo da pesquisa esta estrutura foi agregada as bibliotecas comuns do Qt 5.15.0 \cite{QTClasses}, em um primeiro momento para facilitar a visualização dos resultados através dos elementos gráficos de interface de usuários disponibilizados. Em seguida, permitiu o processamento de elementos de forma paralela. Com isso um modelo que suportasse o processamento distribuído utilizando classes \textit{QThreads} que possuem tarefas concorrentes foi construído.
 
@@ -866,6 +866,8 @@ As tarefas se dividem em três principais grupos: tarefas auxiliares, tarefas de
 Os objetos distribuídos threads contidos na Figura~\ref{fig7:threads} possuem um ciclo próprio, portanto executam tarefas assíncronas e precisam de tratamento adequado. O sistema de sinais e fendas disponibilizado pelas bibliotecas comuns do Qt permitem que as threads se comuniquem assincronamente através do envio de mensagens. Estas mensagens são chamadas de trabalhos inteligentes \textit{WiseJobs}, cada uma possuindo sua atividade relacionada e objeto relacionado. Uma vez criados, os trabalhos inteligentes são alocados à sua respectiva categoria passando por um balanceamento executado pelo gerenciador de threads. Enquanto o processamento é feito, todos os dados relativos ao processamento são bloqueados para escrita de outras threads, isso previne a sobrescrita de dados quando há mais de uma thread trabalhando.
 
 O gerenciador de threads \textit{WiseThreadPool} é composto por threads que executam os trabalhos e por projetos inteligentes \textit{WiseProject} que criam trabalhos. Ao executar um comando de texto o projeto deve ser selecionado para que os elementos e objetos certos sejam selecionados. Primeiramente, o comando será recebido pelo gerenciador e o primeiro trabalho inteligente \textit{WiseJob} será criado. Em seguida será interpretado por threads do grupo de tarefas auxiliares \textit{WiseConsole}, caso seja um trabalho de leitura, escrita ou iteração um trabalho inteligente associado será criado e enviado ao gerenciador de threads. Caso não seja um trabalho desses tipos ele será executado na thread atual e o trabalho inteligente finalizado. O console inteligente \textit{WiseConsole} funciona como interpretador principal dos comando e das mensagens, ao receber uma linha de comando este objeto irá analisar seu conteúdo e executar a ação correspondente.
+
+Os elementos inteligentes e objetos inteligentes associados à um trabalho são enviados sempre como referência e protegidos no gerenciador de threads, desta forma é possível que todas as threads trabalhem com a mesma informação na memória sem que ela seja utilizada por outra thread ao mesmo tempo.
 
 \begin{figure}[!htbp]
 	\centering
@@ -904,31 +906,40 @@ Ambas as interfaces foram construídas para manipular objetos inteligentes e sua
 %-------------------------------------------------------------------------------------------%
 \section{CONSOLE}\label{sec:console}
 
-O ambiente de console da ferramenta computacional consiste em um projeto \textit{Qt}/\textit{C++}. O projeto foi intitulado \textit{InGu} ou Iterador não-Gráfico Universal, porque o ambiente apesar de não conter os elementos para a visualização dos elementos gráficos, ele é capaz de criar as estruturas gráficas para visualização futura.  No console as bibliotecas gráficas do OpenGL não foram incluídas no processo de compilação, portanto computares sem recursos gráficos são capazes de compilar e executar as ferramentas computacionais.
+O ambiente de console da ferramenta computacional consiste em um projeto \textit{Qt}/\textit{C++}. O projeto foi intitulado \textit{InGU} ou \textbf{I}terador \textbf{n}ão-\textbf{G}ráfico \textbf{U}niversal, porque o ambiente apesar de não conter os elementos para a visualização dos elementos gráficos, ele é capaz de criar as estruturas gráficas para visualização futura.  No console as bibliotecas gráficas do OpenGL não foram incluídas no processo de compilação, portanto ambientes sem recursos gráficos são capazes de compilar e executar as ferramentas computacionais.
 
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[scale=1]{Figures/InGU.png}
-	\caption{Interface de usuário gráfica.}
+	\caption{Estrutura do projeto que compõe o ambiente computacional InGU.}
 	\label{fig10:console}
 \end{figure}
 
 No anexo estão as sequências de instruções necessárias para compilar ambas as partes da ferramenta computacional. Ao ser compilado, um executável InGU contendo o projeto console é gerado, o processo de compilação da ferramenta é multiplataforma, tendo sido testado nos sistemas operacionais \textit{Windows} e \textit{Linux}. Entretanto, recomenda-se a utilização da ferramenta computacional no \textit{Linux}. Ao ser executado, o console corresponde do sistema operacional irá ser aberto com o cabeçalho da ferramenta e aguardará entrada de texto.
 
-IMAGEM CONSOLE
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=0.45]{Figures/InGU_console.png}
+	\caption{Captura de tela com a execução do ambiente computacional InGU em um console.}
+	\label{fig10:console}
+\end{figure}
 
-Para executar um comando, basta inserir uma linha de texto e apertar a tecla \textit{Enter}.  Ao capturar a linha de texto, o programa de console irá na verdade redirecionar o comando para a estrutura \textit{WiseThreadPool}, que por sua vez irá alocar uma thread do tipo \textit{WiseConsole} para interpretar a mensagem. Este comportamento é o mesmo apresentado na Seção~\ref{sec:threads}. Uma lista de comandos foi disponibilizada e está acessível através do comando \textit{help}. Ao enviar este comando para o console uma lista com todos as possíveis entradas será exibida. Nas próximas seções estes comandos e suas entradas serão descritos em profundidade.
+Para executar um comando, basta inserir uma linha de texto e apertar a tecla \textit{Enter}.  Ao capturar a linha de texto, o programa de console irá na verdade redirecionar o comando para a estrutura \textit{WiseThreadPool}, que por sua vez irá alocar uma thread do tipo \textit{WiseConsole} para interpretar a mensagem. Este comportamento é o mesmo apresentado na Seção~\ref{sec:threads}. Uma lista de comandos foi disponibilizada e está acessível através do comando \textit{help}. Ao enviar este comando para o console uma lista com todos as possíveis entradas será exibida. Nas próximas seções estes comandos, suas entradas, seu escopo e thread responsável serão descritos em profundidade. A thread responsável indica qual thread irá executar a tarefa. 
 
 %--------------------------------------------------------------------------------%
-\subsubsection{AJUDA}\label{sec:help}
+\subsection{AJUDA}\label{sec:help}
 
-O comando de ajuda é o primeiro comando da interface e foi feito para listar todas as entradas possíveis do programa.
+O comando de ajuda é o primeiro comando da interface e foi feito para listar todas as entradas possíveis do programa. Ao receber este comando a thread \textit{WiseConsole} envia o texto pré-definido com todos os comandos.
 
 \begin{center}
 	\begin{table}[!htbp]
 		\begin{tabular}{|c|m{0.6\textwidth}|}
 			\hline
 			\textbf{Linha de Comando} & \multicolumn{1}{c|}{help} \\
+			\hline
+			\textbf{Escopo} & \multicolumn{1}{c|}{nenhum} \\
+			\hline
+			\textbf{Thread Responsável} & \multicolumn{1}{c|}{WiseConsole} \\
 			\hline
 			\textbf{Entrada} & Nenhuma \\
 			\hline
@@ -938,22 +949,32 @@ O comando de ajuda é o primeiro comando da interface e foi feito para listar to
 	\end{table}
 \end{center}
 
-IMAGEM CONSOLE HELP
-
 Ao executar o comando, o usuário receberá uma lista de comandos divididos em escopos específicos. Os escopos foram criados para agrupar comandos por área de atuação, comandos auxiliares, como o comando de ajuda, são os comandos que não alteram as estruturas e exibem informações auxiliares ao usuário.
 
 
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=0.45]{Figures/InGU_help.png}
+	\caption{Captura de tela com a execução do ambiente computacional InGU em um console.}
+	\label{fig10:console}
+\end{figure}
+
+
 %--------------------------------------------------------------------------------%
-\subsubsection{LER ARQUIVO DE ENTRADA}\label{sec:read_cmds}
+\subsection{LER ARQUIVO DE ENTRADA}\label{sec:read_cmds}
 
 
-O comando ler arquivo de comandos irá receber o endereço de um arquivo local, este arquivo deve conter um comando por linha, um exemplo pode ser encontrado no Anexo~\ref{annex2}. Para este tipo de comando um \textit{WiseJob} contendo a linha de comando e qual a sequência de trabalhos que deve ser executada.
+O comando ler arquivo de comandos irá receber o endereço de um arquivo local, este arquivo deve conter um comando por linha, um exemplo pode ser encontrado no Anexo~\ref{annex2}. Para este tipo de comando um \textit{WiseJob} contendo a linha de comando e qual a sequência de trabalhos que deve ser executada. Por se tratar de uma leitura de arquivo de comando, a thread \textit{WiseIO} será responsável por ler o arquivo e criar os trabalhos com os comandos subsequentes. Estes novos comandos irão passar novamente pela interpretação de uma thread do tipo \textit{WiseConsole} e em seguida executados.
 
 \begin{center}
 	\begin{table}[!htbp]
 		\begin{tabular}{|c|c|m{0.6\textwidth}|}
 			\hline
 			\textbf{Linha de Comando} & \multicolumn{2}{c|}{read cmds <file>} \\
+			\hline
+			\textbf{Escopo} & \multicolumn{1}{c|}{READ} \\
+			\hline
+			\textbf{Thread Responsável} & \multicolumn{1}{c|}{WiseIO} \\
 			\hline
 			\textbf{Entrada} & \textbf{<file>} & Caminho para arquivo contendo sequência de comandos. \\
 			\hline
@@ -964,17 +985,21 @@ O comando ler arquivo de comandos irá receber o endereço de um arquivo local, 
 \end{center}
 
 %--------------------------------------------------------------------------------%
-\subsubsection{BATERIA DE TESTES}\label{sec:test}
+\subsection{BATERIA DE TESTES}\label{sec:test}
 
 O ciclo principal de testes da ferramente se baseia em verificar a consistência de todas as fábricas e do fluxo principal da ferramenta computacional, exceto detalhes gráficos e do processo de iteração. Ao executar a bateria de testes todos os elementos inteligentes \textit{WiseElement} e objetos inteligentes \textit{WiseObject} disponíveis serão testados individualmente. Para isto, uma fábrica de projeto \textit{WiseProjectFactory} irá ser encarregada de criar todos os elementos e objetos inteligentes disponíveis.
 
-Estes testes foram utilizados principalmente no momento do desenvolvimento da ferramenta e garantem que as fábricas de elementos e objetos inteligentes estão funcionando corretamente. Futuramente, caso novas estruturas sejam incluídas, estes testes garantem que todas as classes do projeto foram projetadas corretamente, com isso todas as estruturas que são carregadas pela ferramenta não perdem informação ao serem armazenadas e recuperadas, processo recorrente na ferramenta computacional.
+Estes testes foram utilizados principalmente no momento do desenvolvimento da ferramenta e garantem que as fábricas de elementos e objetos inteligentes estão funcionando corretamente. Futuramente, caso novas estruturas sejam incluídas, estes testes garantem que todas as classes do projeto foram projetadas corretamente, com isso todas as estruturas que são carregadas pela ferramenta não perdem informação ao serem armazenadas e recuperadas, processo recorrente na ferramenta computacional. Os comandos deste tipo são de responsabilidade da thread \textit{WiseConsole}, que irá criar e executar subcomando, trabalhos \textit{WiseJob} relacionados À uma atividade superior.
 
 \begin{center}
 	\begin{table}[!htbp]
 		\begin{tabular}{|c|m{0.6\textwidth}|}
 			\hline
 			\textbf{Linha de Comando} & \multicolumn{1}{c|}{test} \\
+			\hline
+			\textbf{Escopo} & \multicolumn{1}{c|}{TEST} \\
+			\hline
+			\textbf{Thread Responsável} & \multicolumn{1}{c|}{WiseConsole} \\
 			\hline
 			\textbf{Entrada} & Nenhuma \\
 			\hline
@@ -985,15 +1010,19 @@ Estes testes foram utilizados principalmente no momento do desenvolvimento da fe
 \end{center}
 
 %--------------------------------------------------------------------------------%
-\subsubsection{LISTA DE TESTES}\label{sec:test list}
+\subsection{LISTA DE TESTES}\label{sec:test list}
 
-O comando de listar testes irá enumerar todos os teste possíveis de serem executados pela ferramenta computacional. Assim como o comando de ajuda, este comando irá imprimir no console todas os resultados encontrados. 
+O comando de listar testes irá enumerar todos os teste possíveis de serem executados pela ferramenta computacional. Assim como o comando de ajuda, este comando irá imprimir no console todas os resultados encontrados.
 
 \begin{center}
 	\begin{table}[!htbp]
 		\begin{tabular}{|c|m{0.6\textwidth}|}
 			\hline
 			\textbf{Linha de Comando} & \multicolumn{1}{c|}{test list} \\
+			\hline
+			\textbf{Escopo} & \multicolumn{1}{c|}{TEST} \\
+			\hline
+			\textbf{Thread Responsável} & \multicolumn{1}{c|}{WiseConsole} \\
 			\hline
 			\textbf{Entrada} & Nenhuma \\
 			\hline
@@ -1004,15 +1033,19 @@ O comando de listar testes irá enumerar todos os teste possíveis de serem exec
 \end{center}
 
 %--------------------------------------------------------------------------------%
-\subsubsection{CASO DE TESTE}\label{sec:case list}
+\subsection{CASO DE TESTE}\label{sec:case list}
 
-Como visto na Seção~\ref{sec:test list}, os testes são enumerados. Baseando-se nessa lista, é possível selecionar um teste pelo seu número correspondente.
+Como visto na Seção~\ref{sec:test list}, os testes são enumerados. Baseando-se nessa lista, é possível selecionar um teste pelo seu número correspondente. Os casos de testes irão gerar uma sequência de comandos à serem interpretados pelo \textit{WiseConsole}, os testes são compostos de comandos que irão criar e deletar estruturas que são finalizados na própria thread \textit{WiseConsole}, entretanto estas estruturas são enviadas para um arquivo externo e então lidas. Estes subcomandos irão ser executados pela thread \textit{WiseIO}. O caso de teste só é dado como consluído quando todos os subcomandos terminam sua execução.
 
 \begin{center}
 	\begin{table}[!htbp]
 	\begin{tabular}{|c|c|m{0.6\textwidth}|}
 		\hline
 		\textbf{Linha de Comando} & \multicolumn{2}{c|}{test <test\underline{\space}id>} \\
+		\hline
+		\textbf{Escopo} & \multicolumn{1}{c|}{TEST} \\
+		\hline
+		\textbf{Thread Responsável} & \multicolumn{1}{c|}{WiseConsole} \\
 		\hline
 		\textbf{Entrada} & <test\underline{\space}id> & Número do teste a ser executado \\
 		\hline
@@ -1023,15 +1056,19 @@ Como visto na Seção~\ref{sec:test list}, os testes são enumerados. Baseando-s
 \end{center}
 
 %--------------------------------------------------------------------------------%
-\subsubsection{TESTAR EQUIDADE DE ARQUIVOS}\label{sec:test_file}
+\subsection{TESTAR EQUIDADE DE ARQUIVOS}\label{sec:test_file}
 
-Outro comando de teste disponibilizado pela ferramenta computacional é o teste de equidade de arquivos. Este comando utiliza uma chave numérica \textit{test\underline{\space}id} para salvar o resultado do teste, tanto o resultado quanto a quantidade de testes executados com a mesma chave são salvos.
+Outro comando de teste disponibilizado pela ferramenta computacional é o teste de equidade de arquivos. Este comando utiliza uma chave numérica \textit{test\underline{\space}id} para salvar o resultado do teste, tanto o resultado quanto a quantidade de testes executados com a mesma chave são salvos. Por se tratar da leitura de dois arquivos diferentes esse comando é executado por uma thread do tipo \textit{WiseIO}.
 
 \begin{center}
 	\begin{table}[!htbp]
 	\begin{tabular}{|c|c|m{0.6\textwidth}|}
 		\hline
 		\textbf{Linha de Comando} & \multicolumn{2}{c|}{test file <test\underline{\space\space}id> <file1> <file2>} \\
+		\hline
+		\textbf{Escopo} & \multicolumn{2}{c|}{TEST} \\
+		\hline
+		\textbf{Thread Responsável} & \multicolumn{2}{c|}{WiseIO} \\
 		\hline
 		\multirow{3}{*}{\textbf{Entrada}} & <test\underline{\space\space}id> & Chave numérica para armazenar resultado \\
 		 & <file1> & Caminho para o primeiro arquivo \\
@@ -1044,15 +1081,19 @@ Outro comando de teste disponibilizado pela ferramenta computacional é o teste 
 \end{center}
 
 %--------------------------------------------------------------------------------%
-\subsubsection{CRIAR PROJETO}\label{sec:create_projects}
+\subsection{CRIAR PROJETO}\label{sec:create_projects}
 
-Para criar um projeto inteligente vazio este comando é utilizado, como entrada ele recebe o nome do projeto. Este comando irá utilizar a fábrica de projetos inteligentes para criar a estrutura vazia do projeto.
+Para criar um projeto inteligente vazio este comando é utilizado, como entrada ele recebe o nome do projeto. Este comando irá utilizar a fábrica de projetos inteligentes para criar a estrutura vazia do projeto. Ao receber um comando deste a thread \textit{WiseConsole} irá retornar um projeto em branco para seracoplado à \textit{WiseThreadPool}, isto é feito para que outras threads possam receber o mesmo projeto de forma separada.
 
 \begin{center}
 \begin{table}[!htbp]
 	\begin{tabular}{|c|c|m{0.6\textwidth}|}
 		\hline
 		\textbf{Linha de Comando} & \multicolumn{2}{c|}{project create <name>} \\
+		\hline
+		\textbf{Escopo} & \multicolumn{2}{c|}{PROJECT} \\
+		\hline
+		\textbf{Thread Responsável} & \multicolumn{2}{c|}{WiseConsole} \\
 		\hline
 		\textbf{Entrada} & <name> & Nome do projeto a ser criado \\
 		\hline
@@ -1063,7 +1104,7 @@ Para criar um projeto inteligente vazio este comando é utilizado, como entrada 
 \end{center}
 
 %--------------------------------------------------------------------------------%
-\subsubsection{USAR PROJETO}\label{sec:use_projects}
+\subsection{USAR PROJETO}\label{sec:use_projects}
 
 Para que a maioria dos comandos funcione é necessário que um projeto esteja selecionado, pois a estrutura do projeto que disponibiliza elementos e objetos inteligentes. Uma vez que projetos tenham sido criados eles podem ser selecionados utilizando o comando de usar projetos
 
@@ -1072,6 +1113,10 @@ Para que a maioria dos comandos funcione é necessário que um projeto esteja se
 	\begin{tabular}{|c|c|m{0.6\textwidth}|}
 		\hline
 		\textbf{Linha de Comando} & \multicolumn{2}{c|}{project use <project\underline{\space\space}name>} \\
+		\hline
+		\textbf{Escopo} & \multicolumn{2}{c|}{PROJECT} \\
+		\hline
+		\textbf{Thread Responsável} & \multicolumn{2}{c|}{WiseConsole} \\
 		\hline
 		\textbf{Entrada} & <project\underline{\space\space}name> & Nome do projeto a ser selecionado \\
 		\hline
@@ -1082,7 +1127,7 @@ Para que a maioria dos comandos funcione é necessário que um projeto esteja se
 \end{center}
 
 %--------------------------------------------------------------------------------%
-\subsubsection{LISTAR PROJETOS}\label{sec:list_projects}
+\subsection{LISTAR PROJETOS}\label{sec:list_projects}
 
 É possível verificar todos os projetos do ambiente utilizando o comando de listar projetos. Todos os projetos carregados no momento da execução serão exibidos na listagem.
 
@@ -1091,6 +1136,10 @@ Para que a maioria dos comandos funcione é necessário que um projeto esteja se
 		\begin{tabular}{|c|m{0.6\textwidth}|}
 			\hline
 			\textbf{Linha de Comando} & \multicolumn{1}{c|}{project list} \\
+			\hline
+			\textbf{Escopo} & \multicolumn{1}{c|}{PROJECT} \\
+			\hline
+			\textbf{Thread Responsável} & \multicolumn{1}{c|}{WiseConsole} \\
 			\hline
 			\textbf{Entrada} & Nenhuma \\
 			\hline
@@ -1101,7 +1150,7 @@ Para que a maioria dos comandos funcione é necessário que um projeto esteja se
 \end{center}
 
 %--------------------------------------------------------------------------------%
-\subsubsection{IMPRIMIR PROJETO}\label{sec:print_projects}
+\subsection{IMPRIMIR PROJETO}\label{sec:print_projects}
 
 O comando de imprimir projetos irá extrair do projeto selecionado sua representação em um arquivo \textit{XML}, este arquivo será impresso como resultado no console. Caso o projeto possua elementos e objetos inteligentes eles também serão impressos na estrutura de saída.
 
@@ -1110,6 +1159,10 @@ O comando de imprimir projetos irá extrair do projeto selecionado sua represent
 	\begin{tabular}{|c|m{0.6\textwidth}|}
 		\hline
 		\textbf{Linha de Comando} & \multicolumn{1}{c|}{project print} \\
+		\hline
+		\textbf{Escopo} & \multicolumn{1}{c|}{PROJECT} \\
+		\hline
+		\textbf{Thread Responsável} & \multicolumn{1}{c|}{WiseConsole} \\
 		\hline
 		\textbf{Entrada} & Nenhuma \\
 		\hline
@@ -1120,15 +1173,19 @@ O comando de imprimir projetos irá extrair do projeto selecionado sua represent
 \end{center}
 
 %--------------------------------------------------------------------------------%
-\subsubsection{EXCLUIR PROJETO}\label{sec:delete_projects}
+\subsection{EXCLUIR PROJETO}\label{sec:delete_projects}
 
-Com um projeto selecionado, o comando de exclusão de elementos irá excluir o elemento inteligente do projeto recebendo o nome do elemento como parâmetro de entrada.
+Com um projeto selecionado, o comando de exclusão de elementos irá excluir o elemento inteligente do projeto recebendo o nome do elemento como parâmetro de entrada. Este comando será interpretado pela thread \textit{WiseConsole}, que notifica o gerenciador de threads \textit{WiseThreadPool}. O gerenciador só irá aguardar até que o projeto não possua trabalhos em execução para que posso excluí-lo.
 
 \begin{center}
 \begin{table}[!htbp]
 	\begin{tabular}{|c|m{0.6\textwidth}|}
 		\hline
 		\textbf{Linha de Comando} & \multicolumn{1}{c|}{project delete} \\
+		\hline
+		\textbf{Escopo} & \multicolumn{1}{c|}{PROJECT} \\
+		\hline
+		\textbf{Thread Responsável} & \multicolumn{1}{c|}{WiseConsole} \\
 		\hline
 		\textbf{Entrada} & Nenhuma \\
 		\hline
@@ -1139,15 +1196,19 @@ Com um projeto selecionado, o comando de exclusão de elementos irá excluir o e
 \end{center}
 
 %--------------------------------------------------------------------------------%
-\subsubsection{SALVAR PROJETO}\label{sec:save_projects}
+\subsection{SALVAR PROJETO}\label{sec:save_projects}
 
-O comando de salvar projetos irá extrair do projeto selecionado sua representação em um arquivo \textit{XML}, assim como no processo de impressão do projeto. Entretanto este arquivo será impresso em um arquivo externo.
+O comando de salvar projetos irá extrair do projeto selecionado sua representação em um arquivo \textit{XML}, assim como no processo de impressão do projeto. Este arquivo será impresso em um arquivo externo e por isto é executado pela thread \textit{WiseIO}.
 
 \begin{center}
 	\begin{table}[!htbp]
 		\begin{tabular}{|c|c|m{0.6\textwidth}|}
 			\hline
 			\textbf{Linha de Comando} & \multicolumn{2}{c|}{project save <file\underline{\space\space}name>} \\
+			\hline
+			\textbf{Escopo} & \multicolumn{2}{c|}{PROJECT} \\
+			\hline
+			\textbf{Thread Responsável} & \multicolumn{2}{c|}{WiseIO} \\
 			\hline
 			\textbf{Entrada} & <file\underline{\space\space}name> & Caminho do arquivo de saída. \\
 			\hline
@@ -1158,7 +1219,7 @@ O comando de salvar projetos irá extrair do projeto selecionado sua representa�
 \end{center}
 
 %--------------------------------------------------------------------------------%
-\subsubsection{CARREGAR PROJETO}\label{sec:load_projects}
+\subsection{CARREGAR PROJETO}\label{sec:load_projects}
 
 O comando de carregar projetos irá extrair de um arquivo de entrada no formato \textit{XML} a estrutura de um projeto inteligente. A ferramenta computacional irá utilizar os arquivos de entrada diretamente nas estruturas de Fábrica relacionadas. Caso o projeto possua elementos e objetos inteligentes eles também serão reconstruídos no projeto reconstruído.
  
@@ -1167,6 +1228,10 @@ O comando de carregar projetos irá extrair de um arquivo de entrada no formato 
 		\begin{tabular}{|c|c|m{0.6\textwidth}|}
 			\hline
 			\textbf{Linha de Comando} & \multicolumn{2}{c|}{project load <filename>} \\
+			\hline
+			\textbf{Escopo} & \multicolumn{1}{c|}{PROJECT} \\
+			\hline
+			\textbf{Thread Responsável} & \multicolumn{1}{c|}{WiseIO} \\
 			\hline
 			\textbf{Entrada} & <filename> & Caminho do arquivo de entrada. \\
 			\hline
@@ -1177,7 +1242,7 @@ O comando de carregar projetos irá extrair de um arquivo de entrada no formato 
 \end{center}
 
 %--------------------------------------------------------------------------------%
-\subsubsection{CRIAR ELEMENTO}\label{sec:create_element}
+\subsection{CRIAR ELEMENTO}\label{sec:create_element}
 
 As fábricas de elementos inteligentes descritas na Seção~\ref{sec:fabricas} são acessadas pelo comando de criar elementos. Este comando recebe como entrada o tipo de elemento inteligente, o nome e o exemplo à ser utilizado. Cada fábrica de elementos possui uma lista de exemplos disponíveis, essa lista é visualizada através do comando de listar exemplos de uma fábrica de elementos.
 
@@ -1186,6 +1251,10 @@ As fábricas de elementos inteligentes descritas na Seção~\ref{sec:fabricas} s
 	\begin{tabular}{|c|c|m{0.6\textwidth}|}
 		\hline
 		\textbf{Linha de Comando} & \multicolumn{2}{c|}{element create <type> <example> <name> [ARGS]} \\
+		\hline
+		\textbf{Escopo} & \multicolumn{2}{c|}{ELEMENT} \\
+		\hline
+		\textbf{Thread Responsável} & \multicolumn{2}{c|}{WiseConsole} \\
 		\hline
 		\multirow{4}{*}{\textbf{Entrada}} & <type> & Tipo de elemento à ser criado, seleciona a fábrica de elemento à ser utilizada. \\
 		
@@ -1200,7 +1269,7 @@ As fábricas de elementos inteligentes descritas na Seção~\ref{sec:fabricas} s
 \end{center}
 
 %--------------------------------------------------------------------------------%
-\subsubsection{CLONAR ELEMENTO}\label{sec:clone_element}
+\subsection{CLONAR ELEMENTO}\label{sec:clone_element}
 
 Assim como o comando de criação de elementos descrito na Seção~\ref{sec:create_element}, a clonagem de elementos também irá acessar as fábricas de elementos. Ao clonar um elemento o seu tipo é selecionado juntamente com a fábrica correspondente, uma vez selecionados a fábrica receberá como parâmetro o elemento inteligente e o nome do novo elemento à ser criado. Portanto o comando de clonagem de elementos poderá ser utilizando com a entrada do nome do elemento inteligente à ser clonado e o nome do novo elemento.
 
@@ -1209,6 +1278,10 @@ Assim como o comando de criação de elementos descrito na Seção~\ref{sec:crea
 		\begin{tabular}{|c|c|m{0.6\textwidth}|}
 			\hline
 			\textbf{Linha de Comando} & \multicolumn{2}{c|}{element clone <element\underline{\space\space}name> <name>} \\
+			\hline
+			\textbf{Escopo} & \multicolumn{2}{c|}{ELEMENT} \\
+			\hline
+			\textbf{Thread Responsável} & \multicolumn{2}{c|}{WiseConsole} \\
 			\hline
 			\multirow{2}{*}{\textbf{Entrada}} & <element\underline{\space\space}name> & Nome do elemento à ser clonado. \\
 			
@@ -1221,7 +1294,7 @@ Assim como o comando de criação de elementos descrito na Seção~\ref{sec:crea
 \end{center}
 
 %--------------------------------------------------------------------------------%
-\subsubsection{LISTAR ELEMENTOS}\label{sec:list_element}
+\subsection{LISTAR ELEMENTOS}\label{sec:list_element}
 
 Com um projeto já selecionada, o comando de listar elementos pode ser utilizado para que o console imprima uma lista com o nome de todos os elementos inteligentes presentes no projeto.
 
@@ -1230,6 +1303,10 @@ Com um projeto já selecionada, o comando de listar elementos pode ser utilizado
 	\begin{tabular}{|c|m{0.6\textwidth}|}
 		\hline
 		\textbf{Linha de Comando} & \multicolumn{1}{c|}{element list} \\
+		\hline
+		\textbf{Escopo} & \multicolumn{1}{c|}{ELEMENT} \\
+		\hline
+		\textbf{Thread Responsável} & \multicolumn{1}{c|}{WiseConsole} \\
 		\hline
 		\textbf{Entrada} & Nenhuma \\
 		\hline
@@ -1240,7 +1317,7 @@ Com um projeto já selecionada, o comando de listar elementos pode ser utilizado
 \end{center}
 
 %--------------------------------------------------------------------------------%
-\subsubsection{IMPRIMIR ELEMENTO}\label{sec:print_element}
+\subsection{IMPRIMIR ELEMENTO}\label{sec:print_element}
 
 O comando de imprimir elementos irá extrair do projeto selecionado a representação em um arquivo \textit{XML}, a informação textual deste arquivo será impressa como resultado no console. Para que o comando funcione é necessário que um projeto esteja selecionado e que o nome do elemento à ser impresso seja informado.
 
@@ -1249,6 +1326,10 @@ O comando de imprimir elementos irá extrair do projeto selecionado a representa
 	\begin{tabular}{|c|c|m{0.6\textwidth}|}
 		\hline
 		\textbf{Linha de Comando} & \multicolumn{2}{c|}{element print <element\underline{\space\space}name>} \\
+		\hline
+		\textbf{Escopo} & \multicolumn{2}{c|}{ELEMENT} \\
+		\hline
+		\textbf{Thread Responsável} & \multicolumn{2}{c|}{WiseConsole} \\
 		\hline
 		\textbf{Entrada} & <element\underline{\space\space}name> & Nome do elemento à ser impresso. \\
 		\hline
@@ -1259,7 +1340,7 @@ O comando de imprimir elementos irá extrair do projeto selecionado a representa
 \end{center}
 
 %--------------------------------------------------------------------------------%
-\subsubsection{EXCLUIR ELEMENTO}\label{sec:delete_element}
+\subsection{EXCLUIR ELEMENTO}\label{sec:delete_element}
 
 O comando de excluir elementos irá remover os dados do elemento da memória.
 
@@ -1268,6 +1349,10 @@ O comando de excluir elementos irá remover os dados do elemento da memória.
 	\begin{tabular}{|c|c|m{0.6\textwidth}|}
 		\hline
 		\textbf{Linha de Comando} & \multicolumn{2}{c|}{element delete <element\underline{\space\space}name>} \\
+		\hline
+		\textbf{Escopo} & \multicolumn{2}{c|}{ELEMENT} \\
+		\hline
+		\textbf{Thread Responsável} & \multicolumn{2}{c|}{WiseConsole} \\
 		\hline
 		\textbf{Entrada} & <element\underline{\space\space}name> & Nome do elemento à ser excluído. \\
 		\hline
@@ -1278,7 +1363,7 @@ O comando de excluir elementos irá remover os dados do elemento da memória.
 \end{center}
 
 %--------------------------------------------------------------------------------%
-\subsubsection{SALVAR ELEMENTO}\label{sec:save_element}
+\subsection{SALVAR ELEMENTO}\label{sec:save_element}
 
 Os elementos inteligentes podem ser exportados em dois formatos, um arquivo \textit{XML} e um arquivo \textit{VTK}. Ambos futuramente podem ser utilizados na reconstrução do elemento inteligente. Como entrada o comando receberá o nome do elemento, o tipo de arquivo à ser escrito e o caminho onde ele deve ser salvo. A saída do comando será o arquivo determinado, à partir deste arquivo é possível reconstruir o elemento completo.
 
@@ -1287,6 +1372,10 @@ Os elementos inteligentes podem ser exportados em dois formatos, um arquivo \tex
 	\begin{tabular}{|c|c|m{0.6\textwidth}|}
 		\hline
 		\textbf{Linha de Comando} & \multicolumn{2}{c|}{element save <element\underline{\space\space}name> <save\underline{\space\space}type> <filename>} \\
+		\hline
+		\textbf{Escopo} & \multicolumn{2}{c|}{ELEMENT} \\
+		\hline
+		\textbf{Thread Responsável} & \multicolumn{2}{c|}{WiseIO} \\
 		\hline
 		\multirow{3}{*}{\textbf{Entrada}} & <element\underline{\space\space}name> & Nome do elemento inteligente à ser salvo. \\
 		& <save\underline{\space\space}type> & Tipo de arquivo à ser exportando, podendo ser \textit{XML} ou \textit{VTK}. \\
@@ -1299,7 +1388,7 @@ Os elementos inteligentes podem ser exportados em dois formatos, um arquivo \tex
 \end{center}
 
 %--------------------------------------------------------------------------------%
-\subsubsection{CARREGAR ELEMENTO}\label{sec:load_element}
+\subsection{CARREGAR ELEMENTO}\label{sec:load_element}
 
 O comando de carregar elementos irá extrair de um arquivo de entrada no formato \textit{XML} ou \textit{VTK} a estrutura de um elementos inteligente. A ferramenta computacional irá utilizar os arquivos de entrada diretamente na fábrica de elemento inteligente relacionada. Caso seja um arquivo \textit{XML} não será necessário informar o tipo de elemento inteligente à ser construído. Caso contrário o tipo e o nome serão recebidos como parâmetros de entrada.
 
@@ -1310,6 +1399,10 @@ O comando de carregar elementos irá extrair de um arquivo de entrada no formato
 		\multirow{3}{*}{\textbf{Linha de Comando}} & \multicolumn{2}{c|}{element load <load\underline{\space\space}type>} \\
 		& \multicolumn{2}{c|}{element load <\textbf{VTK}> <filename> <type> <name>} \\
 		& \multicolumn{2}{c|}{element load <\textbf{XML}> <filename>} \\
+		\hline
+		\textbf{Escopo} & \multicolumn{2}{c|}{ELEMENT} \\
+		\hline
+		\textbf{Thread Responsável} & \multicolumn{2}{c|}{WiseIO} \\
 		\hline
 		\multirow{3}{*}{\textbf{Entrada}} & <filename> & Caminho para o arquivo de entrada. \\
 		& <load\underline{\space\space}type> & Tipo de arquivo à ser carregado, podendo ser \textit{XML} ou \textit{VTK}. \\
@@ -1323,7 +1416,7 @@ O comando de carregar elementos irá extrair de um arquivo de entrada no formato
 \end{center}
 
 %--------------------------------------------------------------------------------%
-\subsubsection{LISTAR EXPORTAÇÕES DO ELEMENTO}\label{sec:export_list_element}
+\subsection{LISTAR EXPORTAÇÕES DO ELEMENTO}\label{sec:export_list_element}
 
 Os elementos inteligentes podem ser exportados outros formatos de arquivo. Cada tipo de elemento inteligente possui uma lista de exportações disponíveis, um comando foi inserido para acessar a lista de exportações de um certo objeto.
 
@@ -1332,6 +1425,10 @@ Os elementos inteligentes podem ser exportados outros formatos de arquivo. Cada 
 	\begin{tabular}{|c|c|m{0.6\textwidth}|}
 		\hline
 		\textbf{Linha de Comando} & \multicolumn{2}{c|}{element export\underline{\space\space}list <element\underline{\space\space}name>}  \\
+		\hline
+		\textbf{Escopo} & \multicolumn{2}{c|}{ELEMENT} \\
+		\hline
+		\textbf{Thread Responsável} & \multicolumn{2}{c|}{WiseConsole} \\
 		\hline
 		\textbf{Entrada} & <element\underline{\space\space}name> & Nome do elemento inteligente à analisado. \\
 		\hline
@@ -1342,7 +1439,7 @@ Os elementos inteligentes podem ser exportados outros formatos de arquivo. Cada 
 \end{center}
 
 %--------------------------------------------------------------------------------%
-\subsubsection{EXPORTAR ELEMENTO}\label{sec:export_element}
+\subsection{EXPORTAR ELEMENTO}\label{sec:export_element}
 
 A estrutura abstrata dos elementos inteligentes requerem que cada um deles possua o método de exportação, os métodos de exportação podem receber parâmetros diferentes. A principal exportação utilizada foi disponibilizada na classe \textit{WiseGraphic}, este tipo de elemento possui implementada a exportação dos gráficos em arquivos de imagem. Desta forma, possibilitou-se a criação de imagens em um ambiente que não possui interface gráfica.
 
@@ -1351,6 +1448,10 @@ A estrutura abstrata dos elementos inteligentes requerem que cada um deles possu
 	\begin{tabular}{|c|c|m{0.6\textwidth}|}
 		\hline
 		\textbf{Linha de Comando} & \multicolumn{2}{c|}{element export <element\underline{\space\space}name> <export\underline{\space\space}name> [ARGS]} \\
+		\hline
+		\textbf{Escopo} & \multicolumn{2}{c|}{ELEMENT} \\
+		\hline
+		\textbf{Thread Responsável} & \multicolumn{2}{c|}{WiseIO} \\
 		\hline
 		\multirow{3}{*}{\textbf{Entrada}} & <element\underline{\space\space}name> & Nome do elemento à ser exportado. \\
 		& <export\underline{\space\space}name> & Tipo de exportação à ser realizada. \\
@@ -1363,7 +1464,7 @@ A estrutura abstrata dos elementos inteligentes requerem que cada um deles possu
 \end{center}
 
 %--------------------------------------------------------------------------------%
-\subsubsection{ESCALAR ELEMENTO}\label{sec:scale_element}
+\subsection{ESCALAR ELEMENTO}\label{sec:scale_element}
 
 Os dados inseridos em um elemento inteligente podem ser escalados. As informações contidas em pontos, linhas, células e campos podem ser multiplicados por um escalar $f$. Isso permite modelos geométricos que possuam parâmetros em unidades fora do padrão possam ser escaladas. Utilizando o nome do elemento, o tipo e o nome do parâmetro à ser escalado e o valor do escalar $f$ o comando de escalar elementos permite ao usuário dimensionar cada parâmetro individualmente.
 
@@ -1372,6 +1473,10 @@ Os dados inseridos em um elemento inteligente podem ser escalados. As informaç�
 	\begin{tabular}{|c|c|m{0.6\textwidth}|}
 		\hline
 		\textbf{Linha de Comando} & \multicolumn{2}{c|}{element scale <element\underline{\space\space}name> <cell\underline{\space\space}type> <field> <scale>} \\
+		\hline
+		\textbf{Escopo} & \multicolumn{2}{c|}{ELEMENT} \\
+		\hline
+		\textbf{Thread Responsável} & \multicolumn{2}{c|}{WiseConsole} \\
 		\hline
 		\multirow{4}{*}{\textbf{Entrada}} & <type> & Tipo de elemento à ser criado, seleciona a fábrica de elemento à ser utilizada. \\
 		
@@ -1387,7 +1492,7 @@ Os dados inseridos em um elemento inteligente podem ser escalados. As informaç�
 \end{center}
 
 %--------------------------------------------------------------------------------%
-\subsubsection{DEFINIR PARÂMETRO DE ELEMENTO}\label{sec:set_field_element}
+\subsection{DEFINIR PARÂMETRO DE ELEMENTO}\label{sec:set_field_element}
 
 Os dados inseridos em um elemento inteligente podem ser alterados e receber um valor. As informações contidas em pontos, linhas, células e campos podem ser substituídas por um valor de entrada. Isso permite modelos geométricos tenham seus parâmetros editados. Para alterar o parâmetro de um elemento inteligente é necessário adicionar à linha de comando o nome do elemento, o tipo e nome do parâmetro à ser alterado, a posição do valor no vetor do parâmetro e o valor à ser inserido.
 
@@ -1396,6 +1501,10 @@ Os dados inseridos em um elemento inteligente podem ser alterados e receber um v
 		\begin{tabular}{|c|c|m{0.6\textwidth}|}
 			\hline
 			\textbf{Linha de Comando} & \multicolumn{2}{c|}{element set\underline{\space\space}field <element\underline{\space\space}name> <cell\underline{\space\space}type> <field\underline{\space\space}name> <id> <data>} \\
+			\hline
+			\textbf{Escopo} & \multicolumn{2}{c|}{ELEMENT} \\
+			\hline
+			\textbf{Thread Responsável} & \multicolumn{2}{c|}{WiseConsole} \\
 			\hline
 			\multirow{6}{*}{\textbf{Entrada}} & <type> & Tipo de elemento à ser criado, seleciona a fábrica de elemento à ser utilizada. \\
 			
@@ -1412,7 +1521,7 @@ Os dados inseridos em um elemento inteligente podem ser alterados e receber um v
 \end{center}
 
 %--------------------------------------------------------------------------------%
-\subsubsection{DEFINIR TODOS OS PARÂMETROS DE ELEMENTO}\label{sec:set_all_field_element}
+\subsection{DEFINIR TODOS OS PARÂMETROS DE ELEMENTO}\label{sec:set_all_field_element}
 
 O comando de definição de todos os valores pertencentes à um parâmetro auxilia no manuseio de parâmetros que possuem múltiplos valores. O comando define todos as posições encontradas no vetor do parâmetro e os altera para o valor de entrada. Para alterar todos os valores de um determinado parâmetro de um elemento inteligente é necessário adicionar à linha de comando o nome do elemento, o tipo e nome do parâmetro à ser alterado e o valor à ser inserido.
 
@@ -1421,6 +1530,10 @@ O comando de definição de todos os valores pertencentes à um parâmetro auxil
 		\begin{tabular}{|c|c|m{0.6\textwidth}|}
 			\hline
 			\textbf{Linha de Comando} & \multicolumn{2}{c|}{element set\underline{\space\space}all\underline{\space\space}field <element\underline{\space\space}name> <cell\underline{\space\space}type> <field\underline{\space\space}name> <data>} \\
+			\hline
+			\textbf{Escopo} & \multicolumn{2}{c|}{ELEMENT} \\
+			\hline
+			\textbf{Thread Responsável} & \multicolumn{2}{c|}{WiseConsole} \\
 			\hline
 			\multirow{5}{*}{\textbf{Entrada}} & <type> & Tipo de elemento à ser criado, seleciona a fábrica de elemento à ser utilizada. \\
 			
@@ -1436,7 +1549,7 @@ O comando de definição de todos os valores pertencentes à um parâmetro auxil
 \end{center}
 
 %--------------------------------------------------------------------------------%
-\subsubsection{LISTAR FÁBRICAS DE ELEMENTO}\label{sec:list_element_factories}
+\subsection{LISTAR FÁBRICAS DE ELEMENTO}\label{sec:list_element_factories}
 
 Para listar todas as fábricas de elemento inteligente \textit{WiseElementFactory} o comando desta seção foi criada. O resultado impresso ao executar este comando é a lista de fábricas disponíveis na classe \textit{WiseElementFactories} acoplada na ferramenta computacional.
 
@@ -1448,6 +1561,10 @@ Consequentemente os resultados impressos por este comando representam os tipos d
 			\hline
 			\textbf{Linha de Comando} & \multicolumn{1}{c|}{element factories list} \\
 			\hline
+			\textbf{Escopo} & \multicolumn{1}{c|}{ELEMENT} \\
+			\hline
+			\textbf{Thread Responsável} & \multicolumn{1}{c|}{WiseConsole} \\
+			\hline
 			\textbf{Entrada} & Nenhuma \\
 			\hline
 		\end{tabular}
@@ -1457,7 +1574,7 @@ Consequentemente os resultados impressos por este comando representam os tipos d
 \end{center}
 
 %--------------------------------------------------------------------------------%
-\subsubsection{LISTAR EXEMPLOS DISPONÍVEIS DE ELEMENTO}\label{sec:list_example_element_factories}
+\subsection{LISTAR EXEMPLOS DISPONÍVEIS DE ELEMENTO}\label{sec:list_example_element_factories}
 
 Para cada tipo de elemento inteligente, ou fábrica inteligente listada pelo comando descrito na Seção~\ref{sec:list_example_element_factories}, existirá uma lista de exemplos disponíveis. Exemplos são elementos inteligentes pré-definidos que podem ser criados a partir do comando de criar elementos descrito na Seção~\ref{sec:create_element}. Para listar os exemplos disponíveis o comando recebe como parâmetro de entrada a fábrica à ser analisada.
 
@@ -1466,6 +1583,10 @@ Para cada tipo de elemento inteligente, ou fábrica inteligente listada pelo com
 		\begin{tabular}{|c|c|m{0.6\textwidth}|}
 			\hline
 			\textbf{Linha de Comando} & \multicolumn{2}{c|}{element factories examples <factory>} \\
+			\hline
+			\textbf{Escopo} & \multicolumn{2}{c|}{ELEMENT} \\
+			\hline
+			\textbf{Thread Responsável} & \multicolumn{2}{c|}{WiseConsole} \\
 			\hline
 			\textbf{Entrada} & <factory> & Nome da fábrica de elementos inteligente à analisada. \\
 			\hline
@@ -1476,7 +1597,7 @@ Para cada tipo de elemento inteligente, ou fábrica inteligente listada pelo com
 \end{center}
 
 %--------------------------------------------------------------------------------%
-\subsubsection{CRIAR OBJETO}\label{sec:create_object}
+\subsection{CRIAR OBJETO}\label{sec:create_object}
 
 Assim como o comando de criação de elementos inteligentes, o comando de criação de objetos irá acessar a fábrica de elementos inteligentes \textit{WiseElementFactory}. É possível criar objetos inteligentes de duas formas: A primeira, utilizando um elemento inteligente; A segunda utilizando os exemplos disponibilizados pela fábrica de elementos inteligentes.
 
@@ -1488,6 +1609,10 @@ Assim como descrito na Seção~\ref{sec:estrutura}, ao criar um objeto inteligen
 			\hline
 			\multirow{3}{*}{\textbf{Linha de Comando}} & \multicolumn{2}{c|}{object create <object\underline{\space\space}name> <element\underline{\space\space}name>} \\
 			& \multicolumn{2}{c|}{object create <type> <example> <name> <element\underline{\space\space}name> [ARGS]} \\
+			\hline
+			\textbf{Escopo} & \multicolumn{2}{c|}{OBJECT} \\
+			\hline
+			\textbf{Thread Responsável} & \multicolumn{2}{c|}{WiseConsole} \\
 			\hline
 			\multirow{3}{*}{\textbf{Entrada}} & <object\underline{\space\space}name> & Nome do objeto à ser criado. \\
 			& <element\underline{\space\space}name> & Nome do elemento à ser utilizado na criação ou do elemento à ser criado a partir do exemplo. \\
@@ -1502,7 +1627,7 @@ Assim como descrito na Seção~\ref{sec:estrutura}, ao criar um objeto inteligen
 \end{center}
 
 %--------------------------------------------------------------------------------%
-\subsubsection{CLONAR OBJETO}\label{sec:clone_object}
+\subsection{CLONAR OBJETO}\label{sec:clone_object}
 
 Assim como o elemento inteligente, o objeto inteligente pode ser clonado em uma fábrica própria. Através do comando de clonar objetos estes métodos podem ser acessados, basta inserir o nome do objeto à ser clonado. A fábrica correta é acessada verificando o tipo do objeto à ser clonado.
 
@@ -1511,6 +1636,10 @@ Assim como o elemento inteligente, o objeto inteligente pode ser clonado em uma 
 		\begin{tabular}{|c|c|m{0.6\textwidth}|}
 			\hline
 			\textbf{Linha de Comando} & \multicolumn{2}{c|}{object clonet <object\underline{\space\space}name> <name>} \\
+			\hline
+			\textbf{Escopo} & \multicolumn{2}{c|}{OBJECT} \\
+			\hline
+			\textbf{Thread Responsável} & \multicolumn{2}{c|}{WiseConsole} \\
 			\hline
 			\multirow{2}{*}{\textbf{Entrada}} & <object\underline{\space\space}name> & Nome do objeto à ser clonado. \\
 			
@@ -1523,7 +1652,7 @@ Assim como o elemento inteligente, o objeto inteligente pode ser clonado em uma 
 \end{center}
 
 %--------------------------------------------------------------------------------%
-\subsubsection{LISTAR OBJETOS}\label{sec:list_object}
+\subsection{LISTAR OBJETOS}\label{sec:list_object}
 
 Com um projeto já selecionada, o comando de listar objetos pode ser utilizado para que o console imprima uma lista com o nome de todos os objetos inteligentes presentes no projeto.
 
@@ -1532,6 +1661,10 @@ Com um projeto já selecionada, o comando de listar objetos pode ser utilizado p
 		\begin{tabular}{|c|m{0.6\textwidth}|}
 			\hline
 			\textbf{Linha de Comando} & \multicolumn{1}{c|}{object list} \\
+			\hline
+			\textbf{Escopo} & \multicolumn{1}{c|}{OBJECT} \\
+			\hline
+			\textbf{Thread Responsável} & \multicolumn{1}{c|}{WiseConsole} \\
 			\hline
 			\textbf{Entrada} & Nenhuma \\
 			\hline
@@ -1542,7 +1675,7 @@ Com um projeto já selecionada, o comando de listar objetos pode ser utilizado p
 \end{center}
 
 %--------------------------------------------------------------------------------%
-\subsubsection{IMPRIMIR OBJETO}\label{sec:print_object}
+\subsection{IMPRIMIR OBJETO}\label{sec:print_object}
 
 O comando de imprimir elementos irá extrair do projeto selecionado a representação em um arquivo \textit{XML}, a informação textual deste arquivo será impressa como resultado no console. Para que o comando funcione é necessário que um projeto esteja selecionado e que o nome do objeto à ser impresso seja informado.
 
@@ -1554,6 +1687,10 @@ Dentro deste arquivo \textit{XML} estarão todas as estruturas descritas na Seç
 			\hline
 			\textbf{Linha de Comando} & \multicolumn{2}{c|}{object print <object\underline{\space\space}name>} \\
 			\hline
+			\textbf{Escopo} & \multicolumn{2}{c|}{OBJECT} \\
+			\hline
+			\textbf{Thread Responsável} & \multicolumn{2}{c|}{WiseConsole} \\
+			\hline
 			\textbf{Entrada} & <object\underline{\space\space}name> & Nome do objeto à ser impresso. \\
 			\hline
 		\end{tabular}
@@ -1563,7 +1700,7 @@ Dentro deste arquivo \textit{XML} estarão todas as estruturas descritas na Seç
 \end{center}
 
 %--------------------------------------------------------------------------------%
-\subsubsection{EXCLUIR OBJETO}\label{sec:delete_object}
+\subsection{EXCLUIR OBJETO}\label{sec:delete_object}
 
 Com um projeto selecionado, o comando de exclusão de objetos irá excluir o objeto inteligente do projeto recebendo o nome do objeto como parâmetro de entrada.
 
@@ -1572,6 +1709,10 @@ Com um projeto selecionado, o comando de exclusão de objetos irá excluir o obj
 		\begin{tabular}{|c|c|m{0.6\textwidth}|}
 			\hline
 			\textbf{Linha de Comando} & \multicolumn{2}{c|}{object delete <object\underline{\space\space}name>} \\
+			\hline
+			\textbf{Escopo} & \multicolumn{2}{c|}{OBJECT} \\
+			\hline
+			\textbf{Thread Responsável} & \multicolumn{2}{c|}{WiseConsole} \\
 			\hline
 			\textbf{Entrada} & <object\underline{\space\space}name> & Nome do objeto à ser excluído. \\
 			\hline
@@ -1582,7 +1723,7 @@ Com um projeto selecionado, o comando de exclusão de objetos irá excluir o obj
 \end{center}
 
 %--------------------------------------------------------------------------------%
-\subsubsection{SALVAR OBJETO}\label{sec:save_object}
+\subsection{SALVAR OBJETO}\label{sec:save_object}
 
 O comando de salvar objetos possibilita que a estrutura complexa de um objeto inteligente, bem como seus componentes, sejam arquivados em um arquivo \textit{XML}. Os objetos salvos podem em seguida ser recuperados. Como entrada o comando de salvar objetos irá receber o nome do objeto à ser salvo e o caminho para o arquivo de saída.
 
@@ -1591,6 +1732,10 @@ O comando de salvar objetos possibilita que a estrutura complexa de um objeto in
 		\begin{tabular}{|c|c|m{0.6\textwidth}|}
 			\hline
 			\textbf{Linha de Comando} & \multicolumn{2}{c|}{object save <object\underline{\space\space}name> <filename>} \\
+			\hline
+			\textbf{Escopo} & \multicolumn{2}{c|}{OBJECT} \\
+			\hline
+			\textbf{Thread Responsável} & \multicolumn{2}{c|}{WiseIO} \\
 			\hline
 			\multirow{2}{*}{\textbf{Entrada}} & <object\underline{\space\space}name> & Nome do objeto à ser salvo. \\
 			& <filename> & Caminho para o arquivo de saída. \\
@@ -1603,7 +1748,7 @@ O comando de salvar objetos possibilita que a estrutura complexa de um objeto in
 
 
 %--------------------------------------------------------------------------------%
-\subsubsection{CARREGAR OBJETO}\label{sec:load_object}
+\subsection{CARREGAR OBJETO}\label{sec:load_object}
 
 O comando de carregar objetos irá enviar um arquivo de entrada a fábrica de objetos inteligentes \textit{WiseObjectFactory}, que por sua vez irá reconstruir cada componente do objeto com sua fábrica adequada. Isto significa que a coleção de elementos inteligentes e objetos gráficos irá reconstruir cada objeto. O comando recebe como entrada o nome do arquivo apenas, no Anexo~\ref{annex3} há um exemplo de arquivo \textit{XML} contendo um objeto inteligente válido.
 
@@ -1612,6 +1757,10 @@ O comando de carregar objetos irá enviar um arquivo de entrada a fábrica de ob
 		\begin{tabular}{|c|c|m{0.6\textwidth}|}
 			\hline
 			\textbf{Linha de Comando} & \multicolumn{2}{c|}{object load <filename>} \\
+			\hline
+			\textbf{Escopo} & \multicolumn{2}{c|}{OBJECT} \\
+			\hline
+			\textbf{Thread Responsável} & \multicolumn{2}{c|}{WiseIO} \\
 			\hline
 			\textbf{Entrada} &  <filename> & Caminho para o arquivo de entrada. \\
 			\hline
@@ -1622,7 +1771,7 @@ O comando de carregar objetos irá enviar um arquivo de entrada a fábrica de ob
 \end{center}
 
 %--------------------------------------------------------------------------------%
-\subsubsection{EXPORTAR OBJETO}\label{sec:export_object}
+\subsection{EXPORTAR OBJETO}\label{sec:export_object}
 
 O comando de exportar objetos funciona da mesma forma que o comando de exportar elementos, isto porque o comando irá exportar o elemento contido na estrutura do \textit{Forno}. Portanto os comandos de listar exportações e o de exportar elemento foram adicionados ao objeto.
 
@@ -1632,6 +1781,10 @@ O comando de exportar objetos funciona da mesma forma que o comando de exportar 
 			\hline
 			\multirow{2}{*}{\textbf{Linha de Comando}} & \multicolumn{2}{c|}{object export\underline{\space\space}list <object\underline{\space\space}name>} \\
 			 & \multicolumn{2}{c|}{object export <object\underline{\space\space}name> <export\underline{\space\space}type> [ARGS]} \\
+			\hline
+			\textbf{Escopo} & \multicolumn{2}{c|}{OBJECT} \\
+			\hline
+			\textbf{Thread Responsável} & \multicolumn{2}{c|}{WiseConsole} \\
 			\hline
 			\multirow{2}{*}{\textbf{Entrada}} &  <object\underline{\space\space}name> & Nome do objeto à ser analisado ou exportado. \\
 			&  <export\underline{\space\space}type> & Tipo de exportação à ser realizada. \\
@@ -1644,7 +1797,7 @@ O comando de exportar objetos funciona da mesma forma que o comando de exportar 
 \end{center}
 
 %--------------------------------------------------------------------------------%
-\subsubsection{DEFINIR PARÂMETROS DE OBJETO}\label{sec:set_field_object}
+\subsection{DEFINIR PARÂMETROS DE OBJETO}\label{sec:set_field_object}
 
 Assim como o comando de exportar objeto atua sobre o elemento contido na estrutura do \textit{Forno}, ao realizar comandos de definição de parâmetros num objeto inteligente o elemento inteligente contido na estrutura do \textit{Forno} que será afetado. Portanto, caso algum ajuste seja feito no modelo geométrico as iterações passadas não sofrerão mudanças, enquanto qualquer iteração nova irá receber a nova informação definida.
 
@@ -1654,6 +1807,10 @@ Assim como o comando de exportar objeto atua sobre o elemento contido na estrutu
 			\hline
 			\multirow{2}{*}{\textbf{Linha de Comando}} & \multicolumn{2}{c|}{object set\underline{\space\space}field <object\underline{\space\space}name> <cell\underline{\space\space}type> <field\underline{\space\space}name> <id> <data>} \\
 			& \multicolumn{2}{c|}{object set\underline{\space\space}all\underline{\space\space}field <object\underline{\space\space}name> <cell\underline{\space\space}type> <field\underline{\space\space}name> <data>} \\
+			\hline
+			\textbf{Escopo} & \multicolumn{2}{c|}{OBJECT} \\
+			\hline
+			\textbf{Thread Responsável} & \multicolumn{2}{c|}{WiseConsole} \\
 			\hline
 			\multirow{5}{*}{\textbf{Entrada}} & <object\underline{\space\space}name> & Nome do elemento à ser definido. \\
 			& <cell\underline{\space\space}type> & Tipo de parâmetro à ser escalado (Ponto,Célula,Linha ou Campo). \\
@@ -1668,7 +1825,7 @@ Assim como o comando de exportar objeto atua sobre o elemento contido na estrutu
 \end{center}
 
 %--------------------------------------------------------------------------------%
-\subsubsection{SETAR OBJETO}\label{sec:set_object}
+\subsection{SETAR OBJETO}\label{sec:set_object}
 
 O comando de setar um objeto inteligente tem ligação direta com o seu processo de iteração. Como mencionado na Seção~\ref{sec:estrutura}, os objetos são criados por padrão no estado \textit{Ready}, tendo sido corretamente criados e acoplados de fábricas de iteração e, opcionalmente, gráficas, ele pode ser setado. O comando para setar um objeto inteligente recebe apenas o nome do objeto inteligente e retorna uma mensagem de conclusão.
 
@@ -1677,6 +1834,10 @@ O comando de setar um objeto inteligente tem ligação direta com o seu processo
 		\begin{tabular}{|c|c|m{0.6\textwidth}|}
 			\hline
 			\textbf{Linha de Comando} & \multicolumn{2}{c|}{object set <object\underline{\space\space}name>} \\
+			\hline
+			\textbf{Escopo} & \multicolumn{2}{c|}{OBJECT} \\
+			\hline
+			\textbf{Thread Responsável} & \multicolumn{2}{c|}{WiseConsole} \\
 			\hline
 			\textbf{Entrada} & <object\underline{\space\space}name> & Nome do objeto à ser setado. \\
 			\hline
@@ -1687,7 +1848,7 @@ O comando de setar um objeto inteligente tem ligação direta com o seu processo
 \end{center}
 
 %--------------------------------------------------------------------------------%
-\subsubsection{ITERAR OBJETO}\label{sec:go_object}
+\subsection{ITERAR OBJETO}\label{sec:go_object}
 
 O comando de iterar objetos irá executar o ciclo de iteração de um objeto que tenha sido corretamente setado. Os objetos inteligentes no estado \textit{Set} podem ter seus parâmetros alterados e corretamente configurados, em seguida passam pelo ciclo de iteração. Ao terminarem o ciclo os objetos inteligentes mudam para o estado \textit{Go}.
 
@@ -1696,6 +1857,10 @@ O comando de iterar objetos irá executar o ciclo de iteração de um objeto que
 		\begin{tabular}{|c|c|m{0.6\textwidth}|}
 			\hline
 			\textbf{Linha de Comando} & \multicolumn{2}{c|}{object go <object\underline{\space\space}name>} \\
+			\hline
+			\textbf{Escopo} & \multicolumn{2}{c|}{OBJECT} \\
+			\hline
+			\textbf{Thread Responsável} & \multicolumn{2}{c|}{WiseProcessor} \\
 			\hline
 			\textbf{Entrada} & <object\underline{\space\space}name> & Nome do objeto à ser iterado. \\
 			\hline
@@ -1706,7 +1871,7 @@ O comando de iterar objetos irá executar o ciclo de iteração de um objeto que
 \end{center}
 
 %--------------------------------------------------------------------------------%
-\subsubsection{LISTAR FÁBRICAS DE ITERAÇÃO DE OBJETO}\label{sec:iteration_factories_list}
+\subsection{LISTAR FÁBRICAS DE ITERAÇÃO DE OBJETO}\label{sec:iteration_factories_list}
 
 Cada tipo de objeto inteligente possuirá uma lista de fábricas de iteração \textit{WiseIterationFactory} que podem ser acopladas à ele. O comando de listar fábricas de iteração irá receber o nome do objeto inteligente à ser analisado, as fábricas de iteração que forem compatíveis com o objeto serão escritas no console.
 
@@ -1715,6 +1880,10 @@ Cada tipo de objeto inteligente possuirá uma lista de fábricas de iteração \
 		\begin{tabular}{|c|c|m{0.6\textwidth}|}
 			\hline
 			\textbf{Linha de Comando} & \multicolumn{2}{c|}{object iteration\underline{\space\space}factories list <object\underline{\space\space}name>} \\
+			\hline
+			\textbf{Escopo} & \multicolumn{2}{c|}{OBJECT} \\
+			\hline
+			\textbf{Thread Responsável} & \multicolumn{2}{c|}{WiseConsole} \\
 			\hline
 			\textbf{Entrada} & <object\underline{\space\space}name> & Nome do objeto à ser analisado. \\
 			\hline
@@ -1725,7 +1894,7 @@ Cada tipo de objeto inteligente possuirá uma lista de fábricas de iteração \
 \end{center}
 
 %--------------------------------------------------------------------------------%
-\subsubsection{DEFINIR FÁBRICA DE ITERAÇÃO DE OBJETO}\label{sec:iteration_factories_set}
+\subsection{DEFINIR FÁBRICA DE ITERAÇÃO DE OBJETO}\label{sec:iteration_factories_set}
 
 Antes que um objeto posso passar para o estado \textit{Set} ele precisa tem em sua composição uma fábrica de iteração, caso deseje-se um objeto estático, que não mude durante o ciclo iterativo, a fábrica \textit{StaticIterationFactory} deve ser acoplada. O comando para definir a fábrica de iteração irá receber o nome do objeto que irá receber a fábrica e o nome da fábrica à ser adicionada.
 
@@ -1734,6 +1903,10 @@ Antes que um objeto posso passar para o estado \textit{Set} ele precisa tem em s
 		\begin{tabular}{|c|c|m{0.6\textwidth}|}
 			\hline
 			\textbf{Linha de Comando} & \multicolumn{2}{c|}{object iteration\underline{\space\space}factories set <object\underline{\space\space}name> <factory\underline{\space\space}name>} \\
+			\hline
+			\textbf{Escopo} & \multicolumn{2}{c|}{OBJECT} \\
+			\hline
+			\textbf{Thread Responsável} & \multicolumn{2}{c|}{WiseConsole} \\
 			\hline
 			\multirow{2}{*}{\textbf{Entrada}} & <object\underline{\space\space}name> & Nome do objeto inteligente que irá receber a fábrica. \\
 			& <factory\underline{\space\space}name> & Fábrica de iteração à ser inserido no objeto. \\
@@ -1745,7 +1918,7 @@ Antes que um objeto posso passar para o estado \textit{Set} ele precisa tem em s
 \end{center}
 
 %--------------------------------------------------------------------------------%
-\subsubsection{LISTAR FÁBRICAS GRÁFICAS DE OBJETO}\label{sec:graphic_factories_list}
+\subsection{LISTAR FÁBRICAS GRÁFICAS DE OBJETO}\label{sec:graphic_factories_list}
 
 Além de fábricas de iteração, objetos inteligentes podem ser compostos por fábricas gráficas. O comando de listar fábricas gráficas irá imprimir no console as fábricas gráficas disponíveis para um determinado objeto inteligente, como dado de entrada o comando irá receber o nome deste objeto.
 
@@ -1754,6 +1927,10 @@ Além de fábricas de iteração, objetos inteligentes podem ser compostos por f
 		\begin{tabular}{|c|c|m{0.6\textwidth}|}
 			\hline
 			\textbf{Linha de Comando} & \multicolumn{2}{c|}{object graphic\underline{\space\space}factories list <object\underline{\space\space}name>} \\
+			\hline
+			\textbf{Escopo} & \multicolumn{2}{c|}{OBJECT} \\
+			\hline
+			\textbf{Thread Responsável} & \multicolumn{2}{c|}{WiseConsole} \\
 			\hline
 			\textbf{Entrada} & <object\underline{\space\space}name> & Nome do objeto à ser analisado. \\
 			\hline
@@ -1764,7 +1941,7 @@ Além de fábricas de iteração, objetos inteligentes podem ser compostos por f
 \end{center}
 
 %--------------------------------------------------------------------------------%
-\subsubsection{DEFINIR FÁBRICA GRÁFICA DE OBJETO}\label{sec:graphic_factories_set}
+\subsection{DEFINIR FÁBRICA GRÁFICA DE OBJETO}\label{sec:graphic_factories_set}
 
 Uma vez que o objeto inteligente tenha sido criado corretamente ele pode ser acoplado de fábricas de iteração ou gráficas. O comando de definir fábrica gráfica irá acoplar uma fábrica gráfica disponível à um objeto inteligente compatível. Como dados de entrada o comando receberá o nome do objeto inteligente à ser alterado e o nome da fábrica gráfica à ser adicionada.
 
@@ -1773,6 +1950,10 @@ Uma vez que o objeto inteligente tenha sido criado corretamente ele pode ser aco
 		\begin{tabular}{|c|c|m{0.6\textwidth}|}
 			\hline
 			\textbf{Linha de Comando} & \multicolumn{2}{c|}{object graphic\underline{\space\space}factories set <object\underline{\space\space}name> <factory\underline{\space\space}name>} \\
+			\hline
+			\textbf{Escopo} & \multicolumn{2}{c|}{OBJECT} \\
+			\hline
+			\textbf{Thread Responsável} & \multicolumn{2}{c|}{WiseConsole} \\
 			\hline
 			\multirow{2}{*}{\textbf{Entrada}} & <object\underline{\space\space}name> & Nome do objeto inteligente que irá receber a fábrica. \\
 			& <factory\underline{\space\space}name> & Fábrica gráfica à ser inserido no objeto. \\
@@ -1784,7 +1965,7 @@ Uma vez que o objeto inteligente tenha sido criado corretamente ele pode ser aco
 \end{center}
 
 %--------------------------------------------------------------------------------%
-\subsubsection{LISTAR OBJETOS GRÁFICOS}\label{sec:graphic_list}
+\subsection{LISTAR OBJETOS GRÁFICOS}\label{sec:graphic_list}
 
 Uma vez que o objeto gráfico tenha sido corretamente criado e acoplado à uma fábrica gráfica, o seu modelo é disponibilizado numa lista de objetos gráficos. Essa lista irá exibir o nome de todos os objetos que podem ser visualizados e está disponível para visualização através de um comando.
 
@@ -1793,6 +1974,10 @@ Uma vez que o objeto gráfico tenha sido corretamente criado e acoplado à uma f
 		\begin{tabular}{|c|m{0.6\textwidth}|}
 			\hline
 			\textbf{Linha de Comando} & graphic list \\
+			\hline
+			\textbf{Escopo} & \multicolumn{2}{c|}{OBJECT} \\
+			\hline
+			\textbf{Thread Responsável} & \multicolumn{2}{c|}{WiseConsole} \\
 			\hline
 			\textbf{Entrada} & Nenhuma. \\
 			\hline
@@ -1803,7 +1988,7 @@ Uma vez que o objeto gráfico tenha sido corretamente criado e acoplado à uma f
 \end{center}
 
 %--------------------------------------------------------------------------------%
-\subsubsection{LISTAR CANVAS}\label{sec:canvas_list}
+\subsection{LISTAR CANVAS}\label{sec:canvas_list}
 
 O comando de listar \textit{Canvas} irá nomear todas os elementos gráficos disponíveis. Quando o ambiente \textit{InGU} está sendo executado não existirão elementos gráficos disponíveis, entretanto como veremos à frente o ambiente computacional \textit{IGU} apresentar exatamente as mesmas funcionalidades com elementos gráficos. Ao executar este comando no ambiente computacional com elementos gráficos, cada objeto e seu nome será enviado como resultado.
 
@@ -1812,6 +1997,10 @@ O comando de listar \textit{Canvas} irá nomear todas os elementos gráficos dis
 		\begin{tabular}{|c|m{0.6\textwidth}|}
 			\hline
 			\textbf{Linha de Comando} & canvas list \\
+			\hline
+			\textbf{Escopo} & \multicolumn{2}{c|}{GRAPHIC} \\
+			\hline
+			\textbf{Thread Responsável} & \multicolumn{2}{c|}{WiseConsole} \\
 			\hline
 			\textbf{Entrada} & Nenhuma. \\
 			\hline
@@ -1822,7 +2011,7 @@ O comando de listar \textit{Canvas} irá nomear todas os elementos gráficos dis
 \end{center}
 
 %--------------------------------------------------------------------------------%
-\subsubsection{LINK GRÁFICO}\label{sec:graphic_link}
+\subsection{LINK GRÁFICO}\label{sec:graphic_link}
 
 Tendo o conhecimento dos elementos gráficos disponíveis para desenho e das estruturas aptas à sereme desenhadas, é possível que estas estruturas sejam conectadas para que funcionem em conjunto. Ao realizar esta conecção, nomeada de link gráfico, o elemento gráfico passará a exibir o elemento gráfico.
 
@@ -1832,6 +2021,10 @@ Tendo o conhecimento dos elementos gráficos disponíveis para desenho e das est
 			\hline
 			\multirow{2}{*}{\textbf{Linha de Comando}} & \multicolumn{2}{c|}{graphic link <graphic\underline{\space\space}name> <canvas\underline{\space\space}name>} \\
 			& \multicolumn{2}{c|}{canvas link <canvas\underline{\space\space}name> <graphic\underline{\space\space}name>} \\
+			\hline
+			\textbf{Escopo} & \multicolumn{2}{c|}{GRAPHIC} \\
+			\hline
+			\textbf{Thread Responsável} & \multicolumn{2}{c|}{WiseConsole} \\
 			\hline
 			\multirow{2}{*}{\textbf{Entrada}} &  <graphic\underline{\space\space}name> & Nome do objeto gráfico à ser linkado com elemento gráfico \textit{Canvas}. \\
 			& <canvas\underline{\space\space}name> & Nome do \textit{Canvas} à receber objeto gráfico para desenho. \\
@@ -1843,7 +2036,7 @@ Tendo o conhecimento dos elementos gráficos disponíveis para desenho e das est
 \end{center}
 
 %--------------------------------------------------------------------------------%
-\subsubsection{TERMINAR LINK GRÁFICO}\label{sec:graphic_purge}
+\subsection{TERMINAR LINK GRÁFICO}\label{sec:graphic_purge}
 
 Uma vez que os elementos gráficos começam a ser exibidos em elementos de interface gráfica eles são desenhados continuamente. Para liberar o elemento de interface gráfica e deixá-lo vazio o comando de terminar link gráfico foi utilizado. Como dado de entrada este comando recebe o nome do elemento de interface gráfica.
 
@@ -1852,6 +2045,10 @@ Uma vez que os elementos gráficos começam a ser exibidos em elementos de inter
 		\begin{tabular}{|c|c|m{0.6\textwidth}|}
 			\hline
 			\textbf{Linha de Comando} & \multicolumn{2}{c|}{canvas purge <canvas\underline{\space\space}name>} \\
+			\hline
+			\textbf{Escopo} & \multicolumn{2}{c|}{GRAPHIC} \\
+			\hline
+			\textbf{Thread Responsável} & \multicolumn{2}{c|}{WiseConsole} \\
 			\hline
 			\textbf{Entrada} & <canvas\underline{\space\space}name> & Canvas à ser limpo. \\
 			\hline
@@ -1862,7 +2059,11 @@ Uma vez que os elementos gráficos começam a ser exibidos em elementos de inter
 \end{center}
 
 %--------------------------------------------------------------------------------%
-\subsection{JANELA}\label{sec:janela}
+\section{JANELA}\label{sec:janela}]
+
+O ambiente com interface gráfica foi nomeado de \textbf{I}terador \textbf{G}ráfico \textbf{U}niversal, que também está presente como parte de um projeto \textit{Qt}/\textit{C++}. Diferentemente dos outro ambiente, este possui elementos gráficos. O principal elemento gráfico disponibilizado pela interface gráfico é a janela principal, que é um objeto do tipo \textit{QMainWindow}. Estes objetos são disponibilizados pela biblioteca \textit{Qt} e permitem que um projeto \textit{C++} possua uma interface gráfica utilizando diretivas OpenGL e GLUT (The OpenGL Utility Kit).
+
+
 
 %-------------------------------------------------------------------------------------------%
 \chapter{RESULTADOS NUMÉRICOS E DISCUSSÕES}
@@ -2020,7 +2221,6 @@ Como trabalhos futuros, destacam-se:
 	
 \begin{algorithm}[H]
 	\SetAlgoLined
-	\Inicio{
 		object create artery\underline{\space\space}tree DUAN\underline{\space\space}AND\underline{\space\space}ZAMIR obj\underline{\space\space}t5 el\underline{\space\space}t5 \\
 		object iteration\underline{\space\space}factories set obj\underline{\space\space}t5 DUAN\underline{\space\space}AND\underline{\space\space}ZAMIR \\
 		object set obj\underline{\space\space}t5 \\
@@ -2046,14 +2246,13 @@ Como trabalhos futuros, destacam-se:
 		object export obj\underline{\space\space}t6 IMAGE\underline{\space\space}PNG pressure\underline{\space\space}7\underline{\space\space}30.png \\
 		object set\underline{\space\space}field obj\underline{\space\space}t6 FIELD READ\underline{\space\space}FIELD 0 FLOW\underline{\space\space}WAVE \\
 		object go obj\underline{\space\space}t6 \\
-}
-	\caption{Cálculos hemodinâmicos do modelo de árvore arterial ($\mathcal{MAA}$) em comandos que a ferramenta computaciona é capaz de processar.}
+
+	\caption{Cálculos hemodinâmicos do modelo de árvore arterial ($\mathcal{MAA}$) em comandos que a ferramenta computacional é capaz de processar.}
 \end{algorithm}
 
 \newpage
 \begin{algorithm}[H]
 	\SetAlgoLined
-	\Inicio{
 		object export obj\underline{\space\space}t6 IMAGE\underline{\space\space}PNG flow\underline{\space\space}7\underline{\space\space}30.png \\
 		object set\underline{\space\space}field obj\underline{\space\space}t5 FIELD FREQUENCY 0 10.95 \\
 		object go obj\underline{\space\space}t5 \\
@@ -2075,8 +2274,7 @@ Como trabalhos futuros, destacam-se:
 		object export obj\underline{\space\space}t6 IMAGE\underline{\space\space}PNG flow\underline{\space\space}14\underline{\space\space}60.png \\
 		object delete obj\underline{\space\space}t6 \\
 		object delete obj\underline{\space\space}t5 \\
-	}
-	\caption{Cálculos hemodinâmicos do modelo de árvore arterial ($\mathcal{MAA}$) em comandos que a ferramenta computaciona é capaz de processar.}
+	\caption{Cálculos hemodinâmicos do modelo de árvore arterial ($\mathcal{MAA}$) em comandos que a ferramenta computacional é capaz de processar.}
 \end{algorithm}
 	
 	%-----------------------------------------------------------------------------------------%
