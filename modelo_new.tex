@@ -1766,6 +1766,8 @@ Além de fábricas de iteração, objetos inteligentes podem ser compostos por f
 %--------------------------------------------------------------------------------%
 \subsubsection{DEFINIR FÁBRICA GRÁFICA DE OBJETO}\label{sec:graphic_factories_set}
 
+Uma vez que o objeto inteligente tenha sido criado corretamente ele pode ser acoplado de fábricas de iteração ou gráficas. O comando de definir fábrica gráfica irá acoplar uma fábrica gráfica disponível à um objeto inteligente compatível. Como dados de entrada o comando receberá o nome do objeto inteligente à ser alterado e o nome da fábrica gráfica à ser adicionada.
+
 \begin{center}
 	\begin{table}[!htbp]
 		\begin{tabular}{|c|c|m{0.6\textwidth}|}
@@ -1784,6 +1786,8 @@ Além de fábricas de iteração, objetos inteligentes podem ser compostos por f
 %--------------------------------------------------------------------------------%
 \subsubsection{LISTAR OBJETOS GRÁFICOS}\label{sec:graphic_list}
 
+Uma vez que o objeto gráfico tenha sido corretamente criado e acoplado à uma fábrica gráfica, o seu modelo é disponibilizado numa lista de objetos gráficos. Essa lista irá exibir o nome de todos os objetos que podem ser visualizados e está disponível para visualização através de um comando.
+
 \begin{center}
 	\begin{table}[!htbp]
 		\begin{tabular}{|c|m{0.6\textwidth}|}
@@ -1801,6 +1805,8 @@ Além de fábricas de iteração, objetos inteligentes podem ser compostos por f
 %--------------------------------------------------------------------------------%
 \subsubsection{LISTAR CANVAS}\label{sec:canvas_list}
 
+O comando de listar \textit{Canvas} irá nomear todas os elementos gráficos disponíveis. Quando o ambiente \textit{InGU} está sendo executado não existirão elementos gráficos disponíveis, entretanto como veremos à frente o ambiente computacional \textit{IGU} apresentar exatamente as mesmas funcionalidades com elementos gráficos. Ao executar este comando no ambiente computacional com elementos gráficos, cada objeto e seu nome será enviado como resultado.
+
 \begin{center}
 	\begin{table}[!htbp]
 		\begin{tabular}{|c|m{0.6\textwidth}|}
@@ -1817,6 +1823,8 @@ Além de fábricas de iteração, objetos inteligentes podem ser compostos por f
 
 %--------------------------------------------------------------------------------%
 \subsubsection{LINK GRÁFICO}\label{sec:graphic_link}
+
+Tendo o conhecimento dos elementos gráficos disponíveis para desenho e das estruturas aptas à sereme desenhadas, é possível que estas estruturas sejam conectadas para que funcionem em conjunto. Ao realizar esta conecção, nomeada de link gráfico, o elemento gráfico passará a exibir o elemento gráfico.
 
 \begin{center}
 	\begin{table}[!htbp]
@@ -1836,6 +1844,8 @@ Além de fábricas de iteração, objetos inteligentes podem ser compostos por f
 
 %--------------------------------------------------------------------------------%
 \subsubsection{TERMINAR LINK GRÁFICO}\label{sec:graphic_purge}
+
+Uma vez que os elementos gráficos começam a ser exibidos em elementos de interface gráfica eles são desenhados continuamente. Para liberar o elemento de interface gráfica e deixá-lo vazio o comando de terminar link gráfico foi utilizado. Como dado de entrada este comando recebe o nome do elemento de interface gráfica.
 
 \begin{center}
 	\begin{table}[!htbp]
@@ -2007,6 +2017,67 @@ Como trabalhos futuros, destacam-se:
 	
 	%-----------------------------------------------------------------------------------------%
 	\chapter{FORMATO DE ARQUIVO DE COMANDOS}\label{annex2}
+	
+\begin{algorithm}[H]
+	\SetAlgoLined
+	\Inicio{
+		object create artery\underline{\space\space}tree DUAN\underline{\space\space}AND\underline{\space\space}ZAMIR obj\underline{\space\space}t5 el\underline{\space\space}t5 \\
+		object iteration\underline{\space\space}factories set obj\underline{\space\space}t5 DUAN\underline{\space\space}AND\underline{\space\space}ZAMIR \\
+		object set obj\underline{\space\space}t5 \\
+		object set\underline{\space\space}field obj\underline{\space\space}t5 FIELD FREQUENCY 0 3.65 \\
+		object set\underline{\space\space}field obj\underline{\space\space}t5 FIELD ARTERY\underline{\space\space}CHOOSE\underline{\space\space}MODE 0 HIGHEST \\
+		object go obj\underline{\space\space}t5 \\
+		object create graphic BLANK obj\underline{\space\space}t6 el\underline{\space\space}t6 \\
+		object iteration\underline{\space\space}factories set obj\underline{\space\space}t6 OBJECT\underline{\space\space}READ \\
+		object set obj\underline{\space\space}t6 \\
+		object set\underline{\space\space}field obj\underline{\space\space}t6 FIELD READ\underline{\space\space}ELEMENT\underline{\space\space}NAME 0 obj\underline{\space\space}t5 \\
+		object set\underline{\space\space}field obj\underline{\space\space}t6 FIELD READ\underline{\space\space}FIELD 0 PRESSURE\underline{\space\space}WAVE \\
+		object set\underline{\space\space}field obj\underline{\space\space}t6 FIELD READ\underline{\space\space}CELL\underline{\space\space}TYPE 0 FIELD \\
+		object go obj\underline{\space\space}t6 \\
+		object export obj\underline{\space\space}t6 IMAGE\underline{\space\space}PNG pressure\underline{\space\space}3\underline{\space\space}65.png \\
+		object set\underline{\space\space}field obj\underline{\space\space}t6 FIELD READ\underline{\space\space}FIELD 0 FLOW\underline{\space\space}WAVE \\
+		object go obj\underline{\space\space}t6 \\
+		object export obj\underline{\space\space}t6 IMAGE\underline{\space\space}PNG flow\underline{\space\space}3\underline{\space\space}65.png \\
+		object set\underline{\space\space}field obj\underline{\space\space}t5 FIELD FREQUENCY 0 7.30 \\
+		object go obj\underline{\space\space}t5 \\
+		object set\underline{\space\space}field obj\underline{\space\space}t6 FIELD READ\underline{\space\space}FIELD 0 PRESSURE\underline{\space\space}WAVE \\
+		object set\underline{\space\space}field obj\underline{\space\space}t6 FIELD READ\underline{\space\space}CELL\underline{\space\space}TYPE 0 FIELD \\
+		object go obj\underline{\space\space}t6 \\
+		object export obj\underline{\space\space}t6 IMAGE\underline{\space\space}PNG pressure\underline{\space\space}7\underline{\space\space}30.png \\
+		object set\underline{\space\space}field obj\underline{\space\space}t6 FIELD READ\underline{\space\space}FIELD 0 FLOW\underline{\space\space}WAVE \\
+		object go obj\underline{\space\space}t6 \\
+}
+	\caption{Cálculos hemodinâmicos do modelo de árvore arterial ($\mathcal{MAA}$) em comandos que a ferramenta computaciona é capaz de processar.}
+\end{algorithm}
+
+\newpage
+\begin{algorithm}[H]
+	\SetAlgoLined
+	\Inicio{
+		object export obj\underline{\space\space}t6 IMAGE\underline{\space\space}PNG flow\underline{\space\space}7\underline{\space\space}30.png \\
+		object set\underline{\space\space}field obj\underline{\space\space}t5 FIELD FREQUENCY 0 10.95 \\
+		object go obj\underline{\space\space}t5 \\
+		object set\underline{\space\space}field obj\underline{\space\space}t6 FIELD READ\underline{\space\space}FIELD 0 PRESSURE\underline{\space\space}WAVE \\
+		object set\underline{\space\space}field obj\underline{\space\space}t6 FIELD READ\underline{\space\space}CELL\underline{\space\space}TYPE 0 FIELD \\
+		object go obj\underline{\space\space}t6 \\
+		object export obj\underline{\space\space}t6 IMAGE\underline{\space\space}PNG pressure\underline{\space\space}10\underline{\space\space}95.png \\
+		object set\underline{\space\space}field obj\underline{\space\space}t6 FIELD READ\underline{\space\space}FIELD 0 FLOW\underline{\space\space}WAVE \\
+		object go obj\underline{\space\space}t6 \\
+		object export obj\underline{\space\space}t6 IMAGE\underline{\space\space}PNG flow\underline{\space\space}10\underline{\space\space}95.png \\
+		object set\underline{\space\space}field obj\underline{\space\space}t5 FIELD FREQUENCY 0 14.60 \\
+		object go obj\underline{\space\space}t5 \\
+		object set\underline{\space\space}field obj\underline{\space\space}t6 FIELD READ\underline{\space\space}FIELD 0 PRESSURE\underline{\space\space}WAVE \\
+		object set\underline{\space\space}field obj\underline{\space\space}t6 FIELD READ\underline{\space\space}CELL\underline{\space\space}TYPE 0 FIELD \\
+		object go obj\underline{\space\space}t6 \\
+		object export obj\underline{\space\space}t6 IMAGE\underline{\space\space}PNG pressure\underline{\space\space}14\underline{\space\space}60.png \\
+		object set\underline{\space\space}field obj\underline{\space\space}t6 FIELD READ\underline{\space\space}FIELD 0 FLOW\underline{\space\space}WAVE \\
+		object go obj\underline{\space\space}t6 \\
+		object export obj\underline{\space\space}t6 IMAGE\underline{\space\space}PNG flow\underline{\space\space}14\underline{\space\space}60.png \\
+		object delete obj\underline{\space\space}t6 \\
+		object delete obj\underline{\space\space}t5 \\
+	}
+	\caption{Cálculos hemodinâmicos do modelo de árvore arterial ($\mathcal{MAA}$) em comandos que a ferramenta computaciona é capaz de processar.}
+\end{algorithm}
 	
 	%-----------------------------------------------------------------------------------------%
 	\chapter{FORMATO DE ARQUIVO DE ELEMENTO INTELIGENTE}\label{annex3}
