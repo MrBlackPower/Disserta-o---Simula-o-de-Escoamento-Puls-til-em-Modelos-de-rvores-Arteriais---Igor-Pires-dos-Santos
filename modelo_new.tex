@@ -1862,6 +1862,27 @@ Uma vez que os elementos gráficos começam a ser exibidos em elementos de inter
 \end{center}
 
 %--------------------------------------------------------------------------------%
+\subsection{CASO DE USO}\label{sec:caso_de_uso}
+
+O principal objetivo da ferramenta computacional é iterar modelos utilizando alguma lógica pré-definida por algum algoritmo disponível. Através dos comandos descritos na Seção~\ref{sec:console} é possível que estes modelos sejam criados, alterados, iterados e, opcionalmente, visualizados. Com isto o principal caso de uso foi disponibilizado.
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=0.8]{Figures/CasoDeUso.png}
+	\caption{Fluxo de caso de uso do ambiente computacional InGU.}
+	\label{fig:caso_uso}
+\end{figure}
+
+A Figura~\ref{fig:caso_uso} demonstra a principal sequência de atividades executadas para se iterar um objeto inteligente. Como descrito na Seção~\ref{sec:estrutura}, um objeto inteligente recém-criado não pode ser iterado, ele precisa antes ser corretamente configurado.
+
+Primeiramente, é necessário cria um projeto inteligente vazio e selecioná-lo. Assim o projeto selecionado passa a ser alterado.
+
+Ao criar um objeto inteligente, seus elemento inteligentes são juntamente criados, ambas estas funcionalidades estão disponíveis ao usuário uma vez que ele tenha selecionado um projeto.
+
+Com um objeto criado corretamente é possível adicionar à ele uma fábrica de iteração e uma gráfica. Ao acoplar a fábrica de iteração o método iterativo é liberado, bem como a possibilidade de alterar os parâmetros do objeto inteligente.
+
+
+%--------------------------------------------------------------------------------%
 \subsection{JANELA}\label{sec:janela}
 
 %-------------------------------------------------------------------------------------------%
