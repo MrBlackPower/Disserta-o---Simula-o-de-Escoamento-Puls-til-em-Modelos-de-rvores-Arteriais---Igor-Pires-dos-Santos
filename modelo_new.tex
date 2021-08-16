@@ -1975,9 +1975,9 @@ Uma vez que o objeto gráfico tenha sido corretamente criado e acoplado à uma f
 			\hline
 			\textbf{Linha de Comando} & graphic list \\
 			\hline
-			\textbf{Escopo} & \multicolumn{2}{c|}{OBJECT} \\
+			\textbf{Escopo} & \multicolumn{1}{c|}{OBJECT} \\
 			\hline
-			\textbf{Thread Responsável} & \multicolumn{2}{c|}{WiseConsole} \\
+			\textbf{Thread Responsável} & \multicolumn{1}{c|}{WiseConsole} \\
 			\hline
 			\textbf{Entrada} & Nenhuma. \\
 			\hline
@@ -1998,9 +1998,9 @@ O comando de listar \textit{Canvas} irá nomear todas os elementos gráficos dis
 			\hline
 			\textbf{Linha de Comando} & canvas list \\
 			\hline
-			\textbf{Escopo} & \multicolumn{2}{c|}{GRAPHIC} \\
+			\textbf{Escopo} & \multicolumn{1}{c|}{GRAPHIC} \\
 			\hline
-			\textbf{Thread Responsável} & \multicolumn{2}{c|}{WiseConsole} \\
+			\textbf{Thread Responsável} & \multicolumn{1}{c|}{WiseConsole} \\
 			\hline
 			\textbf{Entrada} & Nenhuma. \\
 			\hline
@@ -2061,7 +2061,7 @@ Uma vez que os elementos gráficos começam a ser exibidos em elementos de inter
 %--------------------------------------------------------------------------------%
 \subsection{CASO DE USO}\label{sec:caso_de_uso}
 
-O principal objetivo da ferramenta computacional é iterar modelos utilizando alguma lógica pré-definida por algum algoritmo disponível. Através dos comandos descritos na Seção~\ref{sec:console} é possível que estes modelos sejam criados, alterados, iterados e, opcionalmente, visualizados. Com isto o principal caso de uso foi disponibilizado.
+O principal objetivo da ferramenta computacional é iterar modelos utilizando alguma lógica pré-definida por algum algoritmo disponível. Através dos comandos descritos na Seção~\ref{sec:console} é possível que estes modelos sejam criados, alterados, iterados e, opcionalmente, visualizados. Com isto o principal fluxo de caso de uso foi disponibilizado.
 
 \begin{figure}[!htbp]
 	\centering
@@ -2070,15 +2070,22 @@ O principal objetivo da ferramenta computacional é iterar modelos utilizando al
 	\label{fig:caso_uso}
 \end{figure}
 
-A Figura~\ref{fig:caso_uso} demonstra a principal sequência de atividades executadas para se iterar um objeto inteligente. Como descrito na Seção~\ref{sec:estrutura}, um objeto inteligente recém-criado não pode ser iterado, ele precisa antes ser corretamente configurado.
+A Figura~\ref{fig:caso_uso} demonstra a principal sequência de atividades executadas para se iterar um objeto inteligente. Como descrito na Seção~\ref{sec:estrutura}, um objeto inteligente recém-criado não pode ser iterado, ele precisa antes ser corretamente configurado. Com este modelo é possível observar a sequência de passos necessárias para se iterar um obejto inteligente recém-criado.
 
-Primeiramente, é necessário cria um projeto inteligente vazio e selecioná-lo. Assim o projeto selecionado passa a ser alterado.
+Primeiramente, é necessário criar um projeto inteligente vazio e selecioná-lo. Assim o projeto selecionado passa a ser alterado.
 
 Ao criar um objeto inteligente, seus elemento inteligentes são juntamente criados, ambas estas funcionalidades estão disponíveis ao usuário uma vez que ele tenha selecionado um projeto.
 
 Com um objeto criado corretamente é possível adicionar à ele uma fábrica de iteração e uma gráfica. Ao acoplar a fábrica de iteração o método iterativo é liberado, bem como a possibilidade de alterar os parâmetros do objeto inteligente.
 
 
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=0.8]{Figures/CasoDeUso2.png}
+	\caption{Fluxo de caso de uso do ambiente computacional IGU.}
+	\label{fig:caso_uso2}
+\end{figure}
 %--------------------------------------------------------------------------------%
 \subsection{JANELA}\label{sec:janela}
 

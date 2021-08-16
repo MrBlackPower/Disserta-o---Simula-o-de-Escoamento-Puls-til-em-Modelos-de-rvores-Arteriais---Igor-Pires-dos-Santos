@@ -27,15 +27,17 @@
 \contentsline {figure}{\numberline {3.22}{\ignorespaces Estrutura do projeto que compõe o ambiente computacional InGU.\relax }}{51}{figure.caption.32}%
 \contentsline {figure}{\numberline {3.23}{\ignorespaces Captura de tela com a execução do ambiente computacional InGU em um console.\relax }}{52}{figure.caption.33}%
 \contentsline {figure}{\numberline {3.24}{\ignorespaces Captura de tela com a execução do ambiente computacional InGU em um console.\relax }}{54}{figure.caption.35}%
+\contentsline {figure}{\numberline {3.25}{\ignorespaces Fluxo de caso de uso do ambiente computacional InGU.\relax }}{75}{figure.caption.81}%
+\contentsline {figure}{\numberline {3.26}{\ignorespaces Fluxo de caso de uso do ambiente computacional IGU.\relax }}{75}{figure.caption.82}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Representação do modelo de árvore arterial canina (figura adaptada de~\cite {Duan}).\relax }}{76}{figure.caption.81}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Amplitude da pressão $|P|$ ao longo da árvore arterial considerando diferentes viscosidade do fluido $\mu $ e frequências: (a) $f$ = 3,65 Hz, (b) $f$ = 7,30 Hz. \relax }}{78}{figure.caption.83}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Amplitude da pressão $|P|$ ao longo da árvore arterial considerando diferentes viscosidade do fluido $\mu $ e frequências: (a) $f$ = 10,95 Hz, (b) $f$ = 14,60 Hz. \relax }}{79}{figure.caption.84}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Amplitude da pressão $|P|$ ao longo da árvore arterial considerando diferentes valores de viscoelasticidade $\phi _0$ e frequências: (a) $f$ = 3,65 Hz, (b) $f$ = 7,30 Hz. \relax }}{81}{figure.caption.85}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Amplitude da pressão $|P|$ ao longo da árvore arterial considerando diferentes valores de viscoelasticidade $\phi _0$ e frequências: (a) $f$ = 10,95 Hz, (b) $f$ = 14,60 Hz.\relax }}{82}{figure.caption.86}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Amplitude da impedância de entrada $|Z|$ em função da frequência $f$: (a) efeito da viscosidade (b) impacto da viscoelasticidade.\relax }}{83}{figure.caption.87}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Amplitude da pressão $|P|$ ao longo da árvore arterial $X$ considerando viscosidade $\mu = 1,0 \mu _0$, viscoelasticidade $\phi _0 = 8^{\circ }$.\relax }}{84}{figure.caption.88}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Impedância de entrada $|Z|$ em função da frequência $f$ considerando viscosidade $\mu = 1,0 \mu _0$, viscoelasticidade $\phi _0 = 8^{\circ }$.\relax }}{84}{figure.caption.89}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Representação do modelo de árvore arterial canina (figura adaptada de~\cite {Duan}).\relax }}{76}{figure.caption.83}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Amplitude da pressão $|P|$ ao longo da árvore arterial considerando diferentes viscosidade do fluido $\mu $ e frequências: (a) $f$ = 3,65 Hz, (b) $f$ = 7,30 Hz. \relax }}{78}{figure.caption.85}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Amplitude da pressão $|P|$ ao longo da árvore arterial considerando diferentes viscosidade do fluido $\mu $ e frequências: (a) $f$ = 10,95 Hz, (b) $f$ = 14,60 Hz. \relax }}{79}{figure.caption.86}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Amplitude da pressão $|P|$ ao longo da árvore arterial considerando diferentes valores de viscoelasticidade $\phi _0$ e frequências: (a) $f$ = 3,65 Hz, (b) $f$ = 7,30 Hz. \relax }}{81}{figure.caption.87}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Amplitude da pressão $|P|$ ao longo da árvore arterial considerando diferentes valores de viscoelasticidade $\phi _0$ e frequências: (a) $f$ = 10,95 Hz, (b) $f$ = 14,60 Hz.\relax }}{82}{figure.caption.88}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Amplitude da impedância de entrada $|Z|$ em função da frequência $f$: (a) efeito da viscosidade (b) impacto da viscoelasticidade.\relax }}{83}{figure.caption.89}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Amplitude da pressão $|P|$ ao longo da árvore arterial $X$ considerando viscosidade $\mu = 1,0 \mu _0$, viscoelasticidade $\phi _0 = 8^{\circ }$.\relax }}{84}{figure.caption.90}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Impedância de entrada $|Z|$ em função da frequência $f$ considerando viscosidade $\mu = 1,0 \mu _0$, viscoelasticidade $\phi _0 = 8^{\circ }$.\relax }}{84}{figure.caption.91}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
