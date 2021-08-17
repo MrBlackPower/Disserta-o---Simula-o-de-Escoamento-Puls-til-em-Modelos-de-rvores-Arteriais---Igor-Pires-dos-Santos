@@ -12,6 +12,7 @@
 \usepackage[portuguese,algoruled,longend, linesnumbered]{algorithm2e}
 \usepackage{listings}
 \usepackage{graphicx}
+\usepackage{subcaption}
 \usepackage{hyperref}
 \usepackage{ulem}
  \hypersetup{colorlinks,
@@ -2061,24 +2062,26 @@ Uma vez que os elementos gráficos começam a ser exibidos em elementos de inter
 %--------------------------------------------------------------------------------%
 \subsection{CASO DE USO}\label{sec:caso_de_uso}
 
-O principal objetivo da ferramenta computacional é iterar modelos utilizando alguma lógica pré-definida por algum algoritmo disponível. Através dos comandos descritos na Seção~\ref{sec:console} é possível que estes modelos sejam criados, alterados, iterados e, opcionalmente, visualizados. Com isto o principal fluxo de caso de uso foi disponibilizado.
+O principal objetivo da ferramenta computacional é iterar modelos utilizando alguma lógica pré-definida por algum algoritmo disponível. Através dos comandos descritos na Seção~\ref{sec:console} é possível que estes modelos sejam criados, alterados, iterados e, opcionalmente, visualizados. Com isto o principal fluxo de uso foi disponibilizado.
 
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[scale=0.8]{Figures/CasoDeUso.png}
-	\caption{Fluxo de caso de uso do ambiente computacional InGU.}
+	\caption{Fluxograma do ambiente computacional InGU, em azul as atividades de criação de elementos inteligentes, em verde as atividades de criação de projetos inteligentes e em laranja as atividades de criação de objetos inteligentes.}
 	\label{fig:caso_uso}
 \end{figure}
 
-A Figura~\ref{fig:caso_uso} demonstra a principal sequência de atividades executadas para se iterar um objeto inteligente. Como descrito na Seção~\ref{sec:estrutura}, um objeto inteligente recém-criado não pode ser iterado, ele precisa antes ser corretamente configurado. Com este modelo é possível observar a sequência de passos necessárias para se iterar um obejto inteligente recém-criado.
+A Figura~\ref{fig:caso_uso} demonstra a principal sequência de atividades executadas para se iterar um objeto inteligente. Como descrito na Seção~\ref{sec:estrutura}, um objeto inteligente recém-criado não pode ser iterado, ele precisa antes ser corretamente configurado. Com este modelo é possível observar a sequência de passos necessárias para se iterar um obejto inteligente.
 
-Primeiramente, é necessário criar um projeto inteligente vazio e selecioná-lo. Assim o projeto selecionado passa a ser alterado.
+Primeiramente, é necessário criar um projeto inteligente e selecioná-lo. Cada atividade representada no fluxograma é executada por um comando correspondente, o mesmo fluxo pode ser observado no Anexo~\ref{annex2}. As primeiras linhas de comando representadas neste arquivo de comandos são de criação de projetos.
 
-Ao criar um objeto inteligente, seus elemento inteligentes são juntamente criados, ambas estas funcionalidades estão disponíveis ao usuário uma vez que ele tenha selecionado um projeto.
+Ao criar um objeto inteligente, seus elemento inteligentes são juntamente criados, ambas estas funcionalidades estão disponíveis ao usuário uma vez que ele tenha selecionado um projeto. É possível ainda que se cria um objeto inteligente à partir de um elemento inteligente, desta forma é garantida também a igualdade inicial entre os modelos.
 
 Com um objeto criado corretamente é possível adicionar à ele uma fábrica de iteração e uma gráfica. Ao acoplar a fábrica de iteração o método iterativo é liberado, bem como a possibilidade de alterar os parâmetros do objeto inteligente.
 
+Foi adicionada também a possibilidade de se exportar elementos inteligentes, para o caso de alguns elementos inteligentes como \textit{WiseGraphic} isso siginifca a exportação de imagem no formato \textbf{P}ortable \textbf{N}etwork \textbf{G}raphics, ou \textit{png}, com seu comando representado na linha $7$ do Anexo~\ref{annex2}.
 
+Como mencionado anteriormente, a mesma estrutura foi utilizada na construção do ambiente computacional composto por elementos gráficos \textit{IGU}. Desta forma o principal fluxo de uso da interface gráfica foi desenvolvido.
 
 \begin{figure}[!htbp]
 	\centering
@@ -2086,12 +2089,86 @@ Com um objeto criado corretamente é possível adicionar à ele uma fábrica de 
 	\caption{Fluxo de caso de uso do ambiente computacional IGU.}
 	\label{fig:caso_uso2}
 \end{figure}
+
+Finalmente, o funcionamento apresentado pela Figura~\ref{fig:caso_uso2} difere do apresentado na Figura~\ref{fig:caso_uso} apenas na visualização dos objetos gráficos disponibilizada pelos elementos gráficos. Isto garante que ambos os ambientes computacionais sejam alterados em uma eventual atualização de código e que tenham funcionamento idêntico.
+
 %--------------------------------------------------------------------------------%
 \subsection{JANELA}\label{sec:janela}
 
 O ambiente com interface gráfica foi nomeado de \textbf{I}terador \textbf{G}ráfico \textbf{U}niversal, que também está presente como parte de um projeto \textit{Qt}/\textit{C++}. Diferentemente dos outro ambiente, este possui elementos gráficos. O principal elemento gráfico disponibilizado pela interface gráfico é a janela principal, que é um objeto do tipo \textit{QMainWindow}. Estes objetos são disponibilizados pela biblioteca \textit{Qt} e permitem que um projeto \textit{C++} possua uma interface gráfica utilizando diretivas OpenGL e GLUT (The OpenGL Utility Kit).
 
+Ao abrir o ambiente computacional a tela principal com seus elementos gráficos é exibida.
 
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=0.8]{Figures/IGU_001a.png}
+	\caption{Janela principal ambiente computacional IGU. Da esquerda para a direita: 1. Menu principal do programa; 2. Árvore de projetos e seus elementos; 3. Área de trabalho, no caso mostrando OpenGl \textit{Canvas}; 4. Seleção de abas}
+	\label{fig:UI}
+\end{figure}
+
+A Figura~\ref{fig:UI} demonstra o comportamento inicial da ferramenta computacional. Ao ser aberta o ambiente de trabalho é recuperado, projetos, objetos e elementos são recuperados de um arquivo contido na mesma parta da ferramenta computacional. Este arquivo é salvo toda vez que a ferramenta computacional é encerrada com projetos inteligentes ainda no ambiente. Ainda nesta figura estão representados os principais grupos de elementos gráficos.
+
+As próximas seções discorrem sobre cada grupo de elemento gráfico presente na janela principal da ferramenta computacional e seu funcionamento.
+
+%--------------------------------------------------------------------------------%
+\subsubsection{MENU}\label{sec:menu}
+
+O primeiro grupo são os elementos que compões o menu principal da aplicação. Cada opção do menu é representada por um uma linha de texto, ao selecionar a linha uma ação é executada:
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=1]{Figures/IGU_016.png}
+	\caption{Opções do menu principal da ferramenta computacional \textit{IGU}}
+	\label{fig:menu}
+\end{figure}
+
+
+\begin{itemize}
+	\item \textbf{Exit}: Fecha o ambiente computacional.
+	\item \textbf{Jobs}: Abre a Janela que exibe os trabalhos inteligentes criados.
+	\item \textbf{Open Canvas}: Abre uma nova janela contendo um novo elemento gráfico OpenGL \textit{Canvas}.
+\end{itemize}
+
+Ao abrir um novo elemento gráfico \textit{Canvas}, uma nova listagem é exibida ao executar o comando de listar canvas. Isso possibilita que mais de um objeto seja exibido ao mesmo tempo em janelas distintas.
+
+%--------------------------------------------------------------------------------%
+\subsubsection{ABAS \& ÁREA DE TRABALHO}\label{sec:abas}
+
+As abas da janela principal selecionam o elemento de interface gráfica que será exibido na área de trabalho da aplicação.
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=1]{Figures/IGU_016.png}
+	\caption{Opções do menu principal da ferramenta computacional \textit{IGU}}
+	\label{fig:menu}
+\end{figure}
+\begin{figure}
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=.8\linewidth]{Figures/IGU_017.png}
+		\caption{Área de trabalho exibindo o elemento gráfico \textit{Canvas} com a aba \textit{Canvas} selecionada.}
+		\label{fig:sfig1}
+	\end{subfigure}%
+	\begin{subfigure}{.5\textwidth}
+		\centering
+		\includegraphics[width=.8\linewidth]{Figures/IGU_001.png}
+		\caption{Área de trabalho exibindo o elemento gráfico \textit{Console} com a aba \textit{Console} selecionada.}
+		\label{fig:sfig2}
+	\end{subfigure}
+	\caption{Mudanças gráficas observadas na área de trabalho ao trocar a aba selecionada.}
+	\label{fig:fig}
+\end{figure}
+
+%--------------------------------------------------------------------------------%
+\subsection{JANELAS}\label{sec:janelas}
+
+
+%--------------------------------------------------------------------------------%
+\subsubsection{JANELA CANVAS}\label{sec:janela_canvas}
+
+
+%--------------------------------------------------------------------------------%
+\subsubsection{JANELA JOBS}\label{sec:janela_jobs}
 
 %-------------------------------------------------------------------------------------------%
 \chapter{RESULTADOS NUMÉRICOS E DISCUSSÕES}
