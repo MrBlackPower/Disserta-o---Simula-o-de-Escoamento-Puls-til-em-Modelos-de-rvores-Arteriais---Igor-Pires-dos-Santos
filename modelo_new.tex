@@ -592,7 +592,7 @@ A Figura~\ref{fig1:gui} ilustra a ferramenta desenvolvida. À seguir, apresentam
 
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[scale=0.25]{Figures/IGU.png}
+	\includegraphics[scale=0.25]{Figures/IGU_002.png}
 	\caption{Interface gráfica da ferramenta desenvolvida.}
 	\label{fig1:gui}
 \end{figure}
@@ -617,11 +617,11 @@ Finalmente, estas estruturas são utilizadas pela ferramenta computacional possi
 
 Elementos inteligentes são objetos que implementam a classe \textit{WiseElement}, o principal objetivo de um elemento inteligente é manter os dados mais recentes de um modelo geométrico e os dados necessários para o método de iteração. No caso do estudo do fluxo pulsátil consideramos que uma iteração seja a execução completa do algoritmo apresentado na Seção~ \ref{sec:algoritmo} em toda a árvore. Portanto cada elemento inteligente possuirá todas as informações do modelo geométrico de uma árvore arterial, seus segmentos e suas propriedades.
 
-Através das malhas estruturadas e desestruturadas presentes na biblioteca \textit{VTK}(\textit{Visualization ToolKit}) é possível descrever diversas estruturas de dados através de elementos padronizados, como pontos, linhas e células. Utilizando os elementos básicas contidas nestas malhas, variáveis e ferramentas da linguagem a estrutura básica da arquitetura foi criada, presente na Figura~\ref{fig2:wiselement}.
+Através das malhas estruturadas e desestruturadas presentes na biblioteca \textit{VTK}(\textit{Visua}-\textit{lization ToolKit}) é possível descrever diversas estruturas de dados através de elementos padronizados, como pontos, linhas e células. Utilizando os elementos básicas contidas nestas malhas, variáveis e ferramentas da linguagem a estrutura básica da arquitetura foi criada, presente na Figura~\ref{fig2:wiselement}.
 
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[scale=1]{Figures/WiseElement.png}
+	\includegraphics[scale=2]{Figures/WiseElement@16x.png}
 	\caption{Representação de classes de um elemento inteligente. WiseElement a classe abstrata base e seus componentes: WiseStructure representa a estrutura contida em um arquivo VTK e DataStructure representa a estrutura de ponteiros e variáveis utilizadas na iteração. Tingido de azul as estruturas que nem sempre estão presentes.}
 	\label{fig2:wiselement}
 \end{figure}
@@ -632,7 +632,7 @@ Cada parâmetro de um elemento inteligente representa uma grandeza associada à 
 
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[scale=1]{Figures/WiseElements.png}
+	\includegraphics[width=\textwidth]{Figures/WiseElements@16x.png}
 	\caption{Tipos de elementos inteligentes. \textit{WiseGraphic}, um gráfico bidimensional. \textit{WiseMesh}, uma malha bidimensional. \textit{WisePoly}, uma malha tridimensional. \textit{WiseArteryTree}, uma árvore arterial}
 	\label{fig2:wiselements}
 \end{figure}
@@ -648,9 +648,10 @@ Os elementos inteligentes servem como estruturas de armazenamento padrão que co
 Todo elemento inteligente completo possui uma redundância de dados, podendo ser representado por qualquer uma das duas estruturas que o compõe. A estrutura \textit{WiseStructure} utiliza componentes simples para descrever as estruturas e seus parâmetros, essa estrutura é a que mais se assemelha à encontrada na arquitetura \textit{VTK}. Por utilizar uma quantidade limitada de diretivas o arquivo proveniente dessa estrutura pode ser rapidamente lido, interpretado e até mesmo exportado.
 
 \begin{figure}[!htbp]
-	\includegraphics[width=0.33\textwidth]{Figures/WiseElementPoints.png}
-	\includegraphics[width=0.32\textwidth]{Figures/WiseElementLines.png}
-	\includegraphics[width=0.33\textwidth]{Figures/WiseElementCells.png}
+	\includegraphics[width=0.5\textwidth]{Figures/WiseElementPoints@16x.png}
+	\includegraphics[width=0.5\textwidth]{Figures/WiseElementLines@16x.png}
+	
+	\includegraphics[width=0.5\textwidth]{Figures/WiseElementCells@16x.png}
 	\caption{Pontos utilizados na especificação do modelo geométrico. Linhas utilizadas na especificação do modelo geométrico, através dos pontos previamente definidos. Células utilizadas na especificação do modelo geométrico, através dos pontos previamente definidos.}
 	\label{fig2:wiselementstructs}
 \end{figure}
@@ -661,7 +662,7 @@ A classe \textit{WiseElement} foi desenvolvida para construir a estrutura abstra
 
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[scale=1.5]{Figures/WiseElementStatus.png}
+	\includegraphics[scale=1.5]{Figures/WiseElementStatus@16x.png}
 	\caption{Máquina de Status que controla o funcionamento de um elemento inteligente.}
 	\label{fig3:wiselementstatus}
 \end{figure}
@@ -670,7 +671,7 @@ A máquina de status dos elementos inteligentes gerencia o ciclo de vida de todo
 
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[scale=1]{Figures/WiseElementWarming.png}
+	\includegraphics[scale=1.85]{Figures/WiseElementWarming@16x.png}
 	\caption{Elemento inteligente enquanto no estado \textit{Warming}.}
 	\label{fig4:wiselementwarming}
 \end{figure}
@@ -683,7 +684,7 @@ Como demonstrado na figura~\ref{fig3:wiselementstatus}, o estado frio (\textit{C
 
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[scale=1]{Figures/WiseElementCold.png}
+	\includegraphics[scale=1.85]{Figures/WiseElementCold@16x.png}
 	\caption{Elemento inteligente enquanto no estado \textit{Cold}.}
 	\label{fig5:wiselementcold}
 \end{figure}
@@ -694,7 +695,7 @@ Finalmente, o estado \textit{Hot} representa os elementos que possuem todas as e
 
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[scale=1]{Figures/WiseElementHot.png}
+	\includegraphics[scale=1.85]{Figures/WiseElementHot@16x.png}
 	\caption{Elemento inteligente enquanto no estado \textit{Hot}.}
 	\label{fig6:wiseelementhot}
 \end{figure}
@@ -710,7 +711,7 @@ Como mencionado anteriormente três principais barreiras foram identificadas arm
 
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[scale=1]{Figures/WiseElementWorkflow.png}
+	\includegraphics[width=\textwidth]{Figures/WiseElementWorkflow@16x.png}
 	\caption{Arquitetura de classes fábrica e fluxo de trabalho do elemento inteligente WiseElement. A fábrica WiseElementFactory é responsável por criar o elementos inteligentes, a fábrica WiseIterationFactory é reponsável pela iteração do elemento inteligente e a fábrica GraphicFactory é responsável por criar as estrturas de visualização. }
 	\label{fig2:wiselementsworkflow}
 \end{figure}
@@ -735,7 +736,7 @@ O elemento inteligente guardado no \textit{Forno} será o objeto utilizado pelo 
 
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[scale=1]{Figures/WiseObject.png}
+	\includegraphics[scale=1.15]{Figures/WiseObject@16x.png}
 	\caption{Objeto inteligente \textit{WiseObject} e todos seu componentes:\textit{WiseObjectFactory}, fábrica responsável pela criação de objetos inteligentes de um predeterminado tipo; \textit{WiseIterationFactory}, fábrica de iteração; \textit{WiseGraphicFactory}, fábrica gráfica; \textit{WiseCollection}, coleção de elementos inteligentes; \textit{GraphicModel}, coleção de objetos gráficos.}
 	\label{fig7:wiseobject}
 \end{figure}
@@ -746,7 +747,7 @@ Objetos inteligentes também tem seu funcionamento descrito por uma máquina de 
 
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[scale=1]{Figures/WiseObjectStatus.png}
+	\includegraphics[scale=2]{Figures/WiseObjectStatus@16x.png}
 	\caption{Modelo gráfico \textit{GraphicModel}, contém uma coleção de objetos gráficos.}
 	\label{fig7:wiseobjectstatuses}
 \end{figure}
@@ -769,7 +770,7 @@ Quando o objeto inteligente \textit{WiseObject} estiver corretamente carregado e
 
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[scale=1]{Figures/GraphicModel.png}
+	\includegraphics[scale=2]{Figures/GraphicModel@16x.png}
 	\caption{Modelo gráfico \textit{GraphicModel}, contém uma coleção de objetos gráficos.}
 	\label{fig7:graphicmodel}
 \end{figure}
@@ -778,7 +779,7 @@ Presente na Figura~\ref{fig7:graphicmodel} estão os componentes que permitem ar
 
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[scale=1]{Figures/GraphicObjects}
+	\includegraphics[scale=2]{Figures/GraphicObjects@16x.png}
 	\caption{Tipos de objetos gráficos \textit{GraphicObjects}.}
 	\label{fig7:graphicobjects}
 \end{figure}
@@ -789,7 +790,7 @@ Os objetos gráficos contidos na Figura~\ref{fig7:graphicobjects} possuem métod
 
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[scale=1]{Figures/GraphicElements}
+	\includegraphics[scale=2]{Figures/GraphicElements@16x.png}
 	\caption{Tipos de elementos gráficos \textit{GraphicElements}. \textit{Point}, um ponto. \textit{Line}, uma linha. \textit{Quad}, um quadrado. \textit{Cube}, um cubo. \textit{Cylinder}, um cilindro. \textit{Sphere}, uma esfera.}
 	\label{fig7:graphicelements}
 \end{figure}
@@ -807,7 +808,7 @@ Os projetos inteligentes \textit{WiseProject} são os exopos de trabalho da ferr
 
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[scale=1]{Figures/WiseProject.png}
+	\includegraphics[scale=2]{Figures/WiseProject@16x.png}
 	\caption{Projeto inteligente \textit{WiseProject} e seus componentes, uma lista de objetos inteligentes \textit{WiseObject} e uma lista de elementos inteligentes \textit{WiseElement}.}
 	\label{fig7:project}
 \end{figure}
@@ -823,7 +824,7 @@ O conceito de fábrica foi adicionado ao projeto para facilitar que as estrutura
 
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[scale=1]{Figures/WiseProjectFactory.png}
+	\includegraphics[scale=1.5]{Figures/WiseProjectFactory@16x.png}
 	\caption{Fábrica de projetos inteligentes \textit{WiseProjectFactory} e seus componentes, fábricas de elementos inteligentes \textit{WiseElementFactories}, fábricas de objetos inteligentes \textit{WiseObjectFactories}, fábrica de objetos gráficos \textit{GraphicObjectFactories}, fábricas de elementos gráficos \textit{GraphicElementFactories} e fábricas de iteração \textit{WiseIterationFactories} .}
 	\label{fig7:projectfactory}
 \end{figure}
@@ -832,11 +833,11 @@ Como é possível observa na Figura~\ref{fig7:projectfactory}, a fábrica de pro
 
 \begin{figure}
 	\begin{tabular}{cc}
-		\includegraphics[width=65mm]{Figures/WiseElementFactories.png} &   \includegraphics[width=65mm]{Figures/WiseObjectFactories.png} \\
+		\includegraphics[width=0.5\linewidth]{Figures/WiseElementFactories@16x.png} &   \includegraphics[width=0.5\linewidth]{Figures/WiseObjectFactories@16x.png} \\
 		(a) Fábricas de elementos inteligentes & (b) Fábricas de objetos inteligentes \\[6pt]
-		\includegraphics[width=65mm]{Figures/GraphicObjectFactories.png} &   \includegraphics[width=65mm]{Figures/GraphicElementFactories.png} \\
+		\includegraphics[width=0.5\linewidth]{Figures/GraphicObjectFactories@16x.png} &   \includegraphics[width=0.5\linewidth]{Figures/GraphicElementFactories@16x.png} \\
 		(c) Fábricas de objetos gráficos & (d) Fábricas de elementos gráficos \\[6pt]
-		\multicolumn{2}{c}{\includegraphics[width=65mm]{Figures/WiseIterationFactories.png} }\\
+		\multicolumn{2}{c}{\includegraphics[width=0.5\linewidth]{Figures/WiseIterationFactories@16x.png} }\\
 		\multicolumn{2}{c}{(e) Fábricas de iteração}
 	\end{tabular}
 	\caption{Todas as fábricas que compõem uma fábrica de projeto.}
@@ -857,7 +858,7 @@ Ao longo da pesquisa esta estrutura foi agregada as bibliotecas comuns do Qt 5.1
 
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[scale=1]{Figures/WiseThreadPool.png}
+	\includegraphics[width=\linewidth]{Figures/WiseThreadPool@16x.png}
 	\caption{Modelo de Threads. \textit{WiseThreadPool}, responsável por orquestrar o funcionamento das demais threads, bem como os objetos contidos em um projeto \textit{WiseProject}. \textit{WiseIO}, thread responsável por processos de leitura e escrita. \textit{WiseConsole}, thread responsável por interpretar os comandos de texto e os traduzir em métodos. \textit{WiseProcessor}, thread responsável por realizar o método iterativo de um objeto inteligente \textit{WiseObject}}
 	\label{fig7:threads}
 \end{figure}
@@ -872,7 +873,7 @@ Os elementos inteligentes e objetos inteligentes associados à um trabalho são 
 
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[scale=1]{Figures/WiseThreaPoolCMD.png}
+	\includegraphics[width=\linewidth]{Figures/WiseThreaPoolCMD.png}
 	\caption{Modelo de Threads ao receber uma linha de comando da interface de usuário.}
 	\label{fig8:threads}
 \end{figure}
@@ -881,7 +882,7 @@ Quando se trata de um comando de escrita ou leitura, a thread \textit{WiseIO} é
 
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[scale=1]{Figures/WiseThreadPoolHeating.png}
+	\includegraphics[width=\linewidth]{Figures/WiseThreadPoolHeating@16x.png}
 	\caption{Modelo de Threads ao receber um comando de escrita/leitura.}
 	\label{fig9:threads}
 \end{figure}
@@ -897,7 +898,7 @@ Nesta seção apresentam-se detalhes da interface escolhida para facilitar o uso
 
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[scale=1]{Figures/GraphicElements}
+	\includegraphics[width=\linewidth]{Figures/IGU_002.png}
 	\caption{Interface de usuário gráfica.}
 	\label{fig10:UI}
 \end{figure}
@@ -911,7 +912,7 @@ O ambiente de console da ferramenta computacional consiste em um projeto \textit
 
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[scale=1]{Figures/InGU.png}
+	\includegraphics[width=\linewidth]{Figures/InGU.png}
 	\caption{Estrutura do projeto que compõe o ambiente computacional InGU.}
 	\label{fig10:console}
 \end{figure}
@@ -922,7 +923,7 @@ No anexo estão as sequências de instruções necessárias para compilar ambas 
 	\centering
 	\includegraphics[scale=0.45]{Figures/InGU_console.png}
 	\caption{Captura de tela com a execução do ambiente computacional InGU em um console.}
-	\label{fig10:console}
+	\label{fig11:ajuda}
 \end{figure}
 
 Para executar um comando, basta inserir uma linha de texto e apertar a tecla \textit{Enter}.  Ao capturar a linha de texto, o programa de console irá na verdade redirecionar o comando para a estrutura \textit{WiseThreadPool}, que por sua vez irá alocar uma thread do tipo \textit{WiseConsole} para interpretar a mensagem. Este comportamento é o mesmo apresentado na Seção~\ref{sec:threads}. Uma lista de comandos foi disponibilizada e está acessível através do comando \textit{help}. Ao enviar este comando para o console uma lista com todos as possíveis entradas será exibida. Nas próximas seções estes comandos, suas entradas, seu escopo e thread responsável serão descritos em profundidade. A thread responsável indica qual thread irá executar a tarefa. 
@@ -957,7 +958,7 @@ Ao executar o comando, o usuário receberá uma lista de comandos divididos em e
 	\centering
 	\includegraphics[scale=0.45]{Figures/InGU_help.png}
 	\caption{Captura de tela com a execução do ambiente computacional InGU em um console.}
-	\label{fig10:console}
+	\label{fig10:ajuda}
 \end{figure}
 
 
@@ -2066,7 +2067,7 @@ O principal objetivo da ferramenta computacional é iterar modelos utilizando al
 
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[scale=0.8]{Figures/CasoDeUso.png}
+	\includegraphics[width=\linewidth]{Figures/CasoDeUso@16x.png}
 	\caption{Fluxograma do ambiente computacional InGU, em azul as atividades de criação de elementos inteligentes, em verde as atividades de criação de projetos inteligentes e em laranja as atividades de criação de objetos inteligentes.}
 	\label{fig:caso_uso}
 \end{figure}
@@ -2085,7 +2086,7 @@ Como mencionado anteriormente, a mesma estrutura foi utilizada na construção d
 
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[scale=0.8]{Figures/CasoDeUso2.png}
+	\includegraphics[width=\linewidth]{Figures/CasoDeUso2@16x.png}
 	\caption{Fluxo de caso de uso do ambiente computacional IGU.}
 	\label{fig:caso_uso2}
 \end{figure}
@@ -2101,7 +2102,7 @@ Ao abrir o ambiente computacional a tela principal com seus elementos gráficos 
 
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[scale=0.8]{Figures/IGU_001a.png}
+	\includegraphics[width=\linewidth]{Figures/IGU_001a.png}
 	\caption{Janela principal ambiente computacional IGU. Da esquerda para a direita: 1. Menu principal do programa; 2. Árvore de projetos e seus elementos; 3. Área de trabalho, no caso mostrando OpenGl \textit{Canvas}; 4. Seleção de abas}
 	\label{fig:UI}
 \end{figure}
