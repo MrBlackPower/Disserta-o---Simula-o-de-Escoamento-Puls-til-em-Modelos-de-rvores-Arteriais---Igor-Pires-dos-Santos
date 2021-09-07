@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.7.25)  24 AUG 2021 22:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.7.25)  7 SEP 2021 01:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -460,6 +460,49 @@ File: babel.def 2021/03/24 3.56 Babel common definitions
 Language: portuges 2021/02/04 v1.2s Portuguese support from the babel system
 Package babel Info: Making " an active character on input line 143.
 ))
+(c:/texlive/2021/texmf-dist/tex/latex/lm/lmodern.sty
+Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+)
+(c:/texlive/2021/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 11
+2.
+
+(c:/texlive/2021/texmf-dist/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+))
 (c:/texlive/2021/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2020/08/01 v1.3d Input encoding file
 \inpenc@prehook=\toks40
@@ -720,9 +763,9 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 Package: ulem 2019/11/18
 \ULdepth=\dimen282
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 24.
-Package hyperref Info: Option `debug' set `false' on input line 24.
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 24.
+Package hyperref Info: Option `colorlinks' set `true' on input line 42.
+Package hyperref Info: Option `debug' set `false' on input line 42.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 42.
 
 (c:/texlive/2021/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
@@ -790,22 +833,22 @@ LaTeX Font Info:    Redeclaring symbol font `operators' on input line 63.
 LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
 (Font)              `operators' in the math version `normal' on input line 63.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> T1/futs/m/n on input line 63.
+(Font)                  OT1/lmr/m/n --> T1/futs/m/n on input line 63.
 LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
 (Font)              `operators' in the math version `bold' on input line 63.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> T1/futs/m/n on input line 63.
+(Font)                  OT1/lmr/bx/n --> T1/futs/m/n on input line 63.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  T1/futs/m/n --> T1/futs/b/n on input line 64.
 LaTeX Font Info:    Redeclaring symbol font `letters' on input line 72.
 LaTeX Font Info:    Encoding `OML' has changed to `FML' for symbol font
 (Font)              `letters' in the math version `normal' on input line 72.
 LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
-(Font)                  OML/cmm/m/it --> FML/futmi/m/it on input line 72.
+(Font)                  OML/lmm/m/it --> FML/futmi/m/it on input line 72.
 LaTeX Font Info:    Encoding `OML' has changed to `FML' for symbol font
 (Font)              `letters' in the math version `bold' on input line 72.
 LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
-(Font)                  OML/cmm/b/it --> FML/futmi/m/it on input line 72.
+(Font)                  OML/lmm/b/it --> FML/futmi/m/it on input line 72.
 \symotherletters=\mathgroup11
 LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
 (Font)                  FML/futmi/m/it --> FML/futmi/b/it on input line 74.
@@ -826,29 +869,29 @@ LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 126.
 LaTeX Font Info:    Encoding `OMS' has changed to `FMS' for symbol font
 (Font)              `symbols' in the math version `normal' on input line 126.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/cmsy/m/n --> FMS/futm/m/n on input line 126.
+(Font)                  OMS/lmsy/m/n --> FMS/futm/m/n on input line 126.
 LaTeX Font Info:    Encoding `OMS' has changed to `FMS' for symbol font
 (Font)              `symbols' in the math version `bold' on input line 126.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/cmsy/b/n --> FMS/futm/m/n on input line 126.
+(Font)                  OMS/lmsy/b/n --> FMS/futm/m/n on input line 126.
 LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 127.
 LaTeX Font Info:    Encoding `OMX' has changed to `FMX' for symbol font
 (Font)              `largesymbols' in the math version `normal' on input line 1
 27.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/cmex/m/n --> FMX/futm/m/n on input line 127.
+(Font)                  OMX/lmex/m/n --> FMX/futm/m/n on input line 127.
 LaTeX Font Info:    Encoding `OMX' has changed to `FMX' for symbol font
 (Font)              `largesymbols' in the math version `bold' on input line 127
 .
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/cmex/m/n --> FMX/futm/m/n on input line 127.
+(Font)                  OMX/lmex/m/n --> FMX/futm/m/n on input line 127.
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 128.
 LaTeX Font Info:    Redeclaring math alphabet \mathrm on input line 129.
 LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 130.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> T1/futs/m/it on input line 130.
+(Font)                  OT1/lmr/m/it --> T1/futs/m/it on input line 130.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> T1/futs/m/it on input line 130.
+(Font)                  OT1/lmr/bx/it --> T1/futs/m/it on input line 130.
 LaTeX Font Info:    Redeclaring math alphabet \mathcal on input line 131.
 LaTeX Font Info:    Redeclaring math symbol \varkappa on input line 132.
 LaTeX Font Info:    Redeclaring math symbol \leqslant on input line 138.
@@ -1020,54 +1063,51 @@ File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count347
 \l__pdf_internal_box=\box121
 )
-(./modelo_new.aux (./pretexto.aux)
-
-LaTeX Warning: Label `fig:menu' multiply defined.
-
-)
+(./modelo_new.aux (./pretexto.aux))
 \openout1 = `modelo_new.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 90.
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 90.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 110.
 LaTeX Font Info:    Trying to load font information for FML+futm on input line 
-90.
- (c:/texlive/2021/texmf-dist/tex/latex/fourier/fmlfutm.fd
+110.
+
+(c:/texlive/2021/texmf-dist/tex/latex/fourier/fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 110.
 LaTeX Font Info:    Trying to load font information for FMS+futm on input line 
-90.
+110.
 
 (c:/texlive/2021/texmf-dist/tex/latex/fourier/fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 90.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 110.
 LaTeX Font Info:    Trying to load font information for FMX+futm on input line 
-90.
+110.
 
 (c:/texlive/2021/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    ... okay on input line 110.
 
 (c:/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1095,7 +1135,7 @@ e
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 90.
+Package hyperref Info: Link coloring ON on input line 110.
 
 (c:/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -1108,16 +1148,16 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count355
 )
-LaTeX Info: Redefining \ref on input line 90.
-LaTeX Info: Redefining \pageref on input line 90.
-LaTeX Info: Redefining \nameref on input line 90.
+LaTeX Info: Redefining \ref on input line 110.
+LaTeX Info: Redefining \pageref on input line 110.
+LaTeX Info: Redefining \nameref on input line 110.
 
 (./modelo_new.out) (./modelo_new.out)
 \@outlinefile=\write4
 \openout4 = `modelo_new.out'.
 
-LaTeX Font Info:    Redeclaring math accent \widehat on input line 90.
-LaTeX Font Info:    Redeclaring math accent \widetilde on input line 90.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 110.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 110.
 \openout2 = `pretexto.aux'.
 
  (./pretexto.tex [1
@@ -1152,7 +1192,7 @@ l.63
 e.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.114 \resumo{Abstract}
+l.137 \resumo{Abstract}
                         [1
 
 
@@ -1161,716 +1201,743 @@ l.114 \resumo{Abstract}
 
 ] [3
 
-] (./modelo_new.toc
+]
 LaTeX Font Info:    Trying to load font information for FML+futmi on input line
- 6.
+ 177.
 
 (c:/texlive/2021/texmf-dist/tex/latex/fourier/fmlfutmi.fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 6.
+(Font)              scaled to size 11.03998pt on input line 177.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 6.
+(Font)              scaled to size 8.27998pt on input line 177.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 6.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 6.
+(Font)              scaled to size 6.43999pt on input line 177.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 177
+.
 
 (c:/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 6.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 177
+.
 
 (c:/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 6.
-
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 17
+7.
 
 (c:/texlive/2021/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
+77.
+
+(c:/texlive/2021/texmf-dist/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
+77.
+
+(c:/texlive/2021/texmf-dist/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
+177.
+
+(c:/texlive/2021/texmf-dist/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <9> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 6.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 177.
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <7> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 6.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 177.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 6.
+(Font)              scaled to size 11.03998pt on input line 177.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 6.
+(Font)              scaled to size 8.27998pt on input line 177.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 6.
+(Font)              scaled to size 6.43999pt on input line 177.
  [4
-
-])
-\tf@toc=\write5
-\openout5 = `modelo_new.toc'.
-
- [5] (./modelo_new.lof
-Overfull \hbox (1.32338pt too wide) in paragraph at lines 15--15
- \T1/futs/m/n/12 tipo; \T1/futs/m/it/12 Wi-seI-te-ra-ti-on-Fac-tory\T1/futs/m/n
-/12 , fá-brica de ite-ra-ção; \T1/futs/m/it/12 Wi-se-Graphic-Fac-tory\T1/futs/m
-/n/12 , fá-brica grá- 
- []
-
-[6
-
-])
-\tf@lof=\write6
-\openout6 = `modelo_new.lof'.
-
- [7] (./modelo_new.lot [8
-
-])
-\tf@lot=\write7
-\openout7 = `modelo_new.lot'.
-
- [9] [10
-
-] (./modelo_new.toc)
-\tf@toc=\write8
-\openout8 = `modelo_new.toc'.
-
- [11
 
 ]
 Cap\'{\i }tulo 1.
-[12
+[5
 
-
-]
+] [6]
 LaTeX Font Info:    Trying to load font information for TS1+futs on input line 
-199.
+229.
  (c:/texlive/2021/texmf-dist/tex/latex/fourier/ts1futs.fd
 File: ts1futs.fd 2003/09/14 Fontinst v1.801 font definitions for TS1/futs.
-) [13] [14]
+) [7] [8]
 Cap\'{\i }tulo 2.
-[15
+[9
 
-] [16]
-<Figures/ArterialTree_Zamir.png, id=780, 884.30376pt x 370.38374pt>
+] [10]
+<Figures/ArterialTree_Zamir.png, id=471, 884.30376pt x 370.38374pt>
 File: Figures/ArterialTree_Zamir.png Graphic file (type png)
 <use Figures/ArterialTree_Zamir.png>
-Package pdftex.def Info: Figures/ArterialTree_Zamir.png  used on input line 285
+Package pdftex.def Info: Figures/ArterialTree_Zamir.png  used on input line 324
 .
 (pdftex.def)             Requested size: 442.1508pt x 185.1914pt.
- [17 <./Figures/ArterialTree_Zamir.png>] [18]
-Overfull \hbox (27.33052pt too wide) in paragraph at lines 344--345
+ [11 <./Figures/ArterialTree_Zamir.png>] [12]
+Overfull \hbox (27.33052pt too wide) in paragraph at lines 383--384
 []\T1/futs/m/n/12 Conforme Duan e Za-mir [[]], para efei-tos de cál-culo da pre
 s-são e fluxo, adimensionalizam-
  []
 
-[19] [20]
-Overfull \hbox (9.33876pt too wide) in paragraph at lines 406--406
+[13] [14]
+Overfull \hbox (9.33876pt too wide) in paragraph at lines 445--445
 []\T1/futs/b/n/14.4 INCORPORAÇÃO DA VIS-CO-SI-DADE E VIS-CO-E-LAS-TI-CI-DADE NO
  MO-
  []
 
-[21] [22] [23] [24] [25] [26] [27]
+[15] [16] [17] [18] [19] [20] [21]
 Cap\'{\i }tulo 3.
-<Figures/IGU_002.png, id=969, 1882.03125pt x 1020.81375pt>
+<Figures/IGU_002.png, id=661, 1882.03125pt x 1020.81375pt>
 File: Figures/IGU_002.png Graphic file (type png)
 <use Figures/IGU_002.png>
-Package pdftex.def Info: Figures/IGU_002.png  used on input line 595.
+Package pdftex.def Info: Figures/IGU_002.png  used on input line 634.
 (pdftex.def)             Requested size: 470.50667pt x 255.2028pt.
 
-Overfull \hbox (15.26259pt too wide) in paragraph at lines 595--596
+Overfull \hbox (15.26259pt too wide) in paragraph at lines 634--635
  [][] 
  []
 
-[28
+[22
 
-] [29 <./Figures/IGU_002.png>]
-Overfull \hbox (12.22246pt too wide) in paragraph at lines 620--621
+] [23 <./Figures/IGU_002.png>]
+Overfull \hbox (12.22246pt too wide) in paragraph at lines 659--660
 []\T1/futs/m/n/12 Através das ma-lhas es-tru-tu-ra-das e de-ses-tru-tu-ra-das p
 re-sen-tes na bi-bli-o-teca \T1/futs/m/it/12 VTK\T1/futs/m/n/12 (\T1/futs/m/it/
 12 Visua\T1/futs/m/n/12 -
  []
 
-<Figures/WiseElement@16x.png, id=987, 157.14961pt x 100.375pt>
+<Figures/WiseElement@16x.png, id=680, 157.14961pt x 100.375pt>
 File: Figures/WiseElement@16x.png Graphic file (type png)
 <use Figures/WiseElement@16x.png>
-Package pdftex.def Info: Figures/WiseElement@16x.png  used on input line 624.
+Package pdftex.def Info: Figures/WiseElement@16x.png  used on input line 663.
 (pdftex.def)             Requested size: 314.29843pt x 200.74948pt.
-[30]
-<Figures/WiseElements@16x.png, id=993, 221.0132pt x 93.09781pt>
+[24]
+<Figures/WiseElements@16x.png, id=687, 221.0132pt x 93.09781pt>
 File: Figures/WiseElements@16x.png Graphic file (type png)
 <use Figures/WiseElements@16x.png>
-Package pdftex.def Info: Figures/WiseElements@16x.png  used on input line 635.
+Package pdftex.def Info: Figures/WiseElements@16x.png  used on input line 674.
 (pdftex.def)             Requested size: 455.24408pt x 191.77368pt.
- [31 <./Figures/WiseElement@16x.png>] [32 <./Figures/WiseElements@16x.png>]
-<Figures/WiseElementPoints@16x.png, id=1005, 105.20555pt x 75.03032pt>
+ [25 <./Figures/WiseElement@16x.png>] [26 <./Figures/WiseElements@16x.png>]
+<Figures/WiseElementPoints@16x.png, id=700, 105.20555pt x 75.03032pt>
 File: Figures/WiseElementPoints@16x.png Graphic file (type png)
 <use Figures/WiseElementPoints@16x.png>
 Package pdftex.def Info: Figures/WiseElementPoints@16x.png  used on input line 
-651.
+690.
 (pdftex.def)             Requested size: 227.62204pt x 162.33781pt.
-<Figures/WiseElementLines@16x.png, id=1006, 108.5932pt x 79.86086pt>
+<Figures/WiseElementLines@16x.png, id=701, 108.5932pt x 79.86086pt>
 File: Figures/WiseElementLines@16x.png Graphic file (type png)
 <use Figures/WiseElementLines@16x.png>
 Package pdftex.def Info: Figures/WiseElementLines@16x.png  used on input line 6
-52.
+91.
 (pdftex.def)             Requested size: 227.62204pt x 167.41783pt.
 
-Overfull \hbox (1.884pt too wide) in paragraph at lines 651--653
+Overfull \hbox (1.884pt too wide) in paragraph at lines 690--692
 [][] [] 
  []
 
-<Figures/WiseElementCells@16x.png, id=1007, 104.9546pt x 78.35524pt>
+<Figures/WiseElementCells@16x.png, id=702, 104.9546pt x 78.35524pt>
 File: Figures/WiseElementCells@16x.png Graphic file (type png)
 <use Figures/WiseElementCells@16x.png>
 Package pdftex.def Info: Figures/WiseElementCells@16x.png  used on input line 6
-54.
+93.
 (pdftex.def)             Requested size: 227.62204pt x 169.9358pt.
-[33 <./Figures/WiseElementPoints@16x.png> <./Figures/WiseElementLines@16x.png> 
+[27 <./Figures/WiseElementPoints@16x.png> <./Figures/WiseElementLines@16x.png> 
 <./Figures/WiseElementCells@16x.png>]
-<Figures/WiseElementStatus@16x.png, id=1016, 253.88602pt x 168.88094pt>
+<Figures/WiseElementStatus@16x.png, id=712, 253.88602pt x 168.88094pt>
 File: Figures/WiseElementStatus@16x.png Graphic file (type png)
 <use Figures/WiseElementStatus@16x.png>
 Package pdftex.def Info: Figures/WiseElementStatus@16x.png  used on input line 
-665.
+704.
 (pdftex.def)             Requested size: 380.82806pt x 253.32079pt.
- [34 <./Figures/WiseElementStatus@16x.png>]
-<Figures/WiseElementWarming@16x.png, id=1024, 216.93547pt x 71.8936pt>
+ [28 <./Figures/WiseElementStatus@16x.png>]
+<Figures/WiseElementWarming@16x.png, id=721, 216.93547pt x 71.8936pt>
 File: Figures/WiseElementWarming@16x.png Graphic file (type png)
 <use Figures/WiseElementWarming@16x.png>
 Package pdftex.def Info: Figures/WiseElementWarming@16x.png  used on input line
- 674.
+ 713.
 (pdftex.def)             Requested size: 401.33092pt x 133.00325pt.
- [35 <./Figures/WiseElementWarming@16x.png>]
-<Figures/WiseElementCold@16x.png, id=1033, 221.51508pt x 92.65868pt>
+ [29 <./Figures/WiseElementWarming@16x.png>]
+<Figures/WiseElementCold@16x.png, id=730, 221.51508pt x 92.65868pt>
 File: Figures/WiseElementCold@16x.png Graphic file (type png)
 <use Figures/WiseElementCold@16x.png>
-Package pdftex.def Info: Figures/WiseElementCold@16x.png  used on input line 68
-7.
+Package pdftex.def Info: Figures/WiseElementCold@16x.png  used on input line 72
+6.
 (pdftex.def)             Requested size: 409.80322pt x 171.41866pt.
-<Figures/WiseElementHot@16x.png, id=1034, 218.06468pt x 133.81242pt>
+<Figures/WiseElementHot@16x.png, id=731, 218.06468pt x 133.81242pt>
 File: Figures/WiseElementHot@16x.png Graphic file (type png)
 <use Figures/WiseElementHot@16x.png>
-Package pdftex.def Info: Figures/WiseElementHot@16x.png  used on input line 698
+Package pdftex.def Info: Figures/WiseElementHot@16x.png  used on input line 737
 .
 (pdftex.def)             Requested size: 403.42pt x 247.55315pt.
- [36 <./Figures/WiseElementCold@16x.png>]
-<Figures/WiseElementWorkflow@16x.png, id=1041, 182.6825pt x 192.21812pt>
+ [30 <./Figures/WiseElementCold@16x.png>]
+<Figures/WiseElementWorkflow@16x.png, id=739, 182.6825pt x 192.21812pt>
 File: Figures/WiseElementWorkflow@16x.png Graphic file (type png)
 <use Figures/WiseElementWorkflow@16x.png>
 Package pdftex.def Info: Figures/WiseElementWorkflow@16x.png  used on input lin
-e 714.
+e 753.
 (pdftex.def)             Requested size: 455.24408pt x 479.07172pt.
- [37 <./Figures/WiseElementHot@16x.png>] [38 <./Figures/WiseElementWorkflow@16x
+ [31 <./Figures/WiseElementHot@16x.png>] [32 <./Figures/WiseElementWorkflow@16x
 .png>]
 
-LaTeX Warning: Reference `sec:fabricas' on page 39 undefined on input line 731.
+LaTeX Warning: Reference `sec:fabricas' on page 33 undefined on input line 770.
 
 
-[39]
-<Figures/WiseObject@16x.png, id=1059, 380.48398pt x 247.23618pt>
+[33]
+<Figures/WiseObject@16x.png, id=758, 380.48398pt x 247.23618pt>
 File: Figures/WiseObject@16x.png Graphic file (type png)
 <use Figures/WiseObject@16x.png>
-Package pdftex.def Info: Figures/WiseObject@16x.png  used on input line 739.
+Package pdftex.def Info: Figures/WiseObject@16x.png  used on input line 778.
 (pdftex.def)             Requested size: 437.55318pt x 284.31938pt.
- [40 <./Figures/WiseObject@16x.png>]
-<Figures/WiseObjectStatus@16x.png, id=1067, 191.65352pt x 126.78618pt>
+ [34 <./Figures/WiseObject@16x.png>]
+<Figures/WiseObjectStatus@16x.png, id=768, 191.65352pt x 126.78618pt>
 File: Figures/WiseObjectStatus@16x.png Graphic file (type png)
 <use Figures/WiseObjectStatus@16x.png>
 Package pdftex.def Info: Figures/WiseObjectStatus@16x.png  used on input line 7
-50.
+89.
 (pdftex.def)             Requested size: 383.30606pt x 253.57172pt.
- [41 <./Figures/WiseObjectStatus@16x.png>] [42]
-<Figures/GraphicModel@16x.png, id=1078, 225.34187pt x 107.90312pt>
+ [35 <./Figures/WiseObjectStatus@16x.png>] [36]
+<Figures/GraphicModel@16x.png, id=780, 225.34187pt x 107.90312pt>
 File: Figures/GraphicModel@16x.png Graphic file (type png)
 <use Figures/GraphicModel@16x.png>
-Package pdftex.def Info: Figures/GraphicModel@16x.png  used on input line 773.
+Package pdftex.def Info: Figures/GraphicModel@16x.png  used on input line 812.
 (pdftex.def)             Requested size: 450.68262pt x 215.8057pt.
-<Figures/GraphicObjects@16x.png, id=1080, 223.08344pt x 89.71016pt>
+<Figures/GraphicObjects@16x.png, id=782, 223.08344pt x 89.71016pt>
 File: Figures/GraphicObjects@16x.png Graphic file (type png)
 <use Figures/GraphicObjects@16x.png>
-Package pdftex.def Info: Figures/GraphicObjects@16x.png  used on input line 782
+Package pdftex.def Info: Figures/GraphicObjects@16x.png  used on input line 821
 .
 (pdftex.def)             Requested size: 446.16577pt x 179.41986pt.
- [43 <./Figures/GraphicModel@16x.png>]
-<Figures/GraphicElements@16x.png, id=1087, 172.2686pt x 92.345pt>
+ [37 <./Figures/GraphicModel@16x.png>]
+<Figures/GraphicElements@16x.png, id=790, 172.2686pt x 92.345pt>
 File: Figures/GraphicElements@16x.png Graphic file (type png)
 <use Figures/GraphicElements@16x.png>
-Package pdftex.def Info: Figures/GraphicElements@16x.png  used on input line 79
-3.
+Package pdftex.def Info: Figures/GraphicElements@16x.png  used on input line 83
+2.
 (pdftex.def)             Requested size: 344.53635pt x 184.68951pt.
- [44 <./Figures/GraphicObjects@16x.png>]
-<Figures/WiseProject@16x.png, id=1093, 185.25461pt x 86.63617pt>
+ [38 <./Figures/GraphicObjects@16x.png>]
+<Figures/WiseProject@16x.png, id=797, 185.25461pt x 86.63617pt>
 File: Figures/WiseProject@16x.png Graphic file (type png)
 <use Figures/WiseProject@16x.png>
-Package pdftex.def Info: Figures/WiseProject@16x.png  used on input line 811.
+Package pdftex.def Info: Figures/WiseProject@16x.png  used on input line 850.
 (pdftex.def)             Requested size: 370.50827pt x 173.27191pt.
- [45 <./Figures/GraphicElements@16x.png> <./Figures/WiseProject@16x.png>]
-<Figures/WiseProjectFactory@16x.png, id=1101, 240.02171pt x 158.9689pt>
+ [39 <./Figures/GraphicElements@16x.png> <./Figures/WiseProject@16x.png>]
+<Figures/WiseProjectFactory@16x.png, id=807, 240.02171pt x 158.9689pt>
 File: Figures/WiseProjectFactory@16x.png Graphic file (type png)
 <use Figures/WiseProjectFactory@16x.png>
 Package pdftex.def Info: Figures/WiseProjectFactory@16x.png  used on input line
- 827.
+ 866.
 (pdftex.def)             Requested size: 360.03168pt x 238.45276pt.
-<Figures/WiseElementFactories@16x.png, id=1103, 256.58359pt x 222.51883pt>
+<Figures/WiseElementFactories@16x.png, id=809, 256.58359pt x 222.51883pt>
 File: Figures/WiseElementFactories@16x.png Graphic file (type png)
 <use Figures/WiseElementFactories@16x.png>
 Package pdftex.def Info: Figures/WiseElementFactories@16x.png  used on input li
-ne 836.
+ne 875.
 (pdftex.def)             Requested size: 227.62204pt x 197.40279pt.
-<Figures/WiseObjectFactories@16x.png, id=1104, 256.70906pt x 221.82875pt>
+<Figures/WiseObjectFactories@16x.png, id=810, 256.70906pt x 221.82875pt>
 File: Figures/WiseObjectFactories@16x.png Graphic file (type png)
 <use Figures/WiseObjectFactories@16x.png>
 Package pdftex.def Info: Figures/WiseObjectFactories@16x.png  used on input lin
-e 836.
+e 875.
 (pdftex.def)             Requested size: 227.62204pt x 196.69582pt.
-<Figures/GraphicObjectFactories@16x.png, id=1105, 256.96pt x 222.51883pt>
+<Figures/GraphicObjectFactories@16x.png, id=811, 256.96pt x 222.51883pt>
 File: Figures/GraphicObjectFactories@16x.png Graphic file (type png)
 <use Figures/GraphicObjectFactories@16x.png>
 Package pdftex.def Info: Figures/GraphicObjectFactories@16x.png  used on input 
-line 838.
+line 877.
 (pdftex.def)             Requested size: 227.62204pt x 197.11757pt.
-<Figures/GraphicElementFactories@16x.png, id=1106, 263.48438pt x 262.29242pt>
+<Figures/GraphicElementFactories@16x.png, id=812, 263.48438pt x 262.29242pt>
 File: Figures/GraphicElementFactories@16x.png Graphic file (type png)
 <use Figures/GraphicElementFactories@16x.png>
 Package pdftex.def Info: Figures/GraphicElementFactories@16x.png  used on input
- line 838.
+ line 877.
 (pdftex.def)             Requested size: 227.62204pt x 226.60367pt.
-<Figures/WiseIterationFactories@16x.png, id=1107, 268.37766pt x 218.69203pt>
+<Figures/WiseIterationFactories@16x.png, id=813, 268.37766pt x 218.69203pt>
 File: Figures/WiseIterationFactories@16x.png Graphic file (type png)
 <use Figures/WiseIterationFactories@16x.png>
 Package pdftex.def Info: Figures/WiseIterationFactories@16x.png  used on input 
-line 840.
+line 879.
 (pdftex.def)             Requested size: 227.62204pt x 185.48198pt.
 
-Overfull \hbox (24.00003pt too wide) in paragraph at lines 835--843
+Overfull \hbox (24.00003pt too wide) in paragraph at lines 874--882
 [][] 
  []
 
-[46] [47 <./Figures/WiseProjectFactory@16x.png>] [48 <./Figures/WiseElementFact
+[40] [41 <./Figures/WiseProjectFactory@16x.png>] [42 <./Figures/WiseElementFact
 ories@16x.png> <./Figures/WiseObjectFactories@16x.png> <./Figures/GraphicObject
 Factories@16x.png> <./Figures/GraphicElementFactories@16x.png> <./Figures/WiseI
 terationFactories@16x.png>]
-<Figures/WiseThreadPool@16x.png, id=1130, 290.02101pt x 130.2993pt>
+<Figures/WiseThreadPool@16x.png, id=838, 290.02101pt x 130.2993pt>
 File: Figures/WiseThreadPool@16x.png Graphic file (type png)
 <use Figures/WiseThreadPool@16x.png>
-Package pdftex.def Info: Figures/WiseThreadPool@16x.png  used on input line 861
+Package pdftex.def Info: Figures/WiseThreadPool@16x.png  used on input line 900
 .
 (pdftex.def)             Requested size: 455.24408pt x 204.54248pt.
- [49 <./Figures/WiseThreadPool@16x.png>]
-<Figures/WiseThreaPoolCMD.png, id=1137, 342.78062pt x 167.12437pt>
+ [43 <./Figures/WiseThreadPool@16x.png>]
+<Figures/WiseThreaPoolCMD.png, id=846, 342.78062pt x 167.12437pt>
 File: Figures/WiseThreaPoolCMD.png Graphic file (type png)
 <use Figures/WiseThreaPoolCMD.png>
-Package pdftex.def Info: Figures/WiseThreaPoolCMD.png  used on input line 876.
+Package pdftex.def Info: Figures/WiseThreaPoolCMD.png  used on input line 915.
 (pdftex.def)             Requested size: 455.24408pt x 221.97423pt.
-<Figures/WiseThreadPoolHeating@16x.png, id=1138, 339.89484pt x 131.17758pt>
+<Figures/WiseThreadPoolHeating@16x.png, id=847, 339.89484pt x 131.17758pt>
 File: Figures/WiseThreadPoolHeating@16x.png Graphic file (type png)
 <use Figures/WiseThreadPoolHeating@16x.png>
 Package pdftex.def Info: Figures/WiseThreadPoolHeating@16x.png  used on input l
-ine 885.
+ine 924.
 (pdftex.def)             Requested size: 455.24408pt x 175.70296pt.
- [50]
-[51 <./Figures/WiseThreaPoolCMD.png> <./Figures/WiseThreadPoolHeating@16x.png>]
+ [44]
+[45 <./Figures/WiseThreaPoolCMD.png> <./Figures/WiseThreadPoolHeating@16x.png>]
+
+Overfull \hbox (1.58334pt too wide) in paragraph at lines 942--943
+\T1/futs/m/n/12 tra-ba-lhos de cada carga de tra-ba-lho são se-le-ci-o-na-dos e
+ en-vi-a-dos caso não haja pré-requisitos.
+ []
+
+[46]
+<Figures/WiseJobStatus@16x.png, id=865, 191.65352pt x 113.11008pt>
+File: Figures/WiseJobStatus@16x.png Graphic file (type png)
+<use Figures/WiseJobStatus@16x.png>
+Package pdftex.def Info: Figures/WiseJobStatus@16x.png  used on input line 970.
+
+(pdftex.def)             Requested size: 455.24408pt x 268.71516pt.
+ [47]
 File: Figures/IGU_002.png Graphic file (type png)
 <use Figures/IGU_002.png>
-Package pdftex.def Info: Figures/IGU_002.png  used on input line 901.
+Package pdftex.def Info: Figures/IGU_002.png  used on input line 986.
 (pdftex.def)             Requested size: 455.24408pt x 246.9162pt.
-[52]
-<Figures/InGU.png, id=1156, 296.3572pt x 172.89594pt>
+ [48 <./Figures/WiseJobStatus@16x.png>]
+<Figures/InGU.png, id=879, 296.3572pt x 172.89594pt>
 File: Figures/InGU.png Graphic file (type png)
 <use Figures/InGU.png>
-Package pdftex.def Info: Figures/InGU.png  used on input line 915.
+Package pdftex.def Info: Figures/InGU.png  used on input line 1000.
 (pdftex.def)             Requested size: 455.24408pt x 265.60101pt.
-<Figures/InGU_console.png, id=1157, 741.77126pt x 440.64626pt>
+ [49]
+<Figures/InGU_console.png, id=885, 741.77126pt x 440.64626pt>
 File: Figures/InGU_console.png Graphic file (type png)
 <use Figures/InGU_console.png>
-Package pdftex.def Info: Figures/InGU_console.png  used on input line 924.
+Package pdftex.def Info: Figures/InGU_console.png  used on input line 1009.
 (pdftex.def)             Requested size: 333.79398pt x 198.28897pt.
- [53 <./Figures/InGU.png>] [54 <./Figures/InGU_console.png>]
-<Figures/InGU_help.png, id=1170, 839.135pt x 1015.795pt>
+ [50 <./Figures/InGU.png> <./Figures/InGU_console.png>]
+<Figures/InGU_help.png, id=895, 839.135pt x 1015.795pt>
 File: Figures/InGU_help.png Graphic file (type png)
 <use Figures/InGU_help.png>
-Package pdftex.def Info: Figures/InGU_help.png  used on input line 959.
+Package pdftex.def Info: Figures/InGU_help.png  used on input line 1044.
 (pdftex.def)             Requested size: 377.60725pt x 457.10353pt.
- [55 <./Figures/InGU_help.png>] [56]
-Overfull \hbox (23.16899pt too wide) in paragraph at lines 1044--1055
+ [51] [52 <./Figures/InGU_help.png>] [53]
+Overfull \hbox (23.16899pt too wide) in paragraph at lines 1129--1140
 [][] 
  []
 
+
+Overfull \hbox (4.06499pt too wide) in paragraph at lines 1152--1165
+[][] 
+ []
+
+[54]
+Overfull \hbox (39.98096pt too wide) in paragraph at lines 1200--1211
+[][] 
+ []
+
+[55] [56]
+Overfull \hbox (20.133pt too wide) in paragraph at lines 1292--1303
+[][] 
+ []
+
+
+Overfull \hbox (15.16501pt too wide) in paragraph at lines 1315--1326
+[][] 
+ []
+
+
+LaTeX Warning: Reference `sec:fabricas' on page 57 undefined on input line 1334
+.
+
 [57]
-Overfull \hbox (4.06499pt too wide) in paragraph at lines 1067--1080
+Overfull \hbox (13.67699pt too wide) in paragraph at lines 1338--1353
+[][] 
+ []
+
+
+Overfull \hbox (45.56097pt too wide) in paragraph at lines 1365--1378
 [][] 
  []
 
 [58]
-Overfull \hbox (39.98096pt too wide) in paragraph at lines 1115--1126
+Overfull \hbox (45.56097pt too wide) in paragraph at lines 1413--1424
+[][] 
+ []
+
+
+Overfull \hbox (45.56097pt too wide) in paragraph at lines 1436--1447
 [][] 
  []
 
 [59]
-Overfull \hbox (20.133pt too wide) in paragraph at lines 1207--1218
+Overfull \hbox (45.56097pt too wide) in paragraph at lines 1459--1472
 [][] 
  []
 
 
-Overfull \hbox (15.16501pt too wide) in paragraph at lines 1230--1241
+Overfull \hbox (19.77298pt too wide) in paragraph at lines 1484--1500
 [][] 
  []
-
-
-LaTeX Warning: Reference `sec:fabricas' on page 60 undefined on input line 1249
-.
 
 [60]
-Overfull \hbox (13.67699pt too wide) in paragraph at lines 1253--1268
+Overfull \hbox (45.56097pt too wide) in paragraph at lines 1512--1523
 [][] 
  []
 
 
-Overfull \hbox (45.56097pt too wide) in paragraph at lines 1280--1293
-[][] 
- []
-
-[61]
-Overfull \hbox (45.56097pt too wide) in paragraph at lines 1328--1339
-[][] 
- []
-
-
-Overfull \hbox (45.56097pt too wide) in paragraph at lines 1351--1362
-[][] 
- []
-
-[62]
-Overfull \hbox (45.56097pt too wide) in paragraph at lines 1374--1387
-[][] 
- []
-
-
-Overfull \hbox (19.77298pt too wide) in paragraph at lines 1399--1415
-[][] 
- []
-
-[63]
-Overfull \hbox (45.56097pt too wide) in paragraph at lines 1427--1438
-[][] 
- []
-
-
-Overfull \hbox (2.47531pt too wide) in paragraph at lines 1446--1447
+Overfull \hbox (2.47531pt too wide) in paragraph at lines 1531--1532
 \T1/futs/m/n/12 mento pos-sui im-ple-men-tada a ex-por-ta-ção dos grá-fi-cos em
  ar-qui-vos de ima-gem. Desta forma,
  []
 
 
-Overfull \hbox (45.56097pt too wide) in paragraph at lines 1450--1463
+Overfull \hbox (45.56097pt too wide) in paragraph at lines 1535--1548
+[][] 
+ []
+
+[61]
+Overfull \hbox (45.56097pt too wide) in paragraph at lines 1560--1576
+[][] 
+ []
+
+
+Overfull \hbox (45.56097pt too wide) in paragraph at lines 1588--1605
+[][] 
+ []
+
+[62]
+Overfull \hbox (45.56097pt too wide) in paragraph at lines 1617--1633
+[][] 
+ []
+
+[63]
+Overfull \hbox (6.22499pt too wide) in paragraph at lines 1670--1681
+[][] 
+ []
+
+
+Overfull \hbox (45.56097pt too wide) in paragraph at lines 1695--1711
 [][] 
  []
 
 [64]
-Overfull \hbox (45.56097pt too wide) in paragraph at lines 1475--1491
-[][] 
- []
-
-
-Overfull \hbox (45.56097pt too wide) in paragraph at lines 1503--1520
+Overfull \hbox (35.64897pt too wide) in paragraph at lines 1723--1736
 [][] 
  []
 
 [65]
-Overfull \hbox (45.56097pt too wide) in paragraph at lines 1532--1548
+Overfull \hbox (35.64897pt too wide) in paragraph at lines 1773--1784
+[][] 
+ []
+
+
+Overfull \hbox (35.64897pt too wide) in paragraph at lines 1796--1807
+[][] 
+ []
+
+
+Overfull \hbox (35.64897pt too wide) in paragraph at lines 1819--1831
 [][] 
  []
 
 [66]
-Overfull \hbox (6.22499pt too wide) in paragraph at lines 1585--1596
+Overfull \hbox (15.16501pt too wide) in paragraph at lines 1844--1855
+[][] 
+ []
+
+
+Overfull \hbox (35.64897pt too wide) in paragraph at lines 1867--1881
 [][] 
  []
 
 [67]
-Overfull \hbox (45.56097pt too wide) in paragraph at lines 1610--1626
+Overfull \hbox (35.64897pt too wide) in paragraph at lines 1893--1909
 [][] 
  []
 
 
-Overfull \hbox (35.64897pt too wide) in paragraph at lines 1638--1651
+Overfull \hbox (35.64897pt too wide) in paragraph at lines 1921--1932
 [][] 
  []
 
 [68]
-Overfull \hbox (35.64897pt too wide) in paragraph at lines 1688--1699
+Overfull \hbox (35.64897pt too wide) in paragraph at lines 1944--1955
 [][] 
  []
 
 
-Overfull \hbox (35.64897pt too wide) in paragraph at lines 1711--1722
+Overfull \hbox (35.64897pt too wide) in paragraph at lines 1967--1978
 [][] 
  []
 
 [69]
-Overfull \hbox (35.64897pt too wide) in paragraph at lines 1734--1746
+Overfull \hbox (39.65695pt too wide) in paragraph at lines 1990--2002
 [][] 
  []
 
 
-Overfull \hbox (15.16501pt too wide) in paragraph at lines 1759--1770
+Overfull \hbox (35.64897pt too wide) in paragraph at lines 2014--2025
 [][] 
  []
 
 [70]
-Overfull \hbox (35.64897pt too wide) in paragraph at lines 1782--1796
-[][] 
- []
-
-
-Overfull \hbox (35.64897pt too wide) in paragraph at lines 1808--1824
-[][] 
- []
-
-
-Overfull \hbox (35.64897pt too wide) in paragraph at lines 1836--1847
+Overfull \hbox (39.65695pt too wide) in paragraph at lines 2037--2049
 [][] 
  []
 
 [71]
-Overfull \hbox (35.64897pt too wide) in paragraph at lines 1859--1870
+Overfull \hbox (42.42894pt too wide) in paragraph at lines 2107--2120
+[][] 
+ []
+
+
+Overfull \hbox (38.79297pt too wide) in paragraph at lines 2132--2143
 [][] 
  []
 
 [72]
-Overfull \hbox (35.64897pt too wide) in paragraph at lines 1882--1893
-[][] 
- []
-
-
-Overfull \hbox (39.65695pt too wide) in paragraph at lines 1905--1917
-[][] 
- []
-
-
-Overfull \hbox (35.64897pt too wide) in paragraph at lines 1929--1940
-[][] 
- []
-
-[73]
-Overfull \hbox (39.65695pt too wide) in paragraph at lines 1952--1964
-[][] 
- []
-
-[74]
-Overfull \hbox (42.42894pt too wide) in paragraph at lines 2022--2035
-[][] 
- []
-
-[75]
-Overfull \hbox (38.79297pt too wide) in paragraph at lines 2047--2058
-[][] 
- []
-
-<Figures/CasoDeUso@16x.png, id=1270, 378.28828pt x 427.4093pt>
+<Figures/CasoDeUso@16x.png, id=1048, 378.28828pt x 427.4093pt>
 File: Figures/CasoDeUso@16x.png Graphic file (type png)
 <use Figures/CasoDeUso@16x.png>
-Package pdftex.def Info: Figures/CasoDeUso@16x.png  used on input line 2070.
+Package pdftex.def Info: Figures/CasoDeUso@16x.png  used on input line 2155.
 (pdftex.def)             Requested size: 455.24408pt x 514.3625pt.
-[76] [77 <./Figures/CasoDeUso@16x.png>]
-<Figures/CasoDeUso2@16x.png, id=1285, 378.22554pt x 426.1546pt>
+ [73 <./Figures/CasoDeUso@16x.png>]
+<Figures/CasoDeUso2@16x.png, id=1059, 378.22554pt x 426.1546pt>
 File: Figures/CasoDeUso2@16x.png Graphic file (type png)
 <use Figures/CasoDeUso2@16x.png>
-Package pdftex.def Info: Figures/CasoDeUso2@16x.png  used on input line 2089.
+Package pdftex.def Info: Figures/CasoDeUso2@16x.png  used on input line 2174.
 (pdftex.def)             Requested size: 455.24408pt x 512.93709pt.
-<Figures/IGU_001a.png, id=1288, 1927.2pt x 1084.05pt>
+ [74] [75 <./Figures/CasoDeUso2@16x.png>]
+<Figures/IGU_001a.png, id=1072, 1927.2pt x 1084.05pt>
 File: Figures/IGU_001a.png Graphic file (type png)
 <use Figures/IGU_001a.png>
-Package pdftex.def Info: Figures/IGU_001a.png  used on input line 2105.
+Package pdftex.def Info: Figures/IGU_001a.png  used on input line 2190.
 (pdftex.def)             Requested size: 455.24408pt x 256.07509pt.
- [78] [79 <./Figures/CasoDeUso2@16x.png>]
-<Figures/IGU_016.png, id=1299, 173.14688pt x 60.97781pt>
+ [76 <./Figures/IGU_001a.png>]
+<Figures/IGU_016.png, id=1081, 173.14688pt x 60.97781pt>
 File: Figures/IGU_016.png Graphic file (type png)
 <use Figures/IGU_016.png>
-Package pdftex.def Info: Figures/IGU_016.png  used on input line 2121.
+Package pdftex.def Info: Figures/IGU_016.png  used on input line 2206.
 (pdftex.def)             Requested size: 173.14645pt x 60.97765pt.
- [80 <./Figures/IGU_001a.png> <./Figures/IGU_016.png>]
-File: Figures/IGU_016.png Graphic file (type png)
-<use Figures/IGU_016.png>
-Package pdftex.def Info: Figures/IGU_016.png  used on input line 2142.
-(pdftex.def)             Requested size: 173.14645pt x 60.97765pt.
-<Figures/IGU_017.png, id=1306, 1882.03125pt x 1018.80624pt>
+<Figures/IGU_001a_34.png, id=1082, 4795.41562pt x 2898.32813pt>
+File: Figures/IGU_001a_34.png Graphic file (type png)
+<use Figures/IGU_001a_34.png>
+Package pdftex.def Info: Figures/IGU_001a_34.png  used on input line 2227.
+(pdftex.def)             Requested size: 455.24408pt x 275.12291pt.
+ [77 <./Figures/IGU_016.png>]
+<Figures/IGU_017.png, id=1089, 1882.03125pt x 1018.80624pt>
 File: Figures/IGU_017.png Graphic file (type png)
 <use Figures/IGU_017.png>
-Package pdftex.def Info: Figures/IGU_017.png  used on input line 2149.
-(pdftex.def)             Requested size: 182.09831pt x 98.57535pt.
-<Figures/IGU_001.png, id=1307, 1886.04625pt x 1020.81375pt>
+Package pdftex.def Info: Figures/IGU_017.png  used on input line 2239.
+(pdftex.def)             Requested size: 409.71689pt x 221.79066pt.
+<Figures/IGU_001.png, id=1090, 1886.04625pt x 1020.81375pt>
 File: Figures/IGU_001.png Graphic file (type png)
 <use Figures/IGU_001.png>
-Package pdftex.def Info: Figures/IGU_001.png  used on input line 2155.
-(pdftex.def)             Requested size: 182.09831pt x 98.55151pt.
- [81 <./Figures/IGU_017.png> <./Figures/IGU_001.png>]
+Package pdftex.def Info: Figures/IGU_001.png  used on input line 2246.
+(pdftex.def)             Requested size: 409.71689pt x 221.74483pt.
+ [78 <./Figures/IGU_001a_34.png>] [79 <./Figures/IGU_017.png> <./Figures/IGU_00
+1.png>]
+<Figures/IGU_001c.png, id=1105, 256.20718pt x 420.82219pt>
+File: Figures/IGU_001c.png Graphic file (type png)
+<use Figures/IGU_001c.png>
+Package pdftex.def Info: Figures/IGU_001c.png  used on input line 2266.
+(pdftex.def)             Requested size: 182.09485pt x 299.09406pt.
+ [80 <./Figures/IGU_001c.png>] [81]
+<Figures/IGU_025.png, id=1119, 1882.03125pt x 1018.80624pt>
+File: Figures/IGU_025.png Graphic file (type png)
+<use Figures/IGU_025.png>
+Package pdftex.def Info: Figures/IGU_025.png  used on input line 2297.
+(pdftex.def)             Requested size: 455.24408pt x 246.43062pt.
+<Figures/IGU_023.png, id=1120, 1668.2325pt x 965.6075pt>
+File: Figures/IGU_023.png Graphic file (type png)
+<use Figures/IGU_023.png>
+Package pdftex.def Info: Figures/IGU_023.png  used on input line 2311.
+(pdftex.def)             Requested size: 455.24408pt x 263.50223pt.
+ [82 <./Figures/IGU_025.png>]
+<Figures/IGU_022.png, id=1129, 1669.23625pt x 962.59625pt>
+File: Figures/IGU_022.png Graphic file (type png)
+<use Figures/IGU_022.png>
+Package pdftex.def Info: Figures/IGU_022.png  used on input line 2332.
+(pdftex.def)             Requested size: 455.24408pt x 262.51892pt.
+ [83 <./Figures/IGU_023.png>] [84 <./Figures/IGU_022.png>]
 Cap\'{\i }tulo 4.
-<Figures/tree_canine.png, id=1323, 297.36093pt x 155.07938pt>
+<Figures/tree_canine.png, id=1149, 297.36093pt x 155.07938pt>
 File: Figures/tree_canine.png Graphic file (type png)
 <use Figures/tree_canine.png>
-Package pdftex.def Info: Figures/tree_canine.png  used on input line 2189.
+Package pdftex.def Info: Figures/tree_canine.png  used on input line 2354.
 (pdftex.def)             Requested size: 237.88905pt x 124.06364pt.
 
-Overfull \hbox (9.27548pt too wide) in paragraph at lines 2197--2215
+Overfull \hbox (9.27548pt too wide) in paragraph at lines 2362--2380
  [][] 
  []
 
-[82
+[85
 
  <./Figures/tree_canine.png>]
-<figure3-result-new/fig3_P_f3_65_visc_new2.png, id=1345, 483.2454pt x 384.4764p
+<figure3-result-new/fig3_P_f3_65_visc_new2.png, id=1172, 483.2454pt x 384.4764p
 t>
 File: figure3-result-new/fig3_P_f3_65_visc_new2.png Graphic file (type png)
 <use figure3-result-new/fig3_P_f3_65_visc_new2.png>
 Package pdftex.def Info: figure3-result-new/fig3_P_f3_65_visc_new2.png  used on
- input line 2226.
+ input line 2391.
 (pdftex.def)             Requested size: 338.26947pt x 269.13164pt.
-<figure3-result-new/fig3_P_f7_30_visc_new2.png, id=1346, 483.2454pt x 384.4764p
+<figure3-result-new/fig3_P_f7_30_visc_new2.png, id=1173, 483.2454pt x 384.4764p
 t>
 File: figure3-result-new/fig3_P_f7_30_visc_new2.png Graphic file (type png)
 <use figure3-result-new/fig3_P_f7_30_visc_new2.png>
 Package pdftex.def Info: figure3-result-new/fig3_P_f7_30_visc_new2.png  used on
- input line 2228.
+ input line 2393.
 (pdftex.def)             Requested size: 338.26947pt x 269.13164pt.
-<figure3-result-new/fig3_P_f10_95_visc_new2.png, id=1347, 483.2454pt x 386.8854
+<figure3-result-new/fig3_P_f10_95_visc_new2.png, id=1174, 483.2454pt x 386.8854
 pt>
 File: figure3-result-new/fig3_P_f10_95_visc_new2.png Graphic file (type png)
 <use figure3-result-new/fig3_P_f10_95_visc_new2.png>
 Package pdftex.def Info: figure3-result-new/fig3_P_f10_95_visc_new2.png  used o
-n input line 2236.
+n input line 2401.
 (pdftex.def)             Requested size: 338.26947pt x 270.81793pt.
-<figure3-result-new/fig3_P_f14_60_visc_new2.png, id=1348, 482.7636pt x 385.9218
+<figure3-result-new/fig3_P_f14_60_visc_new2.png, id=1175, 482.7636pt x 385.9218
 pt>
 File: figure3-result-new/fig3_P_f14_60_visc_new2.png Graphic file (type png)
 <use figure3-result-new/fig3_P_f14_60_visc_new2.png>
 Package pdftex.def Info: figure3-result-new/fig3_P_f14_60_visc_new2.png  used o
-n input line 2238.
+n input line 2403.
 (pdftex.def)             Requested size: 337.9322pt x 270.14342pt.
- [83] [84 <./figure3-result-new/fig3_P_f3_65_visc_new2.png> <./figure3-result-n
-ew/fig3_P_f7_30_visc_new2.png>] [85 <./figure3-result-new/fig3_P_f10_95_visc_ne
+ [86] [87 <./figure3-result-new/fig3_P_f3_65_visc_new2.png> <./figure3-result-n
+ew/fig3_P_f7_30_visc_new2.png>] [88 <./figure3-result-new/fig3_P_f10_95_visc_ne
 w2.png> <./figure3-result-new/fig3_P_f14_60_visc_new2.png>]
-<figure4-result-new/Fig4_P_f3_65_visco_new2.png, id=1368, 485.6544pt x 387.3672
+<figure4-result-new/Fig4_P_f3_65_visco_new2.png, id=1201, 485.6544pt x 387.3672
 pt>
 File: figure4-result-new/Fig4_P_f3_65_visco_new2.png Graphic file (type png)
 <use figure4-result-new/Fig4_P_f3_65_visco_new2.png>
 Package pdftex.def Info: figure4-result-new/Fig4_P_f3_65_visco_new2.png  used o
-n input line 2248.
+n input line 2413.
 (pdftex.def)             Requested size: 339.95576pt x 271.1552pt.
-<figure4-result-new/Fig4_P_f7_30_visco_new2.png, id=1369, 484.209pt x 384.4764p
+<figure4-result-new/Fig4_P_f7_30_visco_new2.png, id=1202, 484.209pt x 384.4764p
 t>
 File: figure4-result-new/Fig4_P_f7_30_visco_new2.png Graphic file (type png)
 <use figure4-result-new/Fig4_P_f7_30_visco_new2.png>
 Package pdftex.def Info: figure4-result-new/Fig4_P_f7_30_visco_new2.png  used o
-n input line 2250.
+n input line 2415.
 (pdftex.def)             Requested size: 338.94398pt x 269.13164pt.
-<figure4-result-new/fig4_P_f10_95_visco_new2.png, id=1370, 486.618pt x 384.4764
+<figure4-result-new/fig4_P_f10_95_visco_new2.png, id=1203, 486.618pt x 384.4764
 pt>
 File: figure4-result-new/fig4_P_f10_95_visco_new2.png Graphic file (type png)
 <use figure4-result-new/fig4_P_f10_95_visco_new2.png>
 Package pdftex.def Info: figure4-result-new/fig4_P_f10_95_visco_new2.png  used 
-on input line 2258.
+on input line 2423.
 (pdftex.def)             Requested size: 340.63026pt x 269.13164pt.
-<figure4-result-new/fig4_P_f14_60_visco_new2.png, id=1371, 485.6544pt x 386.403
+<figure4-result-new/fig4_P_f14_60_visco_new2.png, id=1204, 485.6544pt x 386.403
 6pt>
 File: figure4-result-new/fig4_P_f14_60_visco_new2.png Graphic file (type png)
 <use figure4-result-new/fig4_P_f14_60_visco_new2.png>
 Package pdftex.def Info: figure4-result-new/fig4_P_f14_60_visco_new2.png  used 
-on input line 2260.
+on input line 2425.
 (pdftex.def)             Requested size: 339.95576pt x 270.48067pt.
 
 
-Package natbib Warning: Citation `Nichols2011' on page 86 undefined on input li
-ne 2265.
+Package natbib Warning: Citation `Nichols2011' on page 89 undefined on input li
+ne 2430.
 
-<figure-result-impedance/fig_viscosity_impedance_new.png, id=1376, 480.8364pt x
+<figure-result-impedance/fig_viscosity_impedance_new.png, id=1209, 480.8364pt x
  383.031pt>
 File: figure-result-impedance/fig_viscosity_impedance_new.png Graphic file (typ
 e png)
 <use figure-result-impedance/fig_viscosity_impedance_new.png>
 Package pdftex.def Info: figure-result-impedance/fig_viscosity_impedance_new.pn
-g  used on input line 2272.
+g  used on input line 2437.
 (pdftex.def)             Requested size: 336.58318pt x 268.11986pt.
-<figure-result-impedance/fig_viscoelasticity_impedance_new.png, id=1377, 481.31
+<figure-result-impedance/fig_viscoelasticity_impedance_new.png, id=1210, 481.31
 82pt x 384.9582pt>
 File: figure-result-impedance/fig_viscoelasticity_impedance_new.png Graphic fil
 e (type png)
 <use figure-result-impedance/fig_viscoelasticity_impedance_new.png>
 Package pdftex.def Info: figure-result-impedance/fig_viscoelasticity_impedance_
-new.png  used on input line 2274.
+new.png  used on input line 2439.
 (pdftex.def)             Requested size: 336.92044pt x 269.4689pt.
-<figure5-result-new/Fig5_P_visc1_phi8_new2.png, id=1380, 484.6908pt x 385.44pt>
+<figure5-result-new/Fig5_P_visc1_phi8_new2.png, id=1213, 484.6908pt x 385.44pt>
 
 File: figure5-result-new/Fig5_P_visc1_phi8_new2.png Graphic file (type png)
 <use figure5-result-new/Fig5_P_visc1_phi8_new2.png>
 Package pdftex.def Info: figure5-result-new/Fig5_P_visc1_phi8_new2.png  used on
- input line 2284.
+ input line 2449.
 (pdftex.def)             Requested size: 339.28123pt x 269.80615pt.
 <figure-result-impedance/fig_viscosidade1_viscoelasticity8_impedance_new.png, i
-d=1381, 483.2454pt x 385.9218pt>
+d=1214, 483.2454pt x 385.9218pt>
 File: figure-result-impedance/fig_viscosidade1_viscoelasticity8_impedance_new.p
 ng Graphic file (type png)
 <use figure-result-impedance/fig_viscosidade1_viscoelasticity8_impedance_new.pn
 g>
 Package pdftex.def Info: figure-result-impedance/fig_viscosidade1_viscoelastici
-ty8_impedance_new.png  used on input line 2291.
+ty8_impedance_new.png  used on input line 2456.
 (pdftex.def)             Requested size: 338.26947pt x 270.14342pt.
-[86] [87 <./figure4-result-new/fig4_P_f3_65_visco_new2.png> <./figure4-result-n
-ew/fig4_P_f7_30_visco_new2.png>] [88 <./figure4-result-new/fig4_P_f10_95_visco_
-new2.png> <./figure4-result-new/fig4_P_f14_60_visco_new2.png>] [89 <./figure-re
+[89] [90 <./figure4-result-new/fig4_P_f3_65_visco_new2.png> <./figure4-result-n
+ew/fig4_P_f7_30_visco_new2.png>] [91 <./figure4-result-new/fig4_P_f10_95_visco_
+new2.png> <./figure4-result-new/fig4_P_f14_60_visco_new2.png>] [92 <./figure-re
 sult-impedance/fig_viscosity_impedance_new.png> <./figure-result-impedance/fig_
-viscoelasticity_impedance_new.png>] [90 <./figure5-result-new/Fig5_P_visc1_phi8
+viscoelasticity_impedance_new.png>] [93 <./figure5-result-new/Fig5_P_visc1_phi8
 _new2.png> <./figure-result-impedance/fig_viscosidade1_viscoelasticity8_impedan
 ce_new.png>]
 Cap\'{\i }tulo 5.
 
-LaTeX Warning: Reference `sec:modelagem' on page 91 undefined on input line 230
-5.
+LaTeX Warning: Reference `sec:modelagem' on page 94 undefined on input line 247
+0.
 
-[91
-
-] [92]
-Ap\^endice A.
-[93
-
-]
-Ap\^endice B.
 [94
 
 ] [95]
-Ap\^endice C.
+Ap\^endice A.
 [96
 
 ]
-Ap\^endice D.
-(./modelo_new.bbl [97
+Ap\^endice B.
+[97
+
+] [98]
+Ap\^endice C.
+[99
 
 ]
-Underfull \hbox (badness 1253) in paragraph at lines 97--101
+Ap\^endice D.
+(./modelo_new.bbl [100
+
+] [101
+
+]
+Underfull \hbox (badness 1253) in paragraph at lines 112--116
 []\T1/futs/m/n/12 R. Quei-roz.  |   []   |   []   |   []   |   []   |   []   | 
   []   |   []   |   []   |   []
  []
 
-[98
-
-])
+)
 
 Package natbib Warning: There were undefined citations.
 
-[99] (./modelo_new.aux (./pretexto.aux))
+[102] (./modelo_new.aux (./pretexto.aux))
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `modelo_new.out' has not changed.
-(rerunfilecheck)             Checksum: D87A8E4BB0C2C726467E2F93D668D2E5;13369.
+(rerunfilecheck)             Checksum: 8FC8778E7DFFFC5BA0A14100A78837EF;13914.
  ) 
 Here is how much of TeX's memory you used:
- 27707 strings out of 478994
- 479750 string characters out of 5862207
- 815601 words of memory out of 5000000
- 44128 multiletter control sequences out of 15000+600000
- 501973 words of font info for 121 fonts, out of 8000000 for 9000
+ 27855 strings out of 478994
+ 483517 string characters out of 5862207
+ 807996 words of memory out of 5000000
+ 44256 multiletter control sequences out of 15000+600000
+ 513017 words of font info for 122 fonts, out of 8000000 for 9000
  1146 hyphenation exceptions out of 8191
- 128i,18n,131p,1303b,618s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 128i,18n,131p,1303b,607s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2021/texm
 f-dist/fonts/type1/public/fourier/fourier-mcl.pfb><c:/texlive/2021/texmf-dist/f
 onts/type1/public/fourier/fourier-mex.pfb><c:/texlive/2021/texmf-dist/fonts/typ
@@ -1878,10 +1945,10 @@ e1/public/fourier/fourier-mlit.pfb><c:/texlive/2021/texmf-dist/fonts/type1/publ
 ic/fourier/fourier-ms.pfb><c:/texlive/2021/texmf-dist/fonts/type1/adobe/utopia/
 putb8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><c:/
 texlive/2021/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on modelo_new.pdf (102 pages, 7846081 bytes).
+Output written on modelo_new.pdf (105 pages, 8891073 bytes).
 PDF statistics:
- 1634 PDF objects out of 1728 (max. 8388607)
- 1408 compressed objects within 15 object streams
- 447 named destinations out of 1000 (max. 500000)
- 898 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1470 PDF objects out of 1728 (max. 8388607)
+ 1231 compressed objects within 13 object streams
+ 455 named destinations out of 1000 (max. 500000)
+ 952 words of extra memory for PDF output out of 10000 (max. 10000000)
 

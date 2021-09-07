@@ -1,56 +1,56 @@
 \babel@toc {portuguese}{}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {2.1}{\ignorespaces Propriedades de cada vaso arterial do modelo.\relax }}{23}{table.caption.10}%
+\contentsline {table}{\numberline {2.1}{\ignorespaces Propriedades de cada vaso arterial do modelo.\relax }}{19}{table.caption.9}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Descrição do comando ajuda.\relax }}{54}{table.caption.34}%
-\contentsline {table}{\numberline {3.2}{\ignorespaces Descrição do comando ler arquivo de comando.\relax }}{56}{table.caption.36}%
-\contentsline {table}{\numberline {3.3}{\ignorespaces Descrição do comando bateria de testes.\relax }}{57}{table.caption.37}%
-\contentsline {table}{\numberline {3.4}{\ignorespaces Descrição do comando listar testes.\relax }}{57}{table.caption.38}%
-\contentsline {table}{\numberline {3.5}{\ignorespaces Descrição do comando executar caso de teste.\relax }}{57}{table.caption.39}%
-\contentsline {table}{\numberline {3.6}{\ignorespaces Descrição do comando para testar a equidade de dois arquivos.\relax }}{58}{table.caption.40}%
-\contentsline {table}{\numberline {3.7}{\ignorespaces Descrição do comando para criar projetos.\relax }}{58}{table.caption.41}%
-\contentsline {table}{\numberline {3.8}{\ignorespaces Descrição do comando para selecionar projetos.\relax }}{59}{table.caption.42}%
-\contentsline {table}{\numberline {3.9}{\ignorespaces Descrição do comando listar projetos.\relax }}{59}{table.caption.43}%
-\contentsline {table}{\numberline {3.10}{\ignorespaces Descrição do comando imprimir projetos.\relax }}{59}{table.caption.44}%
-\contentsline {table}{\numberline {3.11}{\ignorespaces Descrição do comando excluir projetos.\relax }}{60}{table.caption.45}%
-\contentsline {table}{\numberline {3.12}{\ignorespaces Descrição do comando para salvar projetos.\relax }}{60}{table.caption.46}%
-\contentsline {table}{\numberline {3.13}{\ignorespaces Descrição do comando para carregar projetos.\relax }}{61}{table.caption.47}%
-\contentsline {table}{\numberline {3.14}{\ignorespaces Descrição do comando para criar.\relax }}{61}{table.caption.48}%
-\contentsline {table}{\numberline {3.15}{\ignorespaces Descrição do comando para clonar elementos inteligentes.\relax }}{62}{table.caption.49}%
-\contentsline {table}{\numberline {3.16}{\ignorespaces Descrição do comando listar elementos.\relax }}{62}{table.caption.50}%
-\contentsline {table}{\numberline {3.17}{\ignorespaces Descrição do comando imprimir elementos inteligentes.\relax }}{62}{table.caption.51}%
-\contentsline {table}{\numberline {3.18}{\ignorespaces Descrição do comando excluir projetos.\relax }}{63}{table.caption.52}%
-\contentsline {table}{\numberline {3.19}{\ignorespaces Descrição do comando excluir projetos.\relax }}{63}{table.caption.53}%
-\contentsline {table}{\numberline {3.20}{\ignorespaces Descrição do comando para carregar elementos inteligentes.\relax }}{64}{table.caption.54}%
-\contentsline {table}{\numberline {3.21}{\ignorespaces Descrição do comando listar exportações de um elemento inteligente.\relax }}{64}{table.caption.55}%
-\contentsline {table}{\numberline {3.22}{\ignorespaces Descrição do comando para exportar elementos.\relax }}{65}{table.caption.56}%
-\contentsline {table}{\numberline {3.23}{\ignorespaces Descrição do comando para escalar elementos.\relax }}{65}{table.caption.57}%
-\contentsline {table}{\numberline {3.24}{\ignorespaces Descrição do comando para definir parâmetros de elementos.\relax }}{66}{table.caption.58}%
-\contentsline {table}{\numberline {3.25}{\ignorespaces Descrição do comando para definir parâmetros de elementos.\relax }}{66}{table.caption.59}%
-\contentsline {table}{\numberline {3.26}{\ignorespaces Descrição do comando listar fábricas de elemento.\relax }}{67}{table.caption.60}%
-\contentsline {table}{\numberline {3.27}{\ignorespaces Descrição do comando listar exemplos contidos em determinada fábrica de elemento.\relax }}{67}{table.caption.61}%
-\contentsline {table}{\numberline {3.28}{\ignorespaces Descrição do comando para criar objetos inteligentes.\relax }}{68}{table.caption.62}%
-\contentsline {table}{\numberline {3.29}{\ignorespaces Descrição do comando para clonar objetos inteligentes.\relax }}{68}{table.caption.63}%
-\contentsline {table}{\numberline {3.30}{\ignorespaces Descrição do comando listar elementos.\relax }}{69}{table.caption.64}%
-\contentsline {table}{\numberline {3.31}{\ignorespaces Descrição do comando imprimir objetos inteligentes.\relax }}{69}{table.caption.65}%
-\contentsline {table}{\numberline {3.32}{\ignorespaces Descrição do comando excluir objetos inteligentes.\relax }}{70}{table.caption.66}%
-\contentsline {table}{\numberline {3.33}{\ignorespaces Descrição do comando salvar objetos inteligentes.\relax }}{70}{table.caption.67}%
-\contentsline {table}{\numberline {3.34}{\ignorespaces Descrição do comando carregar objetos inteligentes.\relax }}{70}{table.caption.68}%
-\contentsline {table}{\numberline {3.35}{\ignorespaces Descrição dos comandos de exportação elementos contidos no \textit {Forno} de objetos inteligentes.\relax }}{71}{table.caption.69}%
-\contentsline {table}{\numberline {3.36}{\ignorespaces Descrição dos comandos de exportação elementos contidos no \textit {Forno} de objetos inteligentes.\relax }}{72}{table.caption.70}%
-\contentsline {table}{\numberline {3.37}{\ignorespaces Descrição do comando setar objetos inteligentes.\relax }}{72}{table.caption.71}%
-\contentsline {table}{\numberline {3.38}{\ignorespaces Descrição do comando iterar objetos inteligentes.\relax }}{72}{table.caption.72}%
-\contentsline {table}{\numberline {3.39}{\ignorespaces Descrição do comando listar fábricas de iteração.\relax }}{73}{table.caption.73}%
-\contentsline {table}{\numberline {3.40}{\ignorespaces Descrição do comando definir fábricas gráficas.\relax }}{73}{table.caption.74}%
-\contentsline {table}{\numberline {3.41}{\ignorespaces Descrição do comando listar fábricas gráficas.\relax }}{74}{table.caption.75}%
-\contentsline {table}{\numberline {3.42}{\ignorespaces Descrição do comando definir fábricas gráficas.\relax }}{74}{table.caption.76}%
-\contentsline {table}{\numberline {3.43}{\ignorespaces Descrição do comando listar objetos gráficos.\relax }}{75}{table.caption.77}%
-\contentsline {table}{\numberline {3.44}{\ignorespaces Descrição do comando listar elementos gráficos \textit {Canvas}.\relax }}{75}{table.caption.78}%
-\contentsline {table}{\numberline {3.45}{\ignorespaces Descrição dos comandos que enviam um objeto gráfico para ser exibido em um elemento gráfico da interface de usuário.\relax }}{76}{table.caption.79}%
-\contentsline {table}{\numberline {3.46}{\ignorespaces Descrição do comando terminar link gráfico.\relax }}{76}{table.caption.80}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces Descrição do comando ajuda.\relax }}{53}{table.caption.34}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces Descrição do comando ler arquivo de comando.\relax }}{54}{table.caption.36}%
+\contentsline {table}{\numberline {3.3}{\ignorespaces Descrição do comando bateria de testes.\relax }}{55}{table.caption.37}%
+\contentsline {table}{\numberline {3.4}{\ignorespaces Descrição do comando listar testes.\relax }}{56}{table.caption.38}%
+\contentsline {table}{\numberline {3.5}{\ignorespaces Descrição do comando executar caso de teste.\relax }}{56}{table.caption.39}%
+\contentsline {table}{\numberline {3.6}{\ignorespaces Descrição do comando para testar a equidade de dois arquivos.\relax }}{57}{table.caption.40}%
+\contentsline {table}{\numberline {3.7}{\ignorespaces Descrição do comando para criar projetos.\relax }}{57}{table.caption.41}%
+\contentsline {table}{\numberline {3.8}{\ignorespaces Descrição do comando para selecionar projetos.\relax }}{57}{table.caption.42}%
+\contentsline {table}{\numberline {3.9}{\ignorespaces Descrição do comando listar projetos.\relax }}{58}{table.caption.43}%
+\contentsline {table}{\numberline {3.10}{\ignorespaces Descrição do comando imprimir projetos.\relax }}{58}{table.caption.44}%
+\contentsline {table}{\numberline {3.11}{\ignorespaces Descrição do comando excluir projetos.\relax }}{59}{table.caption.45}%
+\contentsline {table}{\numberline {3.12}{\ignorespaces Descrição do comando para salvar projetos.\relax }}{59}{table.caption.46}%
+\contentsline {table}{\numberline {3.13}{\ignorespaces Descrição do comando para carregar projetos.\relax }}{59}{table.caption.47}%
+\contentsline {table}{\numberline {3.14}{\ignorespaces Descrição do comando para criar.\relax }}{60}{table.caption.48}%
+\contentsline {table}{\numberline {3.15}{\ignorespaces Descrição do comando para clonar elementos inteligentes.\relax }}{60}{table.caption.49}%
+\contentsline {table}{\numberline {3.16}{\ignorespaces Descrição do comando listar elementos.\relax }}{61}{table.caption.50}%
+\contentsline {table}{\numberline {3.17}{\ignorespaces Descrição do comando imprimir elementos inteligentes.\relax }}{61}{table.caption.51}%
+\contentsline {table}{\numberline {3.18}{\ignorespaces Descrição do comando excluir projetos.\relax }}{61}{table.caption.52}%
+\contentsline {table}{\numberline {3.19}{\ignorespaces Descrição do comando excluir projetos.\relax }}{62}{table.caption.53}%
+\contentsline {table}{\numberline {3.20}{\ignorespaces Descrição do comando para carregar elementos inteligentes.\relax }}{62}{table.caption.54}%
+\contentsline {table}{\numberline {3.21}{\ignorespaces Descrição do comando listar exportações de um elemento inteligente.\relax }}{63}{table.caption.55}%
+\contentsline {table}{\numberline {3.22}{\ignorespaces Descrição do comando para exportar elementos.\relax }}{63}{table.caption.56}%
+\contentsline {table}{\numberline {3.23}{\ignorespaces Descrição do comando para escalar elementos.\relax }}{64}{table.caption.57}%
+\contentsline {table}{\numberline {3.24}{\ignorespaces Descrição do comando para definir parâmetros de elementos.\relax }}{65}{table.caption.58}%
+\contentsline {table}{\numberline {3.25}{\ignorespaces Descrição do comando para definir parâmetros de elementos.\relax }}{65}{table.caption.59}%
+\contentsline {table}{\numberline {3.26}{\ignorespaces Descrição do comando listar fábricas de elemento.\relax }}{66}{table.caption.60}%
+\contentsline {table}{\numberline {3.27}{\ignorespaces Descrição do comando listar exemplos contidos em determinada fábrica de elemento.\relax }}{66}{table.caption.61}%
+\contentsline {table}{\numberline {3.28}{\ignorespaces Descrição do comando para criar objetos inteligentes.\relax }}{67}{table.caption.62}%
+\contentsline {table}{\numberline {3.29}{\ignorespaces Descrição do comando para clonar objetos inteligentes.\relax }}{67}{table.caption.63}%
+\contentsline {table}{\numberline {3.30}{\ignorespaces Descrição do comando listar elementos.\relax }}{67}{table.caption.64}%
+\contentsline {table}{\numberline {3.31}{\ignorespaces Descrição do comando imprimir objetos inteligentes.\relax }}{68}{table.caption.65}%
+\contentsline {table}{\numberline {3.32}{\ignorespaces Descrição do comando excluir objetos inteligentes.\relax }}{68}{table.caption.66}%
+\contentsline {table}{\numberline {3.33}{\ignorespaces Descrição do comando salvar objetos inteligentes.\relax }}{69}{table.caption.67}%
+\contentsline {table}{\numberline {3.34}{\ignorespaces Descrição do comando carregar objetos inteligentes.\relax }}{69}{table.caption.68}%
+\contentsline {table}{\numberline {3.35}{\ignorespaces Descrição dos comandos de exportação elementos contidos no \textit {Forno} de objetos inteligentes.\relax }}{70}{table.caption.69}%
+\contentsline {table}{\numberline {3.36}{\ignorespaces Descrição dos comandos de exportação elementos contidos no \textit {Forno} de objetos inteligentes.\relax }}{70}{table.caption.70}%
+\contentsline {table}{\numberline {3.37}{\ignorespaces Descrição do comando setar objetos inteligentes.\relax }}{71}{table.caption.71}%
+\contentsline {table}{\numberline {3.38}{\ignorespaces Descrição do comando iterar objetos inteligentes.\relax }}{71}{table.caption.72}%
+\contentsline {table}{\numberline {3.39}{\ignorespaces Descrição do comando listar fábricas de iteração.\relax }}{71}{table.caption.73}%
+\contentsline {table}{\numberline {3.40}{\ignorespaces Descrição do comando definir fábricas gráficas.\relax }}{72}{table.caption.74}%
+\contentsline {table}{\numberline {3.41}{\ignorespaces Descrição do comando listar fábricas gráficas.\relax }}{72}{table.caption.75}%
+\contentsline {table}{\numberline {3.42}{\ignorespaces Descrição do comando definir fábricas gráficas.\relax }}{73}{table.caption.76}%
+\contentsline {table}{\numberline {3.43}{\ignorespaces Descrição do comando listar objetos gráficos.\relax }}{73}{table.caption.77}%
+\contentsline {table}{\numberline {3.44}{\ignorespaces Descrição do comando listar elementos gráficos \textit {Canvas}.\relax }}{74}{table.caption.78}%
+\contentsline {table}{\numberline {3.45}{\ignorespaces Descrição dos comandos que enviam um objeto gráfico para ser exibido em um elemento gráfico da interface de usuário.\relax }}{74}{table.caption.79}%
+\contentsline {table}{\numberline {3.46}{\ignorespaces Descrição do comando terminar link gráfico.\relax }}{74}{table.caption.80}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Propriedades dos segmentos do modelo de árvore arterial~\cite {Duan,Fung}\relax }}{83}{table.caption.92}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Propriedades dos segmentos do modelo de árvore arterial~\cite {Duan,Fung}\relax }}{88}{table.caption.92}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

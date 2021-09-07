@@ -13,6 +13,14 @@ A.~Avolio.
 \newblock Multi-branched model of the human arterial system.
 \newblock {\em Med. Biol. Eng. Comput}, (18):709--718, 1980.
 
+\bibitem{BERTAGLIA2020109595}
+G.~Bertaglia, A.~Navas-Montilla, A.~Valiani, M.~I. {Monge García}, J.~Murillo,
+  and V.~Caleffi.
+\newblock Computational hemodynamics in arteries with the one-dimensional
+  augmented fluid-structure interaction system: viscoelastic parameters
+  estimation and comparison with in-vivo data.
+\newblock {\em Journal of Biomechanics}, 100:109595, 2020.
+
 \bibitem{Brito2017}
 P.~Brito, L.~Meneses, R.~Santos, and R.~Queiroz.
 \newblock Automatic construction of 3d models of arterial tree incorporating
@@ -93,6 +101,13 @@ C.~Peskin.
 \newblock Flow patterns around heart valves: a numerical method.
 \newblock {\em J. Comput. Phys.}, (10):252--271, 1972.
 
+\bibitem{QUARTERONI20043}
+A.~Quarteroni and L.~Formaggia.
+\newblock Mathematical modelling and numerical simulation of the cardiovascular
+  system.
+\newblock In {\em Computational Models for the Human Body}, volume~12 of {\em
+  Handbook of Numerical Analysis}, pages 3--127. Elsevier, 2004.
+
 \bibitem{Queiroz2013}
 R.~Queiroz.
 \newblock {\em Construção automática de modelos de árvores circulatórias e
@@ -109,6 +124,14 @@ N.~Stergiopulos, D.~Young, and T.~R. Rogge.
 \newblock Computer simulation of arterial flow with applications to arterial
   and aortic stenoses.
 \newblock {\em Journal of Biomechanics}, (25):1477--1488, 1992.
+
+\bibitem{TAKAHASHI202129}
+T.~Takahashi, H.~Tomiyama, V.~Aboyans, K.~Kumai, H.~Nakano, M.~Fujii,
+  K.~Shiina, C.~Matsumoto, A.~Yamashina, and T.~Chikamori.
+\newblock Association of pulse wave velocity and pressure wave reflection with
+  the ankle-brachial pressure index in japanese men not suffering from
+  peripheral artery disease.
+\newblock {\em Atherosclerosis}, 317:29--35, 2021.
 
 \bibitem{Taylor1998}
 C.~Taylor, T.~Hughes, and C.~Zarins.

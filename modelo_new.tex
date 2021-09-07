@@ -1,12 +1,26 @@
 \NeedsTeXFormat{LaTeX2e}
 %-----------------------------------------------------------
 \documentclass[a4paper,12pt]{monografia}
-	\usepackage[portuguese, colorinlistoftodos, textsize=tiny]{todonotes}
+
+%\documentclass[
+%oneside,         	 %%retire % do in\'icio desta linha para n\~ao imprimir frente e verso 
+%english,			
+%	french,				
+%	spanish, 
+%brazil			        %% Idioma principal 
+%,<...>]{abntbibufjf}
+
+\usepackage[portuguese, colorinlistoftodos, textsize=tiny]{todonotes}
+
+
 \usepackage{amsmath,amsthm,amsfonts,amssymb}
 \usepackage[mathcal]{eucal}
 \usepackage{latexsym}
 \usepackage[portuguese]{babel}  
-\usepackage[utf8]{inputenc}
+\usepackage{lmodern}						
+\usepackage[T1]{fontenc}		
+\usepackage[utf8]{inputenc}	
+
 \usepackage{setspace}
 \usepackage{bm}
 \usepackage[portuguese,algoruled,longend, linesnumbered]{algorithm2e}
@@ -15,24 +29,30 @@
 \usepackage{subcaption}
 \usepackage{hyperref}
 \usepackage{ulem}
- \hypersetup{colorlinks,
+
+%\usepackage[alf,bibjustif]{abntex2cite}}
+%\usepackage[alf]{abntcite}
+
+\hypersetup{colorlinks,
     debug=false,
     linkcolor=black,  %%% cor do tableofcontents, \ref, \footnote, etc
     citecolor=black,  %%% cor do \cite
     urlcolor=black,   %%% cor do \url e \href
     bookmarksopen=true,
- }
+}
 %\usepackage[alf,bibjustif]{abntex2cite}
-\usepackage[]{natbib}
-
+%\usepackage{natbib}
+%\bibliographystyle{plainnat}
+%\setcitestyle{authoryear,open={((},close={))}} %Citation-related commands
 % \usepackage[square,sort,comma,numbers]{natbib}
-% \usepackage[square,sort,co1mma,numbers]{natbib}
+
+\usepackage[square,sort,comma,numbers]{natbib}
 \usepackage{multirow}
 \usepackage[section]{placeins}
 
 
 \usepackage{mathtools}
-\usepackage{subcaption}
+
 \usepackage{fourier} 
 \usepackage{array}
 \usepackage{makecell}
@@ -104,7 +124,10 @@
 % (BRACIS 2019, ainda escrevendo resumo, isto é só para servir de base) 
 
 
-Neste trabalho, apresentam-se: (i) modelo matemático da literatura que descreve o escoamento sanguíneo pulsátil em modelos de árvores arteriais 1D, (ii) uma ferramenta computacional desenvolvida que calcula a pressão e fluxo em cada vaso a partir do modelo matemático . Os resultados obtidos neste trabalho estão condizentes com dados numéricos relatados na literatura.
+Neste trabalho, apresentam-se: (i) modelo matemático da literatura que descreve o escoamento sanguíneo pulsátil em modelos de árvores arteriais 1D, (ii) uma ferramenta computacional desenvolvida que calcula a pressão e fluxo em cada vaso a partir do modelo matemático .
+\textcolor{blue}{A ferramenta computacional desenvolvida conta com uma estrutura de dados própria que concilia os conceitos de uma linguagem orientada à objetos e bibliotecas adicionais com o modelo matemático e geométrico proposto.
+A estrutura de dados proposta possibilita que as diversas características de uma árvore arterial possam ser armazenadas, utilizadas e visualizadas em tempo de execução.}
+Os resultados obtidos neste trabalho estão condizentes com dados numéricos relatados na literatura.
 
 \noindent \\ \textbf{Palavras-chave:} Árvores arteriais. Escoamento pulsátil. Hemodinâmica Computacional.
 
@@ -113,8 +136,10 @@ Neste trabalho, apresentam-se: (i) modelo matemático da literatura que descreve
 %-----------Digite aqui o seu resumo em Ingl\^es--------------
 \resumo{Abstract} 
 
-In this work, the following are presented: (i) an analytical scheme based on physisc and mathematic laws to calculate the local charactheristics of the pressure and flux wave in 1D arterial tree's models, (ii) a computational environment desenvolved to simulate and visualize the results of the model's construction and hemodynamic studies. The results produced in this work are consistent to real morphometric data and numeric data related in the literature.
-
+In this work, the following are presented: (i) an analytical scheme based on physisc and mathematic laws to calculate the local charactheristics of the pressure and flux wave in 1D arterial tree's models, (ii) a computational environment desenvolved to simulate and visualize the results of the model's construction and hemodynamic studies. 
+\textcolor{blue}{The computational environment is composed of a data structure that integrates the concepts of an object-oriented language and other libraries with the proposed analytical scheme.
+The proposed data structure allows the computational environment to store, utilize and display different characteristics of an arterial tree.} 
+The results produced in this work are consistent to real morphometric data and numeric data related in the literature.
 \noindent \\ \textbf{Keywords:} Arterial trees. Pulsatile flow. Computational hemodynamics. %finalizadas por ponto e inicializadas por letra maiuscula.
 
 
@@ -142,8 +167,8 @@ Agradecimentos
 
 
 %----Sum\'ario, lista de figura e de tabela ------------
- \tableofcontents \thispagestyle{empty} \listoffigures
-\thispagestyle{empty} \listoftables \thispagestyle{empty}
+% \tableofcontents \newpage \listoffigures
+%\thispagestyle{empty} \listoftables \thispagestyle{empty}
 
 
 
@@ -152,7 +177,8 @@ Agradecimentos
 \doublespacing  \begin{tabular}{l l}
 
 PPGMC & Programa de Pós-Graduação em Modelagem Computacional \\
-UFJF & Universidade Federal de Juiz de Fora 
+UFJF & Universidade Federal de Juiz de Fora  \\
+XML & Xtreme Markup Language
 
 
 
@@ -170,26 +196,30 @@ UFJF & Universidade Federal de Juiz de Fora
 \pagestyle{ruledheader}
  
 %% Sum\'ario
-\pdfbookmark[0]{\contentsname}{toc}
-\tableofcontents*
-\cleardoublepage
+%\pdfbookmark[0]{\contentsname}{toc}
+%\tableofcontents*
+%\cleardoublepage
 
 %--------------------------------------------------------------------------------%
 \chapter{INTRODUÇÃO}\label{sec:intro}  %%Nesta linha, dentro de { }, digita-se em CAIXA ALTA, como apresentado aqui
 
-Estudos de simulação hemodinâmica têm sido frequentemente baseados em modelos de árvores arteriais para obter uma melhor compreensão de todos os aspectos relacionados ao escoamento sanguíneo, desde a propagação de ondas e análise do pulso de pressão, passando pelo diagnóstico e inclusive com aplicações no planejamento cirúrgico. Como a representação do sistema cardiovascular através de um modelo puramente 3D que leve em conta a estrutura geométrica exata de todos os vasos não é, no momento, viável computacionalmente, vêm sendo empregados modelos dimensionalmente heterogêneos conhecidos como 0D (zero-dimensional)--1D (unidimensional)--3D (tridimensional) \cite{Formaggia2001}. 
+Estudos de simulação hemodinâmica têm sido frequentemente baseados em modelos de árvores arteriais para obter uma melhor compreensão de todos os aspectos relacionados ao escoamento sanguíneo, desde a propagação de ondas e análise do pulso de pressão, passando pelo diagnóstico e inclusive com aplicações no planejamento cirúrgico. Como a representação do sistema cardiovascular através de um modelo puramente 3D que leve em conta a estrutura geométrica exata de todos os vasos não é, no momento, viável computacionalmente, vêm sendo empregados modelos dimensionalmente heterogêneos conhecidos como 0D (zero-dimensional)--1D (unidimensional)--2D (bidimensional)--3D (tridimensional) \cite{Formaggia2001}. 
 
 Modelos 3D \cite{Peskin1972,Taylor1998} são utilizados para estudar em detalhe a hemodinâmica local de distritos arteriais de interesse, e a geometria destes modelos são provenientes de dados anatômicos obtidos normalmente via reconstrução de imagens médicas de pacientes específicos. Modelos 1D \cite{Avolio,Formaggia2003,Stergiopulos1992} são adotados para representar as artérias de maior calibre e a estrutura geométrica destes modelos pode ser construída a partir de dados anatômicos. Tais modelos são capazes de capturar os efeitos de propagação de ondas~\cite{Anliker1971,Duan}, a interação das reflexões destas ondas e dar como resultado um pulso de pressão e vazão com significado fisiológico tanto em artérias centrais como periféricas. No entanto, um modelo 1D de toda a árvore arterial sistêmica não é possível devido à falta de dados anatômicos precisos das regiões periféricas. Portanto, a árvore tem que ser truncada em algum nível. Normalmente, este truncamento é feito empregando modelos 0D \cite{Mates1988,Stergiopulos1992} conhecidos por terminais Windkessel à jusante da posição distal do modelo 1D para representar o comportamento de distritos arteriais relacionados com o nível de arteríolas e capilares. 
 
-\textcolor{red}{IGOR: os dois parágrafos acima estão legais no sentido da ideia para se colocar em uma introdução, mais necessitam ser um pouco reescritos e principalmente, citar referências mais recentes de estudos hemodinâmicas envolvendo modelos 3D, 1D, 0D, e modelos acoplados 0D-1D, 3D-1D-0D. Vale a pena buscar estas referências e ler a introdução deste artigos}
+Os modelos matemáticos são reconhecidos como boas ferramentas de medição tendo seus resultados comparados com dados in-vivo~\cite{BERTAGLIA2020109595}. Para simular corretamente a hemodinâmica corporal, as propriedades viscoelásticas do vaso precisam ser consideradas no comportamento do escoamento cardiovascular. Apesar disso, além da dificuldade de obter dados anatômicos precisos, a quantidade de cálculos necessários e a complexidade matemática e numérica fazem do desenvolvimento de ferramentas confiáveis e práticas para a simulação do sistema cardiovascular humano um dos desafios das próximas décadas~\cite{QUARTERONI20043}.
+
+\textcolor{red}{IGOR: os dois parágrafos acima estão legais no sentido da ideia para se colocar em uma introdução, mais necessitam ser um pouco reescritos e principalmente, citar referências mais recentes de estudos hemodinâmicas envolvendo modelos 3D, 1D, 0D, e modelos acoplados 0D-1D, 3D-1D-0D. Vale a pena buscar estas referências e ler a introdução deste artigos}\textcolor{green}{OK}
 
 A incidência maior de picos na onda de pressão ao percorrer a aorta já foi documentada como evidência para os efeitos da reflexão em árvores vasculares \cite{Kouchoukos,Lighthill,McDonald}. Enquanto as áreas de reflexão não podem ser completamente conhecidas ou localizadas, é geralmente aceito que a forma da onda de pressão é modificada significativamente enquanto progride pela aorta, de uma forma que só pode ser explicada por reflexões de onda.  Um entendimento mais claro da relação entre modificações e fatores de modificação motiva a busca e desenvolvimento de modelos matemáticos que determinam a forma da onda que o pulso de pressão toma em cada ponto ao percorrer uma árvore arterial. 
 
 Dentro deste contexto, adotou-se neste trabalho o modelo matemático de Duan e Zamir ~\cite{Duan} que descreve escoamento sanguíneo pulsátil em árvores arteriais. Estes autores propuseram um modelo relativamente simples para representação da pressão sanguínea e do fluxo em um modelo de árvore arterial. Dentro de cada segmento de vaso, o escoamento sanguíneo foi calculado baseado em uma aproximação de Womersley, incluindo a elasticidade da parede, bem como a densidade do sangue e a viscosidade.
 
-A capacidade de capturar o pico de pressão existente no escoamento sanguíneo justificativa a escolha do modelo matemático de Duan e Zamir para implementação e simulação computacional. Este modelo possibilita o cálculo correto das características locais das ondas de pressão e fluxo a medida que elas progridem ao longo de um modelo de árvore 1D e se tornam modificadas por reflexões de onda.
+A capacidade de capturar o pico de pressão existente no escoamento sanguíneo justifica a escolha do modelo matemático de Duan e Zamir para implementação e simulação computacional. Este modelo possibilita o cálculo correto das características locais das ondas de pressão e fluxo a medida que elas progridem ao longo de um modelo de árvore 1D e se tornam modificadas por reflexões de onda.
 
-\textcolor{red}{IGOR: escreva um parágrafo de trabalhos da literatura que citam e utilizam o modelo de Duan e Zamir. Busque referências na literatura. Lembrando que esta referência \cite{Duan} está errada. A referência correta é de 1995. Principalmente, cite o seu trabalho publicado na revista Mundi deste parágrafo.}
+A presença de picos de pressão, a velocidade da onda e a pressão da reflexão de onda podem indicar a existência problemas na circulação periférica~\cite{TAKAHASHI202129}. Portanto, através do modelo apresentado é possível analisar os modelos geométricos de árvores arteriais, permitindo sugerir e planejar intervenções subsequentes, sem a necessidade de procedimentos invasivos.
+
+\textcolor{red}{IGOR: escreva um parágrafo de trabalhos da literatura que citam e utilizam o modelo de Duan e Zamir. Busque referências na literatura. Lembrando que esta referência \cite{Duan} está errada. A referência correta é de 1995. Principalmente, cite o seu trabalho publicado na revista Mundi deste parágrafo.}\textcolor{green}{OK}
 
 %--------------------------------------------------------------------------------%
 \section{OBJETIVOS}\label{sec:obj}
@@ -198,6 +228,9 @@ Os objetivos que norteiam este trabalho são:
 \begin{itemize}
 	\item desenvolver uma ferramenta computacional capaz de simular o modelo matemático de Duan e Zamir;
 	\item aplicar a ferramenta desenvolvida considerando diferentes cenários hemodinâmicos para investigar os efeitos da viscosidade sanguínea e da viscoelasticidade da parede do vaso no escoamento sanguíneo
+	\item aplicar conceitos da linguagem orientada à objetos C++ à ferramenta computacional, bem como disponibilizar uma interface gráfica através da adição de bibliotecas complementares OpenGL/Qt.
+	\item generalizar a estrutura de dados da ferramenta computacional para que ela possa ser utilizada futuramente, no estudo de árvore arteriais e na visualização dos resultados de uma simulação computacional.
+	\item contribuir com a literatura ao reproduzir experimentos de escoamento pulsátil, propor um modelo de classes com a adição de propriedades complexas e, finalmente, entregar uma ferramenta computacional capaz de analisar modelos geométricos similares.
 \end{itemize}
 
 %--------------------------------------------------------------------------------%
@@ -206,20 +239,26 @@ Os objetivos que norteiam este trabalho são:
 Os demais capítulos deste trabalho estão organizados como segue:
 \begin{itemize}
 	\item Capítulo 2 -
+	Primeiramente, neste capítulo é apresentado o modelo matemático utilizado para calcular os efeitos do escoamento pulsátil ao atravessar uma árvore arterial sobre três cenários diferentes, o primeiro sobre o efeito da viscoelasticidade dos vasos sanguíneos, em seguida da viscosidade sanguínea e, finalmente, um cenário com ambos os efeitos.
 	
-	\item Capítulo 3 --
-	Neste capítulo, apresenta-se a ferramenta computacional desenvolvida em C++,  a qual contou com a utilização das bibliotecas Qt/OpenGL para ajudar na elaboração da interface gráfica
-	\item Capítulo 4 ---
+	\item Capítulo 3 -
+	Neste capítulo, apresenta-se a ferramenta computacional desenvolvida em C++, a qual conta com a utilização das bibliotecas Qt/OpenGL acrescentada de funcionalidades da programação paralela, orientação à objetos e utilização de estruturas modernas~\cite{factorypattern}.
 	
-	\item Capítulo 5
+	\item Capítulo 4 -
+	O quarto capítulo discorre sobre os resultados numéricos obtidos e uma breve discussão é apresentada. Os resultados numéricos obtidos pela ferramenta computacional proposta, em cima de sua estruturas de dados própria, foram comparados com os resultados obtidos pela literatura.
+	
+	\item Anexos -
+	A seção de anexos contém informações complementares ao uso da ferramenta. O Anexo~\ref{annex1} contém os passos necessários para se compilar a ferramenta computacional. O Anexo~\ref{annex2} demonstra o formato esperado de um arquivo de comandos à ser utilizado. Os Anexos~\ref{annex3} e \ref{annex4} representam os arquivos de saída da ferramenta computacional, um elemento e um objeto inteligente, respectivamente.
 \end{itemize}
 
-\textcolor{red}{IGOR: complemente esta seção de organização. Recomendo fortemente ler a introdução da minha dissertação e tese para ter mais ideias de como montar uma introdução para sua dissertação.}
+Este trabalho num primeiro momento descreverá o esquema iterativo e os conceitos matemáticos que regem o escoamento sanguíneo. Em seguida, propõe uma ferramenta computacional cujo principal objetivo é resolver e visualizar os efeitos da reflexão de onda no escoamento sanguíneo. As tecnologias inseridas na ferramenta computacional permitem que ela seja altamente configurável em tempo de execução. Ao descrever o funcionamento da ferramenta computacional, o modelo matemático e geométrico é constantemente validado, pois o principal objetivo da ferramenta computacional é reproduzir corretamente o escoamento sanguíneo em cenários diferentes.
+
+\textcolor{red}{IGOR: complemente esta seção de organização. Recomendo fortemente ler a introdução da minha dissertação e tese para ter mais ideias de como montar uma introdução para sua dissertação.}\textcolor{green}{OK}
 
 %--------------------------------------------------------------------------------%
 \chapter{MODELAGEM DO ESCOAMENTO SANGUÍNEO}\label{sec:modelagem_escoamento}
 
-\textcolor{red}{IGOR: está errada a citação do trabalho do método de Duan e Zamir (1995), não é a citação que colocou \cite{Duan}.}
+\textcolor{red}{IGOR: está errada a citação do trabalho do método de Duan e Zamir (1995), não é a citação que colocou \cite{Duan}.}\textcolor{green}{OK}
 
 Neste capítulo, apresenta-se em detalhe o modelo matemático de Duan e Zamir \cite{Duan1992}, para o escoamento sanguíneo pulsátil em árvores arteriais. Por fim, apresenta um algoritmo que sistematiza os passos dos cálculos realizados para obtenção da pressão e fluxo ao longo da árvore arterial.
 
@@ -663,7 +702,7 @@ A classe \textit{WiseElement} foi desenvolvida para construir a estrutura abstra
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[scale=1.5]{Figures/WiseElementStatus@16x.png}
-	\caption{Máquina de Status que controla o funcionamento de um elemento inteligente.}
+	\caption{Máquina de estados que controla o funcionamento de um elemento inteligente.}
 	\label{fig3:wiselementstatus}
 \end{figure}
 
@@ -748,7 +787,7 @@ Objetos inteligentes também tem seu funcionamento descrito por uma máquina de 
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[scale=2]{Figures/WiseObjectStatus@16x.png}
-	\caption{Modelo gráfico \textit{GraphicModel}, contém uma coleção de objetos gráficos.}
+	\caption{Máquina de estados utilizada pelos objetos inteligentes \textit{WiseObject}.}
 	\label{fig7:wiseobjectstatuses}
 \end{figure}
 
@@ -889,7 +928,53 @@ Quando se trata de um comando de escrita ou leitura, a thread \textit{WiseIO} é
 
 Os trabalhos de iteração funcionam da mesma forma que as de leitura ou escrita, entretanto são enviadas a threads \textit{WiseProcessor}. Essas threads não possuem lógicas muito complexas, elas são responsáveis apenas por gerenciar os objetos e chamar os métodos equivalentes, por este motivo os objetos inteligentes e elementos inteligentes possuem métodos abstratos e seguem esses conjuntos de regras, para que uma estrutura que desconheça o seu funcionamento ou suas estruturas internas seja capaz de executar métodos padrões. 
 
-Mesmo com a arquitetura de threads inclusa na ferramenta computacional ainda é possível que ela seja executada em plataformas de thread única, neste caso mais threads inteligentes não farão diferença. Pois apesar dos trabalhos ainda serem dividos em threads diferentes, elas serão executadas no mesmo núcleo de processamento. As threads inteligentes têm um impacto maior nas atividades de escrita e leitura, isto porque o objeto inteligente está divido em várias estruturas menores que são armazenadas e acessadas constantemente, principalmente no caso de uma animação gráfica.
+Mesmo com a arquitetura de threads inclusa na ferramenta computacional ainda é possível que ela seja executada em plataformas de thread única, neste caso mais threads inteligentes não farão diferença, pois apesar dos trabalhos ainda serem dividos em threads diferentes, elas serão executadas no mesmo núcleo de processamento. As threads inteligentes têm um impacto maior nas atividades de escrita e leitura, isto porque o objeto inteligente está divido em várias estruturas menores que são armazenadas e acessadas constantemente, principalmente no caso de uma animação gráfica.
+
+Ainda dentro do gerenciador de threads inteligentes existem quatro listas de espera:
+
+\begin{itemize}
+	\item \textbf{Pre-Queue (Pre-Q)}: Lista de pré-seleção. Nesta estrutura os trabalhos são agrupados por grupo de trabalho e ordenadas por data de criação.
+	\item \textbf{Queue (Q)}: Lista de espera, para trabalhos que aguardam sua alocação em threads adequadas.
+	\item \textbf{Running}: Lista de trabalhos que já foram enviados às suas respectivas threads e aguardam resposta.
+	\item \textbf{Finished}: Lista de trabalhos que já terminaram o seu ciclo de execução.
+\end{itemize}
+
+No momento de criação os objetos são adicionados à lista \textit{Pre-Q}. A cada ciclo da thread \textit{WiseThreadPool} trabalhos da lista \textit{Pre-Queue} são enviados a lista de espera \textit{Queue}, os trabalhos de cada carga de trabalho são selecionados e enviados caso não haja pré-requisitos. Como exceção está a carga de trabalho utilizada pela ferramenta para armazenar e recuperar estruturas rapidamente, para isto foi reservada a carga de trabalho $w = 6$.
+ 
+Os trabalhos na lista de espera \textit{Queue} podem são balanceados entre as threads disponíveis utilizando uma distribuição uniforme. Uma vez alocados, os trabalhos passam para a lista de trabalhos \textit{Running}, que contém os trabalhos em execução.
+ 
+Finalmente, ao final da execução em uma thread separada, a estrutura armazena os trabalhos finalizados em uma lista \textit{Finished}, estesos trabalhos que finalizaram seu processamento em uma thread concorrente e uma resposta foi recebida pelo gerenciador de threads.
+
+%--------------------------------------------------------------------------------%
+\subsection{TRABALHOS INTELIGENTES}\label{sec:trabalhos}
+
+Para que a comunicação entre as threads inteligentes \textit{WiseThreads} seja feita de forma padronizada e possa ser estendida futuramente. Ao receber alguma demanda, o gerenciador de thread inteligentes \textit{WiseThreadPool} irá criar um objeto do tipo \textit{WiseJob}, este objeto contém os seguinte parâmetros:
+
+\begin{itemize}
+	\item \textbf{ID}: Número de identificação único.
+	\item \textbf{Workload}: Núemero de carga de trabalho.
+	\item \textbf{Arg}: Cadeia de caracteres opcional, pode conter parâmetros para a execução do trabalho.
+	\item \textbf{Type}: Tipo de trabalho.
+	\item \textbf{Status}: Estado do trabalho.
+	\item \textbf{Antecessors}: Lista de trabalhos que antecedem este na ordem de chamada.
+	\item \textbf{Pre-requisites}: Lista de trabalhos que antecedem este na ordem de execução, ou seja, precisam ser finalizados antes.
+	\item \textbf{Ponteiros}: O trabalho do tipo \textit{WiseJob} pode ter um ponteiro para estruturas da ferramenta computacional.
+\end{itemize}
+
+O número de identificação do trabalho é único e incremental, a carga de trabalho representa o grupo em que o trabalho irá executar. Ao executar a leitura de um arquivo de entrada, cada linha do arquivo irá ser interpretada como um comando e adicionada ao mesmo grupo de trabalho e vinculada ao último comando pela lista de antecessores \textit{Antecessors}, desta forma é garantido que eles serão executados em ordem.
+
+O tipo \textit{Type} do trabalho inteligente é um identificador dado ao trabalho após sua interpretação inicial. Este identificador permite às threads determinar qual a composição do objeto e quais parâmetros para execução foram preenchidos, como ponteiros e linhas de entrada. 
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=\linewidth]{Figures/WiseJobStatus@16x.png}
+	\caption{Máquina de estados utilizadas por trabalhos inteligentes \textit{WiseJobs}.}
+	\label{fig9:wise_jobs}
+\end{figure}
+
+Os estados de um trabalho inteligente são ditados pela sua máquina de estados representada na Figura~\ref{fig9:wise_jobs}. Os estados desta máquina indicam em qual estrutura da \textit{WiseThreadPool} o trabalho está e se seu funcionamento é adequado. O estado \textit{Setting} indica que o trabalho foi criado e está na lista de seleção \textit{Pre-Q}; O estado \textit{Queued} significa que o trabalho foi adicionado à fila de espera e aguarda execução; O estado \textit{Running} indica que o trablho está sendo executado; O estado \textit{Finished} indica que o trabalho foi finalizado corretamente; E, o estado \textit{Zombie} indica que o trabalho não foi finalizado corretamente. 
+
+Os objetos de trabalho inteligente servem como mensagens de comunicação entre as threads. Através desta estrutura objetos do tipo \textit{QObject} podem se comunicar e executar a requisição de trabalhos complexo. Isto foi feito para permitir que estruturas \textit{QWidget}, que são elementos gráficos da interface de usuário e herdam da classe \textit{QObject}, pudessem enviar mensagens diretamente ao gerenciador de threads.
 
 %-------------------------------------------------------------------------------------------%
 \section{INTERFACE DE USUÁRIO}\label{sec:userinterface}
@@ -2094,7 +2179,7 @@ Como mencionado anteriormente, a mesma estrutura foi utilizada na construção d
 Finalmente, o funcionamento apresentado pela Figura~\ref{fig:caso_uso2} difere do apresentado na Figura~\ref{fig:caso_uso} apenas na visualização dos objetos gráficos disponibilizada pelos elementos gráficos. Isto garante que ambos os ambientes computacionais sejam alterados em uma eventual atualização de código e que tenham funcionamento idêntico.
 
 %--------------------------------------------------------------------------------%
-\subsection{JANELA}\label{sec:janela}
+\section{JANELA PRINCIPAL}\label{sec:janela}
 
 O ambiente com interface gráfica foi nomeado de \textbf{I}terador \textbf{G}ráfico \textbf{U}niversal, que também está presente como parte de um projeto \textit{Qt}/\textit{C++}. Diferentemente dos outro ambiente, este possui elementos gráficos. O principal elemento gráfico disponibilizado pela interface gráfico é a janela principal, que é um objeto do tipo \textit{QMainWindow}. Estes objetos são disponibilizados pela biblioteca \textit{Qt} e permitem que um projeto \textit{C++} possua uma interface gráfica utilizando diretivas OpenGL e GLUT (The OpenGL Utility Kit).
 
@@ -2112,7 +2197,7 @@ A Figura~\ref{fig:UI} demonstra o comportamento inicial da ferramenta computacio
 As próximas seções discorrem sobre cada grupo de elemento gráfico presente na janela principal da ferramenta computacional e seu funcionamento.
 
 %--------------------------------------------------------------------------------%
-\subsubsection{MENU}\label{sec:menu}
+\subsection{MENU}\label{sec:menu}
 
 O primeiro grupo são os elementos que compões o menu principal da aplicação. Cada opção do menu é representada por um uma linha de texto, ao selecionar a linha uma ação é executada:
 
@@ -2133,26 +2218,32 @@ O primeiro grupo são os elementos que compões o menu principal da aplicação.
 Ao abrir um novo elemento gráfico \textit{Canvas}, uma nova listagem é exibida ao executar o comando de listar canvas. Isso possibilita que mais de um objeto seja exibido ao mesmo tempo em janelas distintas.
 
 %--------------------------------------------------------------------------------%
-\subsubsection{ABAS \& ÁREA DE TRABALHO}\label{sec:abas}
+\subsection{ABAS \& ÁREA DE TRABALHO}\label{sec:abas}
 
 As abas da janela principal selecionam o elemento de interface gráfica que será exibido na área de trabalho da aplicação.
 
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[scale=1]{Figures/IGU_016.png}
+	\includegraphics[width=\linewidth]{Figures/IGU_001a_34.png}
 	\caption{Opções do menu principal da ferramenta computacional \textit{IGU}}
-	\label{fig:menu}
+	\label{fig:abas}
 \end{figure}
+
+Ao selecionar uma das abas, os elementos de interface de usuário da área de trabalho são trocados. Estes elementos são objetos do tipo \textit{QWidget}, estes objetos que são divididos em dois ambientes, o \textit{Canvas} e o \textit{Console}. 
+
+Ao selecionar a opção do \textit{Console} um ambiente similar ao disponibilizado pelo ambiente \textit{InGU} é disponibilizado. Utilizando um elemento de exibição textual longa, uma linha de texto como entrada e um botão, os mesmo comandos disponibilizados na Seção~\ref{sec:console} são acessados por estes elementos gráficos. Para executar uma linha de comando basta inserir-la no elemento gráfico e pressionar o botão ou a tecla \textit{Enter}, a resposta será acoplada ao elemento de exibição textual longa.
+
 \begin{figure}
-	\begin{subfigure}{.5\textwidth}
+	\begin{subfigure}{\textwidth}
 		\centering
-		\includegraphics[width=.8\linewidth]{Figures/IGU_017.png}
+		\includegraphics[width=.9\linewidth]{Figures/IGU_017.png}
 		\caption{Área de trabalho exibindo o elemento gráfico \textit{Canvas} com a aba \textit{Canvas} selecionada.}
 		\label{fig:sfig1}
 	\end{subfigure}%
-	\begin{subfigure}{.5\textwidth}
+	\\
+	\begin{subfigure}{\textwidth}
 		\centering
-		\includegraphics[width=.8\linewidth]{Figures/IGU_001.png}
+		\includegraphics[width=.9\linewidth]{Figures/IGU_001.png}
 		\caption{Área de trabalho exibindo o elemento gráfico \textit{Console} com a aba \textit{Console} selecionada.}
 		\label{fig:sfig2}
 	\end{subfigure}
@@ -2160,16 +2251,90 @@ As abas da janela principal selecionam o elemento de interface gráfica que ser�
 	\label{fig:fig}
 \end{figure}
 
-%--------------------------------------------------------------------------------%
-\subsection{JANELAS}\label{sec:janelas}
+A Figura~\ref{fig:fig} mostra as áreas de trabalho disponibilizadas ao selecionar uma das abas. Através da opção \textit{Canvas}, o elemento gráfico que contém um \textit{QWidget} cuja principal função é uma tela \textit{OpenGL}. Os objetos gráficos, resultados de iterações podem ser visualizados aqui. O funcionamento desta área de trabalho é descrito pela janela \textit{Canvas} e funciona como um 
+reprodutor de vídeo.
 
-
-%--------------------------------------------------------------------------------%
-\subsubsection{JANELA CANVAS}\label{sec:janela_canvas}
-
+As abas foram construídas para realizar todas as funções da ferramenta computacional com seus elementos gráficos. O ciclo de vida da thread \textit{WiseThreadPool} esta diretamente ligado À interface gráfica. Ao utilizar a interface gráfica para percorrer os elementos gráficos, ou executar a animação, irão desencadear chamadas diretas as threads disponibilizadas.
 
 %--------------------------------------------------------------------------------%
-\subsubsection{JANELA JOBS}\label{sec:janela_jobs}
+\section{ÁRVORE DE PROJETOS}\label{sec:arvore_projetos}
+
+Além da área de trabalho, o elemento gráfico que exibe a árvore de projetos se permanece fixa. Este elemento gráfico é um explorador de árvore \textit{QTreeWidget} que exibe todos os projetos carregados e suas estruturas. Esta árvore permite rapidamente verificar os elementos criados, seus nomes, suas chaves únicas e seu status atual.
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=0.4\linewidth]{Figures/IGU_001c.png}
+	\caption{Árvore de projetos, na imagem a ferramenta apresenta um projeto inteligente $p1$, um objeto inteligente $obj1$ e seus elementos gráficos e inteligentes.}
+	\label{fig:arvores}
+\end{figure}
+
+A Figura~\ref{fig:arvores} apresenta o elemento gráfico de uma árvore de projetos com objetos carregados. Na imagem está um projeto nomeado \textit{p1}, um objeto inteligente \textit{obj1} e diversos elementos inteligentes e gráficos. Como visto anteriormente quando o objeto está no estado \textit{GO} significa que ele já foi corretamente configurado e iterado. Dentro deste objeto inteligente estão os elementos inteligentes e gráficos. O primeiro elemento \textit{el1} é o elemento contido na estrutura \textit{Forno} e é o único elemento inteligente no estado \textit{Hot}. Em seguida estão os elementos inteligentes da estrutura \textit{Freezer}, seguidos pelos objetos gráficos.
+
+Através da árvore de projetos é possível observar a troca de estado dos elementos, por exemplo, ao executar a animação os elementos gráficos serão sucessivamente aquecidos. Se observa que a mesma quantidade de elementos gráficos e inteligentes, mantendo a consistência do objeto inteligente, cada passo iterativo com sua respectiva representação gráfica.
+
+%--------------------------------------------------------------------------------%
+\section{JANELAS}\label{sec:janelas}
+
+Nesta seção as janelas disponíveis no menu, descrito na Seção~\ref{sec:menu}, são exibidas e seu funcionamento descrito. Existem dois tipos de janelas disponibilizadas pela ferramenta computacional: \textit{Canvas}, que funciona como um reprodutor de vídeo, exibindo elementos gráficos sucessivamente; \textit{Jobs}, exibe todas as demandas criadas pelo programa enviadas à thread inteligente \textit{WiseThreadTool}. Esta última janela pode ser intstanciada apenas uma vez, enquanto diversos \textit{Canvas} podem ser disponibilizados e exibir diferentes objetos.
+
+%--------------------------------------------------------------------------------%
+\subsection{JANELA CANVAS}\label{sec:janela_canvas}
+
+A janela e área de trabalho \textit{Canvas} possibilita que o usuário selecione o quadro à ser exibido. Cada quadro representa um objeto do tipo \textit{GraphicObject} que é um componente do modelo gráfico \textit{GraphicModel}. O quadro é selecionado através de uma barra de progresso, além de botões que alteram a animação feita com o objeto gráfico. Estes botões são:
+
+\begin{itemize}
+	\item \textbf{Pause}: Pausa a animação do objeto gráfico.
+	\item \textbf{Repeat}: Este botão tem um funcionamento liga e desliga, ao ser ligado, quando a animação chegar ao último elemento gráfico retornará ao primeiro.
+	\item \textbf{Play}:Este botão também tem um funcionamento liga e desliga, ao ser ligado, o elemento gráfico irá percorrer por todos os quadros da animação.
+	\item \textbf{Avançar quadro}: Avança um quadro da animação.
+	\item \textbf{Stop}: Caso o \textit{Play} esteja ativo ele é desativado e a tela volta ao primeiro elemento gráfico da animação.
+\end{itemize}
+
+Todas as funções do \textit{Canvas} só são disponibilizadas ao usuário depois que um objeto gráfico é ligado à tela \textit{OpenGl}. Neste cenário, quando cada quadro é selecionado é alterado quais objetos gráficos \textit{GraphicObject} estarão no estado aquecido \textit{Hot}. Isto foi feito utilizando a conexão entre objetos \textit{QObjects} e os elementos gráficos \textit{QWidget},desta forma a tela é capaz de acionar diretamente a estrutura do \textit{WiseThreadPool} e selecionar quais elementos debem ser aquecidos e exibidos. A mesma conexão é responsável por enviar a linha de comando da aba \textit{Console} à \textit{WiseThreadPool} para que seja executada e em seguida enviar a mensagem de resposta ao elemento textual.
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=\linewidth]{Figures/IGU_025.png}
+	\caption{Janela \textit{Canvas} exibida sobre a área de trabalho \textit{Canvas}, a janela exibindo um gráfico obtido como resultado e a área de trabalho exibindo a árvore arterial estudada.}
+	\label{fig:canvas}
+\end{figure}
+
+Durante sua execução esta janela irá selecionar o elemento gráfico \textit{GraphicElement} que deve ser exibido, selecionando o elemento através do objeto gráfico \textit{GraphicObject}. Para que o elemento seja exibido corretamente ele precisa estar no estado \textit{Hot}, que representa o momento em que o elemento está corretamente carregado em memória com o modelo geométrico e o parâmetro à ser exibido. Portanto, ao selecionar o elemento à ser exibido o \textit{Canvas} irá criar trabalhos de aquecimento de elementos. A coleção de objetos gráficos \textit{GraphicModel} é encarregada de enviar estes trabalhos a thread inteligente \textit{WiseThreadPool}.
+
+%--------------------------------------------------------------------------------%
+\subsection{JANELA JOBS}\label{sec:janela_jobs}
+
+A janela \textit{Jobs} exibe uma listagem compreensiva dos processos inciados e enviados à thread inteligente \textit{WiseThreadPool}, cada comando executado via \textit{Console} ou elemento de interface gráfica irá gerar processos listados nesta janela.
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=\linewidth]{Figures/IGU_023.png}
+	\caption{Janela \textit{Jobs} exibida com a aba \textit{Timetable} selecionada, a janela lista os trabalhos recebidos pela estrutura \textit{WiseThreadPool} e seus tempos de execução.}
+	\label{fig:jobs}
+\end{figure}
+
+A Figura~\ref{fig:jobs} demonstra a tabela obtida lista todos os trabalhos recebidos pela thread inteligente \textit{WiseThread} e suas propriedades. Cada linha nesta janela representa um \textit{WiseJob}, as colunas descrevem propriedades de cada trabalho:
+
+\begin{itemize}
+	\item \textbf{ID}: Número de identificação.
+	\item \textbf{Workload}: Número da carga de trabalho.
+	\item \textbf{Status}: Estado do trabalho.
+	\item \textbf{Created at}: Data de criação.
+	\item \textbf{Msec to Q}: Milisegundos do momento da criação até a chegada a fila.
+	\item \textbf{Msec to Run}: Milisegundos do momento da criação até a alocação do trabalho em uma thread.
+	\item \textbf{Msec to Finish}: Milisegundos do momento da criação até o final de sua execução.
+	\item \textbf{Msec Running}: Milisegundos no estado \textit{RUNNING}.
+	\item \textbf{Finished at}: Data de finalização.
+\end{itemize}
+
+\begin{figure}[!htbp]
+\centering
+\includegraphics[width=\linewidth]{Figures/IGU_022.png}
+\caption{Janela \textit{Jobs} exibida com a aba \textit{Timetable} selecionada, a janela lista os trabalhos recebidos pela estrutura \textit{WiseThreadPool} e os separa logicamente pelas listas de espera.}
+\label{fig:jobs2}
+\end{figure}
+
+A Figura~\ref{fig:jobs2} demonstra as cinco listas exibidas ao selecionar a aba \textit{Timetable} da janela \textit{Jobs}. A primeira lista \textit{All Jobs} lista todos os trabalhos criados e as listas subsequentes listam as listas presentes no gerenciador de threads \textit{WiseThreadPool} descritas na Seção~\ref{sec:trabalhos}. Desta forma é possível verificar os trabalhos que aguardam execução, estão sendo executados e foram finalizados.
 
 %-------------------------------------------------------------------------------------------%
 \chapter{RESULTADOS NUMÉRICOS E DISCUSSÕES}
@@ -2401,7 +2566,8 @@ Como trabalhos futuros, destacam-se:
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \singlespacing
-\bibliographystyle{abbrv}
+%\bibliographystyle{abbrv}
+\bibliographystyle{abnt-alf}
 \bibliography{referencias}
 % \singlespacing
 %\bibliographystyle{ufjfStyle}
