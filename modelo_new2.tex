@@ -1,0 +1,254 @@
+\NeedsTeXFormat{LaTeX2e}
+%-----------------------------------------------------------
+\documentclass[a4paper,12pt]{monografia}
+
+%\documentclass[
+%oneside,         	 %%retire % do in\'icio desta linha para n\~ao imprimir frente e verso 
+%english,			
+%	french,				
+%	spanish, 
+%brazil			        %% Idioma principal 
+%,<...>]{abntbibufjf}
+
+\usepackage[portuguese, colorinlistoftodos, textsize=tiny]{todonotes}
+
+
+\usepackage{amsmath,amsthm,amsfonts,amssymb}
+\usepackage[mathcal]{eucal}
+\usepackage{latexsym}
+\usepackage[portuguese]{babel}  
+\usepackage{lmodern}						
+\usepackage[T1]{fontenc}		
+\usepackage[utf8]{inputenc}	
+
+\usepackage{setspace}
+\usepackage{bm}
+\usepackage[portuguese,algoruled,longend, linesnumbered]{algorithm2e}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{hyperref}
+\usepackage{ulem}
+
+%\usepackage[alf,bibjustif]{abntex2cite}}
+%\usepackage[alf]{abntcite}
+
+\hypersetup{colorlinks,
+    debug=false,
+    linkcolor=black,  %%% cor do tableofcontents, \ref, \footnote, etc
+    citecolor=black,  %%% cor do \cite
+    urlcolor=black,   %%% cor do \url e \href
+    bookmarksopen=true,
+}
+%\usepackage{natbib}
+%\bibliographystyle{plainnat}
+%\setcitestyle{authoryear,open={((},close={))}} %Citation-related commands
+% \usepackage[square,sort,comma,numbers]{natbib}
+
+%\usepackage{natbib}
+%\bibliographystyle{abbrvnat}
+%\setcitestyle{authoryear,open={(},close={)}} %Citation-related commands
+\usepackage[alf,bibjustif]{abntex2cite}
+\usepackage{multirow}
+\usepackage[section]{placeins}
+
+
+\usepackage{mathtools}
+
+\usepackage{fourier} 
+\usepackage{array}
+\usepackage{makecell}
+\usepackage{appendix}
+\usepackage{multirow}
+\usepackage{multicol}
+
+\renewcommand\theadalign{bc}
+\renewcommand\theadfont{\bfseries}
+\renewcommand\theadgape{\Gape[4pt]}
+\renewcommand\cellgape{\Gape[4pt]}
+
+\newcounter{todocounter}
+\newcommand{\comment}[2][]
+{\stepcounter{todocounter}\todo[caption={\thetodocounter: #2}, #1] 
+{\begin{spacing}{1}\thetodocounter: #2\end{spacing}}}
+\reversemarginpar
+\setlength{\marginparwidth}{2.5cm}
+%\lstloadlanguages{C}
+%-----------------------------------------------------------
+%-----------------------------------------------------------
+\theoremstyle{plain}
+\newtheorem{theorem}{Teorema}[section]
+\newtheorem{axiom}{Axioma}[section]
+\newtheorem{corollary}{Corol\'ario}[section]
+\newtheorem{lemma}{Lema}[section]
+\newtheorem{proposition}{Proposi\c{c}\~ao}[section]
+%-----------------------------------------------------------
+\theoremstyle{definition}
+\newtheorem{definition}{Defini\c{c}\~ao}[section]
+\newtheorem{example}{Exemplo}[section]
+%-----------------------------------------------------------
+\theoremstyle{remark}
+\newtheorem{remark}{Observa\c{c}\~ao}[section]
+%-----------------------------------------------------------
+%-----------------------------------------------------------
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\K}{\mathbb{K}}
+\newcommand{\I}{\mathbb{I}}
+\newcommand{\id}{\mathbf{1}}
+%\newcommand{\U}{\mathcal{U}}
+\newcommand{\V}{{\cal V}}
+%-----------------------------------------------------------
+\def\ind{\hbox{ ind }}
+%-----------------------------------------------------------
+\include{hifenizacao}
+\usepackage{appendix}
+\usepackage{multirow}
+
+
+
+\begin{document}
+\include{pretexto}
+
+
+
+% %----------------------------dedicat\'oria  opcional--------------
+% \begin{dedicatoria}
+
+% \end{dedicatoria}
+
+
+%--------Digite aqui o seu resumo em Portugu\^es--------------
+\resumo{Resumo} 
+
+% (BRACIS 2019, ainda escrevendo resumo, isto é só para servir de base) 
+
+
+Neste trabalho, apresentam-se: (i) modelo matemático da literatura que descreve o escoamento sanguíneo pulsátil em modelos de árvores arteriais 1D, (ii) uma ferramenta computacional desenvolvida que calcula a pressão e fluxo em cada vaso a partir do modelo matemático .
+\textcolor{blue}{A ferramenta computacional desenvolvida conta com uma estrutura de dados própria que concilia os conceitos de uma linguagem orientada à objetos e bibliotecas adicionais com o modelo matemático e geométrico proposto.
+A estrutura de dados proposta possibilita que as diversas características de uma árvore arterial possam ser armazenadas, utilizadas e visualizadas em tempo de execução.}
+Os resultados obtidos neste trabalho estão condizentes com dados numéricos relatados na literatura.
+
+\noindent \\ \textbf{Palavras-chave:} Árvores arteriais. Escoamento pulsátil. Hemodinâmica Computacional.
+
+
+
+%-----------Digite aqui o seu resumo em Ingl\^es--------------
+\resumo{Abstract} 
+
+In this work, the following are presented: (i) an analytical scheme based on physisc and mathematic laws to calculate the local charactheristics of the pressure and flux wave in 1D arterial tree's models, (ii) a computational environment desenvolved to simulate and visualize the results of the model's construction and hemodynamic studies. 
+\textcolor{blue}{The computational environment is composed of a data structure that integrates the concepts of an object-oriented language and other libraries with the proposed analytical scheme.
+The proposed data structure allows the computational environment to store, utilize and display different characteristics of an arterial tree.} 
+The results produced in this work are consistent to real morphometric data and numeric data related in the literature.
+\noindent \\ \textbf{Keywords:} Arterial trees. Pulsatile flow. Computational hemodynamics. %finalizadas por ponto e inicializadas por letra maiuscula.
+
+
+%-----------Ou digite aqui o seu resumo em Frances----------
+%\resumo{Resumo} C'est un mod\'ule de la monographie dans \LaTeX et
+%5utilise la classe monografia.cls, avec le but de aider dans le
+%maniement des travaux de conclusion des plusieurs cours de
+%l'Universit\'e F\'ed\'erale de Juiz de Fora.
+
+
+
+%-----------------------------------------------------------
+\agradecimento{Agradecimentos} \indent\indent 
+Agradecimentos
+\newpage
+
+
+
+
+% %---------------------- EPÍGRAFE I (OPCIONAL)--------------
+% \begin{epigrafe}
+% %nao tenho ideia do que colocar aqui
+% \end{epigrafe}
+
+
+
+%----Sum\'ario, lista de figura e de tabela ------------
+% \tableofcontents \newpage \listoffigures
+%\thispagestyle{empty} \listoftables \thispagestyle{empty}
+
+
+
+%----Gloss\'ario ------------
+\chapter*{Lista de Abrevia\c{c}\~oes} \addcontentsline{toc}{chapter}{Lista de Abrevia\c{c}\~oes}
+\doublespacing  \begin{tabular}{l l}
+
+PPGMC & Programa de Pós-Graduação em Modelagem Computacional \\
+UFJF & Universidade Federal de Juiz de Fora  \\
+XML & Xtreme Markup Language\\
+IGU & Iterador Gráfico Universal\\
+InGU & Iterador não-Gráfico Universal\\
+VTK & Visual Tool\textbf{k}it
+
+
+
+\end{tabular}  \thispagestyle{empty}
+%---------------------
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%--------------In\'icio do Conte\'udo---------------------------
+%
+%
+\pagestyle{ruledheader}
+ 
+%% Sum\'ario
+%\pdfbookmark[0]{\contentsname}{toc}
+%\tableofcontents*
+%\cleardoublepage
+
+%--------------------------------------------------------------------------------%
+
+\include{introducao}
+
+
+
+%--------------------------------------------------------------------------------%
+
+\include{modelagem_escoamento}
+
+
+
+%--------------------------------------------------------------------------------%
+
+\include{ferramenta_computacional}
+
+%-------------------------------------------------------------------------------------------%
+
+\include{resultados}
+
+
+
+%-----------------------------------------------------------------------------------------%
+
+\include{conclusoes}
+
+\include{anexos}
+
+
+%Em trabalhos futuros temos a realização de testes com uma maior número de instâncias incluindo instâncias maiores, com mais pontos de demanda e chaves.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\singlespacing
+%\bibliographystyle{abbrv}
+%\bibliographystyle{abnt-alf}
+
+\bibliographystyle{abntex2-alf}
+\bibliography{referencias}
+% \singlespacing
+%\bibliographystyle{ufjfStyle}
+% \bibliography{referencias}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}

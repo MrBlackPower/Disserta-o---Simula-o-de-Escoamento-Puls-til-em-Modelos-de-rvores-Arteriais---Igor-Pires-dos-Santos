@@ -1,0 +1,31 @@
+\chapter{CONCLUSÕES E TRABALHOS FUTUROS}\label{sec:conclusoes}
+
+%\textcolor{red}{IGOR: já fiz uma primeira revisão deste capítulo e indico em vermelho o que deve fazer para melhorar este capítulo. Tudo que acrescentar ou mudar coloque em azul.} \textcolor{green}{OK}
+%\textcolor{blue}{XXXXXXXXXXXXX}.
+
+Em relação a hemodinâmica, os resultados obtidos neste trabalho estão de acordo com aqueles obtidos por Duan e Zamir\textcolor{blue}{ \cite{Duan1992} } considerando a propagação de uma onda harmônica simples nos três cenários abordados nas simulações. 
+
+Em destaque, visando contribuir na investigação do método desenvolvido por por Duan e Zamir, curvas de impedância de entrada do modelo de árvore canina aqui considerada foram apresentadas. Estas curvas apresentam comportamento que pode ser observado em dados experimentais.
+
+Este trabalho resultou no desenvolvimento de uma nova ferramenta computacional descrita no Capítulo~\ref{sec:ferramenta_computacional}, que permite a simulação de escoamento sanguíneo pulsátil em modelos de árvores arteriais no contexto de Duan e Zamir. A ferramenta computacional está disponibilizada no repositório de código aberto Bitbucket:
+
+\begin{itemize}
+	\item \textbf{Link para Repositório}: \href{http://bit.ly/2KwZ4np}{http://bit.ly/2KwZ4np}
+\end{itemize}
+
+As informações necessárias para compilar a ferramenta computacional e seus ambientes esta inclusa no Anexo e na página inicial do repositório.
+
+%\textcolor{red}{IGOR: escreva um parágrafo destacando propriedades/características e potencialidades da sua ferramenta computacional. Talvez você poderá recuperar ou utilizar algo do parágrafo abaixo.} \textcolor{green}{OK}
+
+%\textcolor{blue}{A ferramenta simula e analisa modelos de árvores arteriais, podendo ser compilada nos Sistemas Operacionais: Windows e Ubuntu(Unix). O modelo de classes permite a fácil adição e configuração do ambiente para executar este experimento sobre diferentes cenários ou até mesmo outros experimentos. Os modelos podem ter sua análise e gráficos gerados automaticamente através dos comandos da ferramenta computacional. O código possibilita o processamento concorrente de diversos modelos em um mesmo ambiente. Cada uma destas contribuições resultou numa ferramenta robusta,  ferramenta esta que além de analisar corretamente as variações de fluxo e pressão através de um modelo de árvore arterial, possibilita que as simulações sejam facilmente ajustadas e analisadas, com ou sem interface gráfica.}
+
+%\textcolor{red}{IGOR: o parágrafo acima descreve a ferramenta descrita no Capítulo 3? Este parágrafo representa a descrição da ferramenta.} \textcolor{green}{OK}
+
+Como trabalhos futuros, destacam-se:
+\begin{itemize}
+	\item Analisar hemodinamicamente modelos de árvores gerados no contexto do método CCO (\emph{Constrained Constructive Optimization}) \cite{Karch1999,Queiroz2013,Queiroz2015,Brito2017};
+	\item Investigar a influência da escolha parâmetros na resposta do método, tais como: módulo de Young e espessura do vaso;
+	\item Analisar o resultado hemodinâmico utilizando um outro esquema iterativo;
+	\item Quantificação do aumento/perda de velocidade ao utilizar múltiplas threads;
+	%\item \textcolor{red} {IGOR: descreva algo que poderia ser interessante agregar na ferramenta, pode ser mais de uma coisa (coloque em item)} \textcolor{green}{OK}.
+\end{itemize}
