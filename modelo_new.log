@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.7.25)  7 SEP 2021 01:45
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.7.25)  7 SEP 2021 11:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -10,15 +10,15 @@ Document Class: monografia 2001/04/21 v1.4e Standard LaTeX document class
 (c:/texlive/2021/texmf-dist/tex/latex/base/size12.clo
 File: size12.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 )
-\c@part=\count179
-\c@chapter=\count180
-\c@section=\count181
-\c@subsection=\count182
-\c@subsubsection=\count183
-\c@paragraph=\count184
-\c@subparagraph=\count185
-\c@figure=\count186
-\c@table=\count187
+\c@part=\count175
+\c@chapter=\count176
+\c@section=\count177
+\c@subsection=\count178
+\c@subsubsection=\count179
+\c@paragraph=\count180
+\c@subparagraph=\count181
+\c@figure=\count182
+\c@table=\count183
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
@@ -38,7 +38,7 @@ Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
 \XKV@tempa@toks=\toks16
 
 (c:/texlive/2021/texmf-dist/tex/generic/xkeyval/keyval.tex))
-\XKV@depth=\count188
+\XKV@depth=\count184
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (c:/texlive/2021/texmf-dist/tex/latex/xcolor/xcolor.sty
@@ -47,13 +47,12 @@ Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 (c:/texlive/2021/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Driver file: xetex.def on input line 225.
 
-(c:/texlive/2021/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+(c:/texlive/2021/texmf-dist/tex/latex/graphics-def/xetex.def
+File: xetex.def 2021/03/18 v5.0k Graphics/color driver for xetex
 )
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
 Package xcolor Info: Model `RGB' extended on input line 1364.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
 Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
@@ -93,7 +92,7 @@ Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 (c:/texlive/2021/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 105.
+Package graphics Info: Driver file: xetex.def on input line 105.
 )
 \Gin@req@height=\dimen141
 \Gin@req@width=\dimen142
@@ -121,29 +120,34 @@ Package: pgfsys 2020/12/27 v3.1.8b (3.1.8b)
 \pgf@yd=\dimen152
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count189
-\c@pgf@countb=\count190
-\c@pgf@countc=\count191
-\c@pgf@countd=\count192
+\c@pgf@counta=\count185
+\c@pgf@countb=\count186
+\c@pgf@countc=\count187
+\c@pgf@countd=\count188
 \t@pgf@toka=\toks21
 \t@pgf@tokb=\toks22
 \t@pgf@tokc=\toks23
-\pgf@sys@id@count=\count193
+\pgf@sys@id@count=\count189
  (c:/texlive/2021/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2020/12/27 v3.1.8b (3.1.8b)
 )
-Driver file for pgf: pgfsys-pdftex.def
+Driver file for pgf: pgfsys-xetex.def
 
-(c:/texlive/2021/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
-File: pgfsys-pdftex.def 2020/12/27 v3.1.8b (3.1.8b)
+(c:/texlive/2021/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-xetex.def
+File: pgfsys-xetex.def 2020/12/27 v3.1.8b (3.1.8b)
+
+(c:/texlive/2021/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvipdfmx.def
+File: pgfsys-dvipdfmx.def 2020/12/27 v3.1.8b (3.1.8b)
 
 (c:/texlive/2021/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
 File: pgfsys-common-pdf.def 2020/12/27 v3.1.8b (3.1.8b)
+)
+\pgfsys@objnum=\count190
 )))
 (c:/texlive/2021/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgfsyssoftpath@smallbuffer@items=\count194
-\pgfsyssoftpath@bigbuffer@items=\count195
+\pgfsyssoftpath@smallbuffer@items=\count191
+\pgfsyssoftpath@bigbuffer@items=\count192
 )
 (c:/texlive/2021/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2020/12/27 v3.1.8b (3.1.8b)
@@ -155,7 +159,7 @@ Package: pgfcore 2020/12/27 v3.1.8b (3.1.8b)
 (c:/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (c:/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen153
-\pgfmath@count=\count196
+\pgfmath@count=\count193
 \pgfmath@box=\box48
 \pgfmath@toks=\toks24
 \pgfmath@stack@operand=\toks25
@@ -179,7 +183,7 @@ x)
 (c:/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithm
 etics.code.tex)))
 (c:/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count197
+\c@pgfmathroundto@lastzeros=\count194
 ))
 (c:/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
 (c:/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
@@ -216,7 +220,7 @@ File: pgfcorescopes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 \pgfpic=\box49
 \pgf@hbox=\box50
 \pgf@layerbox@main=\box51
-\pgf@picture@serial@count=\count198
+\pgf@picture@serial@count=\count195
 )
 (c:/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code
 .tex
@@ -247,8 +251,8 @@ File: pgfcorearrows.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 (c:/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 \pgf@max=\dimen177
-\pgf@sys@shading@range@num=\count199
-\pgf@shadingcount=\count266
+\pgf@sys@shading@range@num=\count196
+\pgf@shadingcount=\count197
 )
 (c:/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2020/12/27 v3.1.8b (3.1.8b)
@@ -305,7 +309,7 @@ Package: tikz 2020/12/27 v3.1.8b (3.1.8b)
 (c:/texlive/2021/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.co
 de.tex
 File: pgflibraryplothandlers.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgf@plot@mark@count=\count267
+\pgf@plot@mark@count=\count198
 \pgfplotmarksize=\dimen182
 )
 \tikz@lastx=\dimen183
@@ -320,36 +324,36 @@ File: pgflibraryplothandlers.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 \tikz@figbox@bg=\box55
 \tikz@tempbox=\box56
 \tikz@tempbox@bg=\box57
-\tikztreelevel=\count268
-\tikznumberofchildren=\count269
-\tikznumberofcurrentchild=\count270
-\tikz@fig@count=\count271
+\tikztreelevel=\count199
+\tikznumberofchildren=\count266
+\tikznumberofcurrentchild=\count267
+\tikz@fig@count=\count268
 
 (c:/texlive/2021/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgfmatrixcurrentrow=\count272
-\pgfmatrixcurrentcolumn=\count273
-\pgf@matrix@numberofcolumns=\count274
+\pgfmatrixcurrentrow=\count269
+\pgfmatrixcurrentcolumn=\count270
+\pgf@matrix@numberofcolumns=\count271
 )
-\tikz@expandcount=\count275
+\tikz@expandcount=\count272
 
 (c:/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
 brarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 ))) (c:/texlive/2021/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count276
-\calc@Bcount=\count277
+\calc@Acount=\count273
+\calc@Bcount=\count274
 \calc@Adimen=\dimen191
 \calc@Bdimen=\dimen192
 \calc@Askip=\skip49
 \calc@Bskip=\skip50
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count278
+\calc@Ccount=\count275
 \calc@Cskip=\skip51
 )
-\c@@todonotes@numberoftodonotes=\count279
+\c@@todonotes@numberoftodonotes=\count276
 ) (c:/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2020/09/23 v2.17i AMS math features
 \@mathmargin=\skip52
@@ -370,13 +374,13 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 (c:/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count280
+\inf@bad=\count277
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count281
-\leftroot@=\count282
+\uproot@=\count278
+\leftroot@=\count279
 LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count283
-\DOTSCASE@=\count284
+\classnum@=\count280
+\DOTSCASE@=\count281
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
@@ -385,15 +389,15 @@ LaTeX Info: Redefining \cdots on input line 620.
 \big@size=\dimen195
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count285
-\c@MaxMatrixCols=\count286
+\macc@depth=\count282
+\c@MaxMatrixCols=\count283
 \dotsspace@=\muskip16
-\c@parentequation=\count287
-\dspbrk@lvl=\count288
+\c@parentequation=\count284
+\dspbrk@lvl=\count285
 \tag@help=\toks30
-\row@=\count289
-\column@=\count290
-\maxfields@=\count291
+\row@=\count286
+\column@=\count287
+\maxfields@=\count288
 \andhelp@=\toks31
 \eqnshift@=\dimen196
 \alignsep@=\dimen197
@@ -447,14 +451,15 @@ Package: babel 2021/03/24 3.56 The Babel package
 
 (c:/texlive/2021/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2021/03/24 3.56 Babel common definitions
-\babel@savecnt=\count292
+\babel@savecnt=\count289
 \U@D=\dimen258
 \l@babelnohyphens=\language87
 
-(c:/texlive/2021/texmf-dist/tex/generic/babel/txtbabel.def)
+(c:/texlive/2021/texmf-dist/tex/generic/babel/xebabel.def
+(c:/texlive/2021/texmf-dist/tex/generic/babel/txtbabel.def))
 \bbl@readstream=\read3
 )
-\bbl@dirlevel=\count293
+\bbl@dirlevel=\count290
 
 (c:/texlive/2021/texmf-dist/tex/generic/babel-portuges/portuguese.ldf
 Language: portuges 2021/02/04 v1.2s Portuguese support from the babel system
@@ -507,8 +512,11 @@ File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 Package: inputenc 2020/08/01 v1.3d Input encoding file
 \inpenc@prehook=\toks40
 \inpenc@posthook=\toks41
-)
-(c:/texlive/2021/texmf-dist/tex/latex/setspace/setspace.sty
+
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) (c:/texlive/2021/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
 (c:/texlive/2021/texmf-dist/tex/latex/tools/bm.sty
@@ -521,7 +529,7 @@ LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
 LaTeX Info: Redefining \bm on input line 209.
 ) (./algorithm2e.sty
 Package: algorithm2e 2008/00/00 v3.10 algorithms environments
-\c@AlgoLine=\count294
+\c@AlgoLine=\count291
 
 (c:/texlive/2021/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
@@ -561,29 +569,29 @@ subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
 \algoheightrule=\skip69
 \algotitleheightruledefault=\skip70
 \algotitleheightrule=\skip71
-\c@algocfline=\count295
-\c@algocfproc=\count296
-\c@algocf=\count297
+\c@algocfline=\count292
+\c@algocfproc=\count293
+\c@algocf=\count294
 \algocf@algoframe=\box65
 \algocf@algobox=\box66
 ) (c:/texlive/2021/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count298
+\lst@mode=\count295
 \lst@gtempboxa=\box67
 \lst@token=\toks42
-\lst@length=\count299
+\lst@length=\count296
 \lst@currlwidth=\dimen265
-\lst@column=\count300
-\lst@pos=\count301
+\lst@column=\count297
+\lst@pos=\count298
 \lst@lostspace=\dimen266
 \lst@width=\dimen267
-\lst@newlines=\count302
-\lst@lineno=\count303
+\lst@newlines=\count299
+\lst@lineno=\count300
 \lst@maxwidth=\dimen268
 
 (c:/texlive/2021/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count304
-\lst@skipnumbers=\count305
+\c@lstnumber=\count301
+\lst@skipnumbers=\count302
 \lst@framebox=\box68
 )
 (c:/texlive/2021/texmf-dist/tex/latex/listings/listings.cfg
@@ -608,12 +616,12 @@ Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
 \caption@hangindent=\dimen275
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count306
-\c@continuedfloat=\count307
+\c@caption@flags=\count303
+\c@continuedfloat=\count304
 Package caption Info: listings package is loaded.
 )
-\c@subfigure=\count308
-\c@subtable=\count309
+\c@subfigure=\count305
+\c@subtable=\count306
 )
 (c:/texlive/2021/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2021-02-27 v7.00k Hypertext links for LaTeX
@@ -633,7 +641,7 @@ Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
+Package pdftexcmds Info: \pdfdraftmode not found.
 )
 (c:/texlive/2021/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
@@ -657,13 +665,11 @@ Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 )
 \@linkdim=\dimen276
-\Hy@linkcounter=\count310
-\Hy@pagecounter=\count311
+\Hy@linkcounter=\count307
+\Hy@pagecounter=\count308
 
 (c:/texlive/2021/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2021-02-27 v7.00k Hyperref: PDFDocEncoding definition (HO)
-Now handling font encoding PD1 ...
-... no UTF-8 mapping file for font encoding PD1
 )
 (c:/texlive/2021/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def
 File: hyperref-langpatches.def 2021-02-27 v7.00k Hyperref: patches for babel la
@@ -675,12 +681,10 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 (c:/texlive/2021/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count312
+\Hy@SavedSpaceFactor=\count309
 
 (c:/texlive/2021/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2021-02-27 v7.00k Hyperref: PDF Unicode definition (HO)
-Now handling font encoding PU ...
-... no UTF-8 mapping file for font encoding PU
 )
 Package hyperref Info: Hyper figures OFF on input line 4192.
 Package hyperref Info: Link nesting OFF on input line 4197.
@@ -689,7 +693,7 @@ Package hyperref Info: Plain pages OFF on input line 4207.
 Package hyperref Info: Backreferencing OFF on input line 4212.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4445.
-\c@Hy@tempcnt=\count313
+\c@Hy@tempcnt=\count310
 
 (c:/texlive/2021/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
@@ -705,7 +709,7 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count314
+\Fld@menulength=\count311
 \Field@Width=\dimen278
 \Fld@charsize=\dimen279
 Package hyperref Info: Hyper figures OFF on input line 6075.
@@ -723,26 +727,33 @@ Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packa
 ge
 with kernel methods
 )
-\Hy@abspage=\count315
-\c@Item=\count316
-\c@Hfootnote=\count317
+\Hy@abspage=\count312
+\c@Item=\count313
+\c@Hfootnote=\count314
 )
-Package hyperref Info: Driver (autodetected): hpdftex.
+Package hyperref Info: Driver (autodetected): hxetex.
 
-(c:/texlive/2021/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2021-02-27 v7.00k Hyperref driver for pdfTeX
+(c:/texlive/2021/texmf-dist/tex/latex/hyperref/hxetex.def
+File: hxetex.def 2021-02-27 v7.00k Hyperref driver for XeTeX
+
+(c:/texlive/2021/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\pdfm@box=\box69
+\c@Hy@AnnotLevel=\count315
+\HyField@AnnotCount=\count316
+\Fld@listcount=\count317
+\c@bookmark@seq@number=\count318
+
+(c:/texlive/2021/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
 
 (c:/texlive/2021/texmf-dist/tex/latex/base/atveryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
 e
 with kernel methods
 )
-\Fld@listcount=\count318
-\c@bookmark@seq@number=\count319
-
-(c:/texlive/2021/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
-Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
-
 (c:/texlive/2021/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
@@ -752,14 +763,14 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 \Hy@SectionHShift=\skip72
 )
 (c:/texlive/2021/texmf-dist/tex/generic/ulem/ulem.sty
-\UL@box=\box69
-\UL@hyphenbox=\box70
+\UL@box=\box70
+\UL@hyphenbox=\box71
 \UL@skip=\skip73
 \UL@hook=\toks43
 \UL@height=\dimen280
-\UL@pe=\count320
+\UL@pe=\count319
 \UL@pixel=\dimen281
-\ULC@box=\box71
+\ULC@box=\box72
 Package: ulem 2019/11/18
 \ULdepth=\dimen282
 )
@@ -772,12 +783,12 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip74
 \bibsep=\skip75
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count321
+\c@NAT@ctr=\count320
 )
 (c:/texlive/2021/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@colwidth=\skip76
-\multirow@cntb=\count322
+\multirow@cntb=\count321
 \multirow@dima=\skip77
 \bigstrutjot=\dimen283
 )
@@ -794,7 +805,7 @@ LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
-\g_MT_multlinerow_int=\count323
+\g_MT_multlinerow_int=\count322
 \l_MT_multwidth_dim=\dimen284
 \origjot=\skip78
 \l_MT_shortvdotswithinadjustabove_dim=\dimen285
@@ -803,17 +814,17 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
 \l_MT_below_intertext_sep=\dimen288
 \l_MT_above_shortintertext_sep=\dimen289
 \l_MT_below_shortintertext_sep=\dimen290
-\xmathstrut@box=\box72
+\xmathstrut@box=\box73
 \xmathstrut@dim=\dimen291
 )
 (c:/texlive/2021/texmf-dist/tex/latex/fourier/fourier.sty
 Package: fourier 2020/03/03 2.2 fourier-GUTenberg package
-Now handling font encoding FML ...
-... no UTF-8 mapping file for font encoding FML
-Now handling font encoding FMS ...
-... no UTF-8 mapping file for font encoding FMS
-Now handling font encoding FMX ...
-... no UTF-8 mapping file for font encoding FMX
+
+
+Package fourier Warning: Please consider loading "fourier-otf.sty" instead of
+(fourier)                "fourier.sty" with Unicode engines LuaTeX or XeTeX,
+(fourier)                so that Type1 fonts get replaced by OpenType fonts.
+(fourier)                See file "Erewhon-Math.pdf" for more information.
 
 (c:/texlive/2021/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
@@ -955,49 +966,48 @@ LaTeX Font Info:    Redeclaring math accent \mathring on input line 269.
 (c:/texlive/2021/texmf-dist/tex/latex/tools/array.sty
 Package: array 2020/10/01 v2.5c Tabular extension package (FMi)
 \col@sep=\dimen292
-\ar@mcellbox=\box73
+\ar@mcellbox=\box74
 \extrarowheight=\dimen293
 \NC@list=\toks44
 \extratabsurround=\skip79
 \backup@length=\skip80
-\ar@cellbox=\box74
+\ar@cellbox=\box75
 )
 (c:/texlive/2021/texmf-dist/tex/latex/makecell/makecell.sty
 Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
 \rotheadsize=\dimen294
-\c@nlinenum=\count324
+\c@nlinenum=\count323
 \TeXr@lab=\toks45
 )
 (c:/texlive/2021/texmf-dist/tex/latex/appendix/appendix.sty
 Package: appendix 2020/02/08 v1.2c extra appendix facilities
-\c@@pps=\count325
-\c@@ppsavesec=\count326
-\c@@ppsaveapp=\count327
+\c@@pps=\count324
+\c@@ppsavesec=\count325
+\c@@ppsaveapp=\count326
 )
 (c:/texlive/2021/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
-\c@tracingmulticols=\count328
-\mult@box=\box75
+\c@tracingmulticols=\count327
+\mult@box=\box76
 \multicol@leftmargin=\dimen295
-\c@unbalance=\count329
-\c@collectmore=\count330
-\doublecol@number=\count331
-\multicoltolerance=\count332
-\multicolpretolerance=\count333
+\c@unbalance=\count328
+\c@collectmore=\count329
+\doublecol@number=\count330
+\multicoltolerance=\count331
+\multicolpretolerance=\count332
 \full@width=\dimen296
 \page@free=\dimen297
 \premulticols=\dimen298
 \postmulticols=\dimen299
 \multicolsep=\skip81
 \multicolbaselineskip=\skip82
-\partial@page=\box76
-\last@line=\box77
+\partial@page=\box77
+\last@line=\box78
 \maxbalancingoverflow=\dimen300
-\mult@rightbox=\box78
-\mult@grightbox=\box79
-\mult@gfirstbox=\box80
-\mult@firstbox=\box81
-\@tempa=\box82
+\mult@rightbox=\box79
+\mult@grightbox=\box80
+\mult@gfirstbox=\box81
+\mult@firstbox=\box82
 \@tempa=\box83
 \@tempa=\box84
 \@tempa=\box85
@@ -1034,36 +1044,44 @@ Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
 \@tempa=\box116
 \@tempa=\box117
 \@tempa=\box118
-\c@minrows=\count334
-\c@columnbadness=\count335
-\c@finalcolumnbadness=\count336
+\@tempa=\box119
+\c@minrows=\count333
+\c@columnbadness=\count334
+\c@finalcolumnbadness=\count335
 \last@try=\dimen301
 \multicolovershoot=\dimen302
 \multicolundershoot=\dimen303
-\mult@nat@firstbox=\box119
-\colbreak@box=\box120
-\mc@col@check@num=\count337
+\mult@nat@firstbox=\box120
+\colbreak@box=\box121
+\mc@col@check@num=\count336
 )
-\c@todocounter=\count338
-\c@theorem=\count339
-\c@axiom=\count340
-\c@corollary=\count341
-\c@lemma=\count342
-\c@proposition=\count343
-\c@definition=\count344
-\c@example=\count345
-\c@remark=\count346
+\c@todocounter=\count337
+\c@theorem=\count338
+\c@axiom=\count339
+\c@corollary=\count340
+\c@lemma=\count341
+\c@proposition=\count342
+\c@definition=\count343
+\c@example=\count344
+\c@remark=\count345
 
 \@input{hifenizacao.aux}
 \openout2 = `hifenizacao.aux'.
 
 (./hifenizacao.tex)
-(c:/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
+(c:/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
+File: l3backend-xetex.def 2021-03-18 L3 backend support: XeTeX
+
+(|extractbb --version)
+\c__kernel_sys_dvipdfmx_version_int=\count346
 \l__color_backend_stack_int=\count347
-\l__pdf_internal_box=\box121
-)
-(./modelo_new.aux (./pretexto.aux))
+\g__color_backend_stack_int=\count348
+\g__graphics_track_int=\count349
+\l__pdf_internal_box=\box122
+\g__pdf_backend_object_int=\count350
+\g__pdf_backend_annotation_int=\count351
+\g__pdf_backend_link_int=\count352
+) (./modelo_new.aux (./pretexto.aux))
 \openout1 = `modelo_new.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 110.
@@ -1075,6 +1093,14 @@ LaTeX Font Info:    ... okay on input line 110.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 110.
 LaTeX Font Info:    ... okay on input line 110.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 110.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
+10.
+
+(c:/texlive/2021/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 110.
 LaTeX Font Info:    ... okay on input line 110.
 LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 110.
 LaTeX Font Info:    ... okay on input line 110.
@@ -1108,30 +1134,7 @@ LaTeX Font Info:    Trying to load font information for FMX+futm on input line
 File: fmxfutm.fd futm-extension
 )
 LaTeX Font Info:    ... okay on input line 110.
-
-(c:/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count348
-\scratchdimen=\dimen304
-\scratchbox=\box122
-\nofMPsegments=\count349
-\nofMParguments=\count350
-\everyMPshowfont=\toks46
-\MPscratchCnt=\count351
-\MPscratchDim=\dimen305
-\MPnumerator=\count352
-\makeMPintoPDFobject=\count353
-\everyMPtoPDFconversion=\toks47
-) (c:/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
-Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-85.
-
-(c:/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
-\c@lstlisting=\count354
+\c@lstlisting=\count353
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
@@ -1146,7 +1149,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (c:/texlive/2021/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count355
+\c@section@level=\count354
 )
 LaTeX Info: Redefining \ref on input line 110.
 LaTeX Info: Redefining \pageref on input line 110.
@@ -1166,16 +1169,10 @@ LaTeX Font Info:    Redeclaring math accent \widetilde on input line 110.
 
 
 
-{c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]pdfTeX warning (
-ext4): destination with the same identifier (name{page.1}) has been already use
-d, duplicate ignored
-<to be read again> 
-                   \relax 
-l.63 
-      [1]
+] [1]
 Overfull \hbox (5.90955pt too wide) in paragraph at lines 63--63
-\T1/futs/m/n/12 COMO PARTE IN-TE-GRANTE DOS RE-QUI-SI-TOS NE-CES-S¡-RIOS PARA A
- OB-TEN-«√O DO GRAU
+\T1/futs/m/n/12 COMO PARTE IN-TE-GRANTE DOS RE-QUI-SI-TOS NE-CES-S√Å-RIOS PARA A
+ OB-TEN-√á√ÉO DO GRAU
  []
 
 
@@ -1183,17 +1180,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 63--63
 
  []
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.63 
-      [1])pdfTeX warning (ext4): destination with the same identifier (name{pag
-e.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.137 \resumo{Abstract}
-                        [1
+[1]) [1
 
 
 
@@ -1204,8 +1191,7 @@ l.137 \resumo{Abstract}
 ]
 LaTeX Font Info:    Trying to load font information for FML+futmi on input line
  177.
-
-(c:/texlive/2021/texmf-dist/tex/latex/fourier/fmlfutmi.fd
+ (c:/texlive/2021/texmf-dist/tex/latex/fourier/fmlfutmi.fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
@@ -1271,267 +1257,150 @@ LaTeX Font Info:    Trying to load font information for TS1+futs on input line
 229.
  (c:/texlive/2021/texmf-dist/tex/latex/fourier/ts1futs.fd
 File: ts1futs.fd 2003/09/14 Fontinst v1.801 font definitions for TS1/futs.
-) [7] [8]
+) [7]
+Overfull \hbox (0.3514pt too wide) in paragraph at lines 247--249
+\T1/futs/m/n/12 breve dis-cus-s√£o √© apre-sen-tada. Os re-sul-ta-dos nu-m√©-ri-co
+s ob-ti-dos pela fer-ra-menta com-
+ []
+
+[8]
 Cap\'{\i }tulo 2.
 [9
 
 ] [10]
-<Figures/ArterialTree_Zamir.png, id=471, 884.30376pt x 370.38374pt>
-File: Figures/ArterialTree_Zamir.png Graphic file (type png)
-<use Figures/ArterialTree_Zamir.png>
-Package pdftex.def Info: Figures/ArterialTree_Zamir.png  used on input line 324
-.
-(pdftex.def)             Requested size: 442.1508pt x 185.1914pt.
- [11 <./Figures/ArterialTree_Zamir.png>] [12]
+File: Figures/ArterialTree_Zamir.png Graphic file (type bmp)
+<Figures/ArterialTree_Zamir.png>
+ [11] [12]
 Overfull \hbox (27.33052pt too wide) in paragraph at lines 383--384
-[]\T1/futs/m/n/12 Conforme Duan e Za-mir [[]], para efei-tos de c·l-culo da pre
-s-s„o e fluxo, adimensionalizam-
+[]\T1/futs/m/n/12 Conforme Duan e Za-mir [[]], para efei-tos de c√°l-culo da pre
+s-s√£o e fluxo, adimensionalizam-
  []
 
 [13] [14]
 Overfull \hbox (9.33876pt too wide) in paragraph at lines 445--445
-[]\T1/futs/b/n/14.4 INCORPORA«√O DA VIS-CO-SI-DADE E VIS-CO-E-LAS-TI-CI-DADE NO
+[]\T1/futs/b/n/14.4 INCORPORA√á√ÉO DA VIS-CO-SI-DADE E VIS-CO-E-LAS-TI-CI-DADE NO
  MO-
  []
 
 [15] [16] [17] [18] [19] [20] [21]
 Cap\'{\i }tulo 3.
-<Figures/IGU_002.png, id=661, 1882.03125pt x 1020.81375pt>
-File: Figures/IGU_002.png Graphic file (type png)
-<use Figures/IGU_002.png>
-Package pdftex.def Info: Figures/IGU_002.png  used on input line 634.
-(pdftex.def)             Requested size: 470.50667pt x 255.2028pt.
+File: Figures/IGU_002.png Graphic file (type bmp)
+<Figures/IGU_002.png>
 
-Overfull \hbox (15.26259pt too wide) in paragraph at lines 634--635
+Overfull \hbox (15.20378pt too wide) in paragraph at lines 634--635
  [][] 
  []
 
 [22
 
-] [23 <./Figures/IGU_002.png>]
+] [23]
 Overfull \hbox (12.22246pt too wide) in paragraph at lines 659--660
-[]\T1/futs/m/n/12 AtravÈs das ma-lhas es-tru-tu-ra-das e de-ses-tru-tu-ra-das p
+[]\T1/futs/m/n/12 Atrav√©s das ma-lhas es-tru-tu-ra-das e de-ses-tru-tu-ra-das p
 re-sen-tes na bi-bli-o-teca \T1/futs/m/it/12 VTK\T1/futs/m/n/12 (\T1/futs/m/it/
 12 Visua\T1/futs/m/n/12 -
  []
 
-<Figures/WiseElement@16x.png, id=680, 157.14961pt x 100.375pt>
-File: Figures/WiseElement@16x.png Graphic file (type png)
-<use Figures/WiseElement@16x.png>
-Package pdftex.def Info: Figures/WiseElement@16x.png  used on input line 663.
-(pdftex.def)             Requested size: 314.29843pt x 200.74948pt.
+File: Figures/WiseElement@16x.png Graphic file (type bmp)
+<Figures/WiseElement@16x.png>
 [24]
-<Figures/WiseElements@16x.png, id=687, 221.0132pt x 93.09781pt>
-File: Figures/WiseElements@16x.png Graphic file (type png)
-<use Figures/WiseElements@16x.png>
-Package pdftex.def Info: Figures/WiseElements@16x.png  used on input line 674.
-(pdftex.def)             Requested size: 455.24408pt x 191.77368pt.
- [25 <./Figures/WiseElement@16x.png>] [26 <./Figures/WiseElements@16x.png>]
-<Figures/WiseElementPoints@16x.png, id=700, 105.20555pt x 75.03032pt>
-File: Figures/WiseElementPoints@16x.png Graphic file (type png)
-<use Figures/WiseElementPoints@16x.png>
-Package pdftex.def Info: Figures/WiseElementPoints@16x.png  used on input line 
-690.
-(pdftex.def)             Requested size: 227.62204pt x 162.33781pt.
-<Figures/WiseElementLines@16x.png, id=701, 108.5932pt x 79.86086pt>
-File: Figures/WiseElementLines@16x.png Graphic file (type png)
-<use Figures/WiseElementLines@16x.png>
-Package pdftex.def Info: Figures/WiseElementLines@16x.png  used on input line 6
-91.
-(pdftex.def)             Requested size: 227.62204pt x 167.41783pt.
+File: Figures/WiseElements@16x.png Graphic file (type bmp)
+<Figures/WiseElements@16x.png>
+ [25] [26]
+File: Figures/WiseElementPoints@16x.png Graphic file (type bmp)
+<Figures/WiseElementPoints@16x.png>
+File: Figures/WiseElementLines@16x.png Graphic file (type bmp)
+<Figures/WiseElementLines@16x.png>
 
 Overfull \hbox (1.884pt too wide) in paragraph at lines 690--692
 [][] [] 
  []
 
-<Figures/WiseElementCells@16x.png, id=702, 104.9546pt x 78.35524pt>
-File: Figures/WiseElementCells@16x.png Graphic file (type png)
-<use Figures/WiseElementCells@16x.png>
-Package pdftex.def Info: Figures/WiseElementCells@16x.png  used on input line 6
-93.
-(pdftex.def)             Requested size: 227.62204pt x 169.9358pt.
-[27 <./Figures/WiseElementPoints@16x.png> <./Figures/WiseElementLines@16x.png> 
-<./Figures/WiseElementCells@16x.png>]
-<Figures/WiseElementStatus@16x.png, id=712, 253.88602pt x 168.88094pt>
-File: Figures/WiseElementStatus@16x.png Graphic file (type png)
-<use Figures/WiseElementStatus@16x.png>
-Package pdftex.def Info: Figures/WiseElementStatus@16x.png  used on input line 
-704.
-(pdftex.def)             Requested size: 380.82806pt x 253.32079pt.
- [28 <./Figures/WiseElementStatus@16x.png>]
-<Figures/WiseElementWarming@16x.png, id=721, 216.93547pt x 71.8936pt>
-File: Figures/WiseElementWarming@16x.png Graphic file (type png)
-<use Figures/WiseElementWarming@16x.png>
-Package pdftex.def Info: Figures/WiseElementWarming@16x.png  used on input line
- 713.
-(pdftex.def)             Requested size: 401.33092pt x 133.00325pt.
- [29 <./Figures/WiseElementWarming@16x.png>]
-<Figures/WiseElementCold@16x.png, id=730, 221.51508pt x 92.65868pt>
-File: Figures/WiseElementCold@16x.png Graphic file (type png)
-<use Figures/WiseElementCold@16x.png>
-Package pdftex.def Info: Figures/WiseElementCold@16x.png  used on input line 72
-6.
-(pdftex.def)             Requested size: 409.80322pt x 171.41866pt.
-<Figures/WiseElementHot@16x.png, id=731, 218.06468pt x 133.81242pt>
-File: Figures/WiseElementHot@16x.png Graphic file (type png)
-<use Figures/WiseElementHot@16x.png>
-Package pdftex.def Info: Figures/WiseElementHot@16x.png  used on input line 737
-.
-(pdftex.def)             Requested size: 403.42pt x 247.55315pt.
- [30 <./Figures/WiseElementCold@16x.png>]
-<Figures/WiseElementWorkflow@16x.png, id=739, 182.6825pt x 192.21812pt>
-File: Figures/WiseElementWorkflow@16x.png Graphic file (type png)
-<use Figures/WiseElementWorkflow@16x.png>
-Package pdftex.def Info: Figures/WiseElementWorkflow@16x.png  used on input lin
-e 753.
-(pdftex.def)             Requested size: 455.24408pt x 479.07172pt.
- [31 <./Figures/WiseElementHot@16x.png>] [32 <./Figures/WiseElementWorkflow@16x
-.png>]
+File: Figures/WiseElementCells@16x.png Graphic file (type bmp)
+<Figures/WiseElementCells@16x.png>
+[27]
+File: Figures/WiseElementStatus@16x.png Graphic file (type bmp)
+<Figures/WiseElementStatus@16x.png>
+ [28]
+File: Figures/WiseElementWarming@16x.png Graphic file (type bmp)
+<Figures/WiseElementWarming@16x.png>
+ [29]
+File: Figures/WiseElementCold@16x.png Graphic file (type bmp)
+<Figures/WiseElementCold@16x.png>
+File: Figures/WiseElementHot@16x.png Graphic file (type bmp)
+<Figures/WiseElementHot@16x.png>
+ [30]
+File: Figures/WiseElementWorkflow@16x.png Graphic file (type bmp)
+<Figures/WiseElementWorkflow@16x.png>
+ [31] [32]
 
 LaTeX Warning: Reference `sec:fabricas' on page 33 undefined on input line 770.
 
 
 [33]
-<Figures/WiseObject@16x.png, id=758, 380.48398pt x 247.23618pt>
-File: Figures/WiseObject@16x.png Graphic file (type png)
-<use Figures/WiseObject@16x.png>
-Package pdftex.def Info: Figures/WiseObject@16x.png  used on input line 778.
-(pdftex.def)             Requested size: 437.55318pt x 284.31938pt.
- [34 <./Figures/WiseObject@16x.png>]
-<Figures/WiseObjectStatus@16x.png, id=768, 191.65352pt x 126.78618pt>
-File: Figures/WiseObjectStatus@16x.png Graphic file (type png)
-<use Figures/WiseObjectStatus@16x.png>
-Package pdftex.def Info: Figures/WiseObjectStatus@16x.png  used on input line 7
-89.
-(pdftex.def)             Requested size: 383.30606pt x 253.57172pt.
- [35 <./Figures/WiseObjectStatus@16x.png>] [36]
-<Figures/GraphicModel@16x.png, id=780, 225.34187pt x 107.90312pt>
-File: Figures/GraphicModel@16x.png Graphic file (type png)
-<use Figures/GraphicModel@16x.png>
-Package pdftex.def Info: Figures/GraphicModel@16x.png  used on input line 812.
-(pdftex.def)             Requested size: 450.68262pt x 215.8057pt.
-<Figures/GraphicObjects@16x.png, id=782, 223.08344pt x 89.71016pt>
-File: Figures/GraphicObjects@16x.png Graphic file (type png)
-<use Figures/GraphicObjects@16x.png>
-Package pdftex.def Info: Figures/GraphicObjects@16x.png  used on input line 821
-.
-(pdftex.def)             Requested size: 446.16577pt x 179.41986pt.
- [37 <./Figures/GraphicModel@16x.png>]
-<Figures/GraphicElements@16x.png, id=790, 172.2686pt x 92.345pt>
-File: Figures/GraphicElements@16x.png Graphic file (type png)
-<use Figures/GraphicElements@16x.png>
-Package pdftex.def Info: Figures/GraphicElements@16x.png  used on input line 83
-2.
-(pdftex.def)             Requested size: 344.53635pt x 184.68951pt.
- [38 <./Figures/GraphicObjects@16x.png>]
-<Figures/WiseProject@16x.png, id=797, 185.25461pt x 86.63617pt>
-File: Figures/WiseProject@16x.png Graphic file (type png)
-<use Figures/WiseProject@16x.png>
-Package pdftex.def Info: Figures/WiseProject@16x.png  used on input line 850.
-(pdftex.def)             Requested size: 370.50827pt x 173.27191pt.
- [39 <./Figures/GraphicElements@16x.png> <./Figures/WiseProject@16x.png>]
-<Figures/WiseProjectFactory@16x.png, id=807, 240.02171pt x 158.9689pt>
-File: Figures/WiseProjectFactory@16x.png Graphic file (type png)
-<use Figures/WiseProjectFactory@16x.png>
-Package pdftex.def Info: Figures/WiseProjectFactory@16x.png  used on input line
- 866.
-(pdftex.def)             Requested size: 360.03168pt x 238.45276pt.
-<Figures/WiseElementFactories@16x.png, id=809, 256.58359pt x 222.51883pt>
-File: Figures/WiseElementFactories@16x.png Graphic file (type png)
-<use Figures/WiseElementFactories@16x.png>
-Package pdftex.def Info: Figures/WiseElementFactories@16x.png  used on input li
-ne 875.
-(pdftex.def)             Requested size: 227.62204pt x 197.40279pt.
-<Figures/WiseObjectFactories@16x.png, id=810, 256.70906pt x 221.82875pt>
-File: Figures/WiseObjectFactories@16x.png Graphic file (type png)
-<use Figures/WiseObjectFactories@16x.png>
-Package pdftex.def Info: Figures/WiseObjectFactories@16x.png  used on input lin
-e 875.
-(pdftex.def)             Requested size: 227.62204pt x 196.69582pt.
-<Figures/GraphicObjectFactories@16x.png, id=811, 256.96pt x 222.51883pt>
-File: Figures/GraphicObjectFactories@16x.png Graphic file (type png)
-<use Figures/GraphicObjectFactories@16x.png>
-Package pdftex.def Info: Figures/GraphicObjectFactories@16x.png  used on input 
-line 877.
-(pdftex.def)             Requested size: 227.62204pt x 197.11757pt.
-<Figures/GraphicElementFactories@16x.png, id=812, 263.48438pt x 262.29242pt>
-File: Figures/GraphicElementFactories@16x.png Graphic file (type png)
-<use Figures/GraphicElementFactories@16x.png>
-Package pdftex.def Info: Figures/GraphicElementFactories@16x.png  used on input
- line 877.
-(pdftex.def)             Requested size: 227.62204pt x 226.60367pt.
-<Figures/WiseIterationFactories@16x.png, id=813, 268.37766pt x 218.69203pt>
-File: Figures/WiseIterationFactories@16x.png Graphic file (type png)
-<use Figures/WiseIterationFactories@16x.png>
-Package pdftex.def Info: Figures/WiseIterationFactories@16x.png  used on input 
-line 879.
-(pdftex.def)             Requested size: 227.62204pt x 185.48198pt.
+File: Figures/WiseObject@16x.png Graphic file (type bmp)
+<Figures/WiseObject@16x.png>
+ [34]
+File: Figures/WiseObjectStatus@16x.png Graphic file (type bmp)
+<Figures/WiseObjectStatus@16x.png>
+ [35] [36]
+File: Figures/GraphicModel@16x.png Graphic file (type bmp)
+<Figures/GraphicModel@16x.png>
+File: Figures/GraphicObjects@16x.png Graphic file (type bmp)
+<Figures/GraphicObjects@16x.png>
+ [37]
+File: Figures/GraphicElements@16x.png Graphic file (type bmp)
+<Figures/GraphicElements@16x.png>
+ [38]
+File: Figures/WiseProject@16x.png Graphic file (type bmp)
+<Figures/WiseProject@16x.png>
+ [39]
+File: Figures/WiseProjectFactory@16x.png Graphic file (type bmp)
+<Figures/WiseProjectFactory@16x.png>
+File: Figures/WiseElementFactories@16x.png Graphic file (type bmp)
+<Figures/WiseElementFactories@16x.png>
+File: Figures/WiseObjectFactories@16x.png Graphic file (type bmp)
+<Figures/WiseObjectFactories@16x.png>
+File: Figures/GraphicObjectFactories@16x.png Graphic file (type bmp)
+<Figures/GraphicObjectFactories@16x.png>
+File: Figures/GraphicElementFactories@16x.png Graphic file (type bmp)
+<Figures/GraphicElementFactories@16x.png>
+File: Figures/WiseIterationFactories@16x.png Graphic file (type bmp)
+<Figures/WiseIterationFactories@16x.png>
 
 Overfull \hbox (24.00003pt too wide) in paragraph at lines 874--882
 [][] 
  []
 
-[40] [41 <./Figures/WiseProjectFactory@16x.png>] [42 <./Figures/WiseElementFact
-ories@16x.png> <./Figures/WiseObjectFactories@16x.png> <./Figures/GraphicObject
-Factories@16x.png> <./Figures/GraphicElementFactories@16x.png> <./Figures/WiseI
-terationFactories@16x.png>]
-<Figures/WiseThreadPool@16x.png, id=838, 290.02101pt x 130.2993pt>
-File: Figures/WiseThreadPool@16x.png Graphic file (type png)
-<use Figures/WiseThreadPool@16x.png>
-Package pdftex.def Info: Figures/WiseThreadPool@16x.png  used on input line 900
-.
-(pdftex.def)             Requested size: 455.24408pt x 204.54248pt.
- [43 <./Figures/WiseThreadPool@16x.png>]
-<Figures/WiseThreaPoolCMD.png, id=846, 342.78062pt x 167.12437pt>
-File: Figures/WiseThreaPoolCMD.png Graphic file (type png)
-<use Figures/WiseThreaPoolCMD.png>
-Package pdftex.def Info: Figures/WiseThreaPoolCMD.png  used on input line 915.
-(pdftex.def)             Requested size: 455.24408pt x 221.97423pt.
-<Figures/WiseThreadPoolHeating@16x.png, id=847, 339.89484pt x 131.17758pt>
-File: Figures/WiseThreadPoolHeating@16x.png Graphic file (type png)
-<use Figures/WiseThreadPoolHeating@16x.png>
-Package pdftex.def Info: Figures/WiseThreadPoolHeating@16x.png  used on input l
-ine 924.
-(pdftex.def)             Requested size: 455.24408pt x 175.70296pt.
- [44]
-[45 <./Figures/WiseThreaPoolCMD.png> <./Figures/WiseThreadPoolHeating@16x.png>]
-
+[40] [41] [42]
+File: Figures/WiseThreadPool@16x.png Graphic file (type bmp)
+<Figures/WiseThreadPool@16x.png>
+ [43]
+File: Figures/WiseThreaPoolCMD.png Graphic file (type bmp)
+<Figures/WiseThreaPoolCMD.png>
+File: Figures/WiseThreadPoolHeating@16x.png Graphic file (type bmp)
+<Figures/WiseThreadPoolHeating@16x.png>
+ [44] [45]
 Overfull \hbox (1.58334pt too wide) in paragraph at lines 942--943
-\T1/futs/m/n/12 tra-ba-lhos de cada carga de tra-ba-lho s„o se-le-ci-o-na-dos e
- en-vi-a-dos caso n„o haja prÈ-requisitos.
+\T1/futs/m/n/12 tra-ba-lhos de cada carga de tra-ba-lho s√£o se-le-ci-o-na-dos e
+ en-vi-a-dos caso n√£o haja pr√©-requisitos.
  []
 
 [46]
-<Figures/WiseJobStatus@16x.png, id=865, 191.65352pt x 113.11008pt>
-File: Figures/WiseJobStatus@16x.png Graphic file (type png)
-<use Figures/WiseJobStatus@16x.png>
-Package pdftex.def Info: Figures/WiseJobStatus@16x.png  used on input line 970.
-
-(pdftex.def)             Requested size: 455.24408pt x 268.71516pt.
+File: Figures/WiseJobStatus@16x.png Graphic file (type bmp)
+<Figures/WiseJobStatus@16x.png>
  [47]
-File: Figures/IGU_002.png Graphic file (type png)
-<use Figures/IGU_002.png>
-Package pdftex.def Info: Figures/IGU_002.png  used on input line 986.
-(pdftex.def)             Requested size: 455.24408pt x 246.9162pt.
- [48 <./Figures/WiseJobStatus@16x.png>]
-<Figures/InGU.png, id=879, 296.3572pt x 172.89594pt>
-File: Figures/InGU.png Graphic file (type png)
-<use Figures/InGU.png>
-Package pdftex.def Info: Figures/InGU.png  used on input line 1000.
-(pdftex.def)             Requested size: 455.24408pt x 265.60101pt.
+File: Figures/IGU_002.png Graphic file (type bmp)
+<Figures/IGU_002.png>
+ [48]
+File: Figures/InGU.png Graphic file (type bmp)
+<Figures/InGU.png>
  [49]
-<Figures/InGU_console.png, id=885, 741.77126pt x 440.64626pt>
-File: Figures/InGU_console.png Graphic file (type png)
-<use Figures/InGU_console.png>
-Package pdftex.def Info: Figures/InGU_console.png  used on input line 1009.
-(pdftex.def)             Requested size: 333.79398pt x 198.28897pt.
- [50 <./Figures/InGU.png> <./Figures/InGU_console.png>]
-<Figures/InGU_help.png, id=895, 839.135pt x 1015.795pt>
-File: Figures/InGU_help.png Graphic file (type png)
-<use Figures/InGU_help.png>
-Package pdftex.def Info: Figures/InGU_help.png  used on input line 1044.
-(pdftex.def)             Requested size: 377.60725pt x 457.10353pt.
- [51] [52 <./Figures/InGU_help.png>] [53]
+File: Figures/InGU_console.png Graphic file (type bmp)
+<Figures/InGU_console.png>
+ [50]
+File: Figures/InGU_help.png Graphic file (type bmp)
+<Figures/InGU_help.png>
+ [51] [52] [53]
 Overfull \hbox (23.16899pt too wide) in paragraph at lines 1129--1140
 [][] 
  []
@@ -1597,7 +1466,7 @@ Overfull \hbox (45.56097pt too wide) in paragraph at lines 1512--1523
 
 
 Overfull \hbox (2.47531pt too wide) in paragraph at lines 1531--1532
-\T1/futs/m/n/12 mento pos-sui im-ple-men-tada a ex-por-ta-Á„o dos gr·-fi-cos em
+\T1/futs/m/n/12 mento pos-sui im-ple-men-tada a ex-por-ta-√ß√£o dos gr√°-fi-cos em
  ar-qui-vos de ima-gem. Desta forma,
  []
 
@@ -1707,76 +1576,39 @@ Overfull \hbox (38.79297pt too wide) in paragraph at lines 2132--2143
  []
 
 [72]
-<Figures/CasoDeUso@16x.png, id=1048, 378.28828pt x 427.4093pt>
-File: Figures/CasoDeUso@16x.png Graphic file (type png)
-<use Figures/CasoDeUso@16x.png>
-Package pdftex.def Info: Figures/CasoDeUso@16x.png  used on input line 2155.
-(pdftex.def)             Requested size: 455.24408pt x 514.3625pt.
- [73 <./Figures/CasoDeUso@16x.png>]
-<Figures/CasoDeUso2@16x.png, id=1059, 378.22554pt x 426.1546pt>
-File: Figures/CasoDeUso2@16x.png Graphic file (type png)
-<use Figures/CasoDeUso2@16x.png>
-Package pdftex.def Info: Figures/CasoDeUso2@16x.png  used on input line 2174.
-(pdftex.def)             Requested size: 455.24408pt x 512.93709pt.
- [74] [75 <./Figures/CasoDeUso2@16x.png>]
-<Figures/IGU_001a.png, id=1072, 1927.2pt x 1084.05pt>
-File: Figures/IGU_001a.png Graphic file (type png)
-<use Figures/IGU_001a.png>
-Package pdftex.def Info: Figures/IGU_001a.png  used on input line 2190.
-(pdftex.def)             Requested size: 455.24408pt x 256.07509pt.
- [76 <./Figures/IGU_001a.png>]
-<Figures/IGU_016.png, id=1081, 173.14688pt x 60.97781pt>
-File: Figures/IGU_016.png Graphic file (type png)
-<use Figures/IGU_016.png>
-Package pdftex.def Info: Figures/IGU_016.png  used on input line 2206.
-(pdftex.def)             Requested size: 173.14645pt x 60.97765pt.
-<Figures/IGU_001a_34.png, id=1082, 4795.41562pt x 2898.32813pt>
-File: Figures/IGU_001a_34.png Graphic file (type png)
-<use Figures/IGU_001a_34.png>
-Package pdftex.def Info: Figures/IGU_001a_34.png  used on input line 2227.
-(pdftex.def)             Requested size: 455.24408pt x 275.12291pt.
- [77 <./Figures/IGU_016.png>]
-<Figures/IGU_017.png, id=1089, 1882.03125pt x 1018.80624pt>
-File: Figures/IGU_017.png Graphic file (type png)
-<use Figures/IGU_017.png>
-Package pdftex.def Info: Figures/IGU_017.png  used on input line 2239.
-(pdftex.def)             Requested size: 409.71689pt x 221.79066pt.
-<Figures/IGU_001.png, id=1090, 1886.04625pt x 1020.81375pt>
-File: Figures/IGU_001.png Graphic file (type png)
-<use Figures/IGU_001.png>
-Package pdftex.def Info: Figures/IGU_001.png  used on input line 2246.
-(pdftex.def)             Requested size: 409.71689pt x 221.74483pt.
- [78 <./Figures/IGU_001a_34.png>] [79 <./Figures/IGU_017.png> <./Figures/IGU_00
-1.png>]
-<Figures/IGU_001c.png, id=1105, 256.20718pt x 420.82219pt>
-File: Figures/IGU_001c.png Graphic file (type png)
-<use Figures/IGU_001c.png>
-Package pdftex.def Info: Figures/IGU_001c.png  used on input line 2266.
-(pdftex.def)             Requested size: 182.09485pt x 299.09406pt.
- [80 <./Figures/IGU_001c.png>] [81]
-<Figures/IGU_025.png, id=1119, 1882.03125pt x 1018.80624pt>
-File: Figures/IGU_025.png Graphic file (type png)
-<use Figures/IGU_025.png>
-Package pdftex.def Info: Figures/IGU_025.png  used on input line 2297.
-(pdftex.def)             Requested size: 455.24408pt x 246.43062pt.
-<Figures/IGU_023.png, id=1120, 1668.2325pt x 965.6075pt>
-File: Figures/IGU_023.png Graphic file (type png)
-<use Figures/IGU_023.png>
-Package pdftex.def Info: Figures/IGU_023.png  used on input line 2311.
-(pdftex.def)             Requested size: 455.24408pt x 263.50223pt.
- [82 <./Figures/IGU_025.png>]
-<Figures/IGU_022.png, id=1129, 1669.23625pt x 962.59625pt>
-File: Figures/IGU_022.png Graphic file (type png)
-<use Figures/IGU_022.png>
-Package pdftex.def Info: Figures/IGU_022.png  used on input line 2332.
-(pdftex.def)             Requested size: 455.24408pt x 262.51892pt.
- [83 <./Figures/IGU_023.png>] [84 <./Figures/IGU_022.png>]
+File: Figures/CasoDeUso@16x.png Graphic file (type bmp)
+<Figures/CasoDeUso@16x.png>
+ [73]
+File: Figures/CasoDeUso2@16x.png Graphic file (type bmp)
+<Figures/CasoDeUso2@16x.png>
+ [74] [75]
+File: Figures/IGU_001a.png Graphic file (type bmp)
+<Figures/IGU_001a.png>
+ [76]
+File: Figures/IGU_016.png Graphic file (type bmp)
+<Figures/IGU_016.png>
+File: Figures/IGU_001a_34.png Graphic file (type bmp)
+<Figures/IGU_001a_34.png>
+ [77]
+File: Figures/IGU_017.png Graphic file (type bmp)
+<Figures/IGU_017.png>
+File: Figures/IGU_001.png Graphic file (type bmp)
+<Figures/IGU_001.png>
+ [78] [79]
+File: Figures/IGU_001c.png Graphic file (type bmp)
+<Figures/IGU_001c.png>
+ [80] [81]
+File: Figures/IGU_025.png Graphic file (type bmp)
+<Figures/IGU_025.png>
+File: Figures/IGU_023.png Graphic file (type bmp)
+<Figures/IGU_023.png>
+ [82]
+File: Figures/IGU_022.png Graphic file (type bmp)
+<Figures/IGU_022.png>
+ [83] [84]
 Cap\'{\i }tulo 4.
-<Figures/tree_canine.png, id=1149, 297.36093pt x 155.07938pt>
-File: Figures/tree_canine.png Graphic file (type png)
-<use Figures/tree_canine.png>
-Package pdftex.def Info: Figures/tree_canine.png  used on input line 2354.
-(pdftex.def)             Requested size: 237.88905pt x 124.06364pt.
+File: Figures/tree_canine.png Graphic file (type bmp)
+<Figures/tree_canine.png>
 
 Overfull \hbox (9.27548pt too wide) in paragraph at lines 2362--2380
  [][] 
@@ -1784,110 +1616,41 @@ Overfull \hbox (9.27548pt too wide) in paragraph at lines 2362--2380
 
 [85
 
- <./Figures/tree_canine.png>]
-<figure3-result-new/fig3_P_f3_65_visc_new2.png, id=1172, 483.2454pt x 384.4764p
-t>
-File: figure3-result-new/fig3_P_f3_65_visc_new2.png Graphic file (type png)
-<use figure3-result-new/fig3_P_f3_65_visc_new2.png>
-Package pdftex.def Info: figure3-result-new/fig3_P_f3_65_visc_new2.png  used on
- input line 2391.
-(pdftex.def)             Requested size: 338.26947pt x 269.13164pt.
-<figure3-result-new/fig3_P_f7_30_visc_new2.png, id=1173, 483.2454pt x 384.4764p
-t>
-File: figure3-result-new/fig3_P_f7_30_visc_new2.png Graphic file (type png)
-<use figure3-result-new/fig3_P_f7_30_visc_new2.png>
-Package pdftex.def Info: figure3-result-new/fig3_P_f7_30_visc_new2.png  used on
- input line 2393.
-(pdftex.def)             Requested size: 338.26947pt x 269.13164pt.
-<figure3-result-new/fig3_P_f10_95_visc_new2.png, id=1174, 483.2454pt x 386.8854
-pt>
-File: figure3-result-new/fig3_P_f10_95_visc_new2.png Graphic file (type png)
-<use figure3-result-new/fig3_P_f10_95_visc_new2.png>
-Package pdftex.def Info: figure3-result-new/fig3_P_f10_95_visc_new2.png  used o
-n input line 2401.
-(pdftex.def)             Requested size: 338.26947pt x 270.81793pt.
-<figure3-result-new/fig3_P_f14_60_visc_new2.png, id=1175, 482.7636pt x 385.9218
-pt>
-File: figure3-result-new/fig3_P_f14_60_visc_new2.png Graphic file (type png)
-<use figure3-result-new/fig3_P_f14_60_visc_new2.png>
-Package pdftex.def Info: figure3-result-new/fig3_P_f14_60_visc_new2.png  used o
-n input line 2403.
-(pdftex.def)             Requested size: 337.9322pt x 270.14342pt.
- [86] [87 <./figure3-result-new/fig3_P_f3_65_visc_new2.png> <./figure3-result-n
-ew/fig3_P_f7_30_visc_new2.png>] [88 <./figure3-result-new/fig3_P_f10_95_visc_ne
-w2.png> <./figure3-result-new/fig3_P_f14_60_visc_new2.png>]
-<figure4-result-new/Fig4_P_f3_65_visco_new2.png, id=1201, 485.6544pt x 387.3672
-pt>
-File: figure4-result-new/Fig4_P_f3_65_visco_new2.png Graphic file (type png)
-<use figure4-result-new/Fig4_P_f3_65_visco_new2.png>
-Package pdftex.def Info: figure4-result-new/Fig4_P_f3_65_visco_new2.png  used o
-n input line 2413.
-(pdftex.def)             Requested size: 339.95576pt x 271.1552pt.
-<figure4-result-new/Fig4_P_f7_30_visco_new2.png, id=1202, 484.209pt x 384.4764p
-t>
-File: figure4-result-new/Fig4_P_f7_30_visco_new2.png Graphic file (type png)
-<use figure4-result-new/Fig4_P_f7_30_visco_new2.png>
-Package pdftex.def Info: figure4-result-new/Fig4_P_f7_30_visco_new2.png  used o
-n input line 2415.
-(pdftex.def)             Requested size: 338.94398pt x 269.13164pt.
-<figure4-result-new/fig4_P_f10_95_visco_new2.png, id=1203, 486.618pt x 384.4764
-pt>
-File: figure4-result-new/fig4_P_f10_95_visco_new2.png Graphic file (type png)
-<use figure4-result-new/fig4_P_f10_95_visco_new2.png>
-Package pdftex.def Info: figure4-result-new/fig4_P_f10_95_visco_new2.png  used 
-on input line 2423.
-(pdftex.def)             Requested size: 340.63026pt x 269.13164pt.
-<figure4-result-new/fig4_P_f14_60_visco_new2.png, id=1204, 485.6544pt x 386.403
-6pt>
-File: figure4-result-new/fig4_P_f14_60_visco_new2.png Graphic file (type png)
-<use figure4-result-new/fig4_P_f14_60_visco_new2.png>
-Package pdftex.def Info: figure4-result-new/fig4_P_f14_60_visco_new2.png  used 
-on input line 2425.
-(pdftex.def)             Requested size: 339.95576pt x 270.48067pt.
+]
+File: figure3-result-new/fig3_P_f3_65_visc_new2.png Graphic file (type bmp)
+<figure3-result-new/fig3_P_f3_65_visc_new2.png>
+File: figure3-result-new/fig3_P_f7_30_visc_new2.png Graphic file (type bmp)
+<figure3-result-new/fig3_P_f7_30_visc_new2.png>
+File: figure3-result-new/fig3_P_f10_95_visc_new2.png Graphic file (type bmp)
+<figure3-result-new/fig3_P_f10_95_visc_new2.png>
+File: figure3-result-new/fig3_P_f14_60_visc_new2.png Graphic file (type bmp)
+<figure3-result-new/fig3_P_f14_60_visc_new2.png>
+ [86] [87] [88]
+File: figure4-result-new/Fig4_P_f3_65_visco_new2.png Graphic file (type bmp)
+<figure4-result-new/Fig4_P_f3_65_visco_new2.png>
+File: figure4-result-new/Fig4_P_f7_30_visco_new2.png Graphic file (type bmp)
+<figure4-result-new/Fig4_P_f7_30_visco_new2.png>
+File: figure4-result-new/fig4_P_f10_95_visco_new2.png Graphic file (type bmp)
+<figure4-result-new/fig4_P_f10_95_visco_new2.png>
+File: figure4-result-new/fig4_P_f14_60_visco_new2.png Graphic file (type bmp)
+<figure4-result-new/fig4_P_f14_60_visco_new2.png>
 
 
 Package natbib Warning: Citation `Nichols2011' on page 89 undefined on input li
 ne 2430.
 
-<figure-result-impedance/fig_viscosity_impedance_new.png, id=1209, 480.8364pt x
- 383.031pt>
 File: figure-result-impedance/fig_viscosity_impedance_new.png Graphic file (typ
-e png)
-<use figure-result-impedance/fig_viscosity_impedance_new.png>
-Package pdftex.def Info: figure-result-impedance/fig_viscosity_impedance_new.pn
-g  used on input line 2437.
-(pdftex.def)             Requested size: 336.58318pt x 268.11986pt.
-<figure-result-impedance/fig_viscoelasticity_impedance_new.png, id=1210, 481.31
-82pt x 384.9582pt>
+e bmp)
+<figure-result-impedance/fig_viscosity_impedance_new.png>
 File: figure-result-impedance/fig_viscoelasticity_impedance_new.png Graphic fil
-e (type png)
-<use figure-result-impedance/fig_viscoelasticity_impedance_new.png>
-Package pdftex.def Info: figure-result-impedance/fig_viscoelasticity_impedance_
-new.png  used on input line 2439.
-(pdftex.def)             Requested size: 336.92044pt x 269.4689pt.
-<figure5-result-new/Fig5_P_visc1_phi8_new2.png, id=1213, 484.6908pt x 385.44pt>
-
-File: figure5-result-new/Fig5_P_visc1_phi8_new2.png Graphic file (type png)
-<use figure5-result-new/Fig5_P_visc1_phi8_new2.png>
-Package pdftex.def Info: figure5-result-new/Fig5_P_visc1_phi8_new2.png  used on
- input line 2449.
-(pdftex.def)             Requested size: 339.28123pt x 269.80615pt.
-<figure-result-impedance/fig_viscosidade1_viscoelasticity8_impedance_new.png, i
-d=1214, 483.2454pt x 385.9218pt>
+e (type bmp)
+<figure-result-impedance/fig_viscoelasticity_impedance_new.png>
+File: figure5-result-new/Fig5_P_visc1_phi8_new2.png Graphic file (type bmp)
+<figure5-result-new/Fig5_P_visc1_phi8_new2.png>
 File: figure-result-impedance/fig_viscosidade1_viscoelasticity8_impedance_new.p
-ng Graphic file (type png)
-<use figure-result-impedance/fig_viscosidade1_viscoelasticity8_impedance_new.pn
-g>
-Package pdftex.def Info: figure-result-impedance/fig_viscosidade1_viscoelastici
-ty8_impedance_new.png  used on input line 2456.
-(pdftex.def)             Requested size: 338.26947pt x 270.14342pt.
-[89] [90 <./figure4-result-new/fig4_P_f3_65_visco_new2.png> <./figure4-result-n
-ew/fig4_P_f7_30_visco_new2.png>] [91 <./figure4-result-new/fig4_P_f10_95_visco_
-new2.png> <./figure4-result-new/fig4_P_f14_60_visco_new2.png>] [92 <./figure-re
-sult-impedance/fig_viscosity_impedance_new.png> <./figure-result-impedance/fig_
-viscoelasticity_impedance_new.png>] [93 <./figure5-result-new/Fig5_P_visc1_phi8
-_new2.png> <./figure-result-impedance/fig_viscosidade1_viscoelasticity8_impedan
-ce_new.png>]
+ng Graphic file (type bmp)
+<figure-result-impedance/fig_viscosidade1_viscoelasticity8_impedance_new.png>
+[89] [90] [91] [92] [93]
 Cap\'{\i }tulo 5.
 
 LaTeX Warning: Reference `sec:modelagem' on page 94 undefined on input line 247
@@ -1914,7 +1677,7 @@ Ap\^endice D.
 ] [101
 
 ]
-Underfull \hbox (badness 1253) in paragraph at lines 112--116
+Underfull \hbox (badness 1242) in paragraph at lines 112--116
 []\T1/futs/m/n/12 R. Quei-roz.  |   []   |   []   |   []   |   []   |   []   | 
   []   |   []   |   []   |   []
  []
@@ -1931,24 +1694,12 @@ Package rerunfilecheck Info: File `modelo_new.out' has not changed.
 (rerunfilecheck)             Checksum: 8FC8778E7DFFFC5BA0A14100A78837EF;13914.
  ) 
 Here is how much of TeX's memory you used:
- 27855 strings out of 478994
- 483517 string characters out of 5862207
- 807996 words of memory out of 5000000
- 44256 multiletter control sequences out of 15000+600000
- 513017 words of font info for 122 fonts, out of 8000000 for 9000
- 1146 hyphenation exceptions out of 8191
- 128i,18n,131p,1303b,607s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2021/texm
-f-dist/fonts/type1/public/fourier/fourier-mcl.pfb><c:/texlive/2021/texmf-dist/f
-onts/type1/public/fourier/fourier-mex.pfb><c:/texlive/2021/texmf-dist/fonts/typ
-e1/public/fourier/fourier-mlit.pfb><c:/texlive/2021/texmf-dist/fonts/type1/publ
-ic/fourier/fourier-ms.pfb><c:/texlive/2021/texmf-dist/fonts/type1/adobe/utopia/
-putb8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><c:/
-texlive/2021/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on modelo_new.pdf (105 pages, 8891073 bytes).
-PDF statistics:
- 1470 PDF objects out of 1728 (max. 8388607)
- 1231 compressed objects within 13 object streams
- 455 named destinations out of 1000 (max. 500000)
- 952 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26985 strings out of 476919
+ 473963 string characters out of 5825424
+ 825869 words of memory out of 5000000
+ 46397 multiletter control sequences out of 15000+600000
+ 504104 words of font info for 83 fonts, out of 8000000 for 9000
+ 1353 hyphenation exceptions out of 8191
+ 128i,18n,131p,1262b,607s stack positions out of 5000i,500n,10000p,200000b,80000s
 
+Output written on modelo_new.pdf (105 pages).
