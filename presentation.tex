@@ -1,0 +1,922 @@
+%% This Beamer template is based on the one found here: https://github.com/sanhacheong/stanford-beamer-presentation, and edited to be used for Stanford ARM Lab
+
+\documentclass[10pt,aspectratio=169]{beamer}
+%\mode<presentation>{}
+
+\usepackage{media9}
+\usepackage{amssymb,amsmath,amsthm,enumerate}
+\usepackage[utf8]{inputenc}
+\usepackage{array}
+\usepackage[parfill]{parskip}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{bm}
+\usepackage{amsfonts,amscd}
+\usepackage[]{units}
+\usepackage{listings}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{tcolorbox}
+\usepackage{physics}
+\usepackage{multicol}
+%encoding
+%--------------------------------------
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+%--------------------------------------
+
+%Portuguese-specific commands
+%--------------------------------------
+\usepackage[portuguese]{babel}
+%--------------------------------------
+
+%Hyphenation rules
+%--------------------------------------
+\usepackage{hyphenat}
+\hyphenation{mate-mática recu-perar}
+%--------------------------------------
+
+% Enable colored hyperlinks
+\hypersetup{colorlinks=true}
+
+% The following three lines are for crossmarks & checkmarks
+\usepackage{pifont}% http://ctan.org/pkg/pifont
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+
+% Numbered captions of tables, pictures, etc.
+\setbeamertemplate{caption}[numbered]
+
+%\usepackage[superscript,biblabel]{cite}
+\usepackage{algorithm2e}
+\renewcommand{\thealgocf}{}
+
+% Bibliography settings
+\usepackage[style=ieee]{biblatex}
+\setbeamertemplate{bibliography item}{\insertbiblabel}
+\addbibresource{references.bib}
+
+% Glossary entries
+\usepackage[acronym]{glossaries}
+\newacronym{ML}{ML}{machine learning}
+\newacronym{HRI}{HRI}{human-robot interactions}
+\newacronym{RNN}{RNN}{Recurrent Neural Network}
+\newacronym{LSTM}{LSTM}{Long Short-Term Memory}
+
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+\theoremstyle{definition}
+
+\newcommand{\empy}[1]{{\color{darkorange}\emph{#1}}}
+\newcommand{\empr}[1]{{\color{cardinalred}\emph{#1}}}
+\newcommand{\examplebox}[2]{
+	\begin{tcolorbox}[colframe=darkcardinal,colback=boxgray,title=#1]
+		#2
+\end{tcolorbox}}
+
+\usetheme{Stanford} 
+\input{./style_files_stanford/my_beamer_defs.sty}
+\logo{\includegraphics[height=0.4in]{./images/logoufjf10.png}}
+
+% commands to relax beamer and subfig conflicts
+% see here: https://tex.stackexchange.com/questions/426088/texlive-pretest-2018-beamer-and-subfig-collide
+\makeatletter
+\let\@@magyar@captionfix\relax
+\makeatother
+
+\newcommand{\code}[1]{\textcolor{red} {\textit{#1}}} %comentarios
+
+\title[Uma Ferramenta Computacional para Simulação de Escoamento Pulsátil em Modelos de Árvores Arteriais 1D]{Uma Ferramenta Computacional para Simulação de Escoamento Pulsátil em Modelos de Árvores Arteriais 1D}
+%\subtitle{Subtitle Of Presentation}
+
+%\beamertemplatenavigationsymbolsempty
+
+\begin{document}
+	
+	\author[Modelagem Computacional]{
+		\begin{tabular}{c} 
+			\Large
+			Igor Pires dos Santos\\
+			\footnotesize \href{mailto:igor.pires@ice.ufjf.br}{igor.pires@ice.ufjf.br}\\
+			\textbf{Orientadores:} Rafael Alves Bonfim de Queiroz \\ \& Ruy Freitas Reis
+		\end{tabular}
+		\vspace{-4ex}}
+	
+	\institute{
+		\vskip 5pt
+		\begin{figure}
+			\centering
+			\begin{subfigure}[t]{0.5\textwidth}
+				\centering
+				\includegraphics[height=0.33in]{images/logoufjf1}
+			\end{subfigure}%
+			~ 
+			\begin{subfigure}[t]{0.5\textwidth}
+				\centering
+				\includegraphics[height=0.33in]{./images/PGMC.png}
+			\end{subfigure}
+		\end{figure}
+		\vskip 5pt
+		Programa de Pós-Graduação em Modelagem Computacional\\
+		Universidade Federal de Juiz de Fora\\
+		\vskip 3pt
+	}
+	
+	% \date{June 15, 2020}
+	\date{\today}
+	
+	\begin{noheadline}
+		\begin{frame}\maketitle\end{frame}
+	\end{noheadline}
+	
+	\setbeamertemplate{itemize items}[default]
+	\setbeamertemplate{itemize subitem}[circle]
+	
+	\begin{frame}
+		\frametitle{Sumário} % Table of contents slide, comment this block out to remove it
+		\tableofcontents % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
+	\end{frame}
+	
+	\section{Introdução}
+	\begin{frame}[allowframebreaks]
+		\frametitle{Introdução}
+		
+		\begin{itemize}
+			\item A construção de modelos de árvores arteriais é importante para a realização de estudos hemodinâmicos. Neste trabalho, apresentam-se: 
+			\item (i) um esquema analítico para o cálculo das características locais das ondas de fluxo e pressão em modelos de árvores arteriais 1D 
+			\item (ii) um ambiente computacional desenvolvido para a simulação e visualização dos resultados no tocante à construção de modelos e estudos hemodinâmicos. Os resultados obtidos neste trabalho estão condizentes com dados numéricos relatados na literatura.
+			
+		\end{itemize}
+		
+		\framebreak
+		
+		\begin{itemize}
+			\item A propagação de ondas em um tubo é governada pela equação de onda para a pressão $p(x,t)$ e volume de fluxo $q(x,t)$, ambas sendo funções no tempo $t$ e coordenada axial $x$ ao longo do tubo.
+		\end{itemize}
+		
+
+		\begin{equation}
+		\frac{\partial q}{\partial t} = -cY \frac{\partial p}{\partial x}  
+		\label{01_p}
+		\end{equation}
+		
+		\begin{equation}
+		\frac{\partial p}{\partial t} = -\frac{c}{Y} \frac{\partial p}{\partial x}  
+		\label{02_q}
+		\end{equation}
+		
+		\framebreak
+		\begin{itemize}
+			\item Para uma onda harmônica simples Eq.\ref{01_p} e Eq.\ref{02_q} ficam na forma:
+		\end{itemize}
+		
+
+		\begin{equation}
+		p = \bar{p}_0 \exp{i\omega(t - x/c)} + R  \bar{p}_0 \exp{i\omega(t - 2L/c + x/c)}
+		\label{03_p}
+		\end{equation}
+		
+		\begin{equation}
+		q = Y(\bar{p}_0 \exp{i\omega(t - x/c)} -  R  \bar{p}_0 \exp{i\omega(t - 2L/c + x/c)})
+		\label{04_1}
+		\end{equation}
+		
+		\framebreak
+		
+		\begin{itemize}
+			\item Para definir os valores do coeficiente de reflexão $R$ e pressão média $\bar{p}_0$ de cada segmento foi utilizado o modelo matemático descrito por Duan \& Zamir (1995).
+			\item Este modelo matemático possui uma complexidade pequena e é capaz de ser iterado muito rapidamente para modelos geométricos numerosos.
+		\end{itemize}
+		
+	\end{frame}
+	
+	\section{Modelo Matemático}
+	\begin{frame}[allowframebreaks]
+		\frametitle{Modelo Matemático}
+		
+		\begin{itemize}
+			\item Inicialmente se definem as propriedades características de cada segmento :
+			
+			\item Espessura da parede ($h$):		
+			\item 
+					\begin{equation}
+					h = 0.1 \times r
+					\label{05}
+					\end{equation}
+			\item Velocidade de Onda ($c$):
+			\item 
+					\begin{equation}
+					 c = \sqrt{\frac{Eh}{\rho 2 r}}
+					\label{06}
+					\end{equation}
+		\end{itemize}
+		
+		\framebreak
+		
+		\begin{itemize}
+			\item Velocidade angular ($\omega$):
+			\item 
+					\begin{equation}
+					\omega = 2 \pi f
+					\label{07}
+					\end{equation}
+			\item Beta ($\beta$):
+			\item 
+					\begin{equation}
+					 \beta = \omega \frac{L}{c}
+					\label{08}
+					\end{equation}
+			\item Admitância Característica ($Y$):
+			\item  
+					\begin{equation}
+					 Y = \frac{\pi r^2}{\rho c}
+					\label{09}
+					\end{equation}
+			
+		\end{itemize}
+		
+		
+		\framebreak
+		
+		\begin{itemize}
+			\item \textbf{Caso 2:} Ângulo de fase
+			\item Módulo de Young ($E_c$):
+			\item 
+					\begin{equation}
+					  E_c = \|E_c\|\exp{i\phi}
+					\label{12}
+					\end{equation}
+			\item
+			\item Ângulo de Fase ($\phi$):
+			\item 
+					\begin{equation}
+					 \phi = \phi_0 (1 - \exp{-w})
+					\label{13}
+					\end{equation}
+			
+		\end{itemize}
+		
+		
+		\framebreak
+		
+		\begin{itemize}
+			\item \textbf{Caso 3:} Viscoso
+			\item Velocidade de Onda Viscosa ($c_v$):
+			\item 
+					\begin{equation}
+					  c_v = c\sqrt{\epsilon}
+					\label{10}
+					\end{equation}
+			\item
+			\item Admitância ($Y_v$):
+			\item 
+					\begin{equation}
+					Y_v = Y\sqrt{\epsilon}
+					\label{11}
+					\end{equation}
+			
+		\end{itemize}
+		
+		\framebreak
+		
+		\begin{itemize}
+			\item Alpha ($\alpha$):
+			\item 
+					\begin{equation}
+					  \alpha = R \sqrt{\frac{\omega \rho}{\mu}}
+					\label{12}
+					\end{equation}
+			\item Fator Viscoso ($\epsilon$):
+			\item 
+					\begin{equation}
+					 \epsilon = 1 - F_{10}(\alpha)
+					\label{15}
+					\end{equation}
+			\item Função auxiliar do Fator Viscoso ($ F_{10}$):
+			\item 
+					\begin{equation}
+						F_{10} (\alpha) = \frac{2.0}{\alpha \sqrt{i}}(1.0+\frac{1.0}{2.0\alpha}),
+						\label{14}
+					\end{equation}
+			
+		\end{itemize}
+		
+		\framebreak
+		
+		\begin{itemize}
+			\item \textbf{Reflection Coefficient <<complex>> e Admittance <<complex>>}
+			\item Se folha $ R = 0 $, senão $ R = \frac{Y - (Ye_r + Ye_l)}{Y + (Ye_r Ye_l)}$.
+			\item Se folha $ Ye = Y $, senão $ Ye = Y * \frac{(1 - R\exp{-2i\beta})}{(1 + R\exp{-2i\beta})}$.
+			\item \textbf{Medium Pressure <<complex>>}
+			\item Se raiz $ \bar{P} = \bar{P}_0 $, senão $ \bar{P} = \bar{P}_f * \frac{((1 + R_f)\exp{-i\beta_f})}{(1 + R\exp{-2i\beta})}$.
+		\end{itemize}
+		
+		\framebreak
+		
+		\begin{itemize}
+			\item \textbf{Pressure <<complex>>}
+			\item $ P = \bar{P} * ( \exp{-i\beta X} + R\exp{-i2\beta}\exp{i\beta X})$.
+			
+			
+		\end{itemize}
+		
+		\begin{itemize}
+			\item \textbf{Flow <<complex>>}
+			\item $ Q = M \bar{P} * (\exp{-i\beta X} - R\exp{-i2\beta}\exp{i\beta X})$.
+			\item $ M = \frac{Y}{Y_r}$
+			
+		\end{itemize}
+			
+\end{frame}
+
+	\section{Exemplo}
+	\begin{frame}[allowframebreaks]
+		\frametitle{Exemplo}
+		
+		\begin{center}
+			\begin{itemize}
+				\begin{multicols}{2}
+					\vfill
+					\item Considera-se o exemplo de árvore arterial extraído extaído de Duan \& Zamir (1995).
+					\columnbreak
+					\item \includegraphics[width=0.3\textwidth]{images/IGU2.png}
+				\end{multicols}
+			\end{itemize}
+		\end{center}
+		
+		\framebreak
+
+			\textbf{Duan \& Zamir} \\
+			
+			A árvore arterial conta com:
+		
+		\begin{itemize}
+			\item 2 Artérias terminais.
+			\item 6 segmentos totais (2 pares idênticos).
+			\item Considerando o caso não-viscoso com ângulo de fase $\phi = 0$
+			\item Observa-se o acoplamento feito para o caso viscoso e a variação do ângulo de fase.
+			
+		\end{itemize}
+		
+		O exemplo considera ainda o caso viscoso, o não viscoso e  $\phi \in {0,4,8,12}$. O algoritmo proposto se dividiu em duas partes, a primeira com 7 variáveis a se definir e a segunda com 5. Para demonstrar o modelo matemático o caso não viscoso com $\phi = 0$ foi escolhido.
+		
+		\framebreak
+		
+		\begin{itemize}
+			\item \textbf{Parâmetros de Entrada (r(cm),L(cm),$\rho$(g/$cm^3$),E(g/$cm*s^2$),f(Hz),$\epsilon$,$\mu_0$,$\phi_0$)}
+			\item $ f =3.65$Hz,$\epsilon = 0$,$\mu_0 = 0$,$\phi_0 = 0$.
+			\item [0] = $(r = 0.65)$, $(L = 25)$,$(\rho = 0.96)$ e $(E = 4.8 * 10^6)$.
+			\item [1] = $(r = 0.45)$, $(L = 11)$,$(\rho = 1.134)$ e $(E = 10^7)$.
+			\item [2] = $(r = 0.3)$, $(L = 12)$,$(\rho = 1.172)$ e $(E = 10^7)$.
+			\item [3] = $(r = 0.2)$, $(L = 10)$,$(\rho = 1.235)$ e $(E = 10^7)$.
+			
+		\end{itemize}
+		
+		\framebreak
+
+		\begin{itemize}
+			\item \textbf{Wall Thickness (h)(cm)}
+			\item $ h = 0.1 * r $.
+			\item [0] = 0.065.
+			\item [1] = 0.045.
+			\item [2] = 0.03.
+			\item [3] = 0.02.
+			
+		\end{itemize}
+		
+		\framebreak
+		
+		\begin{itemize}
+			\item \textbf{Wavespeed (cm/s)}
+			\item $ C = \sqrt{\frac{Eh}{\rho 2 r}}$.
+			\item [0] = 500.
+			\item [1] = 664.0158940747.
+			\item [2] = 653.1624303415.
+			\item [3] = 636.2847629758.
+		
+		\end{itemize}
+		
+		\framebreak
+		
+		\begin{itemize}
+		\item \textbf{Angular Frequency (ang/s)}
+		\item $ \omega = 2 \pi f$.
+		\item [0] = 22.9336263712.
+		\item [1] = 22.9336263712.
+		\item [2] = 22.9336263712.
+		\item [3] = 22.9336263712.
+		
+		\end{itemize}
+		
+		\framebreak
+		
+		\begin{itemize}
+		\item \textbf{Beta <<complex>>}
+		\item $ \beta = \omega \frac{L}{c}$.
+		\item [0] = (1.1466813186  ,  0).
+		\item [1] = (0.3799154393  ,  0).
+		\item [2] = (0.4213400790  ,  0).
+		\item [3] = (0.3604302299  ,  0).
+		
+		\end{itemize}
+		
+		\framebreak
+		
+		\begin{itemize}
+		\item \textbf{Admittance <<complex>>}
+		\item $ Y = \frac{\pi r^2}{\rho c}$.
+		\item [0] = (0.0027652560  ,  0).
+		\item [1] = (0.00084485573 ,  0).
+		\item [2] = (0.0003693547  ,  0).
+		\item [3] = (0.0001599158  ,  0).
+		
+		\end{itemize}
+		
+		\framebreak
+		
+		\begin{itemize}
+		\item \textbf{Reflection Coefficient <<complex>>}
+		\item Se folha $ R = 0 $, senão $ R = \frac{Y - (Ye_r + Ye_l)}{Y + (Ye_r Ye_l)}$.
+		\item [0] = (0.6262367793  ,  -0.2822851808).
+		\item [1] = (0.3301552903  ,  -0.2838246367).
+		\item [2] = (0.3957123386  ,  0).
+		\item [3] = (0             ,  0).
+		
+		\end{itemize}
+		
+		\framebreak
+
+	\begin{itemize}
+		\item \textbf{Effective Admittance <<complex>>}
+		\item Se folha $ Ye = Y $, senão $ Ye = Y * \frac{(1 - R\exp{-2i\beta})}{(1 + R\exp{-2i\beta})}$.
+		\item [0] = (0.0066356520  ,  0.0071130215).
+		\item [1] = (0.0005360764  ,  0.0005730514).
+		\item [2] = (0.0001850690  ,  0.0001296261).
+		\item [3] = (0.0001599158  ,  0).
+	
+	\end{itemize}
+		
+		\framebreak
+
+	\begin{itemize}
+		\item \textbf{Medium Pressure <<complex>>}
+		\item Se raiz $ \bar{P} = \bar{P}_0 $, senão $ \bar{P} = \bar{P}_f * \frac{((1 + R_f)\exp{-i\beta_f})}{(1 + R\exp{-2i\beta})}$.
+		\item [0] = (1.0  ,  0.0).
+		\item [1] = (0.0005360764  ,  0.0005730514).
+		\item [2] = (0.0001850690  ,  0.0001296261).
+		\item [3] = (0.0001599158  ,  0).
+	
+	\end{itemize}
+		
+\end{frame}
+	
+	
+	
+	\section{Modelo Computacional}
+	\begin{frame}[allowframebreaks]
+		\frametitle{Modelo Computacional}
+		
+		\begin{center}
+			\begin{itemize}
+				\begin{multicols}{2}
+					\vfill
+					\item Um elemento inteligente (\textit{WiseElement}) possui duas estruturas básicas. A \textit{WiseStructure} que representa os dados dispostos no padrão \textit{VTK}(\textit{Visualization Toolkit}) e \textit{DataStructure} que representa os dados abstratos disponíveis na estrutura.
+					\columnbreak
+					\item \includegraphics[width=0.45\textwidth]{Figures/WiseElement@16x.png}
+				\end{multicols}
+			\end{itemize}
+		\end{center}
+		
+		\framebreak	
+		
+		\begin{center}
+			\begin{itemize}
+				\begin{multicols}{2}
+					\vfill
+					\item Todos os elementos inteligentes recebem a estrutura básica \textit{WiseStructure} por herança e requer por meio de funções virtuais a definição de métodos que possibilitem a manipulação dos dados abstratos.
+					\columnbreak
+					\item \includegraphics[width=0.45\textwidth]{Figures/WiseElements@16x.png}
+				\end{multicols}
+			\end{itemize}
+		\end{center}
+		
+		\framebreak
+		
+		\begin{itemize}
+			\item Os elementos inteligentes são regidos por uma máquina de estados, aonde os estados representam condições esperadas do elemento inteligente e as transições indicam ações tomadas com o elemento inteligente.
+		\end{itemize}
+		
+		\framebreak
+		
+		\begin{center}
+			\includegraphics[width=0.6\textwidth]{Figures/WiseElementStatus@16x.png}
+		\end{center}
+		
+		\framebreak
+		
+		\begin{center}
+			\begin{itemize}
+				\begin{multicols}{2}
+					\vfill
+					\item Neste estado espera-se que um elemento possua consigo ambas as estruturas presentes no elemento inteligente, seus dados abstratos e a estrutura inteligente \textit{WiseStructure}.
+					\columnbreak
+					\item \includegraphics[width=0.45\textwidth]{Figures/WiseElementHot@16x.png}
+				\end{multicols}
+			\end{itemize}
+		\end{center}
+		
+		\framebreak
+		
+		\begin{center}
+			\begin{itemize}
+				\begin{multicols}{2}
+					\vfill
+					\item O estado \textit{Warming} é equivalente ao estado \textit{Cooling} e \textit{Raw}.
+					\item Estes estados indicam que somente a estrutura inteligente deste elemento está presente. No caso de um elemento no estado \textit{Raw}, não é esperado que a estrutura completa esteja presente nesta estrutura.
+					\item Os outros estados indicam que o elemento está completamente carregado na estrutura inteligente e aguarda esfriamento ou aquecimento, processo de armazenar e recuperar arquivos em HD.
+					\columnbreak
+					\item \includegraphics[width=0.45\textwidth]{Figures/WiseElementWarming@16x.png}
+				\end{multicols}
+			\end{itemize}
+		\end{center}
+		
+		\framebreak
+		
+		\begin{center}
+			\begin{itemize}
+				\begin{multicols}{2}
+					\vfill
+					\item Espera-se que os elementos neste estado estejam salvos em HD.
+					\columnbreak
+					\item \includegraphics[width=0.45\textwidth]{Figures/WiseElementCold@16x.png}
+				\end{multicols}
+			\end{itemize}
+		\end{center}
+		
+		\framebreak
+		\begin{center}
+			\begin{itemize}
+				\begin{multicols}{2}
+					\vfill
+					\item Utilizando o padrão de fábricas para criar e manipular elementos inteligentes, o seguinte fluxo de trabalho foi idealizado:
+					\columnbreak
+					\item \includegraphics[width=0.45\textwidth]{Figures/WiseElementWorkflow@16x.png}
+				\end{multicols}
+			\end{itemize}
+		\end{center}
+		
+		\framebreak
+	
+		\begin{itemize}
+				\item A primeira fábrica \textit{WiseElementFactory} é responsável por criar corretamente cada tipo de elemento inteligente.
+				\item A fábrica \textit{WiseIterationFactory} tem a função de utilizar os dados abstratos de um elemento inteligente com a finalidade de executar algum algoritmo.
+				\item Finalmente, a fábrica \textit{GraphicFactory} gera os objetos capazes de se desenhar com diretivas OpenGL \textit{GraphicObject}.
+		\end{itemize}	
+		
+		\framebreak	
+		
+		\framebreak
+		
+		\begin{itemize}
+				\item O objeto inteligente \textit{WiseObject} é o objeto capaz de executar todo esse fluxo de trabalho.
+		\end{itemize}	
+		
+		\begin{center}
+			
+			 \includegraphics[width=0.7\textwidth]{Figures/WiseObject@16x.png}
+			
+		\end{center}
+		
+		\framebreak
+		
+		\begin{center}
+			\begin{itemize}
+				\begin{multicols}{2}
+					\vfill
+					\item Cada objeto inteligente contém uma coleção de elementos inteligentes:
+					\columnbreak
+					\item \includegraphics[width=0.45\textwidth]{Figures/WiseCollection@16x.png}
+				\end{multicols}
+			\end{itemize}
+		\end{center}
+	
+		\framebreak
+		
+		\begin{itemize}
+			\item Pode-se criar um objeto inteligente com um elemento inteligente, portanto é possível construir um objeto inteligente à partir de qualquer instância de elemento inteligente e sua fábrica.
+			\item A estrutura \textit{Forno} é um ponteiro para um elemento que estará sempre no estado \textit{Hot}, ele representa o último elemento gerado pela iteração e é utilizado a cada nova iteração.
+			\item Finalmente, a estrutura \textit{Freezer} é responsável por armazenar os elementos em cache e manter o seu registro.
+		\end{itemize}
+		
+		\framebreak
+		
+		\begin{center}
+			\begin{itemize}
+				\begin{multicols}{2}
+					\vfill
+					\item É possível também que seja incluída a estrutura de visualização do objeto inteligente:
+					\columnbreak
+					\item \includegraphics[width=0.45\textwidth]{Figures/GraphicModel@16x.png}
+				\end{multicols}
+			\end{itemize}
+		\end{center}
+	
+		\framebreak
+		
+		\begin{center}
+			\begin{itemize}
+				\begin{multicols}{2}
+					\vfill
+					\item Os objetos gráficos são objetos que possuem uma lista de elementos gráficos com valores e é capas de desenhá-los em um quadro OpenGL.
+					\item O modelo gráfico \textit{GraphicModel} irá manter a coleção de objetos gráficos em memória conforme a necessidade para visualização, mantendo uma quantidade mínima de objetos em memória a todo momento.
+					\columnbreak
+					\item \includegraphics[width=0.45\textwidth]{Figures/GraphicObjects@16x.png}
+				\end{multicols}
+			\end{itemize}
+		\end{center}
+		
+		\framebreak
+		
+		\begin{center}
+			\begin{itemize}
+				\begin{multicols}{2}
+					\vfill
+					\item Objetos gráficos também possuem uma máquina de estados que dita se a estrutura está presente em memória ou armazenada em cache:
+					\columnbreak
+					\item \includegraphics[width=0.45\textwidth]{Figures/GraphicObjectStatus@16x.png}
+				\end{multicols}
+			\end{itemize}
+		\end{center}
+		
+		\framebreak
+		\begin{itemize}
+				\item Os elementos gráficos são todas as instâncias que implementam a classe abstrata \textit{GraphicElement}:
+		\end{itemize}		
+		
+		\begin{center}
+			
+			\item \includegraphics[width=0.6\textwidth]{Figures/GraphicElements@16x.png}
+			
+		\end{center}
+		
+		\begin{itemize}
+			\item Os elementos gráficos armazenam os pontos necessários para desenhá-lo e um valor associado. Este valor associado corresponde à algum valor armazenado em um ponto, uma linha, uma célula ou um campo da \textit{WiseStructure}.
+		\end{itemize}
+		
+		\framebreak
+	
+		\begin{itemize}
+				\item Os objetos inteligentes \textit{WiseObject} possuem também uma máquina de estados:
+		\end{itemize}		
+		
+		\begin{center}
+			
+			\item \includegraphics[width=0.6\textwidth]{Figures/WiseObjectStatus@16x.png}
+			
+		\end{center}
+		
+		\framebreak
+		
+		\begin{itemize}
+			\item Todas as transições de estados e as ações que podem ser executadas sobre um objeto inteligente são interações do usuário. Ao se criar o objeto somente o elemento inicial e sua cópia estarão presentes no \textit{Forno} e no \textit{Freezer}, respectivamente.
+			\item No estado inicial \textit{Ready} o objeto é capaz de incluir suas fábricas de iteração e gráficas.
+			\item Após a inclusão de uma fábrica de iteração o objeto pode avançar para o estado \textit{Set}. Neste estado os parâmetros de iteração são adicionados à estrutura \textit{WiseStructure} e podem ser editados pelo usuário, parâmetros como frequência, viscosidade e ângulo de fase.
+			\item Pode-se arbitrariamente definir o fim das iterações e enviar o objeto para o estado \textit{Finished}, que impossibilitará o objeto de continuar iterando.
+			\item Finalmente, todos os estados podem levar ao estado \textit{Crashed} que indica o mau funcionamento do objeto.
+		\end{itemize}
+		
+		\framebreak
+		
+			\begin{itemize}
+					\item Com todas as estruturas básicas definidas, o pacote de classes que organiza or objetos e elementos inteligentes e suas necessidades intitula-se \textit{WiseThreadPool}.
+			\end{itemize}		
+		
+		\begin{center}
+			
+			\item \includegraphics[width=0.6\textwidth]{Figures/WiseThreadPool@16x.png}
+			
+		\end{center}
+		
+		\framebreak
+		
+		\begin{itemize}
+			\item Os objetos e elementos inteligentes organizam-se em projetos inteligentes, \textit{WiseProject}.
+			\item A classe \textit{WiseThreadPool} é responsável por alocar estes projetos e receber suas demandas, resfriar ou aquecer objetos. É responsável também pelas demandas feitas pelo usuário através de linhas de comando.
+		\end{itemize}
+		
+		\framebreak
+		
+	\begin{itemize}
+			\item Cada uma das classes à seguir está contida em uma \textit{thread} própria e tem o próprio \textit{loop} de iteração.
+		\end{itemize}		
+		
+		\begin{center}
+			
+			\item \includegraphics[width=0.6\textwidth]{Figures/WiseThreadPool2@16x.png}
+			
+		\end{center}
+		
+		\framebreak
+
+	\begin{itemize}
+			\item Ao receber uma linha de comando o objeto \textit{WiseThreadPool} enviar a mensagem e o projeto atual à uma instância de \textit{WiseConsole}, que é responsável por interpretar o comando.
+			\item Caso seja um processo que utilize o disco rígido, uma instância \textit{WiseIO} será necessária para executar o comando. 
+			\item Caso seja um processo de iteração, uma instância \textit{WiseProcessor} será utilizada.
+			\item Para os restantes dos casos a própria classe \textit{WiseConsole} será utilizada para finalizar o comando. A alteração de parâmetros ou sua escala cai neste último caso.
+		\end{itemize}		
+		
+		\begin{center}
+			
+			\item \includegraphics[width=0.6\textwidth]{Figures/WiseThreaPoolCMD@16x.png}
+			
+		\end{center}
+		
+		\framebreak
+		\begin{center}
+			
+			\item \includegraphics[width=0.6\textwidth]{Figures/WiseThreaPoolCMDSub@16x.png}
+			
+		\end{center}
+		
+		\framebreak
+		
+		\begin{itemize}
+				\item O resfriamento ou aquecimento de elementos envolve sempre uma instância de \textit{WiseIO}.
+		\end{itemize}		
+		
+		\begin{center}
+			
+			\item \includegraphics[width=0.6\textwidth]{Figures/WiseThreadPoolHeating@16x.png}
+			
+		\end{center}
+		
+		\framebreak
+		
+		\begin{itemize}
+			\item Um \textit{WiseThreadPool} irá conter todas as instâncias de \textit{WiseIO}, \textit{WiseConsole} e \textit{WiseProcessor} e está preparado para utilizar mais de uma instância destes objetos por vez.
+			\item Essencialmente isto significa que os objetos e elementos armazenados pelo projeto inteligente, \textit{WiseProject}, podem ser acessados pelos diferentes processadores independentemente.
+			
+			\item Isto dá ao usuário uma imensa liberdade na hora de decidir executar algum algoritmo concorrentemente, entretanto requer cuidados especiais na hora de utilizar os objetos.
+			
+			\item Como os objetos podem ser acessados por mais de um processador, eles são bloqueados por uso.
+		\end{itemize}
+	
+
+
+		\end{frame}
+		
+		
+		\section{Ferramenta Computacional}
+		\begin{frame}[allowframebreaks]
+		\frametitle{Ferramenta Computacional}	
+			
+		\begin{itemize}
+			\item Com a estrutura de dados definida a ferramenta foi dividida em dois ambientes:
+			\item  A interface gráfica \textit{\textbf{IGU}} (\textbf{I}nterface \textbf{G}ráfica \textbf{U}niversal), que representa o ambiente gráfico da ferramente.
+			\item  E, o console \textit{\textbf{InGU}}(\textbf{I}nterface \textbf{n}ão-\textbf{G}ráfica \textbf{U}niversal), que é um ambiente executado sem interface gráfica e recebe comandos via texto.
+		\end{itemize}
+	
+		\framebreak
+		
+		\begin{center}
+			\begin{itemize}
+			\begin{multicols}{2}
+					\vfill
+					\item O ambiente \textbf{IngU} ao ser executado imprime no console o cabeçalho do programa e carrega os elementos previamente carregados na ferramenta.
+					\columnbreak
+					\item \includegraphics[width=0.5\textwidth]{Figures/InGU_console.png}
+				\end{multicols}
+			\end{itemize}
+		\end{center}
+	
+		\framebreak
+		
+		\begin{itemize}
+			\item O comando de ajuda é o primeiro comando da interface e foi feito para listar todas as entradas possíveis do programa.
+			\item Ao receber este comando a thread \textit{WiseConsole} envia o texto pré-definido com todos os comandos.
+		\end{itemize}
+		
+		
+		\begin{center}
+			\begin{table}[!htbp]
+				\begin{tabular}{|c|m{0.6\textwidth}|}
+					\hline
+					\textbf{Linha de Comando} & \multicolumn{1}{c|}{help} \\
+					\hline
+					\textbf{Escopo} & \multicolumn{1}{c|}{nenhum} \\
+					\hline
+					\textbf{Thread Responsável} & \multicolumn{1}{c|}{WiseConsole} \\
+					\hline
+					\textbf{Entrada} & Nenhuma \\
+					\hline
+				\end{tabular}
+				\caption{Descrição do comando ajuda.}
+				\label{tab:help}
+			\end{table}
+		\end{center}
+	
+		\framebreak
+	
+		Assim como o comando de criação de elementos inteligentes, o comando de criação de objetos irá acessar a fábrica de elementos inteligentes \textit{WiseElementFactory}. É possível criar objetos inteligentes de duas formas: A primeira, utilizando um elemento inteligente; A segunda utilizando os exemplos disponibilizados pela fábrica de elementos inteligentes.
+		
+		Assim como descrito na Seção~\ref{sec:estrutura}, ao criar um objeto inteligente, um elemento inteligente é adicionado à estrutura do \textit{Forno}, enquanto um Clone é acoplado ao \textit{Freezer};
+		
+		\begin{center}
+			\begin{table}[!htbp]
+				\begin{tabular}{|c|c|m{0.5\textwidth}|}
+					\hline
+					\multirow{3}{*}{\textbf{Linha de Comando}} & \multicolumn{2}{c|}{object create <object\underline{\space\space}name> <element\underline{\space\space}name>} \\
+					& \multicolumn{2}{c|}{object create <type> <example> <name> <element\underline{\space\space}name> [ARGS]} \\
+					\hline
+					\textbf{Escopo} & \multicolumn{2}{c|}{OBJECT} \\
+					\hline
+					\textbf{Thread Responsável} & \multicolumn{2}{c|}{WiseConsole} \\
+					\hline
+					\multirow{3}{*}{\textbf{Entrada}} & <object\underline{\space\space}name> & Nome do objeto à ser criado. \\
+					& <element\underline{\space\space}name> & Nome do elemento à ser utilizado na criação ou do elemento à ser criado a partir do exemplo. \\
+					& <type> & Tipo de elemento inteligente à ser criado. \\
+					& <name> & Nome do exemplo de elemento inteligente à ser criado. \\
+					& [ARGS] & Individualmente,  as fábricas podem receber parâmetros para a criação de elementos. \\
+					\hline
+				\end{tabular}
+				\caption{Descrição do comando para criar objetos inteligentes.}
+				\label{tab:create_object}
+			\end{table}
+		\end{center}
+		
+	\end{frame}
+	
+	
+	\section{Resultados}
+	\begin{frame}[allowframebreaks]
+		\frametitle{Resultados}
+		\begin{center}
+			\includegraphics[width=0.4\textwidth]{images/48.png}
+			\includegraphics[width=0.4\textwidth]{images/49.png}
+			\includegraphics[width=0.4\textwidth]{images/50.png}
+			\includegraphics[width=0.4\textwidth]{images/51.png}
+		\end{center}
+		
+		\framebreak
+		
+		\begin{center}
+			\includegraphics[width=0.4\textwidth]{images/52.png}
+			\includegraphics[width=0.4\textwidth]{images/53.png}
+			\includegraphics[width=0.4\textwidth]{images/54.png}
+			\includegraphics[width=0.4\textwidth]{images/55.png}
+		\end{center}
+	
+		\framebreak
+			
+		\begin{center}
+			\includegraphics[width=0.4\textwidth]{images/56.png}
+			\includegraphics[width=0.4\textwidth]{images/57.png}
+			\includegraphics[width=0.4\textwidth]{images/58.png}
+			\includegraphics[width=0.4\textwidth]{images/59.png}
+		\end{center}
+		
+		\framebreak
+		
+		\begin{center}
+			\includegraphics[width=0.4\textwidth]{images/60.png}
+			\includegraphics[width=0.4\textwidth]{images/61.png}
+			\includegraphics[width=0.4\textwidth]{images/62.png}
+			\includegraphics[width=0.4\textwidth]{images/63.png}
+		\end{center}
+	
+	\end{frame}
+	
+	\section{Dissertação}
+	\begin{frame}[allowframebreaks]
+		\frametitle{Dissertação}
+		
+		\begin{itemize}
+			\item Ferramenta Computacional
+			\item Estrutura de dados
+			\item \textbf{dividir em elemento inteligente, objeto inteligente e objeto gráfico?}
+			\item  (Sinais e slots, paralelização)
+			\item Lista de comandos
+			\item Interface gráfica
+			\item Resultados
+			\item Fluxo
+			\item Pressão
+			\item Conclusão
+		\end{itemize}
+		
+	\end{frame}
+	
+	\section{Cronograma}
+	\begin{frame}[allowframebreaks]
+		\frametitle{Cronograma}
+		
+		\begin{itemize}
+			\item Mar: Ajustes dissertação + Fim da dissertação
+			\item Abr: Ajustes finais
+			\item Mai: Ajustes finais
+		\end{itemize}
+		
+	\end{frame}
+	
+\end{document}
