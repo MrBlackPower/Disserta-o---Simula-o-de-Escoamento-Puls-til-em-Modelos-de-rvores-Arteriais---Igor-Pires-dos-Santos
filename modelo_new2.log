@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.7.25)  29 SEP 2021 22:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.7.25)  29 SEP 2021 22:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -736,28 +736,28 @@ File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
 (./anexos.aux))
 \openout1 = `modelo_new2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 45.
-Package hyperref Info: Link coloring OFF on input line 45.
+(lastpage)             ! on input line 47.
+Package hyperref Info: Link coloring OFF on input line 47.
  (c:/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
@@ -769,9 +769,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count335
 )
-LaTeX Info: Redefining \ref on input line 45.
-LaTeX Info: Redefining \pageref on input line 45.
-LaTeX Info: Redefining \nameref on input line 45.
+LaTeX Info: Redefining \ref on input line 47.
+LaTeX Info: Redefining \pageref on input line 47.
+LaTeX Info: Redefining \nameref on input line 47.
 
 (./modelo_new2.out) (./modelo_new2.out)
 \@outlinefile=\write3
@@ -834,9 +834,9 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package ragged2e Info: ABD: executing \RaggedRight on input line 45.
+Package ragged2e Info: ABD: executing \RaggedRight on input line 47.
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 45.
+LaTeX Info: Redefining \selectfont on input line 47.
 
 (c:/texlive/2021/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
@@ -849,16 +849,16 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 
 
 {c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Package hyperref Info: Option `breaklinks' set `true' on input line 81.
-Package hyperref Info: Option `raiselinks' set `true' on input line 81.
-Package hyperref Info: Option `pageanchor' set `true' on input line 81.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 81.
+Package hyperref Info: Option `breaklinks' set `true' on input line 89.
+Package hyperref Info: Option `raiselinks' set `true' on input line 89.
+Package hyperref Info: Option `pageanchor' set `true' on input line 89.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 89.
 
 
 (c:/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 81.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 89.
 
 
 (c:/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -867,47 +867,47 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.81 \maketitle
+l.89 \maketitle
                 [1
 
 ]
 <ficha_catalografica.pdf, id=358, 597.51233pt x 845.0471pt>
 File: ficha_catalografica.pdf Graphic file (type pdf)
 <use ficha_catalografica.pdf>
-Package pdftex.def Info: ficha_catalografica.pdf  used on input line 81.
+Package pdftex.def Info: ficha_catalografica.pdf  used on input line 89.
 (pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
 File: ficha_catalografica.pdf Graphic file (type pdf)
 <use ficha_catalografica.pdf>
-Package pdftex.def Info: ficha_catalografica.pdf  used on input line 81.
+Package pdftex.def Info: ficha_catalografica.pdf  used on input line 89.
 (pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
 <ficha_catalografica.pdf, id=361, page=1, 597.51233pt x 845.0471pt>
 File: ficha_catalografica.pdf Graphic file (type pdf)
 <use ficha_catalografica.pdf, page 1>
-Package pdftex.def Info: ficha_catalografica.pdf , page1 used on input line 81.
+Package pdftex.def Info: ficha_catalografica.pdf , page1 used on input line 89.
 
 (pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
 File: ficha_catalografica.pdf Graphic file (type pdf)
 <use ficha_catalografica.pdf, page 1>
-Package pdftex.def Info: ficha_catalografica.pdf , page1 used on input line 81.
+Package pdftex.def Info: ficha_catalografica.pdf , page1 used on input line 89.
 
 (pdftex.def)             Requested size: 597.53821pt x 845.08372pt.
 File: ficha_catalografica.pdf Graphic file (type pdf)
 <use ficha_catalografica.pdf, page 1>
-Package pdftex.def Info: ficha_catalografica.pdf , page1 used on input line 81.
+Package pdftex.def Info: ficha_catalografica.pdf , page1 used on input line 89.
 
 (pdftex.def)             Requested size: 597.53821pt x 845.08372pt.
 File: ficha_catalografica.pdf Graphic file (type pdf)
 <use ficha_catalografica.pdf, page 1>
-Package pdftex.def Info: ficha_catalografica.pdf , page1 used on input line 81.
+Package pdftex.def Info: ficha_catalografica.pdf , page1 used on input line 89.
 
 (pdftex.def)             Requested size: 597.53821pt x 845.08372pt.
 File: ficha_catalografica.pdf Graphic file (type pdf)
 <use ficha_catalografica.pdf, page 1>
-Package pdftex.def Info: ficha_catalografica.pdf , page1 used on input line 81.
+Package pdftex.def Info: ficha_catalografica.pdf , page1 used on input line 89.
 
 (pdftex.def)             Requested size: 597.53821pt x 845.08372pt.
  [2 <./ficha_catalografica.pdf>]
-Underfull \hbox (badness 2495) in paragraph at lines 88--88
+Underfull \hbox (badness 2495) in paragraph at lines 96--96
 []\T1/cmr/m/it/12 Dedico este tra-ba-lho 
  []
 
@@ -918,31 +918,49 @@ Underfull \hbox (badness 2495) in paragraph at lines 88--88
 ] [5
 
 ]
-Overfull \hbox (10.3336pt too wide) in paragraph at lines 98--102
-\T1/cmr/m/n/12 com-pu-ta-ci-o-nal de-sen-vol-vida que cal-cula a pres-são e flu
-xo em cada vaso a par-tir do mo-delo 
+Overfull \hbox (25.86603pt too wide) in paragraph at lines 106--111
+[]\T1/cmr/m/n/12 O fenô-meno do es-co-a-mento san-guí-neo em mo-de-los de ár-vo
+-res ar-te-ri-ais do sis-tema cir-cu-la-tó-rio 
  []
 
 
-Overfull \hbox (12.03046pt too wide) in paragraph at lines 98--102
-\T1/cmr/m/n/12 da-dos pró-pria que con-ci-lia os con-cei-tos de uma lin-gua-gem
- ori-en-tada à ob-je-tos e bi-bli-o-te-cas 
+Overfull \hbox (14.63663pt too wide) in paragraph at lines 106--111
+\T1/cmr/m/n/12 ce-ná-rios de es-co-a-mento es-pe-cí-fi-cos. Atra-vés da si-mu-l
+a-ção é pos-sí-vel ex-trair da-dos ana-lí-ti-cos 
  []
 
 
-Overfull \hbox (17.57356pt too wide) in paragraph at lines 98--102
-\T1/cmr/m/n/12 adi-ci-o-nais com o mo-delo ma-te-má-tico e ge-o-mé-trico pro-po
-sto. A es-tru-tura de da-dos pro-posta 
+Overfull \hbox (7.9801pt too wide) in paragraph at lines 106--111
+\T1/cmr/m/n/12 que cal-cula a pres-são e fluxo em cada vaso a par-tir do mo-del
+o ma-te-má-tico . A fer-ra-menta 
  []
 
 
-Overfull \hbox (5.89572pt too wide) in paragraph at lines 98--102
-\T1/cmr/m/n/12 pos-si-bi-lita que as di-ver-sas ca-rac-te-rís-ti-cas de uma ár-
-vore ar-te-rial pos-sam ser ar-ma-ze-na-das, 
+Overfull \hbox (3.15074pt too wide) in paragraph at lines 106--111
+\T1/cmr/m/n/12 ma-te-má-tico e ge-o-mé-trico pro-posto.[]A es-tru-tura de da-do
+s foi uti-li-zada no de-sen-vol-vi-mento 
  []
 
 
-Overfull \hbox (22.49577pt too wide) in paragraph at lines 102--103
+Overfull \hbox (3.1549pt too wide) in paragraph at lines 106--111
+\T1/cmr/m/n/12 para si-mu-lar cor-re-ta-mente o mo-delo ma-te-má-tico es-co-lhi
+do e per-mi-tir que ou-tros mo-de-los 
+ []
+
+
+Overfull \hbox (14.57564pt too wide) in paragraph at lines 106--111
+\T1/cmr/m/n/12 vi-su-a-li-za-das em tempo de exe-cu-ção. Os re-sul-ta-dos ob-ti
+-dos neste tra-ba-lho es-tão con-di-zen-tes 
+ []
+
+
+Overfull \hbox (36.3037pt too wide) in paragraph at lines 106--111
+\T1/cmr/m/n/12 com da-dos nu-mé-ri-cos re-la-ta-dos na li-te-ra-tura.[]A fer-ra
+-menta e es-tru-tura abs-trata dis-po-ni-bi-li-za-das 
+ []
+
+
+Overfull \hbox (22.49577pt too wide) in paragraph at lines 111--112
 []\T1/cmr/bx/n/12 Palavras-chave:  []\T1/cmr/m/n/12 Árvores arteriais.  Escoame
 nto pulsátil.  Hemodinâmica Computacional. 
  []
@@ -1444,7 +1462,7 @@ Overfull \hbox (36.46472pt too wide) in paragraph at lines 340--341
 }) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.156 \include{modelagem_escoamento}
+l.165 \include{modelagem_escoamento}
                                     ]
 \openout2 = `ferramenta_computacional.aux'.
 
@@ -3706,20 +3724,20 @@ File: Figures/IGU_022.png Graphic file (type png)
 Package pdftex.def Info: Figures/IGU_022.png  used on input line 1701.
 (pdftex.def)             Requested size: 455.24411pt x 262.51892pt.
 )
-Overfull \hbox (0.85953pt too wide) in paragraph at lines 1706--163
+Overfull \hbox (0.85953pt too wide) in paragraph at lines 1706--172
 []\T1/cmr/m/n/12 A Fi-gura []3.36[] de-mons-tra as cinco lis-tas exi-bi-das ao 
 se-le-ci-o-nar a aba \T1/cmr/m/it/12 Ti-me-ta-ble \T1/cmr/m/n/12 da ja-nela 
  []
 
 
-Overfull \hbox (25.1606pt too wide) in paragraph at lines 1706--163
+Overfull \hbox (25.1606pt too wide) in paragraph at lines 1706--172
 \T1/cmr/m/n/12 lis-tam as lis-tas pre-sen-tes no ge-ren-ci-a-dor de th-re-ads \
 T1/cmr/m/it/12 Wi-seTh-re-ad-Pool \T1/cmr/m/n/12 des-cri-tas na Se-ção []3.1.8[
 ]. 
  []
 
 
-Overfull \hbox (23.15555pt too wide) in paragraph at lines 1706--163
+Overfull \hbox (23.15555pt too wide) in paragraph at lines 1706--172
 \T1/cmr/m/n/12 Desta forma é pos-sí-vel ve-ri-fi-car os tra-ba-lhos que aguar-d
 am exe-cu-ção, es-tão sendo exe-cu-ta-dos 
  []
@@ -3728,7 +3746,7 @@ am exe-cu-ção, es-tão sendo exe-cu-ta-dos
 36}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.163 \include{ferramenta_computacional}
+l.172 \include{ferramenta_computacional}
                                          <./Figures/IGU_022.png>]
 \openout2 = `resultados.aux'.
 
@@ -4008,14 +4026,14 @@ n-si-de-rando
 igure.4.6}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.167 \include{resultados}
+l.176 \include{resultados}
                            <./Figures/fig5_P_f3_65_viscoelasticity_viscosity_NE
 W.png> <./Figures/fig5_P_f7_30_viscoelasticity_viscosity_NEW.png>] [110pdfTeX w
 arning (ext4): destination with the same identifier (name{figure.4.7}) has been
  already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.167 \include{resultados}
+l.176 \include{resultados}
                            <./Figures/fig5_P_f10_95_viscoelasticity_viscosity_N
 EW.png> <./Figures/fig5_P_f14_60_viscoelasticity_viscosity.png>]
 \openout2 = `conclusoes.aux'.
@@ -4111,10 +4129,10 @@ Package rerunfilecheck Info: File `modelo_new2.out' has not changed.
 (rerunfilecheck)             Checksum: 63808919681A5D3223ED77B1205B1864;14546.
  ) 
 Here is how much of TeX's memory you used:
- 17392 strings out of 478994
- 252238 string characters out of 5862207
- 638782 words of memory out of 5000000
- 33984 multiletter control sequences out of 15000+600000
+ 17399 strings out of 478994
+ 252262 string characters out of 5862207
+ 639268 words of memory out of 5000000
+ 33991 multiletter control sequences out of 15000+600000
  416005 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  86i,18n,88p,1331b,576s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -4132,7 +4150,7 @@ texmf-dist/fonts/type1/public/cm-super/sfbx0800.pfb><c:/texlive/2021/texmf-dist
 e1/public/cm-super/sfrm1200.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/
 cm-super/sfti1200.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/s
 fxc1200.pfb>
-Output written on modelo_new2.pdf (119 pages, 9015978 bytes).
+Output written on modelo_new2.pdf (119 pages, 9016689 bytes).
 PDF statistics:
  1889 PDF objects out of 2073 (max. 8388607)
  1617 compressed objects within 17 object streams

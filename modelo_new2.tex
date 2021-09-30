@@ -23,6 +23,8 @@
 
 \usepackage[alf,bibjustif]{abntex2cite}
 
+\newcommand{\igunew}[1]{\textcolor{blue}{#1}}
+
 %\usepackage{sectsty}% http://ctan.org/pkg/sectsty
 %\usepackage{titlecaps}% http://ctan.org/pkg/titlecaps
 
@@ -66,6 +68,9 @@
 \keyword{Árvores arteriais}
 \keyword{Escoamento pulsátil}
 \keyword{Hemodinâmica Computacional}
+\keyword{Fábricas Dinâmicas}
+\keyword{Fábricas Abstratas}
+\keyword{Orientação à Objetos}
 %\keyword{Poroelasticidade}
 %\keyword{Biomecânica}
 
@@ -73,6 +78,9 @@
 \keywordEN{Arterial trees}
 \keywordEN{Pulsatile flow}
 \keywordEN{Computational hemodynamics}
+\keywordEN{Dynamic Factories}
+\keywordEN{Abstract Factories}
+\keywordEN{Object oriented}
 %\keywordEN{Poroelasticity}
 %\keywordEN{Biomechanics}
 
@@ -92,20 +100,22 @@
 	Agradeço ...
 \end{agradecimentos}
 
-\epigrafe{``Frase que te inspirou''  \flushright{(Autor)}}
+\epigrafe{``A vida é curta demais pra gente aprender só com os nossos erros.''  \flushright{(Sebastião Roberto Pereira Ramon)}}
 
 \begin{abstract}
-Neste trabalho, apresentam-se: (i) modelo matemático da literatura que descreve o escoamento sanguíneo pulsátil em modelos de árvores arteriais 1D, (ii) uma ferramenta computacional desenvolvida que calcula a pressão e fluxo em cada vaso a partir do modelo matemático .
-A ferramenta computacional desenvolvida conta com uma estrutura de dados própria que concilia os conceitos de uma linguagem orientada à objetos e bibliotecas adicionais com o modelo matemático e geométrico proposto.
-A estrutura de dados proposta possibilita que as diversas características de uma árvore arterial possam ser armazenadas, utilizadas e visualizadas em tempo de execução.
-Os resultados obtidos neste trabalho estão condizentes com dados numéricos relatados na literatura.
+	\igunew{O fenômeno do escoamento sanguíneo em modelos de árvores arteriais do sistema circulatório é frequentemente utilizado para melhor entender este complexo sistema, ao simular o escoamento é observado como a onda é alterada pelo modelo geométrico bem como cenários de escoamento específicos. Através da simulação é possível extrair dados analíticos sem a realização de exames invasivos e correlacionar corretamente as características do fluxo e modelo com efeitos observados na onda de pressão.}
+	Neste trabalho, apresentam-se: (i) modelo matemático da literatura que descreve o escoamento sanguíneo pulsátil em modelos de árvores arteriais 1D, (ii) uma ferramenta computacional desenvolvida que calcula a pressão e fluxo em cada vaso a partir do modelo matemático .
+	A ferramenta computacional desenvolvida conta com uma estrutura de dados própria que concilia os conceitos de uma linguagem orientada à objetos e bibliotecas adicionais com o modelo matemático e geométrico proposto.\igunew{A estrutura de dados foi utilizada no desenvolvimento de dois ambientes, um console e uma interface gráfica de usuário. A arquitetura de classes tem como objetivo conciliar as ferramentas disponibilizadas pelas bibliotecas para simular corretamente o modelo matemático escolhido e permitir que outros modelos matemáticos sejam facilmente acoplados posteriormente.}
+	A estrutura de dados proposta possibilita que as diversas características de uma árvore arterial possam ser armazenadas, utilizadas e visualizadas em tempo de execução.
+	Os resultados obtidos neste trabalho estão condizentes com dados numéricos relatados na literatura.\igunew{A ferramenta e estrutura abstrata disponibilizadas permitem a simulação do mesmo experimento em diferentes modelos geométricos e a visualização de todos os parâmetros armazenados}.
 \end{abstract}
 
 \begin{foreignabstract}
-In this work, the following are presented: (i) an analytical scheme based on physisc and mathematic laws to calculate the local charactheristics of the pressure and flux wave in 1D arterial tree's models, (ii) a computational environment desenvolved to simulate and visualize the results of the model's construction and hemodynamic studies. 
-The computational environment is composed of a data structure that integrates the concepts of an object-oriented language and other libraries with the proposed analytical scheme.
-The proposed data structure allows the computational environment to store, utilize and display different characteristics of an arterial tree. 
-The results produced in this work are consistent to real morphometric data and numeric data related in the literature.
+	\igunew{The blood flow phenom in arterial tree models of the circulatory system is frequently studied to better understand this complex system. O fenômeno do escoamento sanguíneo em modelos de árvores arteriais do sistema circulatório é frequentemente utilizado para melhor entender este complexo sistema, ao simular o escoamento é observado como a onda é alterada pelo modelo geométrico bem como cenários de escoamento específicos. Através da simulação é possível extrair dados analíticos sem a realização de exames invasivos e correlacionar corretamente as características do fluxo e modelo com efeitos observados na onda de pressão.}
+	In this work, the following are presented: (i) an analytical scheme based on physisc and mathematic laws to calculate the local charactheristics of the pressure and flux wave in 1D arterial tree's models, (ii) a computational environment desenvolved to simulate and visualize the results of the model's construction and hemodynamic studies. 
+	The computational environment is composed of a data structure that integrates the concepts of an object-oriented language and other libraries with the proposed analytical scheme.
+	The proposed data structure allows the computational environment to store, utilize and display different characteristics of an arterial tree. 
+	The results produced in this work are consistent to real morphometric data and numeric data related in the literature.
 \end{foreignabstract}
 
 
