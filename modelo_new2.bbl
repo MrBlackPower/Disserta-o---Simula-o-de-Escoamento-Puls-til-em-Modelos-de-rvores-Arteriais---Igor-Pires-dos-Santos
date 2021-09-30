@@ -24,7 +24,7 @@
 \emph{Journal of Biomechanics}, v.~100, p. 109595, 2020.
 ISSN 0021-9290.
 Dispon{\'\i}vel em:
-  \url{https://www.sciencedirect.com/science/article/pii/S0021929019308589}.}
+  $<$https://www.sciencedirect.com/science/article/pii/S0021929019308589$>$.}
 
 \bibitem[Brito et al. 2017]{Brito2017}
 \abntrefinfo{Brito et al.}{BRITO et al.}{2017}
@@ -72,11 +72,6 @@ Dispon{\'\i}vel em:
   circulation. reflection of pressure waves in the arterial system.
 \emph{Bull. Math. Biophys.}, n.~14, p. 327--350, 1952.}
 
-\bibitem[Khronos 2019]{OpenGL}
-\abntrefinfo{Khronos}{KHRONOS}{2019}
-{KHRONOS, G. \emph{OpenGL}. 2019.
-Dispon{\'\i}vel em: \url{https://www.opengl.org/}.}
-
 \bibitem[Kouchoukos, Sheppard e McDonald 1970]{Kouchoukos}
 \abntrefinfo{Kouchoukos, Sheppard e McDonald}{KOUCHOUKOS; SHEPPARD;
   MCDONALD}{1970}
@@ -99,10 +94,6 @@ Dispon{\'\i}vel em: \url{https://www.opengl.org/}.}
 {MCDONALD, D.~A. Blood flow in arteries.
 \emph{Baltimore: Williams \& Wilkins}, 1974.}
 
-\bibitem[Parker 1959]{AlanParker}
-\abntrefinfo{Parker}{PARKER}{1959}
-{PARKER, A. \emph{Algorithms and Data Structures in C++}. [S.l.: s.n.], 1959.}
-
 \bibitem[Peskin 1972]{Peskin1972}
 \abntrefinfo{Peskin}{PESKIN}{1972}
 {PESKIN, C. Flow patterns around heart valves: a numerical method.
@@ -111,7 +102,7 @@ Dispon{\'\i}vel em: \url{https://www.opengl.org/}.}
 \bibitem[Qt 2019]{QTClasses}
 \abntrefinfo{Qt}{QT}{2019}
 {QT. 2019.
-Dispon{\'\i}vel em: \url{https://doc-snapshots.qt.io/qt5-5.9/classes.html}.}
+Dispon{\'\i}vel em: $<$https://doc-snapshots.qt.io/qt5-5.9/classes.html$>$.}
 
 \bibitem[Quarteroni e Formaggia 2004]{QUARTERONI20043}
 \abntrefinfo{Quarteroni e Formaggia}{QUARTERONI; FORMAGGIA}{2004}
@@ -119,7 +110,7 @@ Dispon{\'\i}vel em: \url{https://doc-snapshots.qt.io/qt5-5.9/classes.html}.}
   of the cardiovascular system. In:  \emph{Computational Models for the Human
   Body}. Elsevier, 2004,  (Handbook of Numerical Analysis, v.~12). p. 3--127.
 Dispon{\'\i}vel em:
-  \url{https://www.sciencedirect.com/science/article/pii/S1570865903120017}.}
+  $<$https://www.sciencedirect.com/science/article/pii/S1570865903120017$>$.}
 
 \bibitem[Queiroz 2013]{Queiroz2013}
 \abntrefinfo{Queiroz}{QUEIROZ}{2013}
@@ -148,7 +139,7 @@ Tese (Doutorado) --- Laboratório Nacional de Computação Científica, 2013.}
 \emph{Atherosclerosis}, v.~317, p. 29--35, 2021.
 ISSN 0021-9150.
 Dispon{\'\i}vel em:
-  \url{https://www.sciencedirect.com/science/article/pii/S0021915020315513}.}
+  $<$https://www.sciencedirect.com/science/article/pii/S0021915020315513$>$.}
 
 \bibitem[Taylor, Hughes e Zarins 1998]{Taylor1998}
 \abntrefinfo{Taylor, Hughes e Zarins}{TAYLOR; HUGHES; ZARINS}{1998}
