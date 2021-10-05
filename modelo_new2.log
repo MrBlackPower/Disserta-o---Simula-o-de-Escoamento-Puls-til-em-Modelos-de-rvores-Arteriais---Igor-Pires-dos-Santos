@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.7.25)  29 SEP 2021 22:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.7.25)  4 OCT 2021 22:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -948,15 +948,9 @@ do e per-mi-tir que ou-tros mo-de-los
  []
 
 
-Overfull \hbox (14.57564pt too wide) in paragraph at lines 106--111
-\T1/cmr/m/n/12 vi-su-a-li-za-das em tempo de exe-cu-ção. Os re-sul-ta-dos ob-ti
--dos neste tra-ba-lho es-tão con-di-zen-tes 
- []
-
-
-Overfull \hbox (36.3037pt too wide) in paragraph at lines 106--111
-\T1/cmr/m/n/12 com da-dos nu-mé-ri-cos re-la-ta-dos na li-te-ra-tura.[]A fer-ra
--menta e es-tru-tura abs-trata dis-po-ni-bi-li-za-das 
+Overfull \hbox (5.89572pt too wide) in paragraph at lines 106--111
+\T1/cmr/m/n/12 pos-si-bi-lita que as di-ver-sas ca-rac-te-rís-ti-cas de uma ár-
+vore ar-te-rial pos-sam ser ar-ma-ze-na-das, 
  []
 
 
@@ -967,7 +961,37 @@ nto pulsátil.  Hemodinâmica Computacional.
 
 [6
 
-] [7
+]
+Overfull \hbox (11.04723pt too wide) in paragraph at lines 114--119
+\T1/cmr/m/n/12 It is pos-si-ble to ex-tract an-a-lyt-i-cal data with-out in-va-
+sive pro-ce-dures and cor-rectly cor-re-late 
+ []
+
+
+Overfull \hbox (23.12495pt too wide) in paragraph at lines 114--119
+\T1/cmr/m/n/12 work, the fol-low-ing are pre-sented: (i) an an-a-lyt-i-cal sche
+me based on ph-ysisc and math-e-matic 
+ []
+
+
+Overfull \hbox (3.48123pt too wide) in paragraph at lines 114--119
+\T1/cmr/m/n/12 oriented lan-guage and other li-braries with the pro-posed an-a-
+lyt-i-cal scheme. The pro-posed 
+ []
+
+
+Overfull \hbox (9.02843pt too wide) in paragraph at lines 114--119
+\T1/cmr/m/n/12 data struc-ture al-lows the com-pu-ta-tional en-vi-ron-ment to s
+tore, uti-lize and dis-play dif-fer-ent 
+ []
+
+
+Overfull \hbox (25.86612pt too wide) in paragraph at lines 114--119
+\T1/cmr/m/n/12 work are con-sis-tent to real mor-pho-me-t-ric data and nu-meric
+ data re-lated in the lit-er-a-ture.[]The 
+ []
+
+[7
 
 ] (./modelo_new2.lof
 Overfull \hbox (14.42569pt too wide) in paragraph at lines 7--7
@@ -1462,7 +1486,7 @@ Overfull \hbox (36.46472pt too wide) in paragraph at lines 340--341
 }) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.165 \include{modelagem_escoamento}
+l.166 \include{modelagem_escoamento}
                                     ]
 \openout2 = `ferramenta_computacional.aux'.
 
@@ -3724,20 +3748,20 @@ File: Figures/IGU_022.png Graphic file (type png)
 Package pdftex.def Info: Figures/IGU_022.png  used on input line 1701.
 (pdftex.def)             Requested size: 455.24411pt x 262.51892pt.
 )
-Overfull \hbox (0.85953pt too wide) in paragraph at lines 1706--172
+Overfull \hbox (0.85953pt too wide) in paragraph at lines 1706--173
 []\T1/cmr/m/n/12 A Fi-gura []3.36[] de-mons-tra as cinco lis-tas exi-bi-das ao 
 se-le-ci-o-nar a aba \T1/cmr/m/it/12 Ti-me-ta-ble \T1/cmr/m/n/12 da ja-nela 
  []
 
 
-Overfull \hbox (25.1606pt too wide) in paragraph at lines 1706--172
+Overfull \hbox (25.1606pt too wide) in paragraph at lines 1706--173
 \T1/cmr/m/n/12 lis-tam as lis-tas pre-sen-tes no ge-ren-ci-a-dor de th-re-ads \
 T1/cmr/m/it/12 Wi-seTh-re-ad-Pool \T1/cmr/m/n/12 des-cri-tas na Se-ção []3.1.8[
 ]. 
  []
 
 
-Overfull \hbox (23.15555pt too wide) in paragraph at lines 1706--172
+Overfull \hbox (23.15555pt too wide) in paragraph at lines 1706--173
 \T1/cmr/m/n/12 Desta forma é pos-sí-vel ve-ri-fi-car os tra-ba-lhos que aguar-d
 am exe-cu-ção, es-tão sendo exe-cu-ta-dos 
  []
@@ -3746,7 +3770,7 @@ am exe-cu-ção, es-tão sendo exe-cu-ta-dos
 36}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.172 \include{ferramenta_computacional}
+l.173 \include{ferramenta_computacional}
                                          <./Figures/IGU_022.png>]
 \openout2 = `resultados.aux'.
 
@@ -4026,14 +4050,14 @@ n-si-de-rando
 igure.4.6}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.176 \include{resultados}
+l.177 \include{resultados}
                            <./Figures/fig5_P_f3_65_viscoelasticity_viscosity_NE
 W.png> <./Figures/fig5_P_f7_30_viscoelasticity_viscosity_NEW.png>] [110pdfTeX w
 arning (ext4): destination with the same identifier (name{figure.4.7}) has been
  already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.176 \include{resultados}
+l.177 \include{resultados}
                            <./Figures/fig5_P_f10_95_viscoelasticity_viscosity_N
 EW.png> <./Figures/fig5_P_f14_60_viscoelasticity_viscosity.png>]
 \openout2 = `conclusoes.aux'.
@@ -4131,7 +4155,7 @@ Package rerunfilecheck Info: File `modelo_new2.out' has not changed.
 Here is how much of TeX's memory you used:
  17399 strings out of 478994
  252262 string characters out of 5862207
- 639268 words of memory out of 5000000
+ 639340 words of memory out of 5000000
  33991 multiletter control sequences out of 15000+600000
  416005 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -4150,7 +4174,7 @@ texmf-dist/fonts/type1/public/cm-super/sfbx0800.pfb><c:/texlive/2021/texmf-dist
 e1/public/cm-super/sfrm1200.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/
 cm-super/sfti1200.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/s
 fxc1200.pfb>
-Output written on modelo_new2.pdf (119 pages, 9016689 bytes).
+Output written on modelo_new2.pdf (119 pages, 9017337 bytes).
 PDF statistics:
  1889 PDF objects out of 2073 (max. 8388607)
  1617 compressed objects within 17 object streams
