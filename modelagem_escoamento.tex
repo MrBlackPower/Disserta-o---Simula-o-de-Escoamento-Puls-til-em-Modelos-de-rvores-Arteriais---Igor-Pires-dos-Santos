@@ -2,7 +2,7 @@
 
 %\textcolor{red}{IGOR: está errada a citação do trabalho do método de Duan e Zamir (1995), não é a citação que colocou \cite{Duan}.} \textcolor{green}{OK}
 
-Neste capítulo, apresenta-se em detalhe o modelo matemático de Duan e Zamir \cite{Duan1992}, para o escoamento sanguíneo pulsátil em árvores arteriais. Por fim, apresenta um algoritmo que sistematiza os passos dos cálculos realizados para obtenção da pressão e fluxo ao longo da árvore arterial.
+Neste capítulo, apresenta-se o modelo matemático de Duan e Zamir \cite{Duan1992}, para o escoamento sanguíneo pulsátil em árvores arteriais \igunew{que será utilizado para desenvolver a ferramenta computacional}. Por fim, apresenta um algoritmo que \igunew{resume} passos dos cálculos realizados para obtenção da pressão e fluxo ao longo da árvore arterial.
 
 %--------------------------------------------------------------------------------%
 \section{MODELO MATEMÁTICO}\label{sec:modelo_matematico}
@@ -16,7 +16,7 @@ A propagação de ondas em um tubo é governada pela equações da onda para a p
 \end{eqnarray}
 nos quais $t$ é o tempo, $x$ é a coordenada axial ao longo do tubo, $c$ é a velocidade de onda, $Y = \frac{A}{\rho c}$ é a admitância e $A$ é a área da seção transversal do tubo, e $\rho$ é a densidade do fluido. Estas equações são baseadas na linearização das equações de movimento do fluido \cite{Fung,Lighthill}. 
 
-Para uma onda harmônica simples, as equações (\ref{01_p}) e (\ref{02_q}) resultam em:
+Para uma onda harmônica simples, as Equações (\ref{01_p}) e (\ref{02_q}) resultam em:
 \begin{eqnarray}
 	p &=& \bar{p}_0 \exp\left[i\omega\left(t - \frac{x}{c}\right)\right] + R  \bar{p}_0 \exp\left[i\omega\left(t - \frac{2L}{c} + \frac{x}{c}\right)\right],
 	\label{03_p}\\
@@ -25,9 +25,18 @@ Para uma onda harmônica simples, as equações (\ref{01_p}) e (\ref{02_q}) resu
 \end{eqnarray}
 onde $\omega = 2 \pi f$ é a frequência angular, $f$ é frequência em Hertz, $L$ é o comprimento do tubo, $\bar{p}_0$ é a amplitude da onda incidente, $R$ é o coeficiente de reflexão definido pela razão entre as ondas refletidas pelas ondas que chegam no local de reflexão \cite{Fung,Karreman} e $i$ é a unidade imaginária ($i^2 = -1$).
 
-As equações \eqref{03_p} e \eqref{04_1} para pressão e fluxo são aplicadas em cada segmento de vaso do modelo de árvore arterial, tomando $x = 0$ para o nó proximal e $x = L$ para o nó distal do segmento. Um segmento de vaso é definido pelo intervalo vascular entre dois locais de ramificação \cite{Zamir3}. No sistema arterial, as bifurcações são os locais de ramificação mais comuns~\cite{Zamir1}.
+\igunew{O modelo matemático considera que o segmento é composto pelo nó proximal $A$ e pelo nó distal $B$, considerando o nó proximal o ponto mais próximo da origem do fluxo e o nó distal o ponto mais distante, como apresentado na Figura~\ref{fig:proximaldistal}.}
 
-Em \cite{Duan}, um segmento de vaso é identificado por $(k,j)$, onde o primeiro $k$ representa o nível da geração e $j$ representa a ordem do segmento naquela geração, como mostrado na Figura \ref{fig1:arterial-tree}. Desta forma, a pressão e o fluxo ao longo de um segmento  $(k,j)$ do modelo de árvore arterial são dados por:
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=1]{Figures/ProximalDistal@16x.png}
+	\caption{Segmento do modelo geométrico de uma árvore arterial, composto pelo nó proximal $A$ e pelo nó distal $B$.}
+	\label{fig:proximaldistal}
+\end{figure}
+
+As Equações \eqref{03_p} e \eqref{04_1} para pressão e fluxo são aplicadas em cada segmento de vaso do modelo de árvore arterial, tomando $x = 0$ para o nó proximal e $x = L$ para o nó distal do segmento. Um segmento de vaso é definido pelo intervalo vascular entre dois locais de ramificação \cite{Zamir3}. No sistema arterial, as bifurcações são os locais de ramificação mais comuns~\cite{Zamir1}.
+
+De~\citeyear{Duan}~\citeauthoronline{Duan}, um segmento de vaso é identificado por $(k,j)$, onde o $k$ representa o nível da geração e $j$ representa a ordem do segmento naquela geração, como na Figura~\ref{fig1:arterial-tree}. Desta forma, a pressão e o fluxo ao longo de um segmento  $(k,j)$ do modelo de árvore arterial são dados por:
 \begin{eqnarray}
 	p(k,j) &=& \bar{p}(k,j) \exp\left[i\omega\left(t - \frac{x(k,j)}{c(k,j)}\right)\right] \nonumber \\
 	&+& R(k,j)  \bar{p}(k,j) \exp\left[i\omega\left(t - \frac{2L(k,j)}{c(k,j)} + \frac{x(k,j)}{c(k,j)}\right)\right],
@@ -36,11 +45,11 @@ Em \cite{Duan}, um segmento de vaso é identificado por $(k,j)$, onde o primeiro
 	&-& \left. R(k,j)  \bar{p}(k,j) \exp\left[i\omega\left(t - \frac{2L(k,j)}{c(k,j)} + \frac{x(k,j)}{c(k,j)}\right)\right]\right\},
 	\label{06_q}
 \end{eqnarray}
-nos quais $\bar{p}(k,j)$ é a amplitude combinada do grupo de ondas progressivas no segmento $(k,j)$ e $R(k,j)$ é o coeficiente de reflexão no final daquele segmento, como é chamado a razão das ondas progressivas pelas atrasadas avaliadas no nó distal $x(k,j) = L(k,j)$. 
+nos quais $\bar{p}(k,j)$ é a amplitude combinada do grupo de ondas progressivas no segmento $(k,j)$ e $R(k,j)$ é o coeficiente de reflexão no final daquele segmento. \igunew{Este coeficiente de reflexão $R$ é a razão das ondas progressivas pelas ondas atrasadas avaliadas no nó distal $x(k,j) = L(k,j)$. }
 
-O grupo de ondas progressivas viaja no sentido positivo de $x(k,j)$, estas são compostas de ondas progressivas vindo de vasos acima deste, bem como, ondas refletidas na junção à montante $x(k,j) = 0$. O grupo de ondas atrasadas viaja no sentido oposto e é composto por ondas vindas de vasos à jusante como ondas refletidas na junção à jusante $x(k,j) = L(k,j)$. 
+O grupo de ondas progressivas viaja no sentido positivo de $x(k,j)$, estas são compostas de ondas progressivas vindo de vasos acima deste, bem como, ondas refletidas na junção à montante $x(k,j) = 0$. O grupo de ondas atrasadas viaja no sentido oposto e é composto por ondas vindas de vasos conectados ao nó distal, estas ondas são refletidas na junção à jusante $x(k,j) = L(k,j)$. 
 
-As equações \eqref{05_p} e \eqref{06_q} descrevem, respectivamente, as ondas de pressão e de fluxo localmente em um segmento $(k,j)$ do modelo de árvore, e localmente na posição $x(k,j)$ dentro deste segmento de vaso. As duas variáveis desconhecidas são a amplitude da pressão  $\bar{p} (k,j)$ e o coeficiente de reflexão $R (k,j)$, que são detalhados na Seção~\ref{sec:pressao-fluxo}. 
+As Equações \eqref{05_p} e \eqref{06_q} descrevem, respectivamente, as ondas de pressão e de fluxo localmente em um segmento $(k,j)$ do modelo de árvore, e localmente na posição $x(k,j)$ dentro deste segmento de vaso. \igunew{O principal objetivo deste modelo matemático é determinar as duas variáveis desconhecidas: a amplitude da pressão  $\bar{p} (k,j)$} e o coeficiente de reflexão $R (k,j)$, que são detalhados na Seção~\ref{sec:pressao-fluxo}. 
 
 A Figura~\ref{fig1:arterial-tree} mostra a notação usada para identificar cada segmento de vaso $(k,j)$, onde $k$ é a geração/nível do vaso e $j$ é um número sequencial dentro daquela geração. Os nós proximal e distal do segmento $(k,j)$ são denotados por $A$ e $B$, respectivamente. O coeficiente de reflexão $R(k,j)$ do segmento $(k,j)$ está associado ao nó distal $B$.
 
