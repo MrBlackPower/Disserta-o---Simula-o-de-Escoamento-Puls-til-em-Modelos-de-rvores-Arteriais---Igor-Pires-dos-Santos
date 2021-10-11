@@ -2,7 +2,7 @@
 \babel@toc {english}{}
 \babel@toc {brazil}{}
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Segmento do modelo geométrico de uma árvore arterial, composto pelo nó proximal $A$ e pelo nó distal $B$.}}{24}{figure.2.1}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Notação usada para identificar cada segmento de vaso $(k,j)$ (figura adaptada de~\cite {Duan}). }}{26}{figure.2.2}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Notação usada para identificar cada segmento de vaso $(k,j)$ (figura adaptada de~\citeyear {Duan}~\citeauthoronline {Duan}). }}{26}{figure.2.2}%
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Interface gráfica da ferramenta desenvolvida.}}{39}{figure.3.1}%
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Representação de classes de um elemento inteligente. WiseElement a classe abstrata base e seus componentes: WiseStructure representa a estrutura contida em um arquivo VTK e DataStructure representa a estrutura de ponteiros e variáveis utilizadas na iteração. Tingido de azul as estruturas que nem sempre estão presentes.}}{41}{figure.3.2}%
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Tipos de elementos inteligentes. \textit {WiseGraphic}, um gráfico bidimensional. \textit {WiseMesh}, uma malha tridimensional. \textit {WisePoly}, um cubo. \textit {WiseArteryTree}, uma árvore arterial}}{42}{figure.3.3}%

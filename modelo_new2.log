@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.7.25)  4 OCT 2021 23:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.7.25)  11 OCT 2021 14:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1337,10 +1337,9 @@ n/12 , onde o $\OML/cmm/m/it/12 k$ \T1/cmr/m/n/12 re-pre-senta
  []
 
 
-Overfull \hbox (9.04594pt too wide) in paragraph at lines 39--40
-\T1/cmr/m/n/12 na Fi-gura []2.2[]. Desta forma, a pres-são e o fluxo ao longo d
-e um seg-mento $\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 k; j\OT1/cmr/m/n/12 )$ \T1/cm
-r/m/n/12 do mo-delo 
+Overfull \hbox (21.7741pt too wide) in paragraph at lines 39--40
+\T1/cmr/m/n/12 o ní-vel da ge-ra-ção e $\OML/cmm/m/it/12 j$ \T1/cmr/m/n/12 re-p
+re-senta a or-dem do seg-mento na-quela ge-ra-ção, como na Fi-gura []2.2[]. 
  []
 
 [24pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
@@ -1353,6 +1352,27 @@ Overfull \hbox (8.49638pt too wide) in paragraph at lines 50--51
 \T1/cmr/m/n/12 à mon-tante $\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 (\OML/cmm/m/it/12
  k; j\OT1/cmr/m/n/12 ) = 0$\T1/cmr/m/n/12 . O grupo de on-das atra-sa-das vi-aj
 a no sen-tido oposto e é com-posto 
+ []
+
+
+Overfull \hbox (16.53365pt too wide) in paragraph at lines 52--53
+\T1/cmr/m/n/12 den-tro deste seg-mento de vaso. []O prin-ci-pal ob-je-tivo dest
+e mo-delo ma-te-má-tico é de-ter-mi-nar 
+ []
+
+
+Overfull \hbox (4.04848pt too wide) in paragraph at lines 52--53
+\T1/cmr/m/n/12 as duas va-riá-veis des-co-nhe-ci-das: a am-pli-tude da pres-são
+ $[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 k; j\OT1/cmr/m/n/12 )$[] \T1/cmr/m/n/12 e
+ o co-e-fi-ci-ente de re-fle-xão 
+ []
+
+
+Overfull \hbox (11.27045pt too wide) in paragraph at lines 54--55
+\T1/cmr/m/n/12 Os nós pro-xi-mal e dis-tal do seg-mento $\OT1/cmr/m/n/12 (\OML/
+cmm/m/it/12 k; j\OT1/cmr/m/n/12 )$ []\T1/cmr/m/n/12 2.1[] são de-no-ta-dos por 
+$\OML/cmm/m/it/12 A$ \T1/cmr/m/n/12 e $\OML/cmm/m/it/12 B$\T1/cmr/m/n/12 , res-
+pec-ti-va-mente. 
  []
 
 [25]
@@ -1372,15 +1392,21 @@ Package pdftex.def Info: Figures/ArterialTree_Zamir.png  used on input line 75.
 }) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.95 \end{eqnarray}
-                    <./Figures/ArterialTree_Zamir.png>] [27]
+l.85 \begin{equation}
+                      <./Figures/ArterialTree_Zamir.png>] [27]
+Overfull \hbox (16.36833pt too wide) in paragraph at lines 134--135
+[]\T1/cmr/m/n/12 Conforme []1986[] []Duan e Za-mir[], para efei-tos de cál-culo
+ da pres-são e fluxo, adimensionalizam- 
+ []
+
+[28]
 Overfull \hbox (1.22035pt too wide) in paragraph at lines 153--154
 \OML/cmm/m/it/12 A$ \T1/cmr/m/n/12 e $\OML/cmm/m/it/12 B$ \T1/cmr/m/n/12 das ex
 -tre-mi-da-des de um seg-mento ge-né-rico $\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 k;
  j\OT1/cmr/m/n/12 )$ \T1/cmr/m/n/12 de um mo-delo de ár-vore ar-te-rial 
  []
 
-[28]
+
 Overfull \hbox (9.18346pt too wide) in paragraph at lines 162--164
 \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; s\OT1/cmr/m/n/12 )$ \T1/cmr/m/n/12 é o co-e
 -fi-ci-ente de re-fle-xão na po-si-ção dis-tal de cada seg-mento. Si-mi-lar-men
@@ -1389,8 +1415,8 @@ te, $\OML/cmm/m/it/12 Y[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 k; j\OT1/cmr/m/n/12
  []
 
 
-Overfull \hbox (13.26607pt too wide) in paragraph at lines 174--175
-\T1/cmr/m/n/12 igual às suas ad-mi-tân-cias ca-rac-te-rís-ti-cas. Ado-tando a e
+Overfull \hbox (16.0376pt too wide) in paragraph at lines 174--175
+\T1/cmr/m/n/12 igual às suas ad-mi-tân-cias ca-rac-te-rís-ti-cas. Ado-tando a E
 qua-ção [], to-das as ad-mi-tân-cias 
  []
 
@@ -1398,13 +1424,6 @@ qua-ção [], to-das as ad-mi-tân-cias
 Overfull \hbox (18.71158pt too wide) in paragraph at lines 187--188
 []\T1/cmr/m/n/12 A im-pe-dân-cia de en-trada de um mo-delo de ár-vore ar-te-ria
 l de-ter-mina $\OML/cmm/m/it/12 Z$ \T1/cmr/m/n/12 na po-si-ção pro-xi-mal 
- []
-
-
-Overfull \hbox (5.68602pt too wide) in paragraph at lines 189--190
-[]\T1/cmr/m/n/12 Adotando as equa-ções [] e [] com $\OML/cmm/m/it/12 x\OT1/cmr/
-m/n/12 (\OML/cmm/m/it/12 k; j\OT1/cmr/m/n/12 ) = 0$\T1/cmr/m/n/12 , obtém-se a 
-im-pe-dân-cia de en-trada: 
  []
 
 
@@ -1426,6 +1445,13 @@ que cor-res-ponde a um tubo elás-tico com res-tri-ções ([]DUAN;
  []
 
 [30]
+Overfull \hbox (7.41861pt too wide) in paragraph at lines 230--231
+[]\T1/cmr/bx/n/12 2.1.4.3 - Ce-ná-rio 3\T1/cmr/m/n/12 : efei-tos da vis-co-si-d
+ade san-guí-nea $\OML/cmm/m/it/12 ^^V\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 k; j\OT1
+/cmr/m/n/12 )$ \T1/cmr/m/n/12 e da vis-co-e-las-ti-ci-dade 
+ []
+
+
 Overfull \hbox (17.57362pt too wide) in paragraph at lines 239--240
 \T1/cmr/m/n/12 Nesta se-ção, detalham-se al-guns as-pec-tos da es-tru-tura de d
 a-dos e al-go-rit-mos que des-cre-vem 
@@ -1453,37 +1479,42 @@ ial do mo-delo con-tém as pro-pri-e-da-des
 ) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.283 B
-       asicamente, os passos para determinar as ondas de pressÃ£o e fluxo qu...
-] [33]
-Overfull \hbox (23.71727pt too wide) in paragraph at lines 312--313
-[]\T1/cmr/m/n/12 O mó-dulo $\OMS/cmsy/m/n/12 M[]$ \T1/cmr/m/n/12 do Al-go-ritmo
- 1 visa cal-cu-lar os va-lo-res de ad-mi-tân-cia efe-tiva ($\OML/cmm/m/it/12 Y[
-]$\T1/cmr/m/n/12 ), ad-mi-tân-cia 
+l.280 
+      ]
+Overfull \hbox (1.50893pt too wide) in paragraph at lines 299--300
+\T1/cmr/m/n/12 por suas pro-pri-e-da-des, a frequên-cia $\OML/cmm/m/it/12 f$\T1
+/cmr/m/n/12 , um fa-tor de es-cala da vis-co-si-dade $\OML/cmm/m/it/12 ^^M[]$\T
+1/cmr/m/n/12 , o pa-râ-me-tro 
  []
 
-[34pdfTeX warning (ext4): destination with the same identifier (name{algocf.1})
+[33pdfTeX warning (ext4): destination with the same identifier (name{algocf.1})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.313 \newpage
+l.318 ...gia do tipo \textit{bottom-up}), visando}
+                                                   calcular os valores de ad...
+] [34pdfTeX warning (ext4): destination with the same identifier (name{algocf.2
+}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  
+l.319 \newpage
               ] [35]
 Overfull \vbox (18.15778pt too high) has occurred while \output is active []
 
 
-[36pdfTeX warning (ext4): destination with the same identifier (name{algocf.2})
+[36pdfTeX warning (ext4): destination with the same identifier (name{algocf.3})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
-l.349 O
-        mÃ³dulo 2 ($\mathcal{M}_2$) do Algoritmo 1 visa calcular o valor da ...
+l.355 ...em do tipo \textit{top-bottom}), visando}
+                                                   calcular o valor da press...
 ]
-Overfull \hbox (36.46472pt too wide) in paragraph at lines 349--350
-\T1/cmr/m/n/12 fluxo em cada vaso. Esse mó-dulo é ex-presso no Al-go-ritmo []3[
-]. Como ex-presso na equa-ção [], 
+Overfull \hbox (1.42671pt too wide) in paragraph at lines 355--356
+\T1/cmr/m/n/12 ali-men-ta-ção (raiz), neste caso $[] \OT1/cmr/m/n/12 = []$\T1/c
+mr/m/n/12 . Caso con-trá-rio, calcula-se $[]$ com a Equa-ção []. 
  []
 
-) [37pdfTeX warning (ext4): destination with the same identifier (name{algocf.3
+) [37pdfTeX warning (ext4): destination with the same identifier (name{algocf.4
 }) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
@@ -1521,7 +1552,7 @@ Overfull \hbox (18.36092pt too wide) in paragraph at lines 5--6
 que ela pos-sua grande ver-sa-ti-li-dade. 
  []
 
-<Figures/IGU_002.png, id=1150, 1882.03125pt x 1020.81375pt>
+<Figures/IGU_002.png, id=1153, 1882.03125pt x 1020.81375pt>
 File: Figures/IGU_002.png Graphic file (type png)
 <use Figures/IGU_002.png>
 Package pdftex.def Info: Figures/IGU_002.png  used on input line 11.
@@ -1620,7 +1651,7 @@ da ele-mento in-te-li-gente pos-suirá
  []
 
 [40]
-<Figures/WiseElement@16x.png, id=1172, 157.14961pt x 100.375pt>
+<Figures/WiseElement@16x.png, id=1175, 157.14961pt x 100.375pt>
 File: Figures/WiseElement@16x.png Graphic file (type png)
 <use Figures/WiseElement@16x.png>
 Package pdftex.def Info: Figures/WiseElement@16x.png  used on input line 40.
@@ -1673,7 +1704,7 @@ Overfull \hbox (1.25803pt too wide) in paragraph at lines 47--48
  na mesma es-tru-tura e po-dem 
  []
 
-<Figures/WiseElements@16x.png, id=1179, 221.0132pt x 93.09781pt>
+<Figures/WiseElements@16x.png, id=1182, 221.0132pt x 93.09781pt>
 File: Figures/WiseElements@16x.png Graphic file (type png)
 <use Figures/WiseElements@16x.png>
 Package pdftex.def Info: Figures/WiseElements@16x.png  used on input line 51.
@@ -1727,13 +1758,13 @@ Overfull \hbox (11.78609pt too wide) in paragraph at lines 64--65
 s para des-cre-ver as es-tru-tu-ras e seus pa-râ-me-tros, 
  []
 
-<Figures/WiseElementPoints@16x.png, id=1187, 105.20555pt x 75.03032pt>
+<Figures/WiseElementPoints@16x.png, id=1190, 105.20555pt x 75.03032pt>
 File: Figures/WiseElementPoints@16x.png Graphic file (type png)
 <use Figures/WiseElementPoints@16x.png>
 Package pdftex.def Info: Figures/WiseElementPoints@16x.png  used on input line 
 67.
 (pdftex.def)             Requested size: 227.62206pt x 162.33781pt.
-<Figures/WiseElementLines@16x.png, id=1188, 108.5932pt x 79.86086pt>
+<Figures/WiseElementLines@16x.png, id=1191, 108.5932pt x 79.86086pt>
 File: Figures/WiseElementLines@16x.png Graphic file (type png)
 <use Figures/WiseElementLines@16x.png>
 Package pdftex.def Info: Figures/WiseElementLines@16x.png  used on input line 6
@@ -1744,7 +1775,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 67--69
 [][] 
  []
 
-<Figures/WiseElementCells@16x.png, id=1189, 104.9546pt x 78.35524pt>
+<Figures/WiseElementCells@16x.png, id=1192, 104.9546pt x 78.35524pt>
 File: Figures/WiseElementCells@16x.png Graphic file (type png)
 <use Figures/WiseElementCells@16x.png>
 Package pdftex.def Info: Figures/WiseElementCells@16x.png  used on input line 7
@@ -1800,7 +1831,7 @@ Overfull \hbox (17.68192pt too wide) in paragraph at lines 77--78
 1/cmr/m/n/12 é des-car-tada e os da-dos con-ti-dos na nova es-tru-tura 
  []
 
-<Figures/WiseElementStatus@16x.png, id=1202, 253.88602pt x 168.88094pt>
+<Figures/WiseElementStatus@16x.png, id=1205, 253.88602pt x 168.88094pt>
 File: Figures/WiseElementStatus@16x.png Graphic file (type png)
 <use Figures/WiseElementStatus@16x.png>
 Package pdftex.def Info: Figures/WiseElementStatus@16x.png  used on input line 
@@ -1830,7 +1861,7 @@ Overfull \hbox (10.28516pt too wide) in paragraph at lines 86--87
  es-quen-tando ou es-fri-ando, suas es-tru-tu-ras es-tão re-pre-sen-ta-das 
  []
 
-<Figures/WiseElementWarming@16x.png, id=1204, 216.93547pt x 71.8936pt>
+<Figures/WiseElementWarming@16x.png, id=1207, 216.93547pt x 71.8936pt>
 File: Figures/WiseElementWarming@16x.png Graphic file (type png)
 <use Figures/WiseElementWarming@16x.png>
 Package pdftex.def Info: Figures/WiseElementWarming@16x.png  used on input line
@@ -1853,7 +1884,7 @@ Overfull \hbox (19.82579pt too wide) in paragraph at lines 99--100
 vo \T1/cmr/m/it/12 XML\T1/cmr/m/n/12 . Caso se-jam no-va-mente 
  []
 
-<Figures/WiseElementCold@16x.png, id=1212, 221.51508pt x 92.65868pt>
+<Figures/WiseElementCold@16x.png, id=1215, 221.51508pt x 92.65868pt>
 File: Figures/WiseElementCold@16x.png Graphic file (type png)
 <use Figures/WiseElementCold@16x.png>
 Package pdftex.def Info: Figures/WiseElementCold@16x.png  used on input line 10
@@ -1871,7 +1902,7 @@ i-cado se as es-tru-tu-ras es-pe-ra-das
                                                   
 l.109 
        <./Figures/WiseElementWarming@16x.png>]
-<Figures/WiseElementHot@16x.png, id=1218, 218.06468pt x 133.81242pt>
+<Figures/WiseElementHot@16x.png, id=1221, 218.06468pt x 133.81242pt>
 File: Figures/WiseElementHot@16x.png Graphic file (type png)
 <use Figures/WiseElementHot@16x.png>
 Package pdftex.def Info: Figures/WiseElementHot@16x.png  used on input line 114
@@ -1923,7 +1954,7 @@ Overfull \hbox (6.67896pt too wide) in paragraph at lines 126--127
 s in-te-li-gen-tes, a se-gunda res-pon-sá-vel 
  []
 
-<Figures/WiseElementWorkflow@16x.png, id=1227, 182.6825pt x 192.21812pt>
+<Figures/WiseElementWorkflow@16x.png, id=1230, 182.6825pt x 192.21812pt>
 File: Figures/WiseElementWorkflow@16x.png Graphic file (type png)
 <use Figures/WiseElementWorkflow@16x.png>
 Package pdftex.def Info: Figures/WiseElementWorkflow@16x.png  used on input lin
@@ -1989,7 +2020,7 @@ Overfull \hbox (4.91702pt too wide) in paragraph at lines 149--150
  in-te-li-gen-tes, desta forma ob-je-tos 
  []
 
-<Figures/WiseObject@16x.png, id=1246, 380.48398pt x 247.23618pt>
+<Figures/WiseObject@16x.png, id=1249, 380.48398pt x 247.23618pt>
 File: Figures/WiseObject@16x.png Graphic file (type png)
 <use Figures/WiseObject@16x.png>
 Package pdftex.def Info: Figures/WiseObject@16x.png  used on input line 155.
@@ -2024,7 +2055,7 @@ o in-te-li-gente. O ob-jeto in-te-li-gente
                                                   
 l.161 
        <./Figures/WiseObject@16x.png>]
-<Figures/WiseObjectStatus@16x.png, id=1253, 191.65352pt x 126.78618pt>
+<Figures/WiseObjectStatus@16x.png, id=1256, 191.65352pt x 126.78618pt>
 File: Figures/WiseObjectStatus@16x.png Graphic file (type png)
 <use Figures/WiseObjectStatus@16x.png>
 Package pdftex.def Info: Figures/WiseObjectStatus@16x.png  used on input line 1
@@ -2098,7 +2129,7 @@ Overfull \hbox (22.53351pt too wide) in paragraph at lines 183--184
 do ne-ces-sá-rio. No caso dos ele-men-tos 
  []
 
-<Figures/GraphicModel@16x.png, id=1264, 225.34187pt x 107.90312pt>
+<Figures/GraphicModel@16x.png, id=1267, 225.34187pt x 107.90312pt>
 File: Figures/GraphicModel@16x.png Graphic file (type png)
 <use Figures/GraphicModel@16x.png>
 Package pdftex.def Info: Figures/GraphicModel@16x.png  used on input line 187.
@@ -2127,7 +2158,7 @@ ie um ele-mento in-te-li-gente \T1/cmr/m/it/12 Wi-se-E-le-ment
                                                   
 l.193 
        <./Figures/GraphicModel@16x.png>]
-<Figures/GraphicObjects@16x.png, id=1272, 223.08344pt x 89.71016pt>
+<Figures/GraphicObjects@16x.png, id=1275, 223.08344pt x 89.71016pt>
 File: Figures/GraphicObjects@16x.png Graphic file (type png)
 <use Figures/GraphicObjects@16x.png>
 Package pdftex.def Info: Figures/GraphicObjects@16x.png  used on input line 196
@@ -2157,7 +2188,7 @@ Overfull \hbox (27.43225pt too wide) in paragraph at lines 203--204
 res, com isso as co-res re-pre-sen-tam 
  []
 
-<Figures/GraphicElements@16x.png, id=1274, 172.2686pt x 92.345pt>
+<Figures/GraphicElements@16x.png, id=1277, 172.2686pt x 92.345pt>
 File: Figures/GraphicElements@16x.png Graphic file (type png)
 <use Figures/GraphicElements@16x.png>
 Package pdftex.def Info: Figures/GraphicElements@16x.png  used on input line 20
@@ -2199,7 +2230,7 @@ Overfull \hbox (28.81111pt too wide) in paragraph at lines 220--221
  
  []
 
-<Figures/WiseProject@16x.png, id=1280, 185.25461pt x 86.63617pt>
+<Figures/WiseProject@16x.png, id=1283, 185.25461pt x 86.63617pt>
 File: Figures/WiseProject@16x.png Graphic file (type png)
 <use Figures/WiseProject@16x.png>
 Package pdftex.def Info: Figures/WiseProject@16x.png  used on input line 225.
@@ -2239,7 +2270,7 @@ Overfull \hbox (21.78511pt too wide) in paragraph at lines 237--238
 i-cas, a fá-brica de pro-je-tos in-te-li-gen-tes 
  []
 
-<Figures/WiseProjectFactory@16x.png, id=1287, 240.02171pt x 158.9689pt>
+<Figures/WiseProjectFactory@16x.png, id=1290, 240.02171pt x 158.9689pt>
 File: Figures/WiseProjectFactory@16x.png Graphic file (type png)
 <use Figures/WiseProjectFactory@16x.png>
 Package pdftex.def Info: Figures/WiseProjectFactory@16x.png  used on input line
@@ -2277,31 +2308,31 @@ Overfull \hbox (9.58116pt too wide) in paragraph at lines 246--247
 ar-te-ri-ais e grá-fi-cos é car-re-gado 
  []
 
-<Figures/WiseElementFactories@16x.png, id=1289, 256.58359pt x 222.51883pt>
+<Figures/WiseElementFactories@16x.png, id=1292, 256.58359pt x 222.51883pt>
 File: Figures/WiseElementFactories@16x.png Graphic file (type png)
 <use Figures/WiseElementFactories@16x.png>
 Package pdftex.def Info: Figures/WiseElementFactories@16x.png  used on input li
 ne 250.
 (pdftex.def)             Requested size: 227.62206pt x 197.40279pt.
-<Figures/WiseObjectFactories@16x.png, id=1290, 256.70906pt x 221.82875pt>
+<Figures/WiseObjectFactories@16x.png, id=1293, 256.70906pt x 221.82875pt>
 File: Figures/WiseObjectFactories@16x.png Graphic file (type png)
 <use Figures/WiseObjectFactories@16x.png>
 Package pdftex.def Info: Figures/WiseObjectFactories@16x.png  used on input lin
 e 250.
 (pdftex.def)             Requested size: 227.62206pt x 196.69582pt.
-<Figures/GraphicObjectFactories@16x.png, id=1291, 256.96pt x 222.51883pt>
+<Figures/GraphicObjectFactories@16x.png, id=1294, 256.96pt x 222.51883pt>
 File: Figures/GraphicObjectFactories@16x.png Graphic file (type png)
 <use Figures/GraphicObjectFactories@16x.png>
 Package pdftex.def Info: Figures/GraphicObjectFactories@16x.png  used on input 
 line 252.
 (pdftex.def)             Requested size: 227.62206pt x 197.11757pt.
-<Figures/GraphicElementFactories@16x.png, id=1292, 263.48438pt x 262.29242pt>
+<Figures/GraphicElementFactories@16x.png, id=1295, 263.48438pt x 262.29242pt>
 File: Figures/GraphicElementFactories@16x.png Graphic file (type png)
 <use Figures/GraphicElementFactories@16x.png>
 Package pdftex.def Info: Figures/GraphicElementFactories@16x.png  used on input
  line 252.
 (pdftex.def)             Requested size: 227.62206pt x 226.60367pt.
-<Figures/WiseIterationFactories@16x.png, id=1293, 268.37766pt x 218.69203pt>
+<Figures/WiseIterationFactories@16x.png, id=1296, 268.37766pt x 218.69203pt>
 File: Figures/WiseIterationFactories@16x.png Graphic file (type png)
 <use Figures/WiseIterationFactories@16x.png>
 Package pdftex.def Info: Figures/WiseIterationFactories@16x.png  used on input 
@@ -2388,7 +2419,7 @@ Overfull \hbox (0.36104pt too wide) in paragraph at lines 270--271
 t/12 QTh-re-ads \T1/cmr/m/n/12 que pos-suem ta-re-fas con-cor-ren-tes 
  []
 
-<Figures/WiseThreadPool@16x.png, id=1318, 290.02101pt x 130.2993pt>
+<Figures/WiseThreadPool@16x.png, id=1321, 290.02101pt x 130.2993pt>
 File: Figures/WiseThreadPool@16x.png Graphic file (type png)
 <use Figures/WiseThreadPool@16x.png>
 Package pdftex.def Info: Figures/WiseThreadPool@16x.png  used on input line 275
@@ -2447,7 +2478,7 @@ Overfull \hbox (4.78644pt too wide) in paragraph at lines 284--285
  será cri-ado e en-vi-ado ao ge-ren-ci-a-dor 
  []
 
-<Figures/WiseThreaPoolCMD.png, id=1326, 343.2825pt x 167.62625pt>
+<Figures/WiseThreaPoolCMD.png, id=1329, 343.2825pt x 167.62625pt>
 File: Figures/WiseThreaPoolCMD.png Graphic file (type png)
 <use Figures/WiseThreaPoolCMD.png>
 Package pdftex.def Info: Figures/WiseThreaPoolCMD.png  used on input line 288.
@@ -2465,7 +2496,7 @@ cmr/m/n/12 é muito uti-li-zada no ci-clo de vida de um ele-mento
  []
 
 [61]
-<Figures/WiseThreadPoolHeating@16x.png, id=1331, 339.89484pt x 131.17758pt>
+<Figures/WiseThreadPoolHeating@16x.png, id=1334, 339.89484pt x 131.17758pt>
 File: Figures/WiseThreadPoolHeating@16x.png Graphic file (type png)
 <use Figures/WiseThreadPoolHeating@16x.png>
 Package pdftex.def Info: Figures/WiseThreadPoolHeating@16x.png  used on input l
@@ -2580,7 +2611,7 @@ Overfull \hbox (35.09433pt too wide) in paragraph at lines 339--340
 
  []
 
-<Figures/WiseJobStatus@16x.png, id=1342, 191.65352pt x 113.11008pt>
+<Figures/WiseJobStatus@16x.png, id=1345, 191.65352pt x 113.11008pt>
 File: Figures/WiseJobStatus@16x.png Graphic file (type png)
 <use Figures/WiseJobStatus@16x.png>
 Package pdftex.def Info: Figures/WiseJobStatus@16x.png  used on input line 343.
@@ -2674,7 +2705,7 @@ ar e exe-cu-tar a fer-ra-menta com-pu-ta-ci-o-nal
                                                   
 l.370 
       ]
-<Figures/InGU.png, id=1360, 297.11pt x 173.64874pt>
+<Figures/InGU.png, id=1363, 297.11pt x 173.64874pt>
 File: Figures/InGU.png Graphic file (type png)
 <use Figures/InGU.png>
 Package pdftex.def Info: Figures/InGU.png  used on input line 373.
@@ -2685,7 +2716,7 @@ Overfull \hbox (5.63765pt too wide) in paragraph at lines 378--379
 u-tá-vel InGU con-tendo o pro-jeto 
  []
 
-<Figures/InGU_console.png, id=1361, 741.77126pt x 440.64626pt>
+<Figures/InGU_console.png, id=1364, 741.77126pt x 440.64626pt>
 File: Figures/InGU_console.png Graphic file (type png)
 <use Figures/InGU_console.png>
 Package pdftex.def Info: Figures/InGU_console.png  used on input line 382.
@@ -2726,7 +2757,7 @@ Overfull \hbox (23.64699pt too wide) in paragraph at lines 412--413
 man-dos por área de atu-a-ção, co-man-dos 
  []
 
-<Figures/InGU_help.png, id=1368, 839.135pt x 1015.795pt>
+<Figures/InGU_help.png, id=1371, 839.135pt x 1015.795pt>
 File: Figures/InGU_help.png Graphic file (type png)
 <use Figures/InGU_help.png>
 Package pdftex.def Info: Figures/InGU_help.png  used on input line 417.
@@ -3447,7 +3478,7 @@ l.1525
                                                   
 l.1525 
        ]
-<Figures/CasoDeUso@16x.png, id=1479, 378.28828pt x 427.4093pt>
+<Figures/CasoDeUso@16x.png, id=1482, 378.28828pt x 427.4093pt>
 File: Figures/CasoDeUso@16x.png Graphic file (type png)
 <use Figures/CasoDeUso@16x.png>
 Package pdftex.def Info: Figures/CasoDeUso@16x.png  used on input line 1528.
@@ -3459,7 +3490,7 @@ cmr/bx/n/12 N\T1/cmr/m/n/12 etwork \T1/cmr/bx/n/12 G\T1/cmr/m/n/12 raphics, ou
 \T1/cmr/m/it/12 png\T1/cmr/m/n/12 , com seu co-mando re-pre-sen-tado 
  []
 
-<Figures/CasoDeUso2@16x.png, id=1484, 378.22554pt x 426.1546pt>
+<Figures/CasoDeUso2@16x.png, id=1487, 378.22554pt x 426.1546pt>
 File: Figures/CasoDeUso2@16x.png Graphic file (type png)
 <use Figures/CasoDeUso2@16x.png>
 Package pdftex.def Info: Figures/CasoDeUso2@16x.png  used on input line 1547.
@@ -3506,7 +3537,7 @@ Overfull \hbox (7.0664pt too wide) in paragraph at lines 1559--1560
 m seus ele-men-tos grá-fi-cos é exi-bida.  
  []
 
-<Figures/IGU_001a.png, id=1501, 1927.2pt x 1084.05pt>
+<Figures/IGU_001a.png, id=1504, 1927.2pt x 1084.05pt>
 File: Figures/IGU_001a.png Graphic file (type png)
 <use Figures/IGU_001a.png>
 Package pdftex.def Info: Figures/IGU_001a.png  used on input line 1563.
@@ -3529,7 +3560,7 @@ s os prin-ci-pais gru-pos de ele-men-tos
                                                   
 l.1569 
         <./Figures/IGU_001a.png>]
-<Figures/IGU_016.png, id=1508, 173.14688pt x 60.97781pt>
+<Figures/IGU_016.png, id=1511, 173.14688pt x 60.97781pt>
 File: Figures/IGU_016.png Graphic file (type png)
 <use Figures/IGU_016.png>
 Package pdftex.def Info: Figures/IGU_016.png  used on input line 1579.
@@ -3540,7 +3571,7 @@ Overfull \hbox (6.59433pt too wide) in paragraph at lines 1588--1589
 um novo ele-mento grá-fico OpenGL 
  []
 
-<Figures/IGU_001a_34.png, id=1509, 4795.41562pt x 2898.32813pt>
+<Figures/IGU_001a_34.png, id=1512, 4795.41562pt x 2898.32813pt>
 File: Figures/IGU_001a_34.png Graphic file (type png)
 <use Figures/IGU_001a_34.png>
 Package pdftex.def Info: Figures/IGU_001a_34.png  used on input line 1600.
@@ -3557,12 +3588,12 @@ Overfull \hbox (13.2815pt too wide) in paragraph at lines 1605--1606
                                                   
 l.1608 
         <./Figures/IGU_016.png>]
-<Figures/IGU_017.png, id=1515, 1882.03125pt x 1018.80624pt>
+<Figures/IGU_017.png, id=1518, 1882.03125pt x 1018.80624pt>
 File: Figures/IGU_017.png Graphic file (type png)
 <use Figures/IGU_017.png>
 Package pdftex.def Info: Figures/IGU_017.png  used on input line 1611.
 (pdftex.def)             Requested size: 409.71692pt x 221.79066pt.
-<Figures/IGU_001.png, id=1516, 1886.04625pt x 1020.81375pt>
+<Figures/IGU_001.png, id=1519, 1886.04625pt x 1020.81375pt>
 File: Figures/IGU_001.png Graphic file (type png)
 <use Figures/IGU_001.png>
 Package pdftex.def Info: Figures/IGU_001.png  used on input line 1618.
@@ -3612,7 +3643,7 @@ l.1632
                                                   
 l.1632 
         <./Figures/IGU_017.png> <./Figures/IGU_001.png>]
-<Figures/IGU_001c.png, id=1529, 256.20718pt x 420.82219pt>
+<Figures/IGU_001c.png, id=1532, 256.20718pt x 420.82219pt>
 File: Figures/IGU_001c.png Graphic file (type png)
 <use Figures/IGU_001c.png>
 Package pdftex.def Info: Figures/IGU_001c.png  used on input line 1635.
@@ -3685,7 +3716,7 @@ Overfull \hbox (7.86633pt too wide) in paragraph at lines 1662--1663
  []
 
 [99]
-<Figures/IGU_025.png, id=1541, 1882.03125pt x 1018.80624pt>
+<Figures/IGU_025.png, id=1544, 1882.03125pt x 1018.80624pt>
 File: Figures/IGU_025.png Graphic file (type png)
 <use Figures/IGU_025.png>
 Package pdftex.def Info: Figures/IGU_025.png  used on input line 1666.
@@ -3703,7 +3734,7 @@ r/m/n/12 .
                                                   
 l.1677 
         <./Figures/IGU_025.png>]
-<Figures/IGU_023.png, id=1547, 1668.2325pt x 965.6075pt>
+<Figures/IGU_023.png, id=1550, 1668.2325pt x 965.6075pt>
 File: Figures/IGU_023.png Graphic file (type png)
 <use Figures/IGU_023.png>
 Package pdftex.def Info: Figures/IGU_023.png  used on input line 1680.
@@ -3720,7 +3751,7 @@ Overfull \hbox (4.853pt too wide) in paragraph at lines 1694--1695
 da cri-a-ção até o fi-nal de sua exe-cu-ção.  
  []
 
-<Figures/IGU_022.png, id=1554, 1669.23625pt x 962.59625pt>
+<Figures/IGU_022.png, id=1557, 1669.23625pt x 962.59625pt>
 File: Figures/IGU_022.png Graphic file (type png)
 <use Figures/IGU_022.png>
 Package pdftex.def Info: Figures/IGU_022.png  used on input line 1701.
@@ -3765,7 +3796,7 @@ Overfull \hbox (30.13858pt too wide) in paragraph at lines 11--12
 a-nina como ilus-trado na Fi-gura []4.1[]. 
  []
 
-<Figures/tree_canine.png, id=1569, 297.36093pt x 155.07938pt>
+<Figures/tree_canine.png, id=1572, 297.36093pt x 155.07938pt>
 File: Figures/tree_canine.png Graphic file (type png)
 <use Figures/tree_canine.png>
 Package pdftex.def Info: Figures/tree_canine.png  used on input line 15.
@@ -3827,13 +3858,13 @@ Overfull \hbox (10.39902pt too wide) in paragraph at lines 51--52
 pres-são cau-sada pe-las re-fle-xões 
  []
 
-<Figures/fig3_P_f3_65_visc_NEW.png, id=1598, 470.2368pt x 376.7676pt>
+<Figures/fig3_P_f3_65_visc_NEW.png, id=1601, 470.2368pt x 376.7676pt>
 File: Figures/fig3_P_f3_65_visc_NEW.png Graphic file (type png)
 <use Figures/fig3_P_f3_65_visc_NEW.png>
 Package pdftex.def Info: Figures/fig3_P_f3_65_visc_NEW.png  used on input line 
 56.
 (pdftex.def)             Requested size: 329.16351pt x 263.7355pt.
-<Figures/fig3_P_f7_30_visc_NEW.png, id=1599, 485.1726pt x 383.5128pt>
+<Figures/fig3_P_f7_30_visc_NEW.png, id=1602, 485.1726pt x 383.5128pt>
 File: Figures/fig3_P_f7_30_visc_NEW.png Graphic file (type png)
 <use Figures/fig3_P_f7_30_visc_NEW.png>
 Package pdftex.def Info: Figures/fig3_P_f7_30_visc_NEW.png  used on input line 
@@ -3846,13 +3877,13 @@ m/m/it/12 P\OMS/cmsy/m/n/12 j$ \T1/cmr/m/n/12 ao longo da ár-vore ar-te-rial co
 n-si-de-rando 
  []
 
-<Figures/fig3_P_f10_95_visc_NEW.png, id=1600, 484.6908pt x 384.4764pt>
+<Figures/fig3_P_f10_95_visc_NEW.png, id=1603, 484.6908pt x 384.4764pt>
 File: Figures/fig3_P_f10_95_visc_NEW.png Graphic file (type png)
 <use Figures/fig3_P_f10_95_visc_NEW.png>
 Package pdftex.def Info: Figures/fig3_P_f10_95_visc_NEW.png  used on input line
  66.
 (pdftex.def)             Requested size: 339.28123pt x 269.13164pt.
-<Figures/fig3_P_f14_60_visc_NEW.png, id=1601, 578.16pt x 434.5836pt>
+<Figures/fig3_P_f14_60_visc_NEW.png, id=1604, 578.16pt x 434.5836pt>
 File: Figures/fig3_P_f14_60_visc_NEW.png Graphic file (type png)
 <use Figures/fig3_P_f14_60_visc_NEW.png>
 Package pdftex.def Info: Figures/fig3_P_f14_60_visc_NEW.png  used on input line
@@ -3890,14 +3921,14 @@ e.4.3}) has been already used, duplicate ignored
 l.77 
       <./Figures/fig3_P_f10_95_visc_NEW.png> <./Figures/fig3_P_f14_60_visc_NEW.
 png>]
-<Figures/fig4_P_f3_65_viscoelasticity_NEW.png, id=1620, 484.209pt x 386.8854pt>
+<Figures/fig4_P_f3_65_viscoelasticity_NEW.png, id=1623, 484.209pt x 386.8854pt>
 
 File: Figures/fig4_P_f3_65_viscoelasticity_NEW.png Graphic file (type png)
 <use Figures/fig4_P_f3_65_viscoelasticity_NEW.png>
 Package pdftex.def Info: Figures/fig4_P_f3_65_viscoelasticity_NEW.png  used on 
 input line 81.
 (pdftex.def)             Requested size: 338.94398pt x 270.81793pt.
-<Figures/fig4_P_f7_30_viscoelasticity_NEW.png, id=1621, 483.2454pt x 385.9218pt
+<Figures/fig4_P_f7_30_viscoelasticity_NEW.png, id=1624, 483.2454pt x 385.9218pt
 >
 File: Figures/fig4_P_f7_30_viscoelasticity_NEW.png Graphic file (type png)
 <use Figures/fig4_P_f7_30_viscoelasticity_NEW.png>
@@ -3911,14 +3942,14 @@ m/m/it/12 P\OMS/cmsy/m/n/12 j$ \T1/cmr/m/n/12 ao longo da ár-vore ar-te-rial co
 n-si-de-rando 
  []
 
-<Figures/fig4_P_f10_95_viscoelasticity_NEW.png, id=1622, 483.2454pt x 382.0674p
+<Figures/fig4_P_f10_95_viscoelasticity_NEW.png, id=1625, 483.2454pt x 382.0674p
 t>
 File: Figures/fig4_P_f10_95_viscoelasticity_NEW.png Graphic file (type png)
 <use Figures/fig4_P_f10_95_viscoelasticity_NEW.png>
 Package pdftex.def Info: Figures/fig4_P_f10_95_viscoelasticity_NEW.png  used on
  input line 91.
 (pdftex.def)             Requested size: 338.26947pt x 267.44534pt.
-<Figures/fig4_P_f14_60_viscoelasticity_NEW.png, id=1623, 482.2818pt x 385.9218p
+<Figures/fig4_P_f14_60_viscoelasticity_NEW.png, id=1626, 482.2818pt x 385.9218p
 t>
 File: Figures/fig4_P_f14_60_viscoelasticity_NEW.png Graphic file (type png)
 <use Figures/fig4_P_f14_60_viscoelasticity_NEW.png>
@@ -3978,7 +4009,7 @@ feito so-mado dos fenô-me-nos causa
 l.102 
        <./Figures/fig4_P_f10_95_viscoelasticity_NEW.png> <./Figures/fig4_P_f14_
 60_viscoelasticity_NEW.png>]
-<Figures/fig5_P_f3_65_viscoelasticity_viscosity_NEW.png, id=1640, 472.6458pt x 
+<Figures/fig5_P_f3_65_viscoelasticity_viscosity_NEW.png, id=1643, 472.6458pt x 
 376.2858pt>
 File: Figures/fig5_P_f3_65_viscoelasticity_viscosity_NEW.png Graphic file (type
  png)
@@ -3986,7 +4017,7 @@ File: Figures/fig5_P_f3_65_viscoelasticity_viscosity_NEW.png Graphic file (type
 Package pdftex.def Info: Figures/fig5_P_f3_65_viscoelasticity_viscosity_NEW.png
   used on input line 106.
 (pdftex.def)             Requested size: 330.8498pt x 263.39825pt.
-<Figures/fig5_P_f7_30_viscoelasticity_viscosity_NEW.png, id=1641, 481.8pt x 383
+<Figures/fig5_P_f7_30_viscoelasticity_viscosity_NEW.png, id=1644, 481.8pt x 383
 .9946pt>
 File: Figures/fig5_P_f7_30_viscoelasticity_viscosity_NEW.png Graphic file (type
  png)
@@ -4001,7 +4032,7 @@ m/m/it/12 P\OMS/cmsy/m/n/12 j$ \T1/cmr/m/n/12 ao longo da ár-vore ar-te-rial co
 n-si-de-rando 
  []
 
-<Figures/fig5_P_f10_95_viscoelasticity_viscosity_NEW.png, id=1642, 483.2454pt x
+<Figures/fig5_P_f10_95_viscoelasticity_viscosity_NEW.png, id=1645, 483.2454pt x
  384.4764pt>
 File: Figures/fig5_P_f10_95_viscoelasticity_viscosity_NEW.png Graphic file (typ
 e png)
@@ -4009,7 +4040,7 @@ e png)
 Package pdftex.def Info: Figures/fig5_P_f10_95_viscoelasticity_viscosity_NEW.pn
 g  used on input line 116.
 (pdftex.def)             Requested size: 338.26947pt x 269.13164pt.
-<Figures/fig5_P_f14_60_viscoelasticity_viscosity.png, id=1643, 578.16pt x 434.5
+<Figures/fig5_P_f14_60_viscoelasticity_viscosity.png, id=1646, 578.16pt x 434.5
 836pt>
 File: Figures/fig5_P_f14_60_viscoelasticity_viscosity.png Graphic file (type pn
 g)
@@ -4062,13 +4093,13 @@ fer-ra-menta com-pu-ta-ci-o-nal des-crita
 
 ] [114
 
-pdfTeX warning (ext4): destination with the same identifier (name{algocf.4}) ha
+pdfTeX warning (ext4): destination with the same identifier (name{algocf.5}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
 l.40 	\newpage
               ] [115pdfTeX warning (ext4): destination with the same identifier
- (name{algocf.5}) has been already used, duplicate ignored
+ (name{algocf.6}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   
 l.68 	\chapter
@@ -4107,9 +4138,9 @@ Package rerunfilecheck Info: File `modelo_new2.out' has not changed.
 (rerunfilecheck)             Checksum: 63808919681A5D3223ED77B1205B1864;14546.
  ) 
 Here is how much of TeX's memory you used:
- 17419 strings out of 478994
- 252655 string characters out of 5862207
- 640037 words of memory out of 5000000
+ 17423 strings out of 478994
+ 252735 string characters out of 5862207
+ 640045 words of memory out of 5000000
  34005 multiletter control sequences out of 15000+600000
  416005 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -4128,10 +4159,10 @@ texmf-dist/fonts/type1/public/cm-super/sfbx0800.pfb><c:/texlive/2021/texmf-dist
 e1/public/cm-super/sfrm1200.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/
 cm-super/sfti1200.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/s
 fxc1200.pfb>
-Output written on modelo_new2.pdf (120 pages, 9361714 bytes).
+Output written on modelo_new2.pdf (120 pages, 9361890 bytes).
 PDF statistics:
- 1916 PDF objects out of 2073 (max. 8388607)
- 1641 compressed objects within 17 object streams
- 472 named destinations out of 1000 (max. 500000)
+ 1920 PDF objects out of 2073 (max. 8388607)
+ 1645 compressed objects within 17 object streams
+ 476 named destinations out of 1000 (max. 500000)
  989 words of extra memory for PDF output out of 10000 (max. 10000000)
 
