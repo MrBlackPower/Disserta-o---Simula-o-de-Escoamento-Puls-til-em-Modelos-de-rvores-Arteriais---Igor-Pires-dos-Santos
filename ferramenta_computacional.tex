@@ -2,9 +2,7 @@
 
 Nesta seção apresentam-se detalhes da ferramenta computacional desenvolvida para simulação do escoamento sanguíneo em modelos de árvores arteriais. A principal finalidade desta ferramenta é possibilitar a visualização de estruturas das árvores arteriais e após a simulação hemodinâmica,  a visualização das curvas de distribuição do fluxo sanguíneo e pressão.
 
-Esta ferramenta foi desenvolvida em C++ utilizando as bibliotecas comuns do Qt 5.15.0 \cite{QTClasses} e OpenGL \cite{OpenGL}, que ajudam na construção da interface gráfica e na exibição de modelos gráficos, como árvores arteriais e gráficos. A ferramenta foi disponibilizada em dois ambientes, o primeiro nomeado de \textit{Iterador Gráfico Universal} (IGU), pois em seu modelo de classes qualquer objeto que implemente a classe \textit{WiseObject}, elucidada na Seção~\ref{sec:estrutura}, está apto para realizar iterações e desenhar-se através de diretivas OpenGL em um elemento de interface gráfica. O segundo ambiente disponibilizado foi nomeado de \textit{Iterador não-Gráfico Universal} (InGU), pois segue a mesma generalização, entretanto é disponibilizada pelo console, não possuindo interface gráfica. Buscou-se no desenvolvimento desta ferramenta alto grau de generalização para que seja possível analisar todos os parâmetros de um objeto facilmente e que ela possua grande versatilidade. Além de árvores arteriais a ferramenta possibilita que outros objetos sejam geradas para visualização.
-
-A Figura~\ref{fig1:gui} ilustra a ferramenta desenvolvida. À seguir, apresentam-se em detalhes a implementação computacional realizada.
+Esta ferramenta foi desenvolvida em C++ utilizando as bibliotecas do Qt 5.15.0 \cite{QTClasses} e OpenGL \cite{OpenGL}, que ajudam na construção da interface gráfica e na exibição de modelos gráficos, como árvores arteriais e gráficos dos resultados. A ferramenta foi disponibilizada em dois ambientes, o primeiro nomeado de \textit{Iterador Gráfico Universal} (IGU), pois em seu modelo de classes qualquer objeto que implemente a classe \textit{WiseObject} (descrito na Seção~\ref{sec:objeto_inteligente}) está apto para realizar iterações e desenhar-se através de diretivas OpenGL em um elemento de interface gráfica. O segundo ambiente disponibilizado foi nomeado de \textit{Iterador não-Gráfico Universal} (InGU), pois segue a mesma generalização, entretanto é disponibilizada pelo console, não possuindo interface gráfica. Buscou-se no desenvolvimento desta ferramenta alto grau de generalização para que seja possível analisar todos os parâmetros de um objeto facilmente e que ela possua grande versatilidade. \igunew{Além de árvores arteriais a ferramenta possibilita que outros objetos sejam gerados para visualização, qualquer objeto que implemente a classe \textit{GraphicObject} (descrito na Seção~\ref{sec:objeto_grafico}) pode ser visualizado.} A Figura~\ref{fig1:gui} ilustra a ferramenta desenvolvida.
 
 \begin{figure}[!htbp]
 	\centering
@@ -13,18 +11,170 @@ A Figura~\ref{fig1:gui} ilustra a ferramenta desenvolvida. À seguir, apresentam
 	\label{fig1:gui}
 \end{figure}
 
-Através da modelagem de classes no paradigma do C++ \cite{AlanParker}, foi possível realizar diversas generalizações que ampliam a adaptabilidade dos objetos que podem ser inseridos neste modelo de classes. Na seção seguinte apresentamos um esquema de classes virtuais, ou abstratas, que foram criadas para facilitar o manuseio dos objetos dentro do ambiente computacional e prover funções básicas. 
+Através da modelagem de classes no paradigma do C++ \cite{AlanParker}, foi possível realizar diversas generalizações que ampliam a adaptabilidade dos objetos que podem ser inseridos neste modelo de classes. Na Seção~\ref{sec:estrutura} é proposto um esquema de classes virtuais, ou abstratas, que foram criadas para facilitar o manuseio dos objetos dentro do ambiente computacional e prover funções básicas. 
 
 Uma classe virtual não possui construtor próprio, porque classes virtuais são incompletas. Estas classes possuem métodos virtuais, que por sua vez precisam ser definidos pela classe herdeira. Portanto uma classe virtual funciona como um conjunto de regras que classes herdeiras devem seguir, todas as classes que implementem esta classe virtual devem ter sua própria definição dos métodos virtuais, podendo ter funcionamentos distintos, entretanto recebendo os mesmo parâmetros.  Adicionado este conceito à estrutura de dados, classes virtuais generalizam os objetos e garantem o seu funcionamento, separando as estruturas de acordo com seu propósito em classes.
+
+\igunew{Nesta ferramenta computacional ponteiros foram utilizados na organização destas classes virtuais, quando um ponteiro para uma classe abstrata é definido, é possível que diversas estruturas de dados sejam referencias. Ao referenciar um objeto inteligente \textit{WiseObject} através de um ponteiro é possível acessar os métodos padrões da classe abstrata que irão acessar a implementação de cada objeto. Todos os objetos inteligentes irão ter por definição um método que irá construir a estrutura, mas cada objeto irá construir suas próprias estruturas. Portanto é possível que a ferramenta computacional envie estes dados sem necessariamente reescreve-los na memória, eles são enviados por referência. Este fator foi determinante na escolha da linguagem \textit{C++}, pois um ponteiro é o endereço de memória física, o que permite uma agilidade maior na organização da ferramenta e na utilização destas estruturas pela ferramenta em suas diferentes \textit{threads}.}
+
+%--------------------------------------------------------------------------------%
+\section{MODELAGEM COMPUTACIONAL}
+\label{sec:algoritmo}
+%\textcolor{red}{IGOR: fiz mais uma revisão nesta seção. Cheque se tudo está coerente com o quis dizer após minhas alterações no texto.} \textcolor{green}{OK}
+
+Nesta seção, detalham-se alguns aspectos da estrutura de dados e algoritmos que descrevem os passos para o cálculo das equações da pressão $P$ e fluxo $Q$ definidas em \eqref{21_P} \eqref{23_Q}, respectivamente.
+
+Inicialmente, salientam-se que as Equações~\eqref{27_R} e~\eqref{28_Ye} expõem a necessidade de valores $Y_e(k+1,2j)$ e $Y_e(k+1,2j-1)$ atrelados aos vasos adjacentes na posição distal do vaso $(k,j)$. Por outro lado, o valor da pressão média do vaso $(k,j)$ calculado usando a Equação~\eqref{18_barp} depende de valores  à montante desse vaso, ou seja, do valor $\bar{p}(k-1,s)$. Tendo isto em vista, a estrutura de dados desenvolvida utiliza ponteiros para acessar as propriedades de artérias à montante e a jusante de um vaso do modelo.
+
+Neste trabalho, adotou-se a linguagem de programação C++. Essa linguagem de programação escolhida permite que objetos sejam passados por referência. Ao passar um objeto por referência, o endereço de memória é enviado, dando total acesso aos parâmetros do objeto, este endereço é chamado de ponteiro. Ao enviar o ponteiro do vaso raiz, é possível acessar todo o modelo de árvore arterial. Cada vaso arterial do modelo contém as propriedades apresentadas na Tabela~\ref{tab:info_vaso}, além de ponteiros para os vasos adjacentes. 
+
+\begin{table}[h]
+	\begin{tabular}{c|c|c|c}
+		\toprule
+		\textbf{valores conhecidos} & \textbf{unidade} & \textbf{valores calculados} & \textbf{unidade} \\\midrule
+		
+		comprimento ($L$) & cm &  velocidade da onda ($c$) & cm/s \\
+		
+		densidade ($\rho$) & g/cm$^3$ &   beta ($\beta$) & -- \\
+		
+		módulo de Young ($E$) & g/cms$^2$  & velocidade angular ($\omega$) & rad/s \\
+		
+		viscosidade ($\mu_0$) & cm$^2$/s &	espessura da parede ($h$) &  $cm$ \\
+		
+		raio ($r$) & cm  & número de Womersley ($\alpha$) & --- \\
+		
+		& & admitância característica ($Y$) & $cm^4 s/g $\\
+		
+		&  & admitância efetiva ($Y_e$) & $cm^4 s/g $\\
+		
+		&  & coeficiente de reflexão ($R$) & $g /cm^4 s$ \\
+		
+		& & fator viscoso ($\epsilon$) & -- \\
+		
+		& & pressão ($P$) & -- \\
+		
+		&  &	pressão média ($\bar{p}$) & -- \\
+		
+		& &	fluxo ($Q$) & -- \\
+		\hline
+	\end{tabular}
+	\caption{Propriedades de cada vaso arterial do modelo.}
+	\label{tab:info_vaso}
+\end{table}
+
+Além das propriedades especificadas na Tabela~\ref{tab:info_vaso}, o vaso possui ainda três ponteiros para os seus vasos adjacentes. Um destes ponteiros, para o vaso adjacente ao seu nó proximal, ou seja, para o seu vaso pai $(k-1,s)$. Os demais ponteiros para os vasos adjacentes ao seu nó distal, ou seja, para seus vasos filhos à esquerda ($esq$) e à direita ($dir$) expressos por $(k+1,2j-1)$ e $(k+1,2j)$, respectivamente. Este arranjo de ponteiros é equivalente a uma árvore duplamente encadeada, onde através de um único ponteiro para um vaso é possível trafegar a árvore nos dois sentidos. Isto é útil quando é necessário acessar propriedades de outro vaso para se determinarem por exemplo, a pressão média, coeficientes de reflexão e admitâncias de um dado vaso.
+
+Os ponteiros permitem também definir se o vaso é a raiz ou uma folha. Caso o ponteiro para o segmento superior $(k-1,s)$ seja igual ao valor da \textit{flag} nula se trata de um vaso raiz. Caso ambos vasos  $(k+1,2j-1)$ e $(k+1,2j)$ sejam iguais ao valor da \textit{flag} nula se trata de vaso folha, isto é, um vaso terminal.
+
+Basicamente, os passos para determinar as ondas de pressão e fluxo que percorrem um modelo de árvore arterial usando o modelo de Duan e Zamir são dados por:
+
+\begin{algorithm}[H]
+	\SetAlgoLined
+	\Inicio{
+		Cálculo da admitância característica $(Y)$ de cada vaso;\\
+		Cálculo da admitância efetiva $(Y_e)$  de cada vaso;\\
+		Cálculo do coeficiente de reflexão $(R)$  de cada vaso; \\
+		Armazenar valor da admitância característica $(Y_r)$ do vaso raiz, isto é, o valor de $Y(1,1)$;\\
+		Cálculo da pressão média $(\bar{p})$ em cada vaso;\\
+		Cálculo das ondas de pressão e fluxo $P$ e $Q$.
+	}
+	\caption{Cálculos hemodinâmicos simplificados com passos determinando as ondas de fluxo e pressão.}
+	\label{algsimples}
+\end{algorithm}
+
+Os passos acima mencionados podem ser organizados no Algoritmo 1. Esse algoritmo tem como entrada: o modelo de árvore arterial ($\mathcal{MAA}$) com seus vasos caracterizados por suas propriedades, a frequência $f$, um fator de escala da viscosidade $\gamma_{\mu}$, o parâmetro da viscoelasticidade da parede $\phi$ e a quantidade de espaçamento para discretização de um vaso $N$.
+
+O Algoritmo 1 proposto tem dois módulos, a saber: $\mathcal{M}_1$ e $\mathcal{M}_2$.
+
+\begin{algorithm}[H]
+	\SetAlgoLined
+	\Entrada{ $\mathcal{MAA}$, $f$, $\gamma_{\mu}$, $\phi$, $\bar{p}_0$, $N$ }
+	\Inicio{
+		inicializa vaso $v$ a partir do vaso raiz;\\
+		\Se{existe($v$)}{
+			Chama $\mathcal{M}_1$ ($v$, $f$, $\gamma_{\mu}$, $\phi_0$) e armazena $Y_r$;
+		}
+		\Se{existe($Y(1,1)$)}{
+			Chama $\mathcal{M}_2$($v$ , $\bar{p}_0$, $Y_r$, $N$);
+		}
+	}
+	\caption{Cálculos hemodinâmicos do modelo de árvore arterial ($\mathcal{MAA}$).}
+\end{algorithm}
+
+\igunew{O módulo $\mathcal{M}_1$ realiza o cálculo percorrendo o caminho a partir dos vasos finais até o vaso raiz (estratégia do tipo \textit{bottom-up}), visando} calcular os valores de admitância efetiva ($Y_e$), admitância característica ($Y$) e coeficiente de reflexão ($R$) de cada vaso. Este módulo é definido pelo Algoritmo~\ref{AlgM1}. Necessitam-se das admitâncias efetivas dos vasos à justante do vaso $k$ ($Y_e(k+1,2j-1)$ e $Y_e(k+1,2j)$) estejam definidas. Em vista disso, verifica-se a existência dos vasos à justante do vaso atual tanto a esquerda ($esq$) quanto a direita ($dir$) e caso existam realiza-se uma chamada recursiva. Após o retorno das chamadas recursivas, calculam-se as propriedades do vaso atual. Assim, as propriedades do vasos à jusante do vaso atual serão conhecidas, ou seja, já terão sido determinadas $Y_e(k+1,2j-1)$ e $Y_e(k+1,2j)$.
+\newpage
+
+\begin{algorithm}[H]
+	$\mathcal{M}_1$ ($v$, $f$, $\gamma_{\mu}$, $\phi$) \\
+	\Inicio{
+		\Se{existe($v \rightarrow esq$)}{
+			$\mathcal{M}_1$ ($v \rightarrow esq$, $f$, $\gamma_{\mu}$, $\phi$);
+		}
+		\Se{existe($v \rightarrow dir$)}{
+			$\mathcal{M}_1$ ($v \rightarrow dir$, $f$, $\gamma_{\mu}$, $\phi$);
+		}
+		Calcula as propriedades $c$, $\omega$, $\beta$; \\
+		\Se{ ($\gamma_{\mu} == 0$) e ($\phi == 0$) }{
+			Calcula $Y$;
+		}
+		\Senao{
+			\Se{ ($\gamma_{\mu}~!=~0$) }{
+				Calcula $\alpha$, $\epsilon$, $E_v$, $c_v$ e $Y_v$;\\
+				Atualiza $E = E_v$, $c = c_v$ e $Y = Y_v$;
+			}
+			\Se{ ($\phi~!=~0$) }{
+				Calcula $E_c$;\\
+				Atualize $E = E_c$;
+			}
+		}
+		\Se{($v$ é um vaso terminal)}{
+			$Y_e = Y$ e  $R = 0$;
+		}
+		\Senao{
+			Calcula $Y_e$ e $R$;
+		}
+	}
+	\caption{$\mathcal{M}_1$ -- Cálculo das admitâncias e coeficiente de reflexão.}
+	\label{AlgM1}
+\end{algorithm}
+
+\igunew{O módulo $\mathcal{M}_2$ realiza os cálculos percorrendo o modelo a partir do vaso raiz até os vasos terminais (abordagem do tipo \textit{top-bottom}), visando} calcular o valor da pressão média, pressão e fluxo em cada vaso. Este módulo é expresso no Algoritmo~\ref{AlgoritmoM2}. Como expresso na Equação~\eqref{18_barp}, o valor da pressão média requer o valor da pressão média do vaso à montante $(k-1,s)$. Com isso, inicialmente, se o vaso atual é a artéria de alimentação (raiz), neste caso $\bar{p} = \bar{p}_0$. Caso contrário, calcula-se $\bar{p}$ com a Equação~\eqref{18_barp}. Em seguida, o valor das ondas de pressão e fluxo são obtidas ao longo de cada vaso 1D, que são discretizados. Por fim, a recursão é enviada aos segmentos inferiores, desta forma se garante a existência de um valor $\bar{p}(k-1,s)$.
+
+\begin{algorithm}[H]
+	$\mathcal{M}_2$ ($v$, $\bar{p}_0$, $Y_r$, $N$) \\
+	\Inicio{
+		\Se{ ($v$ é o vaso raiz)}{
+			$\bar{p} = \bar{p_0}$;
+		}
+		\Senao{
+			Calcula $\bar{p}$;
+		}
+		Calcula $P(X_i)$ e $Q(X_i)$, onde $X_i \in [0,1]$; \\
+		\Se{existe( $v \rightarrow esq$ )}{
+			$\mathcal{M}_2$ ($v \rightarrow esq$, $\bar{p}_0$, $Y_r$, $N$);
+		}
+		\Se{existe($v \rightarrow dir$)}{
+			$\mathcal{M}_2$ ($v \rightarrow dir$, $\bar{p}_0$, $Y_r$, $N$);
+		}
+	}
+	\caption{$\mathcal{M}_2$ -- Cálculo da pressão e fluxo ao longo de cada vaso.}
+	\label{AlgoritmoM2}
+\end{algorithm}
+
+No Algoritmo \ref{AlgoritmoM2} tem-se que $N$ denota a quantidade de espaçamento $dX$ no intervalo [0,1] para discretização de um vaso. Assim, $dX = 1/N$ e $X_i = i dX (i = 0, 1, \cdot\cdot\cdot, N)$.
 
 %--------------------------------------------------------------------------------%
 \section{ESTRUTURA DE DADOS}\label{sec:estrutura}
 
-Nesta seção apresentam-se detalhes da estrutura de dados adotada no funcionamento da ferramenta computacional. Como mencionado na Seção~\ref{sec:algoritmo}, uma estrutura de ponteiros é utilizada,  sendo capaz de armazenar todas as informações do modelo geométrico da árvore arterial. A ferramenta computacional foi desenvolvida para ser capaz de armazenar, carregar e iterar o modelo matemático e gerar novas estruturas para visualização, a estrutura de dados proposta para a ferramenta precisa realizar estar operações e armazenar corretamente os dados gerados.
+Nesta seção apresentam-se detalhes da estrutura de dados adotada no funcionamento da ferramenta computacional. Como mencionado na Seção~\ref{sec:algoritmo}~\igunew{, foi empregado uma estrutura para armazenar todas as referências às informações} do modelo geométrico da árvore arterial.
 
-As seções à seguir descrevem a estrutura de dados genérica, tendo como principal objeto de estudo, o fluxo pulsátil enquanto atravessa uma estrutura de árvore arterial e a visualização de seus resultados. Em versões anteriores, a ferramenta computacional definia seus modelo matemáticos, geométricos e de visualização em apenas uma estrutura abstrata, o que acarretou em classes grandes com difícil manutenção e pouca versatilidade. Isto porque o mesmo objeto ficava responsável por diversas funções, era capaz de se instanciar, iterar e desenhar na tela através de diretivas OpenGL. Portanto, nesta versão da ferramenta computacional as classes foram desenvolvidas para ter propósito único, cujo objetivo é garantir que as classe tenham uma função apenas, garantindo uma classe enxuta e de fácil interpretação.
+\igunew{Iterar o modelo matemático na ferramenta computacional equivale à aplicar um objeto inteligente a sua fábrica de iteração \textit{WiseIterationFactory}(descrito na Seção~\ref{sec:fabrica}). A fábrica de iteração \textit{DuanAndZamirIterationFactory} acoplada à uma árvore arterial \textit{WiseArterialTree} é equivalente a execução do~\ref{algsimples} em todo o modelo geométrico, definindo a onde de pressão $P$ e fluxo $Q$ em todos os segmentos.}
 
-Com a experiência adquirida previamente três principais fluxos foram identificadas:  A iteração dos objetos, uma vez carregados estes objetos são atualizados por algoritmos, gerando novas versões; O armazenamento dos objetos, os elementos criados no método de iteração podem ser armazenados em um cache e então recuperados;  E a exibição dos objetos, uma vez carregados os objetos podem ser exibidos na tela e visualizados. Entendendo o método iterativo como uma animação em que todos os quadros precisam ser armazenados, o objeto inteligente \textit{WiseObject} foi criado representando toda a animação e o elemento inteligente \textit{WiseElement} como cada quadro da animação. Cada quadro antes de ser exibido precisa ser processado em diretivas OpenGL, o responsável sobre esse processo é o elemento gráfico \textit{GraphicObject}. Igualmente quando se tratam de animações e reproduções de vídeo, somente quadros necessários estarão em memória. 
+\igunew{ A ferramenta computacional foi desenvolvida para ser capaz de armazenar, carregar e iterar o modelo matemático e gerar novas estruturas para visualização, a estrutura de dados proposta para a ferramenta precisa realizar estar operações e armazenar corretamente os dados gerados.}
+
+As seções \igunew{contidas nesta Seção de estrututra de dados} descrevem a estrutura de dados genérica, tendo como principal objeto de estudo, o fluxo pulsátil enquanto atravessa uma estrutura de árvore arterial e a visualização de seus resultados. Em versões anteriores, a ferramenta computacional definia seus modelo matemáticos, geométricos e de visualização em apenas uma estrutura abstrata, o que acarretou em classes grandes com difícil manutenção e pouca versatilidade. Isto porque o mesmo objeto ficava responsável por diversas funções, era capaz de se instanciar, iterar e desenhar na tela através de diretivas OpenGL. Portanto, nesta versão da ferramenta computacional as classes foram desenvolvidas para ter propósito único, cujo objetivo é garantir que as classe tenham uma função apenas, garantindo uma classe enxuta e de fácil interpretação.
+
+Com a experiência adquirida previamente três principais fluxos foram identificadas:  A iteração dos objetos, uma vez carregados estes objetos são atualizados por algoritmos, gerando novas versões; O armazenamento dos objetos, os elementos criados no método de iteração podem ser armazenados em uma cache e então recuperados;  \igunew{E a exibição dos objetos, os elementos carregados podem ter seus parâmetros visualizados em um elemento de interface gráfica \textit{OpenGL}. O ciclo iterativo irá gerar ao final uma animação, cada iteração irá gera um quadro desta animação. O objeto inteligente \textit{WiseObject} irá armazenar todos estes quadros, cada quadro representa um elemento inteligente \textit{WiseElement}.} Cada quadro antes de ser exibido precisa ser processado em diretivas OpenGL, o responsável sobre esse processo é o elemento gráfico \textit{GraphicObject}. Igualmente quando se tratam de animações e reproduções de vídeo, somente quadros necessários estarão em memória. 
 
 Finalmente, estas estruturas são utilizadas pela ferramenta computacional possibilitando que modelos geométricos sejam carregados, iterados e então exibidos, sem que haja perda dos quadros ou de algum dado. Os elementos principais da estrutura de dados serão descritos nas seções que se seguem.
 
@@ -33,18 +183,18 @@ Finalmente, estas estruturas são utilizadas pela ferramenta computacional possi
 
 Elementos inteligentes são objetos que implementam a classe \textit{WiseElement}, o principal objetivo de um elemento inteligente é manter os dados mais recentes de um modelo geométrico e os dados necessários para o método de iteração. No caso do estudo do fluxo pulsátil consideramos que uma iteração seja a execução completa do algoritmo apresentado na Seção~ \ref{sec:algoritmo} em toda a árvore. Portanto cada elemento inteligente possuirá todas as informações do modelo geométrico de uma árvore arterial, seus segmentos e suas propriedades.
 
-Através das malhas estruturadas e desestruturadas presentes na biblioteca \textit{VTK}(\textit{Visua}-\textit{lization ToolKit}) é possível descrever diversas estruturas de dados através de elementos padronizados, como pontos, linhas e células. Utilizando os elementos básicas contidas nestas malhas, variáveis e ferramentas da linguagem a estrutura básica da arquitetura foi criada, presente na Figura~\ref{fig2:wiselement}.
+Através das malhas estruturadas e desestruturadas presentes na biblioteca \textit{VTK}(\textit{Visua}-\textit{lization ToolKit})~\cite{VTKUSER} é possível descrever diversas estruturas de dados através de elementos padronizados, como pontos, linhas e células. Utilizando os elementos básicas contidas nestas malhas, variáveis e ferramentas da linguagem a estrutura básica da arquitetura foi criada, presente na Figura~\ref{fig2:wiselement}.
 
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[scale=2]{Figures/WiseElement@16x.png}
-	\caption{Representação de classes de um elemento inteligente. WiseElement a classe abstrata base e seus componentes: WiseStructure representa a estrutura contida em um arquivo VTK e DataStructure representa a estrutura de ponteiros e variáveis utilizadas na iteração. Tingido de azul as estruturas que nem sempre estão presentes.}
+	\caption{Representação de classes de um elemento inteligente. \textit{WiseElement} a classe abstrata base e seus componentes: \textit{WiseStructure} representa a estrutura contida em um arquivo VTK e DataStructure representa a estrutura de ponteiros e variáveis utilizadas na iteração. Tingido de azul as estruturas que nem sempre estão presentes.}
 	\label{fig2:wiselement}
 \end{figure}
 
 A Figura~\ref{fig2:wiselement} mostra que um elemento inteligente é composto por duas outras estruturas: A primeira \textit{WiseStructure}, utiliza pontos, linhas, células e campos para determinar estruturas geométricas; A segunda \textit{DataSructure}, representa os dados abstratos específicos de cada elemento. Estas estruturas são equivalentes entre si, isto é feito para que a primeira estrutura siga um formato padrão de pontos, linhas, células e campos seja mantida. Enquanto dados abstratos equivalentes podem ser utilizados. Os dados mantidos na estrutura padrão \textit{WiseStructure} são utilizados principalmente na leitura e escrita de objetos, portanto são mantidos como vetores que possuem cadeias de caracteres, os dados presentes nesta estrutura podem ser editados pelo usuário. Enquanto os dados abstratos contém a mesma informação contida em variáveis da linguagem, como números inteiros, vetores, ponteiros e outros.
 
-Cada parâmetro de um elemento inteligente representa uma grandeza associada à um componente do modelo geométrico (pontos,  linhas e células) ou ainda sobre todo o modelo (campos). Cada parâmetro irá possuir um nome e uma estrutura associada, os raios de um árvore arterial $r$ são dados relacionados às linhas da estrutura e somente um valor será armazenado. Enquanto os valores da onda de uma onda de pressão $P$ através de um segmento com $X \in [0,1]$ estão relacionados as mesmas linhas, mas são representados por uma sequência de valores. Ambos os valores são salvos na mesma estrutura e podem ser acessados da mesma forma.
+Cada parâmetro de um elemento inteligente representa uma grandeza associada à um componente do modelo geométrico (pontos,  linhas e células) ou ainda sobre todo o modelo (campos). \igunew{Os parâmetros armazenam valores definidos por um nome e uma referência ao modelo geométrico, os raios $r$ de um árvore arterial são dados relacionados à um segmento que é representado por uma linha, como só existe um raio por segmento, somente um valor será armazenado. Os valores da onda de uma onda de pressão $P$ através de um segmento com $X \in [0,1]$ estão relacionados as mesmas linhas, mas são representados por uma sequência de valores. A estrutura de parâmetros permite que sejam armazenados um ou múltiplos valores no mesmo local e os acesse da mesma forma. Ao acessar o valor do raio $r$ de um segmento é recebido um vetor com apenas uma posição e ao acessar a pressão $P$ são esperados $N$ elementos.}
 
 \begin{figure}[!htbp]
 	\centering
@@ -57,11 +207,13 @@ Como demonstrado na Figura~\ref{fig2:wiselements} um elemento inteligente é aqu
 
 O modelo geométrico de uma árvore arterial foi traduzido para o elemento inteligente \textit{WiseArteryTree}, a estrutura inteligente deste elemento conta com pontos e linhas que definem os parâmetros do modelo geométrico na estrutura \textit{WiseStructure}, a estrutura abstrata \textit{DataStructure} conta com ponteiros para cada segmento e grandezas físicas armazenadas em pontos flutuantes de precisão dupla.
 
-O elemento inteligente \textit{WiseGraphic} foi criado para armazenar dados ao longo de uma dimensão, como a pressão ao longo da árvore arterial. Os elementos \textit{WiseMesh} e \textit{WisePoly} foram criados para armazenar dados ao longo de duas dimensões e ao longo de três dimensões, estes dois elementos foram utilizados como exemplo de objetos que podem ser generalizados na ferramenta e visualizados, mudando pouco as estruturas já existentes. O elemento \textit{WiseGraphic} é equivalente à um vetor de valores $(x,v)$, o elemento \textit{WiseMesh} à uma matriz de valores $(x,y,v)$ e o elemento \textit{WisePoly} uma matriz tridimensional de valores $(x,y,z,v)$, onde $v$ é o valor associado e $(x,y,z)$ a posição. Através deste modelo, é possível armazenar em um \textit{WiseMesh} o valor $v$ da pressão ao longo de uma árvore arterial na direção $x$ variando a frequência no eixo $y$.
+\igunew{Foram criadas ainda outros elementos inteligentes, como o gráfico inteligente \textit{WiseGraphic} que representa um gráfico, a malha plana inteligente \textit{WiseMesh} representa um plano e malha em cubo inteligente \textit{WisePoly} representa um cubo.}
 
-Os elementos inteligentes servem como estruturas de armazenamento padrão que compõem um outro objeto. O ciclo de manipulação desses elementos se divide em três partes: A criação, aonde os objetos podem ser criados à partir de exemplos pré-definidos ou através de um arquivo de entrada \textit{VTK} ou \textit{XML (eXtensible Markup Language)}; A iteração, processo em que o elemento inteligente com todas as estruturas definidas e consistentes é utilizado por um algoritmo; A exibição, este último ciclo utiliza a estrutura atualizada e gera um objeto para visualização.
+O elemento inteligente \textit{WiseGraphic} foi criado para armazenar dados ao longo de uma dimensão, como a pressão ao longo da árvore arterial. Os elementos \textit{WiseMesh} e \textit{WisePoly} foram criados para armazenar dados ao longo de duas dimensões e ao longo de três dimensões, estes dois elementos foram utilizados como exemplo de objetos que podem ser generalizados na ferramenta e visualizados, mudando pouco as estruturas já existentes. O elemento \textit{WiseGraphic} é equivalente à um vetor de valores $(x,v)$, o elemento \textit{WiseMesh} é equivalente à uma matriz de valores $(x,y,v)$ e o elemento \textit{WisePoly} é equivalente uma matriz tridimensional de valores $(x,y,z,v)$, onde $v$ é o valor associado e $(x)$,$(x,y)$ ou $(x,y,z)$ a posição, respectivamente. Através deste modelo, é possível armazenar em um \textit{WiseMesh} o valor $v$ da pressão ao longo de uma árvore arterial na direção $x$ variando a frequência no eixo $y$.
 
-Todo elemento inteligente completo possui uma redundância de dados, podendo ser representado por qualquer uma das duas estruturas que o compõe. A estrutura inteligente \textit{WiseStructure} utiliza componentes simples para descrever as estruturas e seus parâmetros, essa estrutura é a que mais se assemelha à encontrada na arquitetura \textit{VTK}. Por utilizar uma quantidade limitada de diretivas o arquivo proveniente dessa estrutura pode ser rapidamente lido, interpretado e até mesmo exportado.
+Os elementos inteligentes servem como estruturas de armazenamento padrão que compõem um outro objeto. O ciclo de manipulação desses elementos se divide em três partes: A criação, aonde os objetos podem ser criados à partir de exemplos pré-definidos ou através de um arquivo de entrada \textit{VTK} ou \textit{XML (eXtensible Markup Language)}; A iteração, processo em que o elemento inteligente com todas as estruturas definidas e consistentes é utilizado por um algoritmo; \igunew{A exibição, este último ciclo utiliza os dados armazenados nesta estrutura e gera um objeto para visualização.}
+
+Todo elemento inteligente completo possui uma redundância de dados, podendo ser representado por qualquer uma das duas estruturas que o compõe. A estrutura inteligente, \textit{WiseStructure}, utiliza componentes simples para descrever as estruturas e seus parâmetros. Essa estrutura é a que mais se assemelha à encontrada na arquitetura \textit{VTK}. Por utilizar uma quantidade limitada de diretivas o arquivo proveniente dessa estrutura pode ser rapidamente lido, interpretado e até mesmo exportado.
 
 \begin{figure}[!htbp]
 	\includegraphics[width=0.5\textwidth]{Figures/WiseElementPoints@16x.png}
@@ -72,9 +224,9 @@ Todo elemento inteligente completo possui uma redundância de dados, podendo ser
 	\label{fig2:wiselementstructs}
 \end{figure}
 
-Os componentes de uma estrutura inteligente são pontos, células, linhas e campos. Pontos demarcam uma posição no espaço, células e linhas representam conjuntos de pontos e os campos são dados gerais da estrutura. Um modelo de pontos e linhas é capaz de representar o mesmo modelo geométrico de uma árvore arterial, basta considerar cada ponto uma bifurcação de vasos e cada segmento de vaso uma linha. Através destes componentes simples é possível armazenar e acessar dados sobre cada segmento. Para dados gerais do modelo, como a frequência $f$, os campos da estrutura inteligente são utilizados.
+Os componentes de uma estrutura inteligente são pontos, células, linhas e campos. Pontos demarcam uma posição no espaço, células e linhas representam conjuntos de pontos e os campos são dados gerais da estrutura. Um modelo de pontos e linhas é capaz de representar o mesmo modelo geométrico de uma árvore arterial, basta considerar cada ponto uma bifurcação de vasos e cada segmento de vaso uma linha. Através destes componentes é possível armazenar e acessar dados sobre cada segmento. Para dados gerais do modelo, como a frequência $f$, são utilizados os campos da estrutura inteligente.
 
-A classe \textit{WiseElement} foi desenvolvida para construir a estrutura abstrata (\textit{DataStructure}) à partir das informações contidas na estrutura inteligente (\textit{WiseStructure}), desta forma é importante que a estrutura inteligente possa rapidamente ser armazenada e recuperada. O elemento inteligente é o elemento básico do método de iteração, sendo duplicado antes de ser iterado, gerando novas estruturas inteligente e abstrata idênticas. Imediatamente a nova estrutura abstrata \textit{DataStructure} é descartada e os dados contidos na nova estrutura inteligente \textit{WiseStructure} são armazenados. Portanto, a estrutura abstrata não estará sempre presente. Seguindo este ciclo de vida, todos os elementos inteligentes obedecem à máquina de status contida na Figura~\ref{fig3:wiselementstatus}.
+A classe \textit{WiseElement} foi desenvolvida para construir a estrutura abstrata (\textit{DataStructure}) à partir das informações contidas na estrutura inteligente (\textit{WiseStructure}), desta forma é importante que a estrutura inteligente possa ser armazenada e recuperada rapidamente. O elemento inteligente é o elemento básico do método de iteração, sendo duplicado antes de ser iterado, gerando novas estruturas inteligente e abstrata idênticas. Imediatamente, a nova estrutura abstrata \textit{DataStructure} é descartada e os dados contidos na nova estrutura inteligente \textit{WiseStructure} são armazenados. Portanto, a estrutura abstrata não estará sempre presente. Seguindo este ciclo de vida, todos os elementos inteligentes obedecem à máquina de estados contida na Figura~\ref{fig3:wiselementstatus}.
 
 \begin{figure}[!htbp]
 	\centering
@@ -83,12 +235,12 @@ A classe \textit{WiseElement} foi desenvolvida para construir a estrutura abstra
 	\label{fig3:wiselementstatus}
 \end{figure}
 
-A máquina de status dos elementos inteligentes gerencia o ciclo de vida de todos os elementos inteligentes, elementos inicialmente recebem o estado \textit{Raw}, ou cru, que representa um elemento ainda sem estruturas carregadas ou sem consistência garantida. Uma vez que a estrutura inteligente é inserida e verificada o elemento muda para o status \textit{Warming} ou \textit{Cooling}, respectivamente esquentando ou esfriando, suas estruturas estão representadas na Figura~\ref{fig4:wiselementwarming}.
+A máquina de estados dos elementos inteligentes gerencia o ciclo de vida de todos os elementos inteligentes, elementos inicialmente recebem o estado \textit{Raw}, ou cru, que representa um elemento ainda sem estruturas carregadas ou sem consistência garantida. Uma vez que a estrutura inteligente é inserida e verificada o elemento muda para o status \textit{Warming} ou \textit{Cooling}, respectivamente esquentando ou esfriando, suas estruturas estão representadas na Figura~\ref{fig4:wiselementwarming}.
 
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[scale=1.85]{Figures/WiseElementWarming@16x.png}
-	\caption{Elemento inteligente enquanto no estado \textit{Warming}.}
+	\caption{Elemento inteligente enquanto no estado \textit{Warming}, \textit{Raw} e \textit{Cooling}.}
 	\label{fig4:wiselementwarming}
 \end{figure}
 
@@ -96,7 +248,7 @@ A figura~\ref{fig4:wiselementwarming} mostra as estruturas presentes em elemento
 
 Inicialmente os elementos inteligentes são criados no estado \textit{Raw}, enquanto os dados do elemento são carregados ele permanecerá neste estado. Ao final do carregamento o objeto trocará de estado para \textit{Warming} ou \textit{Cooling}, que indicam o próximo passo do elemento. Estar no estado \textit{Warming} indica que o objetivo é esquentar o objeto, atingindo o estado \textit{Hot}. Enquanto o estado \textit{Cooling} indica que a estrutura inteligente aguarda resfriamento, atingindo o estado \textit{Cold}. Quando os dados abstratos são criados corretamente para o elemento inteligente seu estado é definido como \textit{Hot}, neste estado todas as informações do objeto estão em memória, sendo este o estado mais pesado do elemento inteligente. Em contraponto, o estado \textit{Cold} indica que a estrutura inteligente foi corretamente armazenada em disco, elementos inteligentes neste estado estão em seu estado mais leve, pois possuem em memória apenas o caminho para a estrutura inteligente armazenada.
 
-Como demonstrado na figura~\ref{fig3:wiselementstatus}, o estado frio (\textit{Cold}) está associado com o uso de um cache para estruturas inteligentes. A estrutura do arquivo é equivalente à uma malha estruturada VTK, mas são efetivamente salvos em um arquivo \textit{XML}. Caso sejam novamente carregados por uma mudança de estado ou deletados o arquivo armazenado é deletado. 
+Como demonstrado na Figura~\ref{fig3:wiselementstatus}, o estado frio (\textit{Cold}) está associado com o uso de uma cache para estruturas inteligentes. A estrutura do arquivo é equivalente à uma malha estruturada VTK, mas são efetivamente salvos em um arquivo \textit{XML}. Caso sejam novamente carregados por uma mudança de estado ou deletados o arquivo armazenado é deletado. 
 
 \begin{figure}[!htbp]
 	\centering
@@ -128,7 +280,7 @@ Como mencionado anteriormente três principais barreiras foram identificadas arm
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[width=0.75\textwidth]{Figures/WiseElementWorkflow@16x.png}
-	\caption{Arquitetura de classes fábrica e fluxo de trabalho do elemento inteligente WiseElement. A fábrica WiseElementFactory é responsável por criar o elementos inteligentes, a fábrica WiseIterationFactory é reponsável pela iteração do elemento inteligente e a fábrica GraphicFactory é responsável por criar as estrturas de visualização. }
+	\caption{Arquitetura de classes fábrica e fluxo de trabalho do elemento inteligente \textit{WiseElement}. A fábrica \textit{WiseElementFactory} é responsável por criar o elementos inteligentes, a fábrica \textit{WiseIterationFactory} é reponsável pela iteração do elemento inteligente e a fábrica \textit{GraphicFactory} é responsável por criar as estrturas de visualização. }
 	\label{fig2:wiselementsworkflow}
 \end{figure}
 
