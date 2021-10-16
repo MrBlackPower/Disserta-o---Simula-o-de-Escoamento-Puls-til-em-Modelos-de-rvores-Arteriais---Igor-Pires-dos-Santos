@@ -1,166 +1,154 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.7.25)  15 OCT 2021 16:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.1.29)  16 OCT 2021 18:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **modelo_new2.tex
 (./modelo_new2.tex
-LaTeX2e <2020-10-01> patch level 4
-L3 programming layer <2021-02-18> (./mmc.cls
+LaTeX2e <2020-02-02> patch level 2
+L3 programming layer <2020-02-14> (./mmc.cls
 Document Class: mmc 2007/03/01\ v2.0\ MMC Dissertations and Thesis
-(c:/texlive/2021/texmf-dist/tex/latex/base/book.cls
-Document Class: book 2020/04/10 v1.4m Standard LaTeX document class
-(c:/texlive/2021/texmf-dist/tex/latex/base/bk12.clo
-File: bk12.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+(/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2019/12/20 v1.4l Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo
+File: bk12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 )
-\c@part=\count179
-\c@chapter=\count180
-\c@section=\count181
-\c@subsection=\count182
-\c@subsubsection=\count183
-\c@paragraph=\count184
-\c@subparagraph=\count185
-\c@figure=\count186
-\c@table=\count187
+\c@part=\count167
+\c@chapter=\count168
+\c@section=\count169
+\c@subsection=\count170
+\c@subsubsection=\count171
+\c@paragraph=\count172
+\c@subparagraph=\count173
+\c@figure=\count174
+\c@table=\count175
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
-\bibindent=\dimen138
+\bibindent=\dimen134
 )
-(c:/texlive/2021/texmf-dist/tex/latex/lastpage/lastpage.sty
+(/usr/share/texlive/texmf-dist/tex/latex/lastpage/lastpage.sty
 Package: lastpage 2015/03/29 v1.2m Refers to last page's name (HMM; JPG)
 )
-(c:/texlive/2021/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2021-02-27 v7.00k Hypertext links for LaTeX
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2020/01/14 v7.00d Hypertext links for LaTeX
 
-(c:/texlive/2021/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+(/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
 )
-(c:/texlive/2021/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2020/03/06 v1.0d TeX engine tests
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2019/11/07 v1.0c TeX engine tests
 )
-(c:/texlive/2021/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
-Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+(/usr/share/texlive/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(c:/texlive/2021/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+(/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-(c:/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks15
+\KV@toks@=\toks14
 )
-(c:/texlive/2021/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
 )
-(c:/texlive/2021/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
 )
-(c:/texlive/2021/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pdfescape/pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
 )
-(c:/texlive/2021/texmf-dist/tex/latex/hycolor/hycolor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/hycolor/hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 )
-(c:/texlive/2021/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+(/usr/share/texlive/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 )
-(c:/texlive/2021/texmf-dist/tex/latex/auxhook/auxhook.sty
+(/usr/share/texlive/texmf-dist/tex/latex/auxhook/auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
-(c:/texlive/2021/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+(/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
 )
-\@linkdim=\dimen139
-\Hy@linkcounter=\count188
-\Hy@pagecounter=\count189
+\@linkdim=\dimen135
+\Hy@linkcounter=\count176
+\Hy@pagecounter=\count177
 
-(c:/texlive/2021/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2021-02-27 v7.00k Hyperref: PDFDocEncoding definition (HO)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-(c:/texlive/2021/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def
-File: hyperref-langpatches.def 2021-02-27 v7.00k Hyperref: patches for babel la
-nguages
-)
-(c:/texlive/2021/texmf-dist/tex/generic/intcalc/intcalc.sty
+(/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-(c:/texlive/2021/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+(/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count190
-
-(c:/texlive/2021/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2021-02-27 v7.00k Hyperref: PDF Unicode definition (HO)
-Now handling font encoding PU ...
-... no UTF-8 mapping file for font encoding PU
-)
-Package hyperref Info: Hyper figures OFF on input line 4192.
-Package hyperref Info: Link nesting OFF on input line 4197.
-Package hyperref Info: Hyper index ON on input line 4200.
-Package hyperref Info: Plain pages OFF on input line 4207.
-Package hyperref Info: Backreferencing OFF on input line 4212.
+\Hy@SavedSpaceFactor=\count178
+\pdfmajorversion=\count179
+Package hyperref Info: Hyper figures OFF on input line 4547.
+Package hyperref Info: Link nesting OFF on input line 4552.
+Package hyperref Info: Hyper index ON on input line 4555.
+Package hyperref Info: Plain pages OFF on input line 4562.
+Package hyperref Info: Backreferencing OFF on input line 4567.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4445.
-\c@Hy@tempcnt=\count191
+Package hyperref Info: Bookmarks ON on input line 4800.
+\c@Hy@tempcnt=\count180
 
-(c:/texlive/2021/texmf-dist/tex/latex/url/url.sty
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 4804.
-\XeTeXLinkMargin=\dimen140
+LaTeX Info: Redefining \url on input line 5159.
+\XeTeXLinkMargin=\dimen136
 
-(c:/texlive/2021/texmf-dist/tex/generic/bitset/bitset.sty
+(/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 
-(c:/texlive/2021/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+(/usr/share/texlive/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count192
-\Field@Width=\dimen141
-\Fld@charsize=\dimen142
-Package hyperref Info: Hyper figures OFF on input line 6075.
-Package hyperref Info: Link nesting OFF on input line 6080.
-Package hyperref Info: Hyper index ON on input line 6083.
-Package hyperref Info: backreferencing OFF on input line 6090.
-Package hyperref Info: Link coloring OFF on input line 6095.
-Package hyperref Info: Link coloring with OCG OFF on input line 6100.
-Package hyperref Info: PDF/A mode OFF on input line 6105.
-LaTeX Info: Redefining \ref on input line 6145.
-LaTeX Info: Redefining \pageref on input line 6149.
+\Fld@menulength=\count181
+\Field@Width=\dimen137
+\Fld@charsize=\dimen138
+Package hyperref Info: Hyper figures OFF on input line 6430.
+Package hyperref Info: Link nesting OFF on input line 6435.
+Package hyperref Info: Hyper index ON on input line 6438.
+Package hyperref Info: backreferencing OFF on input line 6445.
+Package hyperref Info: Link coloring OFF on input line 6450.
+Package hyperref Info: Link coloring with OCG OFF on input line 6455.
+Package hyperref Info: PDF/A mode OFF on input line 6460.
+LaTeX Info: Redefining \ref on input line 6500.
+LaTeX Info: Redefining \pageref on input line 6504.
 
-(c:/texlive/2021/texmf-dist/tex/latex/base/atbegshi-ltx.sty
-Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packa
-ge
-with kernel methods
+(/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
+Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
 )
-\Hy@abspage=\count193
-\c@Item=\count194
-\c@Hfootnote=\count195
+\Hy@abspage=\count182
+\c@Item=\count183
+\c@Hfootnote=\count184
 )
 Package hyperref Info: Driver: hpdftex.
 
-(c:/texlive/2021/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2021-02-27 v7.00k Hyperref driver for pdfTeX
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2020/01/14 v7.00d Hyperref driver for pdfTeX
 
-(c:/texlive/2021/texmf-dist/tex/latex/base/atveryend-ltx.sty
-Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
-e
-with kernel methods
+(/usr/share/texlive/texmf-dist/tex/latex/atveryend/atveryend.sty
+Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
 )
-\Fld@listcount=\count196
-\c@bookmark@seq@number=\count197
+\Fld@listcount=\count185
+\c@bookmark@seq@number=\count186
 
-(c:/texlive/2021/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+(/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
 
-(c:/texlive/2021/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+(/usr/share/texlive/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
@@ -168,125 +156,126 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip49
 )
-(c:/texlive/2021/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2021/03/24 3.56 The Babel package
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2020/02/14 3.40 The Babel package
 
-(c:/texlive/2021/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2021/03/24 3.56 Babel common definitions
-\babel@savecnt=\count198
-\U@D=\dimen143
-\l@babelnohyphens=\language87
-
-(c:/texlive/2021/texmf-dist/tex/generic/babel/txtbabel.def)
-\bbl@readstream=\read2
+(/usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2020/02/14 3.40 Babel switching mechanism
 )
-\bbl@dirlevel=\count199
-
-(c:/texlive/2021/texmf-dist/tex/generic/babel-english/english.ldf
+(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2020/02/14 3.40 Babel common definitions
+\babel@savecnt=\count187
+\U@D=\dimen139
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count188
+)
 Package babel Info: \l@canadian = using hyphenrules for english
 (babel)             (\language0) on input line 102.
 Package babel Info: \l@australian = using hyphenrules for ukenglish
-(babel)             (\language21) on input line 105.
+(babel)             (\language69) on input line 105.
 Package babel Info: \l@newzealand = using hyphenrules for ukenglish
-(babel)             (\language21) on input line 108.
+(babel)             (\language69) on input line 108.
 )
-(c:/texlive/2021/texmf-dist/tex/generic/babel-portuges/brazil.ldf
-Language: portuges 2021/02/04 v1.2s Portuguese support from the babel system
+(/usr/share/texlive/texmf-dist/tex/generic/babel-portuges/portuges.ldf
+Language: portuges 2008/03/18 v1.2q Portuguese support from the babel system
 Package babel Info: \l@brazil = using hyphenrules for portuguese
-(babel)             (\language70) on input line 111.
-Package babel Info: Making " an active character on input line 143.
+(babel)             (\language43) on input line 113.
+Package babel Info: Making " an active character on input line 145.
 ))
-(c:/texlive/2021/texmf-dist/tex/latex/hyphenat/hyphenat.sty
+(/usr/share/texlive/texmf-dist/tex/latex/hyphenat/hyphenat.sty
 Package: hyphenat 2009/09/02 v2.3c hyphenation utilities
-\langwohyphens=\language88
+\langwohyphens=\language85
 LaTeX Info: Redefining \_ on input line 43.
 )
-(c:/texlive/2021/texmf-dist/tex/latex/base/ifthen.sty
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-(c:/texlive/2021/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
 
-(c:/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
 
-(c:/texlive/2021/texmf-dist/tex/latex/graphics/trig.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(c:/texlive/2021/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 105.
 
-(c:/texlive/2021/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen144
-\Gin@req@width=\dimen145
+\Gin@req@height=\dimen140
+\Gin@req@width=\dimen141
 )
-(c:/texlive/2021/texmf-dist/tex/latex/tools/tabularx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
 
-(c:/texlive/2021/texmf-dist/tex/latex/tools/array.sty
-Package: array 2020/10/01 v2.5c Tabular extension package (FMi)
-\col@sep=\dimen146
-\ar@mcellbox=\box47
-\extrarowheight=\dimen147
-\NC@list=\toks16
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
+\col@sep=\dimen142
+\ar@mcellbox=\box45
+\extrarowheight=\dimen143
+\NC@list=\toks15
 \extratabsurround=\skip50
 \backup@length=\skip51
-\ar@cellbox=\box48
+\ar@cellbox=\box46
 )
-\TX@col@width=\dimen148
-\TX@old@table=\dimen149
-\TX@old@col=\dimen150
-\TX@target=\dimen151
-\TX@delta=\dimen152
-\TX@cols=\count266
-\TX@ftn=\toks17
+\TX@col@width=\dimen144
+\TX@old@table=\dimen145
+\TX@old@col=\dimen146
+\TX@target=\dimen147
+\TX@delta=\dimen148
+\TX@cols=\count189
+\TX@ftn=\toks16
 ) (./eqparbox.sty
 Package: eqparbox 2010/01/01 v3.1 Create equal-widthed boxes
 \eqp@tempdima=\skip52
 \eqp@tempdimb=\skip53
 )
-(c:/texlive/2021/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
-(c:/texlive/2021/texmf-dist/tex/generic/iftex/ifvtex.sty
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count267
-\Gm@cntv=\count268
-\c@Gm@tempcnt=\count269
-\Gm@bindingoffset=\dimen153
-\Gm@wd@mp=\dimen154
-\Gm@odd@mp=\dimen155
-\Gm@even@mp=\dimen156
-\Gm@layoutwidth=\dimen157
-\Gm@layoutheight=\dimen158
-\Gm@layouthoffset=\dimen159
-\Gm@layoutvoffset=\dimen160
-\Gm@dimlist=\toks18
+\Gm@cnth=\count190
+\Gm@cntv=\count191
+\c@Gm@tempcnt=\count192
+\Gm@bindingoffset=\dimen149
+\Gm@wd@mp=\dimen150
+\Gm@odd@mp=\dimen151
+\Gm@even@mp=\dimen152
+\Gm@layoutwidth=\dimen153
+\Gm@layoutheight=\dimen154
+\Gm@layouthoffset=\dimen155
+\Gm@layoutvoffset=\dimen156
+\Gm@dimlist=\toks17
 )
-\c@minexaminers=\count270
-\@examiner=\count271
-\c@keywords=\count272
-\c@keywordsEN=\count273
-\bibindent=\dimen161
+\c@minexaminers=\count193
+\@examiner=\count194
+\c@keywords=\count195
+\c@keywordsEN=\count196
+\bibindent=\dimen157
 )
-(c:/texlive/2021/texmf-dist/tex/latex/ragged2e/ragged2e.sty
-Package: ragged2e 2021/02/05 v3.0 ragged2e Package
+(/usr/share/texlive/texmf-dist/tex/latex/ragged2e/ragged2e.sty
+Package: ragged2e 2019/07/28 v2.2 ragged2e Package (MS)
 
-(c:/texlive/2021/texmf-dist/tex/latex/everysel/everysel.sty
-Package: everysel 2021/01/20 v2.1 EverySelectfont Package (MS)
-
-(c:/texlive/2021/texmf-dist/tex/latex/everysel/everysel-2011-10-28.sty))
-(c:/texlive/2021/texmf-dist/tex/latex/footmisc/footmisc.sty
+(/usr/share/texlive/texmf-dist/tex/latex/ms/everysel.sty
+Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/footmisc/footmisc.sty
 Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
-\FN@temptoken=\toks19
-\footnotemargin=\dimen162
-\c@pp@next@reset=\count274
+\FN@temptoken=\toks18
+\footnotemargin=\dimen158
+\c@pp@next@reset=\count197
 Package footmisc Info: Declaring symbol style bringhurst on input line 855.
 Package footmisc Info: Declaring symbol style chicago on input line 863.
 Package footmisc Info: Declaring symbol style wiley on input line 872.
@@ -311,85 +300,85 @@ Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
 \RaggedRightParindent=\skip66
 \JustifyingParindent=\skip67
 )
-(c:/texlive/2021/texmf-dist/tex/latex/base/inputenc.sty
-Package: inputenc 2020/08/01 v1.3d Input encoding file
-\inpenc@prehook=\toks20
-\inpenc@posthook=\toks21
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks19
+\inpenc@posthook=\toks20
 )
-(c:/texlive/2021/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
 )
-(c:/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2020/09/23 v2.17i AMS math features
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/01/20 v2.17e AMS math features
 \@mathmargin=\skip68
 
 For additional information on amsmath, use the `?' option.
-(c:/texlive/2021/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
 
-(c:/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks22
-\ex@=\dimen163
+\@emptytoks=\toks21
+\ex@=\dimen159
 ))
-(c:/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen164
+\pmbraise@=\dimen160
 )
-(c:/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count275
-LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count276
-\leftroot@=\count277
-LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count278
-\DOTSCASE@=\count279
-LaTeX Info: Redefining \ldots on input line 496.
-LaTeX Info: Redefining \dots on input line 499.
-LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box49
-\strutbox@=\box50
-\big@size=\dimen165
-LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count280
-\c@MaxMatrixCols=\count281
+\inf@bad=\count198
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count199
+\leftroot@=\count266
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count267
+\DOTSCASE@=\count268
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box47
+\strutbox@=\box48
+\big@size=\dimen161
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count269
+\c@MaxMatrixCols=\count270
 \dotsspace@=\muskip17
-\c@parentequation=\count282
-\dspbrk@lvl=\count283
-\tag@help=\toks23
-\row@=\count284
-\column@=\count285
-\maxfields@=\count286
-\andhelp@=\toks24
-\eqnshift@=\dimen166
-\alignsep@=\dimen167
-\tagshift@=\dimen168
-\tagwidth@=\dimen169
-\totwidth@=\dimen170
-\lineht@=\dimen171
-\@envbody=\toks25
+\c@parentequation=\count271
+\dspbrk@lvl=\count272
+\tag@help=\toks22
+\row@=\count273
+\column@=\count274
+\maxfields@=\count275
+\andhelp@=\toks23
+\eqnshift@=\dimen162
+\alignsep@=\dimen163
+\tagshift@=\dimen164
+\tagwidth@=\dimen165
+\totwidth@=\dimen166
+\lineht@=\dimen167
+\@envbody=\toks24
 \multlinegap=\skip69
 \multlinetaggap=\skip70
-\mathdisplay@stack=\toks26
-LaTeX Info: Redefining \[ on input line 2923.
-LaTeX Info: Redefining \] on input line 2924.
+\mathdisplay@stack=\toks25
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
 )
-(c:/texlive/2021/texmf-dist/tex/latex/amscls/amsthm.sty
-Package: amsthm 2020/05/29 v2.20.6
-\thm@style=\toks27
-\thm@bodyfont=\toks28
-\thm@headfont=\toks29
-\thm@notefont=\toks30
-\thm@headpunct=\toks31
+(/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2017/10/31 v2.20.4
+\thm@style=\toks26
+\thm@bodyfont=\toks27
+\thm@headfont=\toks28
+\thm@notefont=\toks29
+\thm@headpunct=\toks30
 \thm@preskip=\skip71
 \thm@postskip=\skip72
 \thm@headsep=\skip73
-\dth@everypar=\toks32
+\dth@everypar=\toks31
 )
-(c:/texlive/2021/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
@@ -397,38 +386,39 @@ LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
-(c:/texlive/2021/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
-(c:/texlive/2021/texmf-dist/tex/latex/setspace/setspace.sty
+(/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-(c:/texlive/2021/texmf-dist/tex/latex/booktabs/booktabs.sty
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen172
-\lightrulewidth=\dimen173
-\cmidrulewidth=\dimen174
-\belowrulesep=\dimen175
-\belowbottomsep=\dimen176
-\aboverulesep=\dimen177
-\abovetopsep=\dimen178
-\cmidrulesep=\dimen179
-\cmidrulekern=\dimen180
-\defaultaddspace=\dimen181
-\@cmidla=\count287
-\@cmidlb=\count288
-\@aboverulesep=\dimen182
-\@belowrulesep=\dimen183
-\@thisruleclass=\count289
-\@lastruleclass=\count290
-\@thisrulewidth=\dimen184
-) (./algorithm2e.sty
+\heavyrulewidth=\dimen168
+\lightrulewidth=\dimen169
+\cmidrulewidth=\dimen170
+\belowrulesep=\dimen171
+\belowbottomsep=\dimen172
+\aboverulesep=\dimen173
+\abovetopsep=\dimen174
+\cmidrulesep=\dimen175
+\cmidrulekern=\dimen176
+\defaultaddspace=\dimen177
+\@cmidla=\count276
+\@cmidlb=\count277
+\@aboverulesep=\dimen178
+\@belowrulesep=\dimen179
+\@thisruleclass=\count278
+\@lastruleclass=\count279
+\@thisrulewidth=\dimen180
+)
+(./algorithm2e.sty
 Package: algorithm2e 2008/00/00 v3.10 algorithms environments
-\c@AlgoLine=\count291
-(c:/texlive/2021/texmf-dist/tex/latex/tools/xspace.sty
+\c@AlgoLine=\count280
+ (/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-(c:/texlive/2021/texmf-dist/tex/latex/relsize/relsize.sty
+(/usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty
 Package: relsize 2013/03/29 ver 4.1
 )
 ********************************************************
@@ -446,79 +436,81 @@ subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
 \skiplength=\skip79
 \algomargin=\skip80
 \skipalgocfslide=\skip81
-\algowidth=\dimen185
-\inoutsize=\dimen186
-\inoutline=\dimen187
-\interspacetitleruled=\dimen188
-\interspacealgoruled=\dimen189
-\interspacetitleboxruled=\dimen190
-\algocf@inoutbox=\box51
-\algocf@inputbox=\box52
+\algowidth=\dimen181
+\inoutsize=\dimen182
+\inoutline=\dimen183
+\interspacetitleruled=\dimen184
+\interspacealgoruled=\dimen185
+\interspacetitleboxruled=\dimen186
+\algocf@inoutbox=\box49
+\algocf@inputbox=\box50
 \AlCapSkip=\skip82
 \AlCapHSkip=\skip83
-\algocf@nlbox=\box53
-\algocf@hangingbox=\box54
-\algocf@capbox=\box55
+\algocf@nlbox=\box51
+\algocf@hangingbox=\box52
+\algocf@capbox=\box53
 \algoheightruledefault=\skip84
 \algoheightrule=\skip85
 \algotitleheightruledefault=\skip86
 \algotitleheightrule=\skip87
-\c@algocfline=\count292
-\c@algocfproc=\count293
-\c@algocf=\count294
-\algocf@algoframe=\box56
-\algocf@algobox=\box57
-) (c:/texlive/2021/texmf-dist/tex/latex/subfigure/subfigure.sty
+\c@algocfline=\count281
+\c@algocfproc=\count282
+\c@algocf=\count283
+\algocf@algoframe=\box54
+\algocf@algobox=\box55
+) (/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.sty
 Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfigtopskip=\skip88
 \subfigcapskip=\skip89
-\subfigcaptopadj=\dimen191
+\subfigcaptopadj=\dimen187
 \subfigbottomskip=\skip90
-\subfigcapmargin=\dimen192
+\subfigcapmargin=\dimen188
 \subfiglabelskip=\skip91
-\c@subfigure=\count295
-\c@lofdepth=\count296
-\c@subtable=\count297
-\c@lotdepth=\count298
+\c@subfigure=\count284
+\c@lofdepth=\count285
+\c@subtable=\count286
+\c@lotdepth=\count287
 
 ****************************************
 * Local config file subfigure.cfg used *
 ****************************************
-(c:/texlive/2021/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.cfg)
 \subfig@top=\skip92
 \subfig@bottom=\skip93
 )
-(c:/texlive/2021/texmf-dist/tex/latex/subeqnarray/subeqnarray.sty
+(/usr/share/texlive/texmf-dist/tex/latex/subeqnarray/subeqnarray.sty
 Package: subeqnarray 2004/04/15 v2.1c subeqnarray package
-\c@subequation=\count299
+\c@subequation=\count288
 )
-(c:/texlive/2021/texmf-dist/tex/latex/tools/enumerate.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/enumerate.sty
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
-\@enLab=\toks33
+\@enLab=\toks32
 )
-(c:/texlive/2021/texmf-dist/tex/latex/tools/multicol.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
-\c@tracingmulticols=\count300
-\mult@box=\box58
-\multicol@leftmargin=\dimen193
-\c@unbalance=\count301
-\c@collectmore=\count302
-\doublecol@number=\count303
-\multicoltolerance=\count304
-\multicolpretolerance=\count305
-\full@width=\dimen194
-\page@free=\dimen195
-\premulticols=\dimen196
-\postmulticols=\dimen197
+\c@tracingmulticols=\count289
+\mult@box=\box56
+\multicol@leftmargin=\dimen189
+\c@unbalance=\count290
+\c@collectmore=\count291
+\doublecol@number=\count292
+\multicoltolerance=\count293
+\multicolpretolerance=\count294
+\full@width=\dimen190
+\page@free=\dimen191
+\premulticols=\dimen192
+\postmulticols=\dimen193
 \multicolsep=\skip94
 \multicolbaselineskip=\skip95
-\partial@page=\box59
-\last@line=\box60
-\maxbalancingoverflow=\dimen198
-\mult@rightbox=\box61
-\mult@grightbox=\box62
-\mult@gfirstbox=\box63
-\mult@firstbox=\box64
+\partial@page=\box57
+\last@line=\box58
+\maxbalancingoverflow=\dimen194
+\mult@rightbox=\box59
+\mult@grightbox=\box60
+\mult@gfirstbox=\box61
+\mult@firstbox=\box62
+\@tempa=\box63
+\@tempa=\box64
 \@tempa=\box65
 \@tempa=\box66
 \@tempa=\box67
@@ -554,106 +546,102 @@ Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
 \@tempa=\box97
 \@tempa=\box98
 \@tempa=\box99
-\@tempa=\box100
-\@tempa=\box101
-\c@minrows=\count306
-\c@columnbadness=\count307
-\c@finalcolumnbadness=\count308
-\last@try=\dimen199
-\multicolovershoot=\dimen256
-\multicolundershoot=\dimen257
-\mult@nat@firstbox=\box102
-\colbreak@box=\box103
-\mc@col@check@num=\count309
+\c@minrows=\count295
+\c@columnbadness=\count296
+\c@finalcolumnbadness=\count297
+\last@try=\dimen195
+\multicolovershoot=\dimen196
+\multicolundershoot=\dimen197
+\mult@nat@firstbox=\box100
+\colbreak@box=\box101
+\mc@col@check@num=\count298
 )
-(c:/texlive/2021/texmf-dist/tex/latex/multirow/multirow.sty
-Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
 \multirow@colwidth=\skip96
-\multirow@cntb=\count310
+\multirow@cntb=\count299
 \multirow@dima=\skip97
-\bigstrutjot=\dimen258
+\bigstrutjot=\dimen198
 ) (./slashbox.sty
 slashbox style by K.Yasuoka, May 1993.
-\@slashboxa=\box104
-\@slashboxb=\box105
-\@slashboxc=\box106
-\@slashboxwd=\count311
-\@slashboxht=\count312
-\@slashsepl=\dimen259
-\@slashsepr=\dimen260
-) (c:/texlive/2021/texmf-dist/tex/latex/cases/cases.sty
-Package: cases 2020/03/29 ver 3.2
-\numc@numwid=\dimen261
+\@slashboxa=\box102
+\@slashboxb=\box103
+\@slashboxc=\box104
+\@slashboxwd=\count300
+\@slashboxht=\count301
+\@slashsepl=\dimen199
+\@slashsepr=\dimen256
+) (/usr/share/texlive/texmf-dist/tex/latex/cases/cases.sty
+Package: cases 2002/05/02 ver 2.5 
 )
-(c:/texlive/2021/texmf-dist/tex/latex/float/float.sty
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count313
-\float@exts=\toks34
-\float@box=\box107
-\@float@everytoks=\toks35
-\@floatcapt=\box108
+\c@float@type=\count302
+\float@exts=\toks33
+\float@box=\box105
+\@float@everytoks=\toks34
+\@floatcapt=\box106
 )
-(c:/texlive/2021/texmf-dist/tex/generic/soul/soul.sty
+(/usr/share/texlive/texmf-dist/tex/latex/soul/soul.sty
 Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
-\SOUL@word=\toks36
-\SOUL@lasttoken=\toks37
-\SOUL@cmds=\toks38
-\SOUL@buffer=\toks39
-\SOUL@token=\toks40
+\SOUL@word=\toks35
+\SOUL@lasttoken=\toks36
+\SOUL@cmds=\toks37
+\SOUL@buffer=\toks38
+\SOUL@token=\toks39
 \SOUL@spaceskip=\skip98
-\SOUL@ttwidth=\dimen262
-\SOUL@uldp=\dimen263
-\SOUL@ulht=\dimen264
+\SOUL@ttwidth=\dimen257
+\SOUL@uldp=\dimen258
+\SOUL@ulht=\dimen259
 )
-(c:/texlive/2021/texmf-dist/tex/latex/makecell/makecell.sty
+(/usr/share/texlive/texmf-dist/tex/latex/makecell/makecell.sty
 Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
-\rotheadsize=\dimen265
-\c@nlinenum=\count314
-\TeXr@lab=\toks41
-) (./abntex2cite.sty
+\rotheadsize=\dimen260
+\c@nlinenum=\count303
+\TeXr@lab=\toks40
+)
+(./abntex2cite.sty
 Package: abntex2cite 2016/02/26 v-1.9.6 abnTeX2
-(c:/texlive/2021/texmf-dist/tex/latex/tools/calc.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count315
-\calc@Bcount=\count316
-\calc@Adimen=\dimen266
-\calc@Bdimen=\dimen267
+\calc@Acount=\count304
+\calc@Bcount=\count305
+\calc@Adimen=\dimen261
+\calc@Bdimen=\dimen262
 \calc@Askip=\skip99
 \calc@Bskip=\skip100
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count317
+\calc@Ccount=\count306
 \calc@Cskip=\skip101
 )
-(c:/texlive/2021/texmf-dist/tex/latex/abntex2/abntex2abrev.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/abntex2/abntex2abrev.sty)
 \minimumbiblabelwidth=\skip102
 \ABCIauxlen=\skip103
-\c@ABCIaux=\count318
-\c@ABCImax=\count319
+\c@ABCIaux=\count307
+\c@ABCImax=\count308
 
-(c:/texlive/2021/texmf-dist/tex/generic/iftex/ifpdf.sty
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifpdf.sty
 Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
 )
-(c:/texlive/2021/texmf-dist/tex/generic/iftex/ifxetex.sty
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/ifxetex.sty
 Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
 )
 \biblabelsep=\skip104
 LaTeX Info: Redefining \newblock on input line 591.
 LaTeX Info: Redefining \cite on input line 618.
-\ABCItoken=\toks42
+\ABCItoken=\toks41
 )
-(c:/texlive/2021/texmf-dist/tex/latex/pdfpages/pdfpages.sty
-Package: pdfpages 2021/03/06 v0.5t Insert pages of external PDF documents (AM)
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2020/01/28 v0.5q Insert pages of external PDF documents (AM)
 
-(c:/texlive/2021/texmf-dist/tex/latex/eso-pic/eso-pic.sty
-Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
-\ESO@tempdima=\dimen268
-\ESO@tempdimb=\dimen269
+(/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2018/04/12 v2.0h eso-pic (RN)
 
-(c:/texlive/2021/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-(c:/texlive/2021/texmf-dist/tex/latex/graphics-cfg/color.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -667,52 +655,50 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 ))
-\AM@pagewidth=\dimen270
-\AM@pageheight=\dimen271
-\AM@fboxrule=\dimen272
+\AM@pagewidth=\dimen263
+\AM@pageheight=\dimen264
 
-(c:/texlive/2021/texmf-dist/tex/latex/pdfpages/pppdftex.def
-File: pppdftex.def 2021/03/06 v0.5t Pdfpages driver for pdfTeX (AM)
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2020/01/28 v0.5q Pdfpages driver for pdfTeX (AM)
 )
-\pdfpages@includegraphics@status=\count320
-\AM@pagebox=\box109
-\AM@global@opts=\toks43
-\AM@pagecnt=\count321
-\AM@toc@title=\toks44
-\c@AM@survey=\count322
-\AM@templatesizebox=\box110
+\AM@pagebox=\box107
+\AM@global@opts=\toks42
+\AM@pagecnt=\count309
+\AM@toc@title=\toks43
+\c@AM@survey=\count310
+\AM@templatesizebox=\box108
 )
-(c:/texlive/2021/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count323
-\lst@gtempboxa=\box111
-\lst@token=\toks45
-\lst@length=\count324
-\lst@currlwidth=\dimen273
-\lst@column=\count325
-\lst@pos=\count326
-\lst@lostspace=\dimen274
-\lst@width=\dimen275
-\lst@newlines=\count327
-\lst@lineno=\count328
-\lst@maxwidth=\dimen276
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count311
+\lst@gtempboxa=\box109
+\lst@token=\toks44
+\lst@length=\count312
+\lst@currlwidth=\dimen265
+\lst@column=\count313
+\lst@pos=\count314
+\lst@lostspace=\dimen266
+\lst@width=\dimen267
+\lst@newlines=\count315
+\lst@lineno=\count316
+\lst@maxwidth=\dimen268
 
-(c:/texlive/2021/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count329
-\lst@skipnumbers=\count330
-\lst@framebox=\box112
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
+\c@lstnumber=\count317
+\lst@skipnumbers=\count318
+\lst@framebox=\box110
 )
-(c:/texlive/2021/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2020/03/24 1.8d listings configuration
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2019/09/10 1.8c listings configuration
 ))
-Package: listings 2020/03/24 1.8d (Carsten Heinz)
+Package: listings 2019/09/10 1.8c (Carsten Heinz)
 
-(c:/texlive/2021/texmf-dist/tex/latex/colortbl/colortbl.sty
+(/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
-\everycr=\toks46
+\everycr=\toks45
 \minrowclearance=\skip105
 )
-(c:/texlive/2021/texmf-dist/tex/latex/tools/bm.sty
+(/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty
 Package: bm 2019/07/24 v1.2d Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup6
 \symboldletters=\mathgroup7
@@ -720,87 +706,96 @@ Package: bm 2019/07/24 v1.2d Bold Symbol Support (DPC/FMi)
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
 LaTeX Info: Redefining \bm on input line 209.
 )
-(c:/texlive/2021/texmf-dist/tex/latex/appendix/appendix.sty
+(/usr/share/texlive/texmf-dist/tex/latex/appendix/appendix.sty
 Package: appendix 2020/02/08 v1.2c extra appendix facilities
-\c@@pps=\count331
-\c@@ppsavesec=\count332
-\c@@ppsaveapp=\count333
+\c@@pps=\count319
+\c@@ppsavesec=\count320
+\c@@ppsaveapp=\count321
 )
 \@input{hifenizacao.aux}
 \openout2 = `hifenizacao.aux'.
 
 (./hifenizacao.tex)
-(c:/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count334
-\l__pdf_internal_box=\box113
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2019/09/10 1.8c listings language file
 )
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count322
+\l__pdf_internal_box=\box111
+)
+
+LaTeX Warning: Unused global option(s):
+    [divps].
+
 (./modelo_new2.aux (./introducao.aux) (./modelagem_escoamento.aux)
 (./ferramenta_computacional.aux) (./resultados.aux) (./conclusoes.aux)
 (./anexos.aux))
 \openout1 = `modelo_new2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 50.
-Package hyperref Info: Link coloring OFF on input line 50.
- (c:/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+(lastpage)             ! on input line 59.
+\AtBeginShipoutBox=\box112
+Package hyperref Info: Link coloring OFF on input line 59.
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
-(c:/texlive/2021/texmf-dist/tex/latex/refcount/refcount.sty
+(/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 )
-(c:/texlive/2021/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+(/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count335
+\c@section@level=\count323
 )
-LaTeX Info: Redefining \ref on input line 50.
-LaTeX Info: Redefining \pageref on input line 50.
-LaTeX Info: Redefining \nameref on input line 50.
+LaTeX Info: Redefining \ref on input line 59.
+LaTeX Info: Redefining \pageref on input line 59.
+LaTeX Info: Redefining \nameref on input line 59.
 
 (./modelo_new2.out) (./modelo_new2.out)
 \@outlinefile=\write3
 \openout3 = `modelo_new2.out'.
 
 
-(c:/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count336
-\scratchdimen=\dimen277
-\scratchbox=\box114
-\nofMPsegments=\count337
-\nofMParguments=\count338
-\everyMPshowfont=\toks47
-\MPscratchCnt=\count339
-\MPscratchDim=\dimen278
-\MPnumerator=\count340
-\makeMPintoPDFobject=\count341
-\everyMPtoPDFconversion=\toks48
-) (c:/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+\scratchcounter=\count324
+\scratchdimen=\dimen269
+\scratchbox=\box113
+\nofMPsegments=\count325
+\nofMParguments=\count326
+\everyMPshowfont=\toks46
+\MPscratchCnt=\count327
+\MPscratchDim=\dimen270
+\MPnumerator=\count328
+\makeMPintoPDFobject=\count329
+\everyMPtoPDFconversion=\toks47
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 
-(c:/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
@@ -838,83 +833,82 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package ragged2e Info: ABD: executing \RaggedRight on input line 50.
+Package ragged2e Info: ABD: executing \RaggedRight on input line 59.
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 50.
+LaTeX Info: Redefining \selectfont on input line 59.
 
-(c:/texlive/2021/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
 
-(c:/texlive/2021/texmf-dist/tex/latex/graphics/lscape.sty
-Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 ))
-\c@lstlisting=\count342
+\c@lstlisting=\count330
  [1
 
 
 
 
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Package hyperref Info: Option `breaklinks' set `true' on input line 101.
+Package hyperref Info: Option `raiselinks' set `true' on input line 101.
+Package hyperref Info: Option `pageanchor' set `true' on input line 101.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 101
+.
 
-{c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Package hyperref Info: Option `breaklinks' set `true' on input line 92.
-Package hyperref Info: Option `raiselinks' set `true' on input line 92.
-Package hyperref Info: Option `pageanchor' set `true' on input line 92.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 92.
-
-
-(c:/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 92.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 101
+.
 
-
-(c:/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.92 \maketitle
-                [1
+l.101 \maketitle
+                 [1
 
 ]
-<ficha_catalografica.pdf, id=358, 597.51233pt x 845.0471pt>
+<ficha_catalografica.pdf, id=379, 597.51233pt x 845.0471pt>
 File: ficha_catalografica.pdf Graphic file (type pdf)
 <use ficha_catalografica.pdf>
-Package pdftex.def Info: ficha_catalografica.pdf  used on input line 92.
+Package pdftex.def Info: ficha_catalografica.pdf  used on input line 101.
 (pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
 File: ficha_catalografica.pdf Graphic file (type pdf)
 <use ficha_catalografica.pdf>
-Package pdftex.def Info: ficha_catalografica.pdf  used on input line 92.
+Package pdftex.def Info: ficha_catalografica.pdf  used on input line 101.
 (pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
-<ficha_catalografica.pdf, id=361, page=1, 597.51233pt x 845.0471pt>
+<ficha_catalografica.pdf, id=382, page=1, 597.51233pt x 845.0471pt>
 File: ficha_catalografica.pdf Graphic file (type pdf)
 <use ficha_catalografica.pdf, page 1>
-Package pdftex.def Info: ficha_catalografica.pdf , page1 used on input line 92.
-
+Package pdftex.def Info: ficha_catalografica.pdf , page1 used on input line 101
+.
 (pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
 File: ficha_catalografica.pdf Graphic file (type pdf)
 <use ficha_catalografica.pdf, page 1>
-Package pdftex.def Info: ficha_catalografica.pdf , page1 used on input line 92.
-
+Package pdftex.def Info: ficha_catalografica.pdf , page1 used on input line 101
+.
 (pdftex.def)             Requested size: 597.53821pt x 845.08372pt.
 File: ficha_catalografica.pdf Graphic file (type pdf)
 <use ficha_catalografica.pdf, page 1>
-Package pdftex.def Info: ficha_catalografica.pdf , page1 used on input line 92.
-
+Package pdftex.def Info: ficha_catalografica.pdf , page1 used on input line 101
+.
 (pdftex.def)             Requested size: 597.53821pt x 845.08372pt.
 File: ficha_catalografica.pdf Graphic file (type pdf)
 <use ficha_catalografica.pdf, page 1>
-Package pdftex.def Info: ficha_catalografica.pdf , page1 used on input line 92.
-
+Package pdftex.def Info: ficha_catalografica.pdf , page1 used on input line 101
+.
 (pdftex.def)             Requested size: 597.53821pt x 845.08372pt.
 File: ficha_catalografica.pdf Graphic file (type pdf)
 <use ficha_catalografica.pdf, page 1>
-Package pdftex.def Info: ficha_catalografica.pdf , page1 used on input line 92.
-
+Package pdftex.def Info: ficha_catalografica.pdf , page1 used on input line 101
+.
 (pdftex.def)             Requested size: 597.53821pt x 845.08372pt.
  [2 <./ficha_catalografica.pdf>]
-Underfull \hbox (badness 2495) in paragraph at lines 99--99
+Underfull \hbox (badness 2495) in paragraph at lines 108--108
 []\T1/cmr/m/it/12 Dedico este tra-ba-lho 
  []
 
@@ -925,43 +919,43 @@ Underfull \hbox (badness 2495) in paragraph at lines 99--99
 ] [5
 
 ]
-Overfull \hbox (25.86603pt too wide) in paragraph at lines 109--114
+Overfull \hbox (25.86603pt too wide) in paragraph at lines 118--123
 []\T1/cmr/m/n/12 O fenÙ-meno do es-co-a-mento san-guÌ-neo em mo-de-los de ·r-vo
 -res ar-te-ri-ais do sis-tema cir-cu-la-tÛ-rio 
  []
 
 
-Overfull \hbox (14.63663pt too wide) in paragraph at lines 109--114
+Overfull \hbox (14.63663pt too wide) in paragraph at lines 118--123
 \T1/cmr/m/n/12 ce-n·-rios de es-co-a-mento es-pe-cÌ-fi-cos. Atra-vÈs da si-mu-l
 a-Á„o È pos-sÌ-vel ex-trair da-dos ana-lÌ-ti-cos 
  []
 
 
-Overfull \hbox (7.9801pt too wide) in paragraph at lines 109--114
+Overfull \hbox (7.9801pt too wide) in paragraph at lines 118--123
 \T1/cmr/m/n/12 que cal-cula a pres-s„o e fluxo em cada vaso a par-tir do mo-del
 o ma-te-m·-tico . A fer-ra-menta 
  []
 
 
-Overfull \hbox (3.15074pt too wide) in paragraph at lines 109--114
+Overfull \hbox (3.15074pt too wide) in paragraph at lines 118--123
 \T1/cmr/m/n/12 ma-te-m·-tico e ge-o-mÈ-trico pro-posto.[]A es-tru-tura de da-do
 s foi uti-li-zada no de-sen-vol-vi-mento 
  []
 
 
-Overfull \hbox (3.1549pt too wide) in paragraph at lines 109--114
+Overfull \hbox (3.1549pt too wide) in paragraph at lines 118--123
 \T1/cmr/m/n/12 para si-mu-lar cor-re-ta-mente o mo-delo ma-te-m·-tico es-co-lhi
 do e per-mi-tir que ou-tros mo-de-los 
  []
 
 
-Overfull \hbox (5.89572pt too wide) in paragraph at lines 109--114
+Overfull \hbox (5.89572pt too wide) in paragraph at lines 118--123
 \T1/cmr/m/n/12 pos-si-bi-lita que as di-ver-sas ca-rac-te-rÌs-ti-cas de uma ·r-
 vore ar-te-rial pos-sam ser ar-ma-ze-na-das, 
  []
 
 
-Overfull \hbox (22.49577pt too wide) in paragraph at lines 114--115
+Overfull \hbox (22.49577pt too wide) in paragraph at lines 123--124
 []\T1/cmr/bx/n/12 Palavras-chave:  []\T1/cmr/m/n/12 ¡rvores arteriais.  Escoame
 nto puls·til.  Hemodin‚mica Computacional. 
  []
@@ -969,31 +963,31 @@ nto puls·til.  Hemodin‚mica Computacional.
 [6
 
 ]
-Overfull \hbox (11.04723pt too wide) in paragraph at lines 117--122
+Overfull \hbox (11.04723pt too wide) in paragraph at lines 126--131
 \T1/cmr/m/n/12 It is pos-si-ble to ex-tract an-a-lyt-i-cal data with-out in-va-
 sive pro-ce-dures and cor-rectly cor-re-late 
  []
 
 
-Overfull \hbox (23.12495pt too wide) in paragraph at lines 117--122
+Overfull \hbox (23.12495pt too wide) in paragraph at lines 126--131
 \T1/cmr/m/n/12 work, the fol-low-ing are pre-sented: (i) an an-a-lyt-i-cal sche
 me based on ph-ysisc and math-e-matic 
  []
 
 
-Overfull \hbox (3.48123pt too wide) in paragraph at lines 117--122
+Overfull \hbox (3.48123pt too wide) in paragraph at lines 126--131
 \T1/cmr/m/n/12 oriented lan-guage and other li-braries with the pro-posed an-a-
 lyt-i-cal scheme. The pro-posed 
  []
 
 
-Overfull \hbox (9.02843pt too wide) in paragraph at lines 117--122
+Overfull \hbox (9.02843pt too wide) in paragraph at lines 126--131
 \T1/cmr/m/n/12 data struc-ture al-lows the com-pu-ta-tional en-vi-ron-ment to s
 tore, uti-lize and dis-play dif-fer-ent 
  []
 
 
-Overfull \hbox (25.86612pt too wide) in paragraph at lines 117--122
+Overfull \hbox (25.86612pt too wide) in paragraph at lines 126--131
 \T1/cmr/m/n/12 work are con-sis-tent to real mor-pho-me-t-ric data and nu-meric
  data re-lated in the lit-er-a-ture.[]The 
  []
@@ -1129,7 +1123,13 @@ fi-gura adap-tada de ([]DUAN;
 \tf@lof=\write4
 \openout4 = `modelo_new2.lof'.
 
- [11] (./modelo_new2.lot [12
+ [11] (./modelo_new2.lot
+Overfull \hbox (24.06937pt too wide) in paragraph at lines 29--29
+ [] [][]\T1/cmr/m/n/12 DescriÁ„o do co-mando para de-fi-nir to-dos os pa-r‚-me-
+tros de um campo per-ten-cente 
+ []
+
+[12
 
 ]
 Overfull \hbox (9.2285pt too wide) in paragraph at lines 39--39
@@ -1353,14 +1353,13 @@ Overfull \hbox (4.419pt too wide) in paragraph at lines 16--18
 -ver-sal do tubo, e $\OML/cmm/m/it/12 ^^Z$ \T1/cmr/m/n/12 È a den-si-dade 
  []
 
-<Figures/ProximalDistal@16x.png, id=906, 369.75641pt x 370.38374pt>
+<Figures/ProximalDistal@16x.png, id=933, 369.75641pt x 370.38374pt>
 File: Figures/ProximalDistal@16x.png Graphic file (type png)
 <use Figures/ProximalDistal@16x.png>
 Package pdftex.def Info: Figures/ProximalDistal@16x.png  used on input line 32.
 
 (pdftex.def)             Requested size: 369.7555pt x 370.38283pt.
 [23
-
 
 
 
@@ -1379,8 +1378,9 @@ re-senta a or-dem do seg-mento na-quela ge-ra-Á„o, como na Fi-gura []2.2[].
 
 [24pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
 }) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
 l.47 \end{eqnarray}
                     <./Figures/ProximalDistal@16x.png>]
 Overfull \hbox (8.49638pt too wide) in paragraph at lines 50--51
@@ -1417,7 +1417,7 @@ ade da onda $\OML/cmm/m/it/12 c\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 k; j\OT1/cmr/m
 /n/12 )$ \T1/cmr/m/n/12 È cal-cu-lada 
  []
 
-<Figures/ArterialTree_Zamir.png, id=951, 884.30376pt x 370.38374pt>
+<Figures/ArterialTree_Zamir.png, id=978, 884.30376pt x 370.38374pt>
 File: Figures/ArterialTree_Zamir.png Graphic file (type png)
 <use Figures/ArterialTree_Zamir.png>
 Package pdftex.def Info: Figures/ArterialTree_Zamir.png  used on input line 75.
@@ -1425,8 +1425,9 @@ Package pdftex.def Info: Figures/ArterialTree_Zamir.png  used on input line 75.
 (pdftex.def)             Requested size: 442.1508pt x 185.1914pt.
 [26pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2
 }) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
 l.85 \begin{equation}
                       <./Figures/ArterialTree_Zamir.png>] [27]
 Overfull \hbox (16.36833pt too wide) in paragraph at lines 134--135
@@ -1519,7 +1520,7 @@ Overfull \hbox (29.80795pt too wide) in paragraph at lines 5--6
 -gura []3.1[] ilus-tra a fer-ra-menta de-sen-vol-vida.  
  []
 
-<Figures/IGU_002.png, id=1053, 1882.03125pt x 1020.81375pt>
+<Figures/IGU_002.png, id=1081, 1882.03125pt x 1020.81375pt>
 File: Figures/IGU_002.png Graphic file (type png)
 <use Figures/IGU_002.png>
 Package pdftex.def Info: Figures/IGU_002.png  used on input line 9.
@@ -1551,7 +1552,6 @@ n-tem o seu fun-ci-o-na-mento, se-pa-rando
 
 
 
-
 ]
 Overfull \hbox (2.10645pt too wide) in paragraph at lines 18--19
 [][]\T1/cmr/m/n/12 Nesta fer-ra-menta com-pu-ta-ci-o-nal pon-tei-ros fo-ram uti
@@ -1578,8 +1578,9 @@ a-dos e al-go-rit-mos que des-cre-vem
 
 [33pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1
 }) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
 l.26 
       <./Figures/IGU_002.png>]
 Overfull \hbox (31.70073pt too wide) in paragraph at lines 29--30
@@ -1599,10 +1600,16 @@ Overfull \hbox (34.87213pt too wide) in paragraph at lines 29--30
 ial do mo-delo con-tÈm as pro-pri-e-da-des 
  []
 
+
+Underfull \hbox (badness 10000) in alignment at lines 60--60
+[][][][] 
+ []
+
 [34pdfTeX warning (ext4): destination with the same identifier (name{table.3.1}
 ) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
 l.66 
      ]
 Overfull \hbox (1.50893pt too wide) in paragraph at lines 85--86
@@ -1613,14 +1620,16 @@ Overfull \hbox (1.50893pt too wide) in paragraph at lines 85--86
 
 [35pdfTeX warning (ext4): destination with the same identifier (name{algocf.1})
  has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
 l.104 ...gia do tipo \textit{bottom-up}), visando}
                                                    calcular os valores de ad...
 ] [36pdfTeX warning (ext4): destination with the same identifier (name{algocf.2
 }) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
 l.105 \newpage
               ] [37]
 Overfull \vbox (18.15778pt too high) has occurred while \output is active []
@@ -1628,8 +1637,9 @@ Overfull \vbox (18.15778pt too high) has occurred while \output is active []
 
 [38pdfTeX warning (ext4): destination with the same identifier (name{algocf.3})
  has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
 l.141 ...em do tipo \textit{top-bottom}), visando}
                                                    calcular o valor da press...
 ]
@@ -1640,8 +1650,9 @@ mr/m/n/12 . Caso con-tr·-rio, calcula-se $[]$ com a Equa-Á„o [].
 
 [39pdfTeX warning (ext4): destination with the same identifier (name{algocf.4})
  has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
 l.170 
       ]
 Overfull \hbox (61.29489pt too wide) in paragraph at lines 171--172
@@ -1719,7 +1730,7 @@ Overfull \hbox (7.7189pt too wide) in paragraph at lines 186--187
 as. Uti-li-zando os ele-men-tos b·-si-cas 
  []
 
-<Figures/WiseElement@16x.png, id=1188, 157.14961pt x 100.375pt>
+<Figures/WiseElement@16x.png, id=1215, 157.14961pt x 100.375pt>
 File: Figures/WiseElement@16x.png Graphic file (type png)
 <use Figures/WiseElement@16x.png>
 Package pdftex.def Info: Figures/WiseElement@16x.png  used on input line 190.
@@ -1773,15 +1784,16 @@ Overfull \hbox (8.82857pt too wide) in paragraph at lines 197--198
 per-mite que se-jam ar-ma-ze-na-dos 
  []
 
-<Figures/WiseElements@16x.png, id=1195, 221.0132pt x 93.09781pt>
+<Figures/WiseElements@16x.png, id=1222, 221.0132pt x 93.09781pt>
 File: Figures/WiseElements@16x.png Graphic file (type png)
 <use Figures/WiseElements@16x.png>
 Package pdftex.def Info: Figures/WiseElements@16x.png  used on input line 201.
 (pdftex.def)             Requested size: 455.24411pt x 191.77368pt.
 [42pdfTeX warning (ext4): destination with the same identifier (name{figure.3.2
 }) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
 l.204 \end{figure}
                    <./Figures/WiseElement@16x.png>]
 Overfull \hbox (8.88544pt too wide) in paragraph at lines 210--211
@@ -1811,8 +1823,9 @@ mr/m/n/12 )$\T1/cmr/m/n/12 , o ele-mento \T1/cmr/m/it/12 Wi-se-Mesh
 
 [43pdfTeX warning (ext4): destination with the same identifier (name{figure.3.3
 }) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
 l.213 
        <./Figures/WiseElements@16x.png>]
 Overfull \hbox (13.40111pt too wide) in paragraph at lines 214--215
@@ -1832,13 +1845,13 @@ Overfull \hbox (14.15218pt too wide) in paragraph at lines 216--217
 es para des-cre-ver as es-tru-tu-ras e seus pa-r‚-me-tros. 
  []
 
-<Figures/WiseElementPoints@16x.png, id=1208, 105.20555pt x 75.03032pt>
+<Figures/WiseElementPoints@16x.png, id=1235, 105.20555pt x 75.03032pt>
 File: Figures/WiseElementPoints@16x.png Graphic file (type png)
 <use Figures/WiseElementPoints@16x.png>
 Package pdftex.def Info: Figures/WiseElementPoints@16x.png  used on input line 
 219.
 (pdftex.def)             Requested size: 227.62206pt x 162.33781pt.
-<Figures/WiseElementLines@16x.png, id=1209, 108.5932pt x 79.86086pt>
+<Figures/WiseElementLines@16x.png, id=1236, 108.5932pt x 79.86086pt>
 File: Figures/WiseElementLines@16x.png Graphic file (type png)
 <use Figures/WiseElementLines@16x.png>
 Package pdftex.def Info: Figures/WiseElementLines@16x.png  used on input line 2
@@ -1849,7 +1862,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 219--221
 [][] 
  []
 
-<Figures/WiseElementCells@16x.png, id=1210, 104.9546pt x 78.35524pt>
+<Figures/WiseElementCells@16x.png, id=1237, 104.9546pt x 78.35524pt>
 File: Figures/WiseElementCells@16x.png Graphic file (type png)
 <use Figures/WiseElementCells@16x.png>
 Package pdftex.def Info: Figures/WiseElementCells@16x.png  used on input line 2
@@ -1906,12 +1919,13 @@ Overfull \hbox (17.68192pt too wide) in paragraph at lines 229--230
 
 [44] [45pdfTeX warning (ext4): destination with the same identifier (name{figur
 e.3.4}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
 l.230 
        <./Figures/WiseElementPoints@16x.png> <./Figures/WiseElementLines@16x.pn
 g> <./Figures/WiseElementCells@16x.png>]
-<Figures/WiseElementStatus@16x.png, id=1223, 253.88602pt x 168.88094pt>
+<Figures/WiseElementStatus@16x.png, id=1250, 253.88602pt x 168.88094pt>
 File: Figures/WiseElementStatus@16x.png Graphic file (type png)
 <use Figures/WiseElementStatus@16x.png>
 Package pdftex.def Info: Figures/WiseElementStatus@16x.png  used on input line 
@@ -1941,7 +1955,7 @@ Overfull \hbox (10.28516pt too wide) in paragraph at lines 238--239
  es-quen-tando ou es-fri-ando, suas es-tru-tu-ras es-t„o re-pre-sen-ta-das 
  []
 
-<Figures/WiseElementWarming@16x.png, id=1225, 216.93547pt x 71.8936pt>
+<Figures/WiseElementWarming@16x.png, id=1252, 216.93547pt x 71.8936pt>
 File: Figures/WiseElementWarming@16x.png Graphic file (type png)
 <use Figures/WiseElementWarming@16x.png>
 Package pdftex.def Info: Figures/WiseElementWarming@16x.png  used on input line
@@ -1955,12 +1969,13 @@ aguar-dam que seus da-dos se-jam sal-vos em ca-che. Fi-nal-mente,
 
 [46pdfTeX warning (ext4): destination with the same identifier (name{figure.3.5
 }) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
 l.249 I
        nicialmente os elementos inteligentes s√£o criados no estado \textit{...
  <./Figures/WiseElementStatus@16x.png>]
-<Figures/WiseElementCold@16x.png, id=1233, 221.51508pt x 92.65868pt>
+<Figures/WiseElementCold@16x.png, id=1260, 221.51508pt x 92.65868pt>
 File: Figures/WiseElementCold@16x.png Graphic file (type png)
 <use Figures/WiseElementCold@16x.png>
 Package pdftex.def Info: Figures/WiseElementCold@16x.png  used on input line 25
@@ -1974,11 +1989,12 @@ i-cado se as es-tru-tu-ras es-pe-ra-das
 
 [47pdfTeX warning (ext4): destination with the same identifier (name{figure.3.6
 }) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
 l.263 
        <./Figures/WiseElementWarming@16x.png>]
-<Figures/WiseElementHot@16x.png, id=1239, 218.06468pt x 133.81242pt>
+<Figures/WiseElementHot@16x.png, id=1266, 218.06468pt x 133.81242pt>
 File: Figures/WiseElementHot@16x.png Graphic file (type png)
 <use Figures/WiseElementHot@16x.png>
 Package pdftex.def Info: Figures/WiseElementHot@16x.png  used on input line 266
@@ -2004,14 +2020,16 @@ gente e abs-trata. Por-tanto as fun-Áıes
 
 [48pdfTeX warning (ext4): destination with the same identifier (name{figure.3.7
 }) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
 l.276 \subsection
                  {F√ÅBRICA}\label{sec:fabrica}pdfTeX warning (ext4): destinatio
 n with the same identifier (name{figure.3.8}) has been already used, duplicate 
 ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
 l.276 \subsection
                  {F√ÅBRICA}\label{sec:fabrica} <./Figures/WiseElementCold@16x.p
 ng> <./Figures/WiseElementHot@16x.png>]
@@ -2038,7 +2056,7 @@ Overfull \hbox (3.9382pt too wide) in paragraph at lines 278--279
 par-tir de um ele-mento in-te-li-gente.[]  
  []
 
-<Figures/WiseElementWorkflow@16x.png, id=1249, 182.6825pt x 192.21812pt>
+<Figures/WiseElementWorkflow@16x.png, id=1276, 182.6825pt x 192.21812pt>
 File: Figures/WiseElementWorkflow@16x.png Graphic file (type png)
 <use Figures/WiseElementWorkflow@16x.png>
 Package pdftex.def Info: Figures/WiseElementWorkflow@16x.png  used on input lin
@@ -2052,8 +2070,9 @@ Underfull \hbox (badness 1789) in paragraph at lines 283--283
 
 [49] [50pdfTeX warning (ext4): destination with the same identifier (name{figur
 e.3.9}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
 l.292 
        <./Figures/WiseElementWorkflow@16x.png>]
 Overfull \hbox (10.85446pt too wide) in paragraph at lines 293--294
@@ -2099,7 +2118,7 @@ Overfull \hbox (4.91702pt too wide) in paragraph at lines 303--304
  in-te-li-gen-tes, desta forma ob-je-tos 
  []
 
-<Figures/WiseObject@16x.png, id=1267, 380.48398pt x 247.23618pt>
+<Figures/WiseObject@16x.png, id=1294, 380.48398pt x 247.23618pt>
 File: Figures/WiseObject@16x.png Graphic file (type png)
 <use Figures/WiseObject@16x.png>
 Package pdftex.def Info: Figures/WiseObject@16x.png  used on input line 307.
@@ -2134,11 +2153,12 @@ o in-te-li-gente. O ob-jeto in-te-li-gente
 
 [52pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1
 0}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
 l.313 
        <./Figures/WiseObject@16x.png>]
-<Figures/WiseObjectStatus@16x.png, id=1274, 191.65352pt x 126.78618pt>
+<Figures/WiseObjectStatus@16x.png, id=1302, 191.65352pt x 126.78618pt>
 File: Figures/WiseObjectStatus@16x.png Graphic file (type png)
 <use Figures/WiseObjectStatus@16x.png>
 Package pdftex.def Info: Figures/WiseObjectStatus@16x.png  used on input line 3
@@ -2146,8 +2166,9 @@ Package pdftex.def Info: Figures/WiseObjectStatus@16x.png  used on input line 3
 (pdftex.def)             Requested size: 383.30606pt x 253.57172pt.
  [53pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
 11}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
 l.322 
        <./Figures/WiseObjectStatus@16x.png>]
 Overfull \hbox (51.9846pt too wide) in paragraph at lines 323--324
@@ -2217,7 +2238,7 @@ Overfull \hbox (13.65787pt too wide) in paragraph at lines 335--336
  dos ele-men-tos in-te-li-gen-tes, so-mente 
  []
 
-<Figures/GraphicModel@16x.png, id=1287, 225.34187pt x 107.90312pt>
+<Figures/GraphicModel@16x.png, id=1315, 225.34187pt x 107.90312pt>
 File: Figures/GraphicModel@16x.png Graphic file (type png)
 <use Figures/GraphicModel@16x.png>
 Package pdftex.def Info: Figures/GraphicModel@16x.png  used on input line 339.
@@ -2228,7 +2249,7 @@ Overfull \hbox (22.87654pt too wide) in paragraph at lines 344--345
 um ele-mento in-te-li-gente \T1/cmr/m/it/12 Wi-se-E-le-ment 
  []
 
-<Figures/GraphicObjects@16x.png, id=1289, 223.08344pt x 89.71016pt>
+<Figures/GraphicObjects@16x.png, id=1317, 223.08344pt x 89.71016pt>
 File: Figures/GraphicObjects@16x.png Graphic file (type png)
 <use Figures/GraphicObjects@16x.png>
 Package pdftex.def Info: Figures/GraphicObjects@16x.png  used on input line 348
@@ -2260,16 +2281,18 @@ res, com isso as co-res re-pre-sen-tam
 
 [55] [56pdfTeX warning (ext4): destination with the same identifier (name{figur
 e.3.12}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
 l.356 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 3.13}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
 l.356 
        <./Figures/GraphicModel@16x.png> <./Figures/GraphicObjects@16x.png>]
-<Figures/GraphicElements@16x.png, id=1302, 172.2686pt x 92.345pt>
+<Figures/GraphicElements@16x.png, id=1329, 172.2686pt x 92.345pt>
 File: Figures/GraphicElements@16x.png Graphic file (type png)
 <use Figures/GraphicElements@16x.png>
 Package pdftex.def Info: Figures/GraphicElements@16x.png  used on input line 35
@@ -2307,8 +2330,9 @@ am ser ar-ma-ze-na-dos e ra-pi-da-mente car-re-ga-dos em me-mÛ-ria.
 
 [57pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1
 4}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
 l.367 
        <./Figures/GraphicElements@16x.png>]
 Overfull \hbox (28.81111pt too wide) in paragraph at lines 372--373
@@ -2317,7 +2341,7 @@ Overfull \hbox (28.81111pt too wide) in paragraph at lines 372--373
  
  []
 
-<Figures/WiseProject@16x.png, id=1308, 185.25461pt x 86.63617pt>
+<Figures/WiseProject@16x.png, id=1335, 185.25461pt x 86.63617pt>
 File: Figures/WiseProject@16x.png Graphic file (type png)
 <use Figures/WiseProject@16x.png>
 Package pdftex.def Info: Figures/WiseProject@16x.png  used on input line 377.
@@ -2354,11 +2378,12 @@ men-tos in-tei-ros e seus re-sul-ta-dos.
 
 [58pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1
 5}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
 l.385 
        <./Figures/WiseProject@16x.png>]
-<Figures/WiseProjectFactory@16x.png, id=1315, 240.02171pt x 158.9689pt>
+<Figures/WiseProjectFactory@16x.png, id=1342, 240.02171pt x 158.9689pt>
 File: Figures/WiseProjectFactory@16x.png Graphic file (type png)
 <use Figures/WiseProjectFactory@16x.png>
 Package pdftex.def Info: Figures/WiseProjectFactory@16x.png  used on input line
@@ -2396,38 +2421,33 @@ Overfull \hbox (9.58116pt too wide) in paragraph at lines 398--399
 ar-te-ri-ais e gr·-fi-cos È car-re-gado 
  []
 
-<Figures/WiseElementFactories@16x.png, id=1317, 256.58359pt x 222.51883pt>
 File: Figures/WiseElementFactories@16x.png Graphic file (type png)
 <use Figures/WiseElementFactories@16x.png>
 Package pdftex.def Info: Figures/WiseElementFactories@16x.png  used on input li
-ne 402.
+ne 408.
 (pdftex.def)             Requested size: 227.62206pt x 197.40279pt.
-<Figures/WiseObjectFactories@16x.png, id=1318, 256.70906pt x 221.82875pt>
 File: Figures/WiseObjectFactories@16x.png Graphic file (type png)
 <use Figures/WiseObjectFactories@16x.png>
 Package pdftex.def Info: Figures/WiseObjectFactories@16x.png  used on input lin
-e 402.
+e 408.
 (pdftex.def)             Requested size: 227.62206pt x 196.69582pt.
-<Figures/GraphicObjectFactories@16x.png, id=1319, 256.96pt x 222.51883pt>
 File: Figures/GraphicObjectFactories@16x.png Graphic file (type png)
 <use Figures/GraphicObjectFactories@16x.png>
 Package pdftex.def Info: Figures/GraphicObjectFactories@16x.png  used on input 
-line 404.
+line 408.
 (pdftex.def)             Requested size: 227.62206pt x 197.11757pt.
-<Figures/GraphicElementFactories@16x.png, id=1320, 263.48438pt x 262.29242pt>
 File: Figures/GraphicElementFactories@16x.png Graphic file (type png)
 <use Figures/GraphicElementFactories@16x.png>
 Package pdftex.def Info: Figures/GraphicElementFactories@16x.png  used on input
- line 404.
+ line 408.
 (pdftex.def)             Requested size: 227.62206pt x 226.60367pt.
-<Figures/WiseIterationFactories@16x.png, id=1321, 268.37766pt x 218.69203pt>
 File: Figures/WiseIterationFactories@16x.png Graphic file (type png)
 <use Figures/WiseIterationFactories@16x.png>
 Package pdftex.def Info: Figures/WiseIterationFactories@16x.png  used on input 
-line 406.
+line 408.
 (pdftex.def)             Requested size: 227.62206pt x 185.48198pt.
 
-Overfull \hbox (24.0pt too wide) in paragraph at lines 401--409
+Overfull \hbox (24.0pt too wide) in alignment at lines 408--408
 [][] 
  []
 
@@ -2436,8 +2456,9 @@ LaTeX Warning: Float too large for page by 3.08818pt on input line 411.
 
 [59pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1
 6}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
 l.411 \end{figure}
                    <./Figures/WiseProjectFactory@16x.png>]
 Overfull \hbox (4.12965pt too wide) in paragraph at lines 413--414
@@ -2502,8 +2523,9 @@ r/m/it/12 th-re-ads \T1/cmr/m/n/12 ir„o di-vi-dir o mesmo es-paÁo
 
 [60] [61pdfTeX warning (ext4): destination with the same identifier (name{figur
 e.3.17}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
 l.425 
        <./Figures/WiseElementFactories@16x.png> <./Figures/WiseObjectFactories@
 16x.png> <./Figures/GraphicObjectFactories@16x.png> <./Figures/GraphicElementFa
@@ -2525,7 +2547,7 @@ Overfull \hbox (0.36104pt too wide) in paragraph at lines 430--431
 t/12 QTh-re-ads \T1/cmr/m/n/12 que pos-suem ta-re-fas con-cor-ren-tes 
  []
 
-<Figures/WiseThreadPool@16x.png, id=1345, 290.02101pt x 130.2993pt>
+<Figures/WiseThreadPool@16x.png, id=1372, 290.02101pt x 130.2993pt>
 File: Figures/WiseThreadPool@16x.png Graphic file (type png)
 <use Figures/WiseThreadPool@16x.png>
 Package pdftex.def Info: Figures/WiseThreadPool@16x.png  used on input line 435
@@ -2588,7 +2610,7 @@ a-li-zado. O con-sole in-te-li-gente \T1/cmr/m/it/12 Wi-se-Con-sole \T1/cmr/m/n
 /12 fun-ci-ona 
  []
 
-<Figures/WiseThreaPoolCMD@16x.png, id=1351, 342.5297pt x 166.8107pt>
+<Figures/WiseThreaPoolCMD@16x.png, id=1378, 342.5297pt x 166.8107pt>
 File: Figures/WiseThreaPoolCMD@16x.png Graphic file (type png)
 <use Figures/WiseThreaPoolCMD@16x.png>
 Package pdftex.def Info: Figures/WiseThreaPoolCMD@16x.png  used on input line 4
@@ -2596,8 +2618,9 @@ Package pdftex.def Info: Figures/WiseThreaPoolCMD@16x.png  used on input line 4
 (pdftex.def)             Requested size: 455.24411pt x 221.72054pt.
 [63pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1
 8}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
 l.451 \end{figure}
                    <./Figures/WiseThreadPool@16x.png>]
 Overfull \hbox (1.03743pt too wide) in paragraph at lines 453--454
@@ -2611,7 +2634,7 @@ Overfull \hbox (2.0914pt too wide) in paragraph at lines 453--454
 cmr/m/n/12 È muito uti-li-zada no ci-clo de vida de um ele-mento 
  []
 
-<Figures/WiseThreadPoolHeating@16x.png, id=1357, 339.89484pt x 131.17758pt>
+<Figures/WiseThreadPoolHeating@16x.png, id=1384, 339.89484pt x 131.17758pt>
 File: Figures/WiseThreadPoolHeating@16x.png Graphic file (type png)
 <use Figures/WiseThreadPoolHeating@16x.png>
 Package pdftex.def Info: Figures/WiseThreadPoolHeating@16x.png  used on input l
@@ -2674,8 +2697,9 @@ tu-ras me-no-res que s„o ar-ma-ze-na-das
 
 [64pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1
 9}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
 l.465 
        <./Figures/WiseThreaPoolCMD@16x.png>]
 Overfull \hbox (6.79001pt too wide) in paragraph at lines 470--471
@@ -2691,8 +2715,9 @@ a pela fer-ra-menta para ar-ma-ze-nar
 
 [65pdfTeX warning (ext4): destination with the same identifier (name{figure.3.2
 0}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
 l.476 
        <./Figures/WiseThreadPoolHeating@16x.png>]
 Overfull \hbox (16.2032pt too wide) in paragraph at lines 484--485
@@ -2725,7 +2750,7 @@ Overfull \hbox (35.09433pt too wide) in paragraph at lines 499--500
 
  []
 
-<Figures/WiseJobStatus@16x.png, id=1373, 191.65352pt x 113.11008pt>
+<Figures/WiseJobStatus@16x.png, id=1400, 191.65352pt x 113.11008pt>
 File: Figures/WiseJobStatus@16x.png Graphic file (type png)
 <use Figures/WiseJobStatus@16x.png>
 Package pdftex.def Info: Figures/WiseJobStatus@16x.png  used on input line 503.
@@ -2755,1145 +2780,1248 @@ Overfull \hbox (10.83777pt too wide) in paragraph at lines 508--509
 cmr/m/n/12 in-dica que o tra-ba-lho foi fi-na-li-zado cor-re-ta-mente; 
  []
 
+[67pdfTeX warning (ext4): destination with the same identifier (name{figure.3.2
+1}) has been already used, duplicate ignored
 
-Overfull \hbox (2.64812pt too wide) in paragraph at lines 510--511
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.511 
+       <./Figures/WiseJobStatus@16x.png>]
+Overfull \hbox (2.64812pt too wide) in paragraph at lines 512--513
 \T1/cmr/m/it/12 th-re-ads\T1/cmr/m/n/12 . Atra-vÈs desta es-tru-tura ob-je-tos 
 do tipo \T1/cmr/m/it/12 QOb-ject \T1/cmr/m/n/12 po-dem se co-mu-ni-car e exe-cu
 -tar 
  []
 
 
-Overfull \hbox (2.0858pt too wide) in paragraph at lines 510--511
+Overfull \hbox (2.0858pt too wide) in paragraph at lines 512--513
 \T1/cmr/m/n/12 que s„o ele-men-tos gr·-fi-cos da in-ter-face de usu·-rio e her-
 dam da classe \T1/cmr/m/it/12 QOb-ject\T1/cmr/m/n/12 , pu-des-sem 
  []
 
-[67pdfTeX warning (ext4): destination with the same identifier (name{figure.3.2
-1}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.511 
-       <./Figures/WiseJobStatus@16x.png>]
-Overfull \hbox (17.37788pt too wide) in paragraph at lines 515--516
+
+Overfull \hbox (20.84929pt too wide) in paragraph at lines 512--513
+\T1/cmr/m/n/12 en-viar men-sa-gens di-re-ta-mente ao ge-ren-ci-a-dor de \T1/cmr
+/m/it/12 th-re-ads\T1/cmr/m/n/12 . []Os ob-je-tos QWid-get s„o ele-men-tos 
+ []
+
+
+Overfull \hbox (2.9952pt too wide) in paragraph at lines 512--513
+\T1/cmr/m/n/12 co-man-dos de te-clado e/ou mouse. Atra-vÈs da co-mu-ni-ca-Á„o d
+os ob-je-tos da classe \T1/cmr/m/it/12 QOb-ject 
+ []
+
+[68]
+Overfull \hbox (17.37788pt too wide) in paragraph at lines 517--518
 \T1/cmr/m/n/12 Nesta se-Á„o apresentam-se de-ta-lhes da in-ter-face es-co-lhida
  para fa-ci-li-tar o uso da fer-ra-menta 
  []
 
 File: Figures/IGU_002.png Graphic file (type png)
 <use Figures/IGU_002.png>
-Package pdftex.def Info: Figures/IGU_002.png  used on input line 519.
+Package pdftex.def Info: Figures/IGU_002.png  used on input line 521.
 (pdftex.def)             Requested size: 455.24411pt x 246.9162pt.
 
-Overfull \hbox (21.22823pt too wide) in paragraph at lines 524--525
+Overfull \hbox (21.22823pt too wide) in paragraph at lines 526--527
 []\T1/cmr/m/n/12 Ambas as in-ter-fa-ces fo-ram cons-truÌ-das para ma-ni-pu-lar 
 ob-je-tos in-te-li-gen-tes e suas es-tru-tu-ras, 
  []
 
 
-Overfull \hbox (14.69382pt too wide) in paragraph at lines 524--525
+Overfull \hbox (13.69682pt too wide) in paragraph at lines 526--527
 \T1/cmr/m/n/12 Se-Á„o []3.2[]. O con-sole se trata de um en-vio di-reto de men-
-sa-gens para a th-read \T1/cmr/m/it/12 Wi-se-Con-sole\T1/cmr/m/n/12 , 
+sa-gens para a \T1/cmr/m/it/12 th-read Wi-se-Con-sole\T1/cmr/m/n/12 , 
  []
 
 
-Overfull \hbox (1.454pt too wide) in paragraph at lines 524--525
+Overfull \hbox (1.454pt too wide) in paragraph at lines 526--527
 \T1/cmr/m/n/12 que È efe-ti-va-mente o con-sole. Nas prÛ-xi-mas se-Áıes os di-f
 e-ren-tes am-bi-en-tes da fer-ra-menta 
  []
 
-[68pdfTeX warning (ext4): destination with the same identifier (name{figure.3.2
-2}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.525 
-      ]
-Overfull \hbox (1.83008pt too wide) in paragraph at lines 529--530
+
+Overfull \hbox (1.83008pt too wide) in paragraph at lines 531--532
 \T1/cmr/m/n/12 bi-bli-o-te-cas gr·-fi-cas do OpenGL n„o fo-ram in-cluÌ-das no p
 ro-cesso de com-pi-la-Á„o, por-tanto 
  []
 
 
-Overfull \hbox (37.61316pt too wide) in paragraph at lines 529--530
+Overfull \hbox (37.61316pt too wide) in paragraph at lines 531--532
 \T1/cmr/m/n/12 am-bi-en-tes sem re-cur-sos gr·-fi-cos s„o ca-pa-zes de com-pi-l
 ar e exe-cu-tar a fer-ra-menta com-pu-ta-ci-o-nal 
  []
 
-<Figures/InGU.png, id=1386, 297.11pt x 173.64874pt>
+[69
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.532 
+      ]
+<Figures/InGU.png, id=1419, 297.11pt x 173.64874pt>
 File: Figures/InGU.png Graphic file (type png)
 <use Figures/InGU.png>
-Package pdftex.def Info: Figures/InGU.png  used on input line 533.
+Package pdftex.def Info: Figures/InGU.png  used on input line 535.
 (pdftex.def)             Requested size: 455.24411pt x 266.08446pt.
 
-Overfull \hbox (5.63765pt too wide) in paragraph at lines 538--539
+Overfull \hbox (7.58012pt too wide) in paragraph at lines 540--541
+[]\T1/cmr/m/n/12 No Anexo []A[] es-t„o as sequÍn-cias de ins-tru-Áıes ne-ces-s·
+-rias para com-pi-lar to-dos os pro-je-tos 
+ []
+
+
+Overfull \hbox (5.63765pt too wide) in paragraph at lines 540--541
 \T1/cmr/m/n/12 da fer-ra-menta com-pu-ta-ci-o-nal. Ao ser com-pi-lado, um exe-c
 u-t·-vel InGU con-tendo o pro-jeto 
  []
 
-<Figures/InGU_console.png, id=1387, 741.77126pt x 440.64626pt>
+<Figures/InGU_console.png, id=1421, 741.77126pt x 440.64626pt>
 File: Figures/InGU_console.png Graphic file (type png)
 <use Figures/InGU_console.png>
-Package pdftex.def Info: Figures/InGU_console.png  used on input line 542.
+Package pdftex.def Info: Figures/InGU_console.png  used on input line 544.
 (pdftex.def)             Requested size: 333.79398pt x 198.28897pt.
 
-Overfull \hbox (15.68108pt too wide) in paragraph at lines 547--548
+Overfull \hbox (15.68108pt too wide) in paragraph at lines 549--550
 \T1/cmr/m/n/12 Ao cap-tu-rar a li-nha de texto, o pro-grama de con-sole ir· na 
 ver-dade re-di-re-ci-o-nar o co-mando 
  []
 
 
-Overfull \hbox (29.45125pt too wide) in paragraph at lines 547--548
+Overfull \hbox (28.45425pt too wide) in paragraph at lines 549--550
 \T1/cmr/m/n/12 para a es-tru-tura \T1/cmr/m/it/12 Wi-seTh-re-ad-Pool\T1/cmr/m/n
-/12 , que por sua vez ir· alo-car uma th-read do tipo \T1/cmr/m/it/12 Wi-se-Con
--sole 
+/12 , que por sua vez ir· alo-car uma \T1/cmr/m/it/12 th-read \T1/cmr/m/n/12 do
+ tipo \T1/cmr/m/it/12 Wi-se-Con-sole 
  []
 
 
-Overfull \hbox (11.80014pt too wide) in paragraph at lines 547--548
+Overfull \hbox (11.80014pt too wide) in paragraph at lines 549--550
 \T1/cmr/m/n/12 para in-ter-pre-tar a men-sa-gem. Este com-por-ta-mento È o mesm
 o apre-sen-tado na Se-Á„o []3.2.7[]. 
  []
 
 
-Overfull \hbox (23.05547pt too wide) in paragraph at lines 547--548
+Overfull \hbox (22.05847pt too wide) in paragraph at lines 549--550
 \T1/cmr/m/n/12 exi-bida. Nas prÛ-xi-mas se-Áıes es-tes co-man-dos, suas en-tra-
-das, seu es-copo e th-read res-pon-s·-vel 
+das, seu es-copo e \T1/cmr/m/it/12 th-read \T1/cmr/m/n/12 res-pon-s·-vel 
  []
 
-[69pdfTeX warning (ext4): destination with the same identifier (name{figure.3.2
-3}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.548 
+[70pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.550 
        <./Figures/InGU.png>]
-Overfull \hbox (23.64699pt too wide) in paragraph at lines 572--573
-\T1/cmr/m/n/12 es-pe-cÌ-fi-cos. Os es-co-pos fo-ram cri-a-dos para agru-par co-
-man-dos por ·rea de atu-a-Á„o, co-man-dos 
+Underfull \hbox (badness 10000) in alignment at lines 568--568
+[][] 
  []
 
-[70pdfTeX warning (ext4): destination with the same identifier (name{figure.3.2
-4}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.573 
-      pdfTeX warning (ext4): destination with the same identifier (name{table.3
-.2}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.573 
+[71pdfTeX warning (ext4): destination with the same identifier (name{figure.4.3
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.575 
+      pdfTeX warning (ext4): destination with the same identifier (name{table.4
+.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.575 
        <./Figures/InGU_console.png>]
-<Figures/InGU_help.png, id=1399, 839.135pt x 1015.795pt>
+<Figures/InGU_help.png, id=1435, 839.135pt x 1015.795pt>
 File: Figures/InGU_help.png Graphic file (type png)
 <use Figures/InGU_help.png>
-Package pdftex.def Info: Figures/InGU_help.png  used on input line 577.
+Package pdftex.def Info: Figures/InGU_help.png  used on input line 579.
 (pdftex.def)             Requested size: 377.60725pt x 457.10353pt.
 
-Overfull \hbox (10.94746pt too wide) in paragraph at lines 587--588
+Overfull \hbox (10.94746pt too wide) in paragraph at lines 589--590
 \T1/cmr/m/n/12 ar-quivo deve con-ter um co-mando por li-nha, um exem-plo pode s
 er en-con-trado no Anexo []B[]. 
  []
 
 
-Overfull \hbox (1.63586pt too wide) in paragraph at lines 587--588
-\T1/cmr/m/n/12 Para este tipo de co-mando um \T1/cmr/m/it/12 Wi-se-Job \T1/cmr/
-m/n/12 con-tendo a li-nha de co-mando e qual a sequÍn-cia 
+Overfull \hbox (20.52985pt too wide) in paragraph at lines 589--590
+\T1/cmr/m/n/12 ar-quivo de co-mando, a \T1/cmr/m/it/12 th-read Wi-seIO \T1/cmr/
+m/n/12 ser· res-pon-s·-vel por ler o ar-quivo e criar os tra-ba-lhos 
  []
 
 
-Overfull \hbox (9.77698pt too wide) in paragraph at lines 587--588
-\T1/cmr/m/n/12 de tra-ba-lhos que deve ser exe-cu-tada. Por se tra-tar de uma l
-ei-tura de ar-quivo de co-mando, 
+Overfull \hbox (40.97197pt too wide) in paragraph at lines 589--590
+\T1/cmr/m/n/12 com os co-man-dos sub-se-quen-tes. Es-tes no-vos co-man-dos ir„o
+ pas-sar no-va-mente pela in-ter-pre-ta-Á„o 
  []
 
+[72pdfTeX warning (ext4): destination with the same identifier (name{figure.4.4
+}) has been already used, duplicate ignored
 
-Overfull \hbox (4.36298pt too wide) in paragraph at lines 587--588
-\T1/cmr/m/n/12 a th-read \T1/cmr/m/it/12 Wi-seIO \T1/cmr/m/n/12 ser· res-pon-s·
--vel por ler o ar-quivo e criar os tra-ba-lhos com os co-man-dos 
- []
-
-[71pdfTeX warning (ext4): destination with the same identifier (name{figure.3.2
-5}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.588 
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.590 
        <./Figures/InGU_help.png>]
-Overfull \hbox (13.01372pt too wide) in paragraph at lines 591--602
-[][] 
+Overfull \hbox (29.77538pt too wide) in alignment at lines 603--603
+[][][] 
  []
 
 
-Overfull \hbox (12.48453pt too wide) in paragraph at lines 610--611
+Overfull \hbox (12.48453pt too wide) in paragraph at lines 612--613
 \T1/cmr/m/it/12 Wi-se-E-le-ment \T1/cmr/m/n/12 e ob-je-tos in-te-li-gen-tes \T1
 /cmr/m/it/12 Wi-se-Ob-ject \T1/cmr/m/n/12 dis-po-nÌ-veis se-r„o tes-ta-dos in-d
 i-vi-du-al-mente. 
  []
 
 
-Overfull \hbox (18.45677pt too wide) in paragraph at lines 612--613
+Overfull \hbox (18.45677pt too wide) in paragraph at lines 614--615
 []\T1/cmr/m/n/12 Estes tes-tes fo-ram uti-li-za-dos prin-ci-pal-mente no mo-men
 to do de-sen-vol-vi-mento da fer-ra-menta 
  []
 
 
-Overfull \hbox (32.9797pt too wide) in paragraph at lines 612--613
+Overfull \hbox (32.9797pt too wide) in paragraph at lines 614--615
 \T1/cmr/m/n/12 e ga-ran-tem que as f·-bri-cas de ele-men-tos e ob-je-tos in-te-
 li-gen-tes es-t„o fun-ci-o-nando cor-re-ta-mente. 
  []
 
 
-Overfull \hbox (4.46027pt too wide) in paragraph at lines 612--613
+Overfull \hbox (4.46027pt too wide) in paragraph at lines 614--615
 \T1/cmr/m/n/12 car-re-ga-das pela fer-ra-menta n„o per-dem in-for-ma-Á„o ao se-
 rem ar-ma-ze-na-das e re-cu-pe-ra-das, 
  []
 
 
-Overfull \hbox (52.36227pt too wide) in paragraph at lines 612--613
+Overfull \hbox (52.36227pt too wide) in paragraph at lines 614--615
 \T1/cmr/m/n/12 pro-cesso re-cor-rente na fer-ra-menta com-pu-ta-ci-o-nal. Os co
 -man-dos deste tipo s„o de res-pon-sa-bi-li-dade 
  []
 
 
-Overfull \hbox (27.43642pt too wide) in paragraph at lines 612--613
-\T1/cmr/m/n/12 da th-read \T1/cmr/m/it/12 Wi-se-Con-sole\T1/cmr/m/n/12 , que ir
+Overfull \hbox (26.43942pt too wide) in paragraph at lines 614--615
+\T1/cmr/m/n/12 da \T1/cmr/m/it/12 th-read Wi-se-Con-sole\T1/cmr/m/n/12 , que ir
 · criar e exe-cu-tar sub-co-mando, tra-ba-lhos \T1/cmr/m/it/12 Wi-se-Job \T1/cm
 r/m/n/12 re-la-ci-o-na-dos 
  []
 
-[72pdfTeX warning (ext4): destination with the same identifier (name{table.3.3}
+
+Underfull \hbox (badness 10000) in alignment at lines 628--628
+[][] 
+ []
+
+[73pdfTeX warning (ext4): destination with the same identifier (name{table.4.2}
 ) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.636 
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.638 
       ]
-Overfull \hbox (0.7277pt too wide) in paragraph at lines 658--659
+Underfull \hbox (badness 10000) in alignment at lines 651--651
+[][] 
+ []
+
+
+Overfull \hbox (0.7277pt too wide) in paragraph at lines 660--661
 \T1/cmr/m/n/12 sequÍn-cia de co-man-dos ‡ se-rem in-ter-pre-ta-dos pelo \T1/cmr
 /m/it/12 Wi-se-Con-sole\T1/cmr/m/n/12 , os tes-tes s„o com-pos-tos 
  []
 
 
-Overfull \hbox (39.5142pt too wide) in paragraph at lines 662--673
-[][] 
+Underfull \hbox (badness 10000) in alignment at lines 674--674
+[][][] 
  []
 
 
-Overfull \hbox (6.97058pt too wide) in paragraph at lines 681--682
+Overfull \hbox (6.97058pt too wide) in paragraph at lines 683--684
 \T1/cmr/m/n/12 mesma chave s„o sal-vos. Por se tra-tar da lei-tura de dois ar-q
 ui-vos di-fe-ren-tes esse co-mando 
  []
 
-[73pdfTeX warning (ext4): destination with the same identifier (name{table.3.4}
+[74pdfTeX warning (ext4): destination with the same identifier (name{table.4.3}
 ) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.682 
-      pdfTeX warning (ext4): destination with the same identifier (name{table.3
-.5}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.682 
-      pdfTeX warning (ext4): destination with the same identifier (name{table.3
-.6}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.682 
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.684 
+      pdfTeX warning (ext4): destination with the same identifier (name{table.4
+.4}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.684 
       ]
-Overfull \hbox (29.33752pt too wide) in paragraph at lines 685--698
-[][] 
+Underfull \hbox (badness 10000) in alignment at lines 699--699
+[][][] 
  []
 
 
-Overfull \hbox (4.75179pt too wide) in paragraph at lines 706--707
-\T1/cmr/m/n/12 Para criar um pro-jeto in-te-li-gente va-zio este co-mando È uti
--li-zado, como en-trada ele re-cebe 
+Overfull \hbox (6.25275pt too wide) in paragraph at lines 708--709
+\T1/cmr/m/n/12 pro-jeto. Este co-mando ir· uti-li-zar a f·-brica de pro-je-tos 
+in-te-li-gen-tes para criar a es-tru-tura 
  []
 
 
-Overfull \hbox (20.13564pt too wide) in paragraph at lines 710--721
-[][] 
+Underfull \hbox (badness 10000) in alignment at lines 722--722
+[][][] 
  []
 
 
-Overfull \hbox (9.3201pt too wide) in paragraph at lines 729--730
+Overfull \hbox (9.3201pt too wide) in paragraph at lines 731--732
 \T1/cmr/m/n/12 Para que a mai-o-ria dos co-man-dos fun-ci-one È ne-ces-s·-rio q
 ue um pro-jeto es-teja se-le-ci-o-nado, 
  []
 
-[74pdfTeX warning (ext4): destination with the same identifier (name{table.3.7}
+[75pdfTeX warning (ext4): destination with the same identifier (name{table.4.5}
 ) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.730 
-      pdfTeX warning (ext4): destination with the same identifier (name{table.3
-.8}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.730 
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.732 
+      pdfTeX warning (ext4): destination with the same identifier (name{table.4
+.6}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.732 
+      pdfTeX warning (ext4): destination with the same identifier (name{table.4
+.7}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.732 
       ]
-Overfull \hbox (64.18738pt too wide) in paragraph at lines 733--744
-[][] 
+Underfull \hbox (badness 10000) in alignment at lines 745--745
+[][][] 
  []
 
 
-Overfull \hbox (8.07999pt too wide) in paragraph at lines 752--753
+Overfull \hbox (8.07999pt too wide) in paragraph at lines 754--755
 \T1/cmr/m/n/12 … pos-sÌ-vel ve-ri-fi-car to-dos os pro-je-tos do am-bi-ente uti
 -li-zando o co-mando de lis-tar pro-je-tos. 
  []
 
 
-Overfull \hbox (3.61183pt too wide) in paragraph at lines 775--776
-\T1/cmr/m/n/12 pro-jeto pos-sua ele-men-tos e ob-je-tos in-te-li-gen-tes eles t
-am-bÈm se-r„o im-pres-sos na es-tru-tura 
+Underfull \hbox (badness 10000) in alignment at lines 768--768
+[][] 
  []
 
 
-Overfull \hbox (0.80556pt too wide) in paragraph at lines 798--799
+Overfull \hbox (14.83685pt too wide) in paragraph at lines 777--778
+\T1/cmr/m/n/12 do pro-jeto se-le-ci-o-nado.[] Caso o pro-jeto pos-sua ele-men-t
+os e ob-je-tos in-te-li-gen-tes eles tam-bÈm 
+ []
+
+
+Underfull \hbox (badness 10000) in alignment at lines 791--791
+[][] 
+ []
+
+
+Overfull \hbox (0.80556pt too wide) in paragraph at lines 800--801
 \T1/cmr/m/n/12 Com um pro-jeto se-le-ci-o-nado, o co-mando de ex-clu-s„o de ele
 -men-tos ir· ex-cluir o ele-mento 
  []
 
 
-Overfull \hbox (10.32132pt too wide) in paragraph at lines 798--799
-\T1/cmr/m/n/12 co-mando ser· in-ter-pre-tado pela th-read \T1/cmr/m/it/12 Wi-se
--Con-sole\T1/cmr/m/n/12 , que no-ti-fica o ge-ren-ci-a-dor de th-re-ads 
+Overfull \hbox (7.24844pt too wide) in paragraph at lines 800--801
+\T1/cmr/m/n/12 co-mando ser· in-ter-pre-tado pela \T1/cmr/m/it/12 th-read Wi-se
+-Con-sole\T1/cmr/m/n/12 , que no-ti-fica o ge-ren-ci-a-dor de \T1/cmr/m/it/12 t
+h-re-ads 
  []
 
-[75pdfTeX warning (ext4): destination with the same identifier (name{table.3.9}
+[76pdfTeX warning (ext4): destination with the same identifier (name{table.4.8}
 ) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.799 
-      pdfTeX warning (ext4): destination with the same identifier (name{table.3
-.10}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.799 
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.801 
+      pdfTeX warning (ext4): destination with the same identifier (name{table.4
+.9}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.801 
       ]
-Overfull \hbox (42.97728pt too wide) in paragraph at lines 825--836
+Underfull \hbox (badness 10000) in alignment at lines 814--814
 [][] 
  []
 
 
-Overfull \hbox (9.28532pt too wide) in paragraph at lines 844--845
+Underfull \hbox (badness 10000) in alignment at lines 837--837
+[][][] 
+ []
+
+
+Overfull \hbox (9.28532pt too wide) in paragraph at lines 846--847
 \T1/cmr/m/n/12 a es-tru-tura de um pro-jeto in-te-li-gente. A fer-ra-menta com-
 pu-ta-ci-o-nal ir· uti-li-zar os ar-qui-vos 
  []
 
 
-Overfull \hbox (3.74236pt too wide) in paragraph at lines 844--845
+Overfull \hbox (3.74236pt too wide) in paragraph at lines 846--847
 \T1/cmr/m/n/12 ele-men-tos e ob-je-tos in-te-li-gen-tes eles tam-bÈm se-r„o re-
 cons-truÌ-dos no pro-jeto re-cons-truÌdo.  
  []
 
-[76pdfTeX warning (ext4): destination with the same identifier (name{table.3.11
+[77pdfTeX warning (ext4): destination with the same identifier (name{table.4.10
 }) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.845 
-      pdfTeX warning (ext4): destination with the same identifier (name{table.3
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.847 
+      pdfTeX warning (ext4): destination with the same identifier (name{table.4
+.11}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.847 
+      pdfTeX warning (ext4): destination with the same identifier (name{table.4
 .12}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.845 
-      pdfTeX warning (ext4): destination with the same identifier (name{table.3
-.13}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.845 
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.847 
       ]
-Overfull \hbox (35.14586pt too wide) in paragraph at lines 848--859
-[][] 
+Underfull \hbox (badness 10000) in alignment at lines 860--860
+[][][] 
  []
 
 
-LaTeX Warning: Reference `sec:fabricas' on page 77 undefined on input line 867.
+Overfull \hbox (5.5001pt too wide) in paragraph at lines 869--870
+\T1/cmr/m/n/12 As f·-bri-cas de ele-men-tos in-te-li-gen-tes des-cri-tas na Se-
+Á„o []3.2.2[] s„o aces-sa-das pelo co-mando 
+ []
 
 
-
-Overfull \hbox (10.79053pt too wide) in paragraph at lines 867--868
+Overfull \hbox (10.79053pt too wide) in paragraph at lines 869--870
 \T1/cmr/m/n/12 nome e o exem-plo ‡ ser uti-li-zado. Cada f·-brica de ele-men-to
 s pos-sui uma lista de exem-plos 
  []
 
 
-Overfull \hbox (6.41782pt too wide) in paragraph at lines 867--868
+Overfull \hbox (6.41782pt too wide) in paragraph at lines 869--870
 \T1/cmr/m/n/12 dis-po-nÌ-veis, essa lista È vi-su-a-li-zada atra-vÈs do co-mand
 o de lis-tar exem-plos de uma f·-brica 
  []
 
 
-Overfull \hbox (34.81953pt too wide) in paragraph at lines 871--886
-[][] 
+Overfull \hbox (195.11829pt too wide) in alignment at lines 887--887
+[][][] 
  []
 
-[77pdfTeX warning (ext4): destination with the same identifier (name{table.3.14
+[78pdfTeX warning (ext4): destination with the same identifier (name{table.4.13
 }) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.895 
-      pdfTeX warning (ext4): destination with the same identifier (name{table.3
-.15}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.895 
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.897 
+      pdfTeX warning (ext4): destination with the same identifier (name{table.4
+.14}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.897 
       ]
-Overfull \hbox (67.4505pt too wide) in paragraph at lines 898--911
-[][] 
+Underfull \hbox (badness 10000) in alignment at lines 912--912
+[][][] 
  []
 
 
-Overfull \hbox (5.37384pt too wide) in paragraph at lines 919--920
+Overfull \hbox (5.37384pt too wide) in paragraph at lines 921--922
 \T1/cmr/m/n/12 que o con-sole im-prima uma lista com o nome de to-dos os ele-me
 n-tos in-te-li-gen-tes pre-sen-tes 
  []
 
-[78pdfTeX warning (ext4): destination with the same identifier (name{table.3.16
+
+Underfull \hbox (badness 10000) in alignment at lines 935--935
+[][] 
+ []
+
+[79pdfTeX warning (ext4): destination with the same identifier (name{table.4.15
 }) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.944 \begin{center}
-                    pdfTeX warning (ext4): destination with the same identifier
- (name{table.3.17}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.944 \begin{center}
-                    ]
-Overfull \hbox (67.4505pt too wide) in paragraph at lines 946--957
-[][] 
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.945 
+      pdfTeX warning (ext4): destination with the same identifier (name{table.4
+.16}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.945 
+      ]
+Underfull \hbox (badness 10000) in alignment at lines 958--958
+[][][] 
  []
 
 
-Overfull \hbox (67.4505pt too wide) in paragraph at lines 969--980
-[][] 
+Underfull \hbox (badness 10000) in alignment at lines 981--981
+[][][] 
  []
 
 
-Overfull \hbox (2.85773pt too wide) in paragraph at lines 988--989
+Overfull \hbox (2.85773pt too wide) in paragraph at lines 990--991
 \T1/cmr/m/n/12 um ar-quivo \T1/cmr/m/it/12 VTK\T1/cmr/m/n/12 . Am-bos fu-tu-ra-
 mente po-dem ser uti-li-za-dos na re-cons-tru-Á„o do ele-mento 
  []
 
 
-Overfull \hbox (67.4505pt too wide) in paragraph at lines 992--1005
-[][] 
+Overfull \hbox (115.24753pt too wide) in alignment at lines 1006--1006
+[][][] 
  []
 
 
-Overfull \hbox (7.91907pt too wide) in paragraph at lines 1013--1014
+Overfull \hbox (7.91907pt too wide) in paragraph at lines 1015--1016
 \T1/cmr/m/n/12 uti-li-zar os ar-qui-vos de en-trada di-re-ta-mente na f·-brica 
 de ele-mento in-te-li-gente re-la-ci-o-nada. 
  []
 
-[79pdfTeX warning (ext4): destination with the same identifier (name{table.3.18
+[80pdfTeX warning (ext4): destination with the same identifier (name{table.4.17
 }) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.1014 
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1016 
        pdfTeX warning (ext4): destination with the same identifier (name{table.
-3.19}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.1014 
+4.18}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1016 
        ]
-Overfull \hbox (44.60878pt too wide) in paragraph at lines 1017--1033
-[][] 
+Overfull \hbox (10.23167pt too wide) in alignment at lines 1057--1057
+[][][] 
  []
 
-
-Overfull \hbox (67.4505pt too wide) in paragraph at lines 1045--1056
-[][] 
- []
-
-[80pdfTeX warning (ext4): destination with the same identifier (name{table.3.20
+[81pdfTeX warning (ext4): destination with the same identifier (name{table.4.19
 }) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.1065 
-       pdfTeX warning (ext4): destination with the same identifier (name{table.
-3.21}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.1065 
-       ]
-Overfull \hbox (67.4505pt too wide) in paragraph at lines 1068--1081
-[][] 
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1061 \end{center}
+                   pdfTeX warning (ext4): destination with the same identifier 
+(name{table.4.20}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1061 \end{center}
+                   ]
+Overfull \hbox (11.8959pt too wide) in paragraph at lines 1066--1067
+\T1/cmr/m/n/12 A es-tru-tura abs-trata dos ele-men-tos in-te-li-gen-tes re-quer
+ que cada um de-les pos-sua o mÈ-todo 
  []
 
 
-Underfull \hbox (badness 8094) in paragraph at lines 1104--1105
-[]|\T1/cmr/m/n/12 Tipo de pa-r‚-me-tro ‡ ser es-ca-lado 
+Overfull \hbox (16.52942pt too wide) in paragraph at lines 1066--1067
+\T1/cmr/m/n/12 de ex-por-ta-Á„o, os mÈ-to-dos de ex-por-ta-Á„o po-dem re-ce-ber
+ pa-r‚-me-tros di-fe-ren-tes. A prin-ci-pal 
  []
 
 
-Overfull \hbox (67.4505pt too wide) in paragraph at lines 1093--1109
-[][] 
+Overfull \hbox (112.89265pt too wide) in alignment at lines 1082--1082
+[][][] 
  []
 
-[81pdfTeX warning (ext4): destination with the same identifier (name{table.3.22
+
+Overfull \hbox (191.79417pt too wide) in alignment at lines 1110--1110
+[][][] 
+ []
+
+[82pdfTeX warning (ext4): destination with the same identifier (name{table.4.21
 }) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.1118 
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1120 
        pdfTeX warning (ext4): destination with the same identifier (name{table.
-3.23}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.1118 
+4.22}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1120 
        ]
-Underfull \hbox (badness 8094) in paragraph at lines 1132--1133
-[]|\T1/cmr/m/n/12 Tipo de pa-r‚-me-tro ‡ ser es-ca-lado 
+Overfull \hbox (191.79417pt too wide) in alignment at lines 1139--1139
+[][][] 
  []
 
 
-Overfull \hbox (98.48633pt too wide) in paragraph at lines 1121--1138
-[][] 
- []
-
-
-Overfull \hbox (8.89804pt too wide) in paragraph at lines 1146--1147
+Overfull \hbox (8.89804pt too wide) in paragraph at lines 1148--1149
 \T1/cmr/m/n/12 ne-ces-s·-rio adi-ci-o-nar ‡ li-nha de co-mando o nome do ele-me
 nto, o tipo e nome do pa-r‚-me-tro 
  []
 
-[82pdfTeX warning (ext4): destination with the same identifier (name{table.3.24
+[83pdfTeX warning (ext4): destination with the same identifier (name{table.4.23
 }) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.1147 
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1149 
        pdfTeX warning (ext4): destination with the same identifier (name{table.
-3.25}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.1147 
+4.24}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1149 
        ]
-Underfull \hbox (badness 8094) in paragraph at lines 1161--1162
-[]|\T1/cmr/m/n/12 Tipo de pa-r‚-me-tro ‡ ser es-ca-lado 
+Overfull \hbox (191.79417pt too wide) in alignment at lines 1167--1167
+[][][] 
  []
 
 
-Overfull \hbox (86.73921pt too wide) in paragraph at lines 1150--1166
-[][] 
- []
-
-
-Overfull \hbox (10.921pt too wide) in paragraph at lines 1174--1175
+Overfull \hbox (10.921pt too wide) in paragraph at lines 1176--1177
 \T1/cmr/m/n/12 desta se-Á„o foi cri-ada. O re-sul-tado im-presso ao exe-cu-tar 
 este co-mando È a lista de f·-bri-cas 
  []
 
 
-Overfull \hbox (13.95366pt too wide) in paragraph at lines 1199--1200
-\T1/cmr/m/n/12 Para cada tipo de ele-mento in-te-li-gente, ou f·-brica in-te-li
--gente lis-tada pelo co-mando des-crito 
- []
-
-[83pdfTeX warning (ext4): destination with the same identifier (name{table.3.26
-}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.1200 
-       pdfTeX warning (ext4): destination with the same identifier (name{table.
-3.27}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.1200 
-       ]
-Underfull \hbox (badness 1092) in paragraph at lines 1211--1212
-[]|\T1/cmr/m/n/12 Nome da f·-brica de ele-men-tos in-te-li-gente ‡ 
- []
-
-
-Overfull \hbox (28.61963pt too wide) in paragraph at lines 1203--1214
+Underfull \hbox (badness 10000) in alignment at lines 1192--1192
 [][] 
  []
 
 
-Overfull \hbox (3.80334pt too wide) in paragraph at lines 1222--1223
+Overfull \hbox (13.95366pt too wide) in paragraph at lines 1201--1202
+\T1/cmr/m/n/12 Para cada tipo de ele-mento in-te-li-gente, ou f·-brica in-te-li
+-gente lis-tada pelo co-mando des-crito 
+ []
+
+[84pdfTeX warning (ext4): destination with the same identifier (name{table.4.25
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1202 
+       pdfTeX warning (ext4): destination with the same identifier (name{table.
+4.26}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1202 
+       ]
+Overfull \hbox (30.528pt too wide) in alignment at lines 1215--1215
+[][][] 
+ []
+
+
+Overfull \hbox (3.80334pt too wide) in paragraph at lines 1224--1225
 \T1/cmr/m/n/12 criar ob-je-tos in-te-li-gen-tes de duas for-mas: A pri-meira, u
 ti-li-zando um ele-mento in-te-li-gente; 
  []
 
 
-Overfull \hbox (2.04117pt too wide) in paragraph at lines 1222--1223
+Overfull \hbox (2.04117pt too wide) in paragraph at lines 1224--1225
 \T1/cmr/m/n/12 A se-gunda uti-li-zando os exem-plos dis-po-ni-bi-li-za-dos pela
  f·-brica de ele-men-tos in-te-li-gen-tes.  
  []
 
 
-Overfull \hbox (7.32753pt too wide) in paragraph at lines 1224--1225
+Overfull \hbox (7.32753pt too wide) in paragraph at lines 1226--1227
 []\T1/cmr/m/n/12 Assim como des-crito na Se-Á„o []3.2[], ao criar um ob-jeto in
 -te-li-gente, um ele-mento in-te-li-gente 
  []
 
 
-Overfull \hbox (67.4505pt too wide) in paragraph at lines 1228--1244
-[][] 
+Overfull \hbox (275.25993pt too wide) in alignment at lines 1245--1245
+[][][] 
  []
 
 
-Overfull \hbox (2.43292pt too wide) in paragraph at lines 1252--1253
+Overfull \hbox (2.43292pt too wide) in paragraph at lines 1254--1255
 \T1/cmr/m/n/12 Assim como o ele-mento in-te-li-gente, o ob-jeto in-te-li-gente 
 pode ser clo-nado em uma f·-brica 
  []
 
-
-Overfull \hbox (59.61905pt too wide) in paragraph at lines 1256--1269
-[][] 
- []
-
-[84pdfTeX warning (ext4): destination with the same identifier (name{table.3.28
+[85pdfTeX warning (ext4): destination with the same identifier (name{table.4.27
 }) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.1278 
-       ] [85pdfTeX warning (ext4): destination with the same identifier (name{t
-able.3.29}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.1302 D
-        entro deste arquivo \textit{XML} estar√£o todas as estruturas descri...
-pdfTeX warning (ext4): destination with the same identifier (name{table.3.30}) 
-has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.1302 D
-        entro deste arquivo \textit{XML} estar√£o todas as estruturas descri...
-pdfTeX warning (ext4): destination with the same identifier (name{table.3.31}) 
-has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.1302 D
-        entro deste arquivo \textit{XML} estar√£o todas as estruturas descri...
-]
-Overfull \hbox (59.61905pt too wide) in paragraph at lines 1306--1317
-[][] 
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1255 
+       pdfTeX warning (ext4): destination with the same identifier (name{table.
+4.28}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1255 
+       ]
+Underfull \hbox (badness 10000) in alignment at lines 1270--1270
+[][][] 
  []
 
 
-Overfull \hbox (59.61905pt too wide) in paragraph at lines 1329--1340
+Underfull \hbox (badness 10000) in alignment at lines 1293--1293
 [][] 
  []
 
+[86pdfTeX warning (ext4): destination with the same identifier (name{table.4.29
+}) has been already used, duplicate ignored
 
-Overfull \hbox (16.27249pt too wide) in paragraph at lines 1348--1349
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1305 
+       pdfTeX warning (ext4): destination with the same identifier (name{table.
+4.30}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1305 
+       ]
+Underfull \hbox (badness 10000) in alignment at lines 1318--1318
+[][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in alignment at lines 1341--1341
+[][][] 
+ []
+
+
+Overfull \hbox (16.27249pt too wide) in paragraph at lines 1350--1351
 \T1/cmr/m/n/12 O co-mando de sal-var ob-je-tos pos-si-bi-lita que a es-tru-tura
  com-plexa de um ob-jeto in-te-li-gente, 
  []
 
 
-Overfull \hbox (59.61905pt too wide) in paragraph at lines 1352--1364
-[][] 
+Underfull \hbox (badness 10000) in alignment at lines 1365--1365
+[][][] 
  []
 
-[86pdfTeX warning (ext4): destination with the same identifier (name{table.3.32
+[87pdfTeX warning (ext4): destination with the same identifier (name{table.4.31
 }) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.1374 
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1376 
        pdfTeX warning (ext4): destination with the same identifier (name{table.
-3.33}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.1374 
+4.32}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1376 
        ]
-Overfull \hbox (35.14586pt too wide) in paragraph at lines 1377--1388
-[][] 
+Underfull \hbox (badness 10000) in alignment at lines 1389--1389
+[][][] 
  []
 
 
-Overfull \hbox (5.65712pt too wide) in paragraph at lines 1396--1397
+Overfull \hbox (5.65712pt too wide) in paragraph at lines 1398--1399
 \T1/cmr/m/n/12 ele-men-tos, isto por-que o co-mando ir· ex-por-tar o ele-mento 
 con-tido na es-tru-tura do \T1/cmr/m/it/12 Forno\T1/cmr/m/n/12 . 
  []
 
 
-Overfull \hbox (59.61905pt too wide) in paragraph at lines 1400--1414
-[][] 
+Overfull \hbox (72.36084pt too wide) in alignment at lines 1415--1415
+[][][] 
  []
 
 
-Overfull \hbox (12.94417pt too wide) in paragraph at lines 1422--1423
+Overfull \hbox (12.94417pt too wide) in paragraph at lines 1424--1425
 \T1/cmr/m/n/12 al-gum ajuste seja feito no mo-delo ge-o-mÈ-trico as ite-ra-Áıes
  pas-sa-das n„o so-fre-r„o mu-dan-Áas, 
  []
 
-[87pdfTeX warning (ext4): destination with the same identifier (name{table.3.34
+[88pdfTeX warning (ext4): destination with the same identifier (name{table.4.33
 }) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.1423 
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1425 
        pdfTeX warning (ext4): destination with the same identifier (name{table.
-3.35}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.1423 
+4.34}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1425 
        ]
-Underfull \hbox (badness 8094) in paragraph at lines 1436--1437
-[]|\T1/cmr/m/n/12 Tipo de pa-r‚-me-tro ‡ ser es-ca-lado 
+Overfull \hbox (129.39966pt too wide) in alignment at lines 1443--1443
+[][][] 
  []
 
 
-Overfull \hbox (82.82343pt too wide) in paragraph at lines 1426--1442
-[][] 
- []
-
-
-Overfull \hbox (21.20883pt too wide) in paragraph at lines 1450--1451
+Overfull \hbox (21.20883pt too wide) in paragraph at lines 1452--1453
 \T1/cmr/m/it/12 Re-ady\T1/cmr/m/n/12 , tendo sido cor-re-ta-mente cri-a-dos e a
 co-pla-dos de f·-bri-cas de ite-ra-Á„o e, op-ci-o-nal-mente, 
  []
 
+[89pdfTeX warning (ext4): destination with the same identifier (name{table.4.35
+}) has been already used, duplicate ignored
 
-Overfull \hbox (59.61905pt too wide) in paragraph at lines 1454--1465
-[][] 
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1454 \begin{center}
+                     pdfTeX warning (ext4): destination with the same identifie
+r (name{table.4.36}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1454 \begin{center}
+                     ]
+Underfull \hbox (badness 10000) in alignment at lines 1466--1466
+[][][] 
  []
 
-[88pdfTeX warning (ext4): destination with the same identifier (name{table.3.36
-}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.1468 \end{center}
-                   pdfTeX warning (ext4): destination with the same identifier 
-(name{table.3.37}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.1468 \end{center}
-                   ]
-Overfull \hbox (13.9926pt too wide) in paragraph at lines 1473--1474
+
+Overfull \hbox (13.9926pt too wide) in paragraph at lines 1475--1476
 \T1/cmr/m/n/12 sido cor-re-ta-mente se-tado. Os ob-je-tos in-te-li-gen-tes no e
 s-tado \T1/cmr/m/it/12 Set \T1/cmr/m/n/12 po-dem ter seus pa-r‚-me-tros 
  []
 
 
-Overfull \hbox (59.61905pt too wide) in paragraph at lines 1477--1488
-[][] 
+Underfull \hbox (badness 10000) in alignment at lines 1489--1489
+[][][] 
  []
 
 
-Overfull \hbox (33.97237pt too wide) in paragraph at lines 1496--1497
+Overfull \hbox (33.97237pt too wide) in paragraph at lines 1498--1499
 \T1/cmr/m/n/12 Cada tipo de ob-jeto in-te-li-gente pos-suir· uma lista de f·-br
 i-cas de ite-ra-Á„o \T1/cmr/m/it/12 Wi-seI-te-ra-ti-on-Fac-tory 
  []
 
 
-Overfull \hbox (1.26233pt too wide) in paragraph at lines 1496--1497
+Overfull \hbox (1.26233pt too wide) in paragraph at lines 1498--1499
 \T1/cmr/m/n/12 nome do ob-jeto in-te-li-gente ‡ ser ana-li-sado, as f·-bri-cas 
 de ite-ra-Á„o que fo-rem com-pa-tÌ-veis 
  []
 
 
-Overfull \hbox (59.61905pt too wide) in paragraph at lines 1500--1511
-[][] 
+Underfull \hbox (badness 10000) in alignment at lines 1512--1512
+[][][] 
  []
 
-[89pdfTeX warning (ext4): destination with the same identifier (name{table.3.38
+[90pdfTeX warning (ext4): destination with the same identifier (name{table.4.37
 }) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.1520 
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1522 
        pdfTeX warning (ext4): destination with the same identifier (name{table.
-3.39}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.1520 
-       pdfTeX warning (ext4): destination with the same identifier (name{table.
-3.40}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.1520 
+4.38}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1522 
        ]
-Overfull \hbox (63.86104pt too wide) in paragraph at lines 1523--1535
-[][] 
+Overfull \hbox (61.07059pt too wide) in alignment at lines 1536--1536
+[][][] 
  []
 
 
-Overfull \hbox (6.0262pt too wide) in paragraph at lines 1543--1544
+Overfull \hbox (6.0262pt too wide) in paragraph at lines 1545--1546
 \T1/cmr/m/n/12 gr·-fi-cas. O co-mando de lis-tar f·-bri-cas gr·-fi-cas ir· im-p
 ri-mir no con-sole as f·-bri-cas gr·-fi-cas 
  []
 
 
-Overfull \hbox (59.61905pt too wide) in paragraph at lines 1547--1558
-[][] 
+Underfull \hbox (badness 10000) in alignment at lines 1559--1559
+[][][] 
  []
 
-[90pdfTeX warning (ext4): destination with the same identifier (name{table.3.41
+[91pdfTeX warning (ext4): destination with the same identifier (name{table.4.39
 }) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.1567 
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1569 
        pdfTeX warning (ext4): destination with the same identifier (name{table.
-3.42}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.1567 
+4.40}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1569 
        ]
-Overfull \hbox (63.86104pt too wide) in paragraph at lines 1570--1582
+Overfull \hbox (61.07059pt too wide) in alignment at lines 1583--1583
+[][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in alignment at lines 1606--1606
 [][] 
  []
 
 
-Overfull \hbox (2.04951pt too wide) in paragraph at lines 1613--1614
+Overfull \hbox (2.04951pt too wide) in paragraph at lines 1615--1616
 \T1/cmr/m/n/12 O co-mando de lis-tar \T1/cmr/m/it/12 Can-vas \T1/cmr/m/n/12 ir·
  no-mear to-das os ele-men-tos gr·-fi-cos dis-po-nÌ-veis. Quando 
  []
 
 
-Overfull \hbox (2.75931pt too wide) in paragraph at lines 1613--1614
+Overfull \hbox (2.75931pt too wide) in paragraph at lines 1615--1616
 \T1/cmr/m/n/12 en-tre-tanto como ve-re-mos ‡ frente o am-bi-ente com-pu-ta-ci-o
 -nal \T1/cmr/m/it/12 IGU \T1/cmr/m/n/12 apre-sen-tar exa-ta-mente 
  []
 
 
-Overfull \hbox (12.80951pt too wide) in paragraph at lines 1613--1614
+Overfull \hbox (12.80951pt too wide) in paragraph at lines 1615--1616
 \T1/cmr/m/n/12 as mes-mas fun-ci-o-na-li-da-des com ele-men-tos gr·-fi-cos. Ao 
 exe-cu-tar este co-mando no am-bi-ente 
  []
 
 
-Overfull \hbox (20.18826pt too wide) in paragraph at lines 1613--1614
+Overfull \hbox (20.18826pt too wide) in paragraph at lines 1615--1616
 \T1/cmr/m/n/12 com-pu-ta-ci-o-nal com ele-men-tos gr·-fi-cos, cada ob-jeto e se
 u nome ser· en-vi-ado como re-sul-tado.  
  []
 
-[91pdfTeX warning (ext4): destination with the same identifier (name{table.3.43
+[92pdfTeX warning (ext4): destination with the same identifier (name{table.4.41
 }) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.1637 
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1616 
        pdfTeX warning (ext4): destination with the same identifier (name{table.
-3.44}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.1637 
+4.42}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1616 
+       pdfTeX warning (ext4): destination with the same identifier (name{table.
+4.43}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1616 
        ]
-Overfull \hbox (65.8189pt too wide) in paragraph at lines 1640--1653
+Underfull \hbox (badness 10000) in alignment at lines 1629--1629
 [][] 
  []
 
 
-Overfull \hbox (61.3158pt too wide) in paragraph at lines 1665--1676
-[][] 
+Overfull \hbox (137.15752pt too wide) in alignment at lines 1654--1654
+[][][] 
+ []
+
+[93pdfTeX warning (ext4): destination with the same identifier (name{table.4.44
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1664 
+       pdfTeX warning (ext4): destination with the same identifier (name{table.
+4.45}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1664 
+       ]
+Underfull \hbox (badness 10000) in alignment at lines 1677--1677
+[][][] 
  []
 
 
-Overfull \hbox (8.04944pt too wide) in paragraph at lines 1684--1685
-\T1/cmr/m/n/12 Se-Á„o []3.4[] È pos-sÌ-vel que es-tes mo-de-los se-jam cri-a-do
+Overfull \hbox (8.04944pt too wide) in paragraph at lines 1686--1687
+\T1/cmr/m/n/12 Se-Á„o []4.1[] È pos-sÌ-vel que es-tes mo-de-los se-jam cri-a-do
 s, al-te-ra-dos, ite-ra-dos e, op-ci-o-nal-mente, 
  []
 
-[92pdfTeX warning (ext4): destination with the same identifier (name{table.3.45
-}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.1685 
-       pdfTeX warning (ext4): destination with the same identifier (name{table.
-3.46}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.1685 
-       ]
-<Figures/CasoDeUso@16x.png, id=1505, 378.28828pt x 427.4093pt>
+<Figures/CasoDeUso@16x.png, id=1541, 378.28828pt x 427.4093pt>
 File: Figures/CasoDeUso@16x.png Graphic file (type png)
 <use Figures/CasoDeUso@16x.png>
-Package pdftex.def Info: Figures/CasoDeUso@16x.png  used on input line 1688.
+Package pdftex.def Info: Figures/CasoDeUso@16x.png  used on input line 1690.
 (pdftex.def)             Requested size: 455.24411pt x 514.3625pt.
+[94pdfTeX warning (ext4): destination with the same identifier (name{table.4.46
+}) has been already used, duplicate ignored
 
-Overfull \hbox (2.19408pt too wide) in paragraph at lines 1701--1702
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1702 
+       ] [95pdfTeX warning (ext4): destination with the same identifier (name{f
+igure.4.5}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1702 
+        <./Figures/CasoDeUso@16x.png>]
+Overfull \hbox (2.19408pt too wide) in paragraph at lines 1703--1704
 \T1/cmr/m/n/12 ima-gem no for-mato \T1/cmr/bx/n/12 P\T1/cmr/m/n/12 ortable \T1/
 cmr/bx/n/12 N\T1/cmr/m/n/12 etwork \T1/cmr/bx/n/12 G\T1/cmr/m/n/12 raphics, ou 
 \T1/cmr/m/it/12 png\T1/cmr/m/n/12 , com seu co-mando re-pre-sen-tado 
  []
 
-<Figures/CasoDeUso2@16x.png, id=1510, 378.22554pt x 426.1546pt>
+<Figures/CasoDeUso2@16x.png, id=1555, 378.22554pt x 426.1546pt>
 File: Figures/CasoDeUso2@16x.png Graphic file (type png)
 <use Figures/CasoDeUso2@16x.png>
-Package pdftex.def Info: Figures/CasoDeUso2@16x.png  used on input line 1707.
+Package pdftex.def Info: Figures/CasoDeUso2@16x.png  used on input line 1709.
 (pdftex.def)             Requested size: 455.24411pt x 512.93709pt.
-[93pdfTeX warning (ext4): destination with the same identifier (name{table.3.47
-}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.1713 
-       ] [94pdfTeX warning (ext4): destination with the same identifier (name{f
-igure.3.26}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.1713 
-        <./Figures/CasoDeUso@16x.png>] [95pdfTeX warning (ext4): destination wi
-th the same identifier (name{figure.3.27}) has been already used, duplicate ign
-ored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.1713 
-        <./Figures/CasoDeUso2@16x.png>]
-Overfull \hbox (9.38818pt too wide) in paragraph at lines 1717--1718
+
+Overfull \hbox (9.38818pt too wide) in paragraph at lines 1719--1720
 \T1/cmr/m/n/12 O am-bi-ente com in-ter-face gr·-fica foi no-me-ado de \T1/cmr/b
 x/n/12 I\T1/cmr/m/n/12 terador \T1/cmr/bx/n/12 G\T1/cmr/m/n/12 r·fico \T1/cmr/b
 x/n/12 U\T1/cmr/m/n/12 niversal, que tam-bÈm 
  []
 
 
-Overfull \hbox (3.6116pt too wide) in paragraph at lines 1717--1718
+Overfull \hbox (3.6116pt too wide) in paragraph at lines 1719--1720
 \T1/cmr/m/n/12 este pos-sui ele-men-tos gr·-fi-cos. O prin-ci-pal ele-mento gr·
 -fico dis-po-ni-bi-li-zado pela in-ter-face 
  []
 
 
-Overfull \hbox (10.75436pt too wide) in paragraph at lines 1717--1718
+Overfull \hbox (10.75436pt too wide) in paragraph at lines 1719--1720
 \T1/cmr/m/n/12 dis-po-ni-bi-li-za-dos pela bi-bli-o-teca \T1/cmr/m/it/12 Qt \T1
 /cmr/m/n/12 e per-mi-tem que um pro-jeto \T1/cmr/m/it/12 C++ \T1/cmr/m/n/12 pos
 -sua uma in-ter-face 
  []
 
 
-Overfull \hbox (7.0664pt too wide) in paragraph at lines 1719--1720
+Overfull \hbox (7.0664pt too wide) in paragraph at lines 1721--1722
 []\T1/cmr/m/n/12 Ao abrir o am-bi-ente com-pu-ta-ci-o-nal a tela prin-ci-pal co
 m seus ele-men-tos gr·-fi-cos È exi-bida.  
  []
 
-<Figures/IGU_001a.png, id=1527, 1927.2pt x 1084.05pt>
+<Figures/IGU_001a.png, id=1558, 1927.2pt x 1084.05pt>
 File: Figures/IGU_001a.png Graphic file (type png)
 <use Figures/IGU_001a.png>
-Package pdftex.def Info: Figures/IGU_001a.png  used on input line 1723.
+Package pdftex.def Info: Figures/IGU_001a.png  used on input line 1725.
 (pdftex.def)             Requested size: 455.24411pt x 256.07509pt.
 
-Overfull \hbox (11.05174pt too wide) in paragraph at lines 1728--1729
+Overfull \hbox (11.05174pt too wide) in paragraph at lines 1730--1731
 \T1/cmr/m/n/12 aberta o am-bi-ente de tra-ba-lho È re-cu-pe-rado, pro-je-tos, o
 b-je-tos e ele-men-tos s„o re-cu-pe-ra-dos 
  []
 
 
-Overfull \hbox (22.33775pt too wide) in paragraph at lines 1728--1729
+Overfull \hbox (22.33775pt too wide) in paragraph at lines 1730--1731
 \T1/cmr/m/n/12 ainda no am-bi-ente. Ainda nesta fi-gura es-t„o re-pre-sen-ta-do
 s os prin-ci-pais gru-pos de ele-men-tos 
  []
 
-[96pdfTeX warning (ext4): destination with the same identifier (name{figure.3.2
-8}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.1729 
-        <./Figures/IGU_001a.png>]
-<Figures/IGU_016.png, id=1535, 173.14688pt x 60.97781pt>
+[96] [97pdfTeX warning (ext4): destination with the same identifier (name{figur
+e.4.6}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1733 
+        <./Figures/CasoDeUso2@16x.png>]
+<Figures/IGU_016.png, id=1570, 173.14688pt x 60.97781pt>
 File: Figures/IGU_016.png Graphic file (type png)
 <use Figures/IGU_016.png>
-Package pdftex.def Info: Figures/IGU_016.png  used on input line 1739.
+Package pdftex.def Info: Figures/IGU_016.png  used on input line 1741.
 (pdftex.def)             Requested size: 173.14645pt x 60.97765pt.
 
-Overfull \hbox (6.59433pt too wide) in paragraph at lines 1748--1749
+Overfull \hbox (6.59433pt too wide) in paragraph at lines 1750--1751
 []\T1/cmr/bx/n/12 Open Can-vas\T1/cmr/m/n/12 : Abre uma nova ja-nela con-tendo 
 um novo ele-mento gr·-fico OpenGL 
  []
 
-<Figures/IGU_001a_34.png, id=1536, 4795.41562pt x 2898.32813pt>
+[98pdfTeX warning (ext4): destination with the same identifier (name{figure.4.7
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1751 \end{itemize}
+                    pdfTeX warning (ext4): destination with the same identifier
+ (name{figure.4.8}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1751 \end{itemize}
+                     <./Figures/IGU_001a.png> <./Figures/IGU_016.png>]
+<Figures/IGU_001a_34.png, id=1576, 4795.41562pt x 2898.32813pt>
 File: Figures/IGU_001a_34.png Graphic file (type png)
 <use Figures/IGU_001a_34.png>
-Package pdftex.def Info: Figures/IGU_001a_34.png  used on input line 1760.
+Package pdftex.def Info: Figures/IGU_001a_34.png  used on input line 1762.
 (pdftex.def)             Requested size: 455.24411pt x 275.12291pt.
 
-Overfull \hbox (13.2815pt too wide) in paragraph at lines 1765--1766
+Overfull \hbox (13.2815pt too wide) in paragraph at lines 1767--1768
 \T1/cmr/m/n/12 s„o tro-ca-dos. Es-tes ele-men-tos s„o ob-je-tos do tipo \T1/cmr
 /m/it/12 QWid-get\T1/cmr/m/n/12 , es-tes ob-je-tos que s„o di-vi-di-dos 
  []
 
-[97pdfTeX warning (ext4): destination with the same identifier (name{figure.3.2
-9}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.1768 
-        <./Figures/IGU_016.png>]
-<Figures/IGU_017.png, id=1542, 1882.03125pt x 1018.80624pt>
+[99pdfTeX warning (ext4): destination with the same identifier (name{figure.4.9
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1770 
+        <./Figures/IGU_001a_34.png>]
+<Figures/IGU_017.png, id=1584, 1882.03125pt x 1018.80624pt>
 File: Figures/IGU_017.png Graphic file (type png)
 <use Figures/IGU_017.png>
-Package pdftex.def Info: Figures/IGU_017.png  used on input line 1771.
+Package pdftex.def Info: Figures/IGU_017.png  used on input line 1773.
 (pdftex.def)             Requested size: 409.71692pt x 221.79066pt.
-<Figures/IGU_001.png, id=1543, 1886.04625pt x 1020.81375pt>
+<Figures/IGU_001.png, id=1585, 1886.04625pt x 1020.81375pt>
 File: Figures/IGU_001.png Graphic file (type png)
 <use Figures/IGU_001.png>
-Package pdftex.def Info: Figures/IGU_001.png  used on input line 1778.
+Package pdftex.def Info: Figures/IGU_001.png  used on input line 1780.
 (pdftex.def)             Requested size: 409.71692pt x 221.74483pt.
 
 
-LaTeX Warning: Reference `fig:fig' on page 98 undefined on input line 1783.
+LaTeX Warning: Reference `fig:fig' on page 100 undefined on input line 1785.
 
 
-Overfull \hbox (32.60732pt too wide) in paragraph at lines 1783--1785
+Overfull \hbox (32.60732pt too wide) in paragraph at lines 1785--1787
 \T1/cmr/m/n/12 fun-Á„o È uma tela \T1/cmr/m/it/12 OpenGL\T1/cmr/m/n/12 . Os ob-
 je-tos gr·-fi-cos, re-sul-ta-dos de ite-ra-Áıes po-dem ser vi-su-a-li-za-dos 
  []
 
 
-Overfull \hbox (4.01582pt too wide) in paragraph at lines 1786--1787
+Overfull \hbox (4.01582pt too wide) in paragraph at lines 1788--1789
 \T1/cmr/m/n/12 com seus ele-men-tos gr·-fi-cos. O ci-clo de vida da th-read \T1
 /cmr/m/it/12 Wi-seTh-re-ad-Pool \T1/cmr/m/n/12 esta di-re-ta-mente 
  []
 
 
-Overfull \hbox (41.59398pt too wide) in paragraph at lines 1786--1787
+Overfull \hbox (41.59398pt too wide) in paragraph at lines 1788--1789
 \T1/cmr/m/n/12 gr·-fi-cos, ou exe-cu-tar a ani-ma-Á„o, ir„o de-sen-ca-dear cha-
 ma-das di-re-tas as th-re-ads dis-po-ni-bi-li-za-das.  
  []
 
 
-Overfull \hbox (7.91504pt too wide) in paragraph at lines 1791--1792
+Overfull \hbox (7.91504pt too wide) in paragraph at lines 1793--1794
 \T1/cmr/m/n/12 AlÈm da ·rea de tra-ba-lho, o ele-mento gr·-fico que exibe a ·r-
 vore de pro-je-tos se per-ma-nece 
  []
 
-[98pdfTeX warning (ext4): destination with the same identifier (name{figure.3.3
-0}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.1792 
-        <./Figures/IGU_001a_34.png>] [99pdfTeX warning (ext4): destination with
- the same identifier (name{figure.3.31}) has been already used, duplicate ignor
-ed
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.1792 
-       pdfTeX warning (ext4): destination with the same identifier (name{figure
-.3.32}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.1792 
-        <./Figures/IGU_017.png> <./Figures/IGU_001.png>]
-<Figures/IGU_001c.png, id=1555, 256.20718pt x 420.82219pt>
+<Figures/IGU_001c.png, id=1586, 256.20718pt x 420.82219pt>
 File: Figures/IGU_001c.png Graphic file (type png)
 <use Figures/IGU_001c.png>
-Package pdftex.def Info: Figures/IGU_001c.png  used on input line 1795.
+Package pdftex.def Info: Figures/IGU_001c.png  used on input line 1797.
 (pdftex.def)             Requested size: 182.09486pt x 299.09406pt.
+[100pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+10}) has been already used, duplicate ignored
 
-Overfull \hbox (31.37453pt too wide) in paragraph at lines 1800--1801
-[]\T1/cmr/m/n/12 A Fi-gura []3.33[] apre-senta o ele-mento gr·-fico de uma ·r-v
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1800 \end{figure}
+                    <./Figures/IGU_017.png>]
+Overfull \hbox (31.37453pt too wide) in paragraph at lines 1802--1803
+[]\T1/cmr/m/n/12 A Fi-gura []4.12[] apre-senta o ele-mento gr·-fico de uma ·r-v
 ore de pro-je-tos com ob-je-tos car-re-ga-dos. 
  []
 
 
-Overfull \hbox (4.49225pt too wide) in paragraph at lines 1800--1801
+Overfull \hbox (4.49225pt too wide) in paragraph at lines 1802--1803
 \T1/cmr/m/n/12 Na ima-gem est· um pro-jeto no-me-ado \T1/cmr/m/it/12 p1\T1/cmr/
 m/n/12 , um ob-jeto in-te-li-gente \T1/cmr/m/it/12 obj1 \T1/cmr/m/n/12 e di-ver
 -sos ele-men-tos 
  []
 
 
-Overfull \hbox (5.46976pt too wide) in paragraph at lines 1800--1801
+Overfull \hbox (5.46976pt too wide) in paragraph at lines 1802--1803
 \T1/cmr/m/n/12 sig-ni-fica que ele j· foi cor-re-ta-mente con-fi-gu-rado e ite-
 rado. Den-tro deste ob-jeto in-te-li-gente 
  []
 
-[100pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
-33}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
+[101pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+11}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
 l.1803 
-        <./Figures/IGU_001c.png>]
-Overfull \hbox (9.22833pt too wide) in paragraph at lines 1807--1808
+       pdfTeX warning (ext4): destination with the same identifier (name{figure
+.4.12}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1803 
+        <./Figures/IGU_001.png> <./Figures/IGU_001c.png>]
+Overfull \hbox (9.22833pt too wide) in paragraph at lines 1809--1810
 \T1/cmr/m/n/12 uma vez, en-quanto di-ver-sos \T1/cmr/m/it/12 Can-vas \T1/cmr/m/
 n/12 po-dem ser dis-po-ni-bi-li-za-dos e exi-bir di-fe-ren-tes ob-je-tos.  
  []
 
 
-Overfull \hbox (4.1728pt too wide) in paragraph at lines 1812--1813
+Overfull \hbox (4.1728pt too wide) in paragraph at lines 1814--1815
 \T1/cmr/m/n/12 exi-bido. Cada qua-dro re-pre-senta um ob-jeto do tipo \T1/cmr/m
 /it/12 Graphi-cOb-ject \T1/cmr/m/n/12 que È um com-po-nente 
  []
 
 
-Overfull \hbox (22.00725pt too wide) in paragraph at lines 1812--1813
+Overfull \hbox (22.00725pt too wide) in paragraph at lines 1814--1815
 \T1/cmr/m/n/12 do mo-delo gr·-fico \T1/cmr/m/it/12 Graphic-Mo-del\T1/cmr/m/n/12
  . O qua-dro È se-le-ci-o-nado atra-vÈs de uma barra de pro-gresso, 
  []
 
-
-Overfull \hbox (1.91493pt too wide) in paragraph at lines 1819--1820
+[102]
+Overfull \hbox (1.91493pt too wide) in paragraph at lines 1821--1822
 []\T1/cmr/bx/n/12 Stop\T1/cmr/m/n/12 : Caso o \T1/cmr/m/it/12 Play \T1/cmr/m/n/
 12 es-teja ativo ele È de-sa-ti-vado e a tela volta ao pri-meiro ele-mento 
  []
 
 
-Overfull \hbox (11.79726pt too wide) in paragraph at lines 1822--1823
+Overfull \hbox (11.79726pt too wide) in paragraph at lines 1824--1825
 \T1/cmr/m/n/12 gr·-fico È li-gado ‡ tela \T1/cmr/m/it/12 OpenGl\T1/cmr/m/n/12 .
  Neste ce-n·-rio, quando cada qua-dro È se-le-ci-o-nado È al-te-rado 
  []
 
 
-Overfull \hbox (22.4598pt too wide) in paragraph at lines 1822--1823
+Overfull \hbox (22.4598pt too wide) in paragraph at lines 1824--1825
 \T1/cmr/m/n/12 quais ob-je-tos gr·-fi-cos \T1/cmr/m/it/12 Graphi-cOb-ject \T1/c
 mr/m/n/12 es-ta-r„o no es-tado aque-cido \T1/cmr/m/it/12 Hot\T1/cmr/m/n/12 . Is
 to foi feito uti-li-zando 
  []
 
 
-Overfull \hbox (7.86633pt too wide) in paragraph at lines 1822--1823
+Overfull \hbox (7.86633pt too wide) in paragraph at lines 1824--1825
 \T1/cmr/m/n/12 ca-paz de aci-o-nar di-re-ta-mente a es-tru-tura do \T1/cmr/m/it
 /12 Wi-seTh-re-ad-Pool \T1/cmr/m/n/12 e se-le-ci-o-nar quais ele-men-tos 
  []
 
-[101]
-<Figures/IGU_025.png, id=1567, 1882.03125pt x 1018.80624pt>
+<Figures/IGU_025.png, id=1605, 1882.03125pt x 1018.80624pt>
 File: Figures/IGU_025.png Graphic file (type png)
 <use Figures/IGU_025.png>
-Package pdftex.def Info: Figures/IGU_025.png  used on input line 1826.
+Package pdftex.def Info: Figures/IGU_025.png  used on input line 1828.
 (pdftex.def)             Requested size: 455.24411pt x 246.43062pt.
 
-Overfull \hbox (16.21155pt too wide) in paragraph at lines 1831--1832
+Overfull \hbox (16.21155pt too wide) in paragraph at lines 1833--1834
 \T1/cmr/m/it/12 Graphic-Mo-del \T1/cmr/m/n/12 È en-car-re-gada de en-viar es-te
 s tra-ba-lhos a th-read in-te-li-gente \T1/cmr/m/it/12 Wi-seTh-re-ad-Pool\T1/cm
 r/m/n/12 .  
  []
 
-[102pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
-34}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.1837 
+[103pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+13}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1834 
         <./Figures/IGU_025.png>]
-<Figures/IGU_023.png, id=1575, 1668.2325pt x 965.6075pt>
+<Figures/IGU_023.png, id=1611, 1668.2325pt x 965.6075pt>
 File: Figures/IGU_023.png Graphic file (type png)
 <use Figures/IGU_023.png>
-Package pdftex.def Info: Figures/IGU_023.png  used on input line 1840.
+Package pdftex.def Info: Figures/IGU_023.png  used on input line 1842.
 (pdftex.def)             Requested size: 455.24411pt x 263.50223pt.
- [103pdfTeX warning (ext4): destination with the same identifier (name{figure.3
-.35}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.1854 	\item \textbf
-                     {Msec to Finish}: Milisegundos do momento da cria√ß√£o ...
- <./Figures/IGU_023.png>]
-Overfull \hbox (4.853pt too wide) in paragraph at lines 1854--1855
+ [104pdfTeX warning (ext4): destination with the same identifier (name{figure.4
+.14}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1852 	\item \textbf
+                     {Status}: Estado do trabalho. <./Figures/IGU_023.png>]
+Overfull \hbox (4.853pt too wide) in paragraph at lines 1856--1857
 []\T1/cmr/bx/n/12 Msec to Fi-nish\T1/cmr/m/n/12 : Mi-li-se-gun-dos do mo-mento 
 da cri-a-Á„o atÈ o fi-nal de sua exe-cu-Á„o.  
  []
 
-<Figures/IGU_022.png, id=1582, 1669.23625pt x 962.59625pt>
+<Figures/IGU_022.png, id=1618, 1669.23625pt x 962.59625pt>
 File: Figures/IGU_022.png Graphic file (type png)
 <use Figures/IGU_022.png>
-Package pdftex.def Info: Figures/IGU_022.png  used on input line 1861.
+Package pdftex.def Info: Figures/IGU_022.png  used on input line 1863.
 (pdftex.def)             Requested size: 455.24411pt x 262.51892pt.
 )
-Overfull \hbox (0.85953pt too wide) in paragraph at lines 1866--176
-[]\T1/cmr/m/n/12 A Fi-gura []3.36[] de-mons-tra as cinco lis-tas exi-bi-das ao 
+Overfull \hbox (0.85953pt too wide) in paragraph at lines 1868--185
+[]\T1/cmr/m/n/12 A Fi-gura []4.15[] de-mons-tra as cinco lis-tas exi-bi-das ao 
 se-le-ci-o-nar a aba \T1/cmr/m/it/12 Ti-me-ta-ble \T1/cmr/m/n/12 da ja-nela 
  []
 
 
-Overfull \hbox (25.1606pt too wide) in paragraph at lines 1866--176
+Overfull \hbox (25.1606pt too wide) in paragraph at lines 1868--185
 \T1/cmr/m/n/12 lis-tam as lis-tas pre-sen-tes no ge-ren-ci-a-dor de th-re-ads \
 T1/cmr/m/it/12 Wi-seTh-re-ad-Pool \T1/cmr/m/n/12 des-cri-tas na Se-Á„o []3.2.8[
 ]. 
  []
 
 
-Overfull \hbox (23.15555pt too wide) in paragraph at lines 1866--176
+Overfull \hbox (23.15555pt too wide) in paragraph at lines 1868--185
 \T1/cmr/m/n/12 Desta forma È pos-sÌ-vel ve-ri-fi-car os tra-ba-lhos que aguar-d
 am exe-cu-Á„o, es-t„o sendo exe-cu-ta-dos 
  []
 
-[104pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
-36}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.176 \include{ferramenta_computacional}
-                                         <./Figures/IGU_022.png>]
+[105pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+15}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.185 \include{ferramenta_computacional}
+                                         <./Figures/IGU_022.png>] [106]
 \openout2 = `resultados.aux'.
 
 
@@ -3906,10 +4034,10 @@ ZA-MIR[], []1995[]). As si-mu-la-Áıes
 
 Overfull \hbox (30.13858pt too wide) in paragraph at lines 11--12
 []\T1/cmr/m/n/12 Considerou-se neste es-tudo um mo-delo de ·r-vore ar-te-rial c
-a-nina como ilus-trado na Fi-gura []4.1[]. 
+a-nina como ilus-trado na Fi-gura []5.1[]. 
  []
 
-<Figures/tree_canine.png, id=1596, 297.36093pt x 155.07938pt>
+<Figures/tree_canine.png, id=1636, 297.36093pt x 155.07938pt>
 File: Figures/tree_canine.png Graphic file (type png)
 <use Figures/tree_canine.png>
 Package pdftex.def Info: Figures/tree_canine.png  used on input line 15.
@@ -3921,7 +4049,7 @@ Overfull \hbox (7.29181pt too wide) in paragraph at lines 23--41
 
 
 Overfull \hbox (1.09703pt too wide) in paragraph at lines 43--44
-\T1/cmr/m/n/12 longo da ·r-vore ar-te-rial (Fi-gura []4.1[]). Os re-sul-ta-dos 
+\T1/cmr/m/n/12 longo da ·r-vore ar-te-rial (Fi-gura []5.1[]). Os re-sul-ta-dos 
 fo-ram ob-ti-dos para qua-tro di-fe-ren-tes 
  []
 
@@ -3931,20 +4059,21 @@ Overfull \hbox (9.35463pt too wide) in paragraph at lines 43--44
 to vis-coso em seg-mento vis-co-e-l·s-tico 
  []
 
-[105
+[107
 
 
 
-
-pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1}) 
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1}) 
 has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
 l.44 
-     pdfTeX warning (ext4): destination with the same identifier (name{table.4.
+     pdfTeX warning (ext4): destination with the same identifier (name{table.5.
 1}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
 l.44 
       <./Figures/tree_canine.png>]
 Overfull \hbox (4.19493pt too wide) in paragraph at lines 45--46
@@ -3971,13 +4100,13 @@ Overfull \hbox (10.39902pt too wide) in paragraph at lines 51--52
 pres-s„o cau-sada pe-las re-fle-xıes 
  []
 
-<Figures/fig3_P_f3_65_visc_NEW.png, id=1624, 470.2368pt x 376.7676pt>
+<Figures/fig3_P_f3_65_visc_NEW.png, id=1664, 470.2368pt x 376.7676pt>
 File: Figures/fig3_P_f3_65_visc_NEW.png Graphic file (type png)
 <use Figures/fig3_P_f3_65_visc_NEW.png>
 Package pdftex.def Info: Figures/fig3_P_f3_65_visc_NEW.png  used on input line 
 56.
 (pdftex.def)             Requested size: 329.16351pt x 263.7355pt.
-<Figures/fig3_P_f7_30_visc_NEW.png, id=1625, 485.1726pt x 383.5128pt>
+<Figures/fig3_P_f7_30_visc_NEW.png, id=1665, 485.1726pt x 383.5128pt>
 File: Figures/fig3_P_f7_30_visc_NEW.png Graphic file (type png)
 <use Figures/fig3_P_f7_30_visc_NEW.png>
 Package pdftex.def Info: Figures/fig3_P_f7_30_visc_NEW.png  used on input line 
@@ -3985,18 +4114,18 @@ Package pdftex.def Info: Figures/fig3_P_f7_30_visc_NEW.png  used on input line
 (pdftex.def)             Requested size: 339.6185pt x 268.45712pt.
 
 Underfull \hbox (badness 1043) in paragraph at lines 59--59
-[]\T1/cmr/m/n/12 Figura 4.2: []Amplitude da pres-s„o $\OMS/cmsy/m/n/12 j\OML/cm
+[]\T1/cmr/m/n/12 Figura 5.2: []Amplitude da pres-s„o $\OMS/cmsy/m/n/12 j\OML/cm
 m/m/it/12 P\OMS/cmsy/m/n/12 j$ \T1/cmr/m/n/12 ao longo da ·r-vore ar-te-rial co
 n-si-de-rando 
  []
 
-<Figures/fig3_P_f10_95_visc_NEW.png, id=1626, 484.6908pt x 384.4764pt>
+<Figures/fig3_P_f10_95_visc_NEW.png, id=1666, 484.6908pt x 384.4764pt>
 File: Figures/fig3_P_f10_95_visc_NEW.png Graphic file (type png)
 <use Figures/fig3_P_f10_95_visc_NEW.png>
 Package pdftex.def Info: Figures/fig3_P_f10_95_visc_NEW.png  used on input line
  66.
 (pdftex.def)             Requested size: 339.28123pt x 269.13164pt.
-<Figures/fig3_P_f14_60_visc_NEW.png, id=1627, 578.16pt x 434.5836pt>
+<Figures/fig3_P_f14_60_visc_NEW.png, id=1667, 578.16pt x 434.5836pt>
 File: Figures/fig3_P_f14_60_visc_NEW.png Graphic file (type png)
 <use Figures/fig3_P_f14_60_visc_NEW.png>
 Package pdftex.def Info: Figures/fig3_P_f14_60_visc_NEW.png  used on input line
@@ -4004,14 +4133,14 @@ Package pdftex.def Info: Figures/fig3_P_f14_60_visc_NEW.png  used on input line
 (pdftex.def)             Requested size: 404.70924pt x 304.20644pt.
 
 Underfull \hbox (badness 1043) in paragraph at lines 69--69
-[]\T1/cmr/m/n/12 Figura 4.3: []Amplitude da pres-s„o $\OMS/cmsy/m/n/12 j\OML/cm
+[]\T1/cmr/m/n/12 Figura 5.3: []Amplitude da pres-s„o $\OMS/cmsy/m/n/12 j\OML/cm
 m/m/it/12 P\OMS/cmsy/m/n/12 j$ \T1/cmr/m/n/12 ao longo da ·r-vore ar-te-rial co
 n-si-de-rando 
  []
 
 
 Overfull \hbox (33.85428pt too wide) in paragraph at lines 76--77
-\T1/cmr/m/n/12 Nas Fi-gu-ras []4.4[], []4.5[], o efeito da vis-co-e-las-ti-ci-d
+\T1/cmr/m/n/12 Nas Fi-gu-ras []5.4[], []5.5[], o efeito da vis-co-e-las-ti-ci-d
 ade da pa-rede do seg-mento de vaso È con-si-de-rado 
  []
 
@@ -4021,27 +4150,29 @@ Overfull \hbox (55.03375pt too wide) in paragraph at lines 76--77
 des-tas fi-gu-ras que o efeito da vis-co-e-las-ti-ci-dade, 
  []
 
-[106] [107pdfTeX warning (ext4): destination with the same identifier (name{fig
-ure.4.2}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
+[108] [109pdfTeX warning (ext4): destination with the same identifier (name{fig
+ure.5.2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
 l.77 
       <./Figures/fig3_P_f3_65_visc_NEW.png> <./Figures/fig3_P_f7_30_visc_NEW.pn
-g>] [108pdfTeX warning (ext4): destination with the same identifier (name{figur
-e.4.3}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
+g>] [110pdfTeX warning (ext4): destination with the same identifier (name{figur
+e.5.3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
 l.77 
       <./Figures/fig3_P_f10_95_visc_NEW.png> <./Figures/fig3_P_f14_60_visc_NEW.
 png>]
-<Figures/fig4_P_f3_65_viscoelasticity_NEW.png, id=1647, 484.209pt x 386.8854pt>
+<Figures/fig4_P_f3_65_viscoelasticity_NEW.png, id=1687, 484.209pt x 386.8854pt>
 
 File: Figures/fig4_P_f3_65_viscoelasticity_NEW.png Graphic file (type png)
 <use Figures/fig4_P_f3_65_viscoelasticity_NEW.png>
 Package pdftex.def Info: Figures/fig4_P_f3_65_viscoelasticity_NEW.png  used on 
 input line 81.
 (pdftex.def)             Requested size: 338.94398pt x 270.81793pt.
-<Figures/fig4_P_f7_30_viscoelasticity_NEW.png, id=1648, 483.2454pt x 385.9218pt
+<Figures/fig4_P_f7_30_viscoelasticity_NEW.png, id=1688, 483.2454pt x 385.9218pt
 >
 File: Figures/fig4_P_f7_30_viscoelasticity_NEW.png Graphic file (type png)
 <use Figures/fig4_P_f7_30_viscoelasticity_NEW.png>
@@ -4050,19 +4181,19 @@ input line 83.
 (pdftex.def)             Requested size: 338.26947pt x 270.14342pt.
 
 Underfull \hbox (badness 1043) in paragraph at lines 84--84
-[]\T1/cmr/m/n/12 Figura 4.4: []Amplitude da pres-s„o $\OMS/cmsy/m/n/12 j\OML/cm
+[]\T1/cmr/m/n/12 Figura 5.4: []Amplitude da pres-s„o $\OMS/cmsy/m/n/12 j\OML/cm
 m/m/it/12 P\OMS/cmsy/m/n/12 j$ \T1/cmr/m/n/12 ao longo da ·r-vore ar-te-rial co
 n-si-de-rando 
  []
 
-<Figures/fig4_P_f10_95_viscoelasticity_NEW.png, id=1649, 483.2454pt x 382.0674p
+<Figures/fig4_P_f10_95_viscoelasticity_NEW.png, id=1689, 483.2454pt x 382.0674p
 t>
 File: Figures/fig4_P_f10_95_viscoelasticity_NEW.png Graphic file (type png)
 <use Figures/fig4_P_f10_95_viscoelasticity_NEW.png>
 Package pdftex.def Info: Figures/fig4_P_f10_95_viscoelasticity_NEW.png  used on
  input line 91.
 (pdftex.def)             Requested size: 338.26947pt x 267.44534pt.
-<Figures/fig4_P_f14_60_viscoelasticity_NEW.png, id=1650, 482.2818pt x 385.9218p
+<Figures/fig4_P_f14_60_viscoelasticity_NEW.png, id=1690, 482.2818pt x 385.9218p
 t>
 File: Figures/fig4_P_f14_60_viscoelasticity_NEW.png Graphic file (type png)
 <use Figures/fig4_P_f14_60_viscoelasticity_NEW.png>
@@ -4071,15 +4202,16 @@ Package pdftex.def Info: Figures/fig4_P_f14_60_viscoelasticity_NEW.png  used on
 (pdftex.def)             Requested size: 337.59494pt x 270.14342pt.
 
 Underfull \hbox (badness 1043) in paragraph at lines 94--94
-[]\T1/cmr/m/n/12 Figura 4.5: []Amplitude da pres-s„o $\OMS/cmsy/m/n/12 j\OML/cm
+[]\T1/cmr/m/n/12 Figura 5.5: []Amplitude da pres-s„o $\OMS/cmsy/m/n/12 j\OML/cm
 m/m/it/12 P\OMS/cmsy/m/n/12 j$ \T1/cmr/m/n/12 ao longo da ·r-vore ar-te-rial co
 n-si-de-rando 
  []
 
-[109pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+[111pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
 4}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
 l.96 \end{figure}
                   <./Figures/fig4_P_f3_65_viscoelasticity_NEW.png> <./Figures/f
 ig4_P_f7_30_viscoelasticity_NEW.png>]
@@ -4115,14 +4247,15 @@ Overfull \hbox (1.35802pt too wide) in paragraph at lines 101--102
 feito so-mado dos fenÙ-me-nos causa 
  []
 
-[110pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+[112pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
 5}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
 l.102 
        <./Figures/fig4_P_f10_95_viscoelasticity_NEW.png> <./Figures/fig4_P_f14_
 60_viscoelasticity_NEW.png>]
-<Figures/fig5_P_f3_65_viscoelasticity_viscosity_NEW.png, id=1666, 472.6458pt x 
+<Figures/fig5_P_f3_65_viscoelasticity_viscosity_NEW.png, id=1706, 472.6458pt x 
 376.2858pt>
 File: Figures/fig5_P_f3_65_viscoelasticity_viscosity_NEW.png Graphic file (type
  png)
@@ -4130,7 +4263,7 @@ File: Figures/fig5_P_f3_65_viscoelasticity_viscosity_NEW.png Graphic file (type
 Package pdftex.def Info: Figures/fig5_P_f3_65_viscoelasticity_viscosity_NEW.png
   used on input line 106.
 (pdftex.def)             Requested size: 330.8498pt x 263.39825pt.
-<Figures/fig5_P_f7_30_viscoelasticity_viscosity_NEW.png, id=1667, 481.8pt x 383
+<Figures/fig5_P_f7_30_viscoelasticity_viscosity_NEW.png, id=1707, 481.8pt x 383
 .9946pt>
 File: Figures/fig5_P_f7_30_viscoelasticity_viscosity_NEW.png Graphic file (type
  png)
@@ -4140,12 +4273,12 @@ Package pdftex.def Info: Figures/fig5_P_f7_30_viscoelasticity_viscosity_NEW.png
 (pdftex.def)             Requested size: 337.25769pt x 268.79437pt.
 
 Underfull \hbox (badness 1043) in paragraph at lines 109--109
-[]\T1/cmr/m/n/12 Figura 4.6: []Amplitude da pres-s„o $\OMS/cmsy/m/n/12 j\OML/cm
+[]\T1/cmr/m/n/12 Figura 5.6: []Amplitude da pres-s„o $\OMS/cmsy/m/n/12 j\OML/cm
 m/m/it/12 P\OMS/cmsy/m/n/12 j$ \T1/cmr/m/n/12 ao longo da ·r-vore ar-te-rial co
 n-si-de-rando 
  []
 
-<Figures/fig5_P_f10_95_viscoelasticity_viscosity_NEW.png, id=1668, 483.2454pt x
+<Figures/fig5_P_f10_95_viscoelasticity_viscosity_NEW.png, id=1708, 483.2454pt x
  384.4764pt>
 File: Figures/fig5_P_f10_95_viscoelasticity_viscosity_NEW.png Graphic file (typ
 e png)
@@ -4153,7 +4286,7 @@ e png)
 Package pdftex.def Info: Figures/fig5_P_f10_95_viscoelasticity_viscosity_NEW.pn
 g  used on input line 116.
 (pdftex.def)             Requested size: 338.26947pt x 269.13164pt.
-<Figures/fig5_P_f14_60_viscoelasticity_viscosity.png, id=1669, 578.16pt x 434.5
+<Figures/fig5_P_f14_60_viscoelasticity_viscosity.png, id=1709, 578.16pt x 434.5
 836pt>
 File: Figures/fig5_P_f14_60_viscoelasticity_viscosity.png Graphic file (type pn
 g)
@@ -4163,23 +4296,25 @@ sed on input line 118.
 (pdftex.def)             Requested size: 404.70924pt x 304.20644pt.
 
 Underfull \hbox (badness 1043) in paragraph at lines 119--119
-[]\T1/cmr/m/n/12 Figura 4.7: []Amplitude da pres-s„o $\OMS/cmsy/m/n/12 j\OML/cm
+[]\T1/cmr/m/n/12 Figura 5.7: []Amplitude da pres-s„o $\OMS/cmsy/m/n/12 j\OML/cm
 m/m/it/12 P\OMS/cmsy/m/n/12 j$ \T1/cmr/m/n/12 ao longo da ·r-vore ar-te-rial co
 n-si-de-rando 
  []
 
-) [111] [112pdfTeX warning (ext4): destination with the same identifier (name{f
-igure.4.6}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.180 \include{resultados}
+) [113] [114pdfTeX warning (ext4): destination with the same identifier (name{f
+igure.5.6}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.189 \include{resultados}
                            <./Figures/fig5_P_f3_65_viscoelasticity_viscosity_NE
-W.png> <./Figures/fig5_P_f7_30_viscoelasticity_viscosity_NEW.png>] [113pdfTeX w
-arning (ext4): destination with the same identifier (name{figure.4.7}) has been
+W.png> <./Figures/fig5_P_f7_30_viscoelasticity_viscosity_NEW.png>] [115pdfTeX w
+arning (ext4): destination with the same identifier (name{figure.5.7}) has been
  already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.180 \include{resultados}
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.189 \include{resultados}
                            <./Figures/fig5_P_f10_95_viscoelasticity_viscosity_N
 EW.png> <./Figures/fig5_P_f14_60_viscoelasticity_viscosity.png>]
 \openout2 = `conclusoes.aux'.
@@ -4191,37 +4326,43 @@ Overfull \hbox (14.0842pt too wide) in paragraph at lines 10--11
 fer-ra-menta com-pu-ta-ci-o-nal des-crita 
  []
 
-) [114
-
+) [116
 
 
 
 ]
 \openout2 = `anexos.aux'.
 
- (./anexos.tex [115
+ (./anexos.tex
+Overfull \hbox (24.56082pt too wide) in paragraph at lines 28--29
+\T1/cmr/m/n/12 Outras bi-bli-o-te-cas me-no-res tam-bÈm s„o ne-ces-s·-rias para
+ com-pi-lar cor-re-ta-mente a fer-ra-menta 
+ []
+
+[117
 
 
 
-
-] [116
+] [118] [119
 
 pdfTeX warning (ext4): destination with the same identifier (name{algocf.5}) ha
 s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.40 	\newpage
-              ] [117pdfTeX warning (ext4): destination with the same identifier
- (name{algocf.6}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  
-l.68 	\chapter
-              {FORMATO DE ARQUIVO DE ELEMENTO INTELIGENTE}\label{annex3}]
-[118
 
-]) [119
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.104 	\newpage
+               ] [120pdfTeX warning (ext4): destination with the same identifie
+r (name{algocf.6}) has been already used, duplicate ignored
 
-] (./modelo_new2.bbl
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.132 	\chapter
+               {FORMATO DE ARQUIVO DE ELEMENTO INTELIGENTE}\label{annex3}]
+[121
+
+] [122
+
+] [123]) [124] (./modelo_new2.bbl
 Underfull \hbox (badness 1199) in paragraph at lines 42--45
 []\T1/cmr/m/n/12 DUAN, B.; ZA-MIR, M. Ef-fect of dis-per-sion of ves-sel di-a-m
 e-ters and lengths in 
@@ -4233,49 +4374,57 @@ Underfull \hbox (badness 2846) in paragraph at lines 94--96
 1/cmr/m/it/12 Pro-gress in 
  []
 
-[120
-
+[125
 
 ]) 
 AED: lastpage setting LastPage
-[121] (./modelo_new2.aux (./introducao.aux) (./modelagem_escoamento.aux)
+[126]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 217.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 217.
+ (./modelo_new2.aux (./introducao.aux) (./modelagem_escoamento.aux)
 (./ferramenta_computacional.aux) (./resultados.aux) (./conclusoes.aux)
 (./anexos.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 217.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 217.
+Package rerunfilecheck Info: File `modelo_new2.out' has not changed.
+(rerunfilecheck)             Checksum: 89CFFE66C4D19BAC8FF333DCAE590E4E;6714.
+
 
 LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package rerunfilecheck Info: File `modelo_new2.out' has not changed.
-(rerunfilecheck)             Checksum: 354581E5F30AC5497B67A563523BE48C;14546.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 217.
  ) 
 Here is how much of TeX's memory you used:
- 17444 strings out of 478994
- 253027 string characters out of 5862207
- 641930 words of memory out of 5000000
- 34014 multiletter control sequences out of 15000+600000
- 416005 words of font info for 62 fonts, out of 8000000 for 9000
+ 15188 strings out of 481239
+ 220397 string characters out of 5920377
+ 909073 words of memory out of 5000000
+ 29343 multiletter control sequences out of 15000+600000
+ 548708 words of font info for 68 fonts, out of 8000000 for 9000
  1147 hyphenation exceptions out of 8191
- 86i,18n,88p,1427b,576s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texl
-ive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2021/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2021/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2021/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pf
-b><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/tex
-live/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2021/
-texmf-dist/fonts/type1/public/cm-super/sfbx0800.pfb><c:/texlive/2021/texmf-dist
-/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2021/texmf-dist/fonts/typ
-e1/public/cm-super/sfrm1200.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/
-cm-super/sfti1200.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/s
-fxc1200.pfb>
-Output written on modelo_new2.pdf (122 pages, 9658510 bytes).
+ 42i,18n,51p,1427b,1951s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf/
+fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf/fo
+nts/type1/public/cm-super/sfbx0600.pfb></usr/share/texmf/fonts/type1/public/cm-
+super/sfbx0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb><
+/usr/share/texmf/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share/texmf/fon
+ts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-s
+uper/sfti0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></
+usr/share/texmf/fonts/type1/public/cm-super/sfxc1200.pfb>
+Output written on modelo_new2.pdf (127 pages, 9735715 bytes).
 PDF statistics:
- 1944 PDF objects out of 2073 (max. 8388607)
- 1667 compressed objects within 17 object streams
- 479 named destinations out of 1000 (max. 500000)
- 989 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2234 PDF objects out of 2487 (max. 8388607)
+ 1945 compressed objects within 20 object streams
+ 670 named destinations out of 1000 (max. 500000)
+ 1029 words of extra memory for PDF output out of 10000 (max. 10000000)
 

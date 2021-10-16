@@ -44,8 +44,17 @@
 \hyphenpenalty=10000
 
 \usepackage{appendix}
+\usepackage{tabularx}
 
 \include{hifenizacao}
+
+\lstset{
+	language=XML,
+	morekeywords={encoding,
+		WISE\underline{\space}OBJECT,WISE\underline{\space}COLLECTION,WISE\underline{\space}ELEMENT,OBJECT\underline{\space}PARAMS},
+	breaklines=true,
+	basicstyle=\tiny
+}
 
 \begin{document}
 %\include{pretexto}
