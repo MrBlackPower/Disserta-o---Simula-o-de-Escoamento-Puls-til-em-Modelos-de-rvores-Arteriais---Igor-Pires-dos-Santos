@@ -8,7 +8,7 @@
 
 Nesta seção, apresentam-se resultados obtidos com a implementação computacional e simulação do modelo matemático de Duan e Zamir~\cite{Duan1992}. As simulações realizadas aqui tratam da propagação de uma onda harmônica simples ao longo de uma árvore, onde reflexões de onda modificam a amplitude da onda de pressão enquanto ela avança. A escolha de uma onda harmônica simples neste estudo possibilita investigar os efeitos da frequência, fluido viscoso e viscoelasticidade da parede do segmento de vaso.
 
-Considerou-se neste estudo um modelo de árvore arterial canina como ilustrado na Figura~\ref{fig:arvore-canina}. As propriedades dos segmentos foram escolhidas oriundas dos dados de Fung~\cite{Fung} e são descritas na Tabela~\ref{tab1:proprerty}. 
+Considerou-se neste estudo um modelo de árvore arterial canina como ilustrado na Figura~\ref{fig:arvore-canina}. As propriedades dos segmentos foram escolhidas oriundas dos dados de Fung~\cite{fung2013biomechanics} e são descritas na Tabela~\ref{tab1:proprerty}. 
 
 \begin{figure}[!htbp]
 	\centering
@@ -20,12 +20,11 @@ Considerou-se neste estudo um modelo de árvore arterial canina como ilustrado n
 \begin{table}[!htbp]
 	\caption{Propriedades dos segmentos do modelo de árvore arterial~\cite{Duan,Fung}}
 	\centering{}
-	\begin{tabular}{|c||c|c|c|c|c|}
-		\hline 
+	\begin{tabular}{c|c|c|c|c|c}
+		\toprule 
 		Artéria	& Comprimento & Densidade & Viscosidade  & Diâmetro & Módulo de  \\ 
 		& ($cm$) & $\rho$ ($g/cm^3$) & $\mu_0$ ($g/cm s$) & ($cm$) & Young ($dyn/cm^2$) \\ 
-		\hline
-		\hline 
+		\midrule 
 		Aorta & 25 & $0,960$ & 0,0385 & 1,3 &4,8 $\times 10^6$ \\ 
 		Descendente &  & &  & & \\ 
 		\hline 
@@ -35,14 +34,14 @@ Considerou-se neste estudo um modelo de árvore arterial canina como ilustrado n
 		Ilíaca & 12 & $1,172$ & 0,0472 & 0,6 & 1,0 $\times 10^7$\\ 
 		\hline 
 		Femoral & 10 & $1,235$ & 0,0494 & 0,4 & 1,0 $\times 10^7$\\ 
-		\hline 
+		\bottomrule 
 	\end{tabular} 
 	\label{tab1:proprerty}
 \end{table}
 
-Nas simulações aqui realizadas, calculou-se a distribuição de amplitude de pressão ao longo da árvore arterial (Figura~\ref{fig:arvore-canina}). Os resultados foram obtidos para quatro diferentes frequên\-cias e três diferentes cenários de escoamento/segmento: (i) escoamento viscoso em segmento puramente elástico (cenário 1 da Seção~\ref{sec:cenario}), (ii) escoamento invíscido em segmento viscoelástico (cenário 2) e (iii) escoamento viscoso em segmento viscoelástico (cenário 3). 
+Nas simulações realizadas, calculou-se a distribuição de amplitude de pressão ao longo da árvore arterial (Figura~\ref{fig:arvore-canina}). Os resultados foram obtidos para quatro diferentes frequên\-cias e três diferentes cenários de escoamento/segmento: (i) escoamento viscoso em segmento puramente elástico (cenário 1 da Seção~\ref{sec:cenario}), (ii) escoamento invíscido em segmento viscoelástico (cenário 2) e (iii) escoamento viscoso em segmento viscoelástico (cenário 3). 
 
-Os resultados obtidos nas simulações são mostrados nas Figuras~\ref{fig3a:arterial-tree}, \ref{fig3b:arterial-tree}, \ref{fig4a:arterial-tree}, \ref{fig4b:arterial-tree}, \ref{fig5a:arterial-tree} envolvendo a amplitude da pressão ao longo do modelo de árvore arterial. Nestas figuras, o comprimento de cada segmento arterial foi dimensionado para 1,0, de modo que o comprimento adimensional total da árvore é 4,0. O comprimento real é 58 cm. A amplitude da pressão também foi escalada pela pressão de entrada $P_o$, e os resultados finais são portanto mostrados em termos de amplitude de pressão adimensional $|P|$ versus a distância adimensional $X$ do início da árvore.
+Os resultados obtidos nas simulações são mostrados nas Figuras~\ref{fig3a:arterial-tree}, \ref{fig3b:arterial-tree}, \ref{fig4a:arterial-tree}, \ref{fig4b:arterial-tree}, \ref{fig5a:arterial-tree} envolvendo a amplitude da pressão ao longo do modelo de árvore arterial. Nestas figuras, o comprimento de cada segmento arterial foi dimensionado para $1,0$, de modo que o comprimento adimensional total da árvore é $4,0$. O comprimento real é $58$ cm. A amplitude da pressão também foi escalada pela pressão de entrada $P_o$, e os resultados finais são portanto mostrados em termos de amplitude de pressão adimensional $|P|$ versus a distância adimensional $X$ do início da árvore.
 
 
 %--------------------------------------------------------------------------------%
@@ -77,11 +76,11 @@ Nas Figuras~\ref{fig4a:arterial-tree}, \ref{fig4b:arterial-tree}, o efeito da vi
 
 \begin{figure}[!htbp]
 	\centering
-	(a) \\
+	(a) $f$ = 3,65 Hz \\
 	\includegraphics[scale=0.7]{Figures/fig4_P_f3_65_viscoelasticity_NEW.png}\\
-	(b)\\
+	(b)  $f$ = 7,30 Hz\\
 	\includegraphics[scale=0.7]{Figures/fig4_P_f7_30_viscoelasticity_NEW.png}\\
-	\caption{Amplitude da pressão $|P|$ ao longo da árvore arterial considerando diferentes valores de viscoelasticidade $\phi_0$ e frequências: (a) $f$ = 3,65 Hz, (b)  $f$ = 7,30 Hz. }
+	\caption{Amplitude da pressão $|P|$ ao longo da árvore arterial considerando diferentes valores de viscoelasticidade $\phi_0$ e frequências: $f$ = 3,65 Hz e  $f$ = 7,30 Hz. }
 	\label{fig4a:arterial-tree}%
 \end{figure}
 
@@ -91,7 +90,7 @@ Nas Figuras~\ref{fig4a:arterial-tree}, \ref{fig4b:arterial-tree}, o efeito da vi
 	\includegraphics[scale=0.7]{Figures/fig4_P_f10_95_viscoelasticity_NEW.png}\\
 	(b) $f$ = 14,60 Hz\\
 	\includegraphics[scale=0.7]{Figures/fig4_P_f14_60_viscoelasticity_NEW.png}\\
-	\caption{Amplitude da pressão $|P|$ ao longo da árvore arterial considerando diferentes valores de viscoelasticidade $\phi_0$ e frequências: (a) $f$ = 10,95 Hz, (b) $f$ = 14,60 Hz.}
+	\caption{Amplitude da pressão $|P|$ ao longo da árvore arterial considerando diferentes valores de viscoelasticidade $\phi_0$ e frequências: $f$ = 10,95 Hz e $f$ = 14,60 Hz.}
 	\label{fig4b:arterial-tree}%
 \end{figure}
 

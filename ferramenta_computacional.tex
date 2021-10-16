@@ -29,7 +29,7 @@ Inicialmente, salientam-se que as Equações~\eqref{27_R} e~\eqref{28_Ye} expõe
 Neste trabalho, adotou-se a linguagem de programação C++. Essa linguagem de programação escolhida permite que objetos sejam passados por referência. Ao passar um objeto por referência, o endereço de memória é enviado, dando total acesso aos parâmetros do objeto, este endereço é chamado de ponteiro. Ao enviar o ponteiro do vaso raiz, é possível acessar todo o modelo de árvore arterial. Cada vaso arterial do modelo contém as propriedades apresentadas na Tabela~\ref{tab:info_vaso}, além de ponteiros para os vasos adjacentes. 
 
 \begin{table}[h]
-	\begin{tabularx}{\textwidth}{c|c|c|c}
+	\begin{tabularx}{\textwidth}{c|c|X|c}
 		\toprule
 		\textbf{valores conhecidos} & \textbf{unidade} & \textbf{valores calculados} & \textbf{unidade} \\\midrule
 		
@@ -555,7 +555,7 @@ O comando de ajuda é o primeiro comando da interface e foi feito para listar to
 
 \begin{center}
 	\begin{table}[!htbp]
-		\begin{tabularx}{\textwidth}{c|c}
+		\begin{tabularx}{\textwidth}{c|X}
 			\toprule
 			\textbf{Linha de Comando} & \multicolumn{1}{c}{help} \\
 			\midrule
@@ -590,7 +590,7 @@ O comando ler arquivo de comandos irá receber o endereço de um arquivo local, 
 
 \begin{center}
 	\begin{table}[!htbp]
-		\begin{tabularx}{\textwidth}{c|c|c}
+		\begin{tabularx}{\textwidth}{c|c|X}
 			\toprule
 			\textbf{Linha de Comando} & \multicolumn{2}{c}{read cmds <file>} \\
 			\midrule
@@ -615,7 +615,7 @@ Estes testes foram utilizados principalmente no momento do desenvolvimento da fe
 
 \begin{center}
 	\begin{table}[!htbp]
-		\begin{tabularx}{\textwidth}{c|c}
+		\begin{tabularx}{\textwidth}{c|X}
 			\toprule
 			\textbf{Linha de Comando} & \multicolumn{1}{c}{test} \\
 			\midrule
@@ -638,7 +638,7 @@ O comando de listar testes irá enumerar todos os teste possíveis de serem exec
 
 \begin{center}
 	\begin{table}[!htbp]
-		\begin{tabularx}{\textwidth}{c|c}
+		\begin{tabularx}{\textwidth}{c|X}
 			\toprule
 			\textbf{Linha de Comando} & \multicolumn{1}{c}{test list} \\
 			\midrule
@@ -661,7 +661,7 @@ Como visto na Seção~\ref{sec:test list}, os testes são enumerados. Baseando-s
 
 \begin{center}
 	\begin{table}[!htbp]
-		\begin{tabularx}{\textwidth}{c|c|c}
+		\begin{tabularx}{\textwidth}{c|c|X}
 			\toprule
 			\textbf{Linha de Comando} & \multicolumn{2}{c}{test <test\underline{\space}id>} \\
 			\midrule
@@ -684,7 +684,7 @@ Outro comando de teste disponibilizado pela ferramenta computacional é o teste 
 
 \begin{center}
 	\begin{table}[!htbp]
-		\begin{tabularx}{\textwidth}{c|c|c}
+		\begin{tabularx}{\textwidth}{c|c|X}
 			\toprule
 			\textbf{Linha de Comando} & \multicolumn{2}{c}{test file <test\underline{\space\space}id> <file1> <file2>} \\
 			\midrule
@@ -709,7 +709,7 @@ Comando utilizado para criar um novo projeto, como entrada ele recebe o nome do 
 
 \begin{center}
 	\begin{table}[!htbp]
-		\begin{tabularx}{\textwidth}{c|c|c}
+		\begin{tabularx}{\textwidth}{c|c|X}
 			\toprule
 			\textbf{Linha de Comando} & \multicolumn{2}{c}{project create <name>} \\
 			\midrule
@@ -732,7 +732,7 @@ Para que a maioria dos comandos funcione é necessário que um projeto esteja se
 
 \begin{center}
 	\begin{table}[!htbp]
-		\begin{tabularx}{\textwidth}{c|c|c}
+		\begin{tabularx}{\textwidth}{c|c|X}
 			\toprule
 			\textbf{Linha de Comando} & \multicolumn{2}{c}{project use <project\underline{\space\space}name>} \\
 			\midrule
@@ -755,7 +755,7 @@ Para que a maioria dos comandos funcione é necessário que um projeto esteja se
 
 \begin{center}
 	\begin{table}[!htbp]
-		\begin{tabularx}{\textwidth}{c|c}
+		\begin{tabularx}{\textwidth}{c|X}
 			\toprule
 			\textbf{Linha de Comando} & \multicolumn{1}{c}{project list} \\
 			\midrule
@@ -778,7 +778,7 @@ Para que a maioria dos comandos funcione é necessário que um projeto esteja se
 
 \begin{center}
 	\begin{table}[!htbp]
-		\begin{tabularx}{\textwidth}{c|c}
+		\begin{tabularx}{\textwidth}{c|X}
 			\toprule
 			\textbf{Linha de Comando} & \multicolumn{1}{c}{project print} \\
 			\midrule
@@ -801,7 +801,7 @@ Com um projeto selecionado, o comando de exclusão de elementos irá excluir o e
 
 \begin{center}
 	\begin{table}[!htbp]
-		\begin{tabularx}{\textwidth}{c|c}
+		\begin{tabularx}{\textwidth}{c|X}
 			\toprule
 			\textbf{Linha de Comando} & \multicolumn{1}{c}{project delete} \\
 			\midrule
@@ -824,7 +824,7 @@ O comando de salvar projetos irá extrair do projeto selecionado sua representa�
 
 \begin{center}
 	\begin{table}[!htbp]
-		\begin{tabularx}{\textwidth}{c|c|c}
+		\begin{tabularx}{\textwidth}{c|c|X}
 			\toprule
 			\textbf{Linha de Comando} & \multicolumn{2}{c}{project save <file\underline{\space\space}name>} \\
 			\midrule
@@ -847,7 +847,7 @@ O comando de carregar projetos irá extrair de um arquivo de entrada no formato 
 
 \begin{center}
 	\begin{table}[!htbp]
-		\begin{tabularx}{\textwidth}{c|c|c}
+		\begin{tabularx}{\textwidth}{c|c|X}
 			\toprule
 			\textbf{Linha de Comando} & \multicolumn{2}{c}{project load <filename>} \\
 			\midrule
@@ -870,7 +870,7 @@ As fábricas de elementos inteligentes descritas na Seção~\ref{sec:fabrica} s�
 
 \begin{center}
 	\begin{table}[!htbp]
-		\begin{tabularx}{\textwidth}{c|c|c}
+		\begin{tabularx}{\textwidth}{c|c|X}
 			\toprule
 			\textbf{Linha de Comando} & \multicolumn{2}{c}{element create <type> <example> <name> [ARGS]} \\
 			\midrule
@@ -897,7 +897,7 @@ Assim como o comando de criação de elementos descrito na Seção~\ref{sec:crea
 
 \begin{center}
 	\begin{table}[!htbp]
-		\begin{tabularx}{\textwidth}{c|c|c}
+		\begin{tabularx}{\textwidth}{c|c|X}
 			\toprule
 			\textbf{Linha de Comando} & \multicolumn{2}{c}{element clone <element\underline{\space\space}name> <name>} \\
 			\midrule
@@ -922,7 +922,7 @@ Com um projeto já selecionada, o comando de listar elementos pode ser utilizado
 
 \begin{center}
 	\begin{table}[!htbp]
-		\begin{tabularx}{\textwidth}{c|c}
+		\begin{tabularx}{\textwidth}{c|X}
 			\toprule
 			\textbf{Linha de Comando} & \multicolumn{1}{c}{element list} \\
 			\midrule
@@ -945,7 +945,7 @@ O comando de imprimir elementos irá extrair do projeto selecionado a representa
 
 \begin{center}
 	\begin{table}[!htbp]
-		\begin{tabularx}{\textwidth}{c|c|c}
+		\begin{tabularx}{\textwidth}{c|c|X}
 			\toprule
 			\textbf{Linha de Comando} & \multicolumn{2}{c}{element print <element\underline{\space\space}name>} \\
 			\midrule
@@ -968,7 +968,7 @@ O comando de excluir elementos irá remover os dados do elemento da memória.
 
 \begin{center}
 	\begin{table}[!htbp]
-		\begin{tabularx}{\textwidth}{c|c|c}
+		\begin{tabularx}{\textwidth}{c|c|X}
 			\toprule
 			\textbf{Linha de Comando} & \multicolumn{2}{c}{element delete <element\underline{\space\space}name>} \\
 			\midrule
@@ -991,7 +991,7 @@ Os elementos inteligentes podem ser exportados em dois formatos, um arquivo \tex
 
 \begin{center}
 	\begin{table}[!htbp]
-		\begin{tabularx}{\textwidth}{c|c|c}
+		\begin{tabularx}{\textwidth}{c|c|X}
 			\toprule
 			\textbf{Linha de Comando} & \multicolumn{2}{c}{element save <element\underline{\space\space}name> <save\underline{\space\space}type> <filename>} \\
 			\midrule
@@ -1044,7 +1044,7 @@ Os elementos inteligentes podem ser exportados outros formatos de arquivo\igunew
 
 \begin{center}
 	\begin{table}[!htbp]
-		\begin{tabularx}{\textwidth}{c|c|c}
+		\begin{tabularx}{\textwidth}{c|c|X}
 			\toprule
 			\textbf{Linha de Comando} & \multicolumn{2}{c}{element export\underline{\space\space}list <element\underline{\space\space}name>}  \\
 			\midrule
@@ -1067,7 +1067,7 @@ A estrutura abstrata dos elementos inteligentes requer que cada um deles possua 
 
 \begin{center}
 	\begin{table}[!htbp]
-		\begin{tabularx}{\textwidth}{c|c|c}
+		\begin{tabularx}{\textwidth}{c|c|X}
 			\toprule
 			\textbf{Linha de Comando} & \multicolumn{2}{c}{element export <element\underline{\space\space}name> <export\underline{\space\space}name> [ARGS]} \\
 			\midrule
@@ -1092,7 +1092,7 @@ Os dados inseridos em um elemento inteligente podem ser escalados. As informaç�
 
 \begin{center}
 	\begin{table}[!htbp]
-		\begin{tabularx}{\textwidth}{c|c|c}
+		\begin{tabularx}{\textwidth}{c|c|X}
 			\toprule
 			\textbf{Linha de Comando} & \multicolumn{2}{c}{element scale <element\underline{\space\space}name> <cell\underline{\space\space}type> <field> <scale>} \\
 			\midrule
@@ -1120,7 +1120,7 @@ Os dados inseridos em um elemento inteligente podem ser alterados e receber um v
 
 \begin{center}
 	\begin{table}[!htbp]
-		\begin{tabularx}{\textwidth}{c|c|c}
+		\begin{tabularx}{\textwidth}{c|c|X}
 			\toprule
 			\textbf{Linha de Comando} & \multicolumn{2}{c}{element set\underline{\space\space}field <element\underline{\space\space}name> <cell\underline{\space\space}type> <field\underline{\space\space}name> <id> <data>} \\
 			\midrule
@@ -1149,7 +1149,7 @@ O comando de definição de todos os valores pertencentes à um parâmetro auxil
 
 \begin{center}
 	\begin{table}[!htbp]
-		\begin{tabularx}{\textwidth}{c|c|c}
+		\begin{tabularx}{\textwidth}{c|c|X}
 			\toprule
 			\textbf{Linha de Comando} & \multicolumn{2}{c}{element set\underline{\space\space}all\underline{\space\space}field <element\underline{\space\space}name> <cell\underline{\space\space}type> <field\underline{\space\space}name> <data>} \\
 			\midrule
@@ -1179,7 +1179,7 @@ Consequentemente, os resultados impressos representam os tipos de elementos inte
 
 \begin{center}
 	\begin{table}[!htbp]
-		\begin{tabularx}{\textwidth}{c|c}
+		\begin{tabularx}{\textwidth}{c|X}
 			\toprule
 			\textbf{Linha de Comando} & \multicolumn{1}{c}{element factories list} \\
 			\midrule
@@ -1202,7 +1202,7 @@ Para cada tipo de elemento inteligente, ou fábrica inteligente listada pelo com
 
 \begin{center}
 	\begin{table}[!htbp]
-		\begin{tabularx}{\textwidth}{c|c|c}
+		\begin{tabularx}{\textwidth}{c|c|X}
 			\toprule
 			\textbf{Linha de Comando} & \multicolumn{2}{c}{element factories examples <factory>} \\
 			\midrule
@@ -1227,7 +1227,7 @@ Assim como descrito na Seção~\ref{sec:estrutura}, ao criar um objeto inteligen
 
 \begin{center}
 	\begin{table}[!htbp]
-		\begin{tabularx}{\textwidth}{c|c|c}
+		\begin{tabularx}{\textwidth}{c|c|X}
 			\toprule
 			\multirow{3}{*}{\textbf{Linha de Comando}} & \multicolumn{2}{c}{object create <object\underline{\space\space}name> <element\underline{\space\space}name>} \\
 			& \multicolumn{2}{c}{object create <type> <example> <name> <element\underline{\space\space}name> [ARGS]} \\
@@ -1255,7 +1255,7 @@ Assim como o elemento inteligente, o objeto inteligente pode ser clonado em uma 
 
 \begin{center}
 	\begin{table}[!htbp]
-		\begin{tabularx}{\textwidth}{c|c|c}
+		\begin{tabularx}{\textwidth}{c|c|X}
 			\toprule
 			\textbf{Linha de Comando} & \multicolumn{2}{c}{object clonet <object\underline{\space\space}name> <name>} \\
 			\midrule
@@ -1280,7 +1280,7 @@ Com um projeto já selecionada, o comando de listar objetos pode ser utilizado p
 
 \begin{center}
 	\begin{table}[!htbp]
-		\begin{tabularx}{\textwidth}{c|c}
+		\begin{tabularx}{\textwidth}{c|X}
 			\toprule
 			\textbf{Linha de Comando} & \multicolumn{1}{c}{object list} \\
 			\midrule
@@ -1305,7 +1305,7 @@ Dentro deste arquivo \textit{XML} estarão todas as estruturas descritas na Seç
 
 \begin{center}
 	\begin{table}[!htbp]
-		\begin{tabularx}{\textwidth}{c|c|c}
+		\begin{tabularx}{\textwidth}{c|c|X}
 			\toprule
 			\textbf{Linha de Comando} & \multicolumn{2}{c}{object print <object\underline{\space\space}name>} \\
 			\midrule
@@ -1328,7 +1328,7 @@ Com um projeto selecionado, o comando de exclusão de objetos irá excluir o obj
 
 \begin{center}
 	\begin{table}[!htbp]
-		\begin{tabularx}{\textwidth}{c|c|c}
+		\begin{tabularx}{\textwidth}{c|c|X}
 			\toprule
 			\textbf{Linha de Comando} & \multicolumn{2}{c}{object delete <object\underline{\space\space}name>} \\
 			\midrule
@@ -1351,7 +1351,7 @@ O comando de salvar objetos possibilita que a estrutura complexa de um objeto in
 
 \begin{center}
 	\begin{table}[!htbp]
-		\begin{tabularx}{\textwidth}{c|c|c}
+		\begin{tabularx}{\textwidth}{c|c|X}
 			\toprule
 			\textbf{Linha de Comando} & \multicolumn{2}{c}{object save <object\underline{\space\space}name> <filename>} \\
 			\midrule
@@ -1376,7 +1376,7 @@ O comando de carregar objetos irá enviar um arquivo de entrada a fábrica de ob
 
 \begin{center}
 	\begin{table}[!htbp]
-		\begin{tabularx}{\textwidth}{c|c|c}
+		\begin{tabularx}{\textwidth}{c|c|X}
 			\toprule
 			\textbf{Linha de Comando} & \multicolumn{2}{c}{object load <filename>} \\
 			\midrule
@@ -1399,7 +1399,7 @@ O comando de exportar objetos funciona da mesma forma que o comando de exportar 
 
 \begin{center}
 	\begin{table}[!htbp]
-		\begin{tabularx}{\textwidth}{c|c|c}
+		\begin{tabularx}{\textwidth}{c|c|X}
 			\toprule
 			\multirow{2}{*}{\textbf{Linha de Comando}} & \multicolumn{2}{c}{object export\underline{\space\space}list <object\underline{\space\space}name>} \\
 			& \multicolumn{2}{c}{object export <object\underline{\space\space}name> <export\underline{\space\space}type> [ARGS]} \\
@@ -1425,7 +1425,7 @@ Assim como o comando de exportar objeto atua sobre o elemento contido na estrutu
 
 \begin{center}
 	\begin{table}[!htbp]
-		\begin{tabularx}{\textwidth}{c|c|c}
+		\begin{tabularx}{\textwidth}{c|c|X}
 			\toprule
 			\multirow{2}{*}{\textbf{Linha de Comando}} & \multicolumn{2}{c}{object set\underline{\space\space}field <object\underline{\space\space}name> <cell\underline{\space\space}type> <field\underline{\space\space}name> <id> <data>} \\
 			& \multicolumn{2}{c}{object set\underline{\space\space}all\underline{\space\space}field <object\underline{\space\space}name> <cell\underline{\space\space}type> <field\underline{\space\space}name> <data>} \\
@@ -1453,7 +1453,7 @@ O comando de definir um objeto inteligente tem ligação direta com o seu proces
 
 \begin{center}
 	\begin{table}[!htbp]
-		\begin{tabularx}{\textwidth}{c|c|c}
+		\begin{tabularx}{\textwidth}{c|c|X}
 			\toprule
 			\textbf{Linha de Comando} & \multicolumn{2}{c}{object set <object\underline{\space\space}name>} \\
 			\midrule
@@ -1476,7 +1476,7 @@ O comando de iterar objetos irá executar o ciclo de iteração de um objeto que
 
 \begin{center}
 	\begin{table}[!htbp]
-		\begin{tabularx}{\textwidth}{c|c|c}
+		\begin{tabularx}{\textwidth}{c|c|X}
 			\toprule
 			\textbf{Linha de Comando} & \multicolumn{2}{c}{object go <object\underline{\space\space}name>} \\
 			\midrule
@@ -1499,7 +1499,7 @@ Cada tipo de objeto inteligente possuirá uma lista de fábricas de iteração \
 
 \begin{center}
 	\begin{table}[!htbp]
-		\begin{tabularx}{\textwidth}{c|c|c}
+		\begin{tabularx}{\textwidth}{c|c|X}
 			\toprule
 			\textbf{Linha de Comando} & \multicolumn{2}{c}{object iteration\underline{\space\space}factories list <object\underline{\space\space}name>} \\
 			\midrule
@@ -1518,11 +1518,11 @@ Cada tipo de objeto inteligente possuirá uma lista de fábricas de iteração \
 %--------------------------------------------------------------------------------%
 \subsection{DEFINIR FÁBRICA DE ITERAÇÃO DE OBJETO}\label{sec:iteration_factories_set}
 
-Antes que um objeto posso passar para o estado \textit{Set} ele precisa tem em sua composição uma fábrica de iteração, caso deseje-se um objeto estático, que não mude durante o ciclo iterativo, a fábrica \textit{StaticIterationFactory} deve ser acoplada. O comando para definir a fábrica de iteração irá receber o nome do objeto que irá receber a fábrica e o nome da fábrica à ser adicionada.
+Antes que um objeto possa passar para o estado \textit{Set} ele precisa tem em sua composição uma fábrica de iteração, caso deseje um objeto estático (que não mude durante o ciclo iterativo) a fábrica \textit{StaticIterationFactory} deve ser acoplada. O comando para definir a fábrica de iteração irá receber o nome do objeto que terá a fábrica acoplada e o nome da fábrica à ser adicionada.
 
 \begin{center}
 	\begin{table}[!htbp]
-		\begin{tabularx}{\textwidth}{c|c|c}
+		\begin{tabularx}{\textwidth}{c|c|X}
 			\toprule
 			\textbf{Linha de Comando} & \multicolumn{2}{c}{object iteration\underline{\space\space}factories set <object\underline{\space\space}name> <factory\underline{\space\space}name>} \\
 			\midrule
@@ -1546,7 +1546,7 @@ Além de fábricas de iteração, objetos inteligentes podem ser compostos por f
 
 \begin{center}
 	\begin{table}[!htbp]
-		\begin{tabularx}{\textwidth}{c|c|c}
+		\begin{tabularx}{\textwidth}{c|c|X}
 			\toprule
 			\textbf{Linha de Comando} & \multicolumn{2}{c}{object graphic\underline{\space\space}factories list <object\underline{\space\space}name>} \\
 			\midrule
@@ -1565,11 +1565,11 @@ Além de fábricas de iteração, objetos inteligentes podem ser compostos por f
 %--------------------------------------------------------------------------------%
 \subsection{DEFINIR FÁBRICA GRÁFICA DE OBJETO}\label{sec:graphic_factories_set}
 
-Uma vez que o objeto inteligente tenha sido criado corretamente ele pode ser acoplado de fábricas de iteração ou gráficas. O comando de definir fábrica gráfica irá acoplar uma fábrica gráfica disponível à um objeto inteligente compatível. Como dados de entrada o comando receberá o nome do objeto inteligente à ser alterado e o nome da fábrica gráfica à ser adicionada.
+Uma vez que o objeto inteligente tenha sido criado corretamente ele pode ser acoplado a fábricas de iteração ou gráficas. O comando de definir fábrica gráfica irá acoplar uma fábrica gráfica disponível à um objeto inteligente compatível. Como dados de entrada o comando receberá o nome do objeto inteligente à ser alterado e o nome da fábrica gráfica à ser adicionada.
 
 \begin{center}
 	\begin{table}[!htbp]
-		\begin{tabularx}{\textwidth}{c|c|c}
+		\begin{tabularx}{\textwidth}{c|c|X}
 			\toprule
 			\textbf{Linha de Comando} & \multicolumn{2}{c}{object graphic\underline{\space\space}factories set <object\underline{\space\space}name> <factory\underline{\space\space}name>} \\
 			\midrule
@@ -1593,7 +1593,7 @@ Uma vez que o objeto gráfico tenha sido corretamente criado e acoplado à uma f
 
 \begin{center}
 	\begin{table}[!htbp]
-		\begin{tabularx}{\textwidth}{c|c}
+		\begin{tabularx}{\textwidth}{c|X}
 			\toprule
 			\textbf{Linha de Comando} & graphic list \\
 			\midrule
@@ -1616,7 +1616,7 @@ O comando de listar \textit{Canvas} irá nomear todas os elementos gráficos dis
 
 \begin{center}
 	\begin{table}[!htbp]
-		\begin{tabularx}{\textwidth}{c|c}
+		\begin{tabularx}{\textwidth}{c|X}
 			\toprule
 			\textbf{Linha de Comando} & canvas list \\
 			\midrule
@@ -1635,11 +1635,11 @@ O comando de listar \textit{Canvas} irá nomear todas os elementos gráficos dis
 %--------------------------------------------------------------------------------%
 \subsection{LINK GRÁFICO}\label{sec:graphic_link}
 
-Tendo o conhecimento dos elementos gráficos disponíveis para desenho e das estruturas aptas à sereme desenhadas, é possível que estas estruturas sejam conectadas para que funcionem em conjunto. Ao realizar esta conecção, nomeada de link gráfico, o elemento gráfico passará a exibir o elemento gráfico.
+Tendo o conhecimento dos elementos gráficos disponíveis para desenho e das estruturas aptas à serem desenhadas, é possível que estas estruturas sejam conectadas para que funcionem em conjunto. Ao realizar esta conecção, nomeada de link gráfico, o elemento gráfico passará a exibir o elemento gráfico.
 
 \begin{center}
 	\begin{table}[!htbp]
-		\begin{tabularx}{\textwidth}{c|c|c}
+		\begin{tabularx}{\textwidth}{c|c|X}
 			\toprule
 			\multirow{2}{*}{\textbf{Linha de Comando}} & \multicolumn{2}{c}{graphic link <graphic\underline{\space\space}name> <canvas\underline{\space\space}name>} \\
 			& \multicolumn{2}{c}{canvas link <canvas\underline{\space\space}name> <graphic\underline{\space\space}name>} \\
@@ -1660,11 +1660,11 @@ Tendo o conhecimento dos elementos gráficos disponíveis para desenho e das est
 %--------------------------------------------------------------------------------%
 \subsection{TERMINAR LINK GRÁFICO}\label{sec:graphic_purge}
 
-Uma vez que os elementos gráficos começam a ser exibidos em elementos de interface gráfica eles são desenhados continuamente. Para liberar o elemento de interface gráfica e deixá-lo vazio o comando de terminar link gráfico foi utilizado. Como dado de entrada este comando recebe o nome do elemento de interface gráfica.
+Uma vez que os elementos gráficos começam a ser exibidos em elementos de interface gráfica eles são desenhados continuamente. Para liberar o elemento de interface gráfica e deixá-lo vazio o comando de terminar link gráfico deve ser utilizado. Como dado de entrada este comando recebe o nome do elemento de interface gráfica.
 
 \begin{center}
 	\begin{table}[!htbp]
-		\begin{tabularx}{\textwidth}{c|c|c}
+		\begin{tabularx}{\textwidth}{c|c|X}
 			\toprule
 			\textbf{Linha de Comando} & \multicolumn{2}{c}{canvas purge <canvas\underline{\space\space}name>} \\
 			\midrule
@@ -1683,7 +1683,7 @@ Uma vez que os elementos gráficos começam a ser exibidos em elementos de inter
 %--------------------------------------------------------------------------------%
 \section{CASO DE USO}\label{sec:caso_de_uso}
 
-O principal objetivo da ferramenta computacional é iterar modelos utilizando alguma lógica pré-definida por algum algoritmo disponível. Através dos comandos descritos na Seção~\ref{sec:console} é possível que estes modelos sejam criados, alterados, iterados e, opcionalmente, visualizados. Com isto o principal fluxo de uso foi disponibilizado.
+O principal objetivo da ferramenta computacional é iterar modelos utilizando alguma lógica pré-definida por algum algoritmo disponível. Através dos comandos descritos na Seção~\ref{sec:console} é possível que estes modelos sejam criados, alterados, iterados e, opcionalmente, visualizados. A Figura~\ref{fig:caso_uso} demonstra a principal sequência de atividades executadas para se iterar um objeto inteligente. Com este modelo é possível observar a sequência de passos necessárias para se iterar um obejto inteligente.
 
 \begin{figure}[!htbp]
 	\centering
@@ -1692,17 +1692,15 @@ O principal objetivo da ferramenta computacional é iterar modelos utilizando al
 	\label{fig:caso_uso}
 \end{figure}
 
-A Figura~\ref{fig:caso_uso} demonstra a principal sequência de atividades executadas para se iterar um objeto inteligente. Como descrito na Seção~\ref{sec:estrutura}, um objeto inteligente recém-criado não pode ser iterado, ele precisa antes ser corretamente configurado. Com este modelo é possível observar a sequência de passos necessárias para se iterar um obejto inteligente.
-
 Primeiramente, é necessário criar um projeto inteligente e selecioná-lo. Cada atividade representada no fluxograma é executada por um comando correspondente, o mesmo fluxo pode ser observado no Anexo~\ref{annex2}. As primeiras linhas de comando representadas neste arquivo de comandos são de criação de projetos.
 
-Ao criar um objeto inteligente, seus elemento inteligentes são juntamente criados, ambas estas funcionalidades estão disponíveis ao usuário uma vez que ele tenha selecionado um projeto. É possível ainda que se cria um objeto inteligente à partir de um elemento inteligente, desta forma é garantida também a igualdade inicial entre os modelos.
+Ao criar um objeto inteligente, seus elemento inteligentes também são criados. Esta funcionalidade está disponível ao usuário uma vez que ele tenha selecionado um projeto. É possível ainda criar um objeto inteligente à partir de um elemento inteligente. Desta forma há garantia da igualdade inicial entre os modelos.
 
 Com um objeto criado corretamente é possível adicionar à ele uma fábrica de iteração e uma gráfica. Ao acoplar a fábrica de iteração o método iterativo é liberado, bem como a possibilidade de alterar os parâmetros do objeto inteligente.
 
-Foi adicionada também a possibilidade de se exportar elementos inteligentes, para o caso de alguns elementos inteligentes como \textit{WiseGraphic} isso siginifca a exportação de imagem no formato \textbf{P}ortable \textbf{N}etwork \textbf{G}raphics, ou \textit{png}, com seu comando representado na linha $7$ do Anexo~\ref{annex2}.
+Também existe a possibilidade de se exportar elementos inteligentes, para elementos inteligentes como \textit{WiseGraphic} isso siginifca a exportação de imagem no formato \textbf{P}ortable \textbf{N}etwork \textbf{G}raphics, ou \textit{png}, com seu comando representado na linha $7$ do Anexo~\ref{annex2}.
 
-Como mencionado anteriormente, a mesma estrutura foi utilizada na construção do ambiente computacional composto por elementos gráficos \textit{IGU}. Desta forma o principal fluxo de uso da interface gráfica foi desenvolvido.
+Como mencionado anteriormente, a mesma estrutura foi utilizada na construção do ambiente computacional composto por elementos gráficos \textit{IGU}, conforme a Figura~\ref{fig:caso_uso2}.
 
 \begin{figure}[!htbp]
 	\centering
@@ -1711,14 +1709,12 @@ Como mencionado anteriormente, a mesma estrutura foi utilizada na construção d
 	\label{fig:caso_uso2}
 \end{figure}
 
-Finalmente, o funcionamento apresentado pela Figura~\ref{fig:caso_uso2} difere do apresentado na Figura~\ref{fig:caso_uso} apenas na visualização dos objetos gráficos disponibilizada pelos elementos gráficos. Isto garante que ambos os ambientes computacionais sejam alterados em uma eventual atualização de código e que tenham funcionamento idêntico.
+ Desta forma o principal fluxo de uso da interface gráfica foi desenvolvido. O funcionamento apresentado pela Figura~\ref{fig:caso_uso2} difere do apresentado na Figura~\ref{fig:caso_uso} apenas na visualização dos objetos gráficos disponibilizada pelos elementos gráficos. Isto garante que ambos os ambientes computacionais sejam alterados em uma eventual atualização de código e que tenham funcionamento idêntico.
 
 %--------------------------------------------------------------------------------%
 \section{JANELA PRINCIPAL}\label{sec:janela}
 
-O ambiente com interface gráfica foi nomeado de \textbf{I}terador \textbf{G}ráfico \textbf{U}niversal, que também está presente como parte de um projeto \textit{Qt}/\textit{C++}. Diferentemente dos outro ambiente, este possui elementos gráficos. O principal elemento gráfico disponibilizado pela interface gráfico é a janela principal, que é um objeto do tipo \textit{QMainWindow}. Estes objetos são disponibilizados pela biblioteca \textit{Qt} e permitem que um projeto \textit{C++} possua uma interface gráfica utilizando diretivas OpenGL e GLUT (The OpenGL Utility Kit).
-
-Ao abrir o ambiente computacional a tela principal com seus elementos gráficos é exibida.
+O ambiente com interface gráfica foi nomeado de \textbf{I}terador \textbf{G}ráfico \textbf{U}niversal (IGU), que também está presente como parte de um projeto \textit{Qt}/\textit{C++}. Diferentemente dos outro ambiente, este possui elementos gráficos. O principal elemento gráfico disponibilizado pela interface gráfico é a janela principal, que é um objeto do tipo \textit{QMainWindow}. Estes objetos são disponibilizados pela biblioteca \textit{Qt} e permitem que um projeto \textit{C++} possua uma interface gráfica utilizando diretivas OpenGL e GLUT (The OpenGL Utility Kit)~\cite{OpenGL}.
 
 \begin{figure}[!htbp]
 	\centering
@@ -1727,7 +1723,7 @@ Ao abrir o ambiente computacional a tela principal com seus elementos gráficos 
 	\label{fig:UI}
 \end{figure}
 
-A Figura~\ref{fig:UI} demonstra o comportamento inicial da ferramenta computacional. Ao ser aberta o ambiente de trabalho é recuperado, projetos, objetos e elementos são recuperados de um arquivo contido na mesma parta da ferramenta computacional. Este arquivo é salvo toda vez que a ferramenta computacional é encerrada com projetos inteligentes ainda no ambiente. Ainda nesta figura estão representados os principais grupos de elementos gráficos.
+A Figura~\ref{fig:UI} demonstra o comportamento inicial da ferramenta computacional. Ao ser aberta o ambiente de trabalho, projetos, objetos e elementos são recuperados de um arquivo contido na mesma parte da ferramenta computacional. Este arquivo é salvo toda vez que a ferramenta computacional é encerrada com projetos inteligentes ainda no ambiente. Ainda nesta figura estão representados os principais grupos de elementos gráficos.
 
 As próximas seções discorrem sobre cada grupo de elemento gráfico presente na janela principal da ferramenta computacional e seu funcionamento.
 
@@ -1750,10 +1746,10 @@ O primeiro grupo são os elementos que compões o menu principal da aplicação.
 	\item \textbf{Open Canvas}: Abre uma nova janela contendo um novo elemento gráfico OpenGL \textit{Canvas}.
 \end{itemize}
 
-Ao abrir um novo elemento gráfico \textit{Canvas}, uma nova listagem é exibida ao executar o comando de listar canvas. Isso possibilita que mais de um objeto seja exibido ao mesmo tempo em janelas distintas.
+Ao abrir um novo elemento gráfico \textit{Canvas}, um novo nome será listado ao executar o comando de listar canvas. Isso possibilita que mais de um objeto seja exibido ao mesmo tempo em janelas distintas.
 
 %--------------------------------------------------------------------------------%
-\subsection{ABAS \& ÁREA DE TRABALHO}\label{sec:abas}
+\subsection{ABAS E ÁREA DE TRABALHO}\label{sec:abas}
 
 As abas da janela principal selecionam o elemento de interface gráfica que será exibido na área de trabalho da aplicação.
 
@@ -1764,9 +1760,9 @@ As abas da janela principal selecionam o elemento de interface gráfica que ser�
 	\label{fig:abas}
 \end{figure}
 
-Ao selecionar uma das abas, os elementos de interface de usuário da área de trabalho são trocados. Estes elementos são objetos do tipo \textit{QWidget}, estes objetos que são divididos em dois ambientes, o \textit{Canvas} e o \textit{Console}. 
+Ao selecionar uma das abas, os elementos de interface de usuário da área de trabalho são trocados. Estes elementos são objetos do tipo \textit{QWidget}, que por sua vez são divididos em dois ambientes: o \textit{Canvas} e o \textit{Console}. 
 
-Ao selecionar a opção do \textit{Console} um ambiente similar ao disponibilizado pelo ambiente \textit{InGU} é disponibilizado. Utilizando um elemento de exibição textual longa, uma linha de texto como entrada e um botão, os mesmo comandos disponibilizados na Seção~\ref{sec:console} são acessados por estes elementos gráficos. Para executar uma linha de comando basta inserir-la no elemento gráfico e pressionar o botão ou a tecla \textit{Enter}, a resposta será acoplada ao elemento de exibição textual longa.
+A aba \textit{Console} exibe um ambiente similar ao disponibilizado pelo ambiente \textit{InGU}. Utilizando um elemento de exibição textual longa, uma linha de texto como entrada e um botão, os mesmo comandos disponibilizados na Seção~\ref{sec:console} são acessados por estes elementos gráficos. Para executar uma linha de comando basta inserir-la no elemento gráfico e pressionar o botão ou a tecla \textit{Enter}, a resposta será acoplada ao elemento de exibição textual longa.
 
 \begin{figure}
 	\centering
@@ -1785,12 +1781,12 @@ Ao selecionar a opção do \textit{Console} um ambiente similar ao disponibiliza
 A Figura~\ref{fig:fig} mostra as áreas de trabalho disponibilizadas ao selecionar uma das abas. Através da opção \textit{Canvas}, o elemento gráfico que contém um \textit{QWidget} cuja principal função é uma tela \textit{OpenGL}. Os objetos gráficos, resultados de iterações podem ser visualizados aqui. O funcionamento desta área de trabalho é descrito pela janela \textit{Canvas} e funciona como um 
 reprodutor de vídeo.
 
-As abas foram construídas para realizar todas as funções da ferramenta computacional com seus elementos gráficos. O ciclo de vida da thread \textit{WiseThreadPool} esta diretamente ligado À interface gráfica. Ao utilizar a interface gráfica para percorrer os elementos gráficos, ou executar a animação, irão desencadear chamadas diretas as threads disponibilizadas.
+As abas foram construídas para realizar todas as funções da ferramenta computacional com seus elementos gráficos. O ciclo de vida da \textit{thread} \textit{WiseThreadPool} esta diretamente ligado à interface gráfica. Ao utilizar a interface gráfica para percorrer os elementos gráficos, ou executar a animação, irá desencadear chamadas diretas as \textit{threads}.
 
 %--------------------------------------------------------------------------------%
 \section{ÁRVORE DE PROJETOS}\label{sec:arvore_projetos}
 
-Além da área de trabalho, o elemento gráfico que exibe a árvore de projetos se permanece fixa. Este elemento gráfico é um explorador de árvore \textit{QTreeWidget} que exibe todos os projetos carregados e suas estruturas. Esta árvore permite rapidamente verificar os elementos criados, seus nomes, suas chaves únicas e seu status atual.
+Além da área de trabalho, o elemento gráfico que exibe a árvore de projetos permanece fixa. Este elemento gráfico é um explorador de árvore \textit{QTreeWidget} que exibe todos os projetos carregados e suas estruturas. Esta árvore permite rapidamente verificar os elementos criados, seus nomes, suas chaves únicas e seu estado atual.
 
 \begin{figure}[!htbp]
 	\centering
@@ -1806,7 +1802,7 @@ Através da árvore de projetos é possível observar a troca de estado dos elem
 %--------------------------------------------------------------------------------%
 \section{JANELAS}\label{sec:janelas}
 
-Nesta seção as janelas disponíveis no menu, descrito na Seção~\ref{sec:menu}, são exibidas e seu funcionamento descrito. Existem dois tipos de janelas disponibilizadas pela ferramenta computacional: \textit{Canvas}, que funciona como um reprodutor de vídeo, exibindo elementos gráficos sucessivamente; \textit{Jobs}, exibe todas as demandas criadas pelo programa enviadas à thread inteligente \textit{WiseThreadTool}. Esta última janela pode ser intstanciada apenas uma vez, enquanto diversos \textit{Canvas} podem ser disponibilizados e exibir diferentes objetos.
+Nesta seção seão descritas as janelas disponíveis no menu, descrito na Seção~\ref{sec:menu}. Existem dois tipos de janelas disponibilizadas pela ferramenta computacional: \textit{Canvas}, que funciona como um reprodutor de vídeo, exibindo elementos gráficos sucessivamente; \textit{Jobs}, exibe todas as demandas criadas pelo programa enviadas à \textit{thread} inteligente \textit{WiseThreadTool}. Esta última janela pode ser intstanciada apenas uma vez, enquanto diversos \textit{Canvas} podem ser disponibilizados e exibir diferentes objetos.
 
 %--------------------------------------------------------------------------------%
 \subsection{JANELA CANVAS}\label{sec:janela_canvas}
@@ -1816,12 +1812,12 @@ A janela e área de trabalho \textit{Canvas} possibilita que o usuário selecion
 \begin{itemize}
 	\item \textbf{Pause}: Pausa a animação do objeto gráfico.
 	\item \textbf{Repeat}: Este botão tem um funcionamento liga e desliga, ao ser ligado, quando a animação chegar ao último elemento gráfico retornará ao primeiro.
-	\item \textbf{Play}:Este botão também tem um funcionamento liga e desliga, ao ser ligado, o elemento gráfico irá percorrer por todos os quadros da animação.
+	\item \textbf{Play}: Este botão também tem um funcionamento liga e desliga, ao ser ligado, o elemento gráfico irá percorrer por todos os quadros da animação.
 	\item \textbf{Avançar quadro}: Avança um quadro da animação.
 	\item \textbf{Stop}: Caso o \textit{Play} esteja ativo ele é desativado e a tela volta ao primeiro elemento gráfico da animação.
 \end{itemize}
 
-Todas as funções do \textit{Canvas} só são disponibilizadas ao usuário depois que um objeto gráfico é ligado à tela \textit{OpenGl}. Neste cenário, quando cada quadro é selecionado é alterado quais objetos gráficos \textit{GraphicObject} estarão no estado aquecido \textit{Hot}. Isto foi feito utilizando a conexão entre objetos \textit{QObjects} e os elementos gráficos \textit{QWidget},desta forma a tela é capaz de acionar diretamente a estrutura do \textit{WiseThreadPool} e selecionar quais elementos debem ser aquecidos e exibidos. A mesma conexão é responsável por enviar a linha de comando da aba \textit{Console} à \textit{WiseThreadPool} para que seja executada e em seguida enviar a mensagem de resposta ao elemento textual.
+Todas as funções do \textit{Canvas} só são disponibilizadas ao usuário depois que um objeto gráfico é ligado à tela \textit{OpenGl}. Neste cenário, quando cada quadro é selecionado é alterado quais objetos gráficos \textit{GraphicObject} estarão no estado aquecido \textit{Hot}. Isto foi feito utilizando a conexão entre objetos \textit{QObjects} e os elementos gráficos \textit{QWidget},desta forma a tela é capaz de acionar diretamente a estrutura do \textit{WiseThreadPool} e selecionar quais elementos devem ser aquecidos e exibidos. A mesma conexão é responsável por enviar a linha de comando da aba \textit{Console} à \textit{WiseThreadPool} para que seja executada e em seguida enviar a mensagem de resposta ao elemento textual.
 
 \begin{figure}[!htbp]
 	\centering
@@ -1830,12 +1826,12 @@ Todas as funções do \textit{Canvas} só são disponibilizadas ao usuário depo
 	\label{fig:canvas}
 \end{figure}
 
-Durante sua execução esta janela irá selecionar o elemento gráfico \textit{GraphicElement} que deve ser exibido, selecionando o elemento através do objeto gráfico \textit{GraphicObject}. Para que o elemento seja exibido corretamente ele precisa estar no estado \textit{Hot}, que representa o momento em que o elemento está corretamente carregado em memória com o modelo geométrico e o parâmetro à ser exibido. Portanto, ao selecionar o elemento à ser exibido o \textit{Canvas} irá criar trabalhos de aquecimento de elementos. A coleção de objetos gráficos \textit{GraphicModel} é encarregada de enviar estes trabalhos a thread inteligente \textit{WiseThreadPool}.
+Durante sua execução esta janela irá selecionar o elemento gráfico \textit{GraphicElement} que deve ser exibido, selecionando o elemento através do objeto gráfico \textit{GraphicObject}. Para que o elemento seja exibido corretamente ele precisa estar no estado \textit{Hot}, que representa o momento em que o elemento está corretamente carregado em memória com o modelo geométrico e o parâmetro à ser exibido. Portanto, ao selecionar o elemento o \textit{Canvas} irá criar trabalhos de aquecimento dos elementos. A coleção de objetos gráficos \textit{GraphicModel} é encarregada de enviar estes trabalhos a \textit{thread} inteligente \textit{WiseThreadPool}.
 
 %--------------------------------------------------------------------------------%
 \subsection{JANELA JOBS}\label{sec:janela_jobs}
 
-A janela \textit{Jobs} exibe uma listagem compreensiva dos processos inciados e enviados à thread inteligente \textit{WiseThreadPool}, cada comando executado via \textit{Console} ou elemento de interface gráfica irá gerar processos listados nesta janela.
+A janela \textit{Jobs} exibe uma listagem compreensiva dos processos inciados e enviados à \textit{thread} inteligente \textit{WiseThreadPool}, cada comando executado via \textit{Console} ou elemento de interface gráfica irá gerar processos listados nesta janela.
 
 \begin{figure}[!htbp]
 	\centering
@@ -1844,7 +1840,7 @@ A janela \textit{Jobs} exibe uma listagem compreensiva dos processos inciados e 
 	\label{fig:jobs}
 \end{figure}
 
-A Figura~\ref{fig:jobs} demonstra a tabela obtida lista todos os trabalhos recebidos pela thread inteligente \textit{WiseThread} e suas propriedades. Cada linha nesta janela representa um \textit{WiseJob}, as colunas descrevem propriedades de cada trabalho:
+A Figura~\ref{fig:jobs} demonstra a tabela obtida lista todos os trabalhos recebidos pela \textit{thread} inteligente \textit{WiseThread} e suas propriedades. Cada linha nesta janela representa um \textit{WiseJob}, as colunas descrevem propriedades de cada trabalho:
 
 \begin{itemize}
 	\item \textbf{ID}: Número de identificação.
@@ -1865,4 +1861,4 @@ A Figura~\ref{fig:jobs} demonstra a tabela obtida lista todos os trabalhos receb
 	\label{fig:jobs2}
 \end{figure}
 
-A Figura~\ref{fig:jobs2} demonstra as cinco listas exibidas ao selecionar a aba \textit{Timetable} da janela \textit{Jobs}. A primeira lista \textit{All Jobs} lista todos os trabalhos criados e as listas subsequentes listam as listas presentes no gerenciador de threads \textit{WiseThreadPool} descritas na Seção~\ref{sec:trabalhos}. Desta forma é possível verificar os trabalhos que aguardam execução, estão sendo executados e foram finalizados.
+A Figura~\ref{fig:jobs2} demonstra as cinco listas exibidas ao selecionar a aba \textit{Timetable} da janela \textit{Jobs}. A primeira lista \textit{All Jobs} lista todos os trabalhos criados e as listas subsequentes listam as listas presentes no gerenciador de threads \textit{WiseThreadPool} descritas na Seção~\ref{sec:trabalhos}. Desta forma é possível verificar os trabalhos que aguardam execução, estão sendo executados ou foram finalizados.

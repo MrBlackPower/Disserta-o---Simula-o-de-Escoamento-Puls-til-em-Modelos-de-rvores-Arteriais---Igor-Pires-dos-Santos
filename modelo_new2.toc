@@ -49,34 +49,34 @@
 \contentsline {subsection}{\numberline {4.1.24}DEFINIR PARÂMETRO DE ELEMENTO}{83}{subsection.4.1.24}%
 \contentsline {subsection}{\numberline {4.1.25}DEFINIR TODOS OS PARÂMETROS DE ELEMENTO}{83}{subsection.4.1.25}%
 \contentsline {subsection}{\numberline {4.1.26}LISTAR FÁBRICAS DE ELEMENTO}{84}{subsection.4.1.26}%
-\contentsline {subsection}{\numberline {4.1.27}LISTAR EXEMPLOS DISPONÍVEIS DE ELEMENTO}{84}{subsection.4.1.27}%
+\contentsline {subsection}{\numberline {4.1.27}LISTAR EXEMPLOS DISPONÍVEIS DE ELEMENTO}{85}{subsection.4.1.27}%
 \contentsline {subsection}{\numberline {4.1.28}CRIAR OBJETO}{85}{subsection.4.1.28}%
 \contentsline {subsection}{\numberline {4.1.29}CLONAR OBJETO}{86}{subsection.4.1.29}%
-\contentsline {subsection}{\numberline {4.1.30}LISTAR OBJETOS}{86}{subsection.4.1.30}%
-\contentsline {subsection}{\numberline {4.1.31}IMPRIMIR OBJETO}{86}{subsection.4.1.31}%
+\contentsline {subsection}{\numberline {4.1.30}LISTAR OBJETOS}{87}{subsection.4.1.30}%
+\contentsline {subsection}{\numberline {4.1.31}IMPRIMIR OBJETO}{87}{subsection.4.1.31}%
 \contentsline {subsection}{\numberline {4.1.32}EXCLUIR OBJETO}{87}{subsection.4.1.32}%
-\contentsline {subsection}{\numberline {4.1.33}SALVAR OBJETO}{87}{subsection.4.1.33}%
+\contentsline {subsection}{\numberline {4.1.33}SALVAR OBJETO}{88}{subsection.4.1.33}%
 \contentsline {subsection}{\numberline {4.1.34}CARREGAR OBJETO}{88}{subsection.4.1.34}%
-\contentsline {subsection}{\numberline {4.1.35}EXPORTAR OBJETO}{88}{subsection.4.1.35}%
+\contentsline {subsection}{\numberline {4.1.35}EXPORTAR OBJETO}{89}{subsection.4.1.35}%
 \contentsline {subsection}{\numberline {4.1.36}DEFINIR PARÂMETROS DE OBJETO}{89}{subsection.4.1.36}%
-\contentsline {subsection}{\numberline {4.1.37}SETAR OBJETO}{89}{subsection.4.1.37}%
+\contentsline {subsection}{\numberline {4.1.37}DEFINIR OBJETO}{90}{subsection.4.1.37}%
 \contentsline {subsection}{\numberline {4.1.38}ITERAR OBJETO}{90}{subsection.4.1.38}%
-\contentsline {subsection}{\numberline {4.1.39}LISTAR FÁBRICAS DE ITERAÇÃO DE OBJETO}{90}{subsection.4.1.39}%
+\contentsline {subsection}{\numberline {4.1.39}LISTAR FÁBRICAS DE ITERAÇÃO DE OBJETO}{91}{subsection.4.1.39}%
 \contentsline {subsection}{\numberline {4.1.40}DEFINIR FÁBRICA DE ITERAÇÃO DE OBJETO}{91}{subsection.4.1.40}%
-\contentsline {subsection}{\numberline {4.1.41}LISTAR FÁBRICAS GRÁFICAS DE OBJETO}{91}{subsection.4.1.41}%
-\contentsline {subsection}{\numberline {4.1.42}DEFINIR FÁBRICA GRÁFICA DE OBJETO}{91}{subsection.4.1.42}%
-\contentsline {subsection}{\numberline {4.1.43}LISTAR OBJETOS GRÁFICOS}{92}{subsection.4.1.43}%
+\contentsline {subsection}{\numberline {4.1.41}LISTAR FÁBRICAS GRÁFICAS DE OBJETO}{92}{subsection.4.1.41}%
+\contentsline {subsection}{\numberline {4.1.42}DEFINIR FÁBRICA GRÁFICA DE OBJETO}{92}{subsection.4.1.42}%
+\contentsline {subsection}{\numberline {4.1.43}LISTAR OBJETOS GRÁFICOS}{93}{subsection.4.1.43}%
 \contentsline {subsection}{\numberline {4.1.44}LISTAR CANVAS}{93}{subsection.4.1.44}%
-\contentsline {subsection}{\numberline {4.1.45}LINK GRÁFICO}{93}{subsection.4.1.45}%
+\contentsline {subsection}{\numberline {4.1.45}LINK GRÁFICO}{94}{subsection.4.1.45}%
 \contentsline {subsection}{\numberline {4.1.46}TERMINAR LINK GRÁFICO}{94}{subsection.4.1.46}%
-\contentsline {section}{\numberline {4.2}CASO DE USO}{94}{section.4.2}%
-\contentsline {section}{\numberline {4.3}JANELA PRINCIPAL}{96}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}MENU}{98}{subsection.4.3.1}%
+\contentsline {section}{\numberline {4.2}CASO DE USO}{95}{section.4.2}%
+\contentsline {section}{\numberline {4.3}JANELA PRINCIPAL}{98}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}MENU}{99}{subsection.4.3.1}%
 \contentsline {subsection}{\numberline {4.3.2}ABAS \& ÁREA DE TRABALHO}{99}{subsection.4.3.2}%
-\contentsline {section}{\numberline {4.4}ÁRVORE DE PROJETOS}{100}{section.4.4}%
-\contentsline {section}{\numberline {4.5}JANELAS}{102}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}JANELA CANVAS}{102}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}JANELA JOBS}{104}{subsection.4.5.2}%
+\contentsline {section}{\numberline {4.4}ÁRVORE DE PROJETOS}{102}{section.4.4}%
+\contentsline {section}{\numberline {4.5}JANELAS}{103}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}JANELA CANVAS}{103}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}JANELA JOBS}{105}{subsection.4.5.2}%
 \contentsline {chapter}{\numberline {5}RESULTADOS NUMÉRICOS E DISCUSSÕES}{107}{chapter.5}%
 \contentsline {section}{\numberline {5.1}ESCOAMENTO VISCOSO}{108}{section.5.1}%
 \contentsline {section}{\numberline {5.2}SEGMENTO VISCOELÁSTICO}{108}{section.5.2}%
