@@ -72,7 +72,7 @@
 \contentsline {section}{\numberline {4.2}CASO DE USO}{95}{section.4.2}%
 \contentsline {section}{\numberline {4.3}JANELA PRINCIPAL}{98}{section.4.3}%
 \contentsline {subsection}{\numberline {4.3.1}MENU}{99}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}ABAS \& ÁREA DE TRABALHO}{99}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.2}ABAS E ÁREA DE TRABALHO}{99}{subsection.4.3.2}%
 \contentsline {section}{\numberline {4.4}ÁRVORE DE PROJETOS}{102}{section.4.4}%
 \contentsline {section}{\numberline {4.5}JANELAS}{103}{section.4.5}%
 \contentsline {subsection}{\numberline {4.5.1}JANELA CANVAS}{103}{subsection.4.5.1}%
@@ -85,7 +85,7 @@
 \contentsline {chapter}{\numberline {A}PROCESSO DE COMPILAÇÃO}{117}{appendix.1.A}%
 \contentsline {section}{\numberline {A.1}INSTALAR QT}{117}{section.1.A.1}%
 \contentsline {section}{\numberline {A.2}INSTALAR BIBLIOTECAS SECUNDÁRIAS}{117}{section.1.A.2}%
-\contentsline {section}{\numberline {A.3}CLONAR \& COMPILAR REPOSITÓRIO}{118}{section.1.A.3}%
+\contentsline {section}{\numberline {A.3}CLONAR E COMPILAR REPOSITÓRIO}{118}{section.1.A.3}%
 \contentsline {subsection}{\numberline {A.3.1}COMPILAR COM QTCREATOR}{118}{subsection.1.A.3.1}%
 \contentsline {subsection}{\numberline {A.3.2}OUTROS}{118}{subsection.1.A.3.2}%
 \contentsline {chapter}{\numberline {B}FORMATO DE ARQUIVO DE COMANDOS}{119}{appendix.1.B}%
