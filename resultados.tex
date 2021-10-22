@@ -1,4 +1,4 @@
-\chapter{RESULTADOS NUMÉRICOS E DISCUSSÕES}\label{sec:resultados}
+\chapter{RESULTADOS NUMÉRICOS}\label{sec:resultados}
 
 %\begin{itemize}
 %	\item \textcolor{red}{IGOR: já fiz uma primeira revisão deste capítulo e indico em vermelho o que deve fazer para melhorar este capítulo. Tudo que acrescentar ou mudar coloque em azul.} \textcolor{green}{OK}
@@ -118,3 +118,16 @@ Nas Figuras~\ref{fig5a:arterial-tree}, \ref{fig5b:arterial-tree}, o efeito da vi
 	\caption{Amplitude da pressão $|P|$ ao longo da árvore arterial considerando diferentes valores de viscoelasticidade $\phi_0$ e frequências: (a) $f$ = 10,95 Hz, (b) $f$ = 14,60 Hz.}
 	\label{fig5b:arterial-tree}%
 \end{figure}
+
+%--------------------------------------------------------------------------------%
+\chapter{RESULTADOS COMPUTACIONAIS}\label{sec:resultados2}
+
+Nesta seção, apresentam-se resultados obtidos com a implementação da ferramenta computacional em seus dois ambientes \textit{IGU} e \textit{InGU}. As simulações realizadas aqui tratam da aplicação da ferramenta na obtenção de resultados do escoamento pulsátil em um modelo de árvore arterial. Os resultados de ambas as versões serão apresentados e comparados com a versão anteriormente apresentada.
+
+O arquivo \textit{CMakeList.cmake} é o responsável por interpretar o projeto \textit{Qt} e corretamente compilar as bibliotecas necessárias. Na interface \textit{IDE} do \textit{QtCreator} este arquivo contém as instruções para compilar todos os ambientes e a versão anterior da ferramenta computacional. A versão anterior da ferramenta computacional \textit{IGU} exporta seus resultados em arquivos \textit{VTK}, estes arquivos podem ser lidos pela nova versão ou ainda utilizados em outro ambiente.
+
+Na Figura X observamos como a interface gráfica do usuário possui duas telas de \textit{Canvas} e diversos botões na janela principal. O funcionamento desta interface é muito similar ao da nova interface, entretanto está muito mais ligada exclusivamente à simulação do escoamento pulsátil. Dois \textit{Canvas} possibilitam a exibição de uma árvore arterial e seu gráfico ao mesmo tempo, entretanto prende estes dois elementos na janela principal. Com o esquema de janelas desenvolvido na nova versão da ferramenta é possível que diversos objetos gráficos sejam exibidos ao mesmo tempo.
+
+Outra grande diferença é que o processo iterativo dos modelos estavam atrelado ao uso dos elementos gráficos, sem a possibilidade de executar uma sequência de comandos de uma só vez. Portanto não é possível utilizar a ferramenta computacional nesta versão precisando seu tempo de execução porque o seu processo de configuração requer interação com a interface de usuário. Através dos comandos disponibilizados na Seção~\ref{sec:console} é possível que objetos inteligentes executem uma bateria de comandos e seu desempenho medido e comparado.
+
+Finalmente como visto na Seção 
