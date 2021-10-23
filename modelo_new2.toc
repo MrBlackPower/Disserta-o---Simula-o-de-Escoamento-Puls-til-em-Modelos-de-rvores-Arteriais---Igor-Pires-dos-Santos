@@ -1,95 +1,95 @@
 \babel@toc {brazil}{}
 \babel@toc {english}{}
 \babel@toc {brazil}{}
-\contentsline {chapter}{\numberline {1}INTRODUÇÃO}{12}{chapter.1}%
-\contentsline {section}{\numberline {1.1}OBJETIVOS}{13}{section.1.1}%
-\contentsline {section}{\numberline {1.2}ORGANIZAÇÃO}{14}{section.1.2}%
-\contentsline {chapter}{\numberline {2}MODELAGEM DO ESCOAMENTO SANGUÍNEO}{16}{chapter.2}%
-\contentsline {section}{\numberline {2.1}MODELO MATEMÁTICO}{16}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}CÁLCULO DA PRESSÃO E DO FLUXO SANGUÍNEO}{19}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}CÁLCULO DO COEFICIENTES DE REFLEXÃO E ADMITÂNCIA}{22}{subsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.1.3}CÁLCULO DA IMPEDÂNCIA DE ENTRADA}{23}{subsection.2.1.3}%
-\contentsline {subsection}{\numberline {2.1.4}INCORPORAÇÃO DA VISCOSIDADE E VISCOELASTICIDADE NO MODELO}{23}{subsection.2.1.4}%
-\contentsline {chapter}{\numberline {3}FERRAMENTA COMPUTACIONAL}{25}{chapter.3}%
-\contentsline {section}{\numberline {3.1}MODELAGEM COMPUTACIONAL}{27}{section.3.1}%
-\contentsline {section}{\numberline {3.2}ESTRUTURA DE DADOS}{33}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}ELEMENTO INTELIGENTE}{34}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}FÁBRICA}{42}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}OBJETO INTELIGENTE}{44}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}OBJETO GRÁFICO}{48}{subsection.3.2.4}%
-\contentsline {subsection}{\numberline {3.2.5}PROJETO INTELIGENTE}{51}{subsection.3.2.5}%
-\contentsline {subsection}{\numberline {3.2.6}FÁBRICA DE PROJETO}{52}{subsection.3.2.6}%
-\contentsline {subsection}{\numberline {3.2.7}THREADS INTELIGENTES}{53}{subsection.3.2.7}%
-\contentsline {subsection}{\numberline {3.2.8}TRABALHOS INTELIGENTES}{59}{subsection.3.2.8}%
-\contentsline {chapter}{\numberline {4}USABILIDADE DA FERRAMENTA COMPUTACIONAL}{62}{chapter.4}%
-\contentsline {section}{\numberline {4.1}CONSOLE}{63}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}AJUDA}{64}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}LER ARQUIVO DE ENTRADA}{65}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}BATERIA DE TESTES}{66}{subsection.4.1.3}%
-\contentsline {subsection}{\numberline {4.1.4}LISTA DE TESTES}{67}{subsection.4.1.4}%
-\contentsline {subsection}{\numberline {4.1.5}CASO DE TESTE}{67}{subsection.4.1.5}%
-\contentsline {subsection}{\numberline {4.1.6}TESTAR EQUIDADE DE ARQUIVOS}{67}{subsection.4.1.6}%
-\contentsline {subsection}{\numberline {4.1.7}CRIAR PROJETO}{68}{subsection.4.1.7}%
-\contentsline {subsection}{\numberline {4.1.8}USAR PROJETO}{69}{subsection.4.1.8}%
-\contentsline {subsection}{\numberline {4.1.9}LISTAR PROJETOS}{69}{subsection.4.1.9}%
-\contentsline {subsection}{\numberline {4.1.10}IMPRIMIR PROJETO}{69}{subsection.4.1.10}%
-\contentsline {subsection}{\numberline {4.1.11}EXCLUIR PROJETO}{70}{subsection.4.1.11}%
-\contentsline {subsection}{\numberline {4.1.12}SALVAR PROJETO}{70}{subsection.4.1.12}%
-\contentsline {subsection}{\numberline {4.1.13}CARREGAR PROJETO}{71}{subsection.4.1.13}%
-\contentsline {subsection}{\numberline {4.1.14}CRIAR ELEMENTO}{71}{subsection.4.1.14}%
-\contentsline {subsection}{\numberline {4.1.15}CLONAR ELEMENTO}{72}{subsection.4.1.15}%
-\contentsline {subsection}{\numberline {4.1.16}LISTAR ELEMENTOS}{72}{subsection.4.1.16}%
-\contentsline {subsection}{\numberline {4.1.17}IMPRIMIR ELEMENTO}{72}{subsection.4.1.17}%
-\contentsline {subsection}{\numberline {4.1.18}EXCLUIR ELEMENTO}{73}{subsection.4.1.18}%
-\contentsline {subsection}{\numberline {4.1.19}SALVAR ELEMENTO}{73}{subsection.4.1.19}%
-\contentsline {subsection}{\numberline {4.1.20}CARREGAR ELEMENTO}{74}{subsection.4.1.20}%
-\contentsline {subsection}{\numberline {4.1.21}LISTAR EXPORTAÇÕES DO ELEMENTO}{74}{subsection.4.1.21}%
-\contentsline {subsection}{\numberline {4.1.22}EXPORTAR ELEMENTO}{75}{subsection.4.1.22}%
-\contentsline {subsection}{\numberline {4.1.23}ESCALAR ELEMENTO}{75}{subsection.4.1.23}%
-\contentsline {subsection}{\numberline {4.1.24}DEFINIR PARÂMETRO DE ELEMENTO}{76}{subsection.4.1.24}%
-\contentsline {subsection}{\numberline {4.1.25}DEFINIR TODOS OS PARÂMETROS DE ELEMENTO}{76}{subsection.4.1.25}%
-\contentsline {subsection}{\numberline {4.1.26}LISTAR FÁBRICAS DE ELEMENTO}{77}{subsection.4.1.26}%
-\contentsline {subsection}{\numberline {4.1.27}LISTAR EXEMPLOS DISPONÍVEIS DE ELEMENTO}{78}{subsection.4.1.27}%
-\contentsline {subsection}{\numberline {4.1.28}CRIAR OBJETO}{78}{subsection.4.1.28}%
-\contentsline {subsection}{\numberline {4.1.29}CLONAR OBJETO}{79}{subsection.4.1.29}%
-\contentsline {subsection}{\numberline {4.1.30}LISTAR OBJETOS}{80}{subsection.4.1.30}%
-\contentsline {subsection}{\numberline {4.1.31}IMPRIMIR OBJETO}{80}{subsection.4.1.31}%
-\contentsline {subsection}{\numberline {4.1.32}EXCLUIR OBJETO}{80}{subsection.4.1.32}%
-\contentsline {subsection}{\numberline {4.1.33}SALVAR OBJETO}{81}{subsection.4.1.33}%
-\contentsline {subsection}{\numberline {4.1.34}CARREGAR OBJETO}{81}{subsection.4.1.34}%
-\contentsline {subsection}{\numberline {4.1.35}EXPORTAR OBJETO}{82}{subsection.4.1.35}%
-\contentsline {subsection}{\numberline {4.1.36}DEFINIR PARÂMETROS DE OBJETO}{82}{subsection.4.1.36}%
-\contentsline {subsection}{\numberline {4.1.37}DEFINIR OBJETO}{83}{subsection.4.1.37}%
-\contentsline {subsection}{\numberline {4.1.38}ITERAR OBJETO}{83}{subsection.4.1.38}%
-\contentsline {subsection}{\numberline {4.1.39}LISTAR FÁBRICAS DE ITERAÇÃO DE OBJETO}{84}{subsection.4.1.39}%
-\contentsline {subsection}{\numberline {4.1.40}DEFINIR FÁBRICA DE ITERAÇÃO DE OBJETO}{84}{subsection.4.1.40}%
-\contentsline {subsection}{\numberline {4.1.41}LISTAR FÁBRICAS GRÁFICAS DE OBJETO}{85}{subsection.4.1.41}%
-\contentsline {subsection}{\numberline {4.1.42}DEFINIR FÁBRICA GRÁFICA DE OBJETO}{85}{subsection.4.1.42}%
-\contentsline {subsection}{\numberline {4.1.43}LISTAR OBJETOS GRÁFICOS}{86}{subsection.4.1.43}%
-\contentsline {subsection}{\numberline {4.1.44}LISTAR CANVAS}{86}{subsection.4.1.44}%
-\contentsline {subsection}{\numberline {4.1.45}LINK GRÁFICO}{87}{subsection.4.1.45}%
-\contentsline {subsection}{\numberline {4.1.46}TERMINAR LINK GRÁFICO}{87}{subsection.4.1.46}%
-\contentsline {section}{\numberline {4.2}CASO DE USO}{88}{section.4.2}%
-\contentsline {section}{\numberline {4.3}JANELA PRINCIPAL}{91}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}MENU}{92}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}ABAS E ÁREA DE TRABALHO}{92}{subsection.4.3.2}%
-\contentsline {section}{\numberline {4.4}ÁRVORE DE PROJETOS}{95}{section.4.4}%
-\contentsline {section}{\numberline {4.5}JANELAS}{96}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}JANELA CANVAS}{96}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}JANELA JOBS}{98}{subsection.4.5.2}%
-\contentsline {chapter}{\numberline {5}RESULTADOS NUMÉRICOS}{100}{chapter.5}%
-\contentsline {section}{\numberline {5.1}ESCOAMENTO VISCOSO}{101}{section.5.1}%
-\contentsline {section}{\numberline {5.2}SEGMENTO VISCOELÁSTICO}{101}{section.5.2}%
-\contentsline {section}{\numberline {5.3}ESCOAMENTO VISCOSO EM SEGMENTO VISCOELÁSTICO}{106}{section.5.3}%
-\contentsline {chapter}{\numberline {6}RESULTADOS COMPUTACIONAIS}{109}{chapter.6}%
-\contentsline {chapter}{\numberline {7}CONCLUSÕES E TRABALHOS FUTUROS}{114}{chapter.7}%
-\contentsline {chapter}{\numberline {A}PROCESSO DE COMPILAÇÃO}{115}{appendix.1.A}%
-\contentsline {section}{\numberline {A.1}INSTALAR QT}{115}{section.1.A.1}%
-\contentsline {section}{\numberline {A.2}INSTALAR BIBLIOTECAS SECUNDÁRIAS}{115}{section.1.A.2}%
-\contentsline {section}{\numberline {A.3}CLONAR E COMPILAR REPOSITÓRIO}{116}{section.1.A.3}%
-\contentsline {subsection}{\numberline {A.3.1}COMPILAR COM QTCREATOR}{116}{subsection.1.A.3.1}%
-\contentsline {subsection}{\numberline {A.3.2}OUTROS}{116}{subsection.1.A.3.2}%
-\contentsline {chapter}{\numberline {B}FORMATO DE ARQUIVO DE COMANDOS}{117}{appendix.1.B}%
-\contentsline {chapter}{\numberline {C}FORMATO DE ARQUIVO DE ELEMENTO INTELIGENTE}{119}{appendix.1.C}%
-\contentsline {chapter}{\numberline {D}FORMATO DE ARQUIVO DE OBJETO INTELIGENTE}{120}{appendix.1.D}%
-\contentsline {chapter}{REFER\^ENCIAS}{123}{lstnumber.-2.149}%
+\contentsline {chapter}{\numberline {1}INTRODUÇÃO}{19}{chapter.1}%
+\contentsline {section}{\numberline {1.1}OBJETIVOS}{21}{section.1.1}%
+\contentsline {section}{\numberline {1.2}ORGANIZAÇÃO}{22}{section.1.2}%
+\contentsline {chapter}{\numberline {2}MODELAGEM DO ESCOAMENTO SANGUÍNEO}{23}{chapter.2}%
+\contentsline {section}{\numberline {2.1}MODELO MATEMÁTICO}{23}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}CÁLCULO DA PRESSÃO E DO FLUXO SANGUÍNEO}{27}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}CÁLCULO DO COEFICIENTES DE REFLEXÃO E ADMITÂNCIA}{29}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}CÁLCULO DA IMPEDÂNCIA DE ENTRADA}{30}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}INCORPORAÇÃO DA VISCOSIDADE E VISCOELASTICIDADE NO MODELO}{30}{subsection.2.1.4}%
+\contentsline {chapter}{\numberline {3}FERRAMENTA COMPUTACIONAL}{32}{chapter.3}%
+\contentsline {section}{\numberline {3.1}MODELAGEM COMPUTACIONAL}{34}{section.3.1}%
+\contentsline {section}{\numberline {3.2}ESTRUTURA DE DADOS}{40}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}ELEMENTO INTELIGENTE}{41}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}FÁBRICA}{49}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}OBJETO INTELIGENTE}{51}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}OBJETO GRÁFICO}{55}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}PROJETO INTELIGENTE}{58}{subsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.2.6}FÁBRICA DE PROJETO}{59}{subsection.3.2.6}%
+\contentsline {subsection}{\numberline {3.2.7}THREADS INTELIGENTES}{60}{subsection.3.2.7}%
+\contentsline {subsection}{\numberline {3.2.8}TRABALHOS INTELIGENTES}{66}{subsection.3.2.8}%
+\contentsline {chapter}{\numberline {4}USABILIDADE DA FERRAMENTA COMPUTACIONAL}{69}{chapter.4}%
+\contentsline {section}{\numberline {4.1}CONSOLE}{70}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}AJUDA}{71}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}LER ARQUIVO DE ENTRADA}{71}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}BATERIA DE TESTES}{73}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}LISTA DE TESTES}{74}{subsection.4.1.4}%
+\contentsline {subsection}{\numberline {4.1.5}CASO DE TESTE}{74}{subsection.4.1.5}%
+\contentsline {subsection}{\numberline {4.1.6}TESTAR EQUIDADE DE ARQUIVOS}{74}{subsection.4.1.6}%
+\contentsline {subsection}{\numberline {4.1.7}CRIAR PROJETO}{75}{subsection.4.1.7}%
+\contentsline {subsection}{\numberline {4.1.8}USAR PROJETO}{76}{subsection.4.1.8}%
+\contentsline {subsection}{\numberline {4.1.9}LISTAR PROJETOS}{76}{subsection.4.1.9}%
+\contentsline {subsection}{\numberline {4.1.10}IMPRIMIR PROJETO}{76}{subsection.4.1.10}%
+\contentsline {subsection}{\numberline {4.1.11}EXCLUIR PROJETO}{77}{subsection.4.1.11}%
+\contentsline {subsection}{\numberline {4.1.12}SALVAR PROJETO}{77}{subsection.4.1.12}%
+\contentsline {subsection}{\numberline {4.1.13}CARREGAR PROJETO}{78}{subsection.4.1.13}%
+\contentsline {subsection}{\numberline {4.1.14}CRIAR ELEMENTO}{78}{subsection.4.1.14}%
+\contentsline {subsection}{\numberline {4.1.15}CLONAR ELEMENTO}{79}{subsection.4.1.15}%
+\contentsline {subsection}{\numberline {4.1.16}LISTAR ELEMENTOS}{79}{subsection.4.1.16}%
+\contentsline {subsection}{\numberline {4.1.17}IMPRIMIR ELEMENTO}{79}{subsection.4.1.17}%
+\contentsline {subsection}{\numberline {4.1.18}EXCLUIR ELEMENTO}{80}{subsection.4.1.18}%
+\contentsline {subsection}{\numberline {4.1.19}SALVAR ELEMENTO}{80}{subsection.4.1.19}%
+\contentsline {subsection}{\numberline {4.1.20}CARREGAR ELEMENTO}{81}{subsection.4.1.20}%
+\contentsline {subsection}{\numberline {4.1.21}LISTAR EXPORTAÇÕES DO ELEMENTO}{81}{subsection.4.1.21}%
+\contentsline {subsection}{\numberline {4.1.22}EXPORTAR ELEMENTO}{82}{subsection.4.1.22}%
+\contentsline {subsection}{\numberline {4.1.23}ESCALAR ELEMENTO}{82}{subsection.4.1.23}%
+\contentsline {subsection}{\numberline {4.1.24}DEFINIR PARÂMETRO DE ELEMENTO}{83}{subsection.4.1.24}%
+\contentsline {subsection}{\numberline {4.1.25}DEFINIR TODOS OS PARÂMETROS DE ELEMENTO}{83}{subsection.4.1.25}%
+\contentsline {subsection}{\numberline {4.1.26}LISTAR FÁBRICAS DE ELEMENTO}{84}{subsection.4.1.26}%
+\contentsline {subsection}{\numberline {4.1.27}LISTAR EXEMPLOS DISPONÍVEIS DE ELEMENTO}{85}{subsection.4.1.27}%
+\contentsline {subsection}{\numberline {4.1.28}CRIAR OBJETO}{85}{subsection.4.1.28}%
+\contentsline {subsection}{\numberline {4.1.29}CLONAR OBJETO}{86}{subsection.4.1.29}%
+\contentsline {subsection}{\numberline {4.1.30}LISTAR OBJETOS}{87}{subsection.4.1.30}%
+\contentsline {subsection}{\numberline {4.1.31}IMPRIMIR OBJETO}{87}{subsection.4.1.31}%
+\contentsline {subsection}{\numberline {4.1.32}EXCLUIR OBJETO}{87}{subsection.4.1.32}%
+\contentsline {subsection}{\numberline {4.1.33}SALVAR OBJETO}{88}{subsection.4.1.33}%
+\contentsline {subsection}{\numberline {4.1.34}CARREGAR OBJETO}{88}{subsection.4.1.34}%
+\contentsline {subsection}{\numberline {4.1.35}EXPORTAR OBJETO}{89}{subsection.4.1.35}%
+\contentsline {subsection}{\numberline {4.1.36}DEFINIR PARÂMETROS DE OBJETO}{89}{subsection.4.1.36}%
+\contentsline {subsection}{\numberline {4.1.37}DEFINIR OBJETO}{90}{subsection.4.1.37}%
+\contentsline {subsection}{\numberline {4.1.38}ITERAR OBJETO}{90}{subsection.4.1.38}%
+\contentsline {subsection}{\numberline {4.1.39}LISTAR FÁBRICAS DE ITERAÇÃO DE OBJETO}{91}{subsection.4.1.39}%
+\contentsline {subsection}{\numberline {4.1.40}DEFINIR FÁBRICA DE ITERAÇÃO DE OBJETO}{91}{subsection.4.1.40}%
+\contentsline {subsection}{\numberline {4.1.41}LISTAR FÁBRICAS GRÁFICAS DE OBJETO}{92}{subsection.4.1.41}%
+\contentsline {subsection}{\numberline {4.1.42}DEFINIR FÁBRICA GRÁFICA DE OBJETO}{92}{subsection.4.1.42}%
+\contentsline {subsection}{\numberline {4.1.43}LISTAR OBJETOS GRÁFICOS}{93}{subsection.4.1.43}%
+\contentsline {subsection}{\numberline {4.1.44}LISTAR CANVAS}{93}{subsection.4.1.44}%
+\contentsline {subsection}{\numberline {4.1.45}LINK GRÁFICO}{94}{subsection.4.1.45}%
+\contentsline {subsection}{\numberline {4.1.46}TERMINAR LINK GRÁFICO}{94}{subsection.4.1.46}%
+\contentsline {section}{\numberline {4.2}CASO DE USO}{95}{section.4.2}%
+\contentsline {section}{\numberline {4.3}JANELA PRINCIPAL}{98}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}MENU}{99}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}ABAS E ÁREA DE TRABALHO}{99}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}ÁRVORE DE PROJETOS}{102}{section.4.4}%
+\contentsline {section}{\numberline {4.5}JANELAS}{103}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}JANELA CANVAS}{103}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}JANELA JOBS}{105}{subsection.4.5.2}%
+\contentsline {chapter}{\numberline {5}RESULTADOS NUMÉRICOS}{107}{chapter.5}%
+\contentsline {section}{\numberline {5.1}ESCOAMENTO VISCOSO}{108}{section.5.1}%
+\contentsline {section}{\numberline {5.2}SEGMENTO VISCOELÁSTICO}{108}{section.5.2}%
+\contentsline {section}{\numberline {5.3}ESCOAMENTO VISCOSO EM SEGMENTO VISCOELÁSTICO}{113}{section.5.3}%
+\contentsline {chapter}{\numberline {6}RESULTADOS COMPUTACIONAIS}{116}{chapter.6}%
+\contentsline {chapter}{\numberline {7}CONCLUSÕES E TRABALHOS FUTUROS}{122}{chapter.7}%
+\contentsline {chapter}{\numberline {A}PROCESSO DE COMPILAÇÃO}{123}{appendix.1.A}%
+\contentsline {section}{\numberline {A.1}INSTALAR QT}{123}{section.1.A.1}%
+\contentsline {section}{\numberline {A.2}INSTALAR BIBLIOTECAS SECUNDÁRIAS}{123}{section.1.A.2}%
+\contentsline {section}{\numberline {A.3}CLONAR E COMPILAR REPOSITÓRIO}{124}{section.1.A.3}%
+\contentsline {subsection}{\numberline {A.3.1}COMPILAR COM QTCREATOR}{124}{subsection.1.A.3.1}%
+\contentsline {subsection}{\numberline {A.3.2}OUTROS}{124}{subsection.1.A.3.2}%
+\contentsline {chapter}{\numberline {B}FORMATO DE ARQUIVO DE COMANDOS}{125}{appendix.1.B}%
+\contentsline {chapter}{\numberline {C}FORMATO DE ARQUIVO DE ELEMENTO INTELIGENTE}{127}{appendix.1.C}%
+\contentsline {chapter}{\numberline {D}FORMATO DE ARQUIVO DE OBJETO INTELIGENTE}{128}{appendix.1.D}%
+\contentsline {chapter}{REFER\^ENCIAS}{131}{lstnumber.-2.149}%

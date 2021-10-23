@@ -124,7 +124,7 @@ Nas Figuras~\ref{fig5a:arterial-tree}, \ref{fig5b:arterial-tree}, o efeito da vi
 
 Nesta seção, apresentam-se resultados obtidos com a implementação da ferramenta computacional em seus dois ambientes \textit{IGU} e \textit{InGU}. As simulações realizadas aqui tratam da aplicação da ferramenta na obtenção de resultados do escoamento pulsátil em um modelo de árvore arterial. Os resultados de ambas as versões serão apresentados e comparados com a versão anteriormente apresentada.
 
-O arquivo \textit{CMakeLists.txt} é o responsável por interpretar o projeto \textit{Qt} e corretamente compilar as bibliotecas necessárias. Na interface \textit{IDE} do \textit{QtCreator} este arquivo contém as instruções para compilar todos os ambientes e a versão anterior da ferramenta computacional. A versão anterior da ferramenta computacional \textit{IGU} exporta seus resultados em arquivos \textit{VTK}, estes arquivos podem ser lidos pela nova versão ou ainda utilizados em outro ambiente.
+O arquivo \textit{CMakeLists.txt} é o responsável por interpretar o projeto \textit{Qt} e corretamente compilar as bibliotecas necessárias. Na interface \textit{IDE} do \textit{QtCreator} este arquivo contém as instruções para compilar todos os ambientes deste trabalho e um ambiente com a versão anterior da ferramenta computacional. A versão anterior da ferramenta computacional \textit{IGU} exporta seus resultados em arquivos \textit{VTK}, estes arquivos podem ser lidos pela nova versão da ferramenta ou ainda utilizados em outro ambiente.
 
 
 \begin{figure}[!htbp]
@@ -135,23 +135,23 @@ O arquivo \textit{CMakeLists.txt} é o responsável por interpretar o projeto \t
 \end{figure}
 
 
-Ao abrir o arquivo do projeto é possível verificar a existência de três projetos à serem compilados: \textit{IGU}, contendo a versão anterior antiga do progama. \textit{IGU2}, que contém a versão da ferramenta computacional apresentada neste trabalho com interface gráfica; E \textit{InGU}, contendo a estrutura de dados mais recente sem uma interface gráfica. Podemos ver estes projetos presentes na Figura~\ref{{fig:cmake}}.
+Ao abrir o arquivo do projeto é possível verificar a existência de três projetos à serem compilados: \textit{IGU}, contendo a versão anterior antiga do progama. \textit{IGU2}, que contém a versão da ferramenta computacional apresentada neste trabalho com interface gráfica; E \textit{InGU}, contendo a estrutura de dados mais recente sem uma interface gráfica. Podemos ver estes projetos presentes na Figura~\ref{fig:cmake}.
 
 Ao executar a versão mais antiga da ferramenta computacional uma estrutura de dados diferente é utilizada no processo de compilação. Isto porque os ambientes mais recentes disponibilizados \textit{IGU} e \textit{InGU} utilizam as mesmas classes e a mesma estrutura de dados.
 
 
 \begin{figure}[!htbp]
 	\centering
-	\includegraphics[scale=1.2]{Figures/IGU_old2.png}
-	\caption{Ferramenta computacional \textit{IGU} em sua versão anterior.}
+	\includegraphics[width=\linewidth]{Figures/IGU_old2.png}
+	\caption{Ferramenta computacional \textit{IGU} em sua versão mais antiga.}
 	\label{fig:IGU-old}
 \end{figure}
 
-Na Figura~\ref{fig:IGU-old} observamos como a interface gráfica do usuário possui duas telas de \textit{Canvas} e diversos botões na janela principal. O funcionamento desta interface é muito similar ao da nova interface, entretanto está muito mais ligada exclusivamente à simulação do escoamento pulsátil. Dois \textit{Canvas} possibilitam a exibição de uma árvore arterial e seu gráfico ao mesmo tempo, entretanto prende estes dois elementos na janela principal. Com o esquema de janelas desenvolvido na nova versão da ferramenta é possível que diversos objetos gráficos sejam exibidos ao mesmo tempo.
+Na Figura~\ref{fig:IGU-old} observamos como a interface gráfica do usuário possui duas telas de \textit{Canvas} e diversos botões na janela principal. O funcionamento desta interface é muito similar ao da nova interface, entretanto está muito mais ligada exclusivamente à simulação do escoamento pulsátil. Dois \textit{Canvas} possibilitam a exibição de uma árvore arterial e seu gráfico ao mesmo tempo, entretanto prende estes dois elementos na janela principal. Com o esquema de janelas desenvolvido na nova versão da ferramenta é possível que diversos objetos gráficos sejam exibidos ao mesmo tempo e estas janelas escaladas independentemente.
 
 A estrutura de dados presente na versão anterior da ferramenta computacional não apresenta os conceitos de fábrica e é incapaz de armazenar todos os estados do modelo geométrico, caso deseje-se recuperar um estado anterior é necessário reiniciar o experimento.
 
-Outra grande diferença é que o processo iterativo dos modelos estava atrelada ao uso da interface de usuário, sem a possibilidade de executar uma sequência de comandos de uma só vez. Portanto não é possível utilizar a ferramenta computacional nesta versão precisando seu tempo de execução porque o seu processo de configuração requer interação com a interface de usuário. Através dos comandos disponibilizados na Seção~\ref{sec:console} é possível que objetos inteligentes executem uma bateria de comandos e seu desempenho medido e comparado.
+Outra grande diferença é que o processo iterativo dos modelos estava atrelada ao uso da interface de usuário, sem a possibilidade de executar uma sequência de comandos de uma só vez. Portanto não é possível utilizar a ferramenta computacional nesta versão precisando seu tempo de execução porque o seu processo de configuração requer interação com a interface de usuário. Através dos comandos disponibilizados na Seção~\ref{sec:console}, presentes na versão mais atual da ferramenta, é possível que objetos inteligentes executem uma bateria de comandos e seu desempenho mensurado e analisado.
 
 Finalmente, como visto na Seção~\ref{sec:threads} a ferramenta utiliza a \textit{thread} \textit{WiseProcessor} para processar o objeto inteligente \textit{WiseObject}, este fator permite que ferramenta execute o ciclo de iteração sem afetas o funcionamento da interface gráfica de usuário ou bloquear seus recursos.
 
@@ -193,7 +193,7 @@ Para que as \textit{threads} aumentem o desempenho, os comando precisam ser divi
 Na Tabela~\ref{tab1:medium} estão registrados os tempos médios de execução do experimento.
 
 \begin{table}[!htbp]
-	\caption{Tempo de execução média do ciclo de iteração com diferentes arranjos de \textit{threads}, em negrito os melhores tempos.}
+	\caption{Tempo de execução média em milissegundos $ms$ do ciclo de iteração com diferentes arranjos de \textit{threads}, em negrito os melhores tempos.}
 	\centering{}
 	\begin{tabular}{c|c|c|c|c}
 		\toprule 
@@ -213,7 +213,13 @@ Na Tabela~\ref{tab1:medium} estão registrados os tempos médios de execução d
 	\label{tab1:medium}
 \end{table}
 
-Com estes tempos de execução construiu-se Tabela~\ref{tab1:speedup} contendo o cálculo do ganho de performance ao duplicar o número de threads.
+Com estes tempos de execução construiu-se Tabela~\ref{tab1:speedup} contendo o cálculo do ganho de performance ao duplicar o número de \textit{threads}. O \textit{speed up} $S_th$ caculado nesta tabela quantifica é dado por:
+
+\begin{equation}
+	S_th = t_{th-1}/t_{th},
+	\label{eq:speedup1}
+\end{equation}
+sendo $th \in \{1,2,4,8\}$ a quantidade de \textit{threads}.
 
 \begin{table}[!htbp]
 \caption{\textit{Speed up} do ciclo de iteração com diferentes arranjos de \textit{threads}, em negrito os melhores aumentos de desempenho.}
@@ -236,3 +242,32 @@ Com estes tempos de execução construiu-se Tabela~\ref{tab1:speedup} contendo o
 Ao duplicar o número de \textit{threads} é esperado um \textit{speed up} de $2$, entretanto a comunicação entre as \textit{threads} não permite que este número seja alcançado; Após uma quantidade de \textit{threads} este número passa a cair com a adição de novas \textit{threads}. Observamos que no caso da ferramenta computacional, reorganizar o experimento em cargas de trabalho é capaz de aumentar a velocidade da execução até mesmo em sistema com apenas uma \textit{thread}.
 
 Os resultados obtidos com $2$ e $4$ \textit{threads} foram os melhores, com esta quantidade de \textit{threads} e com o aumento da quantidade de cargas de trabalho é possível melhorar drasticamente o desempenho da ferramenta. Com $8$ \textit{threads} a ferramenta computacional apresenta um tempo médio de execução mesmo com uma quantidade maior de trabalhos.
+
+Com os mesmos resultados de tempo foi analisado o \textit{speed up} trazido pela utilização de uma quantidade maior de cargas de trabalho $w$. O \textit{speed up} $S_w$ caculado nesta tabela quantifica é dado por:
+
+\begin{equation}
+	S_w = t_{w-1}/t_{w},
+	\label{eq:speedup2}
+\end{equation}
+sendo $w \in \{1,2,4,8\}$ a quantidade cargas de trabalho.
+
+\begin{table}[!htbp]
+\caption{\textit{Speed up} do ciclo de iteração com diferentes arranjos de cargas de trabalho $w$, em negrito os melhores aumentos de desempenho.}
+\centering{}
+\begin{tabular}{c|c|c|c}
+	\toprule 
+	\textbf{Cargas de Trabalho} & $2$ & $4$  & $8$\\ 
+	\midrule 
+	\textbf{1 Thread} & \textbf{1,755} &	\textbf{1,5923} &	\textbf{1,1455} \\ 
+	\midrule 
+	\textbf{2 Threads} & 1,4332 &	1,2279 & 1,1253\\ 
+	\midrule 
+	\textbf{4 Threads} & 1,5923 &	1,4671 &	1,143\\ 
+	\midrule 
+	\textbf{8 Threads} & 1,689 &	1,574 & 1,1774	\\ 
+	\bottomrule 
+\end{tabular} 
+\label{tab1:speedup2}
+\end{table}
+
+Ao duplicar o número de cargas de trabalho $w$ é observada uma melhora expressiva no ambiente executado com uma \textit{thread}, mostrando que a ferramenta é capaz de tirar proveito dos recursos da máquina mesmo que não hajam diversos núcleos de processamento disponíveis.
