@@ -124,10 +124,115 @@ Nas Figuras~\ref{fig5a:arterial-tree}, \ref{fig5b:arterial-tree}, o efeito da vi
 
 Nesta seção, apresentam-se resultados obtidos com a implementação da ferramenta computacional em seus dois ambientes \textit{IGU} e \textit{InGU}. As simulações realizadas aqui tratam da aplicação da ferramenta na obtenção de resultados do escoamento pulsátil em um modelo de árvore arterial. Os resultados de ambas as versões serão apresentados e comparados com a versão anteriormente apresentada.
 
-O arquivo \textit{CMakeList.cmake} é o responsável por interpretar o projeto \textit{Qt} e corretamente compilar as bibliotecas necessárias. Na interface \textit{IDE} do \textit{QtCreator} este arquivo contém as instruções para compilar todos os ambientes e a versão anterior da ferramenta computacional. A versão anterior da ferramenta computacional \textit{IGU} exporta seus resultados em arquivos \textit{VTK}, estes arquivos podem ser lidos pela nova versão ou ainda utilizados em outro ambiente.
+O arquivo \textit{CMakeLists.txt} é o responsável por interpretar o projeto \textit{Qt} e corretamente compilar as bibliotecas necessárias. Na interface \textit{IDE} do \textit{QtCreator} este arquivo contém as instruções para compilar todos os ambientes e a versão anterior da ferramenta computacional. A versão anterior da ferramenta computacional \textit{IGU} exporta seus resultados em arquivos \textit{VTK}, estes arquivos podem ser lidos pela nova versão ou ainda utilizados em outro ambiente.
 
-Na Figura X observamos como a interface gráfica do usuário possui duas telas de \textit{Canvas} e diversos botões na janela principal. O funcionamento desta interface é muito similar ao da nova interface, entretanto está muito mais ligada exclusivamente à simulação do escoamento pulsátil. Dois \textit{Canvas} possibilitam a exibição de uma árvore arterial e seu gráfico ao mesmo tempo, entretanto prende estes dois elementos na janela principal. Com o esquema de janelas desenvolvido na nova versão da ferramenta é possível que diversos objetos gráficos sejam exibidos ao mesmo tempo.
 
-Outra grande diferença é que o processo iterativo dos modelos estavam atrelado ao uso dos elementos gráficos, sem a possibilidade de executar uma sequência de comandos de uma só vez. Portanto não é possível utilizar a ferramenta computacional nesta versão precisando seu tempo de execução porque o seu processo de configuração requer interação com a interface de usuário. Através dos comandos disponibilizados na Seção~\ref{sec:console} é possível que objetos inteligentes executem uma bateria de comandos e seu desempenho medido e comparado.
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=1.5]{Figures/cmake_print.png}
+	\caption{Representação do projeto aberto através do arquivo \textit{CMakeLists.txt} na interface \textit{IDE} do \textit{QtCreator}.}
+	\label{fig:cmake}
+\end{figure}
 
-Finalmente como visto na Seção 
+
+Ao abrir o arquivo do projeto é possível verificar a existência de três projetos à serem compilados: \textit{IGU}, contendo a versão anterior antiga do progama. \textit{IGU2}, que contém a versão da ferramenta computacional apresentada neste trabalho com interface gráfica; E \textit{InGU}, contendo a estrutura de dados mais recente sem uma interface gráfica. Podemos ver estes projetos presentes na Figura~\ref{{fig:cmake}}.
+
+Ao executar a versão mais antiga da ferramenta computacional uma estrutura de dados diferente é utilizada no processo de compilação. Isto porque os ambientes mais recentes disponibilizados \textit{IGU} e \textit{InGU} utilizam as mesmas classes e a mesma estrutura de dados.
+
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=1.2]{Figures/IGU_old2.png}
+	\caption{Ferramenta computacional \textit{IGU} em sua versão anterior.}
+	\label{fig:IGU-old}
+\end{figure}
+
+Na Figura~\ref{fig:IGU-old} observamos como a interface gráfica do usuário possui duas telas de \textit{Canvas} e diversos botões na janela principal. O funcionamento desta interface é muito similar ao da nova interface, entretanto está muito mais ligada exclusivamente à simulação do escoamento pulsátil. Dois \textit{Canvas} possibilitam a exibição de uma árvore arterial e seu gráfico ao mesmo tempo, entretanto prende estes dois elementos na janela principal. Com o esquema de janelas desenvolvido na nova versão da ferramenta é possível que diversos objetos gráficos sejam exibidos ao mesmo tempo.
+
+A estrutura de dados presente na versão anterior da ferramenta computacional não apresenta os conceitos de fábrica e é incapaz de armazenar todos os estados do modelo geométrico, caso deseje-se recuperar um estado anterior é necessário reiniciar o experimento.
+
+Outra grande diferença é que o processo iterativo dos modelos estava atrelada ao uso da interface de usuário, sem a possibilidade de executar uma sequência de comandos de uma só vez. Portanto não é possível utilizar a ferramenta computacional nesta versão precisando seu tempo de execução porque o seu processo de configuração requer interação com a interface de usuário. Através dos comandos disponibilizados na Seção~\ref{sec:console} é possível que objetos inteligentes executem uma bateria de comandos e seu desempenho medido e comparado.
+
+Finalmente, como visto na Seção~\ref{sec:threads} a ferramenta utiliza a \textit{thread} \textit{WiseProcessor} para processar o objeto inteligente \textit{WiseObject}, este fator permite que ferramenta execute o ciclo de iteração sem afetas o funcionamento da interface gráfica de usuário ou bloquear seus recursos.
+
+Para quantificar a melhoria de desempenho trazida pela arquitetura proposta um experimento foi elaborado. Nas simulações realizadas, calculou-se a distribuição de amplitude de pressão ao longo da árvore arterial(Figura~\ref{fig:arvore-canina}) e resultados variando três parâmetros foram executados: (i) viscosidade $\mu$, (ii) ângulo de faze $\phi$ e (iii) frequência $f$, refazendo os três cenários apresentados na Seção~\ref{sec:resultados}.
+
+\begin{table}[!htbp]
+	\caption{Parâmetros de entrada utilizados no teste de carga.}
+	\centering{}
+	\begin{tabular}{c|c}
+		\toprule 
+		Artéria	& $f \in \{3.65,7.30,10.95,14.60\}$  \\
+		\midrule 
+		Viscosidade	& $\mu \in \{0,0.5\mu_0,1.0\mu_0,1.5\mu_0\}$    \\ 
+		\midrule 
+		Ângulo de Fase	& $\phi_0 \in \{0{\circ},4{\circ},8{\circ},12{\circ}\}$  \\ 
+		\bottomrule 
+	\end{tabular} 
+	\label{tab1:entrada}
+\end{table}
+
+Na tabela \ref{tab1:entrada} estão os parâmetros de entrada utilizados para testar o desempenho da ferramenta computacional. O objetivo é realizar $64$ combinando os parâmetros de entrada e armazenar o tempo de execução.
+
+O gerenciador de \textit{threads} inteligente \textit{WiseThreadPool} é o responsável por gerenciar a quantidade de \textit{threads} utilizada pela ferramenta computacional. Primeiramente observou-se que o modelo matemático aplicado ao modelo geométrico escolhido possui uma média tempo de execução de $30ms$, enquanto uma operação de escrita e leitura demora entre$100$ e $300ms$. Como o ciclo de iteração de um objeto inteligente \textit{WiseObject} envolve diretamente operações de escrita e leitura, estas foram as \textit{threads} escolhidas à serem duplicadas. \textit{Threads} do tipo \textit{WiseConsole} e \textit{WiseProcessor} requerem uma quantidade maior de trabalhos para que se obtenha algum aumento de desempenho, no experimento escolhido o aumento da quantidade destas \textit{threads} implica diretamente no aumento do tempo de execução devido à comunicação entre as \textit{threads}.
+
+O experimento foi executado em uma máquina com o processador \textit{Intel Core I9-9900K@3.60GHz} com $4GB@2300MHz$ de memória RAM disponíveis. Para medir o tempo de execução o ambiente computacional \textit{InGU}, por não possuir interface gráfica demonstrou ser o mais rápido durante os testes.
+
+
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[width=\linewidth]{Figures/INGU.png}
+	\caption{Ferramenta computacional \textit{InGU} executando o comando de leitura de arquivo de entrada.}
+	\label{fig:INGU}
+\end{figure}
+
+Para executar o teste um arquivo de entrada com uma lista de comandos, assim como o Anexo~\ref{annex2}, foi confeccionado para criar a estrutura, realizar os cálculos, salvar os resultados e limpar o ambiente. O ambiente computacional \textit{InGU} permite sua execução com parâmetros de entrada. Ao executar o comando "\textit{./INGU read cmds arquivo}" o ambiente computacional executa o comando de leitura de arquivo de entrada e finaliza o programa. A Figura~\ref{fig:INGU} mostra este comportamento.
+
+Para que as \textit{threads} aumentem o desempenho, os comando precisam ser divididos em cargas de trabalho. Os comandos recebidos pela ferramenta são executados de forma sequencial dentro de seus respectivos grupos de trabalho. Utilizando objetos inteligente \textit{WiseObject} distintos, grupos de trabalho diferentes podem ser executados simultaneamente. Com isto o experimento foi dividido em $4$ grupos, com o número de grupo de trabalhos $w \in {1,2,4,8}$ ob tendo o tempo de execução para o número de \textit{threads} $t \in {1,2,4,8}$. Como as cargas de trabalho não compartilham objetos inteligentes \textit{WiseObject}, o uso de mais cargas afeta diretamente a quantidade de memória utilizada pela ferramenta computacional.
+
+Na Tabela~\ref{tab1:medium} estão registrados os tempos médios de execução do experimento.
+
+\begin{table}[!htbp]
+	\caption{Tempo de execução média do ciclo de iteração com diferentes arranjos de \textit{threads}, em negrito os melhores tempos.}
+	\centering{}
+	\begin{tabular}{c|c|c|c|c}
+		\toprule 
+		\textbf{Cargas de Trabalho}	& $1$ & $2$ & $4$  & $8$\\ 
+		\midrule 
+		\textbf{1 Thread} & 7854,4 &	4475,4 &	2810,6 &	2453,6\\ 
+		\midrule 
+		\textbf{2 Threads} & \textbf{5078,8} &	\textbf{3543,6} &	2885,8 &	2564,4\\ 
+		\midrule 
+		\textbf{4 Threads} & 5232,4 &	3286 &	\textbf{2239,8} &	\textbf{1959,6}\\ 
+		\midrule 
+		\textbf{8 Threads} & 7677 &	4545,4 &	2887,8 &	2452,6
+		
+		\\ 
+		\bottomrule 
+	\end{tabular} 
+	\label{tab1:medium}
+\end{table}
+
+Com estes tempos de execução construiu-se Tabela~\ref{tab1:speedup} contendo o cálculo do ganho de performance ao duplicar o número de threads.
+
+\begin{table}[!htbp]
+\caption{\textit{Speed up} do ciclo de iteração com diferentes arranjos de \textit{threads}, em negrito os melhores aumentos de desempenho.}
+\centering{}
+\begin{tabular}{c|c|c|c|c}
+	\toprule 
+	\textbf{Cargas de Trabalho}	& $1$ & $2$ & $4$  & $8$\\ 
+	\midrule 
+	\textbf{2 Threads} & \textbf{1,54650} &	\textbf{1,26295} & 0,97394 &	0,95679\\ 
+	\midrule 
+	\textbf{4 Threads} & 0,970641 &	1,07839 &	\textbf{1,28841} & \textbf{1,30863}\\ 
+	\midrule 
+	\textbf{8 Threads} & 0,68156 &	0,72292 & 0,77560 & 0,79898
+	\\ 
+	\bottomrule 
+\end{tabular} 
+\label{tab1:speedup}
+\end{table}
+
+Ao duplicar o número de \textit{threads} é esperado um \textit{speed up} de $2$, entretanto a comunicação entre as \textit{threads} não permite que este número seja alcançado; Após uma quantidade de \textit{threads} este número passa a cair com a adição de novas \textit{threads}. Observamos que no caso da ferramenta computacional, reorganizar o experimento em cargas de trabalho é capaz de aumentar a velocidade da execução até mesmo em sistema com apenas uma \textit{thread}.
+
+Os resultados obtidos com $2$ e $4$ \textit{threads} foram os melhores, com esta quantidade de \textit{threads} e com o aumento da quantidade de cargas de trabalho é possível melhorar drasticamente o desempenho da ferramenta. Com $8$ \textit{threads} a ferramenta computacional apresenta um tempo médio de execução mesmo com uma quantidade maior de trabalhos.
