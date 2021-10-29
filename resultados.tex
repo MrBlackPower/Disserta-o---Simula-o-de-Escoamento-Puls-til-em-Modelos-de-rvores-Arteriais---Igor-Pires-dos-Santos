@@ -172,7 +172,7 @@ Para quantificar a melhoria de desempenho trazida pela arquitetura proposta um e
 	\label{tab1:entrada}
 \end{table}
 
-Na tabela \ref{tab1:entrada} estão os parâmetros de entrada utilizados para testar o desempenho da ferramenta computacional. O objetivo é realizar $64$ combinando os parâmetros de entrada e armazenar o tempo de execução.
+Na tabela \ref{tab1:entrada} estão os parâmetros de entrada utilizados para testar o desempenho da ferramenta computacional. O objetivo é realizar $64$ iterações combinando os parâmetros de entrada e armazenar o tempo de execução, cada iteração irá executar o experimento com uma combinação dos três parâmetros de entrada.
 
 O gerenciador de \textit{threads} inteligente \textit{WiseThreadPool} é o responsável por gerenciar a quantidade de \textit{threads} utilizada pela ferramenta computacional. Primeiramente observou-se que o modelo matemático aplicado ao modelo geométrico escolhido possui uma média tempo de execução de $30ms$, enquanto uma operação de escrita e leitura demora entre$100$ e $300ms$. Como o ciclo de iteração de um objeto inteligente \textit{WiseObject} envolve diretamente operações de escrita e leitura, estas foram as \textit{threads} escolhidas à serem duplicadas. \textit{Threads} do tipo \textit{WiseConsole} e \textit{WiseProcessor} requerem uma quantidade maior de trabalhos para que se obtenha algum aumento de desempenho, no experimento escolhido o aumento da quantidade destas \textit{threads} implica diretamente no aumento do tempo de execução devido à comunicação entre as \textit{threads}.
 
@@ -189,6 +189,10 @@ O experimento foi executado em uma máquina com o processador \textit{Intel Core
 Para executar o teste um arquivo de entrada com uma lista de comandos, assim como o Anexo~\ref{annex2}, foi confeccionado para criar a estrutura, realizar os cálculos, salvar os resultados e limpar o ambiente. O ambiente computacional \textit{InGU} permite sua execução com parâmetros de entrada. Ao executar o comando "\textit{./INGU read cmds arquivo}" o ambiente computacional executa o comando de leitura de arquivo de entrada e finaliza o programa. A Figura~\ref{fig:INGU} mostra este comportamento.
 
 Para que as \textit{threads} aumentem o desempenho, os comando precisam ser divididos em cargas de trabalho. Os comandos recebidos pela ferramenta são executados de forma sequencial dentro de seus respectivos grupos de trabalho. Utilizando objetos inteligente \textit{WiseObject} distintos, grupos de trabalho diferentes podem ser executados simultaneamente. Com isto o experimento foi dividido em $4$ grupos, com o número de grupo de trabalhos $w \in {1,2,4,8}$ ob tendo o tempo de execução para o número de \textit{threads} $t \in {1,2,4,8}$. Como as cargas de trabalho não compartilham objetos inteligentes \textit{WiseObject}, o uso de mais cargas afeta diretamente a quantidade de memória utilizada pela ferramenta computacional.
+
+
+%--------------------------------------------------------------------------------%
+\section{MELHORA DE DESEMPENHO DE THREADS}\label{sec:cenario4}
 
 Na Tabela~\ref{tab1:medium} estão registrados os tempos médios de execução do experimento.
 
@@ -243,7 +247,10 @@ Ao duplicar o número de \textit{threads} é esperado um \textit{speed up} de $2
 
 Os resultados obtidos com $2$ e $4$ \textit{threads} foram os melhores, com esta quantidade de \textit{threads} e com o aumento da quantidade de cargas de trabalho é possível melhorar drasticamente o desempenho da ferramenta. Com $8$ \textit{threads} a ferramenta computacional apresenta um tempo médio de execução mesmo com uma quantidade maior de trabalhos.
 
-Com os mesmos resultados de tempo foi analisado o \textit{speed up} trazido pela utilização de uma quantidade maior de cargas de trabalho $w$. O \textit{speed up} $S_w$ caculado nesta tabela quantifica é dado por:
+%--------------------------------------------------------------------------------%
+\section{MELHORA DE DESEMPENHO DE CARGA DE TRABALHO}\label{sec:cenario5}
+
+Com os mesmos resultados de tempo apresentados na Tabela~\ref{tab1:medium} foi calculado a melhora de desempenho pela utilização de uma quantidade maior de cargas de trabalho $w$. O \textit{speed up} $S_w$ caculado nesta tabela quantifica é dado por:
 
 \begin{equation}
 	S_w = t_{w-1}/t_{w},
@@ -270,4 +277,4 @@ sendo $w \in \{1,2,4,8\}$ a quantidade cargas de trabalho.
 \label{tab1:speedup2}
 \end{table}
 
-Ao duplicar o número de cargas de trabalho $w$ é observada uma melhora expressiva no ambiente executado com uma \textit{thread}, mostrando que a ferramenta é capaz de tirar proveito dos recursos da máquina mesmo que não hajam diversos núcleos de processamento disponíveis.
+Ao duplicar o número de cargas de trabalho $w$ é observada uma melhora expressiva no ambiente executado com uma \textit{thread}, mostrando que a ferramenta é capaz de tirar proveito dos recursos da máquina mesmo que não hajam diversos núcleos de processamento disponíveis. Diferentemente do \textit{speed up} calculado no aumento de \textit{threads}, neste caso há sempre uma melhora de desempenho.

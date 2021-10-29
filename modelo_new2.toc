@@ -82,6 +82,8 @@
 \contentsline {section}{\numberline {5.2}SEGMENTO VISCOELÁSTICO}{108}{section.5.2}%
 \contentsline {section}{\numberline {5.3}ESCOAMENTO VISCOSO EM SEGMENTO VISCOELÁSTICO}{113}{section.5.3}%
 \contentsline {chapter}{\numberline {6}RESULTADOS COMPUTACIONAIS}{116}{chapter.6}%
+\contentsline {section}{\numberline {6.1}MELHORA DE DESEMPENHO DE THREADS}{120}{section.6.1}%
+\contentsline {section}{\numberline {6.2}MELHORA DE DESEMPENHO DE CARGA DE TRABALHO}{121}{section.6.2}%
 \contentsline {chapter}{\numberline {7}CONCLUSÕES E TRABALHOS FUTUROS}{122}{chapter.7}%
 \contentsline {chapter}{\numberline {A}PROCESSO DE COMPILAÇÃO}{123}{appendix.1.A}%
 \contentsline {section}{\numberline {A.1}INSTALAR QT}{123}{section.1.A.1}%
