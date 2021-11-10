@@ -7,7 +7,7 @@
 \contentsline {table}{\numberline {4.3}{\ignorespaces Descrição do comando bateria de testes.}}{74}{table.4.3}%
 \contentsline {table}{\numberline {4.4}{\ignorespaces Descrição do comando listar testes.}}{74}{table.4.4}%
 \contentsline {table}{\numberline {4.5}{\ignorespaces Descrição do comando executar caso de teste.}}{75}{table.4.5}%
-\contentsline {table}{\numberline {4.6}{\ignorespaces Descrição do comando para testar a equidade de dois arquivos.}}{75}{table.4.6}%
+\contentsline {table}{\numberline {4.6}{\ignorespaces Descrição do comando para testar a igualdade de dois arquivos.}}{75}{table.4.6}%
 \contentsline {table}{\numberline {4.7}{\ignorespaces Descrição do comando para criar projetos.}}{75}{table.4.7}%
 \contentsline {table}{\numberline {4.8}{\ignorespaces Descrição do comando para selecionar projetos.}}{76}{table.4.8}%
 \contentsline {table}{\numberline {4.9}{\ignorespaces Descrição do comando listar projetos.}}{76}{table.4.9}%
@@ -37,7 +37,7 @@
 \contentsline {table}{\numberline {4.33}{\ignorespaces Descrição do comando salvar objetos inteligentes.}}{88}{table.4.33}%
 \contentsline {table}{\numberline {4.34}{\ignorespaces Descrição do comando carregar objetos inteligentes.}}{89}{table.4.34}%
 \contentsline {table}{\numberline {4.35}{\ignorespaces Descrição dos comandos de exportação elementos contidos no \textit {Forno} de objetos inteligentes.}}{89}{table.4.35}%
-\contentsline {table}{\numberline {4.36}{\ignorespaces Descrição dos comandos de exportação elementos contidos no \textit {Forno} de objetos inteligentes.}}{90}{table.4.36}%
+\contentsline {table}{\numberline {4.36}{\ignorespaces Descrição do comando de definição de parâmetros do objeto.}}{90}{table.4.36}%
 \contentsline {table}{\numberline {4.37}{\ignorespaces Descrição do comando setar objetos inteligentes.}}{90}{table.4.37}%
 \contentsline {table}{\numberline {4.38}{\ignorespaces Descrição do comando iterar objetos inteligentes.}}{91}{table.4.38}%
 \contentsline {table}{\numberline {4.39}{\ignorespaces Descrição do comando listar fábricas de iteração.}}{91}{table.4.39}%

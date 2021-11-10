@@ -20,6 +20,7 @@
 \usepackage{float}
 \usepackage{soul}
 \usepackage{makecell}
+%\usepackage{ragged2e}
 
 \usepackage[alf,bibjustif]{abntex2cite}
 
@@ -64,7 +65,7 @@
 \author{}{Igor Pires dos Santos}	
 \advisor{Prof.}{Rafael Alves Bonfim de Queiroz}{}{Dr.}{Universidade Federal de Juiz de Fora}
 \coadvisor{Prof.}{Ruy Freitas Reis}{}{Dr.}{Universidade Federal de Juiz de Fora}
-\coadvisorII{Prof.}{Nome}{Coorientador Dois}{D.Sc.}{Universidade Federal de Juiz de Fora}
+\coadvisorII{}{}{}{}{}
 
 \examinerI{Prof.}{Banca 1}{D.Sc.}{Universidade }
 \examinerII{Prof.}{Banca 2}{D.Sc.}{Universidade }
@@ -79,10 +80,10 @@
 %Palavras chaves do resumo em portugues
 \keyword{Árvores arteriais}
 \keyword{Escoamento pulsátil}
-\keyword{Hemodinâmica Computacional}
-\keyword{Fábricas Dinâmicas}
-\keyword{Fábricas Abstratas}
-\keyword{Orientação à Objetos}
+\keyword{Hemodinâmica computacional}
+\keyword{Fábricas dinâmicas}
+\keyword{Fábricas abstratas}
+\keyword{Orientação à objetos}
 %\keyword{Poroelasticidade}
 %\keyword{Biomecânica}
 
@@ -90,8 +91,8 @@
 \keywordEN{Arterial trees}
 \keywordEN{Pulsatile flow}
 \keywordEN{Computational hemodynamics}
-\keywordEN{Dynamic Factories}
-\keywordEN{Abstract Factories}
+\keywordEN{Dynamic factories}
+\keywordEN{Abstract factories}
 \keywordEN{Object oriented}
 %\keywordEN{Poroelasticity}
 %\keywordEN{Biomechanics}
@@ -130,19 +131,21 @@
 \epigrafe{``A vida é curta demais para aprendermos somente com os nossos erros.''  \flushright{(Sebastião Roberto Pereira Ramon)}}
 
 \begin{abstract}
-	\igunew{O fenômeno do escoamento sanguíneo em modelos de árvores arteriais do sistema circulatório é frequentemente utilizado para melhor entender este complexo sistema, ao simular o escoamento é observado como a onda é alterada pelo modelo geométrico bem como cenários de escoamento específicos. Através da simulação é possível extrair dados analíticos sem a realização de exames invasivos e correlacionar corretamente as características do fluxo e modelo com efeitos observados na onda de pressão.}
-	Neste trabalho, apresentam-se: (i) modelo matemático da literatura que descreve o escoamento sanguíneo pulsátil em modelos de árvores arteriais 1D, (ii) uma ferramenta computacional desenvolvida que calcula a pressão e fluxo em cada vaso a partir do modelo matemático .
-	A ferramenta computacional desenvolvida conta com uma estrutura de dados própria que concilia os conceitos de uma linguagem orientada à objetos e bibliotecas adicionais com o modelo matemático e geométrico proposto.\igunew{A estrutura de dados foi utilizada no desenvolvimento de dois ambientes, um console e uma interface gráfica de usuário. A arquitetura de classes tem como objetivo conciliar as ferramentas disponibilizadas pelas bibliotecas para simular corretamente o modelo matemático escolhido e permitir que outros modelos matemáticos sejam facilmente acoplados posteriormente.}
+	\justifying
+	\igunew{O escoamento sanguíneo em modelos de árvores arteriais do sistema circulatório é frequentemente utilizado para melhor entender este complexo sistema. Ao realizar estas simulações hemodinâmicas pode ser observado como as ondas de pressão e fluxo são alteradas ao longo do modelo vascular. Desta forma, é possível obter dados sem a realização de exames invasivos levando em conta diferentes cenários hemodinâmicos.}
+	Neste trabalho, apresentam-se: (i) um modelo matemático da literatura que descreve o escoamento sanguíneo pulsátil em modelos de árvores arteriais unidimensionais (1D), (ii) uma ferramenta computacional desenvolvida que calcula a pressão e fluxo em cada vaso a partir do modelo matemático .
+	A ferramenta computacional desenvolvida conta com uma estrutura de dados própria que concilia os conceitos de uma linguagem orientada à objetos e bibliotecas adicionais com o modelo matemático adotado.\igunew{A estrutura de dados foi utilizada no desenvolvimento de dois ambientes, um console (modo terminal) e uma interface gráfica de usuário. A arquitetura de classes tem como objetivo conciliar as ferramentas disponibilizadas pelas bibliotecas para simular corretamente o modelo matemático escolhido e permitir que outros modelos matemáticos sejam facilmente acoplados posteriormente.}
 	A estrutura de dados proposta possibilita que as diversas características de uma árvore arterial possam ser armazenadas, utilizadas e visualizadas em tempo de execução.
-	Os resultados obtidos neste trabalho estão condizentes com dados numéricos relatados na literatura.\igunew{A ferramenta e estrutura abstrata disponibilizadas permitem a simulação do mesmo experimento em diferentes modelos geométricos e a visualização de todos os parâmetros armazenados}.
+	Os resultados obtidos neste trabalho estão condizentes com dados numéricos relatados na literatura.\igunew{A ferramenta computacional construída é útil para realizar simulação hemodinâmicas em modelos 1D de árvores arteriais e pode servir como uma plataforma para investigação de modelos computacionais}.
 \end{abstract}
 
 \begin{foreignabstract}
-	\igunew{The blood flow phenom in arterial tree models of the circulatory system is frequently studied to better understand this complex system, the simulation shows how the wave changes  as it progresses through the geometric model and investigates specific scenarios. It is possible to extract analytical data without invasive procedures and correctly correlate flow characteristics observed in the pressure wave with the model's parameters.}
-	In this work, the following are presented: (i) an analytical scheme based on physisc and mathematic laws to calculate the local charactheristics of the pressure and flux wave in 1D arterial tree's models, (ii) a computational environment desenvolved to simulate and visualize the results of the model's construction and hemodynamic studies. 
-	The computational environment is composed of a data structure that integrates the concepts of an object-oriented language and other libraries with the proposed analytical scheme.
-	The proposed data structure allows the computational environment to store, utilize and display different characteristics of an arterial tree. \igunew{The data structure constructed two environments, the first a console, and the second a user interface. The class architecture objectives are the correct use of the libraries to simulate the mathematical model and allow other mathematical models to be easily integrated posteriorly.}
-	The results produced in this work are consistent to real morphometric data and numeric data related in the literature.\igunew{The tool and abstract structure used are openly distributed and allow the same experiment in varioues geometric models and the visualization of every stored parameter}.
+	\justifying
+	\igunew{The blood flow in arterial tree models of the circulatory system is frequently studied to better understand this complex system. The simulation shows how the wave changes as it progresses through the geometric model. It is possible to extract analytical data without invasive procedures taking different flow characteristics into account.}
+	In this work, the following are presented: (i) an analytical scheme based on physisc and mathematic laws to calculate the local charactheristics of the pressure and flux wave in unidimensional (1D) arterial tree's models, (ii) a computational environment desenvolved to simulate and visualize the results of the model's construction and hemodynamic studies. 
+	The computational environment is composed of a data structure that integrates the concepts of an object-oriented language and other libraries with the adopted analytical scheme.
+	The proposed data structure allows the computational environment to store, utilize and display different characteristics of an arterial tree. \igunew{The data structure constructed two environments, the first a console(terminal mode), and the second a user interface. The class architecture objectives are the correct use of the libraries to simulate the mathematical model and allow other mathematical models to be easily integrated posteriorly.}
+	The results produced in this work are consistent to real morphometric data and numeric data related in the literature.\igunew{The computational tool built simulates hemodynamic characteristics in 1D arterial tree models and functions as a platform to investigate computational models.}.
 \end{foreignabstract}
 
 

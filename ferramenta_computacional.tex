@@ -7,7 +7,7 @@ Esta ferramenta foi desenvolvida em C++ utilizando as bibliotecas do Qt 5.15.0 \
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[scale=0.25]{Figures/IGU_002.png}
-	\caption{Interface gráfica da ferramenta desenvolvida.}
+	\caption{Interface gráfica da ferramenta construída.}
 	\label{fig1:gui}
 \end{figure}
 
@@ -188,7 +188,7 @@ Através das malhas estruturadas e desestruturadas presentes na biblioteca \text
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[scale=2]{Figures/WiseElement@16x.png}
-	\caption{Representação de classes de um elemento inteligente. \textit{WiseElement} a classe abstrata base e seus componentes: \textit{WiseStructure} representa a estrutura contida em um arquivo VTK e DataStructure representa a estrutura de ponteiros e variáveis utilizadas na iteração. Tingido de azul as estruturas que nem sempre estão presentes.}
+	\caption{Representação de classes de um elemento inteligente. \textit{WiseElement} a classe abstrata base e seus componentes: \textit{WiseStructure} representa a estrutura contida em um arquivo VTK e DataStructure representa a estrutura de ponteiros e variáveis utilizadas na iteração. Pintado de azul as estruturas que nem sempre estão presentes.}
 	\label{fig2:wiselement}
 \end{figure}
 
@@ -305,7 +305,7 @@ O ciclo de vida de um objeto inteligente consiste na sua criação, a iteração
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[scale=1.15]{Figures/WiseObject@16x.png}
-	\caption{Objeto inteligente \textit{WiseObject} e todos seu componentes:\textit{WiseObjectFactory}, fábrica responsável pela criação de objetos inteligentes; \textit{WiseElementFactory}, fábrica responsável pela criação de elementos inteligentes; \textit{WiseIterationFactory}, fábrica de iteração; \textit{WiseGraphicFactory}, fábrica gráfica; \textit{WiseCollection}, coleção de elementos inteligentes; \textit{GraphicModel}, coleção de objetos gráficos.}
+	\caption{Objeto inteligente \textit{WiseObject} e todos seu componentes:\textit{WiseObjectFactory}, fábrica responsável pela criação de objetos inteligentes; \textit{WiseElementFactory}, fábrica responsável pela criação de elementos inteligentes; \textit{WiseIterationFactory}, fábrica de iteração; \textit{WiseGraphicFactory}, fábrica gráfica; \textit{WiseCollection}, coleção de elementos inteligentes; \textit{GraphicModel} coleção de objetos gráficos.}
 	\label{fig7:wiseobject}
 \end{figure}
 
@@ -433,7 +433,7 @@ Ao longo da pesquisa esta estrutura foi agregada as bibliotecas comuns do Qt 5.1
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[width=\linewidth]{Figures/WiseThreadPool@16x.png}
-	\caption{Modelo de Threads. \textit{WiseThreadPool}, responsável por orquestrar o funcionamento das demais \textit{threads}, bem como os objetos contidos em um projeto \textit{WiseProject}. \textit{WiseIO}, \textit{thread} responsável por processos de leitura e escrita. \textit{WiseConsole}, \textit{thread} responsável por interpretar os comandos de texto e os traduzir-los na chamada de métodos. \textit{WiseProcessor}, \textit{thread} responsável por realizar o método iterativo de um objeto inteligente \textit{WiseObject}}
+	\caption{Modelo de Threads. \textit{WiseThreadPool}, responsável por orquestrar o funcionamento das demais \textit{threads}, bem como os objetos contidos em um projeto \textit{WiseProject}. \textit{WiseIO}, \textit{thread} responsável por processos de leitura e escrita. \textit{WiseConsole}, \textit{thread} responsável por interpretar os comandos de texto e traduzir-los na chamada de métodos. \textit{WiseProcessor}, \textit{thread} responsável por realizar o método iterativo de um objeto inteligente \textit{WiseObject}}
 	\label{fig7:threads}
 \end{figure}
 
@@ -577,7 +577,7 @@ Ao executar o comando, o usuário receberá uma lista de comandos divididos em e
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[scale=0.45]{Figures/InGU_help.png}
-	\caption{Captura de tela com a execução do ambiente computacional InGU em um console.}
+	\caption{Captura de tela com a execução do comando de ajudo no ambiente computacional InGU em um console.}
 	\label{fig10:ajuda}
 \end{figure}
 
@@ -678,9 +678,9 @@ Como visto na Seção~\ref{sec:test list}, os testes são enumerados. Baseando-s
 \end{center}
 
 %--------------------------------------------------------------------------------%
-\subsection{TESTAR EQUIDADE DE ARQUIVOS}\label{sec:test_file}
+\subsection{TESTAR IGUALDADE DE ARQUIVOS}\label{sec:test_file}
 
-Outro comando de teste disponibilizado pela ferramenta computacional é o teste de equidade de arquivos. Este comando utiliza uma chave numérica \textit{test\underline{\space}id} para salvar o resultado do teste, tanto o resultado quanto a quantidade de testes executados com a mesma chave são salvos. Por se tratar da leitura de dois arquivos diferentes esse comando é executado por uma \textit{thread} do tipo \textit{WiseIO}.
+Outro comando de teste disponibilizado pela ferramenta computacional é o teste de igualdade de arquivos. Este comando utiliza uma chave numérica \textit{test\underline{\space}id} para salvar o resultado do teste, tanto o resultado quanto a quantidade de testes executados com a mesma chave são salvos. Por se tratar da leitura de dois arquivos diferentes esse comando é executado por uma \textit{thread} do tipo \textit{WiseIO}.
 
 \begin{center}
 	\begin{table}[!htbp]
@@ -697,7 +697,7 @@ Outro comando de teste disponibilizado pela ferramenta computacional é o teste 
 			& <file2> & Caminho para o segundo arquivo \\
 			\bottomrule
 		\end{tabularx}
-		\caption{Descrição do comando para testar a equidade de dois arquivos.}
+		\caption{Descrição do comando para testar a igualdade de dois arquivos.}
 		\label{tab:file_test}
 	\end{table}
 \end{center}
@@ -1441,7 +1441,7 @@ Assim como o comando de exportar objeto atua sobre o elemento contido na estrutu
 			& <data> & Valor à ser inserido como parâmetro do elemento inteligente. \\
 			\bottomrule
 		\end{tabularx}
-		\caption{Descrição dos comandos de exportação elementos contidos no \textit{Forno} de objetos inteligentes.}
+		\caption{Descrição do comando de definição de parâmetros do objeto.}
 		\label{tab:set_field_object}
 	\end{table}
 \end{center}
@@ -1735,7 +1735,7 @@ O primeiro grupo são os elementos que compões o menu principal da aplicação.
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[scale=1]{Figures/IGU_016.png}
-	\caption{Opções do menu principal da ferramenta computacional \textit{IGU}}
+	\caption{Parte da janela principal contendo a área de trabalho e as abas que selecionam a interface selecionada, sendo os componentes: C. Área de trabalho \textit{Canvas}; D. Seleção de abas}
 	\label{fig:menu}
 \end{figure}
 
@@ -1767,14 +1767,14 @@ A aba \textit{Console} exibe um ambiente similar ao disponibilizado pelo ambient
 \begin{figure}
 	\centering
 	\includegraphics[width=.9\linewidth]{Figures/IGU_017.png}
-	\caption{Mudanças gráficas observadas na Área de Trabalho ao trocar a aba selecionada, exibindo o elemento gráfico \textit{Canvas} com a aba \textit{Canvas} selecionada.}
+	\caption{Área de Trabalho exibindo o elemento gráfico \textit{Canvas} com a aba \textit{Canvas} selecionada.}
 	\label{fig:sfig1}
 \end{figure}
 
 \begin{figure}
 	\centering
 	\includegraphics[width=.9\linewidth]{Figures/IGU_001.png}
-	\caption{Mudanças gráficas observadas na Área de Trabalho ao trocar a aba selecionada, exibindo o elemento gráfico \textit{Console} com a aba \textit{Console} selecionada.}
+	\caption{Área de Trabalho exibindo o elemento gráfico \textit{Console} com a aba \textit{Console} selecionada.}
 	\label{fig:sfig2}
 \end{figure}
 

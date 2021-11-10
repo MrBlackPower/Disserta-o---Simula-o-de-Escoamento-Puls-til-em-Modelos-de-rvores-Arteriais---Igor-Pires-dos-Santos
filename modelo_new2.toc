@@ -6,7 +6,7 @@
 \contentsline {section}{\numberline {1.2}ORGANIZAÇÃO}{22}{section.1.2}%
 \contentsline {chapter}{\numberline {2}MODELAGEM DO ESCOAMENTO SANGUÍNEO}{23}{chapter.2}%
 \contentsline {section}{\numberline {2.1}MODELO MATEMÁTICO}{23}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}CÁLCULO DA PRESSÃO E DO FLUXO SANGUÍNEO}{27}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.1}CÁLCULO DA PRESSÃO E DO FLUXO SANGUÍNEO}{26}{subsection.2.1.1}%
 \contentsline {subsection}{\numberline {2.1.2}CÁLCULO DO COEFICIENTES DE REFLEXÃO E ADMITÂNCIA}{29}{subsection.2.1.2}%
 \contentsline {subsection}{\numberline {2.1.3}CÁLCULO DA IMPEDÂNCIA DE ENTRADA}{30}{subsection.2.1.3}%
 \contentsline {subsection}{\numberline {2.1.4}INCORPORAÇÃO DA VISCOSIDADE E VISCOELASTICIDADE NO MODELO}{30}{subsection.2.1.4}%
@@ -28,7 +28,7 @@
 \contentsline {subsection}{\numberline {4.1.3}BATERIA DE TESTES}{73}{subsection.4.1.3}%
 \contentsline {subsection}{\numberline {4.1.4}LISTA DE TESTES}{74}{subsection.4.1.4}%
 \contentsline {subsection}{\numberline {4.1.5}CASO DE TESTE}{74}{subsection.4.1.5}%
-\contentsline {subsection}{\numberline {4.1.6}TESTAR EQUIDADE DE ARQUIVOS}{74}{subsection.4.1.6}%
+\contentsline {subsection}{\numberline {4.1.6}TESTAR IGUALDADE DE ARQUIVOS}{74}{subsection.4.1.6}%
 \contentsline {subsection}{\numberline {4.1.7}CRIAR PROJETO}{75}{subsection.4.1.7}%
 \contentsline {subsection}{\numberline {4.1.8}USAR PROJETO}{76}{subsection.4.1.8}%
 \contentsline {subsection}{\numberline {4.1.9}LISTAR PROJETOS}{76}{subsection.4.1.9}%
@@ -81,9 +81,9 @@
 \contentsline {section}{\numberline {5.1}ESCOAMENTO VISCOSO}{108}{section.5.1}%
 \contentsline {section}{\numberline {5.2}SEGMENTO VISCOELÁSTICO}{108}{section.5.2}%
 \contentsline {section}{\numberline {5.3}ESCOAMENTO VISCOSO EM SEGMENTO VISCOELÁSTICO}{113}{section.5.3}%
-\contentsline {chapter}{\numberline {6}RESULTADOS COMPUTACIONAIS}{116}{chapter.6}%
-\contentsline {section}{\numberline {6.1}MELHORA DE DESEMPENHO DE THREADS}{120}{section.6.1}%
-\contentsline {section}{\numberline {6.2}MELHORA DE DESEMPENHO DE CARGA DE TRABALHO}{121}{section.6.2}%
+\contentsline {chapter}{\numberline {6}ANÁLISES DE DESEMPENHO}{116}{chapter.6}%
+\contentsline {section}{\numberline {6.1}DESEMPENHO DE THREADS}{120}{section.6.1}%
+\contentsline {section}{\numberline {6.2}DESEMPENHO DE CARGA DE TRABALHO}{121}{section.6.2}%
 \contentsline {chapter}{\numberline {7}CONCLUSÕES E TRABALHOS FUTUROS}{122}{chapter.7}%
 \contentsline {chapter}{\numberline {A}PROCESSO DE COMPILAÇÃO}{123}{appendix.1.A}%
 \contentsline {section}{\numberline {A.1}INSTALAR QT}{123}{section.1.A.1}%

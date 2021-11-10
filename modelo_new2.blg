@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2021/W32TeX)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: modelo_new2.aux
 A level-1 auxiliary file: introducao.aux
@@ -36,24 +36,24 @@ Warning--campo year vazio ou faltando em VTKUSER
 +---------------------------------------------------------+
 You've used 33 entries,
             6714 wiz_defined-function locations,
-            1431 strings with 14780 characters,
-and the built_in function-call counts, 32153 in all, are:
-= -- 2958
+            1430 strings with 14773 characters,
+and the built_in function-call counts, 32105 in all, are:
+= -- 2950
 > -- 947
 < -- 325
 + -- 690
 - -- 287
-* -- 2243
-:= -- 4170
+* -- 2240
+:= -- 4166
 add.period$ -- 103
 call.type$ -- 33
 change.case$ -- 336
 chr.to.int$ -- 45
 cite$ -- 33
-duplicate$ -- 2112
-empty$ -- 1940
+duplicate$ -- 2110
+empty$ -- 1937
 format.name$ -- 1367
-if$ -- 7190
+if$ -- 7180
 int.to.chr$ -- 0
 int.to.str$ -- 0
 missing$ -- 576
@@ -63,16 +63,16 @@ pop$ -- 768
 preamble$ -- 1
 purify$ -- 130
 quote$ -- 0
-skip$ -- 2344
+skip$ -- 2341
 stack$ -- 1
-substring$ -- 1509
-swap$ -- 908
+substring$ -- 1497
+swap$ -- 906
 text.length$ -- 49
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 10
 warning$ -- 1
-while$ -- 253
+while$ -- 252
 width$ -- 0
 write$ -- 505
 (There was 1 error message)
