@@ -51,7 +51,7 @@ O grupo de ondas progressivas viaja no sentido positivo de $x(k,j)$, estas são 
 
 As Equações \eqref{05_p} e \eqref{06_q} descrevem, respectivamente, as ondas de pressão e de fluxo localmente em um segmento $(k,j)$ do modelo de árvore, e localmente na posição $x(k,j)$ dentro deste segmento de vaso. \igunew{O principal objetivo deste modelo matemático é determinar as duas variáveis desconhecidas: a amplitude da pressão  $\bar{p} (k,j)$} e o coeficiente de reflexão $R (k,j)$, que são detalhados na Seção~\ref{sec:pressao-fluxo}. 
 
-A Figura~\ref{fig1:arterial-tree} mostra a notação usada para identificar cada segmento de vaso $(k,j)$, onde $k$ é a geração/nível do vaso e $j$ é um número sequencial dentro daquela geração. Os nós proximal e distal do segmento $(k,j)$~\ref{fig:proximaldistal} são denotados por $A$ e $B$, respectivamente. O coeficiente de reflexão $R(k,j)$ do segmento $(k,j)$ está associado ao nó distal $B$.
+A Figura~\ref{fig1:arterial-tree} mostra a notação usada para identificar cada segmento de vaso $(k,j)$, onde $k$ é a geração/nível do vaso e $j$ é um número sequencial dentro daquela geração. Os nós proximal e distal do segmento $(k,j)$ são denotados por $A$ e $B$ na Figura~\ref{fig:proximaldistal}, respectivamente. O coeficiente de reflexão $R(k,j)$ do segmento $(k,j)$ está associado ao nó distal $B$.
 
 Na Equação~\eqref{06_q}, tem-se a admitância característica para cada segmento dada por:
 \begin{equation}
@@ -73,7 +73,7 @@ onde $E(k,j)$ é o módulo de Young, $d(k,j)$ é o diâmetro do segmento $(k,j)$
 \begin{figure}[h] 
 	\begin{center}
 		\includegraphics[scale = 0.5]{Figures/ArterialTree_Zamir.png}%
-		\caption{Notação usada para identificar cada segmento de vaso $(k,j)$ (figura adaptada de~\citeyear{Duan}~\citeauthoronline{Duan}). }
+		\caption{Notação usada para identificar cada segmento de vaso $(k,j)$ (figura adaptada de~\citeauthoronline{Duan}(\citeyear{Duan})). }
 		\label{fig1:arterial-tree}%
 	\end{center}
 \end{figure}
@@ -131,7 +131,7 @@ Substituindo as Equações \eqref{10_p_f}, \eqref{11_p_b}, \eqref{15_p_f} e \eqr
 	\label{18_barp}
 \end{equation}
 
-Conforme~\citeyear{Duan}~\citeauthoronline{Duan}, para efeitos de cálculo da pressão e fluxo, adimensionalizam-se as pressões em \eqref{18_barp} em termos da pressão de entrada $p_0 = \bar{p}_0 \exp[i\omega t]$. 
+Conforme~\citeauthoronline{Duan}(\citeyear{Duan}), para efeitos de cálculo da pressão e fluxo, adimensionalizam-se as pressões em \eqref{18_barp} em termos da pressão de entrada $p_0 = \bar{p}_0 \exp[i\omega t]$. 
 
 Considerando $P(k,j) = \frac{p(k,j)}{p_0}$ e $\bar{P} (k,j) = \frac{\bar{p}(k,j)}{\bar{p}_0}$, a Equação~\eqref{05_p} para o cálculo da pressão  pode ser expressa de forma adimensionalizada por:
 \begin{eqnarray}
@@ -214,12 +214,12 @@ A partir do modelo matemático aqui apresentado, os seguintes cenários podem se
 	\end{equation}
 	onde a função $F_{10}$ é avaliada deste modo:
 	\begin{equation}
-		F_{10} (\alpha) = \frac{2.0}{\alpha \sqrt{i}}(1.0+\frac{1.0}{2.0\alpha}),
+		F_{10} (\alpha) = \frac{2}{\alpha \sqrt{i}}(1+\frac{1}{2\alpha}),
 	\end{equation}
 	onde $J_p$ denota a função de Bessel de índice $p$.
 	
 	\item \textbf{2.1.4.2 - Cenário 2}: análise do impacto da viscoelasticidade da parede do vaso ($\phi_0$).\\
-	A viscoelasticidade da parede do segmento é incorporado substituindo o módulo de Young
+	A viscoelasticidade da parede do segmento é incorporada substituindo o módulo de Young
 	estático $E(k,j)$ por um módulo elástico complexo $E_c(k,j)$ no cálculo da velocidade $c(k,j)$ na equação~\eqref{eq:velocidade}
 	da seguinte forma~\cite{Duan}:
 	\begin{equation}
