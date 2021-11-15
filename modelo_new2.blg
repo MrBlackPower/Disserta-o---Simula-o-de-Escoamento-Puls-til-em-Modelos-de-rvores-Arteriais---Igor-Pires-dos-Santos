@@ -36,12 +36,12 @@ Warning--campo year vazio ou faltando em VTKUSER
 +---------------------------------------------------------+
 You've used 33 entries,
             6714 wiz_defined-function locations,
-            1430 strings with 14773 characters,
-and the built_in function-call counts, 32105 in all, are:
+            1430 strings with 14769 characters,
+and the built_in function-call counts, 32103 in all, are:
 = -- 2950
 > -- 947
 < -- 325
-+ -- 690
++ -- 689
 - -- 287
 * -- 2240
 := -- 4166
@@ -65,7 +65,7 @@ purify$ -- 130
 quote$ -- 0
 skip$ -- 2341
 stack$ -- 1
-substring$ -- 1497
+substring$ -- 1496
 swap$ -- 906
 text.length$ -- 49
 text.prefix$ -- 0
