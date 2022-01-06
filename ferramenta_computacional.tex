@@ -387,28 +387,28 @@ O projeto \textit{WiseProject} é o escopo de trabalho da ferramenta computacion
 	\label{fig7:project}
 \end{figure}
 
-Como ilustrado na Figura~\ref{fig7:project}, os projetos inteligentes são representados por duas coleções, uma de elementos inteligentes \textit{WiseElement} e outra de objetos inteligentes \textit{WiseObject}. Os comandos recebidos pela ferramenta computacional terão efeito apenas sobre um projeto inteligente e suas coleções. Por exemplo, quando um elemento inteligente for utilizado na criação de um objeto inteligente eles devem estar no mesmo projeto inteligente.
+Como ilustrado na Figura~\ref{fig7:project}, o projeto inteligente é representado por duas coleções, uma de elementos \textit{WiseElement} e outra de objetos \textit{WiseObject}. Os comandos recebidos pela ferramenta computacional terão efeito apenas sobre um projeto e suas coleções. Por exemplo, quando um elemento for utilizado na criação de um objeto eles devem estar no mesmo projeto.
 
-Os projetos inteligentes são estrutura organizacionais, uma vez que um comando é executado sobre objetos de um projeto, estes objetos são bloqueados pelo projeto até o final da execução do comando. Enquanto permanecer bloqueado um objeto não pode ser excluído ou alterado por outro comando. Ao excluir um projeto, todas as demandas devem ser finalizadas. Finalmente, as estruturas dos projetos podem ser salvas e carregadas, portanto estas estruturas também servem para armazenar experimentos inteiros e seus resultados.
+O projetos é uma estrutura organizaciona. Pois, quando um comando é executado sobre objetos de um projeto, estes objetos são bloqueados pelo projeto até o final da execução do comando. Enquanto permanecer bloqueado um objeto não pode ser excluído ou alterado por outro comando. Ao excluir um projeto, todas as demandas devem ser finalizadas. Finalmente, as estruturas dos projetos podem ser salvas e carregadas, portanto estas estruturas também servem para armazenar experimentos inteiros e seus resultados.
 
 %--------------------------------------------------------------------------------%
-\subsection{FÁBRICA DE PROJETO}\label{sec:fabrica_projeto} 
+\subsection{FÁBRICA DE PROJETO DA CLASSE}\label{sec:fabrica_projeto} 
 
-O conceito de fábrica foi adicionado ao projeto para padronizar a construção de objetos, inclusa neste conceito, a fábrica de projetos \textit{WiseProjectFactory} é responsável pela construção de projetos. Diferentemente das outras, a  \textit{WiseProjectFactory} contém todas as fábricas suportadas pela ferramenta computacional.
+O conceito de fábrica foi adicionado ao projeto para padronizar a construção de objetos. Inclusa neste conceito, a fábrica de projetos \textit{WiseProjectFactory} é responsável pela construção de projetos. Diferentemente das outras, a  \textit{WiseProjectFactory} contém todas as fábricas suportadas pela ferramenta computacional.
 
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[scale=1.5]{Figures/WiseProjectFactory@16x.png}
-	\caption{Fábrica de projetos inteligentes \textit{WiseProjectFactory} e seus componentes, fábricas de elementos inteligentes \textit{WiseElementFactories}, fábricas de objetos inteligentes \textit{WiseObjectFactories}, fábrica de objetos gráficos \emph{Gra}\-\emph{phic}~\-\emph{Object}~\-\emph{Facto\-ries}, fábricas de elementos gráficos \textit{GraphicElementFactories} e fábricas de iteração \textit{WiseIterationFactories} .}
+	\caption{Fábrica de projeto\textit{WiseProjectFactory} e seus componentes: fábricas de elementos \textit{WiseElementFactories}, fábricas de objetos \textit{WiseObjectFactories}, fábrica de objetos gráficos \emph{Gra}\-\emph{phic}~\-\emph{Object}~\-\emph{Facto\-ries}, fábricas de elementos gráficos \textit{GraphicElementFactories} e fábricas de iteração \textit{WiseIterationFactories} .}
 	\label{fig7:projectfactory}
 \end{figure}
 
-Como é possível observa na Figura~\ref{fig7:projectfactory}, a fábrica de projetos inteligentes é composta de outras coleções de fábricas, agrupadas pelo tipo de estrutura que criam. Nesta classe estão as fábricas de elementos inteligentes \textit{WiseElement}, objetos inteligentes \textit{WiseObject}, objetos gráficos \textit{GraphicObject}, elementos gráficos \textit{GraphicElement} e iteração \textit{WiseIterationFactory}. Por exemplo, quando um projeto contendo diversas árvores arteriais e gráficos é carregado ele é construído pela fábrica de projetos. A fábrica de projetos irá reconhecer o formato de cada estrutura e encaminhar para a fábrica correspondente.
+Como é possível observa na Figura~\ref{fig7:projectfactory}, a fábrica de projetos inteligentes é composta de outras coleções de fábricas, agrupadas pelo tipo de estrutura que criam. Nesta classe estão as fábricas de elementos \textit{WiseElement}, objetos \textit{WiseObject}, objetos gráficos \textit{GraphicObject}, elementos gráficos \textit{GraphicElement} e iteração \textit{WiseIterationFactory}. Por exemplo, quando um projeto contendo diversas árvores arteriais e gráficos é carregado ele é construído pela fábrica de projetos. A fábrica de projetos irá reconhecer o formato de cada estrutura e encaminhar para a fábrica correspondente.
 
 \begin{figure}
 	\begin{tabularx}{\textwidth}{cc}
 		\includegraphics[width=0.5\linewidth]{Figures/WiseElementFactories@16x.png} &   \includegraphics[width=0.5\linewidth]{Figures/WiseObjectFactories@16x.png} \\
-		(a) Fábricas de elementos inteligentes & (b) Fábricas de objetos inteligentes \\[6pt]
+		(a) Fábricas de elementos & (b) Fábricas de objetos \\[6pt]
 		\includegraphics[width=0.5\linewidth]{Figures/GraphicObjectFactories@16x.png} &   \includegraphics[width=0.5\linewidth]{Figures/GraphicElementFactories@16x.png} \\
 		(c) Fábricas de objetos gráficos & (d) Fábricas de elementos gráficos \\[6pt]
 		\multicolumn{2}{c}{\includegraphics[width=0.5\linewidth]{Figures/WiseIterationFactories@16x.png} }\\
@@ -423,42 +423,42 @@ Como é possível observa na Figura~\ref{fig7:projectfactory}, a fábrica de pro
 O modelo do escoamento pulsátil proposto está presenta na fábrica de iteração \textit{DuanAndZamirIterationFactory}, esta fábrica é responsável por utilizar a estrutura de uma árvore arterial \textit{WiseArteryTree} e aplicar o modelo matemático. Finalmente, a fábrica de iteração \textit{WiseObjectDataReadIterationFactory} é uma fábrica responsável por armazenar os resultados obtidos a cada iteração e armazenar em uma estrutura do tipo \textit{WiseMesh}.
 
 %--------------------------------------------------------------------------------%
-\subsection{THREADS INTELIGENTES}\label{sec:threads}
+\subsection{THREADS DA CLASSE \textit{WiseThreadPool}}\label{sec:threads}
 
 Até o momento as estruturas foram construídas utilizando conceitos padrões da linguagem C++, herança de propriedades através do polimorfismo, ponteiros, classes virtuais e fábricas dinâmicas. Nesta seção o conceito de programação paralela e divisão de tarefas acoplado à ferramenta computacional é proposto.
 
-\igunew{A arquitetura de computadores atual permite aos usuários da aplicação executar processos que irão utilizar os recursos físicos do computador. O processador é a unidade central de processamento, apesar de executar milhões de tarefas por segundo os processadores executam apenas uma instrução por vez. Quando diversos processos estão em execução no computador o sistema operacional é responsável por balancear o tempo de processamento que cada processo ganha, com isso somos capazes de executar diversos programas ao mesmo tempo, este ciclo é conhecido como escalonamento de processos.}
+\igunew{A arquitetura de computadores atual permite aos usuários da aplicação executar processos que irão utilizar os recursos físicos do computador. O processador é a unidade central de processamento que executa milhões de tarefas por segundo. No entanto, executa apenas uma instrução por vez. Quando diversos processos estão em execução no computador o sistema operacional é responsável por balancear o tempo de processamento que cada processo ganha, com isso somos capazes de executar diversos programas ao mesmo tempo, este ciclo é conhecido como escalonamento de processos.}
 
-\igunew{Processadores mais recentes estão equipados com múltiplos núcleos de processamento, o que permite a execução de diversas tarefas ao mesmo tempo. Para que um único processo tire vantagem desta arquitetura ele precisa se reestruturar em \textit{threads}, estes elementos são partes do processo e cada uma possui seu próprio ciclo de execução e é avaliado separadamente no escalonamento de processo. Desta forma um processo é capaz de se beneficiar de uma arquitetura com múltiplos núcleos, entretanto é necessária uma reorganização do processo uma vez que todas as \textit{threads} irão dividir o mesmo espaço de memória. Como cada \textit{thread} possui o seu próprio ciclo de execução elas ão estarão executando em sincronia, para que possam trocar informações é necessário que haja uma comunicação assíncrona. }
+\igunew{Processadores mais recentes estão equipados com múltiplos núcleos de processamento, o que permite a execução de diversas tarefas ao mesmo tempo. Para que um único processo tire vantagem desta arquitetura ele precisa se reestruturar em \textit{threads}, estes elementos são partes do processo e cada uma possui seu próprio ciclo de execução e é avaliado separadamente no escalonamento de processo. Desta forma, um processo é capaz de se beneficiar de uma arquitetura com múltiplos núcleos. Entretanto, é necessária uma reorganização do processo uma vez que todas as \textit{threads} irão dividir o mesmo espaço de memória. Como cada \textit{thread} possui o seu próprio ciclo de execução, para que possam trocar informações é necessário que haja um tratamento para possibilitar a comunicação assíncrona.}
 
-Observou-se que as estruturas possuem comportamentos padronizados e que um objeto inteligente é autônomo, ele sozinho é capaz de se armazenar, reconstruir, iterar e ocasionalmente se desenhar. Imaginando um cenário em que diversos objetos inteligente estão iterando, as tarefas foram dividas em três tipos de \textit{Threads}, primeiramente trabalhos de leitura e escrita, em seguida a iteração dos objetos. 
+Observou-se que as estruturas possuem comportamentos padronizados e que um objeto é autônomo. Ele sozinho é capaz de se armazenar, reconstruir, iterar e ocasionalmente se desenhar. Imaginando um cenário em que diversos objetos estão iterando, as tarefas foram divididas em três tipos de \textit{Threads}, primeiramente trabalhos de leitura e escrita, em seguida a iteração dos objetos. 
 
-Estes objetos inteligentes estão disponíveis para todas as \textit{threads} através do projeto inteligente \textit{WiseProject} e são enviados por referência no trabalho inteligente \textit{WiseJob} caso não estejam bloqueados. Desta forma computadores com múltiplos núcleos podem fazer uso de suas \textit{threads} e permitir que mais de um objeto realize suas tarefas por vez.
+Estes objetos estão disponíveis para todas as \textit{threads} através do projeto \textit{WiseProject} e são enviados por referência no trabalho \textit{WiseJob} caso não estejam bloqueados. Desta forma, computadores com múltiplos núcleos podem fazer uso de suas \textit{threads} e permitir que mais de um objeto realize suas tarefas por vez.
 
-Ao longo da pesquisa esta estrutura foi agregada as bibliotecas comuns do Qt 5.15.0 \cite{QTClasses}, em um primeiro momento para facilitar a visualização dos resultados através dos elementos gráficos de interface de usuários disponibilizados. Em seguida, permitiu o processamento de elementos de forma paralela. Com isso um modelo que suportasse o processamento distribuído utilizando classes \textit{QThreads} que possuem tarefas concorrentes foi construído.
+Ao longo da pesquisa a estrutura de classes foi agregada as bibliotecas comuns do Qt 5.15.0 \cite{QTClasses}, em um primeiro momento, para facilitar a visualização dos resultados através dos elementos gráficos de interface de usuários disponibilizados. Em seguida, permitiu o processamento de elementos de forma paralela. Com isso um modelo que suportasse o processamento paralelo utilizando classes \textit{QThreads}, que possuem tarefas concorrentes, foi construído.
 
 
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[width=\linewidth]{Figures/WiseThreadPool@16x.png}
-	\caption{Modelo de Threads. \textit{WiseThreadPool}, responsável por orquestrar o funcionamento das demais \textit{threads}, bem como os objetos contidos em um projeto \textit{WiseProject}. \textit{WiseIO}, \textit{thread} responsável por processos de leitura e escrita. \textit{WiseConsole}, \textit{thread} responsável por interpretar os comandos de texto e traduzir-los na chamada de métodos. \textit{WiseProcessor}, \textit{thread} responsável por realizar o método iterativo de um objeto inteligente \textit{WiseObject}}
+	\caption{Modelo de \textit{Threads}. \textit{WiseThreadPool}, responsável por orquestrar o funcionamento das demais \textit{threads}, bem como os objetos contidos em um projeto \textit{WiseProject}. \textit{WiseIO}, \textit{thread} responsável por processos de leitura e escrita. \textit{WiseConsole}, \textit{thread} responsável por interpretar os comandos de texto e traduzir-los na chamada de métodos. \textit{WiseProcessor}, \textit{thread} responsável por realizar o método iterativo de um objeto  \textit{WiseObject}}
 	\label{fig7:threads}
 \end{figure}
 
-As tarefas se dividem em três principais grupos: tarefas auxiliares, tarefas de leitura/escrita e trabalhos de iteração. O principal trabalho auxiliar é interpretar os comandos recebidos pelo programa e então criar a instância de trabalho inteligente \textit{WiseJob}. Sendo os grupos de tarefas mais custosos os de tarefas de escrita/leitura e iteração, se dividiram em \textit{threads} específicas, \textit{WiseIO} e \textit{WiseProcessor} respectivamente.
+As tarefas se dividem em três principais grupos: tarefas auxiliares, tarefas de leitura/escrita e trabalhos de iteração. O principal trabalho auxiliar é interpretar os comandos recebidos pelo programa e então criar a instância de trabalho \textit{WiseJob}. Sendo os grupos de tarefas mais custosos os de tarefas de escrita/leitura e iteração, eles foram divididos em \textit{threads} específicas chamadas de \textit{WiseIO} e \textit{WiseProcessor}, respectivamente.
 
-Os objetos distribuídos \textit{threads} contidos na Figura~\ref{fig7:threads} possuem um ciclo próprio, portanto executam tarefas assíncronas e precisam de tratamento adequado. O sistema de sinais e fendas disponibilizado pelas bibliotecas comuns do Qt permitem que as \textit{threads} se comuniquem assincronamente através do envio de mensagens. Estas mensagens são chamadas de trabalhos inteligentes \textit{WiseJobs}, cada uma possuindo sua atividade relacionada e objeto relacionado. Uma vez criados, os trabalhos inteligentes são alocados à sua respectiva categoria de \textit{thread} passando por um balanceamento executado pelo gerenciador de threads \textit{WiseThreadPool}. Enquanto o processamento é feito, todos os dados relativos ao processamento são bloqueados, isso previne a sobrescrita de dados quando há mais de uma thread trabalhando.
+Os objetos distribuídos \textit{threads} contidos na Figura~\ref{fig7:threads} possuem um ciclo próprio, portanto executam tarefas assíncronas e precisam de tratamento adequado. O sistema de sinais e fendas disponibilizado pelas bibliotecas comuns do Qt permitem que as \textit{threads} se comuniquem assincronamente através do envio de mensagens. Estas mensagens são chamadas de trabalhos \textit{WiseJobs}, cada uma possuindo sua atividade relacionada e objeto relacionado. Uma vez criados, os trabalhos são alocados a sua respectiva categoria de \textit{thread} passando por um balanceamento executado pelo gerenciador de threads \textit{WiseThreadPool}. Enquanto o processamento é feito, todos os dados relativos ao processamento são bloqueados, isso previne a sobrescrita de dados quando há mais de uma \textit{thread} trabalhando.
 
-O gerenciador de \textit{threads} inteligente \textit{WiseThreadPool} é composto por \textit{threads} que executam os trabalhos e por projetos inteligentes \textit{WiseProject} que criam trabalhos \textit{WiseJobs}. Ao executar um comando de texto, a linha de entrada será recebida pelo gerenciador e o primeiro trabalho inteligente \textit{WiseJob} será criado. Em seguida, será interpretado pelas \textit{threads} do grupo de tarefas auxiliares \textit{WiseConsole}, caso seja um trabalho de leitura, escrita ou iteração um trabalho inteligente associado será criado e enviado ao gerenciador de \textit{threads}. Caso não seja um trabalho desses tipos ele será executado na \textit{thread} atual e o trabalho inteligente finalizado. O console inteligente \textit{WiseConsole} funciona como interpretador principal dos comando e das mensagens, ao receber uma linha de texto este objeto irá analisar seu conteúdo e executar a ação correspondente.
+O gerenciador de \textit{threads} \textit{WiseThreadPool} é composto por \textit{threads} que executam os trabalhos e por projetos \textit{WiseProject} que criam trabalhos \textit{WiseJobs}. Ao executar um comando de texto, a linha de entrada será recebida pelo gerenciador e o primeiro trabalho \textit{WiseJob} será criado. Em seguida, será interpretado pelas \textit{threads} do grupo de tarefas auxiliares \textit{WiseConsole}, caso seja um trabalho de leitura, escrita ou iteração um trabalho associado será criado e enviado ao gerenciador de \textit{threads}. Caso não seja um trabalho desses tipos ele será executado na \textit{thread} atual e o trabalho finalizado. O console \textit{WiseConsole} funciona como interpretador principal dos comandos e das mensagens, ao receber uma linha de texto este objeto irá analisar seu conteúdo e executar a ação correspondente.
 
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[width=\linewidth]{Figures/WiseThreaPoolCMD@16x.png}
-	\caption{Modelo de Threads ao receber uma linha de comando da interface de usuário.}
+	\caption{Modelo de \textit{Threads} ao receber uma linha de comando da interface de usuário.}
 	\label{fig8:threads}
 \end{figure}
 
-Quando se trata de um comando de escrita ou leitura, a \textit{thread} \textit{WiseIO} é utilizada. Ao receber esse tipo de comando o console inteligente irá listar o trabalho no gerenciador de threads \textit{WiseThreadPool}. O gerenciador irá balancear as requisições entre as \textit{threads} e em seguida o gerenciador de \textit{threads} irá aguardar uma mensagem, indicando o final da execução do trabalho. Quando um objeto inteligente \textit{WiseObject} é iterado um elemento inteligente é criado na estrutura \textit{Freezer}, gerando uma requisição através de um trabalho inteligente. Portanto a \textit{thread} \textit{WiseIO} é muito utilizada no ciclo de vida de um elemento inteligente, gerenciando o processo de armazenamento e reconstrução do elemento. É esta estrutura que efetivamente aquece e resfria elementos inteligentes.
+Quando se trata de um comando de escrita ou leitura, a \textit{thread} \textit{WiseIO} é utilizada. Ao receber esse tipo de comando o console irá listar o trabalho no gerenciador de threads \textit{WiseThreadPool}. O gerenciador irá balancear as requisições entre as \textit{threads} e em seguida o gerenciador de \textit{threads} irá aguardar uma mensagem indicando o final da execução do trabalho. Quando um objeto \textit{WiseObject} é iterado um elemento é criado na estrutura \textit{Freezer}, gerando uma requisição através de um trabalh. Portanto, a \textit{thread} \textit{WiseIO} é muito utilizada no ciclo de vida de um elemento, gerenciando o processo de armazenamento e reconstrução do mesmo. Esta estrutura é que efetivamente aquece e resfria os elementos.
 
 \begin{figure}[!htbp]
 	\centering
@@ -467,67 +467,67 @@ Quando se trata de um comando de escrita ou leitura, a \textit{thread} \textit{W
 	\label{fig9:threads}
 \end{figure}
 
-Os trabalhos de iteração funcionam da mesma forma que as de leitura ou escrita, entretanto são enviadas a \textit{threads} \textit{WiseProcessor}. Estas \textit{threads} não possuem lógicas muito complexas, elas são responsáveis apenas por gerenciar os objetos e executar os métodos requisitados, por este motivo os objetos inteligentes e elementos inteligentes possuem métodos abstratos e seguem esses conjuntos de regras, para que uma estrutura que desconheça o seu funcionamento ou suas estruturas internas sejam capazes de executar métodos padrões. 
+Os trabalhos de iteração funcionam da mesma forma que as de leitura ou escrita, entretanto são enviadas a \textit{threads} \textit{WiseProcessor}. Estas \textit{threads} não possuem lógicas muito complexas e são responsáveis apenas por gerenciar os objetos e executar os métodos requisitados. Por este motivo, os objetos e elementos possuem métodos abstratos e seguem esses conjuntos de regras para que uma estrutura que desconheça o seu funcionamento ou suas estruturas internas sejam capazes de executar métodos padrões. 
 
-Mesmo com a arquitetura de \textit{threads} inclusa na ferramenta computacional ainda é possível que ela seja executada em processadores com apenas um núcleo, neste caso mais \textit{threads} inteligentes \igunew{não irão tornar a ferramenta mais rápida}, pois apesar dos trabalhos ainda serem dividos em \textit{threads} diferentes, elas serão executadas no mesmo núcleo de processamento. \textit{Além disto, existe um custo computacional pela comunicação entre threads, portanto com apenas um núcleo a arquitetura de classes divididas em \textit{threads} se torna uma desvantagem}. As \textit{threads} inteligentes têm um impacto maior nas atividades de escrita e leitura, isto porque o objeto inteligente está divido em várias estruturas menores que são armazenadas e acessadas constantemente, principalmente no caso de uma animação gráfica.
+Mesmo com a arquitetura de \textit{threads} inclusa na ferramenta computacional ainda é possível que ela seja executada em processadores com apenas um núcleo, neste caso mais \textit{threads} \igunew{não irão tornar a ferramenta mais rápida}, pois apesar dos trabalhos ainda serem dividos em \textit{threads} diferentes, elas serão executadas no mesmo núcleo de processamento. Além disto, existe um custo computacional pela comunicação entre threads, portanto com apenas um núcleo a arquitetura de classes divididas em \textit{threads} se torna uma desvantagem. As \textit{threads} têm um impacto maior nas atividades de escrita e leitura, isto porque o objeto está dividido em várias estruturas menores que são armazenadas e acessadas constantemente, principalmente no caso de uma animação gráfica.
 
-Ainda dentro do gerenciador de \textit{threads} inteligentes existem quatro listas de espera:
+Ainda dentro do gerenciador de \textit{threads} existem quatro listas de espera:
 
 \begin{itemize}
-	\item \textbf{Pre-Queue (Pre-Q)}: Lista de pré-seleção. Nesta estrutura os trabalhos são agrupados por grupo de trabalho e ordenadas por data de criação.
-	\item \textbf{Queue (Q)}: Lista de espera, para trabalhos que aguardam sua alocação em \textit{threads} adequadas.
-	\item \textbf{Running}: Lista de trabalhos que já foram enviados às suas respectivas \textit{threads} e aguardam resposta.
-	\item \textbf{Finished}: Lista de trabalhos que já terminaram o seu ciclo de execução.
+	\item \textit{Pre-Queue (Pre-Q)}: Lista de pré-seleção. Nesta estrutura, os trabalhos são agrupados por grupo de trabalho e ordenados por data de criação;
+	\item \textit{Queue (Q)}: Lista de espera para trabalhos que aguardam sua alocação em \textit{threads} adequadas;
+	\item \textit{Running}: Lista de trabalhos que já foram enviados as suas respectivas \textit{threads} e aguardam resposta;
+	\item \textit{Finished}: Lista de trabalhos que já terminaram o seu ciclo de execução.
 \end{itemize}
 
-No momento de criação os objetos são adicionados à lista \textit{Pre-Q}. A cada ciclo da \textit{thread} \textit{WiseThreadPool} trabalhos da lista \textit{Pre-Queue} são enviados a lista de espera \textit{Queue}, os trabalhos de cada carga de trabalho são selecionados e enviados caso não haja pré-requisitos. A única exceção é a carga de trabalho utilizada pela ferramenta para armazenar e recuperar objetos rapidamente, para isto foi reservada um identificador da carga de trabalho.
+No momento de criação os objetos são adicionados à lista \textit{Pre-Q}. A cada ciclo da \textit{thread} \textit{WiseThreadPool}, os trabalhos da lista \textit{Pre-Queue} são enviados a lista de espera \textit{Queue}, os trabalhos de cada carga de trabalho são selecionados e enviados caso não haja pré-requisitos. A única exceção é a carga de trabalho utilizada pela ferramenta para armazenar e recuperar objetos rapidamente, para isto foi reservada um identificador da carga de trabalho.
 
 Os trabalhos na lista de espera \textit{Queue} são balanceados entre as \textit{threads} disponíveis utilizando uma distribuição uniforme. Uma vez alocados, os trabalhos passam para a lista de trabalhos \textit{Running}, que contém os trabalhos em execução.
 
-Finalmente, ao final da execução em uma \textit{thread} separada, a estrutura armazena os trabalhos finalizados em uma lista \textit{Finished}, estes finalizaram seu processamento em uma \textit{thread} concorrente e uma resposta foi recebida pelo gerenciador de \textit{threads}.
+Ao final da execução em uma \textit{thread} separada, a estrutura armazena os trabalhos finalizados em uma lista \textit{Finished}, que finalizaram seu processamento em uma \textit{thread} concorrente e uma resposta foi recebida pelo gerenciador de \textit{threads}.
 
 %--------------------------------------------------------------------------------%
-\subsection{TRABALHOS INTELIGENTES}\label{sec:trabalhos}
+\subsection{OBJETO DA CLASSE \textit{WiseThreadPool}}\label{sec:trabalhos}
 
-Para que a comunicação entre as \textit{threads} inteligentes \textit{WiseThreads} seja feita de forma padronizada e possa ser estendida futuramente. Ao receber alguma demanda, o gerenciador de \textit{thread} inteligentes \textit{WiseThreadPool} irá criar um objeto do tipo \textit{WiseJob}, este objeto contém os seguinte parâmetros:
+Para que a comunicação entre as \textit{threads} \textit{WiseThreads} seja feita de forma padronizada e possa ser estendida futuramente, ao receber alguma demanda, o gerenciador de \textit{thread} \textit{WiseThreadPool} irá criar um objeto do tipo \textit{WiseJob}. Este objeto contém os seguinte parâmetros:
 
 \begin{itemize}
-	\item \textbf{ID}: Número de identificação único.
-	\item \textbf{Workload}: Número de carga de trabalho.
-	\item \textbf{Arg}: Cadeia de caracteres opcional, pode conter parâmetros para a execução do trabalho.
-	\item \textbf{Type}: Tipo de trabalho.
-	\item \textbf{Status}: Estado do trabalho.
-	\item \textbf{Antecessors}: Lista de trabalhos que antecedem este na ordem de chamada.
-	\item \textbf{Pre-requisites}: Lista de trabalhos que antecedem este na ordem de execução, ou seja, precisam ser finalizados antes.
-	\item \textbf{Ponteiros}: O trabalho do tipo \textit{WiseJob} pode ter um ponteiro para estruturas da ferramenta computacional.
+	\item \textit{ID}: número de identificação único;
+	\item \textit{Workload}: número de carga de trabalho;
+	\item \textit{Arg}: cadeia de caracteres opcional, pode conter parâmetros para a execução do trabalho;
+	\item \textit{Type}: tipo de trabalho;
+	\item \textit{Status}: estado do trabalho;
+	\item \textit{Antecessors}: lista de trabalhos que antecedem este na ordem de chamada;
+	\item \textit{Pre-requisites}: lista de trabalhos que antecedem este na ordem de execução, ou seja, precisam ser finalizados antes;
+	\item \textit{Ponteiros}: o trabalho do tipo \textit{WiseJob} pode ter um ponteiro para as estruturas da ferramenta computacional.
 \end{itemize}
 
-O número de identificação do trabalho é único e incremental, a carga de trabalho representa o grupo em que o trabalho irá executar. Ao executar a leitura de um arquivo de entrada, cada linha do arquivo irá ser interpretada como um comando e adicionada ao mesmo grupo de trabalho e vinculada ao último comando pela lista de antecessores \textit{Antecessors}, desta forma é garantido que eles serão executados em ordem.
+O número de identificação do trabalho é único e incremental, a carga de trabalho representa o grupo em que o trabalho irá executar. Ao executar a leitura de um arquivo de entrada, cada linha do arquivo irá ser interpretada como um comando e adicionada ao mesmo grupo de trabalho e vinculada ao último comando pela lista de antecessores \textit{Antecessors}, o que garante que eles serão executados em ordem.
 
-O tipo \textit{Type} do trabalho inteligente é um identificador dado ao trabalho após sua interpretação inicial. Este identificador permite às \textit{threads} determinar qual a composição do objeto e quais parâmetros para execução foram preenchidos, como ponteiros e linhas de entrada. 
+O tipo \textit{Type} do trabalho é um identificador dado ao mesmo após sua interpretação inicial. Este identificador permite às \textit{threads} determinar qual a composição do objeto e quais parâmetros para execução foram preenchidos, como ponteiros e linhas de entrada. 
 
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[width=\linewidth]{Figures/WiseJobStatus@16x.png}
-	\caption{Máquina de estados utilizadas por trabalhos inteligentes \textit{WiseJobs}.}
+	\caption{Máquina de estados utilizadas por trabalhos \textit{WiseJobs}.}
 	\label{fig9:wise_jobs}
 \end{figure}
 
-Os estados de um trabalho inteligente são ditados pela sua máquina de estados representada na Figura~\ref{fig9:wise_jobs}. Os estados desta máquina indicam em qual estrutura da \textit{WiseThreadPool} o trabalho está e se seu funcionamento é adequado. O estado \textit{Setting} indica que o trabalho foi criado e está na lista de seleção \textit{Pre-Q}; O estado \textit{Queued} significa que o trabalho foi adicionado à fila de espera e aguarda execução; O estado \textit{Running} indica que o trabalho está sendo executado; O estado \textit{Finished} indica que o trabalho foi finalizado corretamente; E, o estado \textit{Zombie} indica que o trabalho não foi finalizado corretamente. 
+Os estados de um trabalho são ditados pela sua máquina de estados representada na Figura~\ref{fig9:wise_jobs}. Os estados desta máquina indicam em qual estrutura da \textit{WiseThreadPool} o trabalho está e se seu funcionamento é adequado. O estado \textit{Setting} indica que o trabalho foi criado e está na lista de seleção \textit{Pre-Q}; o estado \textit{Queued} significa que o trabalho foi adicionado à fila de espera e aguarda execução; o estado \textit{Running} indica que o trabalho está sendo executado; o estado \textit{Finished} indica que o trabalho foi finalizado corretamente; e, o estado \textit{Zombie} indica que o trabalho não foi finalizado corretamente. 
 
-\igunew{No cerne da biblioteca \textit{Qt} está a classe \textit{QObject}, esta classe que possui o mecanismo de comunicação entre objetos de sinais e fendas. Para que um objeto possa utilizar desta interface de comunicação é necessário que ele herde as características da classe \textit{QObject} por polimorfismo~\cite{QTClasses}.}
+\igunew{No cerne da biblioteca \textit{Qt} está a classe \textit{QObject}, que possui o mecanismo de comunicação entre objetos de sinais e fendas. Para que um objeto possa utilizar desta interface de comunicação é necessário que ele herde as características da classe \textit{QObject} por polimorfismo~\cite{QTClasses}.}
 
-Os objetos de trabalho inteligente servem como mensagens de comunicação entre as \textit{threads}. Através desta estrutura objetos do tipo \textit{QObject} podem se comunicar e executar a requisição de trabalhos complexo. Isto foi feito para permitir que estruturas \textit{QWidget}, que são elementos gráficos da interface de usuário e herdam da classe \textit{QObject}, pudessem enviar mensagens diretamente ao gerenciador de \textit{threads}. \igunew{Os objetos QWidget são elementos gráficos como o quadro OpenGL, uma caixa de texto ou um botão. Todos os objetos desta classe enviam sinais à outro \textit{QObject} ao interagir com o usuário, como o uso de comandos de teclado e/ou mouse. Através da comunicação dos objetos da classe \textit{QObject} é possível que comandos na interface usuário acionem as funcionalidades das \textit{threads} e objetos inteligentes.}
+Os objetos de trabalho servem como mensagens de comunicação entre as \textit{threads}. Através desta estrutura objetos do tipo \textit{QObject} podem se comunicar e executar a requisição de trabalhos complexos. Isto foi feito para permitir que estruturas \textit{QWidget}, que são elementos gráficos da interface de usuário e herdam da classe \textit{QObject}, pudessem enviar mensagens diretamente ao gerenciador de \textit{threads}. \igunew{Os objetos \textit{QWidget} são elementos gráficos como o quadro \textit{OpenGL}, uma caixa de texto ou um botão. Todos os objetos desta classe enviam sinais a outro \textit{QObject} ao interagir com o usuário, como o uso de comandos de teclado e/ou mouse. Através da comunicação dos objetos da classe \textit{QObject} é possível que comandos na interface usuário acionem as funcionalidades das \textit{threads} e dos objetos.}
 
 %-------------------------------------------------------------------------------------------%
 \chapter{USABILIDADE DA FERRAMENTA COMPUTACIONAL}\label{sec:userinterface}
 
-Nesta seção apresentam-se detalhes da interface escolhida para facilitar o uso da ferramenta computacional. A interface de usuário foi concebida para permitir o controle de todas as estruturas descritas na Seção~\ref{sec:estrutura} com todos os seus recursos gráficos extraídos. A interface se divide em dois ambientes: Um console, que permite uma interação textual e acesso as mesmas funcionalidades de iteração; E uma janela com elementos gráficos capazes de exibir os resultados gráficos obtidos. 
+Nesta seção apresentam-se detalhes da interface escolhida para facilitar o uso da ferramenta computacional. A interface de usuário foi concebida para permitir o controle de todas as estruturas descritas na Seção~\ref{sec:estrutura} com todos os seus recursos gráficos extraídos. A interface se divide em dois ambientes: um console, que permite uma interação textual e acesso as mesmas funcionalidades de iteração; e uma janela com elementos gráficos capazes de exibir os resultados gráficos obtidos. 
 
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[width=\linewidth]{Figures/IGU_002.png}
-	\caption{Interface de usuário gráfica.}
+	\caption{Interface gráfica.}
 	\label{fig10:UI}
 \end{figure}
 
