@@ -1159,7 +1159,7 @@ O comando para definição de todos os valores pertencentes a um parâmetro (Tab
 	\begin{table}[!htbp]
 		\begin{tabularx}{\textwidth}{c|c|X}
 			\toprule
-			\textbf{Linha de Comando} & \multicolumn{2}{c}{element set\underline{\space\space}all\underline{\space\space}field <element\underline{\space\space}name> <cell\underline{\space\space}type> <field\underline{\space\space}name> <data>} \\
+			\textbf{Linha de Comando} & \multicolumn{2}{X}{element set\underline{\space\space}all\underline{\space\space}field <element\underline{\space\space}name> <cell\underline{\space\space}type> <field\underline{\space\space}name> <data>} \\
 			\midrule
 			\textbf{Escopo} & \multicolumn{2}{c}{ELEMENT} \\
 			\hline
@@ -1206,7 +1206,7 @@ Consequentemente, os resultados impressos representam os tipos de elementos supo
 %--------------------------------------------------------------------------------%
 \subsection{LISTAR EXEMPLOS DISPONÍVEIS DE ELEMENTO}\label{sec:list_example_element_factories}
 
-Para cada tipo de elemento inteligente, ou fábrica inteligente listada pelo comando descrito na Seção~\ref{sec:list_example_element_factories}, existirá uma lista de exemplos disponíveis. Exemplos são elementos inteligentes pré-definidos que podem ser criados a partir do comando de criar elementos descrito na Seção~\ref{sec:create_element}. Para listar os exemplos disponíveis o comando recebe como parâmetro de entrada a fábrica à ser analisada.
+Para cada tipo de elemento, ou fábrica listada pelo comando descrito na Seção~\ref{sec:list_element_factories}, existirá uma lista de exemplos disponíveis. Exemplos são elementos pré-definidos que podem ser criados a partir do comando de criar elementos descrito na Seção~\ref{sec:create_element}. Para listar os exemplos disponíveis o comando recebe como parâmetro de entrada a fábrica a ser analisada.
 
 \begin{center}
 	\begin{table}[!htbp]
@@ -1216,12 +1216,12 @@ Para cada tipo de elemento inteligente, ou fábrica inteligente listada pelo com
 			\midrule
 			\textbf{Escopo} & \multicolumn{2}{c}{ELEMENT} \\
 			\hline
-			\textbf{Thread Responsável} & \multicolumn{2}{c}{WiseConsole} \\
+			\textbf{Thread Responsável} & \multicolumn{2}{c}{\textit{WiseConsole}} \\
 			\hline
-			\textbf{Entrada} & <factory> & Nome da fábrica de elementos inteligente à analisada. \\
+			\textbf{Entrada} & <factory> & Nome da fábrica de elementos analisada. \\
 			\bottomrule
 		\end{tabularx}
-		\caption{Descrição do comando listar exemplos contidos em determinada fábrica de elemento.}
+		\caption{Descrição do comando para listar exemplos contidos em determinada fábrica de elemento.}
 		\label{tab:list_element_ex_factories}
 	\end{table}
 \end{center}
@@ -1229,29 +1229,29 @@ Para cada tipo de elemento inteligente, ou fábrica inteligente listada pelo com
 %--------------------------------------------------------------------------------%
 \subsection{CRIAR OBJETO}\label{sec:create_object}
 
-Assim como o comando de criação de elementos inteligentes, o comando de criação de objetos irá acessar a fábrica de elementos inteligentes \textit{WiseElementFactory}. É possível criar objetos inteligentes de duas formas: A primeira, utilizando um elemento inteligente; A segunda utilizando os exemplos disponibilizados pela fábrica de elementos inteligentes.
+Assim como o comando de criação de elementos, o comando de criação de objetos irá acessar a fábrica de elementos \textit{WiseElementFactory}. É possível criar objetos de duas formas: (1) utilizando um elemento; (2) utilizando os exemplos disponibilizados pela fábrica de elementos.
 
-Assim como descrito na Seção~\ref{sec:estrutura}, ao criar um objeto inteligente, um elemento inteligente é adicionado à estrutura do \textit{Forno}, enquanto um Clone é acoplado ao \textit{Freezer};
+Assim como descrito na Seção~\ref{sec:estrutura}, ao criar um objeto, um elemento é adicionado na estrutura do \textit{Forno}, enquanto um Clone é acoplado ao \textit{Freezer};
 
 \begin{center}
 	\begin{table}[!htbp]
 		\begin{tabularx}{\textwidth}{c|c|X}
 			\toprule
-			\multirow{3}{*}{\textbf{Linha de Comando}} & \multicolumn{2}{c}{object create <object\underline{\space\space}name> <element\underline{\space\space}name>} \\
+			\multirow{3}{*}{\textbf{Linha de Comando}} & \multicolumn{2}{X}{object create <object\underline{\space\space}name> <element\underline{\space\space}name>} \\
 			& \multicolumn{2}{c}{object create <type> <example> <name> <element\underline{\space\space}name> [ARGS]} \\
 			\midrule
 			\textbf{Escopo} & \multicolumn{2}{c}{OBJECT} \\
 			\hline
 			\textbf{Thread Responsável} & \multicolumn{2}{c}{WiseConsole} \\
 			\hline
-			\multirow{3}{*}{\textbf{Entrada}} & <object\underline{\space\space}name> & Nome do objeto à ser criado. \\
-			& <element\underline{\space\space}name> & Nome do elemento à ser utilizado na criação ou do elemento à ser criado a partir do exemplo. \\
-			& <type> & Tipo de elemento inteligente à ser criado. \\
-			& <name> & Nome do exemplo de elemento inteligente à ser criado. \\
-			& [ARGS] & Individualmente,  as fábricas podem receber parâmetros para a criação de elementos. \\
+			\multirow{3}{*}{\textbf{Entrada}} & <object\underline{\space\space}name> & Nome do objeto a ser criado. \\
+			& <element\underline{\space\space}name> & Nome do elemento a ser utilizado na criação ou do elemento a ser criado a partir do exemplo \\
+			& <type> & Tipo de elemento a ser criado \\
+			& <name> & Nome do exemplo de elemento a ser criado \\
+			& [ARGS] & Individualmente,  as fábricas podem receber parâmetros para a criação de elementos \\
 			\bottomrule
 		\end{tabularx}
-		\caption{Descrição do comando para criar objetos inteligentes.}
+		\caption{Descrição do comando para criar objetos.}
 		\label{tab:create_object}
 	\end{table}
 \end{center}
@@ -1259,7 +1259,7 @@ Assim como descrito na Seção~\ref{sec:estrutura}, ao criar um objeto inteligen
 %--------------------------------------------------------------------------------%
 \subsection{CLONAR OBJETO}\label{sec:clone_object}
 
-Assim como o elemento inteligente, o objeto inteligente pode ser clonado em uma fábrica própria. Através do comando de clonar objetos estes métodos podem ser acessados, basta inserir o nome do objeto à ser clonado. A fábrica correta é acessada verificando o tipo do objeto à ser clonado.
+Assim como o elemento, o objeto pode ser clonado em uma fábrica própria. Através do comando de clonar objetos estes métodos podem ser acessados. Basta inserir o nome do objeto a ser clonado. A fábrica correta é acessada verificando o tipo do objeto a ser clonado.
 
 \begin{center}
 	\begin{table}[!htbp]
@@ -1271,12 +1271,12 @@ Assim como o elemento inteligente, o objeto inteligente pode ser clonado em uma 
 			\hline
 			\textbf{Thread Responsável} & \multicolumn{2}{c}{WiseConsole} \\
 			\hline
-			\multirow{2}{*}{\textbf{Entrada}} & <object\underline{\space\space}name> & Nome do objeto à ser clonado. \\
+			\multirow{2}{*}{\textbf{Entrada}} & <object\underline{\space\space}name> & Nome do objeto a ser clonado \\
 			
-			& <name> & Nomo do novo elemento. \\
+			& <name> & Nomo do novo elemento \\
 			\bottomrule
 		\end{tabularx}
-		\caption{Descrição do comando para clonar objetos inteligentes.}
+		\caption{Descrição do comando para clonar objetos.}
 		\label{tab:clone_object}
 	\end{table}
 \end{center}
@@ -1284,7 +1284,7 @@ Assim como o elemento inteligente, o objeto inteligente pode ser clonado em uma 
 %--------------------------------------------------------------------------------%
 \subsection{LISTAR OBJETOS}\label{sec:list_object}
 
-Com um projeto já selecionada, o comando de listar objetos pode ser utilizado para que o console imprima uma lista com o nome de todos os objetos inteligentes presentes no projeto.
+Com um projeto já selecionado, o comando de listar objetos pode ser utilizado para que o console imprima uma lista com o nome de todos os objetos presentes no projeto.
 
 \begin{center}
 	\begin{table}[!htbp]
@@ -1294,12 +1294,12 @@ Com um projeto já selecionada, o comando de listar objetos pode ser utilizado p
 			\midrule
 			\textbf{Escopo} & \multicolumn{1}{c}{OBJECT} \\
 			\hline
-			\textbf{Thread Responsável} & \multicolumn{1}{c}{WiseConsole} \\
+			\textbf{Thread Responsável} & \multicolumn{1}{c}{\textit{WiseConsole}} \\
 			\hline
 			\textbf{Entrada} & \multicolumn{1}{c}{Nenhuma} \\
 			\bottomrule
 		\end{tabularx}
-		\caption{Descrição do comando listar elementos.}
+		\caption{Descrição do comando para listar elementos.}
 		\label{tab:list_object}
 	\end{table}
 \end{center}
@@ -1307,9 +1307,9 @@ Com um projeto já selecionada, o comando de listar objetos pode ser utilizado p
 %--------------------------------------------------------------------------------%
 \subsection{IMPRIMIR OBJETO}\label{sec:print_object}
 
-O comando de imprimir elementos irá extrair do projeto selecionado a representação em um arquivo \textit{XML}, a informação textual deste arquivo será impressa como resultado no console. Para que o comando funcione é necessário que um projeto esteja selecionado e que o nome do objeto à ser impresso seja informado.
+O comando de imprimir elementos irá extrair do projeto selecionado a representação em um arquivo \textit{XML}. A informação textual deste arquivo será impressa como resultado no console. Para que o comando funcione é necessário que um projeto esteja selecionado e que o nome do objeto a ser impresso seja informado.
 
-Dentro deste arquivo \textit{XML} estarão todas as estruturas descritas na Seção~\ref{sec:objeto_inteligente}, todos os elementos inteligentes que compõe as estruturas do \textit{Forno} e \textit{Freezer} de detalhes do objeto inteligente, bem como seu tipo e fábricas utilizadas.
+Dentro deste arquivo \textit{XML} estão todas as estruturas descritas na Seção~\ref{sec:objeto_inteligente}, ou seja, os elementos que compõe as estruturas do \textit{Forno} e \textit{Freezer} de detalhes do objeto, bem como seu tipo e fábricas utilizadas.
 
 \begin{center}
 	\begin{table}[!htbp]
@@ -1319,12 +1319,12 @@ Dentro deste arquivo \textit{XML} estarão todas as estruturas descritas na Seç
 			\midrule
 			\textbf{Escopo} & \multicolumn{2}{c}{OBJECT} \\
 			\hline
-			\textbf{Thread Responsável} & \multicolumn{2}{c}{WiseConsole} \\
+			\textbf{Thread Responsável} & \multicolumn{2}{c}{\textit{WiseConsole}} \\
 			\hline
-			\textbf{Entrada} & <object\underline{\space\space}name> & Nome do objeto à ser impresso. \\
+			\textbf{Entrada} & <object\underline{\space\space}name> & Nome do objeto a ser impresso \\
 			\bottomrule
 		\end{tabularx}
-		\caption{Descrição do comando imprimir objetos inteligentes.}
+		\caption{Descrição do comando para imprimir objetos.}
 		\label{tab:print_object}
 	\end{table}
 \end{center}
@@ -1332,7 +1332,7 @@ Dentro deste arquivo \textit{XML} estarão todas as estruturas descritas na Seç
 %--------------------------------------------------------------------------------%
 \subsection{EXCLUIR OBJETO}\label{sec:delete_object}
 
-Com um projeto selecionado, o comando de exclusão de objetos irá excluir o objeto inteligente do projeto recebendo o nome do objeto como parâmetro de entrada.
+Com um projeto selecionado, o comando de exclusão de objetos irá excluir o objeto do projeto recebendo o nome do objeto como parâmetro de entrada.
 
 \begin{center}
 	\begin{table}[!htbp]
@@ -1342,12 +1342,12 @@ Com um projeto selecionado, o comando de exclusão de objetos irá excluir o obj
 			\midrule
 			\textbf{Escopo} & \multicolumn{2}{c}{OBJECT} \\
 			\hline
-			\textbf{Thread Responsável} & \multicolumn{2}{c}{WiseConsole} \\
+			\textbf{Thread Responsável} & \multicolumn{2}{c}{\textit{WiseConsole}} \\
 			\hline
-			\textbf{Entrada} & <object\underline{\space\space}name> & Nome do objeto à ser excluído. \\
+			\textbf{Entrada} & <object\underline{\space\space}name> & Nome do objeto a ser excluído \\
 			\bottomrule
 		\end{tabularx}
-		\caption{Descrição do comando excluir objetos inteligentes.}
+		\caption{Descrição do comando para excluir objetos inteligentes.}
 		\label{tab:delete_object}
 	\end{table}
 \end{center}
@@ -1355,7 +1355,7 @@ Com um projeto selecionado, o comando de exclusão de objetos irá excluir o obj
 %--------------------------------------------------------------------------------%
 \subsection{SALVAR OBJETO}\label{sec:save_object}
 
-O comando de salvar objetos possibilita que a estrutura complexa de um objeto inteligente, bem como seus componentes, sejam arquivados em um arquivo \textit{XML}. Os objetos salvos podem em seguida ser recuperados. Como entrada o comando de salvar objetos irá receber o nome do objeto à ser salvo e o caminho para o arquivo de saída.
+O comando de salvar objetos possibilita que a estrutura complexa de um objeto, bem como seus componentes, seja arquivada em um arquivo \textit{XML}. Os objetos salvos podem ser recuperados em seguida. Como entrada, o comando de salvar objetos irá receber o nome do objeto a ser salvo e o caminho para o arquivo de saída.
 
 \begin{center}
 	\begin{table}[!htbp]
@@ -1365,13 +1365,13 @@ O comando de salvar objetos possibilita que a estrutura complexa de um objeto in
 			\midrule
 			\textbf{Escopo} & \multicolumn{2}{c}{OBJECT} \\
 			\hline
-			\textbf{Thread Responsável} & \multicolumn{2}{c}{WiseIO} \\
+			\textbf{Thread Responsável} & \multicolumn{2}{c}{\textit{WiseIO}} \\
 			\hline
-			\multirow{2}{*}{\textbf{Entrada}} & <object\underline{\space\space}name> & Nome do objeto à ser salvo. \\
-			& <filename> & Caminho para o arquivo de saída. \\
+			\multirow{2}{*}{\textbf{Entrada}} & <object\underline{\space\space}name> & Nome do objeto a ser salvo \\
+			& <filename> & Caminho para o arquivo de saída \\
 			\bottomrule
 		\end{tabularx}
-		\caption{Descrição do comando salvar objetos inteligentes.}
+		\caption{Descrição do comando para salvar objetos.}
 		\label{tab:save_object}
 	\end{table}
 \end{center}
@@ -1380,7 +1380,7 @@ O comando de salvar objetos possibilita que a estrutura complexa de um objeto in
 %--------------------------------------------------------------------------------%
 \subsection{CARREGAR OBJETO}\label{sec:load_object}
 
-O comando de carregar objetos irá enviar um arquivo de entrada a fábrica de objetos inteligentes \textit{WiseObjectFactory}, que por sua vez irá reconstruir cada componente do objeto com sua fábrica adequada. Isto significa que a coleção de elementos inteligentes e objetos gráficos irá reconstruir cada objeto. O comando recebe como entrada o nome do arquivo apenas, no Anexo~\ref{annex3} há um exemplo de arquivo \textit{XML} contendo um objeto inteligente válido.
+O comando de carregar objetos irá enviar um arquivo de entrada a fábrica de objetos \textit{WiseObjectFactory}, que por sua vez irá reconstruir cada componente do objeto com sua fábrica adequada. Isto significa que a coleção de elementos e objetos gráficos irão reconstruir cada objeto. O comando recebe como entrada o nome do arquivo apenas. No Anexo~\ref{annex3} há um exemplo de arquivo \textit{XML} contendo um objeto válido.
 
 \begin{center}
 	\begin{table}[!htbp]
@@ -1390,12 +1390,12 @@ O comando de carregar objetos irá enviar um arquivo de entrada a fábrica de ob
 			\midrule
 			\textbf{Escopo} & \multicolumn{2}{c}{OBJECT} \\
 			\hline
-			\textbf{Thread Responsável} & \multicolumn{2}{c}{WiseIO} \\
+			\textbf{Thread Responsável} & \multicolumn{2}{c}{\textit{WiseIO}} \\
 			\hline
-			\textbf{Entrada} &  <filename> & Caminho para o arquivo de entrada. \\
+			\textbf{Entrada} &  <filename> & Caminho para o arquivo de entrada \\
 			\bottomrule
 		\end{tabularx}
-		\caption{Descrição do comando carregar objetos inteligentes.}
+		\caption{Descrição do comando para carregar objetos}
 		\label{tab:load_object}
 	\end{table}
 \end{center}
@@ -1403,7 +1403,7 @@ O comando de carregar objetos irá enviar um arquivo de entrada a fábrica de ob
 %--------------------------------------------------------------------------------%
 \subsection{EXPORTAR OBJETO}\label{sec:export_object}
 
-O comando de exportar objetos funciona da mesma forma que o comando de exportar elementos, isto porque o comando irá exportar o elemento contido na estrutura do \textit{Forno}. Portanto os comandos de listar exportações e o de exportar elemento foram adicionados ao objeto.
+O comando para exportar objetos funciona da mesma forma que o comando de exportar elementos, isto porque o comando irá exportar o elemento contido na estrutura do \textit{Forno}. Portanto, os comandos para listar exportações e o para exportar elemento foram adicionados ao objeto.
 
 \begin{center}
 	\begin{table}[!htbp]
@@ -1414,14 +1414,14 @@ O comando de exportar objetos funciona da mesma forma que o comando de exportar 
 			\midrule
 			\textbf{Escopo} & \multicolumn{2}{c}{OBJECT} \\
 			\hline
-			\textbf{Thread Responsável} & \multicolumn{2}{c}{WiseConsole} \\
+			\textbf{Thread Responsável} & \multicolumn{2}{c}{\textit{WiseConsole}} \\
 			\hline
-			\multirow{2}{*}{\textbf{Entrada}} &  <object\underline{\space\space}name> & Nome do objeto à ser analisado ou exportado. \\
-			&  <export\underline{\space\space}type> & Tipo de exportação à ser realizada. \\
-			&  [ARGS] & Argumentos de entrada, específicos de cada exportação. \\
+			\multirow{2}{*}{\textbf{Entrada}} &  <object\underline{\space\space}name> & Nome do objeto a ser analisado ou exportado \\
+			&  <export\underline{\space\space}type> & Tipo de exportação a ser realizada \\
+			&  [ARGS] & Argumentos de entrada, específicos de cada exportação \\
 			\bottomrule
 		\end{tabularx}
-		\caption{Descrição dos comandos de exportação elementos contidos no \textit{Forno} de objetos inteligentes.}
+		\caption{Descrição dos comandos de exportação elementos contidos no \textit{Forno} de objetos.}
 		\label{tab:export_object}
 	\end{table}
 \end{center}
@@ -1429,27 +1429,27 @@ O comando de exportar objetos funciona da mesma forma que o comando de exportar 
 %--------------------------------------------------------------------------------%
 \subsection{DEFINIR PARÂMETROS DE OBJETO}\label{sec:set_field_object}
 
-Assim como o comando de exportar objeto atua sobre o elemento contido na estrutura do \textit{Forno}, ao realizar comandos de definição de parâmetros em um objeto inteligente o elemento inteligente contido na estrutura do \textit{Forno} que será afetado. Portanto, caso algum ajuste seja feito no modelo geométrico as iterações passadas não sofrerão mudanças, enquanto qualquer iteração nova irá receber a nova informação definida.
+Assim como o comando de exportar objeto, este comando para definir parâmetros atua sobre o elemento contido na estrutura do \textit{Forno}. Ao utilizar comandos de definição de parâmetros em um objeto, o elemento contido na estrutura do \textit{Forno} é afetado. Portanto, caso algum ajuste seja feito no modelo geométrico, as iterações passadas não sofrem mudanças, enquanto qualquer iteração nova recebe a nova informação definida.
 
 \begin{center}
 	\begin{table}[!htbp]
 		\begin{tabularx}{\textwidth}{c|c|X}
 			\toprule
-			\multirow{2}{*}{\textbf{Linha de Comando}} & \multicolumn{2}{c}{object set\underline{\space\space}field <object\underline{\space\space}name> <cell\underline{\space\space}type> <field\underline{\space\space}name> <id> <data>} \\
-			& \multicolumn{2}{c}{object set\underline{\space\space}all\underline{\space\space}field <object\underline{\space\space}name> <cell\underline{\space\space}type> <field\underline{\space\space}name> <data>} \\
+			\multirow{2}{*}{\textbf{Linha de Comando}} & \multicolumn{2}{X}{object set\underline{\space\space}field <object\underline{\space\space}name> <cell\underline{\space\space}type> <field\underline{\space\space}name> <id> <data>} \\
+			& \multicolumn{2}{X}{object set\underline{\space\space}all\underline{\space\space}field <object\underline{\space\space}name> <cell\underline{\space\space}type> <field\underline{\space\space}name> <data>} \\
 			\midrule
 			\textbf{Escopo} & \multicolumn{2}{c}{OBJECT} \\
 			\hline
-			\textbf{Thread Responsável} & \multicolumn{2}{c}{WiseConsole} \\
+			\textbf{Thread Responsável} & \multicolumn{2}{c}{\textit{WiseConsole}} \\
 			\hline
-			\multirow{5}{*}{\textbf{Entrada}} & <object\underline{\space\space}name> & Nome do elemento à ser definido. \\
-			& <cell\underline{\space\space}type> & Tipo de parâmetro à ser escalado (Ponto,Célula,Linha ou Campo). \\
-			& <field\underline{\space\space}name> & Nome do campo à ser escalado. \\
-			& <id> & Posição do valor no vetor do parâmetro, 0 caso valor único. \\
-			& <data> & Valor à ser inserido como parâmetro do elemento inteligente. \\
+			\multirow{5}{*}{\textbf{Entrada}} & <object\underline{\space\space}name> & Nome do elemento a ser definido \\
+			& <cell\underline{\space\space}type> & Tipo de parâmetro a ser escalado (Ponto,célula,linha ou campo) \\
+			& <field\underline{\space\space}name> & Nome do campo a ser escalado \\
+			& <id> & Posição do valor no vetor do parâmetro, 0 caso valor único \\
+			& <data> & Valor a ser inserido como parâmetro do elemento \\
 			\bottomrule
 		\end{tabularx}
-		\caption{Descrição do comando de definição de parâmetros do objeto.}
+		\caption{Descrição do comando para definir de parâmetros do objeto.}
 		\label{tab:set_field_object}
 	\end{table}
 \end{center}
@@ -1457,7 +1457,7 @@ Assim como o comando de exportar objeto atua sobre o elemento contido na estrutu
 %--------------------------------------------------------------------------------%
 \subsection{DEFINIR OBJETO}\label{sec:set_object}
 
-O comando de definir um objeto inteligente tem ligação direta com o seu processo de iteração. Como mencionado na Seção~\ref{sec:estrutura}, os objetos são criados por padrão no estado \textit{Ready}, tendo sido corretamente criados e acoplados de fábricas de iteração e, opcionalmente, gráficas, ele pode ser definido mudando para o estado \textit{Set}. O comando para definir um objeto inteligente recebe apenas o nome do objeto inteligente e retorna uma mensagem de conclusão.
+O comando para definir um objeto tem ligação direta com o seu processo de iteração. Como mencionado na Seção~\ref{sec:estrutura}, o objeto é criado por padrão no estado \textit{Ready}. Tendo sido corretamente criado e acoplado às fábricas de iteração e, opcionalmente, gráficas, ele pode ser definido mudando para o estado \textit{Set}. O comando para definir um objeto recebe apenas o nome do objeto e retorna uma mensagem de conclusão.
 
 \begin{center}
 	\begin{table}[!htbp]
@@ -1467,12 +1467,12 @@ O comando de definir um objeto inteligente tem ligação direta com o seu proces
 			\midrule
 			\textbf{Escopo} & \multicolumn{2}{c}{OBJECT} \\
 			\hline
-			\textbf{Thread Responsável} & \multicolumn{2}{c}{WiseConsole} \\
+			\textbf{Thread Responsável} & \multicolumn{2}{c}{\textit{WiseConsole}} \\
 			\hline
-			\textbf{Entrada} & <object\underline{\space\space}name> & Nome do objeto à ser setado. \\
+			\textbf{Entrada} & <object\underline{\space\space}name> & Nome do objeto a ser setado \\
 			\bottomrule
 		\end{tabularx}
-		\caption{Descrição do comando setar objetos inteligentes.}
+		\caption{Descrição do comando para definir objeto.}
 		\label{tab:set_object}
 	\end{table}
 \end{center}
@@ -1480,7 +1480,7 @@ O comando de definir um objeto inteligente tem ligação direta com o seu proces
 %--------------------------------------------------------------------------------%
 \subsection{ITERAR OBJETO}\label{sec:go_object}
 
-O comando de iterar objetos irá executar o ciclo de iteração de um objeto que tenha sido corretamente setado. Os objetos inteligentes no estado \textit{Set} podem ter seus parâmetros alterados e corretamente configurados, em seguida passam pelo ciclo de iteração. Ao terminarem o ciclo os objetos inteligentes mudam para o estado \textit{Go}.
+O comando para iterar objetos executa o ciclo de iteração de um objeto que tenha sido corretamente setado. Os objetos no estado \textit{Set} podem ter seus parâmetros alterados e corretamente configurados, em seguida passam pelo ciclo de iteração. Ao terminarem o ciclo, os objetos mudam para o estado \textit{Go}.
 
 \begin{center}
 	\begin{table}[!htbp]
@@ -1492,10 +1492,10 @@ O comando de iterar objetos irá executar o ciclo de iteração de um objeto que
 			\hline
 			\textbf{Thread Responsável} & \multicolumn{2}{c}{WiseProcessor} \\
 			\hline
-			\textbf{Entrada} & <object\underline{\space\space}name> & Nome do objeto à ser iterado. \\
+			\textbf{Entrada} & <object\underline{\space\space}name> & Nome do objeto a ser iterado \\
 			\bottomrule
 		\end{tabularx}
-		\caption{Descrição do comando iterar objetos inteligentes.}
+		\caption{Descrição do comando para iterar objetos.}
 		\label{tab:go_objectject}
 	\end{table}
 \end{center}
@@ -1503,7 +1503,7 @@ O comando de iterar objetos irá executar o ciclo de iteração de um objeto que
 %--------------------------------------------------------------------------------%
 \subsection{LISTAR FÁBRICAS DE ITERAÇÃO DE OBJETO}\label{sec:iteration_factories_list}
 
-Cada tipo de objeto inteligente possuirá uma lista de fábricas de iteração \textit{WiseIterationFactory} que podem ser acopladas à ele. O comando de listar fábricas de iteração irá receber o nome do objeto inteligente à ser analisado, as fábricas de iteração que forem compatíveis com o objeto serão escritas no console.
+Cada tipo de objeto possuirá uma lista de fábricas de iteração \textit{WiseIteration}\textit{Factory} que podem ser acopladas a ele. O comando de listar fábricas de iteração irá receber o nome do objeto inteligente a ser analisado, as fábricas de iteração que forem compatíveis com o objeto são escritas no console.
 
 \begin{center}
 	\begin{table}[!htbp]
@@ -1513,12 +1513,12 @@ Cada tipo de objeto inteligente possuirá uma lista de fábricas de iteração \
 			\midrule
 			\textbf{Escopo} & \multicolumn{2}{c}{OBJECT} \\
 			\hline
-			\textbf{Thread Responsável} & \multicolumn{2}{c}{WiseConsole} \\
+			\textbf{Thread Responsável} & \multicolumn{2}{c}{\textit{WiseConsole}} \\
 			\hline
-			\textbf{Entrada} & <object\underline{\space\space}name> & Nome do objeto à ser analisado. \\
+			\textbf{Entrada} & <object\underline{\space\space}name> & Nome do objeto a ser analisado \\
 			\bottomrule
 		\end{tabularx}
-		\caption{Descrição do comando listar fábricas de iteração.}
+		\caption{Descrição do comando para listar fábricas de iteração.}
 		\label{tab:iteration_factories_list}
 	\end{table}
 \end{center}
