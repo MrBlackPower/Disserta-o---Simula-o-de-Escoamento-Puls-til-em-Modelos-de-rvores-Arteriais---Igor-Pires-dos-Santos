@@ -1,4 +1,4 @@
-\chapter{RESULTADOS NUMÉRICOS}\label{sec:resultados}
+\chapter{RESULTADOS OBTIDOS}\label{sec:resultados}
 \justifying
 
 %\begin{itemize}
@@ -7,9 +7,16 @@
 %	\item \textcolor{red}{IGOR: está errada a citação do trabalho do método de Duan e Zamir (1995), não é a citação que colocou \cite{Duan}.}\textcolor{green}{\textbf{OK}}
 %\end{itemize}
 
-Nesta seção, apresentam-se resultados obtidos com a implementação computacional e simulação do modelo matemático de Duan e Zamir~\cite{Duan1992}. As simulações realizadas aqui tratam da propagação de uma onda harmônica simples ao longo de uma árvore, onde reflexões de onda modificam a amplitude da onda de pressão enquanto ela avança. A escolha de uma onda harmônica simples neste estudo possibilita investigar os efeitos da frequência, fluido viscoso e viscoelasticidade da parede do segmento de vaso.
+Neste capítulo, resultados obtidos com a ferramenta computacional construída são apresentados.
 
-Considerou-se neste estudo um modelo de árvore arterial canina como ilustrado na Figura~\ref{fig:arvore-canina}. As propriedades dos segmentos foram escolhidas oriundas dos dados de Fung~\cite{fung2013biomechanics} e são descritas na Tabela~\ref{tab1:proprerty}. 
+%--------------------------------------------------------------------------------%
+\section{SIMULAÇÕES HEMODINÂMICAS}\label{sec:simulacoes}
+
+ Nesta seção, apresentam-se resultados obtidos atrabés das simulações do modelo matemático de Duan e Zamir~\cite{Duan1992} usando a ferramenta computacional desenvolvida tanto no ambiente InGU quanto no ambiente IGU. As simulações realizadas aqui tratam da propagação de uma onda harmônica simples ao longo de uma árvore, onde reflexões de onda modificam a amplitude da onda de pressão enquanto ela avança. 
+ 
+ A escolha de uma onda harmônica simples neste estudo possibilita investigar os efeitos da frequência, fluido viscoso e viscoelasticidade da parede do segmento de vaso.
+
+Considerou-se também neste estudo um modelo de árvore arterial canina como ilustrado na Figura~\ref{fig:arvore-canina}. As propriedades dos segmentos foram escolhidas oriundas dos dados de Fung~\cite{fung2013biomechanics} e são descritas na Tabela~\ref{tab1:proprerty}. 
 
 \begin{figure}[!htbp]
 	\centering
@@ -19,7 +26,7 @@ Considerou-se neste estudo um modelo de árvore arterial canina como ilustrado n
 \end{figure}
 
 \begin{table}[!htbp]
-	\caption{Propriedades dos segmentos do modelo de árvore arterial~\cite{Duan,Fung}}
+	\caption{Propriedades dos vasos do modelo de árvore arterial~\cite{Duan,Fung}}
 	\centering{}
 	\begin{tabular}{c|c|c|c|c|c}
 		\toprule 
@@ -42,13 +49,13 @@ Considerou-se neste estudo um modelo de árvore arterial canina como ilustrado n
 
 Nas simulações realizadas, calculou-se a distribuição de amplitude de pressão ao longo da árvore arterial (Figura~\ref{fig:arvore-canina}). Os resultados foram obtidos para quatro diferentes frequên\-cias e três diferentes cenários de escoamento/segmento: (i) escoamento viscoso em segmento puramente elástico (cenário 1 da Seção~\ref{sec:cenario}), (ii) escoamento invíscido em segmento viscoelástico (cenário 2) e (iii) escoamento viscoso em segmento viscoelástico (cenário 3). 
 
-Os resultados obtidos nas simulações são mostrados nas Figuras~\ref{fig3a:arterial-tree}, \ref{fig3b:arterial-tree}, \ref{fig4a:arterial-tree}, \ref{fig4b:arterial-tree}, \ref{fig5a:arterial-tree} envolvendo a amplitude da pressão ao longo do modelo de árvore arterial. Nestas figuras, o comprimento de cada segmento arterial foi dimensionado para $1,0$, de modo que o comprimento adimensional total da árvore é $4,0$. O comprimento real é $58$ cm. A amplitude da pressão também foi escalada pela pressão de entrada $P_o$, e os resultados finais são portanto mostrados em termos de amplitude de pressão adimensional $|P|$ versus a distância adimensional $X$ do início da árvore.
+Os resultados obtidos nas simulações são mostrados nas Figuras~\ref{fig3a:arterial-tree}, \ref{fig3b:arterial-tree}, \ref{fig4a:arterial-tree}, \ref{fig4b:arterial-tree}, \ref{fig5a:arterial-tree} envolvendo a amplitude da pressão ao longo do modelo de árvore arterial. Nestas figuras, o comprimento de cada segmento arterial foi dimensionado para $1,0$, de modo que o comprimento adimensional total da árvore é $4,0$. O comprimento real é $58$ cm. A amplitude da pressão também foi escalada pela pressão de entrada $P_o = 1$, e os resultados finais são portanto mostrados em termos de amplitude de pressão adimensional $|P|$ versus a distância adimensional $X$ do início da árvore.
 
 
 %--------------------------------------------------------------------------------%
-\section{ESCOAMENTO VISCOSO}\label{sec:cenario1}
+\subsection{ESCOAMENTO VISCOSO}\label{sec:cenario1}
 
-Nas Figuras~\ref{fig3a:arterial-tree} e \ref{fig3b:arterial-tree}, o efeito da viscosidade do fluido é examinado separadamente conside\-ran\-do-se o escoamento em segmentos puramente elásticos com quatro valores diferentes de viscosidade do fluido, ou seja, $\mu = 0$; $0,5 \mu_0$; $1,0 \mu_0$ e $1,5 \mu_0$, onde $\mu_0$ é o valor base da viscosidade da Tabela~\ref{tab1:proprerty}. Observa-se que o efeito da viscosidade do fluido é reduzir o aumento global na amplitude da onda de pressão causada pelas reflexões das ondas à medida que a onda se desloca na direção à jusante. Além disso, modera os picos locais na distribuição de pressão.
+Nas Figuras~\ref{fig3a:arterial-tree} e \ref{fig3b:arterial-tree}, o efeito da viscosidade do fluido é examinado separadamente conside\-ran\-do-se o escoamento em vasos puramente elásticos com quatro valores diferentes de viscosidade do fluido, ou seja, $\mu = 0$; $0,5 \mu_0$; $1,0 \mu_0$ e $1,5 \mu_0$, onde $\mu_0$ é o valor base da viscosidade da Tabela~\ref{tab1:proprerty}. Observa-se que o efeito da viscosidade do fluido é reduzir o aumento global na amplitude da onda de pressão causada pelas reflexões das ondas à medida que a onda se desloca na direção à jusante. Além disso, modera os picos locais na distribuição de pressão.
 
 \begin{figure}[!htbp]
 	\centering
@@ -71,9 +78,9 @@ Nas Figuras~\ref{fig3a:arterial-tree} e \ref{fig3b:arterial-tree}, o efeito da v
 \end{figure}
 
 %--------------------------------------------------------------------------------%
-\section{SEGMENTO VISCOELÁSTICO}\label{sec:cenario2}
+\subsection{VASO VISCOELÁSTICO}\label{sec:cenario2}
 
-Nas Figuras~\ref{fig4a:arterial-tree}, \ref{fig4b:arterial-tree}, o efeito da viscoelasticidade da parede do segmento de vaso é considerado separadamente considerando-se o escoamento invíscido e tomando-se quatro valores diferentes da viscoelasticidade da parede do segmento. O modelo viscoelástico proposto utilizado para fins destes cálculos é apresentado no cenário 2 da Seção~\ref{sec:cenario}, no qual a viscoelasticidade da parede do vaso é representada por um módulo de Young complexo. Estas figuras mostram os resultados para $\phi_0$ = $0^o$, $4^o$, $8^o$ e $12^o$. Quando $\phi_0$ = $0^o$ tem-se um valor representando uma parede puramente elástica e para $\phi_0> 0$ tem-se a representação da viscoelasticidade. Nota-se a partir destas figuras que o efeito da viscoelasticidade, como o da viscosidade do fluido, é amortecer o aumento global da amplitude da onda de pressão causada pelas reflexões das ondas à medida que a onda se desloca na direção à jusante, bem como moderar os picos locais na distribuição de pressão. 
+Nas Figuras~\ref{fig4a:arterial-tree} e \ref{fig4b:arterial-tree}, o efeito da viscoelasticidade da parede do vaso é considerado separadamente considerando-se o escoamento invíscido e tomando-se quatro valores diferentes da viscoelasticidade da parede do vaso. O modelo viscoelástico proposto utilizado para fins destes cálculos é apresentado no cenário 2 da Seção~\ref{sec:cenario}, no qual a viscoelasticidade da parede do vaso é representada por um módulo de Young complexo. Estas figuras mostram os resultados para $\phi_0$ = $0^o$, $4^o$, $8^o$ e $12^o$. Quando $\phi_0$ = $0^o$, tem-se um valor representando uma parede puramente elástica e para $\phi_0> 0$ tem-se a representação da viscoelasticidade. Nota-se a partir destas figuras que o efeito da viscoelasticidade, como o da viscosidade do fluido, é amortecer o aumento global da amplitude da onda de pressão causada pelas reflexões das ondas à medida que a onda se desloca na direção à jusante, bem como moderar os picos locais na distribuição de pressão. 
 
 \begin{figure}[!htbp]
 	\centering
@@ -96,9 +103,9 @@ Nas Figuras~\ref{fig4a:arterial-tree}, \ref{fig4b:arterial-tree}, o efeito da vi
 \end{figure}
 
 %--------------------------------------------------------------------------------%
-\section{ESCOAMENTO VISCOSO EM SEGMENTO VISCOELÁSTICO}\label{sec:cenario3}
+\subsection{ESCOAMENTO VISCOSO EM VASO VISCOELÁSTICO}\label{sec:cenario3}
 
-Nas Figuras~\ref{fig5a:arterial-tree}, \ref{fig5b:arterial-tree}, o efeito da viscoelasticidade da parede do segmento é adicionada ao efeito do escoamento viscoso, adotando dois valores diferentes da viscoelasticidade e dois valores de viscosidade. O modelo utilizado no cenário 3 é a soma dos efeitos apresentados na Seção~\ref{sec:cenario}, adicionando o fator viscoso e o módulo de Young complexo. Estas figuras mostram o resultado para $\phi_0$ = $0^o$, $8^o$ e com as viscosidades $\mu = 0$ e $0,5 \mu_0$. Ao visualizar os efeitos da viscoelasticidade e viscosidade na amplitude da onde de Pressão $P$, é observado o amortecimento global da amplitude de onda de pressão, somado à moderação dos picos locais na distribuição de pressão. Entretanto, o efeito somado dos fenômenos causa um amortecimento mais eficaz que o visto nos outros cenários.
+Nas Figuras~\ref{fig5a:arterial-tree}, \ref{fig5b:arterial-tree}, o efeito da viscoelasticidade da parede do segmento é adicionada ao efeito do escoamento viscoso, adotando dois valores diferentes da viscoelasticidade e dois valores de viscosidade. O modelo utilizado no cenário 3 é a soma dos efeitos apresentados na Seção~\ref{sec:cenario}, adicionando o fator viscoso e o módulo de Young complexo. Estas figuras mostram o resultado para $\phi_0$ = $0^o$, $8^o$ e com as viscosidades $\mu = 0$ e $0,5 \mu_0$. Ao visualizar os efeitos da viscoelasticidade e viscosidade na amplitude da onda de Pressão $P$, é observado o amortecimento global da amplitude de onda de pressão, somado à moderação dos picos locais na distribuição de pressão. Entretanto, o efeito somado dos fenômenos causa um amortecimento mais eficaz que o visto nos outros cenários.
 
 \begin{figure}[!htbp]
 	\centering
@@ -121,12 +128,12 @@ Nas Figuras~\ref{fig5a:arterial-tree}, \ref{fig5b:arterial-tree}, o efeito da vi
 \end{figure}
 
 %--------------------------------------------------------------------------------%
-\chapter{ANÁLISES DE DESEMPENHO}\label{sec:resultados2}
+\section{ANÁLISES DE DESEMPENHO DA FERRAMENTA COMPUTACIONAL}\label{sec:resultados2}
 \justifying
 
 Nesta seção, apresentam-se resultados obtidos com a implementação da ferramenta computacional em seus dois ambientes \textit{IGU} e \textit{InGU}. As simulações realizadas aqui tratam da aplicação da ferramenta na obtenção de resultados do escoamento pulsátil em um modelo de árvore arterial. Os resultados de ambas as versões serão apresentados e comparados com a versão anteriormente apresentada.
 
-O arquivo \textit{CMakeLists.txt} é o responsável por interpretar o projeto \textit{Qt} e corretamente compilar as bibliotecas necessárias. Na interface \textit{IDE} do \textit{QtCreator} este arquivo contém as instruções para compilar todos os ambientes deste trabalho e um ambiente com a versão anterior da ferramenta computacional. A versão anterior da ferramenta computacional \textit{IGU} exporta seus resultados em arquivos \textit{VTK}, estes arquivos podem ser lidos pela nova versão da ferramenta ou ainda utilizados em outro ambiente.
+Na Figura~\ref{fig:cmake}, tem-se selecionado o arquivo \textit{CMakeLists.txt} é o responsável por interpretar o projeto \textit{Qt} e corretamente compilar as bibliotecas necessárias. Na interface \textit{IDE} do \textit{QtCreator}, este arquivo contém as instruções para compilar todos os ambientes deste trabalho e um ambiente com a versão \textit{alpha} da ferramenta computacional \textit{IGU0}. A versão \textit{alpha} da ferramenta computacional \textit{IGU} exporta seus resultados em arquivos \textit{VTK}, que podem ser lidos pela nova versão da ferramenta ou ainda utilizados em outro ambiente.
 
 
 \begin{figure}[!htbp]
@@ -137,23 +144,23 @@ O arquivo \textit{CMakeLists.txt} é o responsável por interpretar o projeto \t
 \end{figure}
 
 
-Ao abrir o arquivo do projeto é possível verificar a existência de três projetos à serem compilados: \textit{IGU}, contendo a versão anterior antiga do progama. \textit{IGU2}, que contém a versão da ferramenta computacional apresentada neste trabalho com interface gráfica; E \textit{InGU}, contendo a estrutura de dados mais recente sem uma interface gráfica. Podemos ver estes projetos presentes na Figura~\ref{fig:cmake}.
+Ao abrir o arquivo do projeto é possível verificar a existência de três projetos à serem compilados: (1) \textit{IGU0}, contendo a versão \textit{alpha} do programa com interface; (2) \textit{IGU}, que é a versão atual da ferramenta com interface gráfica apresentada neste trabalho; e (3) \textit{InGU} que é a versão atual da ferramenta sem uma interface gráfica. Podemos ver estes projetos presentes na Figura~\ref{fig:cmake}.
 
-Ao executar a versão mais antiga da ferramenta computacional uma estrutura de dados diferente é utilizada no processo de compilação. Isto porque os ambientes mais recentes disponibilizados \textit{IGU} e \textit{InGU} utilizam as mesmas classes e a mesma estrutura de dados.
+Ao executar a versão \textit{alpha}, ferramenta computacional uma estrutura de dados sem o conceito de Fábricas e classes de propósito único é utilizada no processo de compilação. Por outro lado, os ambientes \textit{IGU} e \textit{InGU} utilizam as mesmas classes e a mesma estrutura de dados.
 
 
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[width=\linewidth]{Figures/IGU_old2.png}
-	\caption{Ferramenta computacional \textit{IGU} em sua versão mais antiga.}
+	\caption{Ferramenta computacional \textit{IGU0}.}
 	\label{fig:IGU-old}
 \end{figure}
 
-Na Figura~\ref{fig:IGU-old} observamos como a interface gráfica do usuário possui duas telas de \textit{Canvas} e diversos botões na janela principal. O funcionamento desta interface é muito similar ao da nova interface, entretanto está muito mais ligada exclusivamente à simulação do escoamento pulsátil. Dois \textit{Canvas} possibilitam a exibição de uma árvore arterial e seu gráfico ao mesmo tempo, entretanto prende estes dois elementos na janela principal. Com o esquema de janelas desenvolvido na nova versão da ferramenta é possível que diversos objetos gráficos sejam exibidos ao mesmo tempo e estas janelas escaladas independentemente.
+Na Figura~\ref{fig:IGU-old} pode ser observado que a interface gráfica do usuário possui duas telas de \textit{Canvas} e diversos botões na janela principal. O funcionamento desta interface é muito similar ao da nova interface, entretanto está muito mais ligada exclusivamente à simulação do escoamento pulsátil. Dois \textit{Canvas} possibilitam a exibição de uma árvore arterial e seu gráfico ao mesmo tempo com a propriedade hemodinâmica calculada (no exemplo, a pressão ao longo dos vasos), entretanto fixa estes dois elementos na janela principal. Com o esquema de janelas desenvolvido no ambiente \textit{IGU} é possível que diversos objetos gráficos sejam exibidos ao mesmo tempo e estas janelas escaladas independentemente.
 
-A estrutura de dados presente na versão anterior da ferramenta computacional não apresenta os conceitos de fábrica e é incapaz de armazenar todos os estados do modelo geométrico, caso deseje-se recuperar um estado anterior é necessário reiniciar o experimento.
+A estrutura de dados do ambiente \textit{IGU0} não apresenta os conceitos de fábrica e é incapaz de armazenar todos os estados do modelo geométrico. Logo, caso se deseje recuperar um estado anterior é necessário reiniciar o experimento.
 
-Outra grande diferença é que o processo iterativo dos modelos estava atrelada ao uso da interface de usuário, sem a possibilidade de executar uma sequência de comandos de uma só vez. Portanto não é possível utilizar a ferramenta computacional nesta versão precisando seu tempo de execução porque o seu processo de configuração requer interação com a interface de usuário. Através dos comandos disponibilizados na Seção~\ref{sec:console}, presentes na versão mais atual da ferramenta, é possível que objetos inteligentes executem uma bateria de comandos e seu desempenho mensurado e analisado.
+No ambiente \textit{IGU0}, o processo iterativo dos modelos estava atrelada ao uso da interface de usuário, sem a possibilidade de executar uma sequência de comandos de uma só vez. Portanto, não é possível mensurar claramente o tempo de execução de um trabalho no ambiente \textit{IGU0}, porque o seu processo de configuração requer interação com a interface de usuário. Através dos comandos disponibilizados na Seção~\ref{sec:console}, presentes nos ambientes \textit{IGU} e \textit{InGU}, é possível que objetos inteligentes executem uma bateria de comandos e tenha seu desempenho mensurado e analisado.
 
 Finalmente, como visto na Seção~\ref{sec:threads} a ferramenta utiliza a \textit{thread} \textit{WiseProcessor} para processar o objeto inteligente \textit{WiseObject}, este fator permite que ferramenta execute o ciclo de iteração sem afetas o funcionamento da interface gráfica de usuário ou bloquear seus recursos.
 
@@ -194,7 +201,7 @@ Para que as \textit{threads} aumentem o desempenho, os comando precisam ser divi
 
 
 %--------------------------------------------------------------------------------%
-\section{DESEMPENHO DE THREADS}\label{sec:cenario4}
+\subsection{DESEMPENHO DE THREADS}\label{sec:cenario4}
 
 Na Tabela~\ref{tab1:medium} estão registrados os tempos médios de execução do experimento.
 
@@ -250,7 +257,7 @@ Ao duplicar o número de \textit{threads} é esperado um \textit{speed up} de $2
 Os resultados obtidos com $2$ e $4$ \textit{threads} foram os melhores, com esta quantidade de \textit{threads} e com o aumento da quantidade de cargas de trabalho é possível melhorar drasticamente o desempenho da ferramenta. Com $8$ \textit{threads} a ferramenta computacional apresenta um tempo médio de execução mesmo com uma quantidade maior de trabalhos.
 
 %--------------------------------------------------------------------------------%
-\section{DESEMPENHO DE CARGA DE TRABALHO}\label{sec:cenario5}
+\subsection{DESEMPENHO DE CARGA DE TRABALHO}\label{sec:cenario5}
 
 Com os mesmos resultados de tempo apresentados na Tabela~\ref{tab1:medium} foi calculado a melhora de desempenho pela utilização de uma quantidade maior de cargas de trabalho $w$. O \textit{speed up} $S_w$ caculado nesta tabela quantifica é dado por:
 

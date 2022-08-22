@@ -68,23 +68,24 @@
 \contentsline {subsection}{\numberline {4.1.43}LISTAR OBJETOS GRÁFICOS}{92}{subsection.4.1.43}%
 \contentsline {subsection}{\numberline {4.1.44}LISTAR CANVAS}{93}{subsection.4.1.44}%
 \contentsline {subsection}{\numberline {4.1.45}LINK GRÁFICO}{93}{subsection.4.1.45}%
-\contentsline {subsection}{\numberline {4.1.46}TERMINAR LINK GRÁFICO}{93}{subsection.4.1.46}%
+\contentsline {subsection}{\numberline {4.1.46}TERMINAR LINK GRÁFICO}{94}{subsection.4.1.46}%
 \contentsline {section}{\numberline {4.2}CASO DE USO}{94}{section.4.2}%
 \contentsline {section}{\numberline {4.3}JANELA PRINCIPAL}{96}{section.4.3}%
 \contentsline {subsection}{\numberline {4.3.1}MENU}{98}{subsection.4.3.1}%
 \contentsline {subsection}{\numberline {4.3.2}ABAS E ÁREA DE TRABALHO}{99}{subsection.4.3.2}%
-\contentsline {section}{\numberline {4.4}ÁRVORE DE PROJETOS}{101}{section.4.4}%
-\contentsline {section}{\numberline {4.5}JANELAS}{103}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}JANELA CANVAS}{103}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}JANELA JOBS}{104}{subsection.4.5.2}%
-\contentsline {chapter}{\numberline {5}RESULTADOS NUMÉRICOS}{107}{chapter.5}%
-\contentsline {section}{\numberline {5.1}ESCOAMENTO VISCOSO}{108}{section.5.1}%
-\contentsline {section}{\numberline {5.2}SEGMENTO VISCOELÁSTICO}{108}{section.5.2}%
-\contentsline {section}{\numberline {5.3}ESCOAMENTO VISCOSO EM SEGMENTO VISCOELÁSTICO}{113}{section.5.3}%
-\contentsline {chapter}{\numberline {6}ANÁLISES DE DESEMPENHO}{116}{chapter.6}%
-\contentsline {section}{\numberline {6.1}DESEMPENHO DE THREADS}{120}{section.6.1}%
-\contentsline {section}{\numberline {6.2}DESEMPENHO DE CARGA DE TRABALHO}{121}{section.6.2}%
-\contentsline {chapter}{\numberline {7}CONCLUSÕES E TRABALHOS FUTUROS}{122}{chapter.7}%
+\contentsline {section}{\numberline {4.4}ÁRVORE DE PROJETOS}{100}{section.4.4}%
+\contentsline {section}{\numberline {4.5}JANELAS}{102}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}JANELA CANVAS}{102}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}JANELA JOBS}{103}{subsection.4.5.2}%
+\contentsline {chapter}{\numberline {5}RESULTADOS OBTIDOS}{107}{chapter.5}%
+\contentsline {section}{\numberline {5.1}SIMULAÇÕES HEMODINÂMICAS}{107}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}ESCOAMENTO VISCOSO}{108}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}VASO VISCOELÁSTICO}{108}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}ESCOAMENTO VISCOSO EM VASO VISCOELÁSTICO}{111}{subsection.5.1.3}%
+\contentsline {section}{\numberline {5.2}ANÁLISES DE DESEMPENHO DA FERRAMENTA COMPUTACIONAL}{111}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}DESEMPENHO DE THREADS}{119}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}DESEMPENHO DE CARGA DE TRABALHO}{120}{subsection.5.2.2}%
+\contentsline {chapter}{\numberline {6}CONCLUSÕES E TRABALHOS FUTUROS}{122}{chapter.6}%
 \contentsline {chapter}{\numberline {A}PROCESSO DE COMPILAÇÃO}{123}{appendix.1.A}%
 \contentsline {section}{\numberline {A.1}INSTALAR QT}{123}{section.1.A.1}%
 \contentsline {section}{\numberline {A.2}INSTALAR BIBLIOTECAS SECUNDÁRIAS}{123}{section.1.A.2}%

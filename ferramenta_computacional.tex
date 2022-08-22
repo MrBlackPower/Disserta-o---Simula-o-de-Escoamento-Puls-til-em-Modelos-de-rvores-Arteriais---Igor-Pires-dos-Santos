@@ -1526,7 +1526,7 @@ Cada tipo de objeto possuirá uma lista de fábricas de iteração \textit{WiseI
 %--------------------------------------------------------------------------------%
 \subsection{DEFINIR FÁBRICA DE ITERAÇÃO DE OBJETO}\label{sec:iteration_factories_set}
 
-Antes que um objeto possa passar para o estado \textit{Set} ele precisa tem em sua composição uma fábrica de iteração, caso deseje um objeto estático (que não mude durante o ciclo iterativo) a fábrica \textit{StaticIterationFactory} deve ser acoplada. O comando para definir a fábrica de iteração irá receber o nome do objeto que terá a fábrica acoplada e o nome da fábrica à ser adicionada.
+Antes que um objeto possa passar para o estado \textit{Set} ele precisar em sua composição uma fábrica de iteração, caso deseje um objeto estático (que não mude durante o ciclo iterativo) a fábrica \textit{StaticIterationFactory} deve ser acoplada. O comando para definir a fábrica de iteração irá receber o nome do objeto que terá a fábrica acoplada e o nome da fábrica a ser adicionada.
 
 \begin{center}
 	\begin{table}[!htbp]
@@ -1536,10 +1536,10 @@ Antes que um objeto possa passar para o estado \textit{Set} ele precisa tem em s
 			\midrule
 			\textbf{Escopo} & \multicolumn{2}{c}{OBJECT} \\
 			\hline
-			\textbf{Thread Responsável} & \multicolumn{2}{c}{WiseConsole} \\
+			\textbf{Thread Responsável} & \multicolumn{2}{c}{\textit{WiseConsole}} \\
 			\hline
-			\multirow{2}{*}{\textbf{Entrada}} & <object\underline{\space\space}name> & Nome do objeto inteligente que irá receber a fábrica. \\
-			& <factory\underline{\space\space}name> & Fábrica de iteração à ser inserido no objeto. \\
+			\multirow{2}{*}{\textbf{Entrada}} & <object\underline{\space\space}name> & Nome do objeto inteligente que irá receber a fábrica \\
+			& <factory\underline{\space\space}name> & Fábrica de iteração a ser inserido no objeto \\
 			\bottomrule
 		\end{tabularx}
 		\caption{Descrição do comando definir fábricas gráficas.}
@@ -1550,7 +1550,7 @@ Antes que um objeto possa passar para o estado \textit{Set} ele precisa tem em s
 %--------------------------------------------------------------------------------%
 \subsection{LISTAR FÁBRICAS GRÁFICAS DE OBJETO}\label{sec:graphic_factories_list}
 
-Além de fábricas de iteração, objetos inteligentes podem ser compostos por fábricas gráficas. O comando de listar fábricas gráficas irá imprimir no console as fábricas gráficas disponíveis para um determinado objeto inteligente, como dado de entrada o comando irá receber o nome deste objeto.
+Além de fábricas de iteração, objetos podem ser compostos por fábricas gráficas. O comando para listar fábricas gráficas irá imprimir no console as fábricas gráficas disponíveis para um determinado objeto. Como dado de entrada deste comando, é recebido irá receber o nome deste objeto.
 
 \begin{center}
 	\begin{table}[!htbp]
@@ -1560,12 +1560,12 @@ Além de fábricas de iteração, objetos inteligentes podem ser compostos por f
 			\midrule
 			\textbf{Escopo} & \multicolumn{2}{c}{OBJECT} \\
 			\hline
-			\textbf{Thread Responsável} & \multicolumn{2}{c}{WiseConsole} \\
+			\textbf{Thread Responsável} & \multicolumn{2}{c}{\textit{WiseConsole}} \\
 			\hline
-			\textbf{Entrada} & <object\underline{\space\space}name> & Nome do objeto à ser analisado. \\
+			\textbf{Entrada} & <object\underline{\space\space}name> & Nome do objeto a ser analisado \\
 			\bottomrule
 		\end{tabularx}
-		\caption{Descrição do comando listar fábricas gráficas.}
+		\caption{Descrição do comando para listar fábricas gráficas de objetos.}
 		\label{tab:graphic_factories_list}
 	\end{table}
 \end{center}
@@ -1573,7 +1573,7 @@ Além de fábricas de iteração, objetos inteligentes podem ser compostos por f
 %--------------------------------------------------------------------------------%
 \subsection{DEFINIR FÁBRICA GRÁFICA DE OBJETO}\label{sec:graphic_factories_set}
 
-Uma vez que o objeto inteligente tenha sido criado corretamente ele pode ser acoplado a fábricas de iteração ou gráficas. O comando de definir fábrica gráfica irá acoplar uma fábrica gráfica disponível à um objeto inteligente compatível. Como dados de entrada o comando receberá o nome do objeto inteligente à ser alterado e o nome da fábrica gráfica à ser adicionada.
+Uma vez que o objeto tenha sido criado corretamente ele pode ser acoplado a fábricas de iteração ou gráficas. O comando para definir fábrica gráfica irá acoplar uma fábrica gráfica disponível a um objeto compatível. Como dados de entrada, o comando receberá o nome do objeto a ser alterado e o nome da fábrica gráfica a ser adicionada.
 
 \begin{center}
 	\begin{table}[!htbp]
@@ -1583,13 +1583,13 @@ Uma vez que o objeto inteligente tenha sido criado corretamente ele pode ser aco
 			\midrule
 			\textbf{Escopo} & \multicolumn{2}{c}{OBJECT} \\
 			\hline
-			\textbf{Thread Responsável} & \multicolumn{2}{c}{WiseConsole} \\
+			\textbf{Thread Responsável} & \multicolumn{2}{c}{\textit{WiseConsole}} \\
 			\hline
-			\multirow{2}{*}{\textbf{Entrada}} & <object\underline{\space\space}name> & Nome do objeto inteligente que irá receber a fábrica. \\
-			& <factory\underline{\space\space}name> & Fábrica gráfica à ser inserido no objeto. \\
+			\multirow{2}{*}{\textbf{Entrada}} & <object\underline{\space\space}name> & Nome do objeto que  recebe a fábrica \\
+			& <factory\underline{\space\space}name> & Fábrica gráfica a ser inserido no objeto \\
 			\bottomrule
 		\end{tabularx}
-		\caption{Descrição do comando definir fábricas gráficas.}
+		\caption{Descrição do comando para definir fábricas gráficas de objeto.}
 		\label{tab:graphic_factories_set}
 	\end{table}
 \end{center}
@@ -1597,22 +1597,22 @@ Uma vez que o objeto inteligente tenha sido criado corretamente ele pode ser aco
 %--------------------------------------------------------------------------------%
 \subsection{LISTAR OBJETOS GRÁFICOS}\label{sec:graphic_list}
 
-Uma vez que o objeto gráfico tenha sido corretamente criado e acoplado à uma fábrica gráfica, o seu modelo é disponibilizado numa lista de objetos gráficos. Essa lista irá exibir o nome de todos os objetos que podem ser visualizados e está disponível para visualização através de um comando.
+Uma vez que o objeto gráfico tenha sido corretamente criado e acoplado a uma fábrica gráfica, o seu modelo é disponibilizado em uma lista de objetos gráficos. Essa lista exibe o nome de todos os objetos que podem ser visualizados e está disponível para visualização através de um comando.
 
 \begin{center}
 	\begin{table}[!htbp]
 		\begin{tabularx}{\textwidth}{c|X}
 			\toprule
-			\textbf{Linha de Comando} & graphic list \\
+			\textbf{Linha de Comando} & \multicolumn{1}{c}{graphic list} \\
 			\midrule
 			\textbf{Escopo} & \multicolumn{1}{c}{OBJECT} \\
 			\hline
-			\textbf{Thread Responsável} & \multicolumn{1}{c}{WiseConsole} \\
+			\textbf{Thread Responsável} & \multicolumn{1}{c}{\textit{WiseConsole}} \\
 			\hline
-			\textbf{Entrada} & \multicolumn{1}{c}{Nenhuma}. \\
+			\textbf{Entrada} & \multicolumn{1}{c}{Nenhuma} \\
 			\bottomrule
 		\end{tabularx}
-		\caption{Descrição do comando listar objetos gráficos.}
+		\caption{Descrição do comando para listar objetos gráficos.}
 		\label{tab:graphic_list}
 	\end{table}
 \end{center}
@@ -1620,22 +1620,22 @@ Uma vez que o objeto gráfico tenha sido corretamente criado e acoplado à uma f
 %--------------------------------------------------------------------------------%
 \subsection{LISTAR CANVAS}\label{sec:canvas_list}
 
-O comando de listar \textit{Canvas} irá nomear todas os elementos gráficos disponíveis. Quando o ambiente \textit{InGU} está sendo executado não existirão elementos gráficos disponíveis, entretanto como veremos à frente o ambiente computacional \textit{IGU} apresentar exatamente as mesmas funcionalidades com elementos gráficos. Ao executar este comando no ambiente computacional com elementos gráficos, cada objeto e seu nome será enviado como resultado.
+O comando para listar \textit{Canvas} nomeia todos os elementos gráficos disponíveis. Quando o ambiente \textit{InGU} está sendo executado não existem elementos gráficos disponíveis. Entretanto, como é descrito a seguir, o ambiente computacional \textit{IGU} apresenta exatamente as mesmas funcionalidades com elementos gráficos. Ao executar este comando no ambiente computacional com elementos gráficos, cada objeto e seu nome são enviado como resultado.
 
 \begin{center}
 	\begin{table}[!htbp]
 		\begin{tabularx}{\textwidth}{c|X}
 			\toprule
-			\textbf{Linha de Comando} & canvas list \\
+			\textbf{Linha de Comando} & \multicolumn{1}{c}{canvas list} \\
 			\midrule
 			\textbf{Escopo} & \multicolumn{1}{c}{GRAPHIC} \\
 			\hline
-			\textbf{Thread Responsável} & \multicolumn{1}{c}{WiseConsole} \\
+			\textbf{Thread Responsável} & \multicolumn{1}{c}{\textit{WiseConsole}} \\
 			\hline
-			\textbf{Entrada} & \multicolumn{1}{c}{Nenhuma}. \\
+			\textbf{Entrada} & \multicolumn{1}{c}{Nenhuma} \\
 			\bottomrule
 		\end{tabularx}
-		\caption{Descrição do comando listar elementos gráficos \textit{Canvas}.}
+		\caption{Descrição do comando para listar elementos gráficos \textit{Canvas}}
 		\label{tab:canvas_list}
 	\end{table}
 \end{center}
@@ -1643,7 +1643,7 @@ O comando de listar \textit{Canvas} irá nomear todas os elementos gráficos dis
 %--------------------------------------------------------------------------------%
 \subsection{LINK GRÁFICO}\label{sec:graphic_link}
 
-Tendo o conhecimento dos elementos gráficos disponíveis para desenho e das estruturas aptas à serem desenhadas, é possível que estas estruturas sejam conectadas para que funcionem em conjunto. Ao realizar esta conecção, nomeada de link gráfico, o elemento gráfico passará a exibir o elemento gráfico.
+Tendo o conhecimento dos elementos gráficos disponíveis para desenho e das estruturas aptas a serem desenhadas, é possível que estas estruturas sejam conectadas para que funcionem em conjunto. Ao realizar esta conecção, nomeada de link gráfico, o elemento gráfico passará a exibir o elemento gráfico.
 
 \begin{center}
 	\begin{table}[!htbp]
@@ -1654,10 +1654,10 @@ Tendo o conhecimento dos elementos gráficos disponíveis para desenho e das est
 			\midrule
 			\textbf{Escopo} & \multicolumn{2}{c}{GRAPHIC} \\
 			\hline
-			\textbf{Thread Responsável} & \multicolumn{2}{c}{WiseConsole} \\
+			\textbf{Thread Responsável} & \multicolumn{2}{c}{\textit{WiseConsole}} \\
 			\hline
-			\multirow{2}{*}{\textbf{Entrada}} &  <graphic\underline{\space\space}name> & Nome do objeto gráfico à ser linkado com elemento gráfico \textit{Canvas}. \\
-			& <canvas\underline{\space\space}name> & Nome do \textit{Canvas} à receber objeto gráfico para desenho. \\
+			\multirow{2}{*}{\textbf{Entrada}} &  <graphic\underline{\space\space}name> & Nome do objeto gráfico a ser linkado com elemento gráfico \textit{Canvas} \\
+			& <canvas\underline{\space\space}name> & Nome do \textit{Canvas} a receber objeto gráfico para desenho \\
 			\bottomrule
 		\end{tabularx}
 		\caption{Descrição dos comandos que enviam um objeto gráfico para ser exibido em um elemento gráfico da interface de usuário.}
@@ -1668,7 +1668,7 @@ Tendo o conhecimento dos elementos gráficos disponíveis para desenho e das est
 %--------------------------------------------------------------------------------%
 \subsection{TERMINAR LINK GRÁFICO}\label{sec:graphic_purge}
 
-Uma vez que os elementos gráficos começam a ser exibidos em elementos de interface gráfica eles são desenhados continuamente. Para liberar o elemento de interface gráfica e deixá-lo vazio o comando de terminar link gráfico deve ser utilizado. Como dado de entrada este comando recebe o nome do elemento de interface gráfica.
+Uma vez que os elementos gráficos começam a ser exibidos em elementos de interface gráfica eles são desenhados continuamente. Para liberar o elemento de interface gráfica e deixá-lo vazio, o comando de terminar link gráfico deve ser utilizado. Como dado de entrada, este comando recebe o nome do elemento de interface gráfica.
 
 \begin{center}
 	\begin{table}[!htbp]
@@ -1678,9 +1678,9 @@ Uma vez que os elementos gráficos começam a ser exibidos em elementos de inter
 			\midrule
 			\textbf{Escopo} & \multicolumn{2}{c}{GRAPHIC} \\
 			\hline
-			\textbf{Thread Responsável} & \multicolumn{2}{c}{WiseConsole} \\
+			\textbf{Thread Responsável} & \multicolumn{2}{c}{\textit{WiseConsole}} \\
 			\hline
-			\textbf{Entrada} & <canvas\underline{\space\space}name> & Canvas à ser limpo. \\
+			\textbf{Entrada} & <canvas\underline{\space\space}name> & Canvas a ser limpo \\
 			\bottomrule
 		\end{tabularx}
 		\caption{Descrição do comando terminar link gráfico.}
@@ -1691,22 +1691,24 @@ Uma vez que os elementos gráficos começam a ser exibidos em elementos de inter
 %--------------------------------------------------------------------------------%
 \section{CASO DE USO}\label{sec:caso_de_uso}
 
-O principal objetivo da ferramenta computacional é iterar modelos utilizando alguma lógica pré-definida por algum algoritmo disponível. Através dos comandos descritos na Seção~\ref{sec:console} é possível que estes modelos sejam criados, alterados, iterados e, opcionalmente, visualizados. A Figura~\ref{fig:caso_uso} demonstra a principal sequência de atividades executadas para se iterar um objeto inteligente. Com este modelo é possível observar a sequência de passos necessárias para se iterar um obejto inteligente.
+O principal objetivo da ferramenta computacional é iterar modelos utilizando alguma lógica pré-definida por algum algoritmo disponível. Através dos comandos descritos na Seção~\ref{sec:console} é possível que estes modelos sejam criados, alterados, iterados e, opcionalmente, visualizados.
+
+ A Figura~\ref{fig:caso_uso} ilustra a principal sequência de atividades executadas para se iterar um objeto. Com este modelo é possível observar a sequência de passos necessária para se iterar um objeto.
 
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[width=\linewidth]{Figures/CasoDeUso@16x.png}
-	\caption{Fluxograma do ambiente computacional InGU, em azul as atividades de criação de elementos inteligentes, em verde as atividades de criação de projetos inteligentes e em laranja as atividades de criação de objetos inteligentes.}
+	\caption{Fluxo de caso de uso do ambiente computacional InGU, em azul as atividades de criação de elementos, em verde as atividades de criação de projetos e em laranja as atividades de criação de objetos.}
 	\label{fig:caso_uso}
 \end{figure}
 
-Primeiramente, é necessário criar um projeto inteligente e selecioná-lo. Cada atividade representada no fluxograma é executada por um comando correspondente, o mesmo fluxo pode ser observado no Anexo~\ref{annex2}. As primeiras linhas de comando representadas neste arquivo de comandos são de criação de projetos.
+Primeiramente, é necessário criar um projeto e selecioná-lo. Cada atividade representada no fluxograma é executada por um comando correspondente. O mesmo fluxo pode ser observado no Anexo~\ref{annex2}. As primeiras linhas de comando representadas neste arquivo são de criação de projetos.
 
-Ao criar um objeto inteligente, seus elemento inteligentes também são criados. Esta funcionalidade está disponível ao usuário uma vez que ele tenha selecionado um projeto. É possível ainda criar um objeto inteligente à partir de um elemento inteligente. Desta forma há garantia da igualdade inicial entre os modelos.
+Ao criar um objeto, seus elementos também são criados. Esta funcionalidade está disponível ao usuário uma vez que ele tenha selecionado um projeto. É possível ainda criar um objeto a partir de um elemento. Desta forma, há garantia da igualdade inicial entre os modelos.
 
-Com um objeto criado corretamente é possível adicionar à ele uma fábrica de iteração e uma gráfica. Ao acoplar a fábrica de iteração o método iterativo é liberado, bem como a possibilidade de alterar os parâmetros do objeto inteligente.
+Com um objeto criado corretamente é possível adicionar a ele uma fábrica de iteração e uma gráfica. Ao acoplar a fábrica de iteração o método iterativo é liberado, bem como a possibilidade de alterar os parâmetros do objeto.
 
-Também existe a possibilidade de se exportar elementos inteligentes, para elementos inteligentes como \textit{WiseGraphic} isso siginifca a exportação de imagem no formato \textbf{P}ortable \textbf{N}etwork \textbf{G}raphics, ou \textit{png}, com seu comando representado na linha $7$ do Anexo~\ref{annex2}.
+Também existe a possibilidade de se exportar elementos, para elementos \textit{WiseGraphic} isso significa a exportação de imagem no formato \textbf{P}ortable \textbf{N}etwork \textbf{G}raphics, ou \textit{png}, com seu comando representado na linha $7$ do Anexo~\ref{annex2}.
 
 Como mencionado anteriormente, a mesma estrutura foi utilizada na construção do ambiente computacional composto por elementos gráficos \textit{IGU}, conforme a Figura~\ref{fig:caso_uso2}.
 
@@ -1717,129 +1719,128 @@ Como mencionado anteriormente, a mesma estrutura foi utilizada na construção d
 	\label{fig:caso_uso2}
 \end{figure}
 
- Desta forma o principal fluxo de uso da interface gráfica foi desenvolvido. O funcionamento apresentado pela Figura~\ref{fig:caso_uso2} difere do apresentado na Figura~\ref{fig:caso_uso} apenas na visualização dos objetos gráficos disponibilizada pelos elementos gráficos. Isto garante que ambos os ambientes computacionais sejam alterados em uma eventual atualização de código e que tenham funcionamento idêntico.
+ Desta forma, o principal fluxo de uso da interface gráfica foi desenvolvido. O funcionamento apresentado pela Figura~\ref{fig:caso_uso2} difere do apresentado na Figura~\ref{fig:caso_uso} apenas na visualização dos objetos gráficos disponibilizada pelos elementos gráficos. Isto garante que ambos os ambientes computacionais sejam alterados em uma eventual atualização de código e que tenham funcionamento idêntico.
 
 %--------------------------------------------------------------------------------%
 \section{JANELA PRINCIPAL}\label{sec:janela}
 
-O ambiente com interface gráfica foi nomeado de \textbf{I}terador \textbf{G}ráfico \textbf{U}niversal (IGU), que também está presente como parte de um projeto \textit{Qt}/\textit{C++}. Diferentemente dos outro ambiente, este possui elementos gráficos. O principal elemento gráfico disponibilizado pela interface gráfico é a janela principal, que é um objeto do tipo \textit{QMainWindow}. Estes objetos são disponibilizados pela biblioteca \textit{Qt} e permitem que um projeto \textit{C++} possua uma interface gráfica utilizando diretivas OpenGL e GLUT (The OpenGL Utility Kit)~\cite{OpenGL}.
+O ambiente com interface gráfica foi nomeado de \textbf{I}terador \textbf{G}ráfico \textbf{U}niversal (IGU), que também está presente como parte de um projeto \textit{Qt}/\textit{C++}. Diferentemente do InGU, este possui elementos gráficos. O principal elemento gráfico disponibilizado pela interface gráfica é a janela principal, que é um objeto do tipo \textit{QMainWindow}. Estes objetos são disponibilizados pela biblioteca \textit{Qt} e permitem que um projeto \textit{C++} possua uma interface gráfica utilizando diretivas OpenGL e GLUT (\textit{The OpenGL Utility Kit})~\cite{OpenGL}.
 
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[width=\linewidth]{Figures/IGU_001a.png}
-	\caption{Janela principal ambiente computacional IGU. Da esquerda para a direita: A. Menu principal do programa; B. Árvore de projetos e seus elementos; C. Área de trabalho, no caso mostrando OpenGl \textit{Canvas}; D. Seleção de abas}
+	\caption{Janela principal ambiente computacional IGU. Da esquerda para a direita: (A) Menu principal do programa; (B) Árvore de projetos e seus elementos; (C) Área de trabalho, no caso mostrando OpenGl \textit{Canvas}; (D) Seleção de abas}
 	\label{fig:UI}
 \end{figure}
 
-A Figura~\ref{fig:UI} demonstra o comportamento inicial da ferramenta computacional. Ao ser aberta o ambiente de trabalho, projetos, objetos e elementos são recuperados de um arquivo contido na mesma parte da ferramenta computacional. Este arquivo é salvo toda vez que a ferramenta computacional é encerrada com projetos inteligentes ainda no ambiente. Ainda nesta figura estão representados os principais grupos de elementos gráficos.
+A Figura~\ref{fig:UI} ilustra o comportamento inicial da ferramenta computacional. Ao ser aberta, o ambiente de trabalho, projetos, objetos e elementos são recuperados de um arquivo contido na mesma parte da ferramenta computacional. Este arquivo é salvo toda vez que a ferramenta é encerrada com projetos ainda no ambiente. Ainda nesta figura estão representados os principais grupos de elementos gráficos.
 
-As próximas seções discorrem sobre cada grupo de elemento gráfico presente na janela principal da ferramenta computacional e seu funcionamento.
+As próximas seções discorrem sobre cada grupo de elemento gráfico presente na janela principal da ferramenta e seu funcionamento.
 
 %--------------------------------------------------------------------------------%
 \subsection{MENU}\label{sec:menu}
 
-O primeiro grupo são os elementos que compões o menu principal da aplicação. Cada opção do menu é representada por um uma linha de texto, ao selecionar a linha uma ação é executada:
-
-\begin{figure}[!htbp]
-	\centering
-	\includegraphics[scale=1]{Figures/IGU_016.png}
-	\caption{Parte da janela principal contendo a área de trabalho e as abas que selecionam a interface selecionada, sendo os componentes: C. Área de trabalho \textit{Canvas}; D. Seleção de abas}
-	\label{fig:menu}
-\end{figure}
-
+O primeiro grupo são os elementos que constituem o menu principal da aplicação. Cada opção do menu é representada por um uma linha de texto, ao selecionar a linha uma ação é executada:
 
 \begin{itemize}
 	\item \textbf{Exit}: Fecha o ambiente computacional.
-	\item \textbf{Jobs}: Abre a Janela que exibe os trabalhos inteligentes criados.
+	\item \textbf{Jobs}: Abre a Janela que exibe os trabalhos criados.
 	\item \textbf{Open Canvas}: Abre uma nova janela contendo um novo elemento gráfico OpenGL \textit{Canvas}.
 \end{itemize}
 
-Ao abrir um novo elemento gráfico \textit{Canvas}, um novo nome será listado ao executar o comando de listar canvas. Isso possibilita que mais de um objeto seja exibido ao mesmo tempo em janelas distintas.
+\begin{figure}[!htbp]
+\centering
+\includegraphics[scale=1]{Figures/IGU_016.png}
+\caption{Opções do menu principal da ferramenta computacional \textit{IGU}}
+\label{fig:menu}
+\end{figure}
+
+Ao abrir um novo elemento gráfico \textit{Canvas}, um novo nome será listado ao executar o comando para listar canvas. Isso possibilita que mais de um objeto seja exibido ao mesmo tempo em janelas distintas.
 
 %--------------------------------------------------------------------------------%
 \subsection{ABAS E ÁREA DE TRABALHO}\label{sec:abas}
 
-As abas da janela principal selecionam o elemento de interface gráfica que será exibido na área de trabalho da aplicação.
+As abas da janela principal selecionam o elemento de interface gráfica que é exibido na área de trabalho da aplicação.
 
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[width=\linewidth]{Figures/IGU_001a_34.png}
-	\caption{Opções do menu principal da ferramenta computacional \textit{IGU}}
+	\caption{Parte da janela principal contendo a área de trabalho e as abas que selecionam a interface selecionada, sendo os componentes: (C) Área de trabalho \textit{Canvas}; (D) Seleção de abas}
 	\label{fig:abas}
 \end{figure}
 
 Ao selecionar uma das abas, os elementos de interface de usuário da área de trabalho são trocados. Estes elementos são objetos do tipo \textit{QWidget}, que por sua vez são divididos em dois ambientes: o \textit{Canvas} e o \textit{Console}. 
 
-A aba \textit{Console} exibe um ambiente similar ao disponibilizado pelo ambiente \textit{InGU}. Utilizando um elemento de exibição textual longa, uma linha de texto como entrada e um botão, os mesmo comandos disponibilizados na Seção~\ref{sec:console} são acessados por estes elementos gráficos. Para executar uma linha de comando basta inserir-la no elemento gráfico e pressionar o botão ou a tecla \textit{Enter}, a resposta será acoplada ao elemento de exibição textual longa.
+A aba \textit{Console} exibe um ambiente similar ao disponibilizado pelo ambiente \textit{InGU}. Utilizando um elemento de exibição textual longa, uma linha de texto como entrada e um botão, os mesmo comandos disponibilizados na Seção~\ref{sec:console} são acessados por estes elementos gráficos. Para executar uma linha de comando, basta inserir-lá no elemento gráfico e pressionar o botão ou a tecla \textit{Enter}, a resposta é acoplada ao elemento de exibição textual longa.
 
 \begin{figure}
 	\centering
 	\includegraphics[width=.9\linewidth]{Figures/IGU_017.png}
-	\caption{Área de Trabalho exibindo o elemento gráfico \textit{Canvas} com a aba \textit{Canvas} selecionada.}
+	\caption{Área de trabalho exibindo o elemento gráfico \textit{Canvas} com a aba \textit{Canvas} selecionada.}
 	\label{fig:sfig1}
 \end{figure}
 
 \begin{figure}
 	\centering
 	\includegraphics[width=.9\linewidth]{Figures/IGU_001.png}
-	\caption{Área de Trabalho exibindo o elemento gráfico \textit{Console} com a aba \textit{Console} selecionada.}
+	\caption{Área de trabalho exibindo o elemento gráfico \textit{Console} com a aba \textit{Console} selecionada.}
 	\label{fig:sfig2}
 \end{figure}
 
-A Figura~\ref{fig:fig} mostra as áreas de trabalho disponibilizadas ao selecionar uma das abas. Através da opção \textit{Canvas}, o elemento gráfico que contém um \textit{QWidget} cuja principal função é uma tela \textit{OpenGL}. Os objetos gráficos, resultados de iterações podem ser visualizados aqui. O funcionamento desta área de trabalho é descrito pela janela \textit{Canvas} e funciona como um 
+A Figura~\ref{fig:abas} mostra as áreas de trabalho disponibilizadas ao selecionar uma das abas. Através da opção \textit{Canvas}, o elemento gráfico que contém um \textit{QWidget} cuja principal função é uma tela \textit{OpenGL}. Os objetos gráficos, que são resultados de iterações, podem ser visualizados aqui. O funcionamento desta área de trabalho é descrito pela janela \textit{Canvas} e funciona como um 
 reprodutor de vídeo.
 
-As abas foram construídas para realizar todas as funções da ferramenta computacional com seus elementos gráficos. O ciclo de vida da \textit{thread} \textit{WiseThreadPool} esta diretamente ligado à interface gráfica. Ao utilizar a interface gráfica para percorrer os elementos gráficos, ou executar a animação, irá desencadear chamadas diretas as \textit{threads}.
+As abas foram construídas para realizar todas as funções da ferramenta computacional com seus elementos gráficos. O ciclo de vida da \textit{thread} \textit{WiseThreadPool} esta diretamente ligado à interface gráfica. Ao utilizar a interface gráfica para percorrer os elementos gráficos, ou executar a animação, desencadeiam chamadas diretas as \textit{threads}.
 
 %--------------------------------------------------------------------------------%
 \section{ÁRVORE DE PROJETOS}\label{sec:arvore_projetos}
 
-Além da área de trabalho, o elemento gráfico que exibe a árvore de projetos permanece fixa. Este elemento gráfico é um explorador de árvore \textit{QTreeWidget} que exibe todos os projetos carregados e suas estruturas. Esta árvore permite rapidamente verificar os elementos criados, seus nomes, suas chaves únicas e seu estado atual.
+Além da área de trabalho, o elemento gráfico que exibe a árvore de projetos permanece fixo. Este elemento gráfico é um explorador de árvore \textit{QTreeWidget} que exibe todos os projetos carregados e suas estruturas. Esta árvore permite rapidamente verificar os elementos criados, seus nomes, suas chaves únicas e seu estado atual.
 
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[width=0.4\linewidth]{Figures/IGU_001c.png}
-	\caption{Árvore de projetos, na imagem a ferramenta apresenta um projeto inteligente $p1$, um objeto inteligente $obj1$ e seus elementos gráficos e inteligentes.}
+	\caption{Árvore de projetos, na imagem a ferramenta apresenta um projeto $p1$, um objeto $obj1$ e seus elementos gráficos e elementos.}
 	\label{fig:arvores}
 \end{figure}
 
-A Figura~\ref{fig:arvores} apresenta o elemento gráfico de uma árvore de projetos com objetos carregados. Na imagem está um projeto nomeado \textit{p1}, um objeto inteligente \textit{obj1} e diversos elementos inteligentes e gráficos. Como visto anteriormente quando o objeto está no estado \textit{GO} significa que ele já foi corretamente configurado e iterado. Dentro deste objeto inteligente estão os elementos inteligentes e gráficos. O primeiro elemento \textit{el1} é o elemento contido na estrutura \textit{Forno} e é o único elemento inteligente no estado \textit{Hot}. Em seguida estão os elementos inteligentes da estrutura \textit{Freezer}, seguidos pelos objetos gráficos.
+A Figura~\ref{fig:arvores} apresenta o elemento gráfico de uma árvore de projetos com objetos carregados. Na imagem está um projeto nomeado \textit{p1}, um objeto \textit{obj1} e diversos elementos e elementos gráficos. Como visto anteriormente quando o objeto está no estado \textit{GO} significa que ele já foi corretamente configurado e iterado. Dentro deste objeto estão os elementos e elementos gráficos. O primeiro elemento \textit{el1} é o elemento contido na estrutura \textit{Forno} e é o único elemento no estado \textit{Hot}. Em seguida, estão os elementos da estrutura \textit{Freezer}, seguidos pelos objetos gráficos.
 
-Através da árvore de projetos é possível observar a troca de estado dos elementos, por exemplo, ao executar a animação os elementos gráficos serão sucessivamente aquecidos. Se observa que a mesma quantidade de elementos gráficos e inteligentes, mantendo a consistência do objeto inteligente, cada passo iterativo com sua respectiva representação gráfica.
+Através da árvore de projetos é possível observar a troca de estado dos elementos, por exemplo, ao executar a animação, os elementos gráficos são sucessivamente aquecidos. Observa-se que a mesma quantidade de elementos gráficos e elementos, mantendo a consistência do objeto. Cada iteração gera um elemento com o resultado numérico e um elemento gráfico com a representação gráfica.
 
 %--------------------------------------------------------------------------------%
 \section{JANELAS}\label{sec:janelas}
 
-Nesta seção seão descritas as janelas disponíveis no menu, descrito na Seção~\ref{sec:menu}. Existem dois tipos de janelas disponibilizadas pela ferramenta computacional: \textit{Canvas}, que funciona como um reprodutor de vídeo, exibindo elementos gráficos sucessivamente; \textit{Jobs}, exibe todas as demandas criadas pelo programa enviadas à \textit{thread} inteligente \textit{WiseThreadTool}. Esta última janela pode ser intstanciada apenas uma vez, enquanto diversos \textit{Canvas} podem ser disponibilizados e exibir diferentes objetos.
+Nesta seção, são descritas as janelas disponíveis no menu, o qual foi apresentado na Seção~\ref{sec:menu}. Existem dois tipos de janelas disponibilizadas pela ferramenta computacional: \textit{Canvas}, que funciona como um reprodutor de vídeo, exibindo elementos gráficos sucessivamente; \textit{Jobs}, o qual exibe todas as demandas criadas pelo programa enviadas à \textit{thread} inteligente \textit{WiseThreadTool}. Esta última janela pode ser instanciada apenas uma vez, enquanto diversos \textit{Canvas} podem ser disponibilizados e exibir diferentes objetos.
 
 %--------------------------------------------------------------------------------%
 \subsection{JANELA CANVAS}\label{sec:janela_canvas}
 
-A janela e área de trabalho \textit{Canvas} possibilita que o usuário selecione o quadro à ser exibido. Cada quadro representa um objeto do tipo \textit{GraphicObject} que é um componente do modelo gráfico \textit{GraphicModel}. O quadro é selecionado através de uma barra de progresso, além de botões que alteram a animação feita com o objeto gráfico. Estes botões são:
+A janela e área de trabalho \textit{Canvas} possibilitam que o usuário selecione o quadro a ser exibido. Cada quadro representa um objeto do tipo \textit{GraphicObject} que é um componente do modelo gráfico \textit{GraphicModel}. O quadro é selecionado através de uma barra de progresso e de botões que alteram a animação feita com o objeto gráfico. Estes botões são:
 
 \begin{itemize}
-	\item \textbf{Pause}: Pausa a animação do objeto gráfico.
-	\item \textbf{Repeat}: Este botão tem um funcionamento liga e desliga, ao ser ligado, quando a animação chegar ao último elemento gráfico retornará ao primeiro.
-	\item \textbf{Play}: Este botão também tem um funcionamento liga e desliga, ao ser ligado, o elemento gráfico irá percorrer por todos os quadros da animação.
-	\item \textbf{Avançar quadro}: Avança um quadro da animação.
-	\item \textbf{Stop}: Caso o \textit{Play} esteja ativo ele é desativado e a tela volta ao primeiro elemento gráfico da animação.
+	\item \textit{Pause}: Pausa a animação do objeto gráfico;
+	\item \textit{Repeat}: Este botão tem um funcionamento liga e desliga. Ao ser ligado, quando a animação chegar ao último elemento gráfico retornará ao primeiro;
+	\item \textit{Play}: Este botão também tem um funcionamento liga e desliga. Ao ser ligado, o elemento gráfico irá percorrer por todos os quadros da animação;
+	\item \textit{Avançar quadro}: Avança um quadro da animação;
+	\item \textit{Stop}: Caso o \textit{Play} esteja ativo, ele é desativado e a tela volta ao primeiro elemento gráfico da animação.
 \end{itemize}
 
-Todas as funções do \textit{Canvas} só são disponibilizadas ao usuário depois que um objeto gráfico é ligado à tela \textit{OpenGl}. Neste cenário, quando cada quadro é selecionado é alterado quais objetos gráficos \textit{GraphicObject} estarão no estado aquecido \textit{Hot}. Isto foi feito utilizando a conexão entre objetos \textit{QObjects} e os elementos gráficos \textit{QWidget},desta forma a tela é capaz de acionar diretamente a estrutura do \textit{WiseThreadPool} e selecionar quais elementos devem ser aquecidos e exibidos. A mesma conexão é responsável por enviar a linha de comando da aba \textit{Console} à \textit{WiseThreadPool} para que seja executada e em seguida enviar a mensagem de resposta ao elemento textual.
+Todas as funções do \textit{Canvas} só são disponibilizadas ao usuário depois que um objeto gráfico é ligado a tela \textit{OpenGl}. Quando um objeto é exibido em um \textit{Canvas}, cada quadro exibido altera quais objetos gráficos \textit{GraphicObject} estarão no estado aquecido \textit{Hot}. Isto foi feito utilizando a conexão entre objetos \textit{QObjects} e os elementos gráficos \textit{QWidget}. Desta forma a tela é capaz de acionar diretamente a estrutura do \textit{WiseThreadPool} e selecionar quais elementos devem ser aquecidos e exibidos. A mesma conexão é responsável por enviar a linha de comando da aba \textit{Console} a \textit{WiseThreadPool} para que seja executada e, em seguida, enviar a mensagem de resposta ao elemento textual.
 
 \begin{figure}[!htbp]
 	\centering
 	\includegraphics[width=\linewidth]{Figures/IGU_025.png}
-	\caption{Janela \textit{Canvas} exibida sobre a área de trabalho \textit{Canvas}, a janela exibindo um gráfico obtido como resultado e a área de trabalho exibindo a árvore arterial estudada.}
+	\caption{Ilustra a janela \textit{Canvas} exibida sobre a área de trabalho \textit{Canvas}, a janela exibindo um gráfico obtido como resultado e a área de trabalho exibindo a árvore arterial estudada.}
 	\label{fig:canvas}
 \end{figure}
 
-Durante sua execução esta janela irá selecionar o elemento gráfico \textit{GraphicElement} que deve ser exibido, selecionando o elemento através do objeto gráfico \textit{GraphicObject}. Para que o elemento seja exibido corretamente ele precisa estar no estado \textit{Hot}, que representa o momento em que o elemento está corretamente carregado em memória com o modelo geométrico e o parâmetro à ser exibido. Portanto, ao selecionar o elemento o \textit{Canvas} irá criar trabalhos de aquecimento dos elementos. A coleção de objetos gráficos \textit{GraphicModel} é encarregada de enviar estes trabalhos a \textit{thread} inteligente \textit{WiseThreadPool}.
+Durante sua execução esta janela irá selecionar o elemento gráfico \textit{GraphicElement} que deve ser exibido, selecionando o elemento através do objeto gráfico \textit{GraphicObject}. Para que o elemento seja exibido corretamente ele precisa estar no estado \textit{Hot}, que representa o momento em que o elemento está corretamente carregado em memória com o modelo geométrico e o parâmetro a ser exibido. Portanto, ao selecionar o elemento o \textit{Canvas} irá criar trabalhos de aquecimento dos elementos. A coleção de objetos gráficos \textit{GraphicModel} é encarregada de enviar estes trabalhos a \textit{thread} inteligente \textit{WiseThreadPool}.
 
 %--------------------------------------------------------------------------------%
 \subsection{JANELA JOBS}\label{sec:janela_jobs}
 
-A janela \textit{Jobs} exibe uma listagem compreensiva dos processos inciados e enviados à \textit{thread} inteligente \textit{WiseThreadPool}, cada comando executado via \textit{Console} ou elemento de interface gráfica irá gerar processos listados nesta janela.
+A janela \textit{Jobs} exibe uma listagem compreensiva dos processos iniciados e enviados a \textit{thread} \textit{WiseThreadPool}. Cada comando executado via \textit{Console} ou elemento de interface gráfica irá gerar processos listados nesta janela.
 
 \begin{figure}[!htbp]
 	\centering
@@ -1848,18 +1849,18 @@ A janela \textit{Jobs} exibe uma listagem compreensiva dos processos inciados e 
 	\label{fig:jobs}
 \end{figure}
 
-A Figura~\ref{fig:jobs} demonstra a tabela obtida lista todos os trabalhos recebidos pela \textit{thread} inteligente \textit{WiseThread} e suas propriedades. Cada linha nesta janela representa um \textit{WiseJob}, as colunas descrevem propriedades de cada trabalho:
+A Figura~\ref{fig:jobs} mostra a lista de todos os trabalhos recebidos pela \textit{thread} \textit{WiseThread} e suas propriedades. Cada linha nesta janela representa um \textit{WiseJob} e as colunas descrevem propriedades de cada trabalho:
 
 \begin{itemize}
-	\item \textbf{ID}: Número de identificação.
-	\item \textbf{Workload}: Número da carga de trabalho.
-	\item \textbf{Status}: Estado do trabalho.
-	\item \textbf{Created at}: Data de criação.
-	\item \textbf{Msec to Q}: Milisegundos do momento da criação até a chegada a fila.
-	\item \textbf{Msec to Run}: Milisegundos do momento da criação até a alocação do trabalho em uma thread.
-	\item \textbf{Msec to Finish}: Milisegundos do momento da criação até o final de sua execução.
-	\item \textbf{Msec Running}: Milisegundos no estado \textit{RUNNING}.
-	\item \textbf{Finished at}: Data de finalização.
+	\item \textit{ID}: Número de identificação;
+	\item \textit{Workload}: Número da carga de trabalho;
+	\item \textit{Status}: Estado do trabalho;
+	\item \textit{Created at}: Data de criação;
+	\item \textit{Msec to Q}: Milisegundos do momento da criação até a chegada a fila;
+	\item \textit{Msec to Run}: Milisegundos do momento da criação até a alocação do trabalho em uma \textit{thread};
+	\item \textit{Msec to Finish}: Milisegundos do momento da criação até o final de sua execução;
+	\item \textit{Msec Running}: Milisegundos em execução;
+	\item \textit{Finished at}: Data de finalização;
 \end{itemize}
 
 \begin{figure}[!htbp]
