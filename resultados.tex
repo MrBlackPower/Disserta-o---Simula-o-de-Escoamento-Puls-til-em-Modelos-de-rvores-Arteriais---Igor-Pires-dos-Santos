@@ -162,18 +162,18 @@ A estrutura de dados do ambiente \textit{IGU0} não apresenta os conceitos de f�
 
 No ambiente \textit{IGU0}, o processo iterativo dos modelos estava atrelada ao uso da interface de usuário, sem a possibilidade de executar uma sequência de comandos de uma só vez. Portanto, não é possível mensurar claramente o tempo de execução de um trabalho no ambiente \textit{IGU0}, porque o seu processo de configuração requer interação com a interface de usuário. Através dos comandos disponibilizados na Seção~\ref{sec:console}, presentes nos ambientes \textit{IGU} e \textit{InGU}, é possível que objetos inteligentes executem uma bateria de comandos e tenha seu desempenho mensurado e analisado.
 
-Finalmente, como visto na Seção~\ref{sec:threads} a ferramenta utiliza a \textit{thread} \textit{WiseProcessor} para processar o objeto inteligente \textit{WiseObject}, este fator permite que ferramenta execute o ciclo de iteração sem afetas o funcionamento da interface gráfica de usuário ou bloquear seus recursos.
+Finalmente, como visto na Seção~\ref{sec:threads}, a ferramenta (\textit{IGU} e \textit{InGU}) utiliza a \textit{thread} \textit{WiseProcessor} para processar o objeto \textit{WiseObject}. Este recurso permite que ferramenta execute o ciclo de iteração sem afetas o funcionamento da interface gráfica de usuário ou bloquear seus processos e funcionalidades.
 
-Para quantificar a melhoria de desempenho trazida pela arquitetura proposta um experimento foi elaborado. Nas simulações realizadas, calculou-se a distribuição de amplitude de pressão ao longo da árvore arterial(Figura~\ref{fig:arvore-canina}) e resultados variando três parâmetros foram executados: (i) viscosidade $\mu$, (ii) ângulo de faze $\phi$ e (iii) frequência $f$, refazendo os três cenários apresentados na Seção~\ref{sec:resultados}.
+Para quantificar o desempenho trazido da ferramenta computacional \textit{INGU}, um experimento foi realizado. Este experimento consistiu no cálculo da distribuição da amplitude de pressão ao longo da árvore arterial (ver Figura~\ref{fig:arvore-canina}) considerando diferentes parâmetros: (i) viscosidade $\mu$, (ii) ângulo de faze $\phi$ e (iii) frequência $f$. Em suma, os três cenários da Seção~\ref{sec:resultados} são aqui contemplados.
 
 \begin{table}[!htbp]
 	\caption{Parâmetros de entrada utilizados no teste de carga.}
 	\centering{}
 	\begin{tabular}{c|c}
 		\toprule 
-		Artéria	& $f \in \{3.65,7.30,10.95,14.60\}$  \\
+		Frequência	& $f \in \{3,65;7,30;10,95;14,60\}$  \\
 		\midrule 
-		Viscosidade	& $\mu \in \{0,0.5\mu_0,1.0\mu_0,1.5\mu_0\}$    \\ 
+		Viscosidade	& $\mu \in \{0;0,5\mu_0;1,0\mu_0;1,5\mu_0\}$    \\ 
 		\midrule 
 		Ângulo de Fase	& $\phi_0 \in \{0{\circ},4{\circ},8{\circ},12{\circ}\}$  \\ 
 		\bottomrule 
@@ -181,9 +181,9 @@ Para quantificar a melhoria de desempenho trazida pela arquitetura proposta um e
 	\label{tab1:entrada}
 \end{table}
 
-Na tabela \ref{tab1:entrada} estão os parâmetros de entrada utilizados para testar o desempenho da ferramenta computacional. O objetivo é realizar $64$ iterações combinando os parâmetros de entrada e armazenar o tempo de execução, cada iteração irá executar o experimento com uma combinação dos três parâmetros de entrada.
+Na Tabela~\ref{tab1:entrada}, apresentam-se os parâmetros de entrada utilizados para testar o desempenho da ferramenta \textit{InGU}. O objetivo é realizar $64$ iterações combinando os parâmetros de entrada e armazenar o tempo de execução. Cada iteração irá executar o experimento com uma combinação dos três parâmetros de entrada.
 
-O gerenciador de \textit{threads} inteligente \textit{WiseThreadPool} é o responsável por gerenciar a quantidade de \textit{threads} utilizada pela ferramenta computacional. Primeiramente observou-se que o modelo matemático aplicado ao modelo geométrico escolhido possui uma média tempo de execução de $30ms$, enquanto uma operação de escrita e leitura demora entre$100$ e $300ms$. Como o ciclo de iteração de um objeto inteligente \textit{WiseObject} envolve diretamente operações de escrita e leitura, estas foram as \textit{threads} escolhidas à serem duplicadas. \textit{Threads} do tipo \textit{WiseConsole} e \textit{WiseProcessor} requerem uma quantidade maior de trabalhos para que se obtenha algum aumento de desempenho, no experimento escolhido o aumento da quantidade destas \textit{threads} implica diretamente no aumento do tempo de execução devido à comunicação entre as \textit{threads}.
+O gerenciador de \textit{threads} \textit{WiseThreadPool} é o responsável por gerenciar a quantidade de \textit{threads} utilizada pela ferramenta. Primeiramente, observou-se que a simulação do modelo matemático para um determinado conjunto de parâmetros possui escolhido possui uma média tempo de execução de $30ms$, enquanto uma operação de escrita e leitura demora entre$100$ e $300ms$. Como o ciclo de iteração de um objeto \textit{WiseObject} envolve diretamente operações de escrita e leitura, estas foram as \textit{threads} escolhidas à serem duplicadas. \textit{Threads} do tipo \textit{WiseConsole} e \textit{WiseProcessor} requerem uma quantidade maior de trabalhos para que se obtenha algum aumento de desempenho, no experimento escolhido o aumento da quantidade destas \textit{threads} implica diretamente no aumento do tempo de execução devido à comunicação entre as \textit{threads}.
 
 O experimento foi executado em uma máquina com o processador \textit{Intel Core I9-9900K@3.60GHz} com $4GB@2300MHz$ de memória RAM disponíveis. Para medir o tempo de execução o ambiente computacional \textit{InGU}, por não possuir interface gráfica demonstrou ser o mais rápido durante os testes.
 

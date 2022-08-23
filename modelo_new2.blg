@@ -1,12 +1,6 @@
-This is BibTeX, Version 0.99d (TeX Live 2021/W32TeX)
+This is BibTeX, Version 0.99d (TeX Live 2022)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: modelo_new2.aux
-A level-1 auxiliary file: introducao.aux
-A level-1 auxiliary file: modelagem_escoamento.aux
-A level-1 auxiliary file: ferramenta_computacional.aux
-A level-1 auxiliary file: resultados.aux
-A level-1 auxiliary file: conclusoes.aux
-A level-1 auxiliary file: anexos.aux
 The style file: abntex2-alf.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -36,37 +30,37 @@ Warning--campo year vazio ou faltando em VTKUSER
 +---------------------------------------------------------+
 You've used 33 entries,
             6714 wiz_defined-function locations,
-            1430 strings with 14769 characters,
-and the built_in function-call counts, 32103 in all, are:
-= -- 2950
+            1424 strings with 14665 characters,
+and the built_in function-call counts, 32039 in all, are:
+= -- 2939
 > -- 947
 < -- 325
 + -- 689
 - -- 287
-* -- 2240
-:= -- 4166
-add.period$ -- 103
+* -- 2239
+:= -- 4159
+add.period$ -- 102
 call.type$ -- 33
 change.case$ -- 336
 chr.to.int$ -- 45
 cite$ -- 33
-duplicate$ -- 2110
-empty$ -- 1937
+duplicate$ -- 2099
+empty$ -- 1934
 format.name$ -- 1367
-if$ -- 7180
+if$ -- 7164
 int.to.chr$ -- 0
 int.to.str$ -- 0
-missing$ -- 576
+missing$ -- 573
 newline$ -- 169
 num.names$ -- 150
-pop$ -- 768
+pop$ -- 761
 preamble$ -- 1
 purify$ -- 130
 quote$ -- 0
 skip$ -- 2341
 stack$ -- 1
 substring$ -- 1496
-swap$ -- 906
+swap$ -- 903
 text.length$ -- 49
 text.prefix$ -- 0
 top$ -- 0
@@ -74,5 +68,5 @@ type$ -- 10
 warning$ -- 1
 while$ -- 252
 width$ -- 0
-write$ -- 505
+write$ -- 504
 (There was 1 error message)

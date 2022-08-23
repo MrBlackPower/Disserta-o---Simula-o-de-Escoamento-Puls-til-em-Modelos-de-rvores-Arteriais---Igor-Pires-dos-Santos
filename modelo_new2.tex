@@ -1,6 +1,6 @@
 
 %-----------------------------------------------------------
-\documentclass[dsc,divps,pdftex]{mmc}
+\documentclass[msc,divps,pdftex]{mmc}
 \usepackage[document]{ragged2e}
 \usepackage[brazil]{babel}
 \usepackage[utf8]{inputenc}
@@ -75,7 +75,7 @@
 \department{MMC}
 
 %definir data da defesa
-\date{20}{09}{2021}
+\date{23}{09}{2022}
 
 %Palavras chaves do resumo em portugues
 \keyword{Árvores arteriais}
@@ -187,32 +187,33 @@
 
 %--------------------------------------------------------------------------------%
 
-\include{introducao}
+\input{introducao}
 
 
 
 %--------------------------------------------------------------------------------%
 
-\include{modelagem_escoamento}
+\input{modelagem_escoamento}
 
 
 
 %--------------------------------------------------------------------------------%
 %\include{ferramenta}
 %\include{computacional}
-\include{ferramenta_computacional}
+\input{ferramenta_computacional}
+\input{usabilidade}
 
 %-------------------------------------------------------------------------------------------%
 
-\include{resultados}
+\input{resultados}
 
 
 
 %-----------------------------------------------------------------------------------------%
 
-\include{conclusoes}
+\input{conclusoes}
 
-\include{anexos}
+\input{anexos}
 
 
 %Em trabalhos futuros temos a realização de testes com uma maior número de instâncias incluindo instâncias maiores, com mais pontos de demanda e chaves.
