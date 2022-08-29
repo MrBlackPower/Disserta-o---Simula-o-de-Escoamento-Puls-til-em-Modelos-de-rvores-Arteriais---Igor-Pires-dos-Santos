@@ -4,7 +4,7 @@
 	%-----------------------------------------------------------------------------------------%
 	\section{INSTALAR QT}\label{qt}
 		
-		Rodar os comandos para baixar o arquivo da versão da biblioteca Qt e a instala.
+		Rodar os comandos para baixar o arquivo da versão da biblioteca Qt e para efetuar sua instalação.
 		
 	\begin{itemize}
 		\item wget http://download.qt.io/official\underline{\space\space}releases/qt/5.15/5.15.0/qt-opensource-linux-x64-5.15.0.run
@@ -13,14 +13,14 @@
 	\end{itemize}
 	
 	
-	Ou os comandos para buscar as mesma bibliotecas via \textit{apt-get}:
+	Uma outra alternativa são os comandos para buscar as mesma bibliotecas via \textit{apt-get}:
 	
 	\begin{itemize}
 		\item sudo apt-get install qtbase5-dev
 		\item sudo apt-get install qtdeclarative5-dev
 	\end{itemize}
 
-	Instalar a biblioteca \textit{Qt} de acordo com as instruções dadas pelo guia de instalação, instalar \textit{Qt Creator} caso se deseje alterar o código-fonte.
+	Instalar a biblioteca \textit{Qt} de acordo com as instruções dadas pelo guia de instalação. Depois, instale \textit{Qt Creator} caso se deseje alterar o código-fonte.
 	
 	%-----------------------------------------------------------------------------------------%
 	\section{INSTALAR BIBLIOTECAS SECUNDÁRIAS}\label{secondary_libs}
@@ -33,7 +33,6 @@
 		\item sudo apt-get install mesa-common-dev
 		\item sudo apt-get install libglu1-mesa-dev -y
 		\item sudo apt-get install freeglut3-dev
-		\item sudo apt-get install libflann-dev
 	\end{itemize}
 	
 	%-----------------------------------------------------------------------------------------%
@@ -48,13 +47,13 @@
 	%-----------------------------------------------------------------------------------------%
 	\subsection{COMPILAR COM QTCREATOR}\label{qtcreator}
 	
-	Para compilar o projeto corretamente através da \textit{IDE} \textit{QtCreator} as seguintes instruções devem ser seguidas:
+	Para compilar o projeto corretamente através da \textit{IDE} \textit{QtCreator}, as seguintes instruções devem ser seguidas:
 	
 	\begin{enumerate}
 		\item Abrir pasta do projeto \textit{Project}
 		\begin{itemize}
-			\item Selecionar arquivo CMakeLists.txt
-			\item Configura projeto para ser compilado.
+			\item Selecionar arquivo CMakeLists.txt;
+			\item Configurar o projeto para ser compilado;
 			\item Escolher o ambiente computacional desejado e rodar o projeto.
 		\end{itemize}
 	\end{enumerate}
@@ -62,7 +61,7 @@
 	%-----------------------------------------------------------------------------------------%
 	\subsection{OUTROS}\label{cmake}
 	
-	Caso o erro "\textit{cannot find -lGL}" permaneça, rode os seguintes comandos:
+	Caso o erro \textit{cannot find -lGL} permaneça, rode os seguintes comandos:
 	
 	\begin{itemize}
 		\item sudo rm /usr/lib/x86\underline{\space\space}64-linux-gnu/libGL.so
@@ -133,7 +132,7 @@
 	\end{algorithm}
 	
 	%-----------------------------------------------------------------------------------------%
-	\chapter{FORMATO DE ARQUIVO DE ELEMENTO INTELIGENTE}\label{annex3}
+	\chapter{FORMATO DE ARQUIVO DE ELEMENTO}\label{annex3}
 	
 	\lstset{language=XML}
 	\begin{lstlisting}
@@ -169,7 +168,7 @@
 	\end{lstlisting}
 	
 	%-----------------------------------------------------------------------------------------%
-	\chapter{FORMATO DE ARQUIVO DE OBJETO INTELIGENTE}\label{annex4}
+	\chapter{FORMATO DE ARQUIVO DE OBJETO}\label{annex4}
 	
 	\lstset{language=XML}
 	\begin{lstlisting}

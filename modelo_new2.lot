@@ -50,6 +50,6 @@
 \contentsline {table}{\numberline {4.46}{\ignorespaces Descrição do comando terminar link gráfico.}}{94}{table.4.46}%
 \contentsline {table}{\numberline {5.1}{\ignorespaces Propriedades dos vasos do modelo de árvore arterial~\cite {Duan,Fung}}}{108}{table.5.1}%
 \contentsline {table}{\numberline {5.2}{\ignorespaces Parâmetros de entrada utilizados no teste de carga.}}{118}{table.5.2}%
-\contentsline {table}{\numberline {5.3}{\ignorespaces Tempo de execução média em milissegundos $ms$ do ciclo de iteração com diferentes arranjos de \textit {threads}, em negrito os melhores tempos.}}{120}{table.5.3}%
-\contentsline {table}{\numberline {5.4}{\ignorespaces \textit {Speed up} do ciclo de iteração com diferentes arranjos de \textit {threads}, em negrito os melhores aumentos de desempenho.}}{120}{table.5.4}%
+\contentsline {table}{\numberline {5.3}{\ignorespaces Tempo de execução média em milissegundos $\(ms\)$ do ciclo de iteração com diferentes arranjos de \textit {threads}, em negrito os melhores tempos.}}{120}{table.5.3}%
+\contentsline {table}{\numberline {5.4}{\ignorespaces \textit {Speed up} do ciclo de iteração com diferentes arranjos de \textit {threads}, em negrito os maiores aumentos de desempenho.}}{120}{table.5.4}%
 \contentsline {table}{\numberline {5.5}{\ignorespaces \textit {Speed up} do ciclo de iteração com diferentes arranjos de cargas de trabalho $w$, em negrito os melhores aumentos de desempenho.}}{121}{table.5.5}%

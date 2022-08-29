@@ -4,17 +4,21 @@
 %\textcolor{red}{IGOR: já fiz uma primeira revisão deste capítulo e indico em vermelho o que deve fazer para melhorar este capítulo. Tudo que acrescentar ou mudar coloque em azul.} \textcolor{green}{OK}
 %\textcolor{blue}{XXXXXXXXXXXXX}.
 
-Em relação a hemodinâmica, os resultados obtidos neste trabalho estão de acordo com aqueles obtidos por Duan e Zamir\textcolor{blue}{ \cite{Duan1992} } considerando a propagação de uma onda harmônica simples nos três cenários abordados nas simulações. 
+Este trabalho apresenta uma ferramenta computacional construída para simulação hemodinâmica de modelos de árvores arteriais 1D. Ela contempla o ambiente de interface gráfica (\textit{IGU}) e de console (\textit{InGU}). Simulações hemodinâmicas e análise de desempenho foram realizadas para verificar o potencial da ferramenta.
 
-Em destaque, visando contribuir na investigação do método desenvolvido por por Duan e Zamir, curvas de impedância de entrada do modelo de árvore canina aqui considerada foram apresentadas. Estas curvas apresentam comportamento que pode ser observado em dados experimentais.
+Em relação a hemodinâmica, os resultados apresentados na Seção~\ref{sec:simulacoes} estão de acordo com aqueles obtidos por Duan e Zamir\textcolor{blue}{ \cite{Duan1992} } considerando a propagação de uma onda harmônica simples nos três cenários abordados nas simulações. 
 
-Este trabalho resultou no desenvolvimento de uma nova ferramenta computacional descrita no Capítulo~\ref{sec:ferramenta_computacional}, que permite a simulação de escoamento sanguíneo pulsátil em modelos de árvores arteriais no contexto de Duan e Zamir. A ferramenta computacional está disponibilizada no repositório de código aberto Bitbucket:
+As curvas mostram a ocorrência de picos de pressão ao longo de um modelo árvore arterial. Além disso, como a viscosidade sanguínea, frequência e viscoelasticidade da parede do vaso afetam a onda de pressão.
+
+No tocante ao desempenho computacional, foi calculado ganho de desempenho (\textit{speed up}) tanto levando em conta o número de threads quanto à carga de trabalho. Percebeu-se que a divisão das tarefas em \textit{threads} aumenta o desempenho mas como este aumento também significa um aumento de comunicação entre as \textit{threads}, limitando o ganho de desempenho. Enquanto a divisão de tarefas em cargas de trabalho permite um ganho considerável, mas requer uma quantidade grande de memória disponível.
+
+A ferramenta construída está disponibilizada no repositório de código aberto Bitbucket:
 
 \begin{itemize}
-	\item \textbf{Link para Repositório}: \href{http://bit.ly/2KwZ4np}{http://bit.ly/2KwZ4np}
+	\item \textbf{Link para Repositório}: \href{http://bit.ly/2KwZ4np}{http://bit.ly/2KwZ4np} coloque também depois do link (acesso em 25/08/2022)
 \end{itemize}
 
-As informações necessárias para compilar a ferramenta computacional e seus ambientes esta inclusa no Anexo e na página inicial do repositório.
+As informações necessárias para compilar a ferramenta computacional e seus ambientes estão inclusas no Anexo A e na página inicial do repositório.
 
 %\textcolor{red}{IGOR: escreva um parágrafo destacando propriedades/características e potencialidades da sua ferramenta computacional. Talvez você poderá recuperar ou utilizar algo do parágrafo abaixo.} \textcolor{green}{OK}
 
@@ -25,7 +29,7 @@ As informações necessárias para compilar a ferramenta computacional e seus am
 Como trabalhos futuros, destacam-se:
 \begin{itemize}
 	\item Analisar hemodinamicamente modelos de árvores gerados no contexto do método CCO (\emph{Constrained Constructive Optimization}) \cite{Karch1999,Queiroz2013,Queiroz2015,Brito2017};
-	\item Investigar a influência da escolha parâmetros na resposta do método, tais como: módulo de Young e espessura do vaso;
+	\item Investigar a influência da escolha parâmetros na resposta do modelo matemático de Duan e Zamir, tais como: módulo de Young e espessura do vaso;
 	\item Analisar o resultado hemodinâmico utilizando um outro esquema iterativo;
 	\item Calibrar estrutura de \textit{threads} para suportar experimentos maiores e poussir um \textit{overhead} de comunicação menor;
 	%\item \textcolor{red} {IGOR: descreva algo que poderia ser interessante agregar na ferramenta, pode ser mais de uma coisa (coloque em item)} \textcolor{green}{OK}.
