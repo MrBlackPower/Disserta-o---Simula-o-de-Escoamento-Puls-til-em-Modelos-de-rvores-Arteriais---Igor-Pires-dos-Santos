@@ -5,6 +5,25 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.6 }
 
+\bibitem[Abdessalem e Saleh 2017]{Khaled17}
+\abntrefinfo{Abdessalem e Saleh}{ABDESSALEM; SALEH}{2017}
+{ABDESSALEM, K.~B.; SALEH, R.~B. A new formula for predicting the position of
+  severe arterial stenosis.
+\emph{Comput Methods Biomech Biomed Engin.}, n.~10, p. 1096--1103, 2017.}
+
+\bibitem[Alderson e Zamir 2004]{Alderson04}
+\abntrefinfo{Alderson e Zamir}{ALDERSON; ZAMIR}{2004}
+{ALDERSON, H.; ZAMIR, M. Effects of stent stiffness on local haemodynamics with
+  particular reference to wave reflections.
+\emph{J Biomech.}, n.~10, p. 339--48, 2004.}
+
+\bibitem[Anjos 2021]{Brito2021}
+\abntrefinfo{Anjos}{ANJOS}{2021}
+{ANJOS, P.~F. de B.
+\emph{Um algoritmo baseado em otimização para construção de modelos de
+  árvores arteriais com nexo em hemodinâmica computacional}.
+Tese (Doutorado) --- Universidade Federal de Juiz de Fora, 2021.}
+
 \bibitem[Anliker, Rockwell e Odgen 1971]{Anliker1971}
 \abntrefinfo{Anliker, Rockwell e Odgen}{ANLIKER; ROCKWELL; ODGEN}{1971}
 {ANLIKER, M.; ROCKWELL, R.; ODGEN, E. Nonlinear analysis of flow pulses and
@@ -22,9 +41,7 @@
   one-dimensional augmented fluid-structure interaction system: viscoelastic
   parameters estimation and comparison with in-vivo data.
 \emph{Journal of Biomechanics}, v.~100, p. 109595, 2020.
-ISSN 0021-9290.
-Dispon{\'\i}vel em:
-  \url{https://www.sciencedirect.com/science/article/pii/S0021929019308589}.}
+ISSN 0021-9290.}
 
 \bibitem[Brito et al. 2017]{Brito2017}
 \abntrefinfo{Brito et al.}{BRITO et al.}{2017}
@@ -83,6 +100,19 @@ Dispon{\'\i}vel em:
 {KHRONOS, G. \emph{OpenGL}. 2019.
 Dispon{\'\i}vel em: \url{https://www.opengl.org/}.}
 
+\bibitem[Kizilova 2003]{Natalya03}
+\abntrefinfo{Kizilova}{KIZILOVA}{2003a}
+{KIZILOVA, N.~N. Pulse wave reflections in branching arterial networks and
+  pulse diagnosis methods.
+\emph{Journal of the Chinese Institute of Engineers}, Taylor & Francis, v.~26,
+  n.~6, p. 869--880, 2003.}
+
+\bibitem[Kizilova 2003]{Natalya032}
+\abntrefinfo{Kizilova}{KIZILOVA}{2003b}
+{KIZILOVA, N.~N. Reflection of pulse waves and resonance characteristics of
+  arterial beds.
+\emph{Fluid Dynamics}, v.~38, n.~5, p. 1573--8507, 2003.}
+
 \bibitem[Kouchoukos, Sheppard e McDonald 1970]{Kouchoukos}
 \abntrefinfo{Kouchoukos, Sheppard e McDonald}{KOUCHOUKOS; SHEPPARD;
   MCDONALD}{1970}
@@ -105,9 +135,10 @@ Dispon{\'\i}vel em: \url{https://www.opengl.org/}.}
 {MCDONALD, D.~A. Blood flow in arteries.
 \emph{Baltimore: Williams \& Wilkins}, 1974.}
 
-\bibitem[Parker 1959]{AlanParker}
-\abntrefinfo{Parker}{PARKER}{1959}
-{PARKER, A. \emph{Algorithms and Data Structures in C++}. [S.l.: s.n.], 1959.}
+\bibitem[Parker 2018]{AlanParker}
+\abntrefinfo{Parker}{PARKER}{2018}
+{PARKER, A. \emph{Algorithms and Data Structures in C++}. [S.l.]: Routledge,
+  2018.}
 
 \bibitem[Peskin 1972]{Peskin1972}
 \abntrefinfo{Peskin}{PESKIN}{1972}
@@ -140,6 +171,13 @@ Tese (Doutorado) --- Laboratório Nacional de Computação Científica, 2013.}
   publishing.
 \emph{Baltimore: Williams \& Wilkins}, p. 884--887, 2015.}
 
+\bibitem[Santos e Queiroz 2020]{Pires20}
+\abntrefinfo{Santos e Queiroz}{SANTOS; QUEIROZ}{2020}
+{SANTOS, R. F.~R. I.~P.; QUEIROZ, R. A.~B. Simulation of pulsatile flow through
+  arterial tree models.
+\emph{Engenharia e Gestão}, Revista Mundi, v.~5, n.~6, p. 292–01--292–14,
+  2020.}
+
 \bibitem[Stergiopulos, Young e Rogge 1992]{Stergiopulos1992}
 \abntrefinfo{Stergiopulos, Young e Rogge}{STERGIOPULOS; YOUNG; ROGGE}{1992}
 {STERGIOPULOS, N.; YOUNG, D.; ROGGE, T.~R. Computer simulation of arterial flow
@@ -152,9 +190,7 @@ Tese (Doutorado) --- Laboratório Nacional de Computação Científica, 2013.}
   reflection with the ankle-brachial pressure index in japanese men not
   suffering from peripheral artery disease.
 \emph{Atherosclerosis}, v.~317, p. 29--35, 2021.
-ISSN 0021-9150.
-Dispon{\'\i}vel em:
-  \url{https://www.sciencedirect.com/science/article/pii/S0021915020315513}.}
+ISSN 0021-9150.}
 
 \bibitem[Taylor, Hughes e Zarins 1998]{Taylor1998}
 \abntrefinfo{Taylor, Hughes e Zarins}{TAYLOR; HUGHES; ZARINS}{1998}
@@ -168,6 +204,13 @@ Dispon{\'\i}vel em:
 {TAYLOR, M. The input impedance of an assembly of randomly branching elastic
   tubes.
 \emph{Biophys. J}, n.~6, p. 29--51, 1966.}
+
+\bibitem[Thore 2007]{thore07}
+\abntrefinfo{Thore}{THORE}{2007}
+{THORE, C.-J.
+
+\emph{Pressure estimation in the systemic arteries using a transfer function}
+  --- Linkoping University, 2007.}
 
 \bibitem[VTK User's Guide]{VTKUSER}
 \abntrefinfo{VTK\ldots}{VTK\ldots}{}
@@ -189,6 +232,13 @@ Dispon{\'\i}vel em:
 \abntrefinfo{Zamir}{ZAMIR}{1976}
 {ZAMIR, M. ptimality principles in arterial branching.
 \emph{J. Theor. Biol.}, n.~62, p. 227--251, 1976.}
+
+\bibitem[Zamir 1998]{Zmir98}
+\abntrefinfo{Zamir}{ZAMIR}{1998}
+{ZAMIR, M. Mechanics of blood supply to the heart: wave reflection effects in a
+  right coronary artery.
+\emph{Proceedings of the Royal Society}, Revista Mundi, v.~265, n.~1394, p.
+  439--444, 1998.}
 
 \bibitem[Zamir e Phipps 1988]{Zamir3}
 \abntrefinfo{Zamir e Phipps}{ZAMIR; PHIPPS}{1988}
