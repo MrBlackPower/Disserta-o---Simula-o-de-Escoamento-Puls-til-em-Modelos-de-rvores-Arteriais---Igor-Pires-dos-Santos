@@ -29,8 +29,8 @@
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Captura de tela com a execução do ambiente computacional \textit {InGU} em um console.}}{69}{figure.4.3}%
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Captura de tela com a execução do comando de ajudo no ambiente computacional \textit {InGU} em um console.}}{70}{figure.4.4}%
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Fluxo de caso de uso do ambiente computacional InGU, em azul as atividades de criação de elementos, em verde as atividades de criação de projetos e em laranja as atividades de criação de objetos.}}{94}{figure.4.5}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Fluxo de caso de uso do ambiente computacional IGU.}}{95}{figure.4.6}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Janela principal ambiente computacional IGU. Da esquerda para a direita: (A) Menu principal do programa; (B) Árvore de projetos e seus elementos; (C) Área de trabalho, no caso mostrando OpenGl \textit {Canvas}; (D) Seleção de abas}}{96}{figure.4.7}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Fluxo de caso de uso do ambiente computacional IGU.}}{96}{figure.4.6}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Janela principal ambiente computacional IGU. Da esquerda para a direita: (A) Menu principal do programa; (B) Árvore de projetos e seus elementos; (C) Área de trabalho, no caso mostrando OpenGl \textit {Canvas}; (D) Seleção de abas}}{97}{figure.4.7}%
 \contentsline {figure}{\numberline {4.8}{\ignorespaces Opções do menu principal da ferramenta computacional \textit {IGU}}}{97}{figure.4.8}%
 \contentsline {figure}{\numberline {4.9}{\ignorespaces Parte da janela principal contendo a área de trabalho e as abas que selecionam a interface selecionada, sendo os componentes: (C) Área de trabalho \textit {Canvas}; (D) Seleção de abas}}{98}{figure.4.9}%
 \contentsline {figure}{\numberline {4.10}{\ignorespaces Área de trabalho exibindo o elemento gráfico \textit {Canvas} com a aba \textit {Canvas} selecionada.}}{99}{figure.4.10}%
