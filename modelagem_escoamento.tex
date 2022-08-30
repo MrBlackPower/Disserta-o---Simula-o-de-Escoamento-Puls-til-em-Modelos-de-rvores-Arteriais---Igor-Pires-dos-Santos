@@ -1,13 +1,17 @@
 \chapter{MODELAGEM DO ESCOAMENTO SANGUÍNEO}\label{sec:modelagem_escoamento}
+\justifying
 
 %\textcolor{red}{IGOR: está errada a citação do trabalho do método de Duan e Zamir (1995), não é a citação que colocou \cite{Duan}.} \textcolor{green}{OK}
 
-Neste capítulo, apresenta-se em detalhe o modelo matemático de Duan e Zamir \cite{Duan1992}, para o escoamento sanguíneo pulsátil em árvores arteriais. Por fim, apresenta um algoritmo que sistematiza os passos dos cálculos realizados para obtenção da pressão e fluxo ao longo da árvore arterial.
+Neste capítulo, apresenta-se o modelo matemático de Duan e Zamir \cite{Duan1992}, que representa o escoamento sanguíneo pulsátil em árvores arteriais. Por fim, apresenta um algoritmo que resume os passos dos cálculos realizados para obtenção da pressão e fluxo ao longo da árvore arterial.
+
+O esquema analítico de Duan e Zamir que é apresentado neste capítulo tem sido empregado por autores para o estudo da hemodinâmica
+de modelos anatômico e fractal de árvores arteriais \cite{Khaled17,Alderson04,Natalya03,Natalya032,Pires20,thore07,Zmir98}.
 
 %--------------------------------------------------------------------------------%
 \section{MODELO MATEMÁTICO}\label{sec:modelo_matematico}
 
-A propagação de ondas em um tubo é governada pela equações da onda para a pressão $p(x,t)$ e fluxo $q(x,t)$ como seguem:
+A propagação de ondas em um tubo é governada pelas equações da onda para a pressão $p(x,t)$ e fluxo $q(x,t)$ como seguem:
 \begin{eqnarray}
 	\frac{\partial q}{\partial t} &=& -cY \frac{\partial p}{\partial x},
 	\label{01_p}\\
@@ -16,7 +20,7 @@ A propagação de ondas em um tubo é governada pela equações da onda para a p
 \end{eqnarray}
 nos quais $t$ é o tempo, $x$ é a coordenada axial ao longo do tubo, $c$ é a velocidade de onda, $Y = \frac{A}{\rho c}$ é a admitância e $A$ é a área da seção transversal do tubo, e $\rho$ é a densidade do fluido. Estas equações são baseadas na linearização das equações de movimento do fluido \cite{Fung,Lighthill}. 
 
-Para uma onda harmônica simples, as equações (\ref{01_p}) e (\ref{02_q}) resultam em:
+Para uma onda harmônica simples, as Equações (\ref{01_p}) e (\ref{02_q}) resultam em:
 \begin{eqnarray}
 	p &=& \bar{p}_0 \exp\left[i\omega\left(t - \frac{x}{c}\right)\right] + R  \bar{p}_0 \exp\left[i\omega\left(t - \frac{2L}{c} + \frac{x}{c}\right)\right],
 	\label{03_p}\\
@@ -25,9 +29,18 @@ Para uma onda harmônica simples, as equações (\ref{01_p}) e (\ref{02_q}) resu
 \end{eqnarray}
 onde $\omega = 2 \pi f$ é a frequência angular, $f$ é frequência em Hertz, $L$ é o comprimento do tubo, $\bar{p}_0$ é a amplitude da onda incidente, $R$ é o coeficiente de reflexão definido pela razão entre as ondas refletidas pelas ondas que chegam no local de reflexão \cite{Fung,Karreman} e $i$ é a unidade imaginária ($i^2 = -1$).
 
-As equações \eqref{03_p} e \eqref{04_1} para pressão e fluxo são aplicadas em cada segmento de vaso do modelo de árvore arterial, tomando $x = 0$ para o nó proximal e $x = L$ para o nó distal do segmento. Um segmento de vaso é definido pelo intervalo vascular entre dois locais de ramificação \cite{Zamir3}. No sistema arterial, as bifurcações são os locais de ramificação mais comuns~\cite{Zamir1}.
+\igunew{O modelo matemático considera que o segmento é composto pelo nó proximal $A$ e pelo nó distal $B$, considerando o nó proximal o ponto mais próximo da origem do fluxo e o nó distal o ponto mais distante, como apresentado na Figura~\ref{fig:proximaldistal}.}
 
-Em \cite{Duan}, um segmento de vaso é identificado por $(k,j)$, onde o primeiro $k$ representa o nível da geração e $j$ representa a ordem do segmento naquela geração, como mostrado na Figura \ref{fig1:arterial-tree}. Desta forma, a pressão e o fluxo ao longo de um segmento  $(k,j)$ do modelo de árvore arterial são dados por:
+\begin{figure}[!htbp]
+	\centering
+	\includegraphics[scale=1]{Figures/ProximalDistal@16x.png}
+	\caption{Segmento do modelo geométrico de uma árvore arterial, composto pelo nó proximal $A$ e pelo nó distal $B$.}
+	\label{fig:proximaldistal}
+\end{figure}
+
+As Equações \eqref{03_p} e \eqref{04_1} para pressão e fluxo são aplicadas em cada segmento de vaso do modelo de árvore arterial, tomando $x = 0$ para o nó proximal e $x = L$ para o nó distal do segmento. Um segmento de vaso é definido pelo intervalo vascular entre dois locais de ramificação \cite{Zamir3}. No sistema arterial, as bifurcações são os locais de ramificação mais comuns~\cite{Zamir1}.
+
+De~\citeyear{Duan}~\citeauthoronline{Duan}, um segmento de vaso é identificado por $(k,j)$, onde o $k$ representa o nível da geração e $j$ representa a ordem do segmento naquela geração, como na Figura~\ref{fig1:arterial-tree}. Desta forma, a pressão e o fluxo ao longo de um segmento  $(k,j)$ do modelo de árvore arterial são dados por:
 \begin{eqnarray}
 	p(k,j) &=& \bar{p}(k,j) \exp\left[i\omega\left(t - \frac{x(k,j)}{c(k,j)}\right)\right] \nonumber \\
 	&+& R(k,j)  \bar{p}(k,j) \exp\left[i\omega\left(t - \frac{2L(k,j)}{c(k,j)} + \frac{x(k,j)}{c(k,j)}\right)\right],
@@ -36,15 +49,15 @@ Em \cite{Duan}, um segmento de vaso é identificado por $(k,j)$, onde o primeiro
 	&-& \left. R(k,j)  \bar{p}(k,j) \exp\left[i\omega\left(t - \frac{2L(k,j)}{c(k,j)} + \frac{x(k,j)}{c(k,j)}\right)\right]\right\},
 	\label{06_q}
 \end{eqnarray}
-nos quais $\bar{p}(k,j)$ é a amplitude combinada do grupo de ondas progressivas no segmento $(k,j)$ e $R(k,j)$ é o coeficiente de reflexão no final daquele segmento, como é chamado a razão das ondas progressivas pelas atrasadas avaliadas no nó distal $x(k,j) = L(k,j)$. 
+nos quais $\bar{p}(k,j)$ é a amplitude combinada do grupo de ondas progressivas no segmento $(k,j)$ e $R(k,j)$ é o coeficiente de reflexão no final daquele segmento. \igunew{O coeficiente de reflexão $R$ é a razão das ondas progressivas pelas ondas atrasadas avaliadas no nó distal $x(k,j) = L(k,j)$. }
 
-O grupo de ondas progressivas viaja no sentido positivo de $x(k,j)$, estas são compostas de ondas progressivas vindo de vasos acima deste, bem como, ondas refletidas na junção à montante $x(k,j) = 0$. O grupo de ondas atrasadas viaja no sentido oposto e é composto por ondas vindas de vasos à jusante como ondas refletidas na junção à jusante $x(k,j) = L(k,j)$. 
+O grupo de ondas progressivas viaja no sentido positivo de $x(k,j)$, estas são compostas de ondas progressivas vindo de vasos acima deste, bem como, ondas refletidas na junção à montante $x(k,j) = 0$. O grupo de ondas atrasadas viaja no sentido oposto e é composto por ondas vindas de vasos conectados ao nó distal, estas ondas são refletidas na junção à jusante $x(k,j) = L(k,j)$\igunew{, estas ondas viajam na direção oposta ao fluxo sanguíneo e são consideradas a reflexão  das ondas progressivas nos segmentos adjacentes ao nó distal $B$}. 
 
-As equações \eqref{05_p} e \eqref{06_q} descrevem, respectivamente, as ondas de pressão e de fluxo localmente em um segmento $(k,j)$ do modelo de árvore, e localmente na posição $x(k,j)$ dentro deste segmento de vaso. As duas variáveis desconhecidas são a amplitude da pressão  $\bar{p} (k,j)$ e o coeficiente de reflexão $R (k,j)$, que são detalhados na Seção~\ref{sec:pressao-fluxo}. 
+As Equações \eqref{05_p} e \eqref{06_q} descrevem, respectivamente, as ondas de pressão e de fluxo localmente em um segmento $(k,j)$ do modelo de árvore, e localmente na posição $x(k,j)$ dentro deste segmento de vaso. \igunew{O principal objetivo deste modelo matemático é determinar as duas variáveis desconhecidas: a amplitude da pressão  $\bar{p} (k,j)$} e o coeficiente de reflexão $R (k,j)$, que são detalhados na Seção~\ref{sec:pressao-fluxo}. 
 
-A Figura~\ref{fig1:arterial-tree} mostra a notação usada para identificar cada segmento de vaso $(k,j)$, onde $k$ é a geração/nível do vaso e $j$ é um número sequencial dentro daquela geração. Os nós proximal e distal do segmento $(k,j)$ são denotados por $A$ e $B$, respectivamente. O coeficiente de reflexão $R(k,j)$ do segmento $(k,j)$ está associado ao nó distal $B$.
+A Figura~\ref{fig1:arterial-tree} mostra a notação usada para identificar cada segmento de vaso $(k,j)$, onde $k$ é a geração/nível do vaso e $j$ é um número sequencial dentro daquela geração. Os nós proximal e distal do segmento $(k,j)$ são denotados por $A$ e $B$ na Figura~\ref{fig:proximaldistal}, respectivamente. O coeficiente de reflexão $R(k,j)$ do segmento $(k,j)$ está associado ao nó distal $B$.
 
-Na equação~\eqref{06_q}, tem-se a admitância característica para cada segmento dada por:
+Na Equação~\eqref{06_q}, tem-se a admitância característica para cada segmento dada por:
 \begin{equation}
 	Y(k,j) = \frac{A(k,j)}{\rho(k,j)c(k,j)},
 	\label{eq:admitancia}
@@ -64,7 +77,7 @@ onde $E(k,j)$ é o módulo de Young, $d(k,j)$ é o diâmetro do segmento $(k,j)$
 \begin{figure}[h] 
 	\begin{center}
 		\includegraphics[scale = 0.5]{Figures/ArterialTree_Zamir.png}%
-		\caption{Notação usada para identificar cada segmento de vaso $(k,j)$ (figura adaptada de~\cite{Duan}). }
+		\caption{Notação usada para identificar cada segmento de vaso $(k,j)$ (figura adaptada de~\citeauthoronline{Duan}(\citeyear{Duan})). }
 		\label{fig1:arterial-tree}%
 	\end{center}
 \end{figure}
@@ -116,21 +129,21 @@ A condição de continuidade da pressão exige que na junção ela assuma um ún
 	\label{17_p_cont}
 \end{equation}
 
-Substituindo as equações \eqref{10_p_f}, \eqref{11_p_b}, \eqref{15_p_f} e \eqref{16_p_b} na equação \eqref{17_p_cont} e resolvendo para $\bar{p}(k,j)$, resulta em:
+Substituindo as Equações \eqref{10_p_f}, \eqref{11_p_b}, \eqref{15_p_f} e \eqref{16_p_b} na Equação \eqref{17_p_cont} e resolvendo para $\bar{p}(k,j)$, resulta em:
 \begin{equation}
 	\bar{p} (k,s) =  \frac{\bar{p}(k-1,s)\left[1 + R(k-1,s)\right] \exp\left[ -\frac{i \omega L(k-1,s)}{c(k-1,s)}\right]}{1 + R(k,j)\exp{\left[ -2i\omega \frac{L(k,j)}{c(k,j)}\right]}}.
 	\label{18_barp}
 \end{equation}
 
-Conforme Duan e Zamir \cite{Duan}, para efeitos de cálculo da pressão e fluxo, adimensionalizam-se as pressões em \eqref{18_barp} em termos da pressão de entrada $p_0 = \bar{p}_0 \exp[i\omega t]$. 
+Conforme~\citeauthoronline{Duan}(\citeyear{Duan}), para efeitos de cálculo da pressão e fluxo, adimensionalizam-se as pressões em \eqref{18_barp} em termos da pressão de entrada $p_0 = \bar{p}_0 \exp[i\omega t]$. 
 
-Considerando $P(k,j) = \frac{p(k,j)}{p_0}$ e $\bar{P} (k,j) = \frac{\bar{p}(k,j)}{\bar{p}_0}$, a equação~\eqref{05_p} para o cálculo da pressão  pode ser expressa de forma adimensionalizada por:
+Considerando $P(k,j) = \frac{p(k,j)}{p_0}$ e $\bar{P} (k,j) = \frac{\bar{p}(k,j)}{\bar{p}_0}$, a Equação~\eqref{05_p} para o cálculo da pressão  pode ser expressa de forma adimensionalizada por:
 \begin{eqnarray}
 	P(k,j) &=& \bar{P}(k,j)\big\{\exp[ -i\beta(k,j) X(k,j)] \nonumber \\
 	& +& R(k,j) \exp[-i2\beta(k,j)] \exp[i\beta(k,j) X(k,j)]\big\},
 	\label{21_P}
 \end{eqnarray}
-nos quais $\beta(k,j) = \frac{\omega L(k,j)}{c(k,j)}$ e $X = \frac{x(k,j)}{L(k,j)}$. Similarmente, a equação~\eqref{06_q} para o fluxo $q(k,j)$ pode ser obtida de forma adimensionalizada por:
+nos quais $\beta(k,j) = \frac{\omega L(k,j)}{c(k,j)}$ e $X = \frac{x(k,j)}{L(k,j)}$. Similarmente, a Equação~\eqref{06_q} para o fluxo $q(k,j)$ pode ser obtida de forma adimensionalizada por:
 \begin{eqnarray}
 	Q(k,j) &=& M(k,j)\bar{P}(k,j)\big\{ \exp\left[ -i\beta(k,j) X(k,j) \right] \nonumber \\ 
 	&-& R(k,j) \exp[ -2i\beta(k,j)] \exp[i\beta(k,j) X(k,j)] \big\},
@@ -156,13 +169,13 @@ nos quais $s = 2j-1$ e $2j$ são os números sequenciais dos dois segmentos filh
 	Y_e(k,j) = \frac{Y(k,j)\{1 - R(k,j)\exp{[-i2\beta(k,j)]}\} }{1 + R(k,j)\exp{[-i2\beta(k,j)]}}
 	\label{29_Ye}.
 \end{equation}
-Substituindo $R(k,j)$ da equação \eqref{27_R} em \eqref{29_Ye}, obtém-se  uma equação para cálculo das admitâncias efetivas ao longo do modelo de árvore arterial:
+Substituindo $R(k,j)$ da Equação \eqref{27_R} em \eqref{29_Ye}, obtém-se  uma equação para cálculo das admitâncias efetivas ao longo do modelo de árvore arterial:
 \begin{equation}
 	Y_e(k,j) = \frac{Y(k,j) [Y_e(k+1,2j) + Y_e(k+1,2j-1)+ i Y(k,j)\tan{\beta(k,j)}]}{Y(k,j) + i[Y_e(k+1,2j) + Y_e(k+1,2j-1)]\tan{\beta(k,j)}}.
 	\label{30_Ye}
 \end{equation}
 
-Em segmentos terminais, pode ser assumido que não ocorrem mais reflexões à jusante das posições distais destes segmentos, portanto a admitância efetiva destes segmentos é igual às suas admitâncias características. Adotando a equação \eqref{29_Ye}, todas as admitâncias efetivas podem ser determinadas percorrendo a árvore a partir dos segmentos terminais até o segmento raiz.
+Em segmentos terminais, pode ser assumido que não ocorrem mais reflexões à jusante das posições distais destes segmentos, portanto a admitância efetiva destes segmentos é igual às suas admitâncias características. Adotando a Equação \eqref{29_Ye}, todas as admitâncias efetivas podem ser determinadas percorrendo a árvore a partir dos segmentos terminais até o segmento raiz.
 
 \subsection{CÁLCULO DA IMPEDÂNCIA DE ENTRADA}
 
@@ -170,14 +183,14 @@ A impedância vascular de um modelo de árvore arterial é expresso por
 \begin{equation}
 	z = \frac{p}{q},
 \end{equation}
-onde $p$ e $q$ podem ser definidos pelas equações \eqref{03_p} e \eqref{04_1}, respectivamente. Dados que $p(k,j) = P(k,j) p_0$, $q(k,j) = Q(k,j) q_0$ e $q_0 = Y(1,1) p_0$, em termos de variáveis adimensionalizadas, a impedância pode ser reescrita por
+onde $p$ e $q$ podem ser definidos pelas Equações \eqref{03_p} e \eqref{04_1}, respectivamente. Dados que $p(k,j) = P(k,j) p_0$, $q(k,j) = Q(k,j) q_0$ e $q_0 = Y(1,1) p_0$, em termos de variáveis adimensionalizadas, a impedância pode ser reescrita por
 \begin{equation}
 	Z = \frac{P(k,j)}{Y(1,1) Q(k,j)}.
 \end{equation}
 
 A impedância de entrada de um modelo de árvore arterial determina $Z$ na posição proximal do vaso raiz, ou seja, em $x (k,j) = 0$. 
 
-Adotando as equações~\eqref{21_P} e~\eqref{23_Q} com $x (k,j) = 0$, obtém-se a impedância de entrada:
+Adotando as Equações~\eqref{21_P} e~\eqref{23_Q} com $x (k,j) = 0$, obtém-se a impedância de entrada:
 \begin{equation}
 	Z = \frac{-1}{Y(1,1)}.
 \end{equation}
@@ -188,9 +201,9 @@ Em suma, a impedância de entrada  em módulo é o inverso da admitância caract
 \label{sec:cenario}
 A partir do modelo matemático aqui apresentado, os seguintes cenários podem ser investigados nas simulações hemodinâmicas:
 \begin{itemize}
-	\item \textbf{cenário 1}: análise do impacto da viscosidade sanguínea ($\mu(k,j)$).\\
+	\item \textbf{2.1.4.1 - Cenário 1}: análise do impacto da viscosidade sanguínea ($\mu(k,j)$).\\
 	Os efeitos da viscosidade sanguínea podem ser investigados por substituir a velocidade
-	da onda $c(k,j)$ por uma velocidade da onda complexa~\cite{Duan1992}:
+	da onda $c(k,j)$ por uma velocidade da onda complexa:
 	\begin{equation} 
 		c_v(k,j) = c(k,j) \sqrt{\epsilon},\label{eq:velocidade-complexa}
 	\end{equation}
@@ -205,12 +218,12 @@ A partir do modelo matemático aqui apresentado, os seguintes cenários podem se
 	\end{equation}
 	onde a função $F_{10}$ é avaliada deste modo:
 	\begin{equation}
-		F_{10} (\alpha) = \frac{2.0}{\alpha \sqrt{i}}(1.0+\frac{1.0}{2.0\alpha}),
+		F_{10} (\alpha) = \frac{2}{\alpha \sqrt{i}}(1+\frac{1}{2\alpha}),
 	\end{equation}
 	onde $J_p$ denota a função de Bessel de índice $p$.
 	
-	\item \textbf{cenário 2}: análise do impacto da viscoelasticidade da parede do vaso ($\phi_0$).\\
-	A viscoelasticidade da parede do segmento é incorporado substituindo o módulo de Young
+	\item \textbf{2.1.4.2 - Cenário 2}: análise do impacto da viscoelasticidade da parede do vaso ($\phi_0$).\\
+	A viscoelasticidade da parede do segmento é incorporada substituindo o módulo de Young
 	estático $E(k,j)$ por um módulo elástico complexo $E_c(k,j)$ no cálculo da velocidade $c(k,j)$ na equação~\eqref{eq:velocidade}
 	da seguinte forma~\cite{Duan}:
 	\begin{equation}
@@ -218,146 +231,8 @@ A partir do modelo matemático aqui apresentado, os seguintes cenários podem se
 	\end{equation}
 	onde $\phi$ é o ângulo de fase entre a pressão e o deslocamento da parede do segmento \cite{Taylor3} expresso por $\phi = \phi_0 [1-\exp(-\omega)]$ e $|E_c (k,j)|$ corresponde ao módulo de Young fornecido para a simulação.
 	
-	\item \textbf{cenário 3}: efeitos da viscosidade sanguínea ($\mu(k,j)$) e da viscoelasticidade da parede do segmento ($\phi_0$) de forma combinada.
+	\item \textbf{2.1.4.3 - Cenário 3}: efeitos da viscosidade sanguínea $\mu(k,j)$ e da viscoelasticidade da parede do segmento $\phi_0$ de forma combinada.
 	
-	Neste último cenário, utiliza-se a equação~\eqref{eq:Young} para determinar a velocidade da onda $c(k,j)$~\eqref{eq:velocidade} no modelo. Com este resultado, calcula-se  a equação~\eqref{eq:velocidade-complexa} para determinar a velocidade complexa $c_v(k,j)$ a ser considerada no modelo.
+	Neste último cenário, utiliza-se a Equação~\eqref{eq:Young} para determinar a velocidade da onda $c(k,j)$~\eqref{eq:velocidade} no modelo. Com este resultado, calcula-se  a Equação~\eqref{eq:velocidade-complexa} para determinar a velocidade complexa $c_v(k,j)$ a ser considerada no modelo.
 \end{itemize}
 
-\section{MODELAGEM COMPUTACIONAL}
-\label{sec:algoritmo}
-%\textcolor{red}{IGOR: fiz mais uma revisão nesta seção. Cheque se tudo está coerente com o quis dizer após minhas alterações no texto.} \textcolor{green}{OK}
-
-Nesta seção, detalham-se alguns aspectos da estrutura de dados e algoritmos que descrevem os passos para o cálculo das equações da pressão $P$ e fluxo $Q$ definidas em \eqref{21_P} \eqref{23_Q}, respectivamente.
-
-Inicialmente, salientam-se que as equações~\eqref{27_R} e~\eqref{28_Ye} expõem a necessidade de valores $Y_e(k+1,2j)$ e $Y_e(k+1,2j-1)$ atrelados aos vasos adjacentes na posição distal do vaso $(k,j)$. Por outro lado, o valor da pressão média do vaso $(k,j)$ calculado usando a equação~\eqref{18_barp} depende de valores  à montante desse vaso, ou seja, do valor $\bar{p}(k-1,s)$. Tendo isto em vista, a estrutura de dados desenvolvida utiliza de ponteiros para acessar as propriedades de artérias à montante e a jusante de um vaso do modelo.
-
-Neste trabalho, adotou-se a linguagem de programação C++. Essa linguagem de programação escolhida permite que objetos sejam passados por referência. Ao passar um objeto por referência, o endereço de memória é enviado, dando total acesso aos parâmetros do objeto, este endereço é chamado de ponteiro. Ao enviar o ponteiro do vaso raiz, é possível acessar todo o modelo de árvore arterial. Cada vaso arterial do modelo contém as propriedades apresentadas na Tabela~\ref{tab:info_vaso}, além de ponteiros para os vasos adjacentes. 
-
-\begin{table}[h]
-	\begin{tabular}{|c|c||c|c|}
-		\hline
-		\textbf{valores conhecidos} & \textbf{unidade} & \textbf{valores calculados} & \textbf{unidade} \\
-		\hline
-		comprimento ($L$) & cm &  velocidade da onda ($c$) & cm/s \\
-		
-		densidade ($\rho$) & g/cm$^3$ &   beta ($\beta$) & -- \\
-		
-		módulo de Young ($E$) & g/cms$^2$  & velocidade angular ($\omega$) & rad/s \\
-		
-		viscosidade ($\mu_0$) & cm$^2$/s &	espessura da parede ($h$) &  $cm$ \\
-		
-		raio ($r$) & cm  & número de Womersley ($\alpha$) & --- \\
-		
-		& & admitância característica ($Y$) & $cm^4 s/g $\\
-		
-		&  & admitância efetiva ($Y_e$) & $cm^4 s/g $\\
-		
-		&  & coeficiente de reflexão ($R$) & $g /cm^4 s$ \\
-		
-		& & fator viscoso ($\epsilon$) & -- \\
-		
-		& & pressão ($P$) & -- \\
-		
-		&  &	pressão média ($\bar{p}$) & -- \\
-		
-		& &	fluxo ($Q$) & -- \\
-		\hline
-	\end{tabular}
-	\caption{Propriedades de cada vaso arterial do modelo.}
-	\label{tab:info_vaso}
-\end{table}
-
-Além das propriedades especificadas na Tabela~\ref{tab:info_vaso}, o vaso possui ainda três ponteiros para os seus vasos adjacentes. Um destes ponteiros, para o vaso adjacente ao seu nó proximal, ou seja, para o seu vaso pai $(k-1,s)$. Os demais ponteiros para os vasos adjacentes ao seu nó distal, ou seja, para seus vasos filhos à esquerda ($esq$) e à direita ($dir$) expressos por $(k+1,2j-1)$ e $(k+1,2j)$, respectivamente. Este arranjo de ponteiros é equivalente a uma árvore duplamente encadeada, onde através de um único ponteiro para um vaso é possível trafegar a árvore nos dois sentidos. Isto é útil quando é necessário acessar propriedades de outro vaso para se determinarem por exemplo, a pressão média, coeficientes de reflexão e admitâncias de um dado vaso.
-
-Os ponteiros permitem também definir se o vaso é a raiz ou uma folha. Caso o ponteiro para o segmento superior $(k-1,s)$ seja igual ao valor da \textit{flag} nula se trata de um vaso raiz. Caso ambos vasos  $(k+1,2j-1)$ e $(k+1,2j)$ sejam iguais ao valor da \textit{flag} nula se trata de vaso folha, isto é, um vaso terminal.
-
-Basicamente, os passos para determinar as ondas de pressão e fluxo que percorrem um modelo de árvore arterial usando o modelo de Duan e Zamir são dados por:
-\begin{enumerate}
-	\item Cálculo da admitância característica $(Y)$ de cada vaso;
-	\item Cálculo da admitância efetiva $(Y_e)$  de cada vaso;
-	\item Cálculo do coeficiente de reflexão $(R)$  de cada vaso; 
-	\item Armazenar valor da admitância característica $(Y_r)$ do vaso raiz, isto é, o valor de $Y(1,1)$;
-	\item Cálculo da pressão média $(\bar{p})$ em cada vaso;
-	\item Cálculo das ondas de pressão e fluxo $P$ e $Q$.
-\end{enumerate}
-
-Os passos acima mencionados podem ser organizados no Algoritmo 1. Esse algoritmo tem como entrada: o modelo de árvore arterial ($\mathcal{MAA}$) com seus vasos caracterizados por suas propriedades, a frequência ($f$) em Hz, um fator de escala da viscosidade ($\gamma_{\mu}$), o parâmetro da viscoelasticidade da parede ($\phi$) e a quantidade de espaçamento para discretização de um vaso ($N$).
-
-O Algoritmo 1 proposto tem dois módulos, a saber: $\mathcal{M}_1$ e $\mathcal{M}_2$. O módulo $\mathcal{M}_1$ realiza o cálculo percorrendo o caminho a partir dos vasos finais até o vaso raiz (estratégia do tipo \textit{bottom-up}). O módulo $\mathcal{M}_2$ realiza os cálculos percorrendo o modelo a partir do vaso raiz até os vasos terminais (abordagem do tipo \textit{top-bottom}).
-
-\begin{algorithm}[H]
-	\SetAlgoLined
-	\Entrada{ $\mathcal{MAA}$, $f$, $\gamma_{\mu}$, $\phi$, $\bar{p}_0$, $N$ }
-	\Inicio{
-		inicializa vaso $v$ a partir do vaso raiz;\\
-		\Se{existe($v$)}{
-			Chama $\mathcal{M}_1$ ($v$, $f$, $\gamma_{\mu}$, $\phi_0$) e armazena $Y_r$;
-		}
-		\Se{existe($Y(1,1)$)}{
-			Chama $\mathcal{M}_2$($v$ , $\bar{p}_0$, $Y_r$, $N$);
-		}
-	}
-	\caption{Cálculos hemodinâmicos do modelo de árvore arterial ($\mathcal{MAA}$).}
-\end{algorithm}
-
-O módulo $\mathcal{M}_1$ do Algoritmo 1  visa calcular os valores de admitância efetiva ($Y_e$), admitância característica ($Y$) e coeficiente de reflexão ($R$) de cada vaso. Este módulo é definido pelo Algoritmo~\ref{AlgM1}. Necessitam-se das admitâncias efetivas dos vasos à justante do vaso $k$ ($Y_e(k+1,2j-1)$ e $Y_e(k+1,2j)$) estejam definidas. Em vista disso, verifica-se a existência dos vasos à justante do vaso atual tanto a esquerda ($esq$) quanto a direita ($dir$) e caso existam realiza-se uma chamada recursiva. Após o retorno das chamadas recursivas, calculam-se as propriedades do vaso atual. Assim, as propriedades do vasos à jusante do vaso atual serão conhecidas, ou seja, já terão sido determinadas $Y_e(k+1,2j-1)$ e $Y_e(k+1,2j)$.
-\newpage
-
-\begin{algorithm}[H]
-	$\mathcal{M}_1$ ($v$, $f$, $\gamma_{\mu}$, $\phi$) \\
-	\Inicio{
-		\Se{existe($v \rightarrow esq$)}{
-			$\mathcal{M}_1$ ($v \rightarrow esq$, $f$, $\gamma_{\mu}$, $\phi$);
-		}
-		\Se{existe($v \rightarrow dir$)}{
-			$\mathcal{M}_1$ ($v \rightarrow dir$, $f$, $\gamma_{\mu}$, $\phi$);
-		}
-		Calcula as propriedades $c$, $\omega$, $\beta$; \\
-		\Se{ ($\gamma_{\mu} == 0$) e ($\phi == 0$) }{
-			Calcula $Y$;
-		}
-		\Senao{
-			\Se{ ($\gamma_{\mu}~!=~0$) }{
-				Calcula $\alpha$, $\epsilon$, $E_v$, $c_v$ e $Y_v$;\\
-				Atualiza $E = E_v$, $c = c_v$ e $Y = Y_v$;
-			}
-			\Se{ ($\phi~!=~0$) }{
-				Calcula $E_c$;\\
-				Atualize $E = E_c$;
-			}
-		}
-		\Se{($v$ é um vaso terminal)}{
-			$Y_e = Y$ e  $R = 0$;
-		}
-		\Senao{
-			Calcula $Y_e$ e $R$;
-		}
-	}
-	\caption{$\mathcal{M}_1$ -- Cálculo das admitâncias e coeficiente de reflexão.}
-	\label{AlgM1}
-\end{algorithm}
-
-O módulo 2 ($\mathcal{M}_2$) do Algoritmo 1 visa calcular o valor da pressão média, pressão e fluxo em cada vaso. Esse módulo é expresso no Algoritmo~\ref{AlgoritmoM2}. Como expresso na equação~\eqref{18_barp}, o valor da pressão média requer o valor da pressão média do vaso à montante $(k-1,s)$. Com isso, inicialmente, se o vaso atual é a artéria de alimentação (raiz), neste caso $\bar{p} = \bar{p}_0$. Caso contrário, calcula-se $\bar{p}$ com a equação~\eqref{18_barp}. Em seguida, o valor das ondas de pressão e fluxo são obtidas ao longo de cada vaso 1D, que são discretizados. Por fim, a recursão é enviada aos segmentos inferiores, desta forma se garante a existência de um valor $\bar{p}(k-1,s)$.
-
-\begin{algorithm}[H]
-	$\mathcal{M}_2$ ($v$, $\bar{p}_0$, $Y_r$, $N$) \\
-	\Inicio{
-		\Se{ ($v$ é o vaso raiz)}{
-			$\bar{p} = \bar{p_0}$;
-		}
-		\Senao{
-			Calcula $\bar{p}$;
-		}
-		Calcula $P(X_i)$ e $Q(X_i)$, onde $X_i \in [0,1]$; \\
-		\Se{existe( $v \rightarrow esq$ )}{
-			$\mathcal{M}_2$ ($v \rightarrow esq$, $\bar{p}_0$, $Y_r$, $N$);
-		}
-		\Se{existe($v \rightarrow dir$)}{
-			$\mathcal{M}_2$ ($v \rightarrow dir$, $\bar{p}_0$, $Y_r$, $N$);
-		}
-	}
-	\caption{$\mathcal{M}_2$ -- Cálculo da pressão e fluxo ao longo de cada vaso.}
-	\label{AlgoritmoM2}
-\end{algorithm}
-
-No Algoritmo \ref{AlgoritmoM2} tem-se que $N$ denota a quantidade de espaçamento $dX$ no intervalo [0,1] para discretização de um vaso. Assim, $dX = 1/N$ e $X_i = i dX (i = 0, 1, \cdot, N)$.

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.7.25)  20 SEP 2021 20:00
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.7.25)  20 SEP 2021 22:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1965,8 +1965,44 @@ Overfull \hbox (92.09485pt too wide) has occurred while \output is active
 
 
 ]
-File: images/IGU2.png Graphic file (type bmp)
-<images/IGU2.png>
+File: Figures/WiseElement@16x.png Graphic file (type bmp)
+<Figures/WiseElement@16x.png>
+File: Figures/WiseElements@16x.png Graphic file (type bmp)
+<Figures/WiseElements@16x.png>
+File: Figures/WiseElementStatus@16x.png Graphic file (type bmp)
+<Figures/WiseElementStatus@16x.png>
+File: Figures/WiseElementHot@16x.png Graphic file (type bmp)
+<Figures/WiseElementHot@16x.png>
+File: Figures/WiseElementWarming@16x.png Graphic file (type bmp)
+<Figures/WiseElementWarming@16x.png>
+File: Figures/WiseElementCold@16x.png Graphic file (type bmp)
+<Figures/WiseElementCold@16x.png>
+File: Figures/WiseElementWorkflow@16x.png Graphic file (type bmp)
+<Figures/WiseElementWorkflow@16x.png>
+File: Figures/WiseObject@16x.png Graphic file (type bmp)
+<Figures/WiseObject@16x.png>
+File: Figures/WiseCollection@16x.png Graphic file (type bmp)
+<Figures/WiseCollection@16x.png>
+File: Figures/GraphicModel@16x.png Graphic file (type bmp)
+<Figures/GraphicModel@16x.png>
+File: Figures/GraphicObjects@16x.png Graphic file (type bmp)
+<Figures/GraphicObjects@16x.png>
+File: Figures/GraphicObjectStatus@16x.png Graphic file (type bmp)
+<Figures/GraphicObjectStatus@16x.png>
+File: Figures/GraphicElements@16x.png Graphic file (type bmp)
+<Figures/GraphicElements@16x.png>
+File: Figures/WiseObjectStatus@16x.png Graphic file (type bmp)
+<Figures/WiseObjectStatus@16x.png>
+File: Figures/WiseThreadPool@16x.png Graphic file (type bmp)
+<Figures/WiseThreadPool@16x.png>
+File: Figures/WiseThreadPool2@16x.png Graphic file (type bmp)
+<Figures/WiseThreadPool2@16x.png>
+File: Figures/WiseThreaPoolCMD@16x.png Graphic file (type bmp)
+<Figures/WiseThreaPoolCMD@16x.png>
+File: Figures/WiseThreaPoolCMDSub@16x.png Graphic file (type bmp)
+<Figures/WiseThreaPoolCMDSub@16x.png>
+File: Figures/WiseThreadPoolHeating@16x.png Graphic file (type bmp)
+<Figures/WiseThreadPoolHeating@16x.png>
 File: ./images/logoufjf10.png Graphic file (type bmp)
 <./images/logoufjf10.png>
 
@@ -2087,44 +2123,6 @@ Overfull \hbox (92.09485pt too wide) has occurred while \output is active
 
 
 ]
-File: Figures/WiseElement@16x.png Graphic file (type bmp)
-<Figures/WiseElement@16x.png>
-File: Figures/WiseElements@16x.png Graphic file (type bmp)
-<Figures/WiseElements@16x.png>
-File: Figures/WiseElementStatus@16x.png Graphic file (type bmp)
-<Figures/WiseElementStatus@16x.png>
-File: Figures/WiseElementHot@16x.png Graphic file (type bmp)
-<Figures/WiseElementHot@16x.png>
-File: Figures/WiseElementWarming@16x.png Graphic file (type bmp)
-<Figures/WiseElementWarming@16x.png>
-File: Figures/WiseElementCold@16x.png Graphic file (type bmp)
-<Figures/WiseElementCold@16x.png>
-File: Figures/WiseElementWorkflow@16x.png Graphic file (type bmp)
-<Figures/WiseElementWorkflow@16x.png>
-File: Figures/WiseObject@16x.png Graphic file (type bmp)
-<Figures/WiseObject@16x.png>
-File: Figures/WiseCollection@16x.png Graphic file (type bmp)
-<Figures/WiseCollection@16x.png>
-File: Figures/GraphicModel@16x.png Graphic file (type bmp)
-<Figures/GraphicModel@16x.png>
-File: Figures/GraphicObjects@16x.png Graphic file (type bmp)
-<Figures/GraphicObjects@16x.png>
-File: Figures/GraphicObjectStatus@16x.png Graphic file (type bmp)
-<Figures/GraphicObjectStatus@16x.png>
-File: Figures/GraphicElements@16x.png Graphic file (type bmp)
-<Figures/GraphicElements@16x.png>
-File: Figures/WiseObjectStatus@16x.png Graphic file (type bmp)
-<Figures/WiseObjectStatus@16x.png>
-File: Figures/WiseThreadPool@16x.png Graphic file (type bmp)
-<Figures/WiseThreadPool@16x.png>
-File: Figures/WiseThreadPool2@16x.png Graphic file (type bmp)
-<Figures/WiseThreadPool2@16x.png>
-File: Figures/WiseThreaPoolCMD@16x.png Graphic file (type bmp)
-<Figures/WiseThreaPoolCMD@16x.png>
-File: Figures/WiseThreaPoolCMDSub@16x.png Graphic file (type bmp)
-<Figures/WiseThreaPoolCMDSub@16x.png>
-File: Figures/WiseThreadPoolHeating@16x.png Graphic file (type bmp)
-<Figures/WiseThreadPoolHeating@16x.png>
 File: ./images/logoufjf10.png Graphic file (type bmp)
 <./images/logoufjf10.png>
 
@@ -2133,6 +2131,7 @@ Overfull \hbox (92.09485pt too wide) has occurred while \output is active
  []
 
 [25
+
 
 ]
 File: ./images/logoufjf10.png Graphic file (type bmp)
@@ -2300,6 +2299,18 @@ Overfull \hbox (92.09485pt too wide) has occurred while \output is active
 
 
 ]
+File: Figures/InGU_console.png Graphic file (type bmp)
+<Figures/InGU_console.png>
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 703--703
+[]  
+ []
+
+
+Overfull \hbox (18.00432pt too wide) in paragraph at lines 703--703
+ [] 
+ []
+
 File: ./images/logoufjf10.png Graphic file (type bmp)
 <./images/logoufjf10.png>
 
@@ -2308,7 +2319,6 @@ Overfull \hbox (92.09485pt too wide) has occurred while \output is active
  []
 
 [41
-
 
 ]
 File: ./images/logoufjf10.png Graphic file (type bmp)
@@ -2355,6 +2365,8 @@ Overfull \hbox (92.09485pt too wide) has occurred while \output is active
 
 
 ]
+File: Figures/CasoDeUso@16x.png Graphic file (type bmp)
+<Figures/CasoDeUso@16x.png>
 File: ./images/logoufjf10.png Graphic file (type bmp)
 <./images/logoufjf10.png>
 
@@ -2363,7 +2375,6 @@ Overfull \hbox (92.09485pt too wide) has occurred while \output is active
  []
 
 [46
-
 
 ]
 File: ./images/logoufjf10.png Graphic file (type bmp)
@@ -2377,6 +2388,38 @@ Overfull \hbox (92.09485pt too wide) has occurred while \output is active
 
 
 ]
+File: Figures/CasoDeUso2@16x.png Graphic file (type bmp)
+<Figures/CasoDeUso2@16x.png>
+File: Figures/IGU_001a.png Graphic file (type bmp)
+<Figures/IGU_001a.png>
+File: Figures/IGU_016.png Graphic file (type bmp)
+<Figures/IGU_016.png>
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 791--791
+[]  
+ []
+
+File: Figures/IGU_001a_34.png Graphic file (type bmp)
+<Figures/IGU_001a_34.png>
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 791--791
+[]  
+ []
+
+File: Figures/IGU_017.png Graphic file (type bmp)
+<Figures/IGU_017.png>
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 791--791
+[] 
+ []
+
+File: Figures/IGU_001.png Graphic file (type bmp)
+<Figures/IGU_001.png>
+
+Overfull \hbox (15.0pt too wide) in paragraph at lines 791--791
+[]  
+ []
+
 File: ./images/logoufjf10.png Graphic file (type bmp)
 <./images/logoufjf10.png>
 
@@ -2385,7 +2428,6 @@ Overfull \hbox (92.09485pt too wide) has occurred while \output is active
  []
 
 [48
-
 
 ]
 File: ./images/logoufjf10.png Graphic file (type bmp)
@@ -2421,22 +2463,6 @@ Overfull \hbox (92.09485pt too wide) has occurred while \output is active
 
 
 ]
-File: Figures/InGU_console.png Graphic file (type bmp)
-<Figures/InGU_console.png>
-
-Overfull \hbox (15.0pt too wide) in paragraph at lines 849--849
-[]  
- []
-
-
-LaTeX Warning: Reference `sec:estrutura' on page 52 undefined on input line 849
-.
-
-
-Overfull \hbox (18.00432pt too wide) in paragraph at lines 849--849
- [] 
- []
-
 File: ./images/logoufjf10.png Graphic file (type bmp)
 <./images/logoufjf10.png>
 
@@ -2445,6 +2471,7 @@ Overfull \hbox (92.09485pt too wide) has occurred while \output is active
  []
 
 [52
+
 
 ]
 File: ./images/logoufjf10.png Graphic file (type bmp)
@@ -2458,6 +2485,12 @@ Overfull \hbox (92.09485pt too wide) has occurred while \output is active
 
 
 ]
+File: Figures/IGU_025.png Graphic file (type bmp)
+<Figures/IGU_025.png>
+File: Figures/IGU_023.png Graphic file (type bmp)
+<Figures/IGU_023.png>
+File: Figures/IGU_001c.png Graphic file (type bmp)
+<Figures/IGU_001c.png>
 File: ./images/logoufjf10.png Graphic file (type bmp)
 <./images/logoufjf10.png>
 
@@ -2466,7 +2499,6 @@ Overfull \hbox (92.09485pt too wide) has occurred while \output is active
  []
 
 [54
-
 
 ]
 File: ./images/logoufjf10.png Graphic file (type bmp)
@@ -2488,6 +2520,17 @@ Overfull \hbox (92.09485pt too wide) has occurred while \output is active
  []
 
 [56
+
+
+]
+File: ./images/logoufjf10.png Graphic file (type bmp)
+<./images/logoufjf10.png>
+
+Overfull \hbox (92.09485pt too wide) has occurred while \output is active
+ [][][][][][]  
+ []
+
+[57
 
 
 ]
@@ -2530,18 +2573,7 @@ Overfull \hbox (92.09485pt too wide) has occurred while \output is active
  [][][][][][]  
  []
 
-[57
-
-]
-File: ./images/logoufjf10.png Graphic file (type bmp)
-<./images/logoufjf10.png>
-
-Overfull \hbox (92.09485pt too wide) has occurred while \output is active
- [][][][][][]  
- []
-
 [58
-
 
 ]
 File: ./images/logoufjf10.png Graphic file (type bmp)
@@ -2619,6 +2651,7 @@ Overfull \hbox (92.09485pt too wide) has occurred while \output is active
 
 [65
 
+
 ]
 File: ./images/logoufjf10.png Graphic file (type bmp)
 <./images/logoufjf10.png>
@@ -2628,6 +2661,16 @@ Overfull \hbox (92.09485pt too wide) has occurred while \output is active
  []
 
 [66
+
+]
+File: ./images/logoufjf10.png Graphic file (type bmp)
+<./images/logoufjf10.png>
+
+Overfull \hbox (92.09485pt too wide) has occurred while \output is active
+ [][][][][][]  
+ []
+
+[67
 
 ]
 \tf@nav=\write9
@@ -2641,24 +2684,21 @@ Overfull \hbox (92.09485pt too wide) has occurred while \output is active
 
  (./presentation.aux)
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `presentation.out' has not changed.
-(rerunfilecheck)             Checksum: 5ECCE2B60C18BC9FE3076E2866F97FB4;913.
+(rerunfilecheck)             Checksum: 78BA3B8DDD2152AE23773738C0152307;1036.
 Package logreq Info: Writing requests to 'presentation.run.xml'.
 \openout1 = `presentation.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 42380 strings out of 476919
- 800947 string characters out of 5825424
- 1636124 words of memory out of 5000000
- 61529 multiletter control sequences out of 15000+600000
+ 42441 strings out of 476919
+ 802203 string characters out of 5825424
+ 1636346 words of memory out of 5000000
+ 61581 multiletter control sequences out of 15000+600000
  448859 words of font info for 66 fonts, out of 8000000 for 9000
  1350 hyphenation exceptions out of 8191
  131i,17n,132p,1087b,3897s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on presentation.pdf (66 pages).
+Output written on presentation.pdf (67 pages).

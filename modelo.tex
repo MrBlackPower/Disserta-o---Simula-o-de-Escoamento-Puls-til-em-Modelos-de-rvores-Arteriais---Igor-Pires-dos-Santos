@@ -245,7 +245,7 @@ Os demais capítulos deste trabalho estão organizados como segue:
 %--------------------------------------------------------------------------------%
 \chapter{MODELAGEM DO ESCOAMENTO SANGUÍNEO}\label{sec:modelagem_escoamento}
 
-\textcolor{red}{IGOR: está errada a citação do trabalho do método de Duan e Zamir (1995), não é a citação que colocou \cite{Duan}.}
+%\textcolor{red}{IGOR: está errada a citação do trabalho do método de Duan e Zamir (1995), não é a citação que colocou \cite{Duan}.}
 
 Neste capítulo, apresenta-se em detalhe o modelo matemático de Duan e Zamir \cite{Duan}, para o escoamento sanguíneo pulsátil em árvores arteriais. Por fim, apresenta um algoritmo que sistematiza os passos dos cálculos realizados para obtenção da pressão e fluxo ao longo da árvore arterial.
 
@@ -384,7 +384,7 @@ Q(k,j) &=& M(k,j)\bar{P}(k,j)\big\{ \exp\left[ -i\beta(k,j) X(k,j) \right] \nonu
 nos quais $Q(k,j) = \frac{q (k,j)}{q_0}$, $M = \frac{Y(k,j)}{Y(1,1)}$ e $q_0 = Y(1,1)p_0$. O cálculo da admitância $Y(1,1)$ na posição proximal do segmento raiz, ou seja, da artéria de alimentação é apresentado na próxima seção.
 
 %------------------------------------------------------------%
-\subsection{Cálculo dos coeficientes de reflexão e da admitância}
+\subsection{Cálculo dos coeficientes de reflexão e da admitância}\label{sec:admittance}
 
 Para determinar os coeficientes de reflexão nas junções, consideram-se as duas junções $A$ e $B$ das extremidades de um segmento genérico $(k,j)$ de um modelo de árvore arterial (ver Figura~\ref{fig1:arterial-tree}). Na posição distal $B$, o coeficiente de reflexão é definido por~\cite{Fung,Lighthill}:
 \begin{equation}
@@ -408,25 +408,6 @@ Y_e(k,j) = \frac{Y(k,j) [Y_e(k+1,2j) + Y_e(k+1,2j-1)+ i Y(k,j)\tan{\beta(k,j)}]}
 \end{equation}
 
 Em segmentos terminais, pode ser assumido que não ocorrem mais reflexões à jusante das posições distais destes segmentos, portanto a admitância efetiva destes segmentos é igual às suas admitâncias características. Adotando a equação \eqref{29_Ye}, todas as admitâncias efetivas podem ser determinadas percorrendo a árvore a partir dos segmentos terminais até o segmento raiz.
-
-\subsection{Cálculo da impedância de entrada}
-
-A impedância vascular de um modelo de árvore arterial é expresso por
-\begin{equation}
-    z = \frac{p}{q},
-\end{equation}
-onde $p$ e $q$ podem ser definidos pelas equações \eqref{03_p} e \eqref{04_1}, respectivamente. Dados que $p(k,j) = P(k,j) p_0$, $q(k,j) = Q(k,j) q_0$ e $q_0 = Y(1,1) p_0$, em termos de variáveis adimensionalizadas, a impedância pode ser reescrita por
-\begin{equation}
-Z = \frac{P(k,j)}{Y(1,1) Q(k,j)}.
-\end{equation}
-
-A impedância de entrada de um modelo de árvore arterial determina $Z$ na posição proximal do vaso raiz, ou seja, em $x (k,j) = 0$. 
-
-Adotando as equações~\eqref{21_P} e~\eqref{23_Q} com $x (k,j) = 0$, obtém-se a impedância de entrada:
-\begin{equation}
-Z = \frac{-1}{Y(1,1)}.
-\end{equation}
-Em suma, a impedância de entrada  em módulo é o inverso da admitância característica da artéria de alimentação.
 
 %--------------------------------------------------------------------------------%
 \subsection{Incorporação da viscosidade e viscoelasticidade no modelo}

@@ -1,196 +1,177 @@
-\NeedsTeXFormat{LaTeX2e}
+
 %-----------------------------------------------------------
-\documentclass[a4paper,12pt]{monografia}
-
-%\documentclass[
-%oneside,         	 %%retire % do in\'icio desta linha para n\~ao imprimir frente e verso 
-%english,			
-%	french,				
-%	spanish, 
-%brazil			        %% Idioma principal 
-%,<...>]{abntbibufjf}
-
-\usepackage[portuguese, colorinlistoftodos, textsize=tiny]{todonotes}
-
-
+\documentclass[msc,divps,pdftex]{mmc}
+\usepackage[document]{ragged2e}
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
 \usepackage{amsmath,amsthm,amsfonts,amssymb}
-\usepackage[mathcal]{eucal}
-\usepackage{latexsym}
-\usepackage[portuguese]{babel}  
-\usepackage{lmodern}						
-\usepackage[T1]{fontenc}		
-\usepackage[utf8]{inputenc}	
+\usepackage{setspace}
+\usepackage[lined,boxed,portugues]{}
+\usepackage{booktabs}
+\usepackage[portuguese,algoruled,longend,linesnumbered]{algorithm2e}
+\usepackage{subfigure}
+\usepackage{subeqnarray}
+\usepackage{enumerate}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{slashbox}
+\usepackage{cases}
+\usepackage{float}
+\usepackage{soul}
+\usepackage{makecell}
+\usepackage{ragged2e}
 
+\usepackage[alf,bibjustif]{abntex2cite}
+
+\newcommand{\igunew}[1]{\textcolor{black}{#1}}
+
+%\usepackage{sectsty}% http://ctan.org/pkg/sectsty
+%\usepackage{titlecaps}% http://ctan.org/pkg/titlecaps
+
+\usepackage{pdfpages}
+
+\usepackage{float}
+
+\usepackage{listings}
+
+\usepackage{xcolor,colortbl}         % Pacote de cores
 \usepackage{setspace}
 \usepackage{bm}
-\usepackage[portuguese,algoruled,longend, linesnumbered]{algorithm2e}
-\usepackage{listings}
-\usepackage{graphicx}
-\usepackage{subcaption}
-\usepackage{hyperref}
-\usepackage{ulem}
+%\usepackage{caption}
+%\usepackage{subcaption}
 
-%\usepackage[alf,bibjustif]{abntex2cite}}
-%\usepackage[alf]{abntcite}
+%\sloppy
+\hyphenpenalty=10000
 
-\hypersetup{colorlinks,
-    debug=false,
-    linkcolor=black,  %%% cor do tableofcontents, \ref, \footnote, etc
-    citecolor=black,  %%% cor do \cite
-    urlcolor=black,   %%% cor do \url e \href
-    bookmarksopen=true,
-}
-%\usepackage{natbib}
-%\bibliographystyle{plainnat}
-%\setcitestyle{authoryear,open={((},close={))}} %Citation-related commands
-% \usepackage[square,sort,comma,numbers]{natbib}
-
-%\usepackage{natbib}
-%\bibliographystyle{abbrvnat}
-%\setcitestyle{authoryear,open={(},close={)}} %Citation-related commands
-\usepackage[alf,bibjustif]{abntex2cite}
-\usepackage{multirow}
-\usepackage[section]{placeins}
-
-
-\usepackage{mathtools}
-
-\usepackage{fourier} 
-\usepackage{array}
-\usepackage{makecell}
 \usepackage{appendix}
-\usepackage{multirow}
-\usepackage{multicol}
+\usepackage{tabularx}
 
-\renewcommand\theadalign{bc}
-\renewcommand\theadfont{\bfseries}
-\renewcommand\theadgape{\Gape[4pt]}
-\renewcommand\cellgape{\Gape[4pt]}
-
-\newcounter{todocounter}
-\newcommand{\comment}[2][]
-{\stepcounter{todocounter}\todo[caption={\thetodocounter: #2}, #1] 
-{\begin{spacing}{1}\thetodocounter: #2\end{spacing}}}
-\reversemarginpar
-\setlength{\marginparwidth}{2.5cm}
-%\lstloadlanguages{C}
-%-----------------------------------------------------------
-%-----------------------------------------------------------
-\theoremstyle{plain}
-\newtheorem{theorem}{Teorema}[section]
-\newtheorem{axiom}{Axioma}[section]
-\newtheorem{corollary}{Corol\'ario}[section]
-\newtheorem{lemma}{Lema}[section]
-\newtheorem{proposition}{Proposi\c{c}\~ao}[section]
-%-----------------------------------------------------------
-\theoremstyle{definition}
-\newtheorem{definition}{Defini\c{c}\~ao}[section]
-\newtheorem{example}{Exemplo}[section]
-%-----------------------------------------------------------
-\theoremstyle{remark}
-\newtheorem{remark}{Observa\c{c}\~ao}[section]
-%-----------------------------------------------------------
-%-----------------------------------------------------------
-\newcommand{\R}{\mathbb{R}}
-\newcommand{\N}{\mathbb{N}}
-\newcommand{\Z}{\mathbb{Z}}
-\newcommand{\Q}{\mathbb{Q}}
-\newcommand{\K}{\mathbb{K}}
-\newcommand{\I}{\mathbb{I}}
-\newcommand{\id}{\mathbf{1}}
-%\newcommand{\U}{\mathcal{U}}
-\newcommand{\V}{{\cal V}}
-%-----------------------------------------------------------
-\def\ind{\hbox{ ind }}
-%-----------------------------------------------------------
 \include{hifenizacao}
-\usepackage{appendix}
-\usepackage{multirow}
 
-
+\lstset{
+	language=XML,
+	morekeywords={encoding,
+		WISE\underline{\space}OBJECT,WISE\underline{\space}COLLECTION,WISE\underline{\space}ELEMENT,OBJECT\underline{\space}PARAMS},
+	breaklines=true,
+	basicstyle=\tiny
+}
 
 \begin{document}
-\include{pretexto}
+%\include{pretexto}
+%\pagestyle{ruledheader}
+
+\title{Uma Ferramenta Computacional para Simulação de Escoamento Pulsátil em Modelos de Árvores Arteriais 1D}
+\author{}{Igor Pires dos Santos}	
+\advisor{Prof.}{Rafael Alves Bonfim de Queiroz}{}{Dr.}{Universidade Federal de Juiz de Fora}
+\coadvisor{Prof.}{Ruy Freitas Reis}{}{Dr.}{Universidade Federal de Juiz de Fora}
+\coadvisorII{}{}{}{}{}
+
+\examinerI{Prof.}{Banca 1}{D.Sc.}{Universidade }
+\examinerII{Prof.}{Banca 2}{D.Sc.}{Universidade }
+\examinerIII{Prof.}{Banca 3}{D.Sc.}{Universidade}
+\examinerIV{Prof.}{Banca 4}{D.Sc.}{Universidade}
+
+\department{MMC}
+
+%definir data da defesa
+\date{23}{09}{2022}
+
+%Palavras chaves do resumo em portugues
+\keyword{Árvores arteriais}
+\keyword{Escoamento pulsátil}
+\keyword{Hemodinâmica computacional}
+\keyword{Fábricas dinâmicas}
+\keyword{Fábricas abstratas}
+\keyword{Orientação à objetos}
+%\keyword{Poroelasticidade}
+%\keyword{Biomecânica}
+
+%Palavras chaves do abstract em ingles
+\keywordEN{Arterial trees}
+\keywordEN{Pulsatile flow}
+\keywordEN{Computational hemodynamics}
+\keywordEN{Dynamic factories}
+\keywordEN{Abstract factories}
+\keywordEN{Object oriented}
+%\keywordEN{Poroelasticity}
+%\keywordEN{Biomechanics}
+
+
+\inserecapa
+\maketitle
+
+%FICHA CATALOGRAFICA É GERADA PELO SITE DA BIBLIOTECA. Basta gerar e trocar o arquivo com nome "ficha_catalografica.pdf".
+%Site da biblioteca: https://www2.ufjf.br/biblioteca/ficha-catalografica/
+
+%\frontmatter
+
+\dedication{Dedico este trabalho primeiramente a Deus, que me possibilitou a vida e consequências dela. A minha família e amigos que nunca deixaram de me amparar nesse processo evolutivo, minha namorada, e a todos que me acompanharam durante essa caminhada.}
+
+\begin{agradecimentos}
+	
+	Agradeço à minha família, pelo encorajamento e apoio, e principalmente aos meus pais, por serem inspiração para os meus estudos.
+	
+	À minha namorada Luana, pessoa com quem amo compartilhar a vida. Obrigado pelo suporte, carinho, paciência e companhia.
+	
+	À Taiga e o Matheus, pessoas com quem dividi o meu dia-a-dia acadêmico, muito obrigado pelo suporte e a paciência.
+	
+	À Adriana Ferreira, que com sua serenidade e magnificência ajudou a formar a pessoa que sou hoje. Infelizmente não foi possível agradecer pessoalmente, então deixo aqui registrado que sem você com certeza eu não estaria aqui hoje, obrigado.
+	
+	Ao professor Rafael Alves Bonfim de Queiroz, pela excelente orientação, apoio e paci\^encia, sem a qual este trabalho n\~ao se realizaria. Ao professor Ruy Freitas Reis, pela também excelente orientação, sua perspectiva possibilitou a melhora deste trabalho em diversos aspectos.
+	
+	Aos professores dos Departamentos de Ci\^encia da Computa\c{c}\~ao e de Mecânica Aplicada e Computacional pelos seus ensinamentos e aos funcion\'arios do curso, que durante esses anos,
+	contribu\'iram de algum modo para o nosso enriquecimento pessoal e
+	profissional.
+	
+	Aos órgãos de fomento CAPES e CNPq que através de seus incentivos permitiram a realização deste trabalho. Em tempos como estes agradeço especialmente por ter tido esta oportunidade e chegar aonde estou, que estas instituições possam preservadas e a ciência prevaleça!
+	
+\end{agradecimentos}
+
+\epigrafe{``A vida é curta demais para aprendermos somente com os nossos erros.''  \flushright{(Sebastião Roberto Pereira Ramon)}}
+
+\begin{abstract}
+	\justifying
+	\igunew{O escoamento sanguíneo em modelos de árvores arteriais do sistema circulatório é frequentemente utilizado para melhor entender este complexo sistema. Ao realizar estas simulações hemodinâmicas pode ser observado como as ondas de pressão e fluxo são alteradas ao longo do modelo vascular. Desta forma, é possível obter dados sem a realização de exames invasivos levando em conta diferentes cenários hemodinâmicos.}
+	Neste trabalho, apresentam-se: (i) um modelo matemático da literatura que descreve o escoamento sanguíneo pulsátil em modelos de árvores arteriais unidimensionais (1D), (ii) uma ferramenta computacional desenvolvida que calcula a pressão e fluxo em cada vaso a partir do modelo matemático .
+	A ferramenta computacional desenvolvida conta com uma estrutura de dados própria que concilia os conceitos de uma linguagem orientada à objetos e bibliotecas adicionais com o modelo matemático adotado.\igunew{A estrutura de dados foi utilizada no desenvolvimento de dois ambientes, um console (modo terminal) e uma interface gráfica de usuário. A arquitetura de classes tem como objetivo conciliar as ferramentas disponibilizadas pelas bibliotecas para simular corretamente o modelo matemático escolhido e permitir que outros modelos matemáticos sejam facilmente acoplados posteriormente.}
+	A estrutura de dados proposta possibilita que as diversas características de uma árvore arterial possam ser armazenadas, utilizadas e visualizadas em tempo de execução.
+	Os resultados obtidos neste trabalho estão condizentes com dados numéricos relatados na literatura.\igunew{A ferramenta computacional construída é útil para realizar simulação hemodinâmicas em modelos 1D de árvores arteriais e pode servir como uma plataforma para investigação de modelos computacionais}.
+\end{abstract}
+
+\begin{foreignabstract}
+	\justifying
+	\igunew{The blood flow in arterial tree models of the circulatory system is frequently studied to better understand this complex system. The simulation shows how the wave changes as it progresses through the geometric model. It is possible to extract analytical data without invasive procedures taking different flow characteristics into account.}
+	In this work, the following are presented: (i) an analytical scheme based on physisc and mathematic laws to calculate the local charactheristics of the pressure and flux wave in unidimensional (1D) arterial tree's models, (ii) a computational environment desenvolved to simulate and visualize the results of the model's construction and hemodynamic studies. 
+	The computational environment is composed of a data structure that integrates the concepts of an object-oriented language and other libraries with the adopted analytical scheme.
+	The proposed data structure allows the computational environment to store, utilize and display different characteristics of an arterial tree. \igunew{The data structure constructed two environments, the first a console(terminal mode), and the second a user interface. The class architecture objectives are the correct use of the libraries to simulate the mathematical model and allow other mathematical models to be easily integrated posteriorly.}
+	The results produced in this work are consistent to real morphometric data and numeric data related in the literature.\igunew{The computational tool built simulates hemodynamic characteristics in 1D arterial tree models and functions as a platform to investigate computational models.}.
+\end{foreignabstract}
 
 
 
-% %----------------------------dedicat\'oria  opcional--------------
-% \begin{dedicatoria}
-
-% \end{dedicatoria}
+% \clearpage
 
 
-%--------Digite aqui o seu resumo em Portugu\^es--------------
-\resumo{Resumo} 
+\listoffigures  %Com titulo : lista de ilustracoes
+\listoftables
 
-% (BRACIS 2019, ainda escrevendo resumo, isto é só para servir de base) 
+%----Glossário ------------
+\input{abreviacoes} %arquivo abreviacoes.tex não é automatizado :/
 
-
-Neste trabalho, apresentam-se: (i) modelo matemático da literatura que descreve o escoamento sanguíneo pulsátil em modelos de árvores arteriais 1D, (ii) uma ferramenta computacional desenvolvida que calcula a pressão e fluxo em cada vaso a partir do modelo matemático .
-A ferramenta computacional desenvolvida conta com uma estrutura de dados própria que concilia os conceitos de uma linguagem orientada à objetos e bibliotecas adicionais com o modelo matemático e geométrico proposto.
-A estrutura de dados proposta possibilita que as diversas características de uma árvore arterial possam ser armazenadas, utilizadas e visualizadas em tempo de execução.
-Os resultados obtidos neste trabalho estão condizentes com dados numéricos relatados na literatura.
-
-\noindent \\ \textbf{Palavras-chave:} Árvores arteriais. Escoamento pulsátil. Hemodinâmica Computacional.
+% \renewcommand{\glossaryname}{Lista de Siglas}
+% \printglossary
+%\printlosymbols
+\tableofcontents
 
 
-
-%-----------Digite aqui o seu resumo em Ingl\^es--------------
-\resumo{Abstract} 
-
-In this work, the following are presented: (i) an analytical scheme based on physisc and mathematic laws to calculate the local charactheristics of the pressure and flux wave in 1D arterial tree's models, (ii) a computational environment desenvolved to simulate and visualize the results of the model's construction and hemodynamic studies. 
-The computational environment is composed of a data structure that integrates the concepts of an object-oriented language and other libraries with the proposed analytical scheme.
-The proposed data structure allows the computational environment to store, utilize and display different characteristics of an arterial tree. 
-The results produced in this work are consistent to real morphometric data and numeric data related in the literature.
-\noindent \\ \textbf{Keywords:} Arterial trees. Pulsatile flow. Computational hemodynamics. %finalizadas por ponto e inicializadas por letra maiuscula.
-
-
-%-----------Ou digite aqui o seu resumo em Frances----------
-%\resumo{Resumo} C'est un mod\'ule de la monographie dans \LaTeX et
-%5utilise la classe monografia.cls, avec le but de aider dans le
-%maniement des travaux de conclusion des plusieurs cours de
-%l'Universit\'e F\'ed\'erale de Juiz de Fora.
-
-
-
-%-----------------------------------------------------------
-\agradecimento{Agradecimentos} \indent\indent 
-Agradecimentos
-\newpage
-
-
-
-
-% %---------------------- EPÍGRAFE I (OPCIONAL)--------------
-% \begin{epigrafe}
-% %nao tenho ideia do que colocar aqui
-% \end{epigrafe}
-
-
-
-%----Sum\'ario, lista de figura e de tabela ------------
-% \tableofcontents \newpage \listoffigures
-%\thispagestyle{empty} \listoftables \thispagestyle{empty}
-
-
-
-%----Gloss\'ario ------------
-\chapter*{Lista de Abrevia\c{c}\~oes} \addcontentsline{toc}{chapter}{Lista de Abrevia\c{c}\~oes}
-\doublespacing  \begin{tabular}{l l}
-
-PPGMC & Programa de Pós-Graduação em Modelagem Computacional \\
-UFJF & Universidade Federal de Juiz de Fora  \\
-XML & Xtreme Markup Language\\
-IGU & Iterador Gráfico Universal\\
-InGU & Iterador não-Gráfico Universal\\
-VTK & Visual Tool\textbf{k}it
-
-
-
-\end{tabular}  \thispagestyle{empty}
 %---------------------
 
+%\printloabbreviations
+% \printnomenclature[1cm]
+% \listadesiglas
 
+\mainmatter
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -198,7 +179,6 @@ VTK & Visual Tool\textbf{k}it
 %--------------In\'icio do Conte\'udo---------------------------
 %
 %
-\pagestyle{ruledheader}
  
 %% Sum\'ario
 %\pdfbookmark[0]{\contentsname}{toc}
@@ -207,31 +187,33 @@ VTK & Visual Tool\textbf{k}it
 
 %--------------------------------------------------------------------------------%
 
-\include{introducao}
+\input{introducao}
 
 
 
 %--------------------------------------------------------------------------------%
 
-\include{modelagem_escoamento}
+\input{modelagem_escoamento}
 
 
 
 %--------------------------------------------------------------------------------%
-
-\include{ferramenta_computacional}
+%\include{ferramenta}
+%\include{computacional}
+\input{ferramenta_computacional}
+\input{usabilidade}
 
 %-------------------------------------------------------------------------------------------%
 
-\include{resultados}
+\input{resultados}
 
 
 
 %-----------------------------------------------------------------------------------------%
 
-\include{conclusoes}
+\input{conclusoes}
 
-\include{anexos}
+\input{anexos}
 
 
 %Em trabalhos futuros temos a realização de testes com uma maior número de instâncias incluindo instâncias maiores, com mais pontos de demanda e chaves.

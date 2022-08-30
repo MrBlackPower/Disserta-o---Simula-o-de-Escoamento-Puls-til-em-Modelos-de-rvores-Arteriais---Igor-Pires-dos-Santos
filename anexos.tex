@@ -1,6 +1,73 @@
 \begin{appendices}
 	%-----------------------------------------------------------------------------------------%
 	\chapter{PROCESSO DE COMPILAÇÃO}\label{annex1}
+	%-----------------------------------------------------------------------------------------%
+	\section{INSTALAR QT}\label{qt}
+		
+		Rodar os comandos para baixar o arquivo da versão da biblioteca Qt e para efetuar sua instalação.
+		
+	\begin{itemize}
+		\item wget http://download.qt.io/official\underline{\space\space}releases/qt/5.15/5.15.0/qt-opensource-linux-x64-5.15.0.run
+		\item chmod +x qt-opensource-linux-x64-5.15.0.run
+		\item ./qt-opensource-linux-x64-5.15.0.run
+	\end{itemize}
+	
+	
+	Uma outra alternativa são os comandos para buscar as mesma bibliotecas via \textit{apt-get}:
+	
+	\begin{itemize}
+		\item sudo apt-get install qtbase5-dev
+		\item sudo apt-get install qtdeclarative5-dev
+	\end{itemize}
+
+	Instalar a biblioteca \textit{Qt} de acordo com as instruções dadas pelo guia de instalação. Depois, instale \textit{Qt Creator} caso se deseje alterar o código-fonte.
+	
+	%-----------------------------------------------------------------------------------------%
+	\section{INSTALAR BIBLIOTECAS SECUNDÁRIAS}\label{secondary_libs}
+	
+	Outras bibliotecas menores também são necessárias para compilar corretamente a ferramenta computacional, o comando abaixo instala todas elas:
+	
+	\begin{itemize}
+		\item sudo apt-get install build-essential
+		\item sudo apt-get install libfontconfig1
+		\item sudo apt-get install mesa-common-dev
+		\item sudo apt-get install libglu1-mesa-dev -y
+		\item sudo apt-get install freeglut3-dev
+	\end{itemize}
+	
+	%-----------------------------------------------------------------------------------------%
+	\section{CLONAR E COMPILAR REPOSITÓRIO}\label{compile}
+	
+	O repositório pode ser clonado com o seguinte comando:
+	
+	git clone https://MrBlackPower@bitbucket.org/MrBlackPower/igu.git
+	
+	
+	
+	%-----------------------------------------------------------------------------------------%
+	\subsection{COMPILAR COM QTCREATOR}\label{qtcreator}
+	
+	Para compilar o projeto corretamente através da \textit{IDE} \textit{QtCreator}, as seguintes instruções devem ser seguidas:
+	
+	\begin{enumerate}
+		\item Abrir pasta do projeto \textit{Project}
+		\begin{itemize}
+			\item Selecionar arquivo CMakeLists.txt;
+			\item Configurar o projeto para ser compilado;
+			\item Escolher o ambiente computacional desejado e rodar o projeto.
+		\end{itemize}
+	\end{enumerate}
+	
+	%-----------------------------------------------------------------------------------------%
+	\subsection{OUTROS}\label{cmake}
+	
+	Caso o erro \textit{cannot find -lGL} permaneça, rode os seguintes comandos:
+	
+	\begin{itemize}
+		\item sudo rm /usr/lib/x86\underline{\space\space}64-linux-gnu/libGL.so
+		\item sudo ln -s /usr/lib/libGL.so.1 /usr/lib/x86\underline{\space\space}64-linux-gnu/libGL.so
+	\end{itemize}
+	
 	
 	
 	%-----------------------------------------------------------------------------------------%
@@ -65,12 +132,195 @@
 	\end{algorithm}
 	
 	%-----------------------------------------------------------------------------------------%
-	\chapter{FORMATO DE ARQUIVO DE ELEMENTO INTELIGENTE}\label{annex3}
+	\chapter{FORMATO DE ARQUIVO DE ELEMENTO}\label{annex3}
+	
+	\lstset{language=XML}
+	\begin{lstlisting}
+	<WISE_ELEMENT>
+		<!-- XML for Wise Element el1 -->
+		<ELEMENT_PARAMS NAME="el1" FILENAME_VTK="wise_el1_ACJHBFGCGG_0_0.vtk" FILENAME_XML="wise_el1_ACJHBFGCGG_0_0.xml" TYPE="GRAPHIC" ELEMENT_KEY="ACJHBFGCGG" ID="0" DT="1.000000" MODEL_TIME="0.000000" INSTANCE="0" STATUS="HOT" />
+		<WISE_STRUCTURE>
+			<!-- XML for Wise Object el1 -->
+			<STRUCTURE_PARAMETERS NAME="el1" STRUCTURE_ID="0" STRUCTURE_KEY="DGJJGJBJAH" N_POINTS="101" N_CELLS="0" N_LINES="0" N_FIELDS="0" MAX_X="360" MAX_Y="100" MAX_Z="0" MIN_X="0" MIN_Y="-1" MIN_Z="0" IMPORTED="0" IMPORT_TYPE="3" IMPORT_FILENAME="UNTITLED" />
+			<STRUCTURE>
+				<POINTS>
+				<POINT ID="0" X="0.0000000000" Y="0.0000000000" Z="0.0000000000" />
+				...
+				<POINT ID="100" X="360.0000000000" Y="0.0000000000" Z="0.0000000000" />
+				</POINTS>
+				<LINES />
+				<CELLS />
+			</STRUCTURE>
+			<DATA>
+				<POINT_DATA>
+					<INFO NAME="VALUE" TYPE="DOUBLE">
+					<DATA VALUE="0.0000000000" />
+					...
+					<DATA VALUE="0.0000000000" />
+					</INFO>
+				</POINT_DATA>
+				<CELL_DATA />
+				<LINE_DATA />
+				<FIELD />
+			</DATA>
+		</WISE_STRUCTURE>
+	</WISE_ELEMENT
+	\end{lstlisting}
 	
 	%-----------------------------------------------------------------------------------------%
-	\chapter{FORMATO DE ARQUIVO DE OBJETO INTELIGENTE}\label{annex4}
+	\chapter{FORMATO DE ARQUIVO DE OBJETO}\label{annex4}
 	
-	
-	
+	\lstset{language=XML}
+	\begin{lstlisting}
+	<WISE_OBJECT>
+	<!-- XML for Wise Object obj1 -->
+	<OBJECT_PARAMS NAME="obj1" STATUS="GO" TYPE="ARTERY_TREE" DT="1.000000" MODEL_TIME="0.000000" FRAMES="0" ITERATIONS="0" ITERATION_FACTORY_SET="1" ITERATION_FACTORY="DUAN_AND_ZAMIR" GRAPHIC_FACTORY_SET="1" GRAPHIC_FACTORY="GRAPHIC_ARTERY_TREE_FACTORY" GRAPHIC_MODEL_SET="1" />
+	<WISE_COLLECTION>
+	<COLLECTION_PARAMS ID="0" N="13" />
+	<WISE_OVEN>
+	<WISE_ELEMENT>
+	<!-- XML for Wise Element el1 -->
+	<ELEMENT_PARAMS NAME="el1" FILENAME_VTK="wise_el1_JGCAHIEHDD_0_0.vtk" FILENAME_XML="wise_el1_JGCAHIEHDD_0_0.xml" TYPE="ARTERY_TREE" ELEMENT_KEY="JGCAHIEHDD" ID="0" DT="1.000000" MODEL_TIME="12.000000" ITERATION="0" STATUS="HOT" />
+	<WISE_STRUCTURE>
+	<!-- XML for Wise Object el1 -->
+	<STRUCTURE_PARAMETERS NAME="el1" STRUCTURE_ID="0" STRUCTURE_KEY="HDAGBBBCJC" N_POINTS="7" N_CELLS="0" N_LINES="0" N_FIELDS="0" MAX_X="12" MAX_Y="28" MAX_Z="0" MIN_X="-8" MIN_Y="-27" MIN_Z="0" IMPORTED="0" IMPORT_TYPE="3" IMPORT_FILENAME="UNTITLED" />
+	<STRUCTURE>
+	<POINTS>
+	<POINT ID="0" X="2.0000000000" Y="28.0000000000" Z="0.0000000000" />
+	<POINT ID="1" X="2.0000000000" Y="3.0000000000" Z="0.0000000000" />
+	<POINT ID="2" X="2.0000000000" Y="-8.0000000000" Z="0.0000000000" />
+	<POINT ID="3" X="-5.0000000000" Y="-17.7467940000" Z="0.0000000000" />
+	<POINT ID="4" X="-8.0000000000" Y="-27.2861860000" Z="0.0000000000" />
+	<POINT ID="5" X="9.0000000000" Y="-17.7467940000" Z="0.0000000000" />
+	<POINT ID="6" X="12.0000000000" Y="-27.2861860000" Z="0.0000000000" />
+	</POINTS>
+	<LINES>
+	<LINE ID="0" A="0" B="1" />
+	<LINE ID="1" A="1" B="2" />
+	<LINE ID="2" A="2" B="3" />
+	<LINE ID="3" A="3" B="4" />
+	<LINE ID="4" A="2" B="5" />
+	<LINE ID="5" A="5" B="6" />
+	</LINES>
+	<CELLS />
+	</STRUCTURE>
+	<DATA>
+	<POINT_DATA />
+	<CELL_DATA>
+	<INFO NAME="RADIUS" TYPE="DOUBLE">
+	<DATA VALUE="0.6500000000" />
+	...
+	<DATA VALUE="0.2000000000" />
+	</INFO>
+	<INFO NAME="DENSITY" TYPE="DOUBLE">
+	<DATA VALUE="0.9600000000" />
+	...
+	<DATA VALUE="1.2350000000" />
+	</INFO>
+	<INFO NAME="YOUNG_MODULUS" TYPE="DOUBLE">
+	<DATA VALUE="4800000.0000000000" />
+	...
+	<DATA VALUE="10000000.0000000000" />
+	</INFO>
+	<INFO NAME="VISCOSITY" TYPE="DOUBLE">
+	<DATA VALUE="0.0385000000" />
+	...
+	<DATA VALUE="0.0494000000" />
+	</INFO>
+	<INFO NAME="ALPHA" TYPE="DOUBLE">
+	<DATA VALUE="-1.0000000000" />
+	...
+	<DATA VALUE="-1.0000000000" />
+	</INFO>
+	<INFO NAME="WAVE_SPEED" TYPE="DOUBLE">
+	<DATA VALUE="500.0000000000" />
+	...
+	<DATA VALUE="636.2847629758" />
+	</INFO>
+	<INFO NAME="WALL_THICKNESS" TYPE="DOUBLE">
+	<DATA VALUE="0.0650000000" />
+	...
+	<DATA VALUE="0.0200000000" />
+	</INFO>
+	<INFO NAME="LENGTH" TYPE="DOUBLE">
+	<DATA VALUE="25.0000000000" />
+	...
+	<DATA VALUE="9.9999999865" />
+	</INFO>
+	<INFO NAME="PHI" TYPE="DOUBLE">
+	<DATA VALUE="0.0000000000" />
+	...
+	<DATA VALUE="0.0000000000" />
+	</INFO>
+	<INFO NAME="ANGULAR_FREQUENCY" TYPE="DOUBLE">
+	<DATA VALUE="86.0010988920" />
+	...
+	<DATA VALUE="86.0010988920" />
+	</INFO>
+	<INFO NAME="BETA_ABS" TYPE="DOUBLE">
+	<DATA VALUE="4.3000549446" />
+	...
+	<DATA VALUE="1.3516133621" />
+	</INFO>
+	<INFO NAME="BETA_REAL" TYPE="DOUBLE">
+	<DATA VALUE="4.3000549446" />
+	...
+	<DATA VALUE="1.3516133621" />
+	</INFO>
+	<INFO NAME="BETA_IMAGE" TYPE="DOUBLE">
+	<DATA VALUE="0.0000000000" />
+	...
+	<DATA VALUE="0.0000000000" />
+	</INFO>
+	<INFO NAME="VISCOUS_WAVE_SPEED_ABS" TYPE="DOUBLE">
+	<DATA VALUE="1.0000000000" />
+	...
+	<DATA VALUE="1.0000000000" />
+	</INFO>
+	<INFO NAME="VISCOUS_WAVE_SPEED_REAL" TYPE="DOUBLE">
+	<DATA VALUE="-1.0000000000" />
+	...
+	<DATA VALUE="-1.0000000000" />
+	</INFO>
+	<INFO NAME="VISCOUS_WAVE_SPEED_IMAGE" TYPE="DOUBLE">
+	<DATA VALUE="0.0000000000" />
+	...
+	<DATA VALUE="0.0000000000" />
+	</INFO>
+	<INFO NAME="VISCOUS_YOUNG_MODULUS_ABS" TYPE="DOUBLE">
+	<DATA VALUE="1.0000000000" />
+	...
+	<DATA VALUE="1.0000000000" />
+	</INFO>
+	<INFO NAME="VISCOUS_YOUNG_MODULUS_REAL" TYPE="DOUBLE">
+	<DATA VALUE="-1.0000000000" />
+	...
+	<DATA VALUE="-1.0000000000" />
+	</INFO>
+	<INFO NAME="VISCOUS_YOUNG_MODULUS_IMAGE" TYPE="DOUBLE">
+	<DATA VALUE="0.0000000000" />
+	...
+	<DATA VALUE="0.0000000000" />
+	</INFO>
+	<INFO NAME="FLOW_ABS" TYPE="DOUBLE">
+	<DATA VALUE="0.2712788317" />
+	...
+	<DATA VALUE="0.1154357112" />
+	</INFO>
+	<INFO NAME="FLOW_REAL" TYPE="DOUBLE">
+	<DATA VALUE="-0.0642456722" />
+	...
+	<DATA VALUE="-0.0862382822" />
+	</INFO>
+	<INFO NAME="FLOW_IMAGE" TYPE="DOUBLE">
+	<DATA VALUE="0.2635615642" />
+	...
+	<DATA VALUE="-0.0767356639" />
+	</INFO>
+	<INFO NAME="FLOW_WAVE" TYPE="VECTOR">
+	<DATA VALUE="0.0043418095 0.0042507071 0.0041518920 0.0040455728 0.0039319766 0.0038113495 0.0036839567 0.0035500842 0.0034100397 0.0032641549 0.0031127882 0.0029563287 0.0027952022 0.0026298798 0.0024608902 0.0022888384 0.0021144345 0.0019385376 0.0017622264 0.0015869140 0.0014145382 0.0012478823 0.0010911088 0.0009505832 0.0008358491 0.0007597172 0.0007349176 0.0007666319 0.0008483353 0.0009669300 0.0011099295 0.0012682282 0.0014357897 0.0016086623 0.0017841919 0.0019605202 0.0021362844 0.0023104383 0.0024821444 0.0026507080 0.0028155347 0.0029761038 0.0031319507 0.0032826544 0.0034278298 0.0035671222 0.0037002030 0.0038267672 0.0039465316 0.0040592334 0.0041646288 0.0042624931 0.0043526199 0.0044348206 0.0045089248 0.0045747794 0.0046322496 0.0046812177 0.0047215841 0.0047532669 0.0047762019 0.0047903426 0.0047956605 0.0047921449 0.0047798028 0.0047586593 0.0047287569 0.0046901564 0.0046429360 0.0045871919 0.0045230378 0.0044506052 0.0043700434 0.0042815193 0.0041852177 0.0040813415 0.0039701115 0.0038517676 0.0037265686 0.0035947936 0.0034567429 0.0033127400 0.0031631342 0.0030083040 0.0028486623 0.0026846642 0.0025168177 0.0023457001 0.0021719832 0.0019964706 0.0018201591 0.0016443352 0.0014707365 0.0013018221 0.0011412251 0.0009944780 0.0008699883 0.0007796313 0.0007368490 0.0007501554" />
+	...
+	</WISE_OBJECT>
+	\end{lstlisting}
 	
 \end{appendices}

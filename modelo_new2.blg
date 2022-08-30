@@ -1,13 +1,6 @@
-This is BibTeX, Version 0.99d (TeX Live 2021/W32TeX)
+This is BibTeX, Version 0.99d (TeX Live 2022)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: modelo_new2.aux
-A level-1 auxiliary file: pretexto.aux
-A level-1 auxiliary file: introducao.aux
-A level-1 auxiliary file: modelagem_escoamento.aux
-A level-1 auxiliary file: ferramenta_computacional.aux
-A level-1 auxiliary file: resultados.aux
-A level-1 auxiliary file: conclusoes.aux
-A level-1 auxiliary file: anexos.aux
 The style file: abntex2-alf.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -20,53 +13,62 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Database file #1: abntex2-options.bib
 Database file #2: referencias.bib
+I was expecting a `,' or a `}'---line 777 of file referencias.bib
+ :  
+ :  publisher={Kitware},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=200001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
+You can't pop an empty literal stack for entry thore07
+while executing---line 4291 of file abntex2-alf.bst
+Warning--campo year vazio ou faltando em VTKUSER
 +---------------------------------------------------------+
 | Estilo bibliográfico abntex2-alf.bst versão v-1.9.6           |
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 30 entries,
+You've used 41 entries,
             6714 wiz_defined-function locations,
-            1415 strings with 14368 characters,
-and the built_in function-call counts, 30137 in all, are:
-= -- 2779
-> -- 916
-< -- 321
-+ -- 671
-- -- 277
-* -- 2132
-:= -- 3915
-add.period$ -- 95
-call.type$ -- 30
-change.case$ -- 318
-chr.to.int$ -- 39
-cite$ -- 29
-duplicate$ -- 1998
-empty$ -- 1754
-format.name$ -- 1321
-if$ -- 6672
-int.to.chr$ -- 0
+            1473 strings with 15818 characters,
+and the built_in function-call counts, 35567 in all, are:
+= -- 2971
+> -- 1122
+< -- 209
++ -- 616
+- -- 342
+* -- 2538
+:= -- 4685
+add.period$ -- 124
+call.type$ -- 41
+change.case$ -- 402
+chr.to.int$ -- 64
+cite$ -- 41
+duplicate$ -- 2032
+empty$ -- 2406
+format.name$ -- 1623
+if$ -- 8188
+int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 523
-newline$ -- 156
-num.names$ -- 140
-pop$ -- 701
+missing$ -- 710
+newline$ -- 209
+num.names$ -- 190
+pop$ -- 909
 preamble$ -- 1
-purify$ -- 121
+purify$ -- 157
 quote$ -- 0
-skip$ -- 2186
+skip$ -- 2282
 stack$ -- 1
-substring$ -- 1431
-swap$ -- 860
-text.length$ -- 46
+substring$ -- 1720
+swap$ -- 957
+text.length$ -- 63
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 6
-warning$ -- 0
-while$ -- 237
+type$ -- 17
+warning$ -- 1
+while$ -- 310
 width$ -- 0
-write$ -- 461
+write$ -- 635
+(There were 2 error messages)

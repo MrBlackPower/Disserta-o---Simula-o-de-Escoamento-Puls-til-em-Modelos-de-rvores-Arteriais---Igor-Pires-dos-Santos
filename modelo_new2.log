@@ -1,430 +1,382 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.7.25)  20 SEP 2021 08:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.28)  29 AUG 2022 21:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **modelo_new2.tex
 (./modelo_new2.tex
-LaTeX2e <2020-10-01> patch level 4
-L3 programming layer <2021-02-18> (./monografia.cls
-Document Class: monografia 2001/04/21 v1.4e Standard LaTeX document class
-(c:/texlive/2021/texmf-dist/tex/latex/base/size12.clo
-File: size12.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-04-20> (./mmc.cls
+Document Class: mmc 2007/03/01\ v2.0\ MMC Dissertations and Thesis
+(c:/texlive/2022/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2021/10/04 v1.4n Standard LaTeX document class
+(c:/texlive/2022/texmf-dist/tex/latex/base/bk12.clo
+File: bk12.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count175
-\c@chapter=\count176
-\c@section=\count177
-\c@subsection=\count178
-\c@subsubsection=\count179
-\c@paragraph=\count180
-\c@subparagraph=\count181
-\c@figure=\count182
-\c@table=\count183
+\c@part=\count185
+\c@chapter=\count186
+\c@section=\count187
+\c@subsection=\count188
+\c@subsubsection=\count189
+\c@paragraph=\count190
+\c@subparagraph=\count191
+\c@figure=\count192
+\c@table=\count193
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
-) (./todonotes.sty
-Package: todonotes 2010/09/26 .dtx Todonotes source and documentation.
-Package: todonotes 2010/09/26
-
-(c:/texlive/2021/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-(c:/texlive/2021/texmf-dist/tex/latex/xkeyval/xkeyval.sty
-Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
+(c:/texlive/2022/texmf-dist/tex/latex/lastpage/lastpage.sty
+Package: lastpage 2021/09/03 v1.2n Refers to last page's name (HMM; JPG)
+)
+(c:/texlive/2022/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2022-02-21 v7.00n Hypertext links for LaTeX
 
-(c:/texlive/2021/texmf-dist/tex/generic/xkeyval/xkeyval.tex
-(c:/texlive/2021/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks15
-\XKV@tempa@toks=\toks16
+(c:/texlive/2022/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(c:/texlive/2022/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+)
+(c:/texlive/2022/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
 
-(c:/texlive/2021/texmf-dist/tex/generic/xkeyval/keyval.tex))
-\XKV@depth=\count184
-File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+(c:/texlive/2022/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(c:/texlive/2022/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+(c:/texlive/2022/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)
+(c:/texlive/2022/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(c:/texlive/2022/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(c:/texlive/2022/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(c:/texlive/2022/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(c:/texlive/2022/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(c:/texlive/2022/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+)
+\@linkdim=\dimen139
+\Hy@linkcounter=\count194
+\Hy@pagecounter=\count195
+
+(c:/texlive/2022/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2022-02-21 v7.00n Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(c:/texlive/2022/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(c:/texlive/2022/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count196
+
+(c:/texlive/2022/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2022-02-21 v7.00n Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4137.
+Package hyperref Info: Link nesting OFF on input line 4142.
+Package hyperref Info: Hyper index ON on input line 4145.
+Package hyperref Info: Plain pages OFF on input line 4152.
+Package hyperref Info: Backreferencing OFF on input line 4157.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4390.
+\c@Hy@tempcnt=\count197
+
+(c:/texlive/2022/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4749.
+\XeTeXLinkMargin=\dimen140
+
+(c:/texlive/2022/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(c:/texlive/2022/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
 ))
-(c:/texlive/2021/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+\Fld@menulength=\count198
+\Field@Width=\dimen141
+\Fld@charsize=\dimen142
+Package hyperref Info: Hyper figures OFF on input line 6027.
+Package hyperref Info: Link nesting OFF on input line 6032.
+Package hyperref Info: Hyper index ON on input line 6035.
+Package hyperref Info: backreferencing OFF on input line 6042.
+Package hyperref Info: Link coloring OFF on input line 6047.
+Package hyperref Info: Link coloring with OCG OFF on input line 6052.
+Package hyperref Info: PDF/A mode OFF on input line 6057.
+LaTeX Info: Redefining \ref on input line 6097.
+LaTeX Info: Redefining \pageref on input line 6101.
 
-(c:/texlive/2021/texmf-dist/tex/latex/graphics-cfg/color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
+(c:/texlive/2022/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
 )
-Package xcolor Info: Driver file: xetex.def on input line 225.
+\Hy@abspage=\count199
+\c@Item=\count266
+\c@Hfootnote=\count267
+)
+Package hyperref Info: Driver: hpdftex.
 
-(c:/texlive/2021/texmf-dist/tex/latex/graphics-def/xetex.def
-File: xetex.def 2021/03/18 v5.0k Graphics/color driver for xetex
-)
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
-Package xcolor Info: Model `RGB' extended on input line 1364.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
-)
-(c:/texlive/2021/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
-(c:/texlive/2021/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
-(c:/texlive/2021/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
-(c:/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks17
-\pgfutil@tempdima=\dimen139
-\pgfutil@tempdimb=\dimen140
+(c:/texlive/2022/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2022-02-21 v7.00n Hyperref driver for pdfTeX
 
-(c:/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)
-) (c:/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box47
+(c:/texlive/2022/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
+kage
+with kernel methods
 )
-(c:/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
-(c:/texlive/2021/texmf-dist/tex/generic/pgf/pgf.revision.tex)
-Package: pgfrcs 2020/12/27 v3.1.8b (3.1.8b)
+\Fld@listcount=\count268
+\c@bookmark@seq@number=\count269
+
+(c:/texlive/2022/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+(c:/texlive/2022/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip49
+)
+(c:/texlive/2022/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2022/02/26 3.73 The Babel package
+\babel@savecnt=\count270
+\U@D=\dimen143
+\l@unhyphenated=\language87
+
+(c:/texlive/2022/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count271
+
+(c:/texlive/2022/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: Hyphen rules for 'canadian' set to \l@english
+(babel)             (\language0). Reported on input line 102.
+Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
+(babel)             (\language21). Reported on input line 105.
+Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
+(babel)             (\language21). Reported on input line 108.
+)
+(c:/texlive/2022/texmf-dist/tex/generic/babel-portuges/brazil.ldf
+Language: portuges 2021/07/09 v1.2t Portuguese support from the babel system
+Package babel Info: Hyphen rules for 'brazil' set to \l@portuguese
+(babel)             (\language70). Reported on input line 111.
+Package babel Info: Making " an active character on input line 143.
 ))
-Package: pgf 2020/12/27 v3.1.8b (3.1.8b)
-
-(c:/texlive/2021/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
-(c:/texlive/2021/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
-
-(c:/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
-
-(c:/texlive/2021/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+(c:/texlive/2022/texmf-dist/tex/latex/hyphenat/hyphenat.sty
+Package: hyphenat 2009/09/02 v2.3c hyphenation utilities
+\langwohyphens=\language88
+LaTeX Info: Redefining \_ on input line 43.
 )
-(c:/texlive/2021/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+(c:/texlive/2022/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(c:/texlive/2022/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(c:/texlive/2022/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+
+(c:/texlive/2022/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(c:/texlive/2022/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: xetex.def on input line 105.
-)
-\Gin@req@height=\dimen141
-\Gin@req@width=\dimen142
-)
-(c:/texlive/2021/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
-(c:/texlive/2021/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
-Package: pgfsys 2020/12/27 v3.1.8b (3.1.8b)
+Package graphics Info: Driver file: pdftex.def on input line 107.
 
-(c:/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks18
-\pgfkeys@temptoks=\toks19
-
-(c:/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
-\pgfkeys@tmptoks=\toks20
+(c:/texlive/2022/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 ))
-\pgf@x=\dimen143
-\pgf@y=\dimen144
-\pgf@xa=\dimen145
-\pgf@ya=\dimen146
-\pgf@xb=\dimen147
-\pgf@yb=\dimen148
-\pgf@xc=\dimen149
-\pgf@yc=\dimen150
-\pgf@xd=\dimen151
-\pgf@yd=\dimen152
-\w@pgf@writea=\write3
-\r@pgf@reada=\read2
-\c@pgf@counta=\count185
-\c@pgf@countb=\count186
-\c@pgf@countc=\count187
-\c@pgf@countd=\count188
-\t@pgf@toka=\toks21
-\t@pgf@tokb=\toks22
-\t@pgf@tokc=\toks23
-\pgf@sys@id@count=\count189
- (c:/texlive/2021/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
-File: pgf.cfg 2020/12/27 v3.1.8b (3.1.8b)
+\Gin@req@height=\dimen144
+\Gin@req@width=\dimen145
 )
-Driver file for pgf: pgfsys-xetex.def
+(c:/texlive/2022/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
 
-(c:/texlive/2021/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-xetex.def
-File: pgfsys-xetex.def 2020/12/27 v3.1.8b (3.1.8b)
+(c:/texlive/2022/texmf-dist/tex/latex/tools/array.sty
+Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
+\col@sep=\dimen146
+\ar@mcellbox=\box50
+\extrarowheight=\dimen147
+\NC@list=\toks17
+\extratabsurround=\skip50
+\backup@length=\skip51
+\ar@cellbox=\box51
+)
+\TX@col@width=\dimen148
+\TX@old@table=\dimen149
+\TX@old@col=\dimen150
+\TX@target=\dimen151
+\TX@delta=\dimen152
+\TX@cols=\count272
+\TX@ftn=\toks18
+) (./eqparbox.sty
+Package: eqparbox 2010/01/01 v3.1 Create equal-widthed boxes
+\eqp@tempdima=\skip52
+\eqp@tempdimb=\skip53
+)
+(c:/texlive/2022/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
 
-(c:/texlive/2021/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvipdfmx.def
-File: pgfsys-dvipdfmx.def 2020/12/27 v3.1.8b (3.1.8b)
+(c:/texlive/2022/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count273
+\Gm@cntv=\count274
+\c@Gm@tempcnt=\count275
+\Gm@bindingoffset=\dimen153
+\Gm@wd@mp=\dimen154
+\Gm@odd@mp=\dimen155
+\Gm@even@mp=\dimen156
+\Gm@layoutwidth=\dimen157
+\Gm@layoutheight=\dimen158
+\Gm@layouthoffset=\dimen159
+\Gm@layoutvoffset=\dimen160
+\Gm@dimlist=\toks19
+)
+\c@minexaminers=\count276
+\@examiner=\count277
+\c@keywords=\count278
+\c@keywordsEN=\count279
+\bibindent=\dimen161
+)
+(c:/texlive/2022/texmf-dist/tex/latex/ragged2e/ragged2e.sty
+Package: ragged2e 2021/12/15 v3.1 ragged2e Package
 
-(c:/texlive/2021/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
-File: pgfsys-common-pdf.def 2020/12/27 v3.1.8b (3.1.8b)
-)
-\pgfsys@objnum=\count190
-)))
-(c:/texlive/2021/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
-File: pgfsyssoftpath.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgfsyssoftpath@smallbuffer@items=\count191
-\pgfsyssoftpath@bigbuffer@items=\count192
-)
-(c:/texlive/2021/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
-File: pgfsysprotocol.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-)) (c:/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
-Package: pgfcore 2020/12/27 v3.1.8b (3.1.8b)
+(c:/texlive/2022/texmf-dist/tex/latex/footmisc/footmisc.sty
+Package: footmisc 2022/03/08 v6.0d a miscellany of footnote facilities
+\FN@temptoken=\toks20
+\footnotemargin=\dimen162
+\@outputbox@depth=\dimen163
+Package footmisc Info: Declaring symbol style bringhurst on input line 695.
+Package footmisc Info: Declaring symbol style chicago on input line 703.
+Package footmisc Info: Declaring symbol style wiley on input line 712.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 723.
 
-(c:/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
-(c:/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
-(c:/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
-(c:/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen153
-\pgfmath@count=\count193
-\pgfmath@box=\box48
-\pgfmath@toks=\toks24
-\pgfmath@stack@operand=\toks25
-\pgfmath@stack@operation=\toks26
+Package footmisc Info: Declaring symbol style lamport* on input line 743.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 764
+.
 )
-(c:/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
-(c:/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.te
-x)
-(c:/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric
-.code.tex)
-(c:/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.t
-ex)
-(c:/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.co
-de.tex)
-(c:/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex
+\CenteringLeftskip=\skip54
+\RaggedLeftLeftskip=\skip55
+\RaggedRightLeftskip=\skip56
+\CenteringRightskip=\skip57
+\RaggedLeftRightskip=\skip58
+\RaggedRightRightskip=\skip59
+\CenteringParfillskip=\skip60
+\RaggedLeftParfillskip=\skip61
+\RaggedRightParfillskip=\skip62
+\JustifyingParfillskip=\skip63
+\CenteringParindent=\skip64
+\RaggedLeftParindent=\skip65
+\RaggedRightParindent=\skip66
+\JustifyingParindent=\skip67
 )
-(c:/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.te
-x)
-(c:/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex
+(c:/texlive/2022/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks21
+\inpenc@posthook=\toks22
 )
-(c:/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithm
-etics.code.tex)))
-(c:/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count194
-))
-(c:/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
-(c:/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
-File: pgfcorepoints.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgf@picminx=\dimen154
-\pgf@picmaxx=\dimen155
-\pgf@picminy=\dimen156
-\pgf@picmaxy=\dimen157
-\pgf@pathminx=\dimen158
-\pgf@pathmaxx=\dimen159
-\pgf@pathminy=\dimen160
-\pgf@pathmaxy=\dimen161
-\pgf@xx=\dimen162
-\pgf@xy=\dimen163
-\pgf@yx=\dimen164
-\pgf@yy=\dimen165
-\pgf@zx=\dimen166
-\pgf@zy=\dimen167
+(c:/texlive/2022/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 )
-(c:/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.cod
-e.tex
-File: pgfcorepathconstruct.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgf@path@lastx=\dimen168
-\pgf@path@lasty=\dimen169
-)
-(c:/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.te
-x
-File: pgfcorepathusage.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgf@shorten@end@additional=\dimen170
-\pgf@shorten@start@additional=\dimen171
-)
-(c:/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
-File: pgfcorescopes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgfpic=\box49
-\pgf@hbox=\box50
-\pgf@layerbox@main=\box51
-\pgf@picture@serial@count=\count195
-)
-(c:/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code
-.tex
-File: pgfcoregraphicstate.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgflinewidth=\dimen172
-)
-(c:/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.c
-ode.tex
-File: pgfcoretransformations.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgf@pt@x=\dimen173
-\pgf@pt@y=\dimen174
-\pgf@pt@temp=\dimen175
-)
-(c:/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
-File: pgfcorequick.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-)
-(c:/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
-File: pgfcoreobjects.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-)
-(c:/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.co
-de.tex
-File: pgfcorepathprocessing.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-)
-(c:/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
-File: pgfcorearrows.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgfarrowsep=\dimen176
-)
-(c:/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
-File: pgfcoreshade.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgf@max=\dimen177
-\pgf@sys@shading@range@num=\count196
-\pgf@shadingcount=\count197
-)
-(c:/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
-File: pgfcoreimage.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-
-(c:/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
-File: pgfcoreexternal.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgfexternal@startupbox=\box52
-))
-(c:/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
-File: pgfcorelayers.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-)
-(c:/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code
-.tex
-File: pgfcoretransparency.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-)
-(c:/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
-File: pgfcorepatterns.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-) (c:/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
-File: pgfcorerdf.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-))) (c:/texlive/2021/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.te
-x
-File: pgfmoduleshapes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgfnodeparttextbox=\box53
-)
-(c:/texlive/2021/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
-File: pgfmoduleplot.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-)
-(c:/texlive/2021/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.st
-y
-Package: pgfcomp-version-0-65 2020/12/27 v3.1.8b (3.1.8b)
-\pgf@nodesepstart=\dimen178
-\pgf@nodesepend=\dimen179
-)
-(c:/texlive/2021/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.st
-y
-Package: pgfcomp-version-1-18 2020/12/27 v3.1.8b (3.1.8b)
-)) (c:/texlive/2021/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
-(c:/texlive/2021/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
-(c:/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex))
-(c:/texlive/2021/texmf-dist/tex/latex/pgf/math/pgfmath.sty
-(c:/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
-(c:/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
-Package: pgffor 2020/12/27 v3.1.8b (3.1.8b)
-
-(c:/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen180
-\pgffor@skip=\dimen181
-\pgffor@stack=\toks27
-\pgffor@toks=\toks28
-))
-(c:/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
-Package: tikz 2020/12/27 v3.1.8b (3.1.8b)
-
-(c:/texlive/2021/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.co
-de.tex
-File: pgflibraryplothandlers.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgf@plot@mark@count=\count198
-\pgfplotmarksize=\dimen182
-)
-\tikz@lastx=\dimen183
-\tikz@lasty=\dimen184
-\tikz@lastxsaved=\dimen185
-\tikz@lastysaved=\dimen186
-\tikz@lastmovetox=\dimen187
-\tikz@lastmovetoy=\dimen188
-\tikzleveldistance=\dimen189
-\tikzsiblingdistance=\dimen190
-\tikz@figbox=\box54
-\tikz@figbox@bg=\box55
-\tikz@tempbox=\box56
-\tikz@tempbox@bg=\box57
-\tikztreelevel=\count199
-\tikznumberofchildren=\count266
-\tikznumberofcurrentchild=\count267
-\tikz@fig@count=\count268
-
-(c:/texlive/2021/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
-File: pgfmodulematrix.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgfmatrixcurrentrow=\count269
-\pgfmatrixcurrentcolumn=\count270
-\pgf@matrix@numberofcolumns=\count271
-)
-\tikz@expandcount=\count272
-
-(c:/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
-brarytopaths.code.tex
-File: tikzlibrarytopaths.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-))) (c:/texlive/2021/texmf-dist/tex/latex/tools/calc.sty
-Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count273
-\calc@Bcount=\count274
-\calc@Adimen=\dimen191
-\calc@Bdimen=\dimen192
-\calc@Askip=\skip49
-\calc@Bskip=\skip50
-LaTeX Info: Redefining \setlength on input line 80.
-LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count275
-\calc@Cskip=\skip51
-)
-\c@@todonotes@numberoftodonotes=\count276
-) (c:/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2020/09/23 v2.17i AMS math features
-\@mathmargin=\skip52
+(c:/texlive/2022/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2021/10/15 v2.17l AMS math features
+\@mathmargin=\skip68
 
 For additional information on amsmath, use the `?' option.
-(c:/texlive/2021/texmf-dist/tex/latex/amsmath/amstext.sty
-Package: amstext 2000/06/29 v2.01 AMS text
+(c:/texlive/2022/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
 
-(c:/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
+(c:/texlive/2022/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks29
-\ex@=\dimen193
+\@emptytoks=\toks23
+\ex@=\dimen164
 ))
-(c:/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(c:/texlive/2022/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen194
+\pmbraise@=\dimen165
 )
-(c:/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
-Package: amsopn 2016/03/08 v2.02 operator names
+(c:/texlive/2022/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2021/08/26 v2.02 operator names
 )
-\inf@bad=\count277
+\inf@bad=\count280
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count278
-\leftroot@=\count279
+\uproot@=\count281
+\leftroot@=\count282
 LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count280
-\DOTSCASE@=\count281
+\classnum@=\count283
+\DOTSCASE@=\count284
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box58
-\strutbox@=\box59
-\big@size=\dimen195
+\Mathstrutbox@=\box52
+\strutbox@=\box53
+\big@size=\dimen166
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count282
-\c@MaxMatrixCols=\count283
-\dotsspace@=\muskip16
-\c@parentequation=\count284
-\dspbrk@lvl=\count285
-\tag@help=\toks30
-\row@=\count286
-\column@=\count287
-\maxfields@=\count288
-\andhelp@=\toks31
-\eqnshift@=\dimen196
-\alignsep@=\dimen197
-\tagshift@=\dimen198
-\tagwidth@=\dimen199
-\totwidth@=\dimen256
-\lineht@=\dimen257
-\@envbody=\toks32
-\multlinegap=\skip53
-\multlinetaggap=\skip54
-\mathdisplay@stack=\toks33
-LaTeX Info: Redefining \[ on input line 2923.
-LaTeX Info: Redefining \] on input line 2924.
+\macc@depth=\count285
+\c@MaxMatrixCols=\count286
+\dotsspace@=\muskip17
+\c@parentequation=\count287
+\dspbrk@lvl=\count288
+\tag@help=\toks24
+\row@=\count289
+\column@=\count290
+\maxfields@=\count291
+\andhelp@=\toks25
+\eqnshift@=\dimen167
+\alignsep@=\dimen168
+\tagshift@=\dimen169
+\tagwidth@=\dimen170
+\totwidth@=\dimen171
+\lineht@=\dimen172
+\@envbody=\toks26
+\multlinegap=\skip69
+\multlinetaggap=\skip70
+\mathdisplay@stack=\toks27
+LaTeX Info: Redefining \[ on input line 2938.
+LaTeX Info: Redefining \] on input line 2939.
 )
-(c:/texlive/2021/texmf-dist/tex/latex/amscls/amsthm.sty
+(c:/texlive/2022/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
-\thm@style=\toks34
-\thm@bodyfont=\toks35
-\thm@headfont=\toks36
-\thm@notefont=\toks37
-\thm@headpunct=\toks38
-\thm@preskip=\skip55
-\thm@postskip=\skip56
-\thm@headsep=\skip57
-\dth@everypar=\toks39
+\thm@style=\toks28
+\thm@bodyfont=\toks29
+\thm@headfont=\toks30
+\thm@notefont=\toks31
+\thm@headpunct=\toks32
+\thm@preskip=\skip71
+\thm@postskip=\skip72
+\thm@headsep=\skip73
+\dth@everypar=\toks33
 )
-(c:/texlive/2021/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+(c:/texlive/2022/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
@@ -432,109 +384,38 @@ LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
-(c:/texlive/2021/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(c:/texlive/2022/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
-(c:/texlive/2021/texmf-dist/tex/latex/amsfonts/eucal.sty
-Package: eucal 2009/06/22 v3.00 Euler Script fonts
-LaTeX Font Info:    Overwriting math alphabet `\EuScript' in version `bold'
-(Font)                  U/eus/m/n --> U/eus/b/n on input line 33.
-)
-(c:/texlive/2021/texmf-dist/tex/latex/base/latexsym.sty
-Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
-\symlasy=\mathgroup6
-LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
-(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
-)
-(c:/texlive/2021/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2021/03/24 3.56 The Babel package
-
-(c:/texlive/2021/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2021/03/24 3.56 Babel common definitions
-\babel@savecnt=\count289
-\U@D=\dimen258
-\l@babelnohyphens=\language87
-
-(c:/texlive/2021/texmf-dist/tex/generic/babel/xebabel.def
-(c:/texlive/2021/texmf-dist/tex/generic/babel/txtbabel.def))
-\bbl@readstream=\read3
-)
-\bbl@dirlevel=\count290
-
-(c:/texlive/2021/texmf-dist/tex/generic/babel-portuges/portuguese.ldf
-Language: portuges 2021/02/04 v1.2s Portuguese support from the babel system
-Package babel Info: Making " an active character on input line 143.
-))
-(c:/texlive/2021/texmf-dist/tex/latex/lm/lmodern.sty
-Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
-LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
-LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
-(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
-LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
-(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
-)
-(c:/texlive/2021/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 11
-2.
-
-(c:/texlive/2021/texmf-dist/tex/latex/lm/t1lmr.fd
-File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-))
-(c:/texlive/2021/texmf-dist/tex/latex/base/inputenc.sty
-Package: inputenc 2020/08/01 v1.3d Input encoding file
-\inpenc@prehook=\toks40
-\inpenc@posthook=\toks41
-
-
-Package inputenc Warning: inputenc package ignored with utf8 based engines.
-
-) (c:/texlive/2021/texmf-dist/tex/latex/setspace/setspace.sty
+(c:/texlive/2022/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-(c:/texlive/2021/texmf-dist/tex/latex/tools/bm.sty
-Package: bm 2019/07/24 v1.2d Bold Symbol Support (DPC/FMi)
-\symboldoperators=\mathgroup7
-\symboldletters=\mathgroup8
-\symboldsymbols=\mathgroup9
-\symboldlasy=\mathgroup10
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
-LaTeX Info: Redefining \bm on input line 209.
+(c:/texlive/2022/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen173
+\lightrulewidth=\dimen174
+\cmidrulewidth=\dimen175
+\belowrulesep=\dimen176
+\belowbottomsep=\dimen177
+\aboverulesep=\dimen178
+\abovetopsep=\dimen179
+\cmidrulesep=\dimen180
+\cmidrulekern=\dimen181
+\defaultaddspace=\dimen182
+\@cmidla=\count292
+\@cmidlb=\count293
+\@aboverulesep=\dimen183
+\@belowrulesep=\dimen184
+\@thisruleclass=\count294
+\@lastruleclass=\count295
+\@thisrulewidth=\dimen185
 ) (./algorithm2e.sty
 Package: algorithm2e 2008/00/00 v3.10 algorithms environments
-\c@AlgoLine=\count291
-
-(c:/texlive/2021/texmf-dist/tex/latex/tools/xspace.sty
+\c@AlgoLine=\count296
+(c:/texlive/2022/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-(c:/texlive/2021/texmf-dist/tex/latex/relsize/relsize.sty
+(c:/texlive/2022/texmf-dist/tex/latex/relsize/relsize.sty
 Package: relsize 2013/03/29 ver 4.1
 )
 ********************************************************
@@ -544,482 +425,102 @@ Package `algorithm2e' Release 4.01 -- december 14 2009 --
 subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
 - Author: Christophe Fiorio (fiorio@lirmm.fr)
 ********************************************************
-\skiptotal=\skip58
-\skiplinenumber=\skip59
-\skiprule=\skip60
-\skiphlne=\skip61
-\skiptext=\skip62
-\skiplength=\skip63
-\algomargin=\skip64
-\skipalgocfslide=\skip65
-\algowidth=\dimen259
-\inoutsize=\dimen260
-\inoutline=\dimen261
-\interspacetitleruled=\dimen262
-\interspacealgoruled=\dimen263
-\interspacetitleboxruled=\dimen264
-\algocf@inoutbox=\box60
-\algocf@inputbox=\box61
-\AlCapSkip=\skip66
-\AlCapHSkip=\skip67
-\algocf@nlbox=\box62
-\algocf@hangingbox=\box63
-\algocf@capbox=\box64
-\algoheightruledefault=\skip68
-\algoheightrule=\skip69
-\algotitleheightruledefault=\skip70
-\algotitleheightrule=\skip71
-\c@algocfline=\count292
-\c@algocfproc=\count293
-\c@algocf=\count294
-\algocf@algoframe=\box65
-\algocf@algobox=\box66
-) (c:/texlive/2021/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count295
-\lst@gtempboxa=\box67
-\lst@token=\toks42
-\lst@length=\count296
-\lst@currlwidth=\dimen265
-\lst@column=\count297
-\lst@pos=\count298
-\lst@lostspace=\dimen266
-\lst@width=\dimen267
-\lst@newlines=\count299
-\lst@lineno=\count300
-\lst@maxwidth=\dimen268
+\skiptotal=\skip74
+\skiplinenumber=\skip75
+\skiprule=\skip76
+\skiphlne=\skip77
+\skiptext=\skip78
+\skiplength=\skip79
+\algomargin=\skip80
+\skipalgocfslide=\skip81
+\algowidth=\dimen186
+\inoutsize=\dimen187
+\inoutline=\dimen188
+\interspacetitleruled=\dimen189
+\interspacealgoruled=\dimen190
+\interspacetitleboxruled=\dimen191
+\algocf@inoutbox=\box54
+\algocf@inputbox=\box55
+\AlCapSkip=\skip82
+\AlCapHSkip=\skip83
+\algocf@nlbox=\box56
+\algocf@hangingbox=\box57
+\algocf@capbox=\box58
+\algoheightruledefault=\skip84
+\algoheightrule=\skip85
+\algotitleheightruledefault=\skip86
+\algotitleheightrule=\skip87
+\c@algocfline=\count297
+\c@algocfproc=\count298
+\c@algocf=\count299
+\algocf@algoframe=\box59
+\algocf@algobox=\box60
+) (c:/texlive/2022/texmf-dist/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip88
+\subfigcapskip=\skip89
+\subfigcaptopadj=\dimen192
+\subfigbottomskip=\skip90
+\subfigcapmargin=\dimen193
+\subfiglabelskip=\skip91
+\c@subfigure=\count300
+\c@lofdepth=\count301
+\c@subtable=\count302
+\c@lotdepth=\count303
 
-(c:/texlive/2021/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count301
-\lst@skipnumbers=\count302
-\lst@framebox=\box68
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(c:/texlive/2022/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip92
+\subfig@bottom=\skip93
 )
-(c:/texlive/2021/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2020/03/24 1.8d listings configuration
-))
-Package: listings 2020/03/24 1.8d (Carsten Heinz)
-
-(c:/texlive/2021/texmf-dist/tex/latex/caption/subcaption.sty
-Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
-
-(c:/texlive/2021/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2020/10/26 v3.5g Customizing captions (AR)
-
-(c:/texlive/2021/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
-\captionmargin=\dimen269
-\captionmargin@=\dimen270
-\captionwidth=\dimen271
-\caption@tempdima=\dimen272
-\caption@indent=\dimen273
-\caption@parindent=\dimen274
-\caption@hangindent=\dimen275
-Package caption Info: Standard document class detected.
+(c:/texlive/2022/texmf-dist/tex/latex/subeqnarray/subeqnarray.sty
+Package: subeqnarray 2004/04/15 v2.1c subeqnarray package
+\c@subequation=\count304
 )
-\c@caption@flags=\count303
-\c@continuedfloat=\count304
-Package caption Info: listings package is loaded.
+(c:/texlive/2022/texmf-dist/tex/latex/tools/enumerate.sty
+Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
+\@enLab=\toks34
 )
-\c@subfigure=\count305
-\c@subtable=\count306
-)
-(c:/texlive/2021/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2021-02-27 v7.00k Hypertext links for LaTeX
-
-(c:/texlive/2021/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
-)
-(c:/texlive/2021/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2020/03/06 v1.0d TeX engine tests
-)
-(c:/texlive/2021/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
-Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
-)
-
-(c:/texlive/2021/texmf-dist/tex/generic/infwarerr/infwarerr.sty
-Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-)
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode not found.
-)
-(c:/texlive/2021/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
-Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
-)
-(c:/texlive/2021/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
-Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-)
-(c:/texlive/2021/texmf-dist/tex/generic/pdfescape/pdfescape.sty
-Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
-)
-(c:/texlive/2021/texmf-dist/tex/latex/hycolor/hycolor.sty
-Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-)
-(c:/texlive/2021/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
-Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
-)
-(c:/texlive/2021/texmf-dist/tex/latex/auxhook/auxhook.sty
-Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
-)
-(c:/texlive/2021/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
-)
-\@linkdim=\dimen276
-\Hy@linkcounter=\count307
-\Hy@pagecounter=\count308
-
-(c:/texlive/2021/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2021-02-27 v7.00k Hyperref: PDFDocEncoding definition (HO)
-)
-(c:/texlive/2021/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def
-File: hyperref-langpatches.def 2021-02-27 v7.00k Hyperref: patches for babel la
-nguages
-)
-(c:/texlive/2021/texmf-dist/tex/generic/intcalc/intcalc.sty
-Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
-)
-(c:/texlive/2021/texmf-dist/tex/generic/etexcmds/etexcmds.sty
-Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
-)
-\Hy@SavedSpaceFactor=\count309
-
-(c:/texlive/2021/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2021-02-27 v7.00k Hyperref: PDF Unicode definition (HO)
-)
-Package hyperref Info: Hyper figures OFF on input line 4192.
-Package hyperref Info: Link nesting OFF on input line 4197.
-Package hyperref Info: Hyper index ON on input line 4200.
-Package hyperref Info: Plain pages OFF on input line 4207.
-Package hyperref Info: Backreferencing OFF on input line 4212.
-Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4445.
-\c@Hy@tempcnt=\count310
-
-(c:/texlive/2021/texmf-dist/tex/latex/url/url.sty
-\Urlmuskip=\muskip17
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-)
-LaTeX Info: Redefining \url on input line 4804.
-\XeTeXLinkMargin=\dimen277
-
-(c:/texlive/2021/texmf-dist/tex/generic/bitset/bitset.sty
-Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
-
-(c:/texlive/2021/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
-Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
-)
-))
-\Fld@menulength=\count311
-\Field@Width=\dimen278
-\Fld@charsize=\dimen279
-Package hyperref Info: Hyper figures OFF on input line 6075.
-Package hyperref Info: Link nesting OFF on input line 6080.
-Package hyperref Info: Hyper index ON on input line 6083.
-Package hyperref Info: backreferencing OFF on input line 6090.
-Package hyperref Info: Link coloring OFF on input line 6095.
-Package hyperref Info: Link coloring with OCG OFF on input line 6100.
-Package hyperref Info: PDF/A mode OFF on input line 6105.
-LaTeX Info: Redefining \ref on input line 6145.
-LaTeX Info: Redefining \pageref on input line 6149.
-
-(c:/texlive/2021/texmf-dist/tex/latex/base/atbegshi-ltx.sty
-Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packa
-ge
-with kernel methods
-)
-\Hy@abspage=\count312
-\c@Item=\count313
-\c@Hfootnote=\count314
-)
-Package hyperref Info: Driver (autodetected): hxetex.
-
-(c:/texlive/2021/texmf-dist/tex/latex/hyperref/hxetex.def
-File: hxetex.def 2021-02-27 v7.00k Hyperref driver for XeTeX
-
-(c:/texlive/2021/texmf-dist/tex/generic/stringenc/stringenc.sty
-Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
-)
-)
-\pdfm@box=\box69
-\c@Hy@AnnotLevel=\count315
-\HyField@AnnotCount=\count316
-\Fld@listcount=\count317
-\c@bookmark@seq@number=\count318
-
-(c:/texlive/2021/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
-Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
-
-(c:/texlive/2021/texmf-dist/tex/latex/base/atveryend-ltx.sty
-Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
-e
-with kernel methods
-)
-(c:/texlive/2021/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
-Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
-)
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
-86.
-)
-\Hy@SectionHShift=\skip72
-)
-(c:/texlive/2021/texmf-dist/tex/generic/ulem/ulem.sty
-\UL@box=\box70
-\UL@hyphenbox=\box71
-\UL@skip=\skip73
-\UL@hook=\toks43
-\UL@height=\dimen280
-\UL@pe=\count319
-\UL@pixel=\dimen281
-\ULC@box=\box72
-Package: ulem 2019/11/18
-\ULdepth=\dimen282
-)
-Package hyperref Info: Option `colorlinks' set `true' on input line 42.
-Package hyperref Info: Option `debug' set `false' on input line 42.
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 42.
- (./abntex2cite.sty
-Package: abntex2cite 2016/02/26 v-1.9.6 abnTeX2
-
-(c:/texlive/2021/texmf-dist/tex/latex/abntex2/abntex2abrev.sty)
-\minimumbiblabelwidth=\skip74
-\ABCIauxlen=\skip75
-\c@ABCIaux=\count320
-\c@ABCImax=\count321
-
-(c:/texlive/2021/texmf-dist/tex/generic/iftex/ifpdf.sty
-Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
-)
-(c:/texlive/2021/texmf-dist/tex/generic/iftex/ifxetex.sty
-Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
-)
-\biblabelsep=\skip76
-LaTeX Info: Redefining \newblock on input line 591.
-LaTeX Info: Redefining \cite on input line 618.
-\ABCItoken=\toks44
-)
-(c:/texlive/2021/texmf-dist/tex/latex/multirow/multirow.sty
-Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
-\multirow@colwidth=\skip77
-\multirow@cntb=\count322
-\multirow@dima=\skip78
-\bigstrutjot=\dimen283
-)
-(c:/texlive/2021/texmf-dist/tex/latex/placeins/placeins.sty
-Package: placeins 2005/04/18  v 2.2
-)
-(c:/texlive/2021/texmf-dist/tex/latex/mathtools/mathtools.sty
-Package: mathtools 2021/03/18 v1.25 mathematical typesetting tools
-
-(c:/texlive/2021/texmf-dist/tex/latex/mathtools/mhsetup.sty
-Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
-)
-LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 130.
-LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 130.
-LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 130.
-LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
-\g_MT_multlinerow_int=\count323
-\l_MT_multwidth_dim=\dimen284
-\origjot=\skip79
-\l_MT_shortvdotswithinadjustabove_dim=\dimen285
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen286
-\l_MT_above_intertext_sep=\dimen287
-\l_MT_below_intertext_sep=\dimen288
-\l_MT_above_shortintertext_sep=\dimen289
-\l_MT_below_shortintertext_sep=\dimen290
-\xmathstrut@box=\box73
-\xmathstrut@dim=\dimen291
-)
-(c:/texlive/2021/texmf-dist/tex/latex/fourier/fourier.sty
-Package: fourier 2020/03/03 2.2 fourier-GUTenberg package
-
-
-Package fourier Warning: Please consider loading "fourier-otf.sty" instead of
-(fourier)                "fourier.sty" with Unicode engines LuaTeX or XeTeX,
-(fourier)                so that Type1 fonts get replaced by OpenType fonts.
-(fourier)                See file "Erewhon-Math.pdf" for more information.
-
-(c:/texlive/2021/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
-LaTeX Font Info:    Trying to load font information for T1+futs on input line 1
-12.
-
-(c:/texlive/2021/texmf-dist/tex/latex/fourier/t1futs.fd
-File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
-))
-(c:/texlive/2021/texmf-dist/tex/latex/base/textcomp.sty
-Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
-)
-(c:/texlive/2021/texmf-dist/tex/latex/fourier/fourier-orns.sty
-Package: fourier-orns 2020/03/03 2.2 fourier-ornaments package
-)
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 63.
-LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
-(Font)              `operators' in the math version `normal' on input line 63.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/lmr/m/n --> T1/futs/m/n on input line 63.
-LaTeX Font Info:    Encoding `OT1' has changed to `T1' for symbol font
-(Font)              `operators' in the math version `bold' on input line 63.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/lmr/bx/n --> T1/futs/m/n on input line 63.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  T1/futs/m/n --> T1/futs/b/n on input line 64.
-LaTeX Font Info:    Redeclaring symbol font `letters' on input line 72.
-LaTeX Font Info:    Encoding `OML' has changed to `FML' for symbol font
-(Font)              `letters' in the math version `normal' on input line 72.
-LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
-(Font)                  OML/lmm/m/it --> FML/futmi/m/it on input line 72.
-LaTeX Font Info:    Encoding `OML' has changed to `FML' for symbol font
-(Font)              `letters' in the math version `bold' on input line 72.
-LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
-(Font)                  OML/lmm/b/it --> FML/futmi/m/it on input line 72.
-\symotherletters=\mathgroup11
-LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
-(Font)                  FML/futmi/m/it --> FML/futmi/b/it on input line 74.
-LaTeX Font Info:    Overwriting symbol font `otherletters' in version `bold'
-(Font)                  FML/futm/m/it --> FML/futm/b/it on input line 75.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 76.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 77.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 78.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 79.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 80.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 81.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 82.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 83.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 84.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 85.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 86.
-LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 126.
-LaTeX Font Info:    Encoding `OMS' has changed to `FMS' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 126.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/lmsy/m/n --> FMS/futm/m/n on input line 126.
-LaTeX Font Info:    Encoding `OMS' has changed to `FMS' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 126.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/lmsy/b/n --> FMS/futm/m/n on input line 126.
-LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 127.
-LaTeX Font Info:    Encoding `OMX' has changed to `FMX' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 1
-27.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/lmex/m/n --> FMX/futm/m/n on input line 127.
-LaTeX Font Info:    Encoding `OMX' has changed to `FMX' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 127
-.
-LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/lmex/m/n --> FMX/futm/m/n on input line 127.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 128.
-LaTeX Font Info:    Redeclaring math alphabet \mathrm on input line 129.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 130.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/lmr/m/it --> T1/futs/m/it on input line 130.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/lmr/bx/it --> T1/futs/m/it on input line 130.
-LaTeX Font Info:    Redeclaring math alphabet \mathcal on input line 131.
-LaTeX Font Info:    Redeclaring math symbol \varkappa on input line 132.
-LaTeX Font Info:    Redeclaring math symbol \leqslant on input line 138.
-LaTeX Font Info:    Redeclaring math symbol \geqslant on input line 139.
-LaTeX Font Info:    Redeclaring math symbol \vDash on input line 142.
-LaTeX Font Info:    Redeclaring math symbol \blacktriangleleft on input line 14
-3.
-LaTeX Font Info:    Redeclaring math symbol \blacktriangleright on input line 1
-44.
-LaTeX Font Info:    Redeclaring math symbol \nleqslant on input line 145.
-LaTeX Font Info:    Redeclaring math symbol \ngeqslant on input line 146.
-LaTeX Font Info:    Redeclaring math symbol \parallel on input line 147.
-LaTeX Font Info:    Redeclaring math symbol \nparallel on input line 148.
-LaTeX Font Info:    Redeclaring math symbol \nvDash on input line 150.
-LaTeX Font Info:    Redeclaring math symbol \intercal on input line 151.
-LaTeX Font Info:    Redeclaring math symbol \hslash on input line 152.
-LaTeX Font Info:    Redeclaring math symbol \nexists on input line 153.
-LaTeX Font Info:    Redeclaring math symbol \complement on input line 154.
-LaTeX Font Info:    Redeclaring math symbol \varsubsetneq on input line 155.
-LaTeX Font Info:    Redeclaring math symbol \hbar on input line 161.
-LaTeX Font Info:    Redeclaring math symbol \smallsetminus on input line 162.
-LaTeX Font Info:    Redeclaring math symbol \subsetneqq on input line 163.
-LaTeX Font Info:    Redeclaring math symbol \rightrightarrows on input line 164
-.
-LaTeX Font Info:    Redeclaring math symbol \leftleftarrows on input line 165.
-LaTeX Font Info:    Redeclaring math symbol \square on input line 166.
-LaTeX Font Info:    Redeclaring math symbol \curvearrowleft on input line 167.
-LaTeX Font Info:    Redeclaring math symbol \curvearrowright on input line 168.
-
-LaTeX Font Info:    Redeclaring math symbol \blacksquare on input line 169.
-LaTeX Font Info:    Redeclaring math symbol \varkappa on input line 199.
-LaTeX Font Info:    Redeclaring math symbol \varvarrho on input line 200.
-LaTeX Font Info:    Redeclaring math delimiter \Vert on input line 223.
-LaTeX Font Info:    Redeclaring math delimiter \vert on input line 228.
-LaTeX Font Info:    Redeclaring math delimiter \lvert on input line 230.
-LaTeX Font Info:    Redeclaring math delimiter \rvert on input line 232.
-LaTeX Font Info:    Redeclaring math delimiter \lVert on input line 234.
-LaTeX Font Info:    Redeclaring math delimiter \rVert on input line 236.
-LaTeX Font Info:    Redeclaring math delimiter \Downarrow on input line 238.
-LaTeX Font Info:    Redeclaring math delimiter \backslash on input line 240.
-LaTeX Font Info:    Redeclaring math delimiter \rangle on input line 242.
-LaTeX Font Info:    Redeclaring math delimiter \langle on input line 244.
-LaTeX Font Info:    Redeclaring math delimiter \rbrace on input line 246.
-LaTeX Font Info:    Redeclaring math delimiter \lbrace on input line 248.
-LaTeX Font Info:    Redeclaring math delimiter \rceil on input line 250.
-LaTeX Font Info:    Redeclaring math delimiter \lceil on input line 252.
-LaTeX Font Info:    Redeclaring math delimiter \rfloor on input line 254.
-LaTeX Font Info:    Redeclaring math delimiter \lfloor on input line 256.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 260.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 261.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 262.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 263.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 264.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 265.
-LaTeX Font Info:    Redeclaring math accent \check on input line 266.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 267.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 268.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 269.
-\symUfutm=\mathgroup12
-)
-(c:/texlive/2021/texmf-dist/tex/latex/tools/array.sty
-Package: array 2020/10/01 v2.5c Tabular extension package (FMi)
-\col@sep=\dimen292
-\ar@mcellbox=\box74
-\extrarowheight=\dimen293
-\NC@list=\toks45
-\extratabsurround=\skip80
-\backup@length=\skip81
-\ar@cellbox=\box75
-)
-(c:/texlive/2021/texmf-dist/tex/latex/makecell/makecell.sty
-Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
-\rotheadsize=\dimen294
-\c@nlinenum=\count324
-\TeXr@lab=\toks46
-)
-(c:/texlive/2021/texmf-dist/tex/latex/appendix/appendix.sty
-Package: appendix 2020/02/08 v1.2c extra appendix facilities
-\c@@pps=\count325
-\c@@ppsavesec=\count326
-\c@@ppsaveapp=\count327
-)
-(c:/texlive/2021/texmf-dist/tex/latex/tools/multicol.sty
-Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
-\c@tracingmulticols=\count328
-\mult@box=\box76
-\multicol@leftmargin=\dimen295
-\c@unbalance=\count329
-\c@collectmore=\count330
-\doublecol@number=\count331
-\multicoltolerance=\count332
-\multicolpretolerance=\count333
-\full@width=\dimen296
-\page@free=\dimen297
-\premulticols=\dimen298
-\postmulticols=\dimen299
-\multicolsep=\skip82
-\multicolbaselineskip=\skip83
-\partial@page=\box77
-\last@line=\box78
-\maxbalancingoverflow=\dimen300
-\mult@rightbox=\box79
-\mult@grightbox=\box80
-\mult@gfirstbox=\box81
-\mult@firstbox=\box82
+(c:/texlive/2022/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
+\c@tracingmulticols=\count305
+\mult@box=\box61
+\multicol@leftmargin=\dimen194
+\c@unbalance=\count306
+\c@collectmore=\count307
+\doublecol@number=\count308
+\multicoltolerance=\count309
+\multicolpretolerance=\count310
+\full@width=\dimen195
+\page@free=\dimen196
+\premulticols=\dimen197
+\postmulticols=\dimen198
+\multicolsep=\skip94
+\multicolbaselineskip=\skip95
+\partial@page=\box62
+\last@line=\box63
+\maxbalancingoverflow=\dimen199
+\mult@rightbox=\box64
+\mult@grightbox=\box65
+\mult@firstbox=\box66
+\mult@gfirstbox=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
 \@tempa=\box83
 \@tempa=\box84
 \@tempa=\box85
@@ -1041,709 +542,2365 @@ Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
 \@tempa=\box101
 \@tempa=\box102
 \@tempa=\box103
-\@tempa=\box104
-\@tempa=\box105
-\@tempa=\box106
-\@tempa=\box107
-\@tempa=\box108
-\@tempa=\box109
-\@tempa=\box110
-\@tempa=\box111
-\@tempa=\box112
-\@tempa=\box113
-\@tempa=\box114
-\@tempa=\box115
-\@tempa=\box116
-\@tempa=\box117
-\@tempa=\box118
-\@tempa=\box119
-\c@minrows=\count334
-\c@columnbadness=\count335
-\c@finalcolumnbadness=\count336
-\last@try=\dimen301
-\multicolovershoot=\dimen302
-\multicolundershoot=\dimen303
-\mult@nat@firstbox=\box120
-\colbreak@box=\box121
-\mc@col@check@num=\count337
+\c@minrows=\count311
+\c@columnbadness=\count312
+\c@finalcolumnbadness=\count313
+\last@try=\dimen256
+\multicolovershoot=\dimen257
+\multicolundershoot=\dimen258
+\mult@nat@firstbox=\box104
+\colbreak@box=\box105
+\mc@col@check@num=\count314
 )
-\c@todocounter=\count338
-\c@theorem=\count339
-\c@axiom=\count340
-\c@corollary=\count341
-\c@lemma=\count342
-\c@proposition=\count343
-\c@definition=\count344
-\c@example=\count345
-\c@remark=\count346
+(c:/texlive/2022/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip96
+\multirow@cntb=\count315
+\multirow@dima=\skip97
+\bigstrutjot=\dimen259
+) (./slashbox.sty
+slashbox style by K.Yasuoka, May 1993.
+\@slashboxa=\box106
+\@slashboxb=\box107
+\@slashboxc=\box108
+\@slashboxwd=\count316
+\@slashboxht=\count317
+\@slashsepl=\dimen260
+\@slashsepr=\dimen261
+) (c:/texlive/2022/texmf-dist/tex/latex/cases/cases.sty
+Package: cases 2020/03/29 ver 3.2
+\numc@numwid=\dimen262
+)
+(c:/texlive/2022/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count318
+\float@exts=\toks35
+\float@box=\box109
+\@float@everytoks=\toks36
+\@floatcapt=\box110
+)
+(c:/texlive/2022/texmf-dist/tex/generic/soul/soul.sty
+Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
+\SOUL@word=\toks37
+\SOUL@lasttoken=\toks38
+\SOUL@cmds=\toks39
+\SOUL@buffer=\toks40
+\SOUL@token=\toks41
+\SOUL@spaceskip=\skip98
+\SOUL@ttwidth=\dimen263
+\SOUL@uldp=\dimen264
+\SOUL@ulht=\dimen265
+)
+(c:/texlive/2022/texmf-dist/tex/latex/makecell/makecell.sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+\rotheadsize=\dimen266
+\c@nlinenum=\count319
+\TeXr@lab=\toks42
+) (./abntex2cite.sty
+Package: abntex2cite 2016/02/26 v-1.9.6 abnTeX2
+(c:/texlive/2022/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count320
+\calc@Bcount=\count321
+\calc@Adimen=\dimen267
+\calc@Bdimen=\dimen268
+\calc@Askip=\skip99
+\calc@Bskip=\skip100
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count322
+\calc@Cskip=\skip101
+)
+(c:/texlive/2022/texmf-dist/tex/latex/abntex2/abntex2abrev.sty)
+\minimumbiblabelwidth=\skip102
+\ABCIauxlen=\skip103
+\c@ABCIaux=\count323
+\c@ABCImax=\count324
 
-\@input{hifenizacao.aux}
-\openout2 = `hifenizacao.aux'.
+(c:/texlive/2022/texmf-dist/tex/generic/iftex/ifpdf.sty
+Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+)
+(c:/texlive/2022/texmf-dist/tex/generic/iftex/ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+)
+\biblabelsep=\skip104
+LaTeX Info: Redefining \newblock on input line 591.
+LaTeX Info: Redefining \cite on input line 618.
+\ABCItoken=\toks43
+)
+(c:/texlive/2022/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2022/01/29 v0.5u Insert pages of external PDF documents (AM)
 
-(./hifenizacao.tex)
-(c:/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
-File: l3backend-xetex.def 2021-03-18 L3 backend support: XeTeX
+(c:/texlive/2022/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
+\ESO@tempdima=\dimen269
+\ESO@tempdimb=\dimen270
 
-(|extractbb --version)
-\c__kernel_sys_dvipdfmx_version_int=\count347
-\l__color_backend_stack_int=\count348
-\g__color_backend_stack_int=\count349
-\g__graphics_track_int=\count350
-\l__pdf_internal_box=\box122
-\g__pdf_backend_object_int=\count351
-\g__pdf_backend_annotation_int=\count352
-\g__pdf_backend_link_int=\count353
-) (./modelo_new2.aux (./pretexto.aux) (./introducao.aux)
-(./modelagem_escoamento.aux) (./ferramenta_computacional.aux) (./resultados.aux
-) (./conclusoes.aux) (./anexos.aux))
+(c:/texlive/2022/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
+
+(c:/texlive/2022/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1356.
+Package xcolor Info: Model `RGB' extended on input line 1368.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1370.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
+))
+\AM@pagewidth=\dimen271
+\AM@pageheight=\dimen272
+\AM@fboxrule=\dimen273
+
+(c:/texlive/2022/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2022/01/29 v0.5u Pdfpages driver for pdfTeX (AM)
+)
+\pdfpages@includegraphics@status=\count325
+\AM@pagebox=\box111
+\AM@global@opts=\toks44
+\AM@pagecnt=\count326
+\AM@toc@title=\toks45
+\c@AM@survey=\count327
+\AM@templatesizebox=\box112
+)
+(c:/texlive/2022/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count328
+\lst@gtempboxa=\box113
+\lst@token=\toks46
+\lst@length=\count329
+\lst@currlwidth=\dimen274
+\lst@column=\count330
+\lst@pos=\count331
+\lst@lostspace=\dimen275
+\lst@width=\dimen276
+\lst@newlines=\count332
+\lst@lineno=\count333
+\lst@maxwidth=\dimen277
+
+(c:/texlive/2022/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count334
+\lst@skipnumbers=\count335
+\lst@framebox=\box114
+)
+(c:/texlive/2022/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+
+(c:/texlive/2022/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
+\everycr=\toks47
+\minrowclearance=\skip105
+)
+(c:/texlive/2022/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2021/04/25 v1.2e Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup6
+\symboldletters=\mathgroup7
+\symboldsymbols=\mathgroup8
+Package bm Info: No bold for \OMX/cmex/m/n, using \pmb.
+Package bm Info: No bold for \U/msa/m/n, using \pmb.
+Package bm Info: No bold for \U/msb/m/n, using \pmb.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
+)
+(c:/texlive/2022/texmf-dist/tex/latex/appendix/appendix.sty
+Package: appendix 2020/02/08 v1.2c extra appendix facilities
+\c@@pps=\count336
+\c@@ppsavesec=\count337
+\c@@ppsaveapp=\count338
+)
+
+LaTeX Warning: \include should only be used after \begin{document} on input lin
+e 50.
+
+(./hifenizacao.tex) (c:/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+) (c:/texlive/2022/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+)
+(c:/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-04-20 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count339
+\l__pdf_internal_box=\box115
+)
+
+LaTeX Warning: Unused global option(s):
+    [divps].
+
+(./modelo_new2.aux)
 \openout1 = `modelo_new2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 112.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
-12.
-
-(c:/texlive/2021/texmf-dist/tex/latex/base/ts1cmr.fd
-File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 112.
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 112.
-LaTeX Font Info:    Trying to load font information for FML+futm on input line 
-112.
-
-(c:/texlive/2021/texmf-dist/tex/latex/fourier/fmlfutm.fd
-File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
-)
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 112.
-LaTeX Font Info:    Trying to load font information for FMS+futm on input line 
-112.
-
-(c:/texlive/2021/texmf-dist/tex/latex/fourier/fmsfutm.fd
-File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
-)
-LaTeX Font Info:    ... okay on input line 112.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 112.
-LaTeX Font Info:    Trying to load font information for FMX+futm on input line 
-112.
-
-(c:/texlive/2021/texmf-dist/tex/latex/fourier/fmxfutm.fd
-File: fmxfutm.fd futm-extension
-)
-LaTeX Font Info:    ... okay on input line 112.
-\c@lstlisting=\count354
-Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: hyperref package is loaded.
-Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 112.
-
-(c:/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 60.
+LaTeX Font Info:    ... okay on input line 60.
+Package lastpage Info: Please have a look at the pageslts package at
+(lastpage)             https://www.ctan.org/pkg/pageslts
+(lastpage)             ! on input line 60.
+Package hyperref Info: Link coloring OFF on input line 60.
+ (c:/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
-(c:/texlive/2021/texmf-dist/tex/latex/refcount/refcount.sty
+(c:/texlive/2022/texmf-dist/tex/latex/refcount/refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 )
-(c:/texlive/2021/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+(c:/texlive/2022/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count355
+\c@section@level=\count340
 )
-LaTeX Info: Redefining \ref on input line 112.
-LaTeX Info: Redefining \pageref on input line 112.
-LaTeX Info: Redefining \nameref on input line 112.
+LaTeX Info: Redefining \ref on input line 60.
+LaTeX Info: Redefining \pageref on input line 60.
+LaTeX Info: Redefining \nameref on input line 60.
 
 (./modelo_new2.out) (./modelo_new2.out)
-\@outlinefile=\write4
-\openout4 = `modelo_new2.out'.
-
-LaTeX Font Info:    Redeclaring math accent \widehat on input line 112.
-LaTeX Font Info:    Redeclaring math accent \widetilde on input line 112.
-\openout2 = `pretexto.aux'.
-
- (./pretexto.tex [1
+\@outlinefile=\write3
+\openout3 = `modelo_new2.out'.
 
 
+(c:/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count341
+\scratchdimen=\dimen278
+\scratchbox=\box116
+\nofMPsegments=\count342
+\nofMParguments=\count343
+\everyMPshowfont=\toks48
+\MPscratchCnt=\count344
+\MPscratchDim=\dimen279
+\MPnumerator=\count345
+\makeMPintoPDFobject=\count346
+\everyMPtoPDFconversion=\toks49
+) (c:/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(c:/texlive/2022/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* vratio: 1:1
+* modes: 
+* h-part:(L,W,R)=(85.35826pt, 455.24411pt, 56.9055pt)
+* v-part:(T,H,B)=(85.35826pt, 702.78308pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=702.78308pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=-18.78552pt
+* \headheight=12.0pt
+* \headsep=19.8738pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=38.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package ragged2e Info: ABD: executing \RaggedRight on input line 60.
+(c:/texlive/2022/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
+
+(c:/texlive/2022/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+))
+\c@lstlisting=\count347
+ [1
 
 
+{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Package hyperref Info: Option `breaklinks' set `true' on input line 102.
+Package hyperref Info: Option `raiselinks' set `true' on input line 102.
+Package hyperref Info: Option `pageanchor' set `true' on input line 102.
 
-] [1]
-Overfull \hbox (5.90955pt too wide) in paragraph at lines 63--63
-\T1/futs/m/n/12 COMO PARTE IN-TE-GRANTE DOS RE-QUI-SI-TOS NE-CES-S√Å-RIOS PARA A
- OB-TEN-√á√ÉO DO GRAU
+Underfull \hbox (badness 1331) in paragraph at lines 102--102
+\T1/cmr/m/n/12 de PÛs-graduaÁ„o em Modelagem 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 63--63
-
- []
-
-[1]) [1
-
-
-
-] [2
-
-] [3
-
-]
-LaTeX Font Info:    Trying to load font information for FML+futmi on input line
- 179.
- (c:/texlive/2021/texmf-dist/tex/latex/fourier/fmlfutmi.fd
-File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
-)
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 179.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 179.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 179.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 179
+LaTeX Font Info:    Trying to load font information for U+msa on input line 102
 .
-
-(c:/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
+(c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 179
+LaTeX Font Info:    Trying to load font information for U+msb on input line 102
 .
 
-(c:/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
+(c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 17
-9.
-
-(c:/texlive/2021/texmf-dist/tex/latex/base/ulasy.fd
-File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-)
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
-79.
-
-(c:/texlive/2021/texmf-dist/tex/latex/lm/ot1lmr.fd
-File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
-79.
-
-(c:/texlive/2021/texmf-dist/tex/latex/lm/omllmm.fd
-File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-179.
-
-(c:/texlive/2021/texmf-dist/tex/latex/lm/omslmsy.fd
-File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-LaTeX Font Info:    Font shape `U/lasy/b/n' in size <9> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 179.
-LaTeX Font Info:    Font shape `U/lasy/b/n' in size <7> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 179.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 179.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 179.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 179.
- [4
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.102 \maketitle
+                 [1
 
 ]
-\openout2 = `introducao.aux'.
-
- (./introducao.tex
-Cap\'{\i }tulo 1.
-[5
-
-
-] [6]
-LaTeX Font Info:    Trying to load font information for TS1+futs on input line 
-26.
- (c:/texlive/2021/texmf-dist/tex/latex/fourier/ts1futs.fd
-File: ts1futs.fd 2003/09/14 Fontinst v1.801 font definitions for TS1/futs.
-) [7]
-Overfull \hbox (0.3514pt too wide) in paragraph at lines 44--46
-\T1/futs/m/n/12 breve dis-cus-s√£o √© apre-sen-tada. Os re-sul-ta-dos nu-m√©-ri-co
-s ob-ti-dos pela fer-ra-menta com-
+<ficha_catalografica.pdf, id=395, 597.51233pt x 845.0471pt>
+File: ficha_catalografica.pdf Graphic file (type pdf)
+<use ficha_catalografica.pdf>
+Package pdftex.def Info: ficha_catalografica.pdf  used on input line 102.
+(pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
+File: ficha_catalografica.pdf Graphic file (type pdf)
+<use ficha_catalografica.pdf>
+Package pdftex.def Info: ficha_catalografica.pdf  used on input line 102.
+(pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
+<ficha_catalografica.pdf, id=398, page=1, 597.51233pt x 845.0471pt>
+File: ficha_catalografica.pdf Graphic file (type pdf)
+<use ficha_catalografica.pdf, page 1>
+Package pdftex.def Info: ficha_catalografica.pdf , page1 used on input line 102
+.
+(pdftex.def)             Requested size: 597.51086pt x 845.04504pt.
+File: ficha_catalografica.pdf Graphic file (type pdf)
+<use ficha_catalografica.pdf, page 1>
+Package pdftex.def Info: ficha_catalografica.pdf , page1 used on input line 102
+.
+(pdftex.def)             Requested size: 597.53821pt x 845.08372pt.
+File: ficha_catalografica.pdf Graphic file (type pdf)
+<use ficha_catalografica.pdf, page 1>
+Package pdftex.def Info: ficha_catalografica.pdf , page1 used on input line 102
+.
+(pdftex.def)             Requested size: 597.53821pt x 845.08372pt.
+File: ficha_catalografica.pdf Graphic file (type pdf)
+<use ficha_catalografica.pdf, page 1>
+Package pdftex.def Info: ficha_catalografica.pdf , page1 used on input line 102
+.
+(pdftex.def)             Requested size: 597.53821pt x 845.08372pt.
+File: ficha_catalografica.pdf Graphic file (type pdf)
+<use ficha_catalografica.pdf, page 1>
+Package pdftex.def Info: ficha_catalografica.pdf , page1 used on input line 102
+.
+(pdftex.def)             Requested size: 597.53821pt x 845.08372pt.
+ [2 <./ficha_catalografica.pdf>]
+Underfull \hbox (badness 2495) in paragraph at lines 109--109
+[]\T1/cmr/m/it/12 Dedico este tra-ba-lho 
  []
 
-) [8]
-\openout2 = `modelagem_escoamento.aux'.
+[3
 
- (./modelagem_escoamento.tex
-Cap\'{\i }tulo 2.
-[9
-
-
-
-
-] [10]
-File: Figures/ArterialTree_Zamir.png Graphic file (type bmp)
-<Figures/ArterialTree_Zamir.png>
- [11] [12] [13] [14]
-Overfull \hbox (9.33876pt too wide) in paragraph at lines 187--187
-[]\T1/futs/b/n/14.4 INCORPORA√á√ÉO DA VIS-CO-SI-DADE E VIS-CO-E-LAS-TI-CI-DADE NO
- MO-
+]
+Overfull \hbox (13.26208pt too wide) in paragraph at lines 117--118
+[]\T1/cmr/m/n/12 ¿ Taiga e o Matheus, pes-soas com quem di-vidi o meu dia-a-dia
+ aca-dÍ-mico, muito obri-gado 
  []
 
-[15] [16] [17] [18] [19] [20]) [21]
-\openout2 = `ferramenta_computacional.aux'.
 
- (./ferramenta_computacional.tex
-Cap\'{\i }tulo 3.
-
-Overfull \hbox (1.69135pt too wide) in paragraph at lines 5--6
-\T1/futs/m/n/12 dada na Se-√ß√£o [][]3.1[][], est√° apto para re-a-li-zar ite-ra-√ß
-√µes e desenhar-se atra-v√©s de di-re-ti-vas OpenGL
+Overfull \hbox (10.2559pt too wide) in paragraph at lines 121--122
+[]\T1/cmr/m/n/12 Ao pro-fes-sor Ra-fael Al-ves Bon-fim de Quei-roz, pela ex-ce-
+lente ori-en-ta-Á„o, apoio e pa-ci-Ín-cia, 
  []
 
-File: Figures/IGU_002.png Graphic file (type bmp)
-<Figures/IGU_002.png>
+[4
 
-Overfull \hbox (15.20378pt too wide) in paragraph at lines 11--12
+] [5
+
+] [6
+
+] [7
+
+] (./modelo_new2.lof
+Overfull \hbox (4.99625pt too wide) in paragraph at lines 7--7
+ [] [][]\T1/cmr/m/n/12 RepresentaÁ„o de clas-ses de um ele-mento. \T1/cmr/m/it/
+12 Wi-se-E-le-ment \T1/cmr/m/n/12 È uma classe abs-trata 
+ []
+
+
+Overfull \hbox (6.5653pt too wide) in paragraph at lines 7--7
+ \T1/cmr/m/n/12 base e seus com-po-nen-tes s„o: \T1/cmr/m/it/12 Wi-seS-truc-tur
+e \T1/cmr/m/n/12 re-pre-senta a es-tru-tura con-tida 
+ []
+
+
+Overfull \hbox (12.19432pt too wide) in paragraph at lines 14--14
+ \T1/cmr/m/n/12 f·-brica \T1/cmr/m/it/12 Graphic-Fac-tory \T1/cmr/m/n/12 È res-
+pon-s·-vel por criar as es-tru-tu-ras de vi-su-a-li-za-Á„o. 
+ []
+
+
+Overfull \hbox (16.48637pt too wide) in paragraph at lines 15--15
+ \T1/cmr/m/n/12 res-pon-s·-vel pela cri-a-Á„o de ob-je-tos; \T1/cmr/m/it/12 Wi-
+se-E-le-ment-Fac-tory\T1/cmr/m/n/12 , f·-brica res-pon-s·-vel 
+ []
+
+
+Overfull \hbox (4.47409pt too wide) in paragraph at lines 15--15
+ \T1/cmr/m/it/12 Wi-se-Graphic-Fac-tory\T1/cmr/m/n/12 , f·-brica gr·-fica; \T1/
+cmr/m/it/12 Wi-se-Col-lec-tion\T1/cmr/m/n/12 , co-le-Á„o de ele-men-tos; 
+ []
+
+[8
+
+]
+Overfull \hbox (6.59033pt too wide) in paragraph at lines 18--18
+ [] [][]\T1/cmr/m/n/12 Tipos de ob-je-tos gr·-fi-cos \T1/cmr/m/it/12 Graphi-cOb
+-jects\T1/cmr/m/n/12 , re-pre-sen-tando cada tipo de ele-mento 
+ []
+
+
+Overfull \hbox (4.74469pt too wide) in paragraph at lines 19--19
+ \T1/cmr/m/n/12 li-nha. \T1/cmr/m/it/12 Quad\T1/cmr/m/n/12 , um qua-drado. \T1/
+cmr/m/it/12 Cube\T1/cmr/m/n/12 , um cubo. \T1/cmr/m/it/12 Cy-lin-der\T1/cmr/m/n
+/12 , um ci-lin-dro. \T1/cmr/m/it/12 Sphere\T1/cmr/m/n/12 , 
+ []
+
+
+Overfull \hbox (20.00925pt too wide) in paragraph at lines 21--21
+ [] [][]\T1/cmr/m/n/12 F·brica de pro-jeto\T1/cmr/m/it/12 WiseProjectFactory \T
+1/cmr/m/n/12 e seus com-po-nen-tes: f·-bri-cas de ele-men-tos 
+ []
+
+
+Overfull \hbox (7.00824pt too wide) in paragraph at lines 21--21
+ \T1/cmr/m/n/12 de ob-je-tos gr·-fi-cos \T1/cmr/m/it/12 Gra\T1/cmr/m/n/12 -\T1/
+cmr/m/it/12 phic \T1/cmr/m/n/12 -\T1/cmr/m/it/12 Object \T1/cmr/m/n/12 -\T1/cmr
+/m/it/12 Facto-ries\T1/cmr/m/n/12 , f·-bri-cas de ele-men-tos gr·-fi-cos 
+ []
+
+
+Overfull \hbox (23.26811pt too wide) in paragraph at lines 23--23
+ [] [][]\T1/cmr/m/n/12 Modelo de \T1/cmr/m/it/12 Th-re-ads\T1/cmr/m/n/12 . \T1/
+cmr/m/it/12 Wi-seTh-re-ad-Pool\T1/cmr/m/n/12 , res-pon-s·-vel por or-ques-trar 
+o fun-ci-o-na-mento 
+ []
+
+
+Overfull \hbox (25.07187pt too wide) in paragraph at lines 23--23
+ \T1/cmr/m/n/12 das de-mais \T1/cmr/m/it/12 th-re-ads\T1/cmr/m/n/12 , bem como 
+os ob-je-tos con-ti-dos em um pro-jeto \T1/cmr/m/it/12 Wi-se-Pro-ject\T1/cmr/m/
+n/12 . 
+ []
+
+
+Overfull \hbox (9.33253pt too wide) in paragraph at lines 23--23
+ \T1/cmr/m/it/12 Wi-seIO\T1/cmr/m/n/12 , \T1/cmr/m/it/12 th-read \T1/cmr/m/n/12
+ res-pon-s·-vel por pro-ces-sos de lei-tura e es-crita. \T1/cmr/m/it/12 Wi-se-C
+on-sole\T1/cmr/m/n/12 , 
+ []
+
+[9]
+Overfull \hbox (25.93144pt too wide) in paragraph at lines 30--30
+ [] [][]\T1/cmr/m/n/12 Captura de tela com a exe-cu-Á„o do co-mando de ajudo no
+ am-bi-ente com-pu-ta-ci-o-nal 
+ []
+
+
+Overfull \hbox (3.91028pt too wide) in paragraph at lines 31--31
+ [] [][]\T1/cmr/m/n/12 Fluxo de caso de uso do am-bi-ente com-pu-ta-ci-o-nal In
+GU, em azul as ati-vi-da-des 
+ []
+
+
+Overfull \hbox (3.82574pt too wide) in paragraph at lines 33--33
+ \T1/cmr/m/n/12 (A) Menu prin-ci-pal do pro-grama; (B) ¡r-vore de pro-je-tos e 
+seus ele-men-tos; 
+ []
+
+
+Overfull \hbox (8.01497pt too wide) in paragraph at lines 35--35
+ [] [][]\T1/cmr/m/n/12 Parte da ja-nela prin-ci-pal con-tendo a ·rea de tra-ba-
+lho e as abas que se-le-ci-o-nam 
+ []
+
+
+Overfull \hbox (15.1395pt too wide) in paragraph at lines 40--40
+ [] [][]\T1/cmr/m/n/12 Janela \T1/cmr/m/it/12 Jobs \T1/cmr/m/n/12 exi-bida com 
+a aba \T1/cmr/m/it/12 Ti-me-ta-ble \T1/cmr/m/n/12 se-le-ci-o-nada, a ja-nela li
+sta os tra-ba-lhos 
+ []
+
+
+Overfull \hbox (15.1395pt too wide) in paragraph at lines 41--41
+ [] [][]\T1/cmr/m/n/12 Janela \T1/cmr/m/it/12 Jobs \T1/cmr/m/n/12 exi-bida com 
+a aba \T1/cmr/m/it/12 Ti-me-ta-ble \T1/cmr/m/n/12 se-le-ci-o-nada, a ja-nela li
+sta os tra-ba-lhos 
+ []
+
+
+Overfull \hbox (14.55923pt too wide) in paragraph at lines 42--42
+ [] [][]\T1/cmr/m/n/12 RepresentaÁ„o do mo-delo de ·r-vore ar-te-rial ca-nina (
+fi-gura adap-tada de ([]DUAN; 
+ []
+
+[10]
+Overfull \hbox (13.94131pt too wide) in paragraph at lines 49--49
+ [] [][]\T1/cmr/m/n/12 RepresentaÁ„o do pro-jeto aberto atra-vÈs do ar-quivo \T
+1/cmr/m/it/12 CMa-ke-Lists.txt \T1/cmr/m/n/12 na in-ter-face 
+ []
+
+
+Overfull \hbox (5.01563pt too wide) in paragraph at lines 51--51
+ [] [][]\T1/cmr/m/n/12 Ferramenta com-pu-ta-ci-o-nal \T1/cmr/m/it/12 InGU \T1/c
+mr/m/n/12 exe-cu-tando o co-mando de lei-tura de ar-quivo 
+ []
+
+)
+\tf@lof=\write4
+\openout4 = `modelo_new2.lof'.
+
+ [11] (./modelo_new2.lot
+Overfull \hbox (24.06937pt too wide) in paragraph at lines 29--29
+ [] [][]\T1/cmr/m/n/12 DescriÁ„o do co-mando para de-fi-nir to-dos os pa-r‚-me-
+tros de um campo per-ten-cente 
+ []
+
+[12
+
+]
+Overfull \hbox (0.74445pt too wide) in paragraph at lines 39--39
+ [] [][]\T1/cmr/m/n/12 DescriÁ„o dos co-man-dos de ex-por-ta-Á„o ele-men-tos co
+n-ti-dos no \T1/cmr/m/it/12 Forno \T1/cmr/m/n/12 de ob-je-tos.[] [][]  
+ []
+
+)
+\tf@lot=\write5
+\openout5 = `modelo_new2.lot'.
+
+ (./abreviacoes.tex [13]) [14
+
+
+] (./modelo_new2.toc
+Overfull \hbox (24.83578pt too wide) in paragraph at lines 10--10
+ [] [][]\T1/cmr/bx/n/12 C¡LCULO DO CO-E-FI-CI-EN-TES DE RE-FLE-X√O E ADMI-T¬N-C
+IA[]  []  
+ []
+
+
+Overfull \hbox (12.91785pt too wide) in paragraph at lines 12--12
+ [] [][]\T1/cmr/bx/n/12 INCORPORA«√O DA VIS-CO-SI-DADE E VIS-CO-ELAS-TI-CI-DADE
+ 
+ []
+
+[15
+
+] [16]
+Overfull \hbox (2.75096pt too wide) in paragraph at lines 85--85
+ [] [][]\T1/cmr/m/n/12 AN¡LISES DE DE-SEM-PE-NHO DA FER-RA-MENTA COM-PU-TA-CI-O
+-NAL[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--85
+ []  
+ []
+
+[17])
+\tf@toc=\write6
+\openout6 = `modelo_new2.toc'.
+
+ [18] (./introducao.tex
+Overfull \hbox (5.45535pt too wide) in paragraph at lines 4--5
+\T1/cmr/m/n/12 pas-sando pelo di-ag-nÛs-tico e in-clu-sive apli-ca-Áıes no pla-
+ne-ja-mento ci-r˙r-gico. A re-pre-sen-ta-Á„o
+ []
+
+
+Overfull \hbox (11.24753pt too wide) in paragraph at lines 4--5
+\T1/cmr/m/n/12 es-tru-tura ge-o-mÈ-trica exata de to-dos os va-sos n„o È, no mo
+-mento, vi·-vel com-pu-ta-ci-o-nal-mente,
+ []
+
+
+Overfull \hbox (28.54185pt too wide) in paragraph at lines 4--5
+\T1/cmr/m/n/12 para con-tor-nar es-tes li-mi-tes com-pu-ta-ci-o-nais mo-de-los 
+di-men-si-o-nal-mente he-te-ro-gÍ-neos co-nhe-ci-dos
+ []
+
+
+Overfull \hbox (4.44661pt too wide) in paragraph at lines 4--5
+\T1/cmr/m/n/12 como 0D (zero-dimensional)--1D (unidimensional)--2D (bidimension
+al)--3D (tri-di-men-si-o-nal)
+ []
+
+
+Overfull \hbox (12.14447pt too wide) in paragraph at lines 6--7
+\T1/cmr/m/n/12 ob-ti-dos nor-mal-mente via re-cons-tru-Á„o de ima-gens mÈ-di-ca
+s de pa-ci-en-tes es-pe-cÌ-fi-cos ([]PES-KIN[],
+ []
+
+
+Overfull \hbox (2.89389pt too wide) in paragraph at lines 8--9
+\T1/cmr/m/n/12 e pr·-ti-cas para a si-mu-la-Á„o do sis-tema car-di-o-vas-cu-lar
+ hu-mano um dos de-sa-fios das prÛ-xi-mas
+ []
+
+[19
+
+
+]
+Overfull \hbox (31.08011pt too wide) in paragraph at lines 12--13
+\T1/cmr/m/n/12 como evi-dÍn-cia para os efei-tos da re-fle-x„o em ·r-vo-res vas
+-cu-la-res ([]KOU-CHOU-KOS; SHEP-PARD;
+ []
+
+[20]
+Overfull \hbox (7.07077pt too wide) in paragraph at lines 32--33
+\T1/cmr/m/n/12 ca-pÌ-tulo È apre-sen-tado o mo-delo ma-te-m·-tico uti-li-zado p
+ara cal-cu-lar os efei-tos do es-co-a-mento
+ []
+
+
+Overfull \hbox (19.38438pt too wide) in paragraph at lines 34--35
+\T1/cmr/m/n/12 da pro-gra-ma-Á„o pa-ra-lela, ori-en-ta-Á„o ‡ ob-je-tos e uti-li
+-za-Á„o de es-tru-tu-ras mo-der-nas ([]WE-LICKI;
+ []
+
+[21]) (./modelagem_escoamento.tex [22]
+Overfull \hbox (3.9681pt too wide) in paragraph at lines 8--10
+\T1/cmr/m/n/12 ·r-vo-res ar-te-ri-ais ([]AB-DES-SA-LEM; SA-LEH[], []2017[]; []A
+L-DER-SON; ZA-MIR[], []2004[]; []KI-ZI-LOVA[],
+ []
+
+[23
+
+]
+<Figures/ProximalDistal@16x.png, id=985, 369.75641pt x 370.38374pt>
+File: Figures/ProximalDistal@16x.png Graphic file (type png)
+<use Figures/ProximalDistal@16x.png>
+Package pdftex.def Info: Figures/ProximalDistal@16x.png  used on input line 36.
+
+(pdftex.def)             Requested size: 369.7555pt x 370.38283pt.
+ [24
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.44 \begin{eqnarray}
+                      <./Figures/ProximalDistal@16x.png>] [25]
+Overfull \hbox (3.27364pt too wide) in paragraph at lines 67--69
+[]\T1/cmr/m/n/12 Assumindo um seg-mento el·s-tico de pa-rede fina, a ve-lo-ci-d
+ade da onda $\OML/cmm/m/it/12 c\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 k; j\OT1/cmr/m
+/n/12 )$ \T1/cmr/m/n/12 È cal-cu-lada
+ []
+
+<Figures/ArterialTree_Zamir.png, id=1020, 884.30376pt x 370.38374pt>
+File: Figures/ArterialTree_Zamir.png Graphic file (type png)
+<use Figures/ArterialTree_Zamir.png>
+Package pdftex.def Info: Figures/ArterialTree_Zamir.png  used on input line 79.
+
+(pdftex.def)             Requested size: 442.1508pt x 185.1914pt.
+[26
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.89 \begin{equation}
+                      <./Figures/ArterialTree_Zamir.png>] [27]
+Overfull \hbox (24.07353pt too wide) in paragraph at lines 138--139
+[]\T1/cmr/m/n/12 Conforme []Duan e Za-mir[]([]1995[]), para efei-tos de c·l-cul
+o da pres-s„o e fluxo, adimensionalizam-
+ []
+
+[28]
+Overfull \hbox (2.81136pt too wide) in paragraph at lines 178--179
+\T1/cmr/m/n/12 igual ‡s suas ad-mi-t‚n-cias ca-rac-te-rÌs-ti-cas. Ado-tando a E
+qua-Á„o [], to-das as ad-mi-t‚n-cias
+ []
+
+[29]
+Overfull \hbox (5.46901pt too wide) in paragraph at lines 200--200
+[]\T1/cmr/bx/n/12 INCORPORA«√O DA VIS-CO-SI-DADE E VIS-CO-ELAS-TI-CI-DADE NO
+ []
+
+
+Overfull \hbox (18.68188pt too wide) in paragraph at lines 202--203
+\T1/cmr/m/n/12 A par-tir do mo-delo ma-te-m·-tico aqui apre-sen-tado, os se-gui
+n-tes ce-n·-rios po-dem ser in-ves-ti-ga-dos
+ []
+
+
+Overfull \hbox (5.18489pt too wide) in paragraph at lines 204--207
+\T1/cmr/m/n/12 Os efei-tos da vis-co-si-dade san-guÌ-nea po-dem ser in-ves-ti-g
+a-dos por subs-ti-tuir a ve-lo-ci-dade
+ []
+
+[30]) (./ferramenta_computacional.tex [31]
+Overfull \hbox (18.0306pt too wide) in paragraph at lines 3--4
+\T1/cmr/m/n/12 Nesta se-Á„o apresentam-se de-ta-lhes da fer-ra-menta com-pu-ta-
+ci-o-nal de-sen-vol-vida para si-mu-la-Á„o
+ []
+
+
+Overfull \hbox (13.70892pt too wide) in paragraph at lines 7--8
+\T1/cmr/m/n/12 (des-crito na Se-Á„o []3.2.4[]) pode ser vi-su-a-li-zado.[] A Fi
+-gura []3.1[] ilus-tra a fer-ra-menta de-sen-vol-vida. 
+ []
+
+<Figures/IGU_002.png, id=1123, 1882.03125pt x 1020.81375pt>
+File: Figures/IGU_002.png Graphic file (type png)
+<use Figures/IGU_002.png>
+Package pdftex.def Info: Figures/IGU_002.png  used on input line 11.
+(pdftex.def)             Requested size: 470.50667pt x 255.2028pt.
+
+Overfull \hbox (15.26256pt too wide) in paragraph at lines 11--12
  [][] 
  []
 
-[22
 
-
-
-
-] [23]
-Overfull \hbox (12.22246pt too wide) in paragraph at lines 36--37
-[]\T1/futs/m/n/12 Atrav√©s das ma-lhas es-tru-tu-ra-das e de-ses-tru-tu-ra-das p
-re-sen-tes na bi-bli-o-teca \T1/futs/m/it/12 VTK\T1/futs/m/n/12 (\T1/futs/m/it/
-12 Visua\T1/futs/m/n/12 -
+Overfull \hbox (10.39882pt too wide) in paragraph at lines 19--20
+[]\T1/cmr/m/n/12 Uma classe vir-tual n„o pos-sui cons-tru-tor prÛ-prio, por-que
+ clas-ses vir-tu-ais s„o in-com-ple-tas.
  []
 
-[24]
-File: Figures/WiseElement@16x.png Graphic file (type bmp)
-<Figures/WiseElement@16x.png>
- [25]
-File: Figures/WiseElements@16x.png Graphic file (type bmp)
-<Figures/WiseElements@16x.png>
- [26]
-File: Figures/WiseElementPoints@16x.png Graphic file (type bmp)
-<Figures/WiseElementPoints@16x.png>
-File: Figures/WiseElementLines@16x.png Graphic file (type bmp)
-<Figures/WiseElementLines@16x.png>
+[32
 
-Overfull \hbox (1.884pt too wide) in paragraph at lines 67--69
-[][] [] 
+] [33
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.23 \footnote{
+               Thread √© um pequeno programa que trabalha como um subsistema...
+ <./Figures/IGU_002.png>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[34] [35
+pdfTeX warning (ext4): destination with the same identifier (name{table.3.1}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.108 O
+        Algoritmo 2 proposto tem dois m√≥dulos, a saber: $\mathcal{M}_1$ e $...
+] [36
+pdfTeX warning (ext4): destination with the same identifier (name{algocf.1}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.145 ...em do tipo \textit{top-bottom}), visando}
+                                                   calcular o valor da press...
+]
+Overfull \vbox (16.5415pt too high) has occurred while \output is active []
+
+
+[37
+pdfTeX warning (ext4): destination with the same identifier (name{algocf.2}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.145 ...em do tipo \textit{top-bottom}), visando}
+                                                   calcular o valor da press...
+] [38
+pdfTeX warning (ext4): destination with the same identifier (name{algocf.3}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.174 
+      ]
+Overfull \hbox (50.44489pt too wide) in paragraph at lines 175--176
+\T1/cmr/m/n/12 f·-brica de ite-ra-Á„o \T1/cmr/m/it/12 Du-a-nAnd-Za-mi-rI-te-ra-
+ti-on-Fac-tory \T1/cmr/m/n/12 aco-plada ‡ uma ·r-vore ar-te-rial \T1/cmr/m/it/1
+2 WiseArterialTree
  []
 
-File: Figures/WiseElementCells@16x.png Graphic file (type bmp)
-<Figures/WiseElementCells@16x.png>
-[27] [28]
-File: Figures/WiseElementStatus@16x.png Graphic file (type bmp)
-<Figures/WiseElementStatus@16x.png>
-File: Figures/WiseElementWarming@16x.png Graphic file (type bmp)
-<Figures/WiseElementWarming@16x.png>
- [29]
-File: Figures/WiseElementCold@16x.png Graphic file (type bmp)
-<Figures/WiseElementCold@16x.png>
- [30]
-File: Figures/WiseElementHot@16x.png Graphic file (type bmp)
-<Figures/WiseElementHot@16x.png>
- [31]
-File: Figures/WiseElementWorkflow@16x.png Graphic file (type bmp)
-<Figures/WiseElementWorkflow@16x.png>
- [32] [33]
-File: Figures/WiseObject@16x.png Graphic file (type bmp)
-<Figures/WiseObject@16x.png>
-File: Figures/WiseObjectStatus@16x.png Graphic file (type bmp)
-<Figures/WiseObjectStatus@16x.png>
- [34] [35] [36]
-File: Figures/GraphicModel@16x.png Graphic file (type bmp)
-<Figures/GraphicModel@16x.png>
- [37]
-File: Figures/GraphicObjects@16x.png Graphic file (type bmp)
-<Figures/GraphicObjects@16x.png>
-File: Figures/GraphicElements@16x.png Graphic file (type bmp)
-<Figures/GraphicElements@16x.png>
- [38]
-File: Figures/WiseProject@16x.png Graphic file (type bmp)
-<Figures/WiseProject@16x.png>
- [39]
-File: Figures/WiseProjectFactory@16x.png Graphic file (type bmp)
-<Figures/WiseProjectFactory@16x.png>
-File: Figures/WiseElementFactories@16x.png Graphic file (type bmp)
-<Figures/WiseElementFactories@16x.png>
-File: Figures/WiseObjectFactories@16x.png Graphic file (type bmp)
-<Figures/WiseObjectFactories@16x.png>
-File: Figures/GraphicObjectFactories@16x.png Graphic file (type bmp)
-<Figures/GraphicObjectFactories@16x.png>
-File: Figures/GraphicElementFactories@16x.png Graphic file (type bmp)
-<Figures/GraphicElementFactories@16x.png>
-File: Figures/WiseIterationFactories@16x.png Graphic file (type bmp)
-<Figures/WiseIterationFactories@16x.png>
 
-Overfull \hbox (24.00003pt too wide) in paragraph at lines 249--257
+Overfull \hbox (5.17828pt too wide) in paragraph at lines 177--178
+\T1/cmr/m/n/12 da-dos pro-posta para a fer-ra-menta pre-cisa re-a-li-zar es-tar
+ ope-ra-Áıes e ar-ma-ze-nar cor-re-ta-mente
+ []
+
+
+Overfull \hbox (10.79057pt too wide) in paragraph at lines 181--182
+[]\T1/cmr/m/n/12 Ao longo do de-sen-vol-vi-mento da fer-ra-menta, trÍs prin-ci-
+pais pro-ces-sos fo-ram iden-ti-fi-ca-dos:
+ []
+
+[39]
+Overfull \hbox (8.41049pt too wide) in paragraph at lines 183--184
+[]\T1/cmr/m/n/12 Finalmente, es-tas es-tru-tu-ras s„o uti-li-za-das pela fer-ra
+-menta com-pu-ta-ci-o-nal pos-si-bi-li-tando
+ []
+
+
+Overfull \hbox (11.39561pt too wide) in paragraph at lines 188--189
+\T1/cmr/m/n/12 ne-ces-s·-rios para o mÈ-todo de ite-ra-Á„o. No caso do es-tudo 
+do es-co-a-mento pul-s·-til, considerou-
+ []
+
+
+Package hyperref Warning: Suppressing empty link on input line 190.
+
+
+Overfull \hbox (7.51366pt too wide) in paragraph at lines 190--191
+[]\T1/cmr/m/n/12 AtravÈs das ma-lhas es-tru-tu-ra-das e n„o es-tru-tu-ra-das pr
+e-sen-tes na bi-bli-o-teca \T1/cmr/m/it/12 VTK\T1/cmr/m/n/12 (\T1/cmr/m/it/12 V
+isua\T1/cmr/m/n/12 -
+ []
+
+<Figures/WiseElement@16x.png, id=1259, 157.14961pt x 100.375pt>
+File: Figures/WiseElement@16x.png Graphic file (type png)
+<use Figures/WiseElement@16x.png>
+Package pdftex.def Info: Figures/WiseElement@16x.png  used on input line 194.
+(pdftex.def)             Requested size: 314.29843pt x 200.74948pt.
+
+Overfull \hbox (3.44537pt too wide) in paragraph at lines 199--200
+[]\T1/cmr/m/n/12 A Fi-gura []3.2[] mos-tra que um ele-mento in-te-li-gente È co
+m-posto por duas ou-tras es-tru-tu-ras:
+ []
+
+
+Overfull \hbox (25.49113pt too wide) in paragraph at lines 199--200
+\T1/cmr/m/it/12 Wi-seS-truc-ture \T1/cmr/m/n/12 - uti-liza pon-tos, li-nhas, cÈ
+-lu-las e cam-pos para de-ter-mi-nar es-tru-tu-ras geo-mÈ-tri-cas;
+ []
+
+
+Overfull \hbox (3.98079pt too wide) in paragraph at lines 199--200
+\T1/cmr/m/it/12 Da-taS-ruc-ture \T1/cmr/m/n/12 - re-pre-senta os da-dos abs-tra
+-tos es-pe-cÌ-fi-cos de cada ele-mento. Es-tas es-tru-tu-ras
+ []
+
+[40]
+<Figures/WiseElements@16x.png, id=1266, 221.0132pt x 93.09781pt>
+File: Figures/WiseElements@16x.png Graphic file (type png)
+<use Figures/WiseElements@16x.png>
+Package pdftex.def Info: Figures/WiseElements@16x.png  used on input line 205.
+(pdftex.def)             Requested size: 455.24411pt x 191.77368pt.
+
+Overfull \hbox (18.18347pt too wide) in paragraph at lines 212--213
+[]\T1/cmr/m/n/12 O mo-delo ge-o-mÈ-trico de uma ·r-vore ar-te-rial foi tra-du-z
+ido para o ele-mento \T1/cmr/m/it/12 Wi-se-Ar-tery-Tree\T1/cmr/m/n/12 .
+ []
+
+[41
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.2}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.213 
+       <./Figures/WiseElement@16x.png>] [42
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.3}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.219 
+       <./Figures/WiseElements@16x.png>]
+<Figures/WiseElementPoints@16x.png, id=1279, 105.20555pt x 75.03032pt>
+File: Figures/WiseElementPoints@16x.png Graphic file (type png)
+<use Figures/WiseElementPoints@16x.png>
+Package pdftex.def Info: Figures/WiseElementPoints@16x.png  used on input line 
+223.
+(pdftex.def)             Requested size: 227.62206pt x 162.33781pt.
+<Figures/WiseElementLines@16x.png, id=1280, 108.5932pt x 79.86086pt>
+File: Figures/WiseElementLines@16x.png Graphic file (type png)
+<use Figures/WiseElementLines@16x.png>
+Package pdftex.def Info: Figures/WiseElementLines@16x.png  used on input line 2
+24.
+(pdftex.def)             Requested size: 227.62206pt x 167.41783pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 223--225
 [][] 
  []
 
-[40] [41] [42]
-File: Figures/WiseThreadPool@16x.png Graphic file (type bmp)
-<Figures/WiseThreadPool@16x.png>
- [43]
-File: Figures/WiseThreaPoolCMD.png Graphic file (type bmp)
-<Figures/WiseThreaPoolCMD.png>
- [44]
-File: Figures/WiseThreadPoolHeating@16x.png Graphic file (type bmp)
-<Figures/WiseThreadPoolHeating@16x.png>
- [45]
-Overfull \hbox (1.58334pt too wide) in paragraph at lines 315--316
-\T1/futs/m/n/12 tra-ba-lhos de cada carga de tra-ba-lho s√£o se-le-ci-o-na-dos e
- en-vi-a-dos caso n√£o haja pr√©-requisitos.
+<Figures/WiseElementCells@16x.png, id=1281, 104.9546pt x 78.35524pt>
+File: Figures/WiseElementCells@16x.png Graphic file (type png)
+<use Figures/WiseElementCells@16x.png>
+Package pdftex.def Info: Figures/WiseElementCells@16x.png  used on input line 2
+26.
+(pdftex.def)             Requested size: 227.62206pt x 169.9358pt.
+
+Overfull \hbox (17.92506pt too wide) in paragraph at lines 233--234
+[]\T1/cmr/m/n/12 A classe \T1/cmr/m/it/12 Wi-se-E-le-ment \T1/cmr/m/n/12 foi de
+-sen-vol-vida para cons-truir a es-tru-tura abs-trata (\T1/cmr/m/it/12 Da-taS-t
+ruc-ture\T1/cmr/m/n/12 )
  []
 
-[46]
-File: Figures/WiseJobStatus@16x.png Graphic file (type bmp)
-<Figures/WiseJobStatus@16x.png>
- [47]
-File: Figures/IGU_002.png Graphic file (type bmp)
-<Figures/IGU_002.png>
- [48]
-File: Figures/InGU.png Graphic file (type bmp)
-<Figures/InGU.png>
-File: Figures/InGU_console.png Graphic file (type bmp)
-<Figures/InGU_console.png>
- [49] [50]
-File: Figures/InGU_help.png Graphic file (type bmp)
-<Figures/InGU_help.png>
- [51] [52] [53]
-Overfull \hbox (23.16899pt too wide) in paragraph at lines 502--513
+
+Overfull \hbox (7.13608pt too wide) in paragraph at lines 233--234
+\T1/cmr/m/n/12 b·-sico do mÈ-todo de ite-ra-Á„o, sendo du-pli-cado an-tes de se
+r ite-rado, ge-rando no-vas es-tru-tu-ras
+ []
+
+
+Overfull \hbox (0.40527pt too wide) in paragraph at lines 233--234
+\T1/cmr/m/n/12 e abs-trata idÍn-ti-cas. Ime-di-a-ta-mente, a nova es-tru-tura a
+bs-trata \T1/cmr/m/it/12 Da-taS-truc-ture \T1/cmr/m/n/12 È des-car-tada
+ []
+
+<Figures/WiseElementStatus@16x.png, id=1283, 253.88602pt x 168.88094pt>
+File: Figures/WiseElementStatus@16x.png Graphic file (type png)
+<use Figures/WiseElementStatus@16x.png>
+Package pdftex.def Info: Figures/WiseElementStatus@16x.png  used on input line 
+237.
+(pdftex.def)             Requested size: 380.82806pt x 253.32079pt.
+
+Underfull \hbox (badness 1019) in paragraph at lines 238--238
+[]\T1/cmr/m/n/12 Figura 3.5: []M·quina de es-ta-dos que con-trola o fun-ci-o-na
+-mento de um ele-mento 
+ []
+
+[43] [44
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.4}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.243 
+       <./Figures/WiseElementPoints@16x.png> <./Figures/WiseElementLines@16x.pn
+g> <./Figures/WiseElementCells@16x.png>]
+<Figures/WiseElementWarming@16x.png, id=1295, 216.93547pt x 71.8936pt>
+File: Figures/WiseElementWarming@16x.png Graphic file (type png)
+<use Figures/WiseElementWarming@16x.png>
+Package pdftex.def Info: Figures/WiseElementWarming@16x.png  used on input line
+ 246.
+(pdftex.def)             Requested size: 401.33092pt x 133.00325pt.
+ [45
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.5}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.253 I
+       nicialmente os elementos s√£o criados no estado \textit{Raw}, enquant...
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.6}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.253 I
+       nicialmente os elementos s√£o criados no estado \textit{Raw}, enquant...
+ <./Figures/WiseElementStatus@16x.png> <./Figures/WiseElementWarming@16x.png>]
+<Figures/WiseElementCold@16x.png, id=1304, 221.51508pt x 92.65868pt>
+File: Figures/WiseElementCold@16x.png Graphic file (type png)
+<use Figures/WiseElementCold@16x.png>
+Package pdftex.def Info: Figures/WiseElementCold@16x.png  used on input line 25
+9.
+(pdftex.def)             Requested size: 409.80322pt x 171.41866pt.
+
+[46
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.7}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.267 
+       <./Figures/WiseElementCold@16x.png>]
+<Figures/WiseElementHot@16x.png, id=1310, 218.06468pt x 133.81242pt>
+File: Figures/WiseElementHot@16x.png Graphic file (type png)
+<use Figures/WiseElementHot@16x.png>
+Package pdftex.def Info: Figures/WiseElementHot@16x.png  used on input line 270
+.
+(pdftex.def)             Requested size: 403.42pt x 247.55315pt.
+
+Overfull \hbox (22.01572pt too wide) in paragraph at lines 282--283
+\T1/cmr/m/n/12 Como men-ci-o-nado an-te-ri-or-mente, trÍs prin-ci-pais bar-rei-
+ras fo-ram iden-ti-fi-ca-das ar-ma-ze-na-mento,
+ []
+
+[47
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.8}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.284 ...emento gr√°fico a partir de um elemento.}
+                                                   <./Figures/WiseElementHot@16
+x.png>]
+<Figures/WiseElementWorkflow@16x.png, id=1320, 182.6825pt x 192.21812pt>
+File: Figures/WiseElementWorkflow@16x.png Graphic file (type png)
+<use Figures/WiseElementWorkflow@16x.png>
+Package pdftex.def Info: Figures/WiseElementWorkflow@16x.png  used on input lin
+e 288.
+(pdftex.def)             Requested size: 341.43307pt x 359.30525pt.
+
+Underfull \hbox (badness 3250) in paragraph at lines 289--289
+[]\T1/cmr/m/n/12 Figura 3.9: []Arquitetura de clas-ses f·-brica e fluxo de tra-
+ba-lho do ele-mento 
+ []
+
+[48
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.9}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.294 
+       <./Figures/WiseElementWorkflow@16x.png>]
+Overfull \hbox (15.9638pt too wide) in paragraph at lines 307--308
+\T1/cmr/m/n/12 equi-va-len-tes en-tre si. Nessa classe, a pre-senÁa de uma f·-b
+rica gr·-fica È op-ci-o-nal, pos-si-bi-li-tando
+ []
+
+
+Overfull \hbox (3.08969pt too wide) in paragraph at lines 307--308
+\T1/cmr/m/n/12 que ob-je-tos se-jam ite-ra-dos sem que al-guma es-tru-tura seja
+ dis-po-ni-bi-li-zada para vi-su-a-li-za-Á„o.
+ []
+
+
+Overfull \hbox (1.06236pt too wide) in paragraph at lines 307--308
+\T1/cmr/m/n/12 Uti-li-zando a mesma se-pa-ra-Á„o de clas-ses com pro-pÛ-sito ˙n
+ico, f·-bri-cas di-n‚-mi-cas ga-ran-tem
+ []
+
+[49]
+<Figures/WiseObject@16x.png, id=1334, 380.48398pt x 247.23618pt>
+File: Figures/WiseObject@16x.png Graphic file (type png)
+<use Figures/WiseObject@16x.png>
+Package pdftex.def Info: Figures/WiseObject@16x.png  used on input line 315.
+(pdftex.def)             Requested size: 437.55318pt x 284.31938pt.
+
+Overfull \hbox (9.52295pt too wide) in paragraph at lines 320--321
+\T1/cmr/m/n/12 al-te-rando seu es-tado para \T1/cmr/m/it/12 War-ming\T1/cmr/m/n
+/12 , em se-guida ir· re-cri-ando seus da-dos abs-tra-tos uti-li-zando
+ []
+
+<Figures/WiseObjectStatus@16x.png, id=1337, 191.65352pt x 126.78618pt>
+File: Figures/WiseObjectStatus@16x.png Graphic file (type png)
+<use Figures/WiseObjectStatus@16x.png>
+Package pdftex.def Info: Figures/WiseObjectStatus@16x.png  used on input line 3
+24.
+(pdftex.def)             Requested size: 383.30606pt x 253.57172pt.
+[50] [51
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.10})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.327 \end{figure}
+                   <./Figures/WiseObject@16x.png>]
+Overfull \hbox (29.32509pt too wide) in paragraph at lines 333--334
+\T1/cmr/m/n/12 pul-s·-til atra-vÈs de uma ·r-vore ar-te-rial È ne-ces-s·-rio ad
+i-ci-o-nar a f·-brica de ite-ra-Á„o cor-res-pon-dente
+ []
+
+[52
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.11})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.334 
+       <./Figures/WiseObjectStatus@16x.png>]
+Overfull \hbox (36.08603pt too wide) in paragraph at lines 343--344
+\T1/cmr/m/n/12 Quando o ob-jeto \T1/cmr/m/it/12 Wi-se-Ob-ject \T1/cmr/m/n/12 es
+-ti-ver cor-re-ta-mente car-re-gado e uma f·-brica gr·-fica \T1/cmr/m/it/12 Gra
+phic-Fac-tory
+ []
+
+[53]
+<Figures/GraphicModel@16x.png, id=1358, 225.34187pt x 107.90312pt>
+File: Figures/GraphicModel@16x.png Graphic file (type png)
+<use Figures/GraphicModel@16x.png>
+Package pdftex.def Info: Figures/GraphicModel@16x.png  used on input line 347.
+(pdftex.def)             Requested size: 450.68262pt x 215.8057pt.
+<Figures/GraphicObjects@16x.png, id=1360, 223.08344pt x 89.71016pt>
+File: Figures/GraphicObjects@16x.png Graphic file (type png)
+<use Figures/GraphicObjects@16x.png>
+Package pdftex.def Info: Figures/GraphicObjects@16x.png  used on input line 356
+.
+(pdftex.def)             Requested size: 446.16577pt x 179.41986pt.
+
+Overfull \hbox (32.71855pt too wide) in paragraph at lines 363--364
+\T1/cmr/m/n/12 lo uti-li-zando uma es-cala de co-res e for-mas geo-mÈ-tri-cas p
+a-dr„o, bi-di-men-si-o-nais ou tri-di-men-si-o-nais.
+ []
+
+<Figures/GraphicElements@16x.png, id=1362, 172.2686pt x 92.345pt>
+File: Figures/GraphicElements@16x.png Graphic file (type png)
+<use Figures/GraphicElements@16x.png>
+Package pdftex.def Info: Figures/GraphicElements@16x.png  used on input line 36
+7.
+(pdftex.def)             Requested size: 344.53635pt x 184.68951pt.
+[54
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.12})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.370 \end{figure}
+                   <./Figures/GraphicModel@16x.png>] [55
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.13})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.374 ...ilizada e o par√¢metro a ser visualizado}
+                                                  . Apesar do objeto gr√°fic...
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.14})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.374 ...ilizada e o par√¢metro a ser visualizado}
+                                                  . Apesar do objeto gr√°fic...
+ <./Figures/GraphicObjects@16x.png> <./Figures/GraphicElements@16x.png>]
+Overfull \hbox (12.4135pt too wide) in paragraph at lines 374--375
+\T1/cmr/m/n/12 e o pa-r‚-me-tro a ser vi-su-a-li-zado[]. Ape-sar do ob-jeto gr·
+-fico \T1/cmr/m/it/12 Graphi-cOb-ject \T1/cmr/m/n/12 ser uma re-dun-d‚n-cia
+ []
+
+<Figures/WiseProject@16x.png, id=1375, 185.25461pt x 86.63617pt>
+File: Figures/WiseProject@16x.png Graphic file (type png)
+<use Figures/WiseProject@16x.png>
+Package pdftex.def Info: Figures/WiseProject@16x.png  used on input line 385.
+(pdftex.def)             Requested size: 370.50827pt x 173.27191pt.
+[56
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.15})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.393 
+       <./Figures/WiseProject@16x.png>]
+Overfull \hbox (16.0588pt too wide) in paragraph at lines 397--398
+\T1/cmr/m/n/12 In-clusa neste con-ceito, a f·-brica de pro-je-tos \T1/cmr/m/it/
+12 Wi-se-Pro-ject-Fac-tory \T1/cmr/m/n/12 È res-pon-s·-vel pela cons-tru-Á„o
+ []
+
+<Figures/WiseProjectFactory@16x.png, id=1382, 240.02171pt x 158.9689pt>
+File: Figures/WiseProjectFactory@16x.png Graphic file (type png)
+<use Figures/WiseProjectFactory@16x.png>
+Package pdftex.def Info: Figures/WiseProjectFactory@16x.png  used on input line
+ 401.
+(pdftex.def)             Requested size: 360.03168pt x 238.45276pt.
+
+Underfull \hbox (badness 1400) in paragraph at lines 402--402
+\T1/cmr/m/n/12 de ele-men-tos \T1/cmr/m/it/12 Wi-se-E-le-ment-Fac-to-ries\T1/cm
+r/m/n/12 , f·-bri-cas de ob-je-tos \T1/cmr/m/it/12 Wi-se-Ob-ject-Fac-to-ries\T1
+/cmr/m/n/12 , 
+ []
+
+
+Overfull \hbox (0.28908pt too wide) in paragraph at lines 406--407
+\T1/cmr/m/n/12 as f·-bri-cas de ele-men-tos \T1/cmr/m/it/12 Wi-se-E-le-ment\T1/
+cmr/m/n/12 , ob-je-tos \T1/cmr/m/it/12 Wi-se-Ob-ject\T1/cmr/m/n/12 , ob-je-tos 
+gr·-fi-cos \T1/cmr/m/it/12 Graphi-cOb-ject\T1/cmr/m/n/12 ,
+ []
+
+[57
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.16})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.407 
+       <./Figures/WiseProjectFactory@16x.png>]
+File: Figures/WiseElementFactories@16x.png Graphic file (type png)
+<use Figures/WiseElementFactories@16x.png>
+Package pdftex.def Info: Figures/WiseElementFactories@16x.png  used on input li
+ne 416.
+(pdftex.def)             Requested size: 227.62206pt x 197.40279pt.
+File: Figures/WiseObjectFactories@16x.png Graphic file (type png)
+<use Figures/WiseObjectFactories@16x.png>
+Package pdftex.def Info: Figures/WiseObjectFactories@16x.png  used on input lin
+e 416.
+(pdftex.def)             Requested size: 227.62206pt x 196.69582pt.
+File: Figures/GraphicObjectFactories@16x.png Graphic file (type png)
+<use Figures/GraphicObjectFactories@16x.png>
+Package pdftex.def Info: Figures/GraphicObjectFactories@16x.png  used on input 
+line 416.
+(pdftex.def)             Requested size: 227.62206pt x 197.11757pt.
+File: Figures/GraphicElementFactories@16x.png Graphic file (type png)
+<use Figures/GraphicElementFactories@16x.png>
+Package pdftex.def Info: Figures/GraphicElementFactories@16x.png  used on input
+ line 416.
+(pdftex.def)             Requested size: 227.62206pt x 226.60367pt.
+File: Figures/WiseIterationFactories@16x.png Graphic file (type png)
+<use Figures/WiseIterationFactories@16x.png>
+Package pdftex.def Info: Figures/WiseIterationFactories@16x.png  used on input 
+line 416.
+(pdftex.def)             Requested size: 227.62206pt x 185.48198pt.
+
+Overfull \hbox (24.0pt too wide) in alignment at lines 416--416
 [][] 
  []
 
 
-Overfull \hbox (4.06499pt too wide) in paragraph at lines 525--538
-[][] 
- []
+LaTeX Warning: Float too large for page by 3.08818pt on input line 419.
 
-[54]
-Overfull \hbox (39.98096pt too wide) in paragraph at lines 573--584
-[][] 
- []
 
-[55] [56]
-Overfull \hbox (20.133pt too wide) in paragraph at lines 665--676
-[][] 
+Overfull \hbox (122.24825pt too wide) in paragraph at lines 423--424
+[]\T1/cmr/m/n/12 O mo-delo do es-co-a-mento pul-s·-til pro-posto est· pre-senta
+ na f·-brica de ite-ra-Á„o \T1/cmr/m/it/12 Du-a-nAnd-Za-mi-rI-te-ra-ti-on-Fac-t
+ory\T1/cmr/m/n/12 ,
  []
 
 
-Overfull \hbox (15.16501pt too wide) in paragraph at lines 688--699
-[][] 
+Overfull \hbox (55.25986pt too wide) in paragraph at lines 423--424
+\T1/cmr/m/n/12 apli-car o mo-delo ma-te-m·-tico. Fi-nal-mente, a f·-brica de it
+e-ra-Á„o \T1/cmr/m/it/12 Wi-se-Ob-ject-Da-ta-Re-a-dI-te-ra-ti-on-Fac-tory
+ []
+
+[58] [59
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.17})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.433 
+       <./Figures/WiseElementFactories@16x.png> <./Figures/WiseObjectFactories@
+16x.png> <./Figures/GraphicObjectFactories@16x.png> <./Figures/GraphicElementFa
+ctories@16x.png> <./Figures/WiseIterationFactories@16x.png>]
+<Figures/WiseThreadPool@16x.png, id=1411, 290.02101pt x 130.2993pt>
+File: Figures/WiseThreadPool@16x.png Graphic file (type png)
+<use Figures/WiseThreadPool@16x.png>
+Package pdftex.def Info: Figures/WiseThreadPool@16x.png  used on input line 443
+.
+(pdftex.def)             Requested size: 455.24411pt x 204.54248pt.
+
+Underfull \hbox (badness 2573) in paragraph at lines 444--444
+\T1/cmr/m/it/12 Wi-se-Pro-ject\T1/cmr/m/n/12 . \T1/cmr/m/it/12 Wi-seIO\T1/cmr/m
+/n/12 , \T1/cmr/m/it/12 th-read \T1/cmr/m/n/12 res-pon-s·-vel por pro-ces-sos d
+e lei-tura e es-crita. 
  []
 
 
-LaTeX Warning: Reference `sec:fabricas' on page 57 undefined on input line 707.
-
-
-[57]
-Overfull \hbox (13.67699pt too wide) in paragraph at lines 711--726
-[][] 
+Overfull \hbox (20.44931pt too wide) in paragraph at lines 448--449
+[]\T1/cmr/m/n/12 As ta-re-fas se di-vi-dem em trÍs prin-ci-pais gru-pos: ta-re-
+fas au-xi-li-a-res, ta-re-fas de lei-tu-ra/es-crita
  []
 
 
-Overfull \hbox (45.56097pt too wide) in paragraph at lines 738--751
-[][] 
- []
-
-[58]
-Overfull \hbox (45.56097pt too wide) in paragraph at lines 786--797
-[][] 
+Overfull \hbox (26.7702pt too wide) in paragraph at lines 450--451
+\T1/cmr/m/it/12 th-read \T1/cmr/m/n/12 pas-sando por um ba-lan-ce-a-mento exe-c
+u-tado pelo ge-ren-ci-a-dor de th-re-ads \T1/cmr/m/it/12 Wi-seTh-re-ad-Pool\T1/
+cmr/m/n/12 .
  []
 
 
-Overfull \hbox (45.56097pt too wide) in paragraph at lines 809--820
-[][] 
+Overfull \hbox (11.14748pt too wide) in paragraph at lines 450--451
+\T1/cmr/m/n/12 En-quanto o pro-ces-sa-mento È feito, to-dos os da-dos re-la-ti-
+vos ao pro-ces-sa-mento s„o blo-que-a-dos,
  []
 
-[59]
-Overfull \hbox (45.56097pt too wide) in paragraph at lines 832--845
-[][] 
+[60] [61
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.18})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.453 
+       <./Figures/WiseThreadPool@16x.png>]
+<Figures/WiseThreaPoolCMD@16x.png, id=1423, 342.5297pt x 166.8107pt>
+File: Figures/WiseThreaPoolCMD@16x.png Graphic file (type png)
+<use Figures/WiseThreaPoolCMD@16x.png>
+Package pdftex.def Info: Figures/WiseThreaPoolCMD@16x.png  used on input line 4
+56.
+(pdftex.def)             Requested size: 455.24411pt x 221.72054pt.
+
+Overfull \hbox (0.34886pt too wide) in paragraph at lines 461--462
+\T1/cmr/m/n/12 muito uti-li-zada no ci-clo de vida de um ele-mento, ge-ren-ci-a
+ndo o pro-cesso de ar-ma-ze-na-mento
+ []
+
+<Figures/WiseThreadPoolHeating@16x.png, id=1424, 339.89484pt x 131.17758pt>
+File: Figures/WiseThreadPoolHeating@16x.png Graphic file (type png)
+<use Figures/WiseThreadPoolHeating@16x.png>
+Package pdftex.def Info: Figures/WiseThreadPoolHeating@16x.png  used on input l
+ine 465.
+(pdftex.def)             Requested size: 455.24411pt x 175.70296pt.
+[62
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.19})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.473 
+       <./Figures/WiseThreaPoolCMD@16x.png>]
+Overfull \hbox (4.08897pt too wide) in paragraph at lines 477--478
+[]\T1/cmr/m/it/12 Pre-Queue (Pre-Q)\T1/cmr/m/n/12 : Lista de prÈ-seleÁ„o. Nesta
+ es-tru-tura, os tra-ba-lhos s„o agru-pa-dos
+ []
+
+[63
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.20})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.484 
+       <./Figures/WiseThreadPoolHeating@16x.png>] [64]
+<Figures/WiseJobStatus@16x.png, id=1439, 191.65352pt x 113.11008pt>
+File: Figures/WiseJobStatus@16x.png Graphic file (type png)
+<use Figures/WiseJobStatus@16x.png>
+Package pdftex.def Info: Figures/WiseJobStatus@16x.png  used on input line 511.
+
+(pdftex.def)             Requested size: 455.24411pt x 268.71516pt.
+ [65
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3.21})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.517 
+       <./Figures/WiseJobStatus@16x.png>]
+Overfull \hbox (4.50745pt too wide) in paragraph at lines 518--519
+[][]\T1/cmr/m/n/12 No cerne da bi-bli-o-teca \T1/cmr/m/it/12 Qt \T1/cmr/m/n/12 
+est· a classe \T1/cmr/m/it/12 QOb-ject\T1/cmr/m/n/12 , que pos-sui o me-ca-nism
+o de co-mu-ni-ca-Á„o
  []
 
 
-Overfull \hbox (19.77298pt too wide) in paragraph at lines 857--873
-[][] 
+Overfull \hbox (35.20547pt too wide) in paragraph at lines 518--519
+\T1/cmr/m/n/12 co-mu-ni-ca-Á„o È ne-ces-s·-rio que ele herde as ca-rac-te-rÌs-t
+i-cas da classe \T1/cmr/m/it/12 QOb-ject \T1/cmr/m/n/12 por po-li-mor-fismo ([]
+QT[],
  []
 
-[60]
-Overfull \hbox (45.56097pt too wide) in paragraph at lines 885--896
-[][] 
- []
-
-
-Overfull \hbox (2.47531pt too wide) in paragraph at lines 904--905
-\T1/futs/m/n/12 mento pos-sui im-ple-men-tada a ex-por-ta-√ß√£o dos gr√°-fi-cos em
- ar-qui-vos de ima-gem. Desta forma,
- []
-
-
-Overfull \hbox (45.56097pt too wide) in paragraph at lines 908--921
-[][] 
- []
-
-[61]
-Overfull \hbox (45.56097pt too wide) in paragraph at lines 933--949
-[][] 
- []
-
-
-Overfull \hbox (45.56097pt too wide) in paragraph at lines 961--978
-[][] 
- []
-
-[62]
-Overfull \hbox (45.56097pt too wide) in paragraph at lines 990--1006
-[][] 
- []
-
-[63]
-Overfull \hbox (6.22499pt too wide) in paragraph at lines 1043--1054
-[][] 
- []
-
-
-Overfull \hbox (45.56097pt too wide) in paragraph at lines 1068--1084
-[][] 
- []
-
-[64]
-Overfull \hbox (35.64897pt too wide) in paragraph at lines 1096--1109
-[][] 
- []
-
-[65]
-Overfull \hbox (35.64897pt too wide) in paragraph at lines 1146--1157
-[][] 
- []
-
-
-Overfull \hbox (35.64897pt too wide) in paragraph at lines 1169--1180
-[][] 
- []
-
-
-Overfull \hbox (35.64897pt too wide) in paragraph at lines 1192--1204
-[][] 
+) (./usabilidade.tex
+Overfull \hbox (5.7031pt too wide) in paragraph at lines 520--3
+\T1/cmr/m/n/12 Atra-vÈs desta es-tru-tura ob-je-tos do tipo \T1/cmr/m/it/12 QOb
+-ject \T1/cmr/m/n/12 po-dem se co-mu-ni-car e exe-cu-tar a re-qui-si-Á„o
  []
 
 [66]
-Overfull \hbox (15.16501pt too wide) in paragraph at lines 1217--1228
-[][] 
+Overfull \hbox (1.71523pt too wide) in paragraph at lines 5--6
+\T1/cmr/m/n/12 Nesta se-Á„o apresentam-se de-ta-lhes da in-ter-face es-co-lhida
+ para fa-ci-li-tar o uso da fer-ra-menta
+ []
+
+File: Figures/IGU_002.png Graphic file (type png)
+<use Figures/IGU_002.png>
+Package pdftex.def Info: Figures/IGU_002.png  used on input line 9.
+(pdftex.def)             Requested size: 455.24411pt x 246.9162pt.
+
+Overfull \hbox (3.24205pt too wide) in paragraph at lines 14--15
+\T1/cmr/m/n/12 efe-ti-va-mente o con-sole. Os di-fe-ren-tes am-bi-en-tes da fer
+-ra-menta com-pu-ta-ci-o-nal s„o des-cri-tos.
  []
 
 
-Overfull \hbox (35.64897pt too wide) in paragraph at lines 1240--1254
-[][] 
+Overfull \hbox (21.9505pt too wide) in paragraph at lines 19--20
+\T1/cmr/m/n/12 am-bi-en-tes sem re-cur-sos gr·-fi-cos s„o ca-pa-zes de com-pi-l
+ar e exe-cu-tar a fer-ra-menta com-pu-ta-ci-o-nal
  []
 
-[67]
-Overfull \hbox (35.64897pt too wide) in paragraph at lines 1266--1282
-[][] 
+[67
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.20 
+     ]
+<Figures/InGU.png, id=1460, 297.11pt x 173.64874pt>
+File: Figures/InGU.png Graphic file (type png)
+<use Figures/InGU.png>
+Package pdftex.def Info: Figures/InGU.png  used on input line 23.
+(pdftex.def)             Requested size: 455.24411pt x 266.08446pt.
+<Figures/InGU_console.png, id=1462, 741.77126pt x 440.64626pt>
+File: Figures/InGU_console.png Graphic file (type png)
+<use Figures/InGU_console.png>
+Package pdftex.def Info: Figures/InGU_console.png  used on input line 32.
+(pdftex.def)             Requested size: 333.79398pt x 198.28897pt.
+ [68
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.38 
+      <./Figures/InGU.png>] [69
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.3}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.63 
+     
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.1}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.63 
+      <./Figures/InGU_console.png>]
+<Figures/InGU_help.png, id=1476, 839.135pt x 1015.795pt>
+File: Figures/InGU_help.png Graphic file (type png)
+<use Figures/InGU_help.png>
+Package pdftex.def Info: Figures/InGU_help.png  used on input line 67.
+(pdftex.def)             Requested size: 377.60725pt x 457.10353pt.
+ [70
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.4}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.78 
+      <./Figures/InGU_help.png>]
+Overfull \hbox (23.02937pt too wide) in paragraph at lines 102--103
+[]\T1/cmr/m/n/12 Estes tes-tes fo-ram uti-li-za-dos prin-ci-pal-mente no mo-men
+to do de-sen-vol-vi-mento da fer-ra-menta
  []
 
 
-Overfull \hbox (35.64897pt too wide) in paragraph at lines 1294--1305
-[][] 
+Overfull \hbox (31.00906pt too wide) in paragraph at lines 102--103
+\T1/cmr/m/n/12 e ga-ran-tem que as f·-bri-cas de ele-men-tos e ob-je-tos es-t„o
+ fun-ci-o-nando cor-re-ta-mente. Fu-tu-ra-mente,
  []
 
-[68]
-Overfull \hbox (35.64897pt too wide) in paragraph at lines 1317--1328
-[][] 
+[71
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.2}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.126 
+      ] [72
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.3}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.172 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.4}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.172 
+      ] [73
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.5}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.220 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.6}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.220 
+      ] [74
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.7}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.266 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.8}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.266 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.9}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.266 
+      ] [75
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.10}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.328 	\end{table}
+                  
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.11}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.328 	\end{table}
+                  ] [76
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.12}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.385 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.13}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.385 
+      ] [77
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.14}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.433 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.15}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.433 
+      ] [78
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.16}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.479 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.17}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.479 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.18}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.479 
+      ]
+Underfull \hbox (badness 1168) in paragraph at lines 494--494
+[]|\T1/cmr/m/n/12 Caminho para o ar-quivo a ser 
  []
 
 
-Overfull \hbox (35.64897pt too wide) in paragraph at lines 1340--1351
-[][] 
+Overfull \hbox (12.43964pt too wide) in paragraph at lines 531--532
+\T1/cmr/m/n/12 dis-po-nÌ-veis. As-sim, um co-mando (Ta-bela []4.21[]) foi in-se
+-rido para aces-sar a lista de ex-por-ta-Áıes
  []
 
-[69]
-Overfull \hbox (39.65695pt too wide) in paragraph at lines 1363--1375
-[][] 
- []
-
-
-Overfull \hbox (35.64897pt too wide) in paragraph at lines 1387--1398
-[][] 
- []
-
-[70]
-Overfull \hbox (39.65695pt too wide) in paragraph at lines 1410--1422
-[][] 
- []
-
-[71]
-Overfull \hbox (42.42894pt too wide) in paragraph at lines 1480--1493
-[][] 
+[79
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.19}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.548 	\end{table}
+                  ]
+Overfull \hbox (11.17693pt too wide) in paragraph at lines 554--555
+\T1/cmr/m/n/12 A es-tru-tura abs-trata dos ele-men-tos re-quer que cada um de-l
+es pos-sua o mÈ-todo de ex-por-ta-Á„o,
  []
 
 
-Overfull \hbox (38.79297pt too wide) in paragraph at lines 1505--1516
-[][] 
+Overfull \hbox (4.41135pt too wide) in paragraph at lines 554--555
+\T1/cmr/m/n/12 Salienta-se que os mÈ-to-dos de ex-por-ta-Á„o po-dem re-ce-ber p
+a-r‚-me-tros di-fe-ren-tes. A prin-ci-pal
  []
 
-[72]
-File: Figures/CasoDeUso@16x.png Graphic file (type bmp)
-<Figures/CasoDeUso@16x.png>
- [73]
-File: Figures/CasoDeUso2@16x.png Graphic file (type bmp)
-<Figures/CasoDeUso2@16x.png>
- [74] [75]
-File: Figures/IGU_001a.png Graphic file (type bmp)
-<Figures/IGU_001a.png>
- [76]
-File: Figures/IGU_016.png Graphic file (type bmp)
-<Figures/IGU_016.png>
-File: Figures/IGU_001a_34.png Graphic file (type bmp)
-<Figures/IGU_001a_34.png>
- [77]
-File: Figures/IGU_017.png Graphic file (type bmp)
-<Figures/IGU_017.png>
-File: Figures/IGU_001.png Graphic file (type bmp)
-<Figures/IGU_001.png>
- [78] [79]
-File: Figures/IGU_001c.png Graphic file (type bmp)
-<Figures/IGU_001c.png>
- [80] [81]
-File: Figures/IGU_025.png Graphic file (type bmp)
-<Figures/IGU_025.png>
-File: Figures/IGU_023.png Graphic file (type bmp)
-<Figures/IGU_023.png>
- [82]
-File: Figures/IGU_022.png Graphic file (type bmp)
-<Figures/IGU_022.png>
-) [83] [84]
-\openout2 = `resultados.aux'.
+
+Underfull \hbox (badness 1622) in paragraph at lines 570--570
+[]|\T1/cmr/m/n/12 Os ele-men-tos po-dem re-ce-ber 
+ []
+
+[80
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.20}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.580 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.21}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.580 
+      ]
+Overfull \hbox (12.25856pt too wide) in alignment at lines 598--598
+[][][] 
+ []
+
+[81
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.22}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.608 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.23}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.608 
+      ] [82
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.24}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.665 
+      ]
+Overfull \hbox (12.16534pt too wide) in paragraph at lines 666--667
+[]\T1/cmr/m/n/12 Consequentemente, os re-sul-ta-dos im-pres-sos re-pre-sen-tam 
+os ti-pos de ele-men-tos su-por-ta-dos
+ []
+
+[83
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.25}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.691 \begin{center}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.26}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.691 \begin{center}
+                    ]
+Underfull \hbox (badness 1028) in paragraph at lines 733--733
+[]|\T1/cmr/m/n/12 object cre-ate <object$[]$name> 
+ []
 
 
-(./resultados.tex
-Cap\'{\i }tulo 4.
-File: Figures/tree_canine.png Graphic file (type bmp)
-<Figures/tree_canine.png>
+Overfull \hbox (53.15417pt too wide) in alignment at lines 733--733
+[][][] 
+ []
 
-Overfull \hbox (9.27548pt too wide) in paragraph at lines 23--41
+[84
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.27}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.743 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.28}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.743 
+      ] [85
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.29}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.793 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.30}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.793 
+      ] [86
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.31}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.864 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.32}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.864 
+      ]
+Overfull \hbox (7.23184pt too wide) in paragraph at lines 886--887
+\T1/cmr/m/n/12 Por-tanto, os co-man-dos para lis-tar ex-por-ta-Áıes e o para ex
+-por-tar ele-mento fo-ram adi-ci-o-na-dos
+ []
+
+[87
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.33}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.913 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.34}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.913 
+      ] [88
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.35}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.941 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.36}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.941 
+      ] [89
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.37}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1010 
+       
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.38}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1010 
+       ]
+Overfull \hbox (18.78479pt too wide) in alignment at lines 1024--1024
+[][][] 
+ []
+
+
+Overfull \hbox (1.19698pt too wide) in paragraph at lines 1033--1034
+\T1/cmr/m/n/12 co-mando para lis-tar f·-bri-cas gr·-fi-cas ir· im-pri-mir no co
+n-sole as f·-bri-cas gr·-fi-cas dis-po-nÌ-veis
+ []
+
+[90
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.39}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1057 
+       
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.40}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1057 
+       ]
+Overfull \hbox (12.91121pt too wide) in alignment at lines 1071--1071
+[][][] 
+ []
+
+
+Overfull \hbox (14.3033pt too wide) in paragraph at lines 1103--1104
+\T1/cmr/m/n/12 am-bi-ente \T1/cmr/m/it/12 InGU \T1/cmr/m/n/12 est· sendo exe-cu
+-tado n„o exis-tem ele-men-tos gr·-fi-cos dis-po-nÌ-veis. En-tre-tanto,
+ []
+
+
+Overfull \hbox (20.6628pt too wide) in paragraph at lines 1103--1104
+\T1/cmr/m/n/12 fun-ci-o-na-li-da-des com ele-men-tos gr·-fi-cos. Ao exe-cu-tar 
+este co-mando no am-bi-ente com-pu-ta-ci-o-nal
+ []
+
+[91
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.41}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1104 
+       
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.42}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1104 
+       
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.43}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1104 
+       ] [92
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.44}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1152 
+       
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.45}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1152 
+       ]
+<Figures/CasoDeUso@16x.png, id=1612, 378.28828pt x 427.4093pt>
+File: Figures/CasoDeUso@16x.png Graphic file (type png)
+<use Figures/CasoDeUso@16x.png>
+Package pdftex.def Info: Figures/CasoDeUso@16x.png  used on input line 1180.
+(pdftex.def)             Requested size: 455.24411pt x 514.3625pt.
+
+Overfull \hbox (8.36722pt too wide) in paragraph at lines 1185--1186
+[]\T1/cmr/m/n/12 Primeiramente, È ne-ces-s·-rio criar um pro-jeto e selecion·-l
+o. Cada ati-vi-dade re-pre-sen-tada
+ []
+
+[93
+pdfTeX warning (ext4): destination with the same identifier (name{table.4.46}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1190 
+       ] [94
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.5}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1190 
+        <./Figures/CasoDeUso@16x.png>]
+<Figures/CasoDeUso2@16x.png, id=1625, 378.22554pt x 426.1546pt>
+File: Figures/CasoDeUso2@16x.png Graphic file (type png)
+<use Figures/CasoDeUso2@16x.png>
+Package pdftex.def Info: Figures/CasoDeUso2@16x.png  used on input line 1197.
+(pdftex.def)             Requested size: 455.24411pt x 512.93709pt.
+
+Overfull \hbox (20.70032pt too wide) in paragraph at lines 1202--1203
+[]\T1/cmr/m/n/12 Desta forma, o prin-ci-pal fluxo de uso da in-ter-face gr·-fic
+a foi de-sen-vol-vido. O fun-ci-o-na-mento
+ []
+
+<Figures/IGU_001a.png, id=1630, 1887.05pt x 1021.8175pt>
+File: Figures/IGU_001a.png Graphic file (type png)
+<use Figures/IGU_001a.png>
+Package pdftex.def Info: Figures/IGU_001a.png  used on input line 1211.
+(pdftex.def)             Requested size: 455.24411pt x 246.50414pt.
+[95] [96
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.6}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1224 
+        <./Figures/CasoDeUso2@16x.png>]
+<Figures/IGU_016.png, id=1642, 173.14688pt x 60.97781pt>
+File: Figures/IGU_016.png Graphic file (type png)
+<use Figures/IGU_016.png>
+Package pdftex.def Info: Figures/IGU_016.png  used on input line 1233.
+(pdftex.def)             Requested size: 173.14645pt x 60.97765pt.
+ [97
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.7}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1239 
+       
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.8}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1239 
+        <./Figures/IGU_001a.png> <./Figures/IGU_016.png>]
+<Figures/IGU_001a_34.png, id=1648, 1609.01125pt x 999.735pt>
+File: Figures/IGU_001a_34.png Graphic file (type png)
+<use Figures/IGU_001a_34.png>
+Package pdftex.def Info: Figures/IGU_001a_34.png  used on input line 1247.
+(pdftex.def)             Requested size: 455.24411pt x 282.8528pt.
+ [98
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.9}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1255 
+        <./Figures/IGU_001a_34.png>]
+<Figures/IGU_017.png, id=1655, 1882.03125pt x 1018.80624pt>
+File: Figures/IGU_017.png Graphic file (type png)
+<use Figures/IGU_017.png>
+Package pdftex.def Info: Figures/IGU_017.png  used on input line 1258.
+(pdftex.def)             Requested size: 409.71692pt x 221.79066pt.
+<Figures/IGU_001.png, id=1656, 1886.04625pt x 1020.81375pt>
+File: Figures/IGU_001.png Graphic file (type png)
+<use Figures/IGU_001.png>
+Package pdftex.def Info: Figures/IGU_001.png  used on input line 1265.
+(pdftex.def)             Requested size: 409.71692pt x 221.74483pt.
+<Figures/IGU_001c.png, id=1658, 275.0275pt x 525.965pt>
+File: Figures/IGU_001c.png Graphic file (type png)
+<use Figures/IGU_001c.png>
+Package pdftex.def Info: Figures/IGU_001c.png  used on input line 1282.
+(pdftex.def)             Requested size: 182.09486pt x 348.25351pt.
+ [99
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.10})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1288 
+        <./Figures/IGU_017.png>] [100
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.11})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1288 
+       
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.12})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1288 
+        <./Figures/IGU_001.png> <./Figures/IGU_001c.png>]
+Overfull \hbox (27.88094pt too wide) in paragraph at lines 1294--1295
+\T1/cmr/m/it/12 Can-vas\T1/cmr/m/n/12 , que fun-ci-ona como um re-pro-du-tor de
+ vÌ-deo, exi-bindo ele-men-tos gr·-fi-cos su-ces-si-va-mente;
+ []
+
+[101]
+<Figures/IGU_025.png, id=1676, 1882.03125pt x 1018.80624pt>
+File: Figures/IGU_025.png Graphic file (type png)
+<use Figures/IGU_025.png>
+Package pdftex.def Info: Figures/IGU_025.png  used on input line 1313.
+(pdftex.def)             Requested size: 455.24411pt x 246.43062pt.
+<Figures/IGU_023.png, id=1677, 1668.2325pt x 965.6075pt>
+File: Figures/IGU_023.png Graphic file (type png)
+<use Figures/IGU_023.png>
+Package pdftex.def Info: Figures/IGU_023.png  used on input line 1327.
+(pdftex.def)             Requested size: 455.24411pt x 263.50223pt.
+ [102] [103
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.13})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1333 
+       
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.14})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1333 
+        <./Figures/IGU_025.png> <./Figures/IGU_023.png>]
+<Figures/IGU_022.png, id=1690, 1669.23625pt x 962.59625pt>
+File: Figures/IGU_022.png Graphic file (type png)
+<use Figures/IGU_022.png>
+Package pdftex.def Info: Figures/IGU_022.png  used on input line 1348.
+(pdftex.def)             Requested size: 455.24411pt x 262.51892pt.
+)
+Overfull \hbox (5.9372pt too wide) in paragraph at lines 1353--205
+\T1/cmr/m/n/12 ja-nela \T1/cmr/m/it/12 Jobs\T1/cmr/m/n/12 . A pri-meira lista \
+T1/cmr/m/it/12 All Jobs \T1/cmr/m/n/12 lista to-dos os tra-ba-lhos cri-a-dos e 
+as lis-tas sub-se-quen-tes
+ []
+
+
+Overfull \hbox (9.49794pt too wide) in paragraph at lines 1353--205
+\T1/cmr/m/n/12 lis-tam as lis-tas pre-sen-tes no ge-ren-ci-a-dor de th-re-ads \
+T1/cmr/m/it/12 Wi-seTh-re-ad-Pool \T1/cmr/m/n/12 des-cri-tas na Se-Á„o []3.2.8[
+].
+ []
+
+
+Overfull \hbox (7.75394pt too wide) in paragraph at lines 1353--205
+\T1/cmr/m/n/12 Desta forma È pos-sÌ-vel ve-ri-fi-car os tra-ba-lhos que aguar-d
+am exe-cu-Á„o, es-t„o sendo exe-cu-ta-dos
+ []
+
+(./resultados.tex [104] [105
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.15})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1 \chapter
+            {RESULTADOS OBTIDOS}\label{sec:resultados} <./Figures/IGU_022.png>]
+
+Overfull \hbox (28.47241pt too wide) in paragraph at lines 10--11
+\T1/cmr/m/n/12 Neste ca-pÌ-tulo, re-sul-ta-dos ob-ti-dos com a fer-ra-menta com
+-pu-ta-ci-o-nal cons-truÌda s„o apre-sen-ta-dos. 
+ []
+
+
+Overfull \hbox (9.74228pt too wide) in paragraph at lines 15--16
+\T1/cmr/m/n/12 Nesta se-Á„o, apresentam-se re-sul-ta-dos ob-ti-dos atra-bÈs das
+ si-mu-la-Áıes do mo-delo ma-te-m·-tico
+ []
+
+
+Overfull \hbox (2.8982pt too wide) in paragraph at lines 19--20
+[]\T1/cmr/m/n/12 Considerou-se tam-bÈm neste es-tudo um mo-delo de ·r-vore ar-t
+e-rial ca-nina como ilus-trado
+ []
+
+<Figures/tree_canine.png, id=1708, 297.36093pt x 155.07938pt>
+File: Figures/tree_canine.png Graphic file (type png)
+<use Figures/tree_canine.png>
+Package pdftex.def Info: Figures/tree_canine.png  used on input line 23.
+(pdftex.def)             Requested size: 237.88905pt x 124.06364pt.
+
+Overfull \hbox (4.09183pt too wide) in paragraph at lines 31--48
  [][] 
  []
 
-[85
+[106
 
 
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.53 
+      <./Figures/tree_canine.png>]
+<Figures/fig3_P_f3_65_visc_NEW.png, id=1737, 470.2368pt x 376.7676pt>
+File: Figures/fig3_P_f3_65_visc_NEW.png Graphic file (type png)
+<use Figures/fig3_P_f3_65_visc_NEW.png>
+Package pdftex.def Info: Figures/fig3_P_f3_65_visc_NEW.png  used on input line 
+63.
+(pdftex.def)             Requested size: 329.16351pt x 263.7355pt.
+<Figures/fig3_P_f7_30_visc_NEW.png, id=1738, 485.1726pt x 383.5128pt>
+File: Figures/fig3_P_f7_30_visc_NEW.png Graphic file (type png)
+<use Figures/fig3_P_f7_30_visc_NEW.png>
+Package pdftex.def Info: Figures/fig3_P_f7_30_visc_NEW.png  used on input line 
+65.
+(pdftex.def)             Requested size: 339.6185pt x 268.45712pt.
 
-
-]
-File: Figures/fig3_P_f3_65_visc_NEW.png Graphic file (type bmp)
-<Figures/fig3_P_f3_65_visc_NEW.png>
-File: Figures/fig3_P_f7_30_visc_NEW.png Graphic file (type bmp)
-<Figures/fig3_P_f7_30_visc_NEW.png>
-File: Figures/fig3_P_f10_95_visc_NEW.png Graphic file (type bmp)
-<Figures/fig3_P_f10_95_visc_NEW.png>
-File: Figures/fig3_P_f14_60_visc_NEW.png Graphic file (type bmp)
-<Figures/fig3_P_f14_60_visc_NEW.png>
- [86] [87] [88]
-File: Figures/fig4_P_f3_65_viscoelasticity_NEW.png Graphic file (type bmp)
-<Figures/fig4_P_f3_65_viscoelasticity_NEW.png>
-File: Figures/fig4_P_f7_30_viscoelasticity_NEW.png Graphic file (type bmp)
-<Figures/fig4_P_f7_30_viscoelasticity_NEW.png>
-File: Figures/fig4_P_f10_95_viscoelasticity_NEW.png Graphic file (type bmp)
-<Figures/fig4_P_f10_95_viscoelasticity_NEW.png>
-File: Figures/fig4_P_f14_60_viscoelasticity_NEW.png Graphic file (type bmp)
-<Figures/fig4_P_f14_60_viscoelasticity_NEW.png>
- [89] [90] [91]
-Overfull \hbox (11.19148pt too wide) in paragraph at lines 99--99
-[]\T1/futs/b/n/17.28 ESCOAMENTO VIS-COSO EM SEG-MENTO VIS-CO-E-L√ÅS-TICO 
+Underfull \hbox (badness 1043) in paragraph at lines 66--66
+[]\T1/cmr/m/n/12 Figura 5.2: []Amplitude da pres-s„o $\OMS/cmsy/m/n/12 j\OML/cm
+m/m/it/12 P\OMS/cmsy/m/n/12 j$ \T1/cmr/m/n/12 ao longo da ·r-vore ar-te-rial co
+n-si-de-rando 
  []
 
+<Figures/fig3_P_f10_95_visc_NEW.png, id=1739, 484.6908pt x 384.4764pt>
+File: Figures/fig3_P_f10_95_visc_NEW.png Graphic file (type png)
+<use Figures/fig3_P_f10_95_visc_NEW.png>
+Package pdftex.def Info: Figures/fig3_P_f10_95_visc_NEW.png  used on input line
+ 73.
+(pdftex.def)             Requested size: 339.28123pt x 269.13164pt.
+<Figures/fig3_P_f14_60_visc_NEW.png, id=1740, 578.16pt x 434.5836pt>
+File: Figures/fig3_P_f14_60_visc_NEW.png Graphic file (type png)
+<use Figures/fig3_P_f14_60_visc_NEW.png>
+Package pdftex.def Info: Figures/fig3_P_f14_60_visc_NEW.png  used on input line
+ 75.
+(pdftex.def)             Requested size: 404.70924pt x 304.20644pt.
+
+Underfull \hbox (badness 1043) in paragraph at lines 76--76
+[]\T1/cmr/m/n/12 Figura 5.3: []Amplitude da pres-s„o $\OMS/cmsy/m/n/12 j\OML/cm
+m/m/it/12 P\OMS/cmsy/m/n/12 j$ \T1/cmr/m/n/12 ao longo da ·r-vore ar-te-rial co
+n-si-de-rando 
+ []
+
+
+Overfull \hbox (15.16325pt too wide) in paragraph at lines 83--84
+\T1/cmr/m/n/12 se-pa-ra-da-mente considerando-se o es-co-a-mento in-vÌs-cido e 
+tomando-se qua-tro va-lo-res di-fe-ren-tes
+ []
+
+[107
+pdfTeX warning (ext4): destination with the same identifier (name{table.5.1}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.84 
+     ] [108
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5.2}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.84 
+      <./Figures/fig3_P_f3_65_visc_NEW.png> <./Figures/fig3_P_f7_30_visc_NEW.pn
+g>] [109
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5.3}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.84 
+      <./Figures/fig3_P_f10_95_visc_NEW.png> <./Figures/fig3_P_f14_60_visc_NEW.
+png>]
+<Figures/fig4_P_f3_65_viscoelasticity_NEW.png, id=1760, 484.209pt x 386.8854pt>
+
+File: Figures/fig4_P_f3_65_viscoelasticity_NEW.png Graphic file (type png)
+<use Figures/fig4_P_f3_65_viscoelasticity_NEW.png>
+Package pdftex.def Info: Figures/fig4_P_f3_65_viscoelasticity_NEW.png  used on 
+input line 88.
+(pdftex.def)             Requested size: 338.94398pt x 270.81793pt.
+<Figures/fig4_P_f7_30_viscoelasticity_NEW.png, id=1761, 483.2454pt x 385.9218pt
+>
+File: Figures/fig4_P_f7_30_viscoelasticity_NEW.png Graphic file (type png)
+<use Figures/fig4_P_f7_30_viscoelasticity_NEW.png>
+Package pdftex.def Info: Figures/fig4_P_f7_30_viscoelasticity_NEW.png  used on 
+input line 90.
+(pdftex.def)             Requested size: 338.26947pt x 270.14342pt.
+
+Underfull \hbox (badness 1043) in paragraph at lines 91--91
+[]\T1/cmr/m/n/12 Figura 5.4: []Amplitude da pres-s„o $\OMS/cmsy/m/n/12 j\OML/cm
+m/m/it/12 P\OMS/cmsy/m/n/12 j$ \T1/cmr/m/n/12 ao longo da ·r-vore ar-te-rial co
+n-si-de-rando 
+ []
+
+<Figures/fig4_P_f10_95_viscoelasticity_NEW.png, id=1762, 483.2454pt x 382.0674p
+t>
+File: Figures/fig4_P_f10_95_viscoelasticity_NEW.png Graphic file (type png)
+<use Figures/fig4_P_f10_95_viscoelasticity_NEW.png>
+Package pdftex.def Info: Figures/fig4_P_f10_95_viscoelasticity_NEW.png  used on
+ input line 98.
+(pdftex.def)             Requested size: 338.26947pt x 267.44534pt.
+<Figures/fig4_P_f14_60_viscoelasticity_NEW.png, id=1763, 482.2818pt x 385.9218p
+t>
+File: Figures/fig4_P_f14_60_viscoelasticity_NEW.png Graphic file (type png)
+<use Figures/fig4_P_f14_60_viscoelasticity_NEW.png>
+Package pdftex.def Info: Figures/fig4_P_f14_60_viscoelasticity_NEW.png  used on
+ input line 100.
+(pdftex.def)             Requested size: 337.59494pt x 270.14342pt.
+
+Underfull \hbox (badness 1043) in paragraph at lines 101--101
+[]\T1/cmr/m/n/12 Figura 5.5: []Amplitude da pres-s„o $\OMS/cmsy/m/n/12 j\OML/cm
+m/m/it/12 P\OMS/cmsy/m/n/12 j$ \T1/cmr/m/n/12 ao longo da ·r-vore ar-te-rial co
+n-si-de-rando 
+ []
+
+<Figures/fig5_P_f3_65_viscoelasticity_viscosity_NEW.png, id=1767, 472.6458pt x 
+376.2858pt>
 File: Figures/fig5_P_f3_65_viscoelasticity_viscosity_NEW.png Graphic file (type
- bmp)
-<Figures/fig5_P_f3_65_viscoelasticity_viscosity_NEW.png>
+ png)
+<use Figures/fig5_P_f3_65_viscoelasticity_viscosity_NEW.png>
+Package pdftex.def Info: Figures/fig5_P_f3_65_viscoelasticity_viscosity_NEW.png
+  used on input line 113.
+(pdftex.def)             Requested size: 330.8498pt x 263.39825pt.
+<Figures/fig5_P_f7_30_viscoelasticity_viscosity_NEW.png, id=1768, 481.8pt x 383
+.9946pt>
 File: Figures/fig5_P_f7_30_viscoelasticity_viscosity_NEW.png Graphic file (type
- bmp)
-<Figures/fig5_P_f7_30_viscoelasticity_viscosity_NEW.png>
-File: Figures/fig5_P_f10_95_viscoelasticity_viscosity_NEW.png Graphic file (typ
-e bmp)
-<Figures/fig5_P_f10_95_viscoelasticity_viscosity_NEW.png>
-File: Figures/fig5_P_f14_60_viscoelasticity_viscosity.png Graphic file (type bm
-p)
-<Figures/fig5_P_f14_60_viscoelasticity_viscosity.png>
-) [92] [93] [94]
-\openout2 = `conclusoes.aux'.
+ png)
+<use Figures/fig5_P_f7_30_viscoelasticity_viscosity_NEW.png>
+Package pdftex.def Info: Figures/fig5_P_f7_30_viscoelasticity_viscosity_NEW.png
+  used on input line 115.
+(pdftex.def)             Requested size: 337.25769pt x 268.79437pt.
 
- (./conclusoes.tex
-Cap\'{\i }tulo 5.
-) [95
-
-
-
-
-]
-\openout2 = `anexos.aux'.
-
- (./anexos.tex
-Ap\^endice A.
-[96
-
-
-
-
-]
-Ap\^endice B.
-[97
-
-] [98]
-Ap\^endice C.
-[99
-
-]
-Ap\^endice D.
-) [100
-
-] (./modelo_new2.bbl
-Underfull \hbox (badness 1448) in paragraph at lines 94--96
-[]\T1/futs/m/n/12 MATES, R.; KLOCKE, F.; CANTY, J. Co-ro-nary ca-pa-ci-tance. |
-   []   |   []   |   []
+Underfull \hbox (badness 1043) in paragraph at lines 116--116
+[]\T1/cmr/m/n/12 Figura 5.6: []Amplitude da pres-s„o $\OMS/cmsy/m/n/12 j\OML/cm
+m/m/it/12 P\OMS/cmsy/m/n/12 j$ \T1/cmr/m/n/12 ao longo da ·r-vore ar-te-rial co
+n-si-de-rando 
  []
 
-[101
+<Figures/fig5_P_f10_95_viscoelasticity_viscosity_NEW.png, id=1769, 483.2454pt x
+ 384.4764pt>
+File: Figures/fig5_P_f10_95_viscoelasticity_viscosity_NEW.png Graphic file (typ
+e png)
+<use Figures/fig5_P_f10_95_viscoelasticity_viscosity_NEW.png>
+Package pdftex.def Info: Figures/fig5_P_f10_95_viscoelasticity_viscosity_NEW.pn
+g  used on input line 123.
+(pdftex.def)             Requested size: 338.26947pt x 269.13164pt.
+<Figures/fig5_P_f14_60_viscoelasticity_viscosity.png, id=1770, 578.16pt x 434.5
+836pt>
+File: Figures/fig5_P_f14_60_viscoelasticity_viscosity.png Graphic file (type pn
+g)
+<use Figures/fig5_P_f14_60_viscoelasticity_viscosity.png>
+Package pdftex.def Info: Figures/fig5_P_f14_60_viscoelasticity_viscosity.png  u
+sed on input line 125.
+(pdftex.def)             Requested size: 404.70924pt x 304.20644pt.
+
+Underfull \hbox (badness 1043) in paragraph at lines 126--126
+[]\T1/cmr/m/n/12 Figura 5.7: []Amplitude da pres-s„o $\OMS/cmsy/m/n/12 j\OML/cm
+m/m/it/12 P\OMS/cmsy/m/n/12 j$ \T1/cmr/m/n/12 ao longo da ·r-vore ar-te-rial co
+n-si-de-rando 
+ []
 
 
+Overfull \hbox (37.21759pt too wide) in paragraph at lines 134--135
+\T1/cmr/m/n/12 Nesta se-Á„o, apresentam-se re-sul-ta-dos ob-ti-dos com a im-ple
+-men-ta-Á„o da fer-ra-menta com-pu-ta-ci-o-nal
+ []
 
-]) [102] (./modelo_new2.aux (./pretexto.aux) (./introducao.aux)
-(./modelagem_escoamento.aux) (./ferramenta_computacional.aux) (./resultados.aux
-) (./conclusoes.aux) (./anexos.aux))
 
-LaTeX Warning: There were undefined references.
+Overfull \hbox (15.4423pt too wide) in paragraph at lines 136--137
+[]\T1/cmr/m/n/12 Na Fi-gura []5.8[], tem-se se-le-ci-o-nado o ar-quivo \T1/cmr/
+m/it/12 CMa-ke-Lists.txt \T1/cmr/m/n/12 È o res-pon-s·-vel por in-ter-pre-tar
+ []
 
+[110] [111
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5.4}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.137 
+       <./Figures/fig4_P_f3_65_viscoelasticity_NEW.png> <./Figures/fig4_P_f7_30
+_viscoelasticity_NEW.png>] [112
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5.5}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.137 
+       <./Figures/fig4_P_f10_95_viscoelasticity_NEW.png> <./Figures/fig4_P_f14_
+60_viscoelasticity_NEW.png>] [113
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5.6}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.137 
+       <./Figures/fig5_P_f3_65_viscoelasticity_viscosity_NEW.png> <./Figures/fi
+g5_P_f7_30_viscoelasticity_viscosity_NEW.png>] [114
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5.7}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.137 
+       <./Figures/fig5_P_f10_95_viscoelasticity_viscosity_NEW.png> <./Figures/f
+ig5_P_f14_60_viscoelasticity_viscosity.png>]
+<Figures/cmake_print.png, id=1800, 97.3236pt x 80.9424pt>
+File: Figures/cmake_print.png Graphic file (type png)
+<use Figures/cmake_print.png>
+Package pdftex.def Info: Figures/cmake_print.png  used on input line 141.
+(pdftex.def)             Requested size: 145.985pt x 121.4133pt.
+<Figures/IGU_old2.png, id=1802, 451.2057pt x 244.5135pt>
+File: Figures/IGU_old2.png Graphic file (type png)
+<use Figures/IGU_old2.png>
+Package pdftex.def Info: Figures/IGU_old2.png  used on input line 154.
+(pdftex.def)             Requested size: 455.24411pt x 246.71043pt.
+ [115
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5.8}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.163 N
+       o ambiente \textit{IGU0}, o processo iterativo dos modelos estava atr...
+ <./Figures/cmake_print.png>]
+Overfull \hbox (27.3116pt too wide) in paragraph at lines 167--168
+[]\T1/cmr/m/n/12 Para quan-ti-fi-car o de-sem-pe-nho tra-zido da fer-ra-menta c
+om-pu-ta-ci-o-nal \T1/cmr/m/it/12 INGU\T1/cmr/m/n/12 , um ex-pe-ri-mento
+ []
+
+[116
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5.9}) 
+has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.168 
+       <./Figures/IGU_old2.png>]
+Overfull \hbox (21.88527pt too wide) in paragraph at lines 184--185
+[]\T1/cmr/m/n/12 Na Ta-bela []5.2[], apresentam-se os pa-r‚-me-tros de en-trada
+ uti-li-za-dos para tes-tar o de-sem-pe-nho
+ []
+
+
+Overfull \hbox (9.94377pt too wide) in paragraph at lines 186--187
+\T1/cmr/m/it/12 Th-re-ads \T1/cmr/m/n/12 do tipo \T1/cmr/m/it/12 Wi-se-Con-sole
+ \T1/cmr/m/n/12 e \T1/cmr/m/it/12 Wi-se-Pro-ces-sor \T1/cmr/m/n/12 re-que-rem u
+ma quan-ti-dade maior de tra-ba-lhos
+ []
+
+<Figures/INGU.png, id=1819, 297.11pt x 173.64874pt>
+File: Figures/INGU.png Graphic file (type png)
+<use Figures/INGU.png>
+Package pdftex.def Info: Figures/INGU.png  used on input line 193.
+(pdftex.def)             Requested size: 455.24411pt x 266.08446pt.
+[117
+pdfTeX warning (ext4): destination with the same identifier (name{table.5.2}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.201 
+      ] [118
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5.10})
+ has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.231 \begin{equation}
+                       <./Figures/InGU.png>]
+Overfull \hbox (0.628pt too wide) in paragraph at lines 255--256
+[]\T1/cmr/m/n/12 Ao du-pli-car o n˙-mero de \T1/cmr/m/it/12 th-re-ads \T1/cmr/m
+/n/12 È es-pe-rado um \T1/cmr/m/it/12 speed up \T1/cmr/m/n/12 de $\OT1/cmr/m/n/
+12 2$\T1/cmr/m/n/12 , en-tre-tanto a co-mu-ni-ca-Á„o
+ []
+
+[119
+pdfTeX warning (ext4): destination with the same identifier (name{table.5.3}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.263 
+      
+pdfTeX warning (ext4): destination with the same identifier (name{table.5.4}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.263 
+      ]) (./conclusoes.tex [120
+pdfTeX warning (ext4): destination with the same identifier (name{table.5.5}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1 \chapter
+            {CONCLUS√ïES E TRABALHOS FUTUROS}\label{sec:conclusoes}]
+Overfull \hbox (34.96808pt too wide) in paragraph at lines 7--8
+\T1/cmr/m/n/12 Este tra-ba-lho apre-senta uma fer-ra-menta com-pu-ta-ci-o-nal c
+ons-truÌda para si-mu-la-Á„o he-mo-di-n‚-mica
+ []
+
+
+Overfull \hbox (1.03052pt too wide) in paragraph at lines 15--16
+[]\T1/cmr/m/n/12 A fer-ra-menta cons-truÌda est· dis-po-ni-bi-li-zada no re-po-
+si-tÛ-rio de cÛ-digo aberto Bit-buc-ket: 
+ []
+
+[121
+
+])
+Overfull \hbox (5.86543pt too wide) in paragraph at lines 38--215
+[]\T1/cmr/m/n/12 Durante a re-a-li-za-Á„o deste tra-ba-lho, foi pu-bli-cado um 
+ar-tigo com re-sul-ta-dos pre-li-mi-na-res
+ []
+
+(./anexos.tex [122]
+Overfull \hbox (9.9489pt too wide) in paragraph at lines 10--11
+[]\T1/cmr/m/n/12 wget http://download.qt.io/official$[]$releases/qt/5.15/5.15.0
+/qt-opensource-linux-x64-
+ []
+
+
+Overfull \hbox (11.5086pt too wide) in paragraph at lines 28--29
+\T1/cmr/m/n/12 Outras bi-bli-o-te-cas me-no-res tam-bÈm s„o ne-ces-s·-rias para
+ com-pi-lar cor-re-ta-mente a fer-ra-menta
+ []
+
+[123
+
+] [124] [125
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{algocf.4}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.107 	\newpage
+               ] [126
+pdfTeX warning (ext4): destination with the same identifier (name{algocf.5}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.135 	\chapter
+               {FORMATO DE ARQUIVO DE ELEMENTO}\label{annex3}] [127
+
+] [128
+
+]
+[129]) (./modelo_new2.bbl [130]
+Underfull \hbox (badness 1418) in paragraph at lines 40--45
+[]\T1/cmr/m/n/12 BERTAGLIA, G. et al. Com-pu-ta-ti-o-nal he-mody-na-mics in ar-
+te-ries with the one-
+ []
+
+
+Underfull \hbox (badness 1377) in paragraph at lines 40--45
+\T1/cmr/m/n/12 dimensional aug-men-ted fluid-structure in-te-rac-tion sys-tem: 
+vis-co-e-las-tic pa-ra-me-ters
+ []
+
+! Misplaced alignment tab character &.
+l.107 ...Chinese Institute of Engineers}, Taylor &
+                                                   Francis, v.~26,
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+[131] [132]) 
+AED: lastpage setting LastPage
+[133] (./modelo_new2.aux)
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package rerunfilecheck Info: File `modelo_new2.out' has not changed.
-(rerunfilecheck)             Checksum: DEA787C0081AC600DA963512AE6B8102;14626.
+(rerunfilecheck)             Checksum: D57E7BB3CE1CA138A009148EA61E1E4B;16589.
  ) 
 Here is how much of TeX's memory you used:
- 27052 strings out of 476919
- 475532 string characters out of 5825424
- 837504 words of memory out of 5000000
- 46421 multiletter control sequences out of 15000+600000
- 504104 words of font info for 83 fonts, out of 8000000 for 9000
- 1353 hyphenation exceptions out of 8191
- 128i,18n,131p,1293b,607s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 19416 strings out of 478233
+ 304331 string characters out of 5847836
+ 1194784 words of memory out of 5000000
+ 36526 multiletter control sequences out of 15000+600000
+ 492237 words of font info for 89 fonts, out of 8000000 for 9000
+ 1156 hyphenation exceptions out of 8191
+ 75i,18n,77p,1373b,1960s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on modelo_new2.pdf (105 pages).
+pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
+, replaced by a fixed one
+
+{c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{c:/texli
+ve/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<c:/texlive/2022/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2022/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
+<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texli
+ve/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2022/te
+xmf-dist/fonts/type1/public/cm-super/sfbi1200.pfb><c:/texlive/2022/texmf-dist/f
+onts/type1/public/cm-super/sfbx0600.pfb><c:/texlive/2022/texmf-dist/fonts/type1
+/public/cm-super/sfbx0800.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm
+-super/sfbx1200.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfr
+m0600.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb>
+<c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><c:/texliv
+e/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2022/tex
+mf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2022/texmf-dist/fo
+nts/type1/public/cm-super/sfti0600.pfb><c:/texlive/2022/texmf-dist/fonts/type1/
+public/cm-super/sfti1200.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-
+super/sfxc1200.pfb>
+Output written on modelo_new2.pdf (134 pages, 9334618 bytes).
+PDF statistics:
+ 2407 PDF objects out of 2487 (max. 8388607)
+ 2081 compressed objects within 21 object streams
+ 697 named destinations out of 1000 (max. 500000)
+ 1076 words of extra memory for PDF output out of 10000 (max. 10000000)
+
